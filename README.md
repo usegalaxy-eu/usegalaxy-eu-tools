@@ -1,5 +1,5 @@
-# galaxy-fr-tools
-List of tools include in Galaxy-FR
+# Galaxy FR tools
+List of tools included in the Galaxy Freiburg instance
 
 
 ### Actiavte Conda environment with ephemeris
