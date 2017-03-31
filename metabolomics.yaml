@@ -1,0 +1,107 @@
+galaxy_instance: http://galaxy.uni-freiburg.de
+tools:
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: xcms_xcmsset
+  owner: lecorguille
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: xcms_group
+  owner: lecorguille
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: xcms_retcor
+  owner: lecorguille
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: xcms_fillpeaks
+  owner: lecorguille
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: camera_annotate
+  owner: lecorguille
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: xcms_summary
+  owner: lecorguille
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: camera_combinexsannos
+  owner: mmonsoor
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: batchcorrection
+  owner: melpetera
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: qualitymetrics
+  owner: ethevenot
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: metams_rungc
+  owner: yguitton
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: nmr_bucketing
+  owner: marie-tremblay-metatoul
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: nmr_normalization
+  owner: marie-tremblay-metatoul
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: checkformat
+  owner: ethevenot
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
