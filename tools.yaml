@@ -1,4 +1,8 @@
 galaxy_instance: http://galaxy.uni-freiburg.de
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
 tools:
 - name: bedtools
   install_repository_dependencies: true
@@ -7,6 +11,7 @@ tools:
   owner: iuc
   tool_panel_section_label: "BED tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: mlocarna
   install_repository_dependencies: true
   install_resolver_dependencies: true
@@ -14,6 +19,11 @@ tools:
   owner: rnateam
   tool_panel_section_label: "NGS: RNA Analysis"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: rcas
+  owner: rnateam
+  tool_panel_section_label: "NGS: RNA Analysis"
+
 - name: paralyzer
   install_repository_dependencies: true 
   install_resolver_dependencies: true
