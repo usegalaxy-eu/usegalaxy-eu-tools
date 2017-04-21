@@ -1,52 +1,34 @@
 galaxy_instance: http://galaxy.uni-freiburg.de
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
 tools:
 - name: bedtools
-  install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
   owner: iuc
   tool_panel_section_label: "BED tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: ebi_search_rest_results
-  install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
   owner: iuc
   tool_panel_section_label: "Get Data"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: ebi_metagenomics_run_downloader
-  install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
   owner: iuc
   tool_panel_section_label: "Get Data" 
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: column_maker
+- name: column_maker
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sra_tools
+- name: sra_tools
   owner: iuc
   tool_panel_section_label: Get Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: prinseq
+- name: prinseq
   owner: iuc
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: add_value
+- name: add_value
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
@@ -1810,142 +1792,96 @@ tools:
   name: gemini_load
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_de_novo
-  owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_annotate
+
+- name: gemini_de_novo
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_recessive_and_dominant
+- name: gemini_annotate
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_roh
+- name: gemini_recessive_and_dominant
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_set_somatic
+- name: gemini_roh
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_qc
+- name: gemini_set_somatic
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_comp_hets
+- name: gemini_qc
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_interactions
+- name: gemini_comp_hets
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: dwt_var_perfeature
+- name: gemini_interactions
+  owner: iuc
+  tool_panel_section_label: 'NGS: GEMINI'
+
+- name: dwt_var_perfeature
   owner: devteam
   tool_panel_section_label: Wavelet Analysis
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_sstacks
+- name: stacks_sstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_genotypes
+- name: stacks_genotypes
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_denovomap
+- name: stacks_denovomap
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_ustacks
+- name: stacks_ustacks
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_assembleperead
+- name: stacks_assembleperead
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_procrad
+- name: stacks_procrad
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_refmap
+- name: stacks_refmap
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_cstacks
+- name: stacks_cstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_rxstacks
+- name: stacks_rxstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_pstacks
+- name: stacks_pstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stacks_populations
+- name: stacks_populations
   owner: iuc
   tool_panel_section_label: RAD-seq
+
+- name: column_order_header_sort
+  owner: iuc
+  tool_panel_section_label: Text Manipulation
+
+- name: column_remove_by_header
+  owner: iuc
+  tool_panel_section_label: Text Manipulation
+
+- name: metagenomeseq_normalization
+  owner: iuc
+  tool_panel_section_label: Text Manipulation
 
