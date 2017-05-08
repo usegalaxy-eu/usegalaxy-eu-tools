@@ -4,6 +4,12 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+- name: dwt_var_perfeature
+  owner: devteam
+  tool_panel_section_id: statistics
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: bedtools
   install_repository_dependencies: true
   install_resolver_dependencies: true
@@ -3167,13 +3173,6 @@ tools:
   name: genome_diversity
   owner: miller-lab
   tool_panel_section_label: Genome Diversity
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: dwt_var_perfeature
-  owner: devteam
-  tool_panel_section_label: Wavelet Analysis
   tool_shed_url: toolshed.g2.bx.psu.edu
 - install_repository_dependencies: true
   install_resolver_dependencies: true
