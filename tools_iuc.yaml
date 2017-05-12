@@ -32,6 +32,10 @@ tools:
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
+- name: dwt_var_perfeature
+  owner: devteam
+  tool_panel_section_id: statistics
+
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
@@ -1824,10 +1828,6 @@ tools:
 - name: gemini_interactions
   owner: iuc
   tool_panel_section_label: 'NGS: GEMINI'
-
-- name: dwt_var_perfeature
-  owner: devteam
-  tool_panel_section_label: Wavelet Analysis
 
 - name: stacks_sstacks
   owner: iuc
