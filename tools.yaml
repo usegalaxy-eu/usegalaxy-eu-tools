@@ -1149,7 +1149,7 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpsift_genesets
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: miranda
   owner: tgac
@@ -1193,19 +1193,19 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpsift_dbnsfp
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpsift
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpsift_dbnsfp_generic
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpeff
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tmhmm_and_signalp
   owner: peterjc
@@ -1225,10 +1225,6 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: snpeff_cds_report
   owner: jjohnson
-  tool_panel_section_label: Annotation
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: snpeff
-  owner: iuc
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: interproscan5

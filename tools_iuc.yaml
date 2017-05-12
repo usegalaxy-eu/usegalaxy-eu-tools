@@ -644,7 +644,7 @@ tools:
 
 - name: snpsift_genesets
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
 
 - name: transtermhp
   owner: iuc
@@ -656,20 +656,17 @@ tools:
 
 - name: snpsift_dbnsfp
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
 - name: snpsift
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
 - name: snpsift_dbnsfp_generic
   owner: iuc
-  tool_panel_section_label: Annotation
-- name: snpeff
-  owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
 
 - name: snpeff
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
 
 - name: dgidb_annotator
   owner: devteam
