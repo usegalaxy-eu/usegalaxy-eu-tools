@@ -59,6 +59,7 @@ tools:
   tool_panel_section_label: "Get Data" 
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
+
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
@@ -66,6 +67,7 @@ tools:
   owner: ethevenot
   tool_panel_section_label: Statistics
   tool_shed_url: toolshed.g2.bx.psu.edu
+
 
 - install_repository_dependencies: true
   install_resolver_dependencies: true
@@ -158,6 +160,14 @@ tools:
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
+  name: uniprotxml_downloader
+  owner: galaxyp
+  tool_panel_section_label: Get Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
   name: sra_tools
   owner: iuc
   tool_panel_section_label: Get Data
@@ -176,7 +186,20 @@ tools:
   owner: rnateam
   tool_panel_section_label: Get Data
   tool_shed_url: toolshed.g2.bx.psu.edu
-
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: dbbuilder
+  owner: galaxyp
+  tool_panel_section_label: Get Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: unipept
+  owner: galaxyp
+  tool_panel_section_label: Get Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
@@ -399,7 +422,27 @@ tools:
   owner: iuc
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
-
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: map_peptides_to_bed
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: idconvert
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: msconvert_nix
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
@@ -428,7 +471,13 @@ tools:
   owner: devteam
   tool_panel_section_label: Convert Formats
   tool_shed_url: toolshed.g2.bx.psu.edu
-
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: msconvert
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
@@ -933,7 +982,13 @@ tools:
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
   tool_shed_url: toolshed.g2.bx.psu.edu
-
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: fasta_merge_files_and_filter_unique_sequences
+  owner: galaxyp
+  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
@@ -2090,7 +2145,27 @@ tools:
   owner: devteam
   tool_panel_section_label: Annotation
   tool_shed_url: toolshed.g2.bx.psu.edu
-
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: peptideshaker
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: hardklor
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: morpheus
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
@@ -2098,7 +2173,20 @@ tools:
   owner: bgruening
   tool_panel_section_label: Proteomics
   tool_shed_url: testtoolshed.g2.bx.psu.edu
-
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: msgfplus
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: decoyfasta
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
