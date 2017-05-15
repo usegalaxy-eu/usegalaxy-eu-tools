@@ -1034,6 +1034,13 @@ tools:
   name: cuffcompare
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
+  
+- install_repository_dependencies: true
+  install_resolver_dependencies: true
+  install_tool_dependencies: false
+  name: masigpro
+  owner: iuc
+  tool_panel_section_label: 'NGS: RNA Analysis'
 
 - install_repository_dependencies: true
   install_resolver_dependencies: true
