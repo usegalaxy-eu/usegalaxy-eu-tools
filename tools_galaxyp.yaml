@@ -1,0 +1,73 @@
+galaxy_instance: http://galaxy.uni-freiburg.de
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+- name: uniprotxml_downloader
+  owner: galaxyp
+  tool_panel_section_label: Get Data
+
+- name: dbbuilder
+  owner: galaxyp
+  tool_panel_section_label: Get Data
+
+- name: unipept
+  owner: galaxyp
+  tool_panel_section_label: Get Data
+
+- name: map_peptides_to_bed
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+
+- name: idconvert
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+
+- name: msconvert_nix
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+
+- name: msconvert
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
+
+- name: fasta_merge_files_and_filter_unique_sequences
+  owner: galaxyp
+  tool_panel_section_label: FASTA/FASTQ manipulation
+
+- name: peptideshaker
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+
+- name: hardklor
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+
+- name: morpheus
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+
+- name: msgfplus
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+
+- name: decoyfasta
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+
+- name: suite_openms
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+
+- name: blastxml_to_tabular_selectable
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+
+- name: query_tabular
+  owner: jjohnson
+  tool_panel_section_label: Proteomics
+
+- name: sqlite_to_tabular
+  owner: jjohnson
+  tool_panel_section_label: Proteomics
