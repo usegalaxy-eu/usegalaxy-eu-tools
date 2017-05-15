@@ -32,17 +32,11 @@ tools:
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: merge_cols
+- name: merge_cols
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: column_maker
+- name: column_maker
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
@@ -1034,20 +1028,19 @@ tools:
   name: cuffcompare
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
+  
+- name: masigpro
+  owner: iuc
+  tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: macs2
+- name: macs2
   owner: iuc
   tool_panel_section_label: 'NGS: Peak Calling'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: macs
+- name: macs
   owner: devteam
   tool_panel_section_label: 'NGS: Peak Calling'
+  
 - install_repository_dependencies: true
   install_resolver_dependencies: true
   install_tool_dependencies: false
