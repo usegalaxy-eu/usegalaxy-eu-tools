@@ -32,6 +32,10 @@ tools:
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
+- name: dwt_var_perfeature
+  owner: devteam
+  tool_panel_section_id: statistics
+
 - name: merge_cols
   owner: devteam
   tool_panel_section_label: Text Manipulation
@@ -40,992 +44,536 @@ tools:
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: coverage
+- name: coverage
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: tables_arithmetic_operations
+- name: tables_arithmetic_operations
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: merge
+- name: merge
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: intersect
+- name: intersect
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: flanking_features
+- name: flanking_features
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: join
+- name: join
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cluster
+- name: cluster
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: get_flanks
+- name: get_flanks
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: complement
+- name: complement
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: subtract
+- name: subtract
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: basecoverage
+- name: basecoverage
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: subtract_query
+- name: subtract_query
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: dna_filtering
+- name: dna_filtering
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: collection_column_join
+- name: collection_column_join
   owner: iuc
   tool_panel_section_label: Join, Subtract and Group
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: suite_datamash
+- name: suite_datamash
   owner: iuc
   tool_panel_section_label: Join, Subtract and Group
 
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: subtract
+- name: subtract
   owner: devteam
   tool_panel_section_label: Join, Subtract and Group
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bam_to_scidx
+- name: bam_to_scidx
   owner: iuc
   tool_panel_section_label: Convert Formats
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: resize_coordinate_window
+- name: resize_coordinate_window
   owner: iuc
   tool_panel_section_label: Convert Formats
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gffread
+- name: gffread
   owner: devteam
   tool_panel_section_label: Convert Formats
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: tabular_to_fasta
+- name: tabular_to_fasta
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_to_tabular
+- name: fasta_to_tabular
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastqtofasta
+- name: fastqtofasta
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_to_fasta
+- name: fastq_to_fasta
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: length_and_gc_content
+- name: length_and_gc_content
   owner: iuc
   tool_panel_section_label: Extract Features
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: extract_genomic_dna
+- name: extract_genomic_dna
   owner: iuc
-  tool_panel_section_label: Fetch Sequences
+  tool_panel_section_id: ngs:_other_tools
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: concat
+- name: concat
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: complement
+- name: complement
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cluster
+- name: cluster
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: basecoverage
+- name: basecoverage
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: annotation_profiler
+- name: annotation_profiler
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: t_test_two_samples
+- name: t_test_two_samples
   owner: devteam
   tool_panel_section_label: Statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: plot_from_lda
+- name: plot_from_lda
   owner: devteam
   tool_panel_section_label: Statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: mine
+- name: mine
   owner: devteam
   tool_panel_section_label: Statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: lda_analysis
+- name: lda_analysis
   owner: devteam
   tool_panel_section_label: Statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: generate_pc_lda_matrix
+- name: generate_pc_lda_matrix
   owner: devteam
   tool_panel_section_label: Statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: count_gff_features
+- name: count_gff_features
   owner: devteam
   tool_panel_section_label: Statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: correlation
+- name: correlation
   owner: devteam
   tool_panel_section_label: Statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_nucleotide_color_plot
+- name: fasta_nucleotide_color_plot
   owner: iuc
   tool_panel_section_label: Graph/Display Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: jbrowse
+- name: jbrowse
   owner: iuc
   tool_panel_section_label: Graph/Display Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: ucsc_custom_track
+- name: ucsc_custom_track
   owner: devteam
   tool_panel_section_label: Graph/Display Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: scatterplot
+- name: scatterplot
   owner: devteam
   tool_panel_section_label: Graph/Display Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: histogram
+- name: histogram
   owner: devteam
   tool_panel_section_label: Graph/Display Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gmaj
+- name: gmaj
   owner: devteam
   tool_panel_section_label: Graph/Display Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: xy_plot
+- name: xy_plot
   owner: devteam
   tool_panel_section_label: Graph/Display Data
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: featurecounter
+- name: featurecounter
   owner: devteam
   tool_panel_section_label: Regional Variation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: indels_3way
+- name: indels_3way
   owner: devteam
   tool_panel_section_label: Regional Variation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: draw_stacked_barplots
+- name: draw_stacked_barplots
   owner: devteam
   tool_panel_section_label: Regional Variation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: delete_overlapping_indels
+- name: delete_overlapping_indels
   owner: devteam
   tool_panel_section_label: Regional Variation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: compute_motifs_frequency
+- name: compute_motifs_frequency
   owner: devteam
   tool_panel_section_label: Regional Variation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: compute_motif_frequencies_for_all_motifs
+- name: compute_motif_frequencies_for_all_motifs
   owner: devteam
   tool_panel_section_label: Regional Variation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: categorize_elements_satisfying_criteria
+- name: categorize_elements_satisfying_criteria
   owner: devteam
   tool_panel_section_label: Regional Variation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: best_regression_subsets
+- name: best_regression_subsets
   owner: devteam
-  tool_panel_section_label: Multiple regression
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: principal_component_analysis
+  tool_panel_section_id: statistics
+- name: principal_component_analysis
   owner: devteam
-  tool_panel_section_label: Multivariate Analysis
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kernel_principal_component_analysis
+  tool_panel_section_id: statistics
+- name: kernel_principal_component_analysis
   owner: devteam
-  tool_panel_section_label: Multivariate Analysis
+  tool_panel_section_id: statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kernel_canonical_correlation_analysis
+- name: kernel_canonical_correlation_analysis
   owner: devteam
-  tool_panel_section_label: Multivariate Analysis
+  tool_panel_section_id: statistics
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: canonical_correlation_analysis
+- name: canonical_correlation_analysis
   owner: devteam
-  tool_panel_section_label: Multivariate Analysis
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: mutate_snp_codon
+  tool_panel_section_id: statistics
+- name: mutate_snp_codon
   owner: devteam
   tool_panel_section_label: Evolution
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: meme_meme
+- name: meme_meme
   owner: iuc
   tool_panel_section_label: Motif Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: meme_fimo
+- name: meme_fimo
   owner: iuc
   tool_panel_section_label: Motif Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: weblogo3
+- name: weblogo3
   owner: devteam
   tool_panel_section_label: Motif Tools
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: clustalw
+- name: clustalw
   owner: devteam
   tool_panel_section_label: Multiple Alignments
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vegan_diversity
+- name: vegan_diversity
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vegan_fisher_alpha
+- name: vegan_fisher_alpha
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vegan_rarefaction
+- name: vegan_rarefaction
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vsearch
+- name: vsearch
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_filter_abundance
+- name: khmer_filter_abundance
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_filter_below_abundance_cutoff
+- name: khmer_filter_below_abundance_cutoff
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_extract_partitions
+- name: khmer_extract_partitions
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_abundance_distribution
+- name: khmer_abundance_distribution
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_count_median
+- name: khmer_count_median
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_partition
+- name: khmer_partition
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_normalize_by_median
+- name: khmer_normalize_by_median
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: khmer_abundance_distribution_single
+- name: khmer_abundance_distribution_single
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: t2t_report
+- name: t2t_report
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: t2ps
+- name: t2ps
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: poisson2test
+- name: poisson2test
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: lca_wrapper
+- name: lca_wrapper
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gi2taxonomy
+- name: gi2taxonomy
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: find_diag_hits
+- name: find_diag_hits
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_merge_files_and_filter_unique_sequences
+- name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sickle
+- name: sickle
   owner: iuc
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_paired_end_interlacer
+- name: fastq_paired_end_interlacer
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_paired_end_joiner
+- name: fastq_paired_end_joiner
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_compute_length
+- name: fasta_compute_length
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: pear
+- name: pear
   owner: iuc
-  tool_panel_section_label: FASTA/FASTQ manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_artifacts_filter
+  tool_panel_section_id: fasta_fastq_manipulation
+- name: fastx_artifacts_filter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_barcode_splitter
+- name: fastx_barcode_splitter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_clipper
+- name: fastx_clipper
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_nucleotides_distribution
+- name: fastx_nucleotides_distribution
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_filter_by_length
+- name: fasta_filter_by_length
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_concatenate_by_species
+  tool_panel_section_id: fasta_fastq_manipulation
+- name: fasta_concatenate_by_species
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_collapser
+  tool_panel_section_id: fasta_fastq_manipulation
+- name: fastx_collapser
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_nucleotide_changer
+- name: fasta_nucleotide_changer
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fasta_formatter
+  tool_panel_section_id: fasta_fastq_manipulation
+- name: fasta_formatter
   owner: devteam
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_id: fasta_fastq_manipulation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastqc
+- name: fastqc
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_paired_end_joiner
+- name: fastq_paired_end_joiner
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: short_reads_trim_seq
+- name: short_reads_trim_seq
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: short_reads_figure_score
+- name: short_reads_figure_score
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: tabular_to_fastq
+- name: tabular_to_fastq
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_trimmer_by_quality
+- name: fastq_trimmer_by_quality
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_trimmer
+- name: fastq_trimmer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_to_tabular
+- name: fastq_to_tabular
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_stats
+- name: fastq_stats
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_paired_end_splitter
+- name: fastq_paired_end_splitter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_paired_end_interlacer
+- name: fastq_paired_end_interlacer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_paired_end_deinterlacer
+- name: fastq_paired_end_deinterlacer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_masker_by_quality
+- name: fastq_masker_by_quality
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_manipulation
+- name: fastq_manipulation
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_groomer
+- name: fastq_groomer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_filter
+- name: fastq_filter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_combiner
+- name: fastq_combiner
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_trimmer
+- name: fastx_trimmer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_reverse_complement
+- name: fastx_reverse_complement
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_renamer
+- name: fastx_renamer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastx_quality_statistics
+- name: fastx_quality_statistics
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_quality_filter
+- name: fastq_quality_filter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_quality_converter
+- name: fastq_quality_converter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: fastq_quality_boxplot
+- name: fastq_quality_boxplot
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: rnaspades
+- name: rnaspades
   owner: iuc
   tool_panel_section_label: 'NGS: Assembly'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: tophat2
+- name: tophat2
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bowtie2
+- name: bowtie2
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: rgrnastar
+- name: rgrnastar
   owner: iuc
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: hisat2
+- name: hisat2
   owner: iuc
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bowtie_wrappers
+- name: bowtie_wrappers
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bowtie_color_wrappers
+- name: bowtie_color_wrappers
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bwa_mem
+- name: bwa_mem
   owner: crs4
   tool_panel_section_label: 'NGS: Mapping'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bwa_wrappers
+- name: bwa_wrappers
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: megablast_xml_parser
+- name: megablast_xml_parser
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: megablast_wrapper
+- name: megablast_wrapper
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: lastz_paired_reads
+- name: lastz_paired_reads
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: lastz
+- name: lastz
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sailfish
+- name: sailfish
   owner: bgruening
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: deseq2
+- name: deseq2
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: salmon
+- name: salmon
   owner: bgruening
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: featurecounts
+- name: featurecounts
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: transdecoder
+- name: transdecoder
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: trinity
+- name: trinity
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: tophat_fusion_post
+- name: tophat_fusion_post
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: stringtie
+- name: stringtie
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: dexseq
+- name: dexseq
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cuffdiff
+- name: cuffdiff
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cummerbund_to_tabular
+- name: cummerbund_to_tabular
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cummerbund
+- name: cummerbund
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cuffmerge
+- name: cuffmerge
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cuffquant
+- name: cuffquant
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cuffnorm
+- name: cuffnorm
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cuffcompare
+- name: cuffcompare
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cufflinks
+- name: cufflinks
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: filter_transcripts_via_tracking
+- name: filter_transcripts_via_tracking
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: express
+- name: express
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cufflinks
+- name: cufflinks
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: cuffcompare
+- name: cuffcompare
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
   
@@ -1040,787 +588,436 @@ tools:
 - name: macs
   owner: devteam
   tool_panel_section_label: 'NGS: Peak Calling'
+
+- name: sicer
+  owner: devteam
+  tool_panel_section_label: 'NGS: Peak Calling'
   
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sicer
-  owner: devteam
-  tool_panel_section_label: 'NGS: Peak Calling'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: ccat
+- name: ccat
   owner: devteam
   tool_panel_section_label: 'NGS: Peak Calling'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bwameth
+- name: bwameth
   owner: iuc
   tool_panel_section_label: DNA methylation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcf_filter
+- name: vcf_filter
   owner: devteam
   tool_panel_section_label: DNA methylation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: varscan_version_2
+- name: varscan_version_2
   owner: devteam
-  tool_panel_section_label: 'SNP/WGA: Statistical Models'
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: freebayes
+- name: freebayes
+  owner: devteam
+  tool_panel_section_id: ngs:_variant_calling
+
+- name: vcf2pgsnp
   owner: devteam
   tool_panel_section_label: Phenotype Association
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcf2pgsnp
+- name: snpfreq
   owner: devteam
   tool_panel_section_label: Phenotype Association
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: snpfreq
+- name: hgv_hilbertvis
   owner: devteam
   tool_panel_section_label: Phenotype Association
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: hgv_hilbertvis
+- name: hgv_fundo
   owner: devteam
   tool_panel_section_label: Phenotype Association
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: hgv_fundo
+- name: divide_pg_snp
   owner: devteam
   tool_panel_section_label: Phenotype Association
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: divide_pg_snp
+- name: ctd_batch
   owner: devteam
   tool_panel_section_label: Phenotype Association
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: ctd_batch
-  owner: devteam
-  tool_panel_section_label: Phenotype Association
-
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: goseq
+- name: goseq
   owner: iuc
   tool_panel_section_label: Annotation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kobas
+- name: kobas
   owner: iuc
   tool_panel_section_label: Annotation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: prokka
+- name: prokka
   owner: crs4
   tool_panel_section_label: Annotation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: snpsift_genesets
+- name: snpsift_genesets
+  owner: iuc
+  tool_panel_section_id: ngs:_variant_calling
+
+- name: transtermhp
   owner: iuc
   tool_panel_section_label: Annotation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: transtermhp
+- name: hmmer3
   owner: iuc
   tool_panel_section_label: Annotation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: hmmer3
+- name: snpsift_dbnsfp
   owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
+- name: snpsift
+  owner: iuc
+  tool_panel_section_id: ngs:_variant_calling
+- name: snpsift_dbnsfp_generic
+  owner: iuc
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: snpsift_dbnsfp
+- name: snpeff
   owner: iuc
-  tool_panel_section_label: Annotation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: snpsift
-  owner: iuc
-  tool_panel_section_label: Annotation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: snpsift_dbnsfp_generic
-  owner: iuc
-  tool_panel_section_label: Annotation
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: snpeff
-  owner: iuc
-  tool_panel_section_label: Annotation
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: snpeff
-  owner: iuc
-  tool_panel_section_label: Annotation
-
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: dgidb_annotator
+- name: dgidb_annotator
   owner: devteam
   tool_panel_section_label: Annotation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: dgidb_annotator
+- name: dgidb_annotator
   owner: devteam
   tool_panel_section_label: Annotation
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bedtools
+- name: bedtools
   owner: iuc
   tool_panel_section_label: BED tools
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bedtools
+- name: bedtools
   owner: iuc
   tool_panel_section_label: BED tools
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: picard
+- name: picard
   owner: devteam
-  tool_panel_section_label: 'NGS: Picard'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: picard
-  owner: devteam
-  tool_panel_section_label: 'NGS: Picard'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: emboss_5
+  tool_panel_section_id: 'picard'
+- name: emboss_5
   owner: devteam
   tool_panel_section_label: EMBOSS Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kraken_taxonomy_report
+- name: kraken_taxonomy_report
   owner: iuc
   tool_panel_section_label: NCBI Blast
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: ncbi_blast_plus
+- name: ncbi_blast_plus
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kraken2tax
+- name: kraken2tax
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kraken
+- name: kraken
   owner: devteam
   tool_panel_section_label: NCBI Blast
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kraken_report
+- name: kraken_report
   owner: devteam
   tool_panel_section_label: NCBI Blast
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: taxonomy_krona_chart
+- name: taxonomy_krona_chart
   owner: crs4
   tool_panel_section_label: NCBI Blast
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kraken_filter
+- name: kraken_filter
   owner: devteam
   tool_panel_section_label: NCBI Blast
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: kraken_translate
+- name: kraken_translate
   owner: devteam
   tool_panel_section_label: NCBI Blast
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bamleftalign
+- name: bamleftalign
   owner: devteam
-  tool_panel_section_label: 'NGS: Indel Analysis'
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfcheck
+- name: vcfcheck
   owner: devteam
-  tool_panel_section_label: VCF Tools
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfaddinfo
+- name: vcfaddinfo
   owner: devteam
-  tool_panel_section_label: VCF Tools
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcf2tsv
+- name: vcf2tsv
   owner: devteam
-  tool_panel_section_label: VCF Tools
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfleftalign
+- name: vcfleftalign
   owner: devteam
-  tool_panel_section_label: VCF Tools
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfcombine
+- name: vcfcombine
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfprimers
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfprimers
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfsort
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfsort
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfhethom
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfhethom
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfrandomsample
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfrandomsample
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfbedintersect
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfbedintersect
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfgenotypes
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfgenotypes
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcffixup
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcffixup
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcffilter
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcffilter
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfgeno2haplo
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfgeno2haplo
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfallelicprimitives
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfallelicprimitives
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfbreakcreatemulti
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfbreakcreatemulti
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfvcfintersect
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfvcfintersect
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfannotate
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfannotate
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfcommonsamples
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfcommonsamples
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfflatten
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfflatten
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfdistance
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfdistance
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfannotategenotypes
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfannotategenotypes
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcfselectsamples
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcfselectsamples
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bcftools_call
+  tool_panel_section_id: ngs:_variant_calling
+- name: bcftools_call
   owner: iuc
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcftools_merge
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcftools_merge
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcftools_isec
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcftools_isec
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vt_variant_tools
+  tool_panel_section_id: ngs:_variant_calling
+- name: vt_variant_tools
   owner: iuc
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bcftools
+  tool_panel_section_id: ngs:_variant_calling
+- name: bcftools
   owner: iuc
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcftools_compare
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcftools_compare
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcftools_annotate
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcftools_annotate
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcftools_slice
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcftools_slice
   owner: devteam
-  tool_panel_section_label: VCF Tools
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: vcftools_subset
+  tool_panel_section_id: ngs:_variant_calling
+- name: vcftools_subset
   owner: devteam
-  tool_panel_section_label: VCF Tools
+  tool_panel_section_id: ngs:_variant_calling
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gatk2
+- name: gatk
   owner: iuc
-  tool_panel_section_label: 'NGS: GATK Tools'
+  tool_panel_section_id: gatk
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: tag_pileup_frequency
+- name: tag_pileup_frequency
   owner: iuc
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sam_to_bam
+- name: sam_to_bam
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: pileup_interval
+- name: pileup_interval
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bamtools
+- name: bamtools
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bamtools_split
+- name: bamtools_split
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: ngsutils_bam_filter
+- name: ngsutils_bam_filter
   owner: iuc
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bamtools_filter
+- name: bamtools_filter
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sam_merge
+- name: sam_merge
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_bedcov
+- name: samtools_bedcov
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_sort
+- name: samtools_sort
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_rmdup
+- name: samtools_rmdup
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_idxstats
+- name: samtools_idxstats
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_slice_bam
+- name: samtools_slice_bam
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_mpileup
+- name: samtools_mpileup
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_calmd
+- name: samtools_calmd
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_flagstat
+- name: samtools_flagstat
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_reheader
+- name: samtools_reheader
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_split
+- name: samtools_split
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_stats
+- name: samtools_stats
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: bam_to_sam
+- name: bam_to_sam
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_sort
+- name: samtools_sort
   owner: iuc
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sam_pileup
+- name: sam_pileup
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtool_filter2
+- name: samtool_filter2
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: samtools_phase
+- name: samtools_phase
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sam_bitwise_flag_filter
+- name: sam_bitwise_flag_filter
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: sam2interval
+- name: sam2interval
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: pileup_parser
+- name: pileup_parser
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_db_info
+- name: gemini_db_info
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_windower
+- name: gemini_windower
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_burden
+- name: gemini_burden
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_gene_wise
+- name: gemini_gene_wise
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_stats
+- name: gemini_stats
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_mendel_errors
+- name: gemini_mendel_errors
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_amend
+- name: gemini_amend
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_pathways
+- name: gemini_pathways
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_dump
+- name: gemini_dump
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_region
+- name: gemini_region
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_actionable_mutations
+- name: gemini_actionable_mutations
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_lof_sieve
+- name: gemini_lof_sieve
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_query
+- name: gemini_query
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_fusions
+  tool_panel_section_id: 'gemini'
+- name: gemini_fusions
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
-- install_repository_dependencies: true
-  install_resolver_dependencies: true
-  install_tool_dependencies: false
-  name: gemini_load
+  tool_panel_section_id: 'gemini'
+- name: gemini_load
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_de_novo
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_annotate
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_recessive_and_dominant
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_roh
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_set_somatic
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_qc
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_comp_hets
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
+  tool_panel_section_id: 'gemini'
 
 - name: gemini_interactions
   owner: iuc
-  tool_panel_section_label: 'NGS: GEMINI'
-
-- name: dwt_var_perfeature
-  owner: devteam
-  tool_panel_section_label: Wavelet Analysis
+  tool_panel_section_id: 'gemini'
 
 - name: stacks_sstacks
   owner: iuc
