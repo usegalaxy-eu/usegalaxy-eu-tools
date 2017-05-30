@@ -8,17 +8,22 @@ tools:
 - name: dwt_var_perfeature
   owner: devteam
   tool_panel_section_id: statistics
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: suite_qiime
+  owner: iuc
+  tool_panel_section_label: "Qiime"
+
+- name: suite_mothur
+  owner: iuc
+  tool_panel_section_label: "Mothur"
 
 - name: bedtools
   owner: iuc
   tool_panel_section_label: "BED tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: mlocarna
   owner: rnateam
   tool_panel_section_label: "NGS: RNA Analysis"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: rcas
   owner: rnateam
@@ -27,26 +32,23 @@ tools:
 - name: paralyzer
   owner: rnateam
   tool_panel_section_label: "NGS: RNA Analysis"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: suite_deeptools
   owner: bgruening
   tool_panel_section_label: "deepTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: ebi_search_rest_results
   owner: iuc
   tool_panel_section_label: "Get Data"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: ebi_metagenomics_run_downloader
   owner: iuc      
   tool_panel_section_label: "Get Data" 
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
-
 - name: transformation
   owner: ethevenot
   tool_panel_section_label: Statistics
-  tool_shed_url: toolshed.g2.bx.psu.edu
-
 
 - name: anova
   owner: lecorguille
