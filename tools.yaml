@@ -304,11 +304,11 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqtofasta
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_fasta
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: length_and_gc_content
   owner: iuc
@@ -644,19 +644,19 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_artifacts_filter
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: quality_control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_barcode_splitter
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_clipper
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_nucleotides_distribution
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: quality_control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_filter_by_length
   owner: devteam
@@ -668,7 +668,7 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_collapser
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fasta_nucleotide_changer
   owner: devteam
@@ -680,111 +680,111 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trim_galore
   owner: bgruening
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: quality_control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trimmomatic
   owner: pjbriggs
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: cutadapt
   owner: lparsons
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_paired_end_joiner
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: short_reads_trim_seq
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: short_reads_figure_score
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: quality_control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: tabular_to_fastq
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer_by_quality
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_trimmer
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_to_tabular
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_stats
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: quality_control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_paired_end_splitter
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_paired_end_interlacer
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_paired_end_deinterlacer
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_masker_by_quality
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_manipulation
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_groomer
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_filter
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_combiner
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_trimmer
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_reverse_complement
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_renamer
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastx_quality_statistics
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: quality_control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_quality_filter
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_quality_converter
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: fasta_fastq_manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: fastq_quality_boxplot
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_id: quality_control
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: mira_assembler
   owner: peterjc
