@@ -633,11 +633,11 @@ tools:
 
 - name: varscan_version_2
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: freebayes
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: vcf2pgsnp
   owner: devteam
@@ -676,7 +676,7 @@ tools:
 
 - name: snpsift_genesets
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: transtermhp
   owner: iuc
@@ -688,17 +688,17 @@ tools:
 
 - name: snpsift_dbnsfp
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: snpsift
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: snpsift_dbnsfp_generic
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: snpeff
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: dgidb_annotator
   owner: devteam
@@ -753,108 +753,108 @@ tools:
 
 - name: bamleftalign
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: vcfcheck
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: vcfaddinfo
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: vcf2tsv
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: vcfleftalign
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: vcfcombine
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfprimers
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfsort
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfhethom
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfrandomsample
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfbedintersect
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfgenotypes
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcffixup
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcffilter
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfgeno2haplo
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfallelicprimitives
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfbreakcreatemulti
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfvcfintersect
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfannotate
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfcommonsamples
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfflatten
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfdistance
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfannotategenotypes
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcfselectsamples
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: bcftools_call
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcftools_merge
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcftools_isec
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vt_variant_tools
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: bcftools
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcftools_compare
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcftools_annotate
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcftools_slice
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 - name: vcftools_subset
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_id: variant_calling
 
 - name: tag_pileup_frequency
   owner: iuc
