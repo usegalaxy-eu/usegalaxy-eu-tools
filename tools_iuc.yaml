@@ -40,6 +40,10 @@ tools:
   owner: devteam
   tool_panel_section_label: Text Manipulation
 
+- name: jq
+  owner: iuc
+  tool_panel_section_label: Text Manipulation
+
 - name: column_maker
   owner: devteam
   tool_panel_section_label: Text Manipulation
@@ -63,24 +67,31 @@ tools:
 - name: flanking_features
   owner: devteam
   tool_panel_section_label: Text Manipulation
+
 - name: join
   owner: devteam
   tool_panel_section_label: Text Manipulation
+
 - name: cluster
   owner: devteam
   tool_panel_section_label: Text Manipulation
+
 - name: get_flanks
   owner: devteam
   tool_panel_section_label: Text Manipulation
+
 - name: complement
   owner: devteam
   tool_panel_section_label: Text Manipulation
+
 - name: subtract
   owner: devteam
   tool_panel_section_label: Text Manipulation
+
 - name: basecoverage
   owner: devteam
   tool_panel_section_label: Text Manipulation
+
 - name: subtract_query
   owner: devteam
   tool_panel_section_label: Text Manipulation
@@ -283,54 +294,71 @@ tools:
 - name: vegan_fisher_alpha
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: vegan_rarefaction
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: vsearch
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_filter_abundance
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_filter_below_abundance_cutoff
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_extract_partitions
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_abundance_distribution
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_count_median
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_partition
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_normalize_by_median
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: khmer_abundance_distribution_single
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
+
 - name: t2t_report
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
+
 - name: t2ps
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
+
 - name: poisson2test
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
+
 - name: lca_wrapper
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
+
 - name: gi2taxonomy
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
+
 - name: find_diag_hits
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
+
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   tool_panel_section_id: fasta_fastq_manipulation
@@ -679,9 +707,11 @@ tools:
 - name: snpsift_dbnsfp
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
+
 - name: snpsift
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
+
 - name: snpsift_dbnsfp_generic
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
@@ -1101,3 +1131,4 @@ tools:
 - name: 'suite_humann2'
   owner: 'iuc'
   tool_panel_section_label: Metagenomic analyses
+
