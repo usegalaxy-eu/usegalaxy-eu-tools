@@ -20,6 +20,10 @@ tools:
   owner: mmonsoor
   tool_panel_section_label: Metabolomics
 
+- name: profia
+  owner: ethevenot
+  tool_panel_section_label: Metabolomics
+
 - name: xcms_fillpeaks
   owner: lecorguille
   tool_panel_section_label: Metabolomics
@@ -36,9 +40,12 @@ tools:
   owner: melpetera
   tool_panel_section_label: Metabolomics
 
-
 - name: xcms_summary
   owner: lecorguille
+  tool_panel_section_label: Metabolomics
+
+- name: w4mclassfilter
+  owner: eschen42
   tool_panel_section_label: Metabolomics
 
 - name: camera_combinexsannos
@@ -53,8 +60,40 @@ tools:
   owner: ethevenot
   tool_panel_section_label: Metabolomics
 
+- name: hmdb_ms_search
+  owner: fgiacomoni
+  tool_panel_section_label: Metabolomics
+
+- name: univariate
+  owner: ethevenot
+  tool_panel_section_label: Metabolomics
+
+- name: lcmsmatching
+  owner: prog
+  tool_panel_section_label: Metabolomics
+
+- name: biosigner
+  owner: ethevenot
+  tool_panel_section_label: Metabolomics
+
+- name: multivariate
+  owner: ethevenot
+  tool_panel_section_label: Metabolomics
+
 - name: metams_rungc
   owner: yguitton
+  tool_panel_section_label: Metabolomics
+
+- name: withinvariation
+  owner: yguitton
+  tool_panel_section_label: Metabolomics
+
+- name: nmr_preprocessing
+  owner: marie-tremblay-metatoul
+  tool_panel_section_label: Metabolomics
+
+- name: nmr_alignment
+  owner: marie-tremblay-metatoul
   tool_panel_section_label: Metabolomics
 
 - name: nmr_bucketing
@@ -64,6 +103,18 @@ tools:
 
 - name: nmr_normalization
   owner: marie-tremblay-metatoul
+  tool_panel_section_label: Metabolomics
+
+- name: normalization
+  owner: marie-tremblay-metatoul
+  tool_panel_section_label: Metabolomics
+
+- name: transformation
+  owner: ethevenot
+  tool_panel_section_label: Metabolomics
+
+- name: golm_ws_lib_search
+  owner: fgiacomoni
   tool_panel_section_label: Metabolomics
 
 - name: checkformat
