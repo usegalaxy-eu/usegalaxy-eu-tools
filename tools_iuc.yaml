@@ -521,15 +521,19 @@ tools:
 - name: bwa_wrappers
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
+
 - name: megablast_xml_parser
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
+
 - name: megablast_wrapper
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
+
 - name: lastz_paired_reads
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
+
 - name: lastz
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
@@ -539,6 +543,10 @@ tools:
   tool_panel_section_label: 'NGS: RNA Analysis'
 
 - name: deseq2
+  owner: iuc
+  tool_panel_section_label: 'NGS: RNA Analysis'
+
+- name: kallisto_quant
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
 
@@ -1128,6 +1136,9 @@ tools:
 - name: data_manager_qiime_database_downloader
   owner: iuc
 
+- name: data_manager_kallisto_index_builder
+  owner: iuc
+
 - name: 'suite_metaphlan2'
   owner: 'iuc'
   tool_panel_section_label: Metagenomic analyses
@@ -1136,3 +1147,16 @@ tools:
   owner: 'iuc'
   tool_panel_section_label: Metagenomic analyses
 
+## IWtomic - Interval-Wise Testing for Omics Data
+
+- name: iwtomics_loadandplot
+  owner: iuc
+  tool_panel_section_label: Statistics
+
+- name: iwtomics_testandplot
+  owner: iuc
+  tool_panel_section_label: Statistics
+
+- name: iwtomics_plotwithscale
+  owner: iuc
+  tool_panel_section_label: Statistics
