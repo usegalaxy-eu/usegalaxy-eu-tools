@@ -2,7 +2,8 @@ galaxy_instance: http://galaxy.uni-freiburg.de
 install_resolver_dependencies: True
 install_tool_dependencies: False
 tools:
-- changeset_revision: cd253831a014
+- changeset_revision:
+    - cd253831a014
   name: metilene
   owner: rnateam
   tool_panel_section_label: "Epigenetics"
@@ -11,17 +12,19 @@ tools:
   owner: bgruening
   tool_panel_section_label: "Mapping"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-- changeset_revision: a6ea26c1f225
+- changeset_revision:
+    - a6ea26c1f225
   name: bwameth
   owner: iuc
   tool_panel_section_label: "Mapping"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-- changeset_revision: ccc755bdf11d
+- changeset_revision:
+    - ccc755bdf11d
   name: pileometh
   owner: bgruening
   tool_panel_section_label: "Calling"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-  
+
 - name: suite_hicup
   owner: bgruening
   tool_panel_section_label: "Epigenetics"
@@ -29,7 +32,8 @@ tools:
 - name: suite_hicexplorer
   owner: bgruening
   tool_panel_section_label: Epigenetics
-- changeset_revision: 4a978cf8cf92
+- changeset_revision:
+    - 4a978cf8cf92
   name: hifive
   owner: sauria
   tool_panel_section_label: "Epigenetics"

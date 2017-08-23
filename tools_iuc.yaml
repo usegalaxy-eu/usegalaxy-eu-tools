@@ -3,7 +3,8 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- changeset_revision: b8348686a0b9
+- changeset_revision:
+    - b8348686a0b9
   name: bedtools
   owner: iuc
   tool_panel_section_label: BED tools
@@ -34,15 +35,18 @@ tools:
 - name: circos
   owner: iuc
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: 42d5e40fcd0b
+- changeset_revision:
+    - 42d5e40fcd0b
   name: ebi_search_rest_results
   owner: iuc
   tool_panel_section_label: Get Data
-- changeset_revision: e2e9fae080ad
+- changeset_revision:
+    - e2e9fae080ad
   name: ebi_metagenomics_run_downloader
   owner: iuc
   tool_panel_section_label: Get Data
-- changeset_revision: 626658afe4cb
+- changeset_revision:
+    - 626658afe4cb
   name: column_maker
   owner: devteam
   tool_panel_section_label: Text Manipulation
@@ -52,1205 +56,1504 @@ tools:
 - name: reshape2_cast
   owner: iuc
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 26b7446bb17e
+- changeset_revision:
+    - 26b7446bb17e
   name: sra_tools
   owner: iuc
   tool_panel_section_label: Get Data
-- changeset_revision: 02befcb391f5
+- changeset_revision:
+    - 02befcb391f5
   name: prinseq
   owner: iuc
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 745871c0b055
+- changeset_revision:
+    - 745871c0b055
   name: add_value
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: cb1c59d69557
+- changeset_revision:
+    - cb1c59d69557
   name: dwt_var_perfeature
   owner: devteam
   tool_panel_section_id: statistics
-- changeset_revision: f2aac0c5c60d
+- changeset_revision:
+    - f2aac0c5c60d
   name: merge_cols
   owner: devteam
   tool_panel_section_label: Text Manipulation
 - name: jq
   owner: iuc
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 626658afe4cb
+- changeset_revision:
+    - 626658afe4cb
   name: column_maker
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: bc9c66c1e9c9
+- changeset_revision:
+    - bc9c66c1e9c9
   name: coverage
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 82fa5062d611
+- changeset_revision:
+    - 82fa5062d611
   name: tables_arithmetic_operations
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 0926c81f382c
+- changeset_revision:
+    - 0926c81f382c
   name: merge
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 8ddabc73af92
+- changeset_revision:
+    - 8ddabc73af92
   name: intersect
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 8307665c4b6c
+- changeset_revision:
+    - 8307665c4b6c
   name: flanking_features
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: ffbd1de29c28
+- changeset_revision:
+    - ffbd1de29c28
   name: join
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 765ceb06c3e2
+- changeset_revision:
+    - 765ceb06c3e2
   name: cluster
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 4cd116158aef
+- changeset_revision:
+    - 4cd116158aef
   name: get_flanks
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: e0a23ab32d7f
+- changeset_revision:
+    - e0a23ab32d7f
   name: complement
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 7a2a604ae9c8
+- changeset_revision:
+    - 7a2a604ae9c8
   name: subtract
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 0a3e3133b09d
+- changeset_revision:
+    - 0a3e3133b09d
   name: basecoverage
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 960d5d114184
+- changeset_revision:
+    - 960d5d114184
   name: subtract_query
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 549d2cb4c6f2
+- changeset_revision:
+    - 549d2cb4c6f2
   name: dna_filtering
   owner: devteam
   tool_panel_section_label: Text Manipulation
-- changeset_revision: dfde09461b1e
+- changeset_revision:
+    - dfde09461b1e
   name: collection_column_join
   owner: iuc
   tool_panel_section_label: Join, Subtract and Group
 - name: suite_datamash
   owner: iuc
   tool_panel_section_label: Join, Subtract and Group
-- changeset_revision: 7a2a604ae9c8
+- changeset_revision:
+    - 7a2a604ae9c8
   name: subtract
   owner: devteam
   tool_panel_section_label: Join, Subtract and Group
-- changeset_revision: b737f6d83f48
+- changeset_revision:
+    - b737f6d83f48
   name: bam_to_scidx
   owner: iuc
   tool_panel_section_label: Convert Formats
-- changeset_revision: 541f300f322d
+- changeset_revision:
+    - 541f300f322d
   name: resize_coordinate_window
   owner: iuc
   tool_panel_section_label: Convert Formats
-- changeset_revision: 0232f19d300f
+- changeset_revision:
+    - 0232f19d300f
   name: gffread
   owner: devteam
   tool_panel_section_label: Convert Formats
-- changeset_revision: d025a40bbff1
+- changeset_revision:
+    - d025a40bbff1
   name: ucsc_twobittofa
   owner: iuc
   tool_panel_section_label: Convert Formats
-- changeset_revision: 0b4e36026794
+- changeset_revision:
+    - 0b4e36026794
   name: tabular_to_fasta
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 7e801ab2b70e
+- changeset_revision:
+    - 7e801ab2b70e
   name: fasta_to_tabular
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 723b5b38d88a
+- changeset_revision:
+    - 723b5b38d88a
   name: fastqtofasta
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 186b8d913e6c
+- changeset_revision:
+    - 186b8d913e6c
   name: fastq_to_fasta
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 2ca1baabdae0
+- changeset_revision:
+    - 2ca1baabdae0
   name: length_and_gc_content
   owner: iuc
   tool_panel_section_label: Extract Features
-- changeset_revision: c8467246b57e
+- changeset_revision:
+    - c8467246b57e
   name: extract_genomic_dna
   owner: iuc
   tool_panel_section_id: ngs:_other_tools
-- changeset_revision: d491589307e7
+- changeset_revision:
+    - d491589307e7
   name: concat
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
-- changeset_revision: e0a23ab32d7f
+- changeset_revision:
+    - e0a23ab32d7f
   name: complement
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
-- changeset_revision: 765ceb06c3e2
+- changeset_revision:
+    - 765ceb06c3e2
   name: cluster
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
-- changeset_revision: 0a3e3133b09d
+- changeset_revision:
+    - 0a3e3133b09d
   name: basecoverage
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
-- changeset_revision: 3b33da018e74
+- changeset_revision:
+    - 3b33da018e74
   name: annotation_profiler
   owner: devteam
   tool_panel_section_label: Operate on Genomic Intervals
-- changeset_revision: c2ffc9885b5a
+- changeset_revision:
+    - c2ffc9885b5a
   name: t_test_two_samples
   owner: devteam
   tool_panel_section_label: Statistics
-- changeset_revision: 08affc5d2aef
+- changeset_revision:
+    - 08affc5d2aef
   name: plot_from_lda
   owner: devteam
   tool_panel_section_label: Statistics
-- changeset_revision: 5e2c89443c44
+- changeset_revision:
+    - 5e2c89443c44
   name: mine
   owner: devteam
   tool_panel_section_label: Statistics
-- changeset_revision: f0b6217f4a0c
+- changeset_revision:
+    - f0b6217f4a0c
   name: lda_analysis
   owner: devteam
   tool_panel_section_label: Statistics
-- changeset_revision: 04cdbd00dcec
+- changeset_revision:
+    - 04cdbd00dcec
   name: generate_pc_lda_matrix
   owner: devteam
   tool_panel_section_label: Statistics
-- changeset_revision: fabda887a71f
+- changeset_revision:
+    - fabda887a71f
   name: count_gff_features
   owner: devteam
   tool_panel_section_label: Statistics
-- changeset_revision: 24e01abf9e34
+- changeset_revision:
+    - 24e01abf9e34
   name: correlation
   owner: devteam
   tool_panel_section_label: Statistics
-- changeset_revision: 0fba45ac3987
+- changeset_revision:
+    - 0fba45ac3987
   name: fasta_nucleotide_color_plot
   owner: iuc
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: 69c5e9c0add0
+- changeset_revision:
+    - 69c5e9c0add0
   name: jbrowse
   owner: iuc
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: 760f588e8a26
+- changeset_revision:
+    - 760f588e8a26
   name: ucsc_custom_track
   owner: devteam
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: efda9a4a50e7
+- changeset_revision:
+    - efda9a4a50e7
   name: scatterplot
   owner: devteam
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: cdb9e89e2970
+- changeset_revision:
+    - cdb9e89e2970
   name: histogram
   owner: devteam
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: 2cd5ee197ec7
+- changeset_revision:
+    - 2cd5ee197ec7
   name: gmaj
   owner: devteam
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: 319fa5a9fc1b
+- changeset_revision:
+    - 319fa5a9fc1b
   name: xy_plot
   owner: devteam
   tool_panel_section_label: Graph/Display Data
-- changeset_revision: ac6218e2b686
+- changeset_revision:
+    - ac6218e2b686
   name: featurecounter
   owner: devteam
   tool_panel_section_label: Regional Variation
-- changeset_revision: 5ad24b81dd10
+- changeset_revision:
+    - 5ad24b81dd10
   name: indels_3way
   owner: devteam
   tool_panel_section_label: Regional Variation
-- changeset_revision: e997b710e38a
+- changeset_revision:
+    - e997b710e38a
   name: draw_stacked_barplots
   owner: devteam
   tool_panel_section_label: Regional Variation
-- changeset_revision: f16000dc644b
+- changeset_revision:
+    - f16000dc644b
   name: delete_overlapping_indels
   owner: devteam
   tool_panel_section_label: Regional Variation
-- changeset_revision: 1f8ee7f9701b
+- changeset_revision:
+    - 1f8ee7f9701b
   name: compute_motifs_frequency
   owner: devteam
   tool_panel_section_label: Regional Variation
-- changeset_revision: 5319efa51514
+- changeset_revision:
+    - 5319efa51514
   name: compute_motif_frequencies_for_all_motifs
   owner: devteam
   tool_panel_section_label: Regional Variation
-- changeset_revision: 586c1f0e1515
+- changeset_revision:
+    - 586c1f0e1515
   name: categorize_elements_satisfying_criteria
   owner: devteam
   tool_panel_section_label: Regional Variation
-- changeset_revision: 4f33ec73e445
+- changeset_revision:
+    - 4f33ec73e445
   name: best_regression_subsets
   owner: devteam
   tool_panel_section_id: statistics
-- changeset_revision: f568051cdf2e
+- changeset_revision:
+    - f568051cdf2e
   name: principal_component_analysis
   owner: devteam
   tool_panel_section_id: statistics
-- changeset_revision: 3d58aa83e4a3
+- changeset_revision:
+    - 3d58aa83e4a3
   name: kernel_principal_component_analysis
   owner: devteam
   tool_panel_section_id: statistics
-- changeset_revision: 5ce5a2adb875
+- changeset_revision:
+    - 5ce5a2adb875
   name: kernel_canonical_correlation_analysis
   owner: devteam
   tool_panel_section_id: statistics
-- changeset_revision: 9bc0c48a027f
+- changeset_revision:
+    - 9bc0c48a027f
   name: canonical_correlation_analysis
   owner: devteam
   tool_panel_section_id: statistics
-- changeset_revision: 8f0af7251167
+- changeset_revision:
+    - 8f0af7251167
   name: mutate_snp_codon
   owner: devteam
   tool_panel_section_label: Evolution
-- changeset_revision: e8b209806a20
+- changeset_revision:
+    - e8b209806a20
   name: meme_meme
   owner: iuc
   tool_panel_section_label: Motif Tools
-- changeset_revision: 40b8472e91ca
+- changeset_revision:
+    - 40b8472e91ca
   name: meme_fimo
   owner: iuc
   tool_panel_section_label: Motif Tools
-- changeset_revision: c1a9e644d580
+- changeset_revision:
+    - c1a9e644d580
   name: weblogo3
   owner: devteam
   tool_panel_section_label: Motif Tools
-- changeset_revision: d6694932c5e0
+- changeset_revision:
+    - d6694932c5e0
   name: clustalw
   owner: devteam
   tool_panel_section_label: Multiple Alignments
-- changeset_revision: db56c8e79b1e
+- changeset_revision:
+    - db56c8e79b1e
   name: vegan_diversity
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: d6b92ca3a9a1
+- changeset_revision:
+    - d6b92ca3a9a1
   name: vegan_fisher_alpha
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: dd2705a31239
+- changeset_revision:
+    - dd2705a31239
   name: vegan_rarefaction
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 576963db5f1b
+- changeset_revision:
+    - 576963db5f1b
   name: vsearch
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: a4970dfc331c
+- changeset_revision:
+    - a4970dfc331c
   name: khmer_filter_abundance
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: d9cc87dfec6e
+- changeset_revision:
+    - d9cc87dfec6e
   name: khmer_filter_below_abundance_cutoff
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 7d8138b4a593
+- changeset_revision:
+    - 7d8138b4a593
   name: khmer_extract_partitions
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: a02efb62565b
+- changeset_revision:
+    - a02efb62565b
   name: khmer_abundance_distribution
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 5efc5f21d0c1
+- changeset_revision:
+    - 5efc5f21d0c1
   name: khmer_count_median
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: c393687bd857
+- changeset_revision:
+    - c393687bd857
   name: khmer_partition
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: f0290a079720
+- changeset_revision:
+    - f0290a079720
   name: khmer_normalize_by_median
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 792d520ba676
+- changeset_revision:
+    - 792d520ba676
   name: khmer_abundance_distribution_single
   owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 592acb9505fc
+- changeset_revision:
+    - 592acb9505fc
   name: t2t_report
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 4d9910e996f7
+- changeset_revision:
+    - 4d9910e996f7
   name: t2ps
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 5ff18ec88181
+- changeset_revision:
+    - 5ff18ec88181
   name: poisson2test
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 33e8ed5a4601
+- changeset_revision:
+    - 33e8ed5a4601
   name: lca_wrapper
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 7b1b03c4465d
+- changeset_revision:
+    - 7b1b03c4465d
   name: gi2taxonomy
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: acf51ff24c7d
+- changeset_revision:
+    - acf51ff24c7d
   name: find_diag_hits
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
-- changeset_revision: 9ad0d336e5ed
+- changeset_revision:
+    - 9ad0d336e5ed
   name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 3905ccd5c631
+- changeset_revision:
+    - 3905ccd5c631
   name: sickle
   owner: iuc
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: ec6ddf449651
+- changeset_revision:
+    - ec6ddf449651
   name: fastq_paired_end_interlacer
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 6a7f5da7c76d
+- changeset_revision:
+    - 6a7f5da7c76d
   name: fastq_paired_end_joiner
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: de2db1bdfbf8
+- changeset_revision:
+    - de2db1bdfbf8
   name: fasta_compute_length
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 240f611a46f3
+- changeset_revision:
+    - 240f611a46f3
   name: pear
   owner: iuc
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 09070cacefd8
+- changeset_revision:
+    - 09070cacefd8
   name: fastx_artifacts_filter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 8abdedf55101
+- changeset_revision:
+    - 8abdedf55101
   name: fastx_barcode_splitter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: bdf1ce174e39
+- changeset_revision:
+    - bdf1ce174e39
   name: fastx_clipper
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 63d6e2daad48
+- changeset_revision:
+    - 63d6e2daad48
   name: fastx_nucleotides_distribution
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: c8cd0a03db49
+- changeset_revision:
+    - c8cd0a03db49
   name: fasta_filter_by_length
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 717aee069681
+- changeset_revision:
+    - 717aee069681
   name: fasta_concatenate_by_species
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 421f0af4ee95
+- changeset_revision:
+    - 421f0af4ee95
   name: fastx_collapser
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: f81d4362b6c1
+- changeset_revision:
+    - f81d4362b6c1
   name: fasta_nucleotide_changer
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 9457a20156db
+- changeset_revision:
+    - 9457a20156db
   name: fasta_formatter
   owner: devteam
   tool_panel_section_id: fasta_fastq_manipulation
-- changeset_revision: 484e86282f4b
+- changeset_revision:
+    - 484e86282f4b
   name: fastqc
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 6a7f5da7c76d
+- changeset_revision:
+    - 6a7f5da7c76d
   name: fastq_paired_end_joiner
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 25e6fe525306
+- changeset_revision:
+    - 25e6fe525306
   name: short_reads_trim_seq
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: b52b9c7aabd9
+- changeset_revision:
+    - b52b9c7aabd9
   name: short_reads_figure_score
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 92034dcbb40a
+- changeset_revision:
+    - 92034dcbb40a
   name: tabular_to_fastq
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 25c24379693a
+- changeset_revision:
+    - 25c24379693a
   name: fastq_trimmer_by_quality
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: e0cfb5a703ce
+- changeset_revision:
+    - e0cfb5a703ce
   name: fastq_trimmer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 7da7ddea4425
+- changeset_revision:
+    - 7da7ddea4425
   name: fastq_to_tabular
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: daaf552153fe
+- changeset_revision:
+    - daaf552153fe
   name: fastq_stats
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: c80bce242eec
+- changeset_revision:
+    - c80bce242eec
   name: fastq_paired_end_splitter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: ec6ddf449651
+- changeset_revision:
+    - ec6ddf449651
   name: fastq_paired_end_interlacer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: f0949bc49926
+- changeset_revision:
+    - f0949bc49926
   name: fastq_paired_end_deinterlacer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 9d234265981e
+- changeset_revision:
+    - 9d234265981e
   name: fastq_masker_by_quality
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: bb07615a5b6a
+- changeset_revision:
+    - bb07615a5b6a
   name: fastq_manipulation
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: e4d28c94242d
+- changeset_revision:
+    - e4d28c94242d
   name: fastq_groomer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: b957f55f3955
+- changeset_revision:
+    - b957f55f3955
   name: fastq_filter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: e711d52c7509
+- changeset_revision:
+    - e711d52c7509
   name: fastq_combiner
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 377ac2829eac
+- changeset_revision:
+    - 377ac2829eac
   name: fastx_trimmer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: e246088b6e34
+- changeset_revision:
+    - e246088b6e34
   name: fastx_reverse_complement
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 02f8a17a4ebd
+- changeset_revision:
+    - 02f8a17a4ebd
   name: fastx_renamer
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 7306ec78632a
+- changeset_revision:
+    - 7306ec78632a
   name: fastx_quality_statistics
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: e41385662e5e
+- changeset_revision:
+    - e41385662e5e
   name: fastq_quality_filter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 74db4cffab1f
+- changeset_revision:
+    - 74db4cffab1f
   name: fastq_quality_converter
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: f95284aa2946
+- changeset_revision:
+    - f95284aa2946
   name: fastq_quality_boxplot
   owner: devteam
   tool_panel_section_label: 'NGS: QC and manipulation'
-- changeset_revision: 9e58ff014088
+- changeset_revision:
+    - 9e58ff014088
   name: rnaspades
   owner: iuc
   tool_panel_section_label: 'NGS: Assembly'
-- changeset_revision: e9c1cdb9f9dc
+- changeset_revision:
+    - e9c1cdb9f9dc
   name: unicycler
   owner: iuc
   tool_panel_section_label: 'NGS: Assembly'
-- changeset_revision: 16c4255042be
+- changeset_revision:
+    - 16c4255042be
   name: tophat2
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: a9d4f71dbfb0
+- changeset_revision:
+    - a9d4f71dbfb0
   name: bowtie2
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: 318b2a9d54dd
+- changeset_revision:
+    - 318b2a9d54dd
   name: rgrnastar
   owner: iuc
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: 2ec097c8e843
+- changeset_revision:
+    - 2ec097c8e843
   name: hisat2
   owner: iuc
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: b46e7d48076a
+- changeset_revision:
+    - b46e7d48076a
   name: bowtie_wrappers
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: a3825c73805c
+- changeset_revision:
+    - a3825c73805c
   name: bowtie_color_wrappers
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: ebb02ba5987c
+- changeset_revision:
+    - ebb02ba5987c
   name: bwa_mem
   owner: crs4
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: b4427dbb6ced
+- changeset_revision:
+    - b4427dbb6ced
   name: bwa_wrappers
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: 03ca082aeb2e
+- changeset_revision:
+    - 03ca082aeb2e
   name: megablast_xml_parser
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: fb2e0e1dac89
+- changeset_revision:
+    - fb2e0e1dac89
   name: megablast_wrapper
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: ecc974513241
+- changeset_revision:
+    - ecc974513241
   name: lastz_paired_reads
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: 60afcc2c1d05
+- changeset_revision:
+    - 60afcc2c1d05
   name: lastz
   owner: devteam
   tool_panel_section_label: 'NGS: Mapping'
-- changeset_revision: a8f343909c17
+- changeset_revision:
+    - a8f343909c17
   name: sailfish
   owner: bgruening
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 6f91b8ce6e07
+- changeset_revision:
+    - 6f91b8ce6e07
   name: deseq2
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: bdebdea5f6a7
+- changeset_revision:
+    - bdebdea5f6a7
   name: limma_voom
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 5a60f347f566
+- changeset_revision:
+    - 5a60f347f566
   name: salmon
   owner: bgruening
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: de2c5e5a206c
+- changeset_revision:
+    - de2c5e5a206c
   name: featurecounts
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 0db979fead3a
+- changeset_revision:
+    - 0db979fead3a
   name: transdecoder
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: f7564c3f9dc0
+- changeset_revision:
+    - f7564c3f9dc0
   name: trinity
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: f83394a2c2da
+- changeset_revision:
+    - f83394a2c2da
   name: tophat_fusion_post
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 6e45b443ef1f
+- changeset_revision:
+    - 6e45b443ef1f
   name: stringtie
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: f1c406f9554c
+- changeset_revision:
+    - f1c406f9554c
   name: dexseq
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: d3ae7d9c2202
+- changeset_revision:
+    - d3ae7d9c2202
   name: cuffdiff
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 0761bbc0a4e7
+- changeset_revision:
+    - 0761bbc0a4e7
   name: cummerbund_to_tabular
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 78fcfc04fcfe
+- changeset_revision:
+    - 78fcfc04fcfe
   name: cummerbund
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: cf747d1bd79a
+- changeset_revision:
+    - cf747d1bd79a
   name: cuffmerge
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 6dc45faebc1d
+- changeset_revision:
+    - 6dc45faebc1d
   name: cuffquant
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: f5b2ee725d34
+- changeset_revision:
+    - f5b2ee725d34
   name: cuffnorm
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: e66b9b5b8580
+- changeset_revision:
+    - e66b9b5b8580
   name: cuffcompare
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: e04dbae2abe0
+- changeset_revision:
+    - e04dbae2abe0
   name: cufflinks
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 45f89dcf0b4c
+- changeset_revision:
+    - 45f89dcf0b4c
   name: filter_transcripts_via_tracking
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 7b0708761d05
+- changeset_revision:
+    - 7b0708761d05
   name: express
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: e04dbae2abe0
+- changeset_revision:
+    - e04dbae2abe0
   name: cufflinks
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: e66b9b5b8580
+- changeset_revision:
+    - e66b9b5b8580
   name: cuffcompare
   owner: devteam
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: db04ba860dab
+- changeset_revision:
+    - db04ba860dab
   name: masigpro
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- changeset_revision: 6d4babad010f
+- changeset_revision:
+    - 6d4babad010f
   name: macs2
   owner: iuc
   tool_panel_section_label: 'NGS: Peak Calling'
-- changeset_revision: f6319b0b4391
+- changeset_revision:
+    - f6319b0b4391
   name: macs
   owner: devteam
   tool_panel_section_label: 'NGS: Peak Calling'
-- changeset_revision: 4a14714649b4
+- changeset_revision:
+    - 4a14714649b4
   name: sicer
   owner: devteam
   tool_panel_section_label: 'NGS: Peak Calling'
-- changeset_revision: 201d8e7dfc43
+- changeset_revision:
+    - 201d8e7dfc43
   name: ccat
   owner: devteam
   tool_panel_section_label: 'NGS: Peak Calling'
-- changeset_revision: a6ea26c1f225
+- changeset_revision:
+    - a6ea26c1f225
   name: bwameth
   owner: iuc
   tool_panel_section_label: DNA methylation
-- changeset_revision: da1a6f33b504
+- changeset_revision:
+    - da1a6f33b504
   name: vcf_filter
   owner: devteam
   tool_panel_section_label: DNA methylation
-- changeset_revision: bc1e0cd41241
+- changeset_revision:
+    - bc1e0cd41241
   name: varscan_version_2
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: da6e10dee68b
+- changeset_revision:
+    - da6e10dee68b
   name: freebayes
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 5fca46616675
+- changeset_revision:
+    - 5fca46616675
   name: vcf2pgsnp
   owner: devteam
   tool_panel_section_label: Phenotype Association
-- changeset_revision: 5c3ac057608b
+- changeset_revision:
+    - 5c3ac057608b
   name: snpfreq
   owner: devteam
   tool_panel_section_label: Phenotype Association
-- changeset_revision: e1a9ad05dced
+- changeset_revision:
+    - e1a9ad05dced
   name: hgv_hilbertvis
   owner: devteam
   tool_panel_section_label: Phenotype Association
-- changeset_revision: ca3fcd18dc3e
+- changeset_revision:
+    - ca3fcd18dc3e
   name: hgv_fundo
   owner: devteam
   tool_panel_section_label: Phenotype Association
-- changeset_revision: f74fdfc17143
+- changeset_revision:
+    - f74fdfc17143
   name: divide_pg_snp
   owner: devteam
   tool_panel_section_label: Phenotype Association
-- changeset_revision: 4a32700dcaa2
+- changeset_revision:
+    - 4a32700dcaa2
   name: ctd_batch
   owner: devteam
   tool_panel_section_label: Phenotype Association
-- changeset_revision: ade933eff007
+- changeset_revision:
+    - ade933eff007
   name: goseq
   owner: iuc
   tool_panel_section_label: Annotation
-- changeset_revision: 83b998fa34ea
+- changeset_revision:
+    - 83b998fa34ea
   name: kobas
   owner: iuc
   tool_panel_section_label: Annotation
-- changeset_revision: a17498c603ec
+- changeset_revision:
+    - a17498c603ec
   name: prokka
   owner: crs4
   tool_panel_section_label: Annotation
-- changeset_revision: e02e9af2743f
+- changeset_revision:
+    - e02e9af2743f
   name: roary
   owner: iuc
   tool_panel_section_label: Annotation
-- changeset_revision: 637ec5d5368c
+- changeset_revision:
+    - 637ec5d5368c
   name: gubbins
   owner: iuc
   tool_panel_section_label: Annotation
-- changeset_revision: ea2e7d299365
+- changeset_revision:
+    - ea2e7d299365
   name: snpsift_genesets
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 1d8ad7599f02
+- changeset_revision:
+    - 1d8ad7599f02
   name: transtermhp
   owner: iuc
   tool_panel_section_label: Annotation
-- changeset_revision: 54b6b4d0613a
+- changeset_revision:
+    - 54b6b4d0613a
   name: hmmer3
   owner: iuc
   tool_panel_section_label: Annotation
-- changeset_revision: 563d1bdb7b80
+- changeset_revision:
+    - 563d1bdb7b80
   name: snpsift_dbnsfp
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: bf8c1526871b
+- changeset_revision:
+    - bf8c1526871b
   name: snpsift
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: a7cbaf3beadd
+- changeset_revision:
+    - a7cbaf3beadd
   name: snpsift_dbnsfp_generic
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: e09ce114d240
+- changeset_revision:
+    - e09ce114d240
   name: snpeff
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: c5bb987015c5
+- changeset_revision:
+    - c5bb987015c5
   name: dgidb_annotator
   owner: devteam
   tool_panel_section_label: Annotation
-- changeset_revision: c5bb987015c5
+- changeset_revision:
+    - c5bb987015c5
   name: dgidb_annotator
   owner: devteam
   tool_panel_section_label: Annotation
-- changeset_revision: b8348686a0b9
+- changeset_revision:
+    - b8348686a0b9
   name: bedtools
   owner: iuc
   tool_panel_section_label: BED tools
-- changeset_revision: b8348686a0b9
+- changeset_revision:
+    - b8348686a0b9
   name: bedtools
   owner: iuc
   tool_panel_section_label: BED tools
-- changeset_revision: ab1f60c26526
+- changeset_revision:
+    - ab1f60c26526
   name: picard
   owner: devteam
   tool_panel_section_id: picard
-- changeset_revision: 1b6538ec8b56
+- changeset_revision:
+    - 1b6538ec8b56
   name: emboss_5
   owner: devteam
   tool_panel_section_label: EMBOSS Tools
-- changeset_revision: b97694b21bc3
+- changeset_revision:
+    - b97694b21bc3
   name: kraken_taxonomy_report
   owner: iuc
   tool_panel_section_label: NCBI Blast
-- changeset_revision: 7f3c448e119b
+- changeset_revision:
+    - 7f3c448e119b
   name: ncbi_blast_plus
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- changeset_revision: f03c7ba8d8bc
+- changeset_revision:
+    - f03c7ba8d8bc
   name: kraken2tax
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- changeset_revision: b2392a9dfb01
+- changeset_revision:
+    - b2392a9dfb01
   name: kraken
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- changeset_revision: 9ae975c30dde
+- changeset_revision:
+    - 9ae975c30dde
   name: kraken_report
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- changeset_revision: 020b3087d0b7
+- changeset_revision:
+    - 020b3087d0b7
   name: taxonomy_krona_chart
   owner: crs4
   tool_panel_section_label: NCBI Blast
-- changeset_revision: fe94f318048c
+- changeset_revision:
+    - fe94f318048c
   name: kraken_filter
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- changeset_revision: b9971bca4b01
+- changeset_revision:
+    - b9971bca4b01
   name: kraken_translate
   owner: devteam
   tool_panel_section_label: NCBI Blast
-- changeset_revision: e65540a91b87
+- changeset_revision:
+    - e65540a91b87
   name: bamleftalign
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 40a339e4692e
+- changeset_revision:
+    - 40a339e4692e
   name: vcfcheck
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 196ed76d2619
+- changeset_revision:
+    - 196ed76d2619
   name: vcfaddinfo
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 8fb92fcd20ae
+- changeset_revision:
+    - 8fb92fcd20ae
   name: vcf2tsv
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 8e02d116b0f9
+- changeset_revision:
+    - 8e02d116b0f9
   name: vcfleftalign
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 18f9f2624bd6
+- changeset_revision:
+    - 18f9f2624bd6
   name: vcfcombine
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: bc5949d36b34
+- changeset_revision:
+    - bc5949d36b34
   name: vcfprimers
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: a8c5440d69e3
+- changeset_revision:
+    - a8c5440d69e3
   name: vcfsort
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: c9bb9f126282
+- changeset_revision:
+    - c9bb9f126282
   name: vcfhethom
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: c035d96c5cbe
+- changeset_revision:
+    - c035d96c5cbe
   name: vcfrandomsample
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 31a86dbe17c0
+- changeset_revision:
+    - 31a86dbe17c0
   name: vcfbedintersect
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 82635a34fbe6
+- changeset_revision:
+    - 82635a34fbe6
   name: vcfgenotypes
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 9d7e64e4b9fc
+- changeset_revision:
+    - 9d7e64e4b9fc
   name: vcffixup
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 952059348a30
+- changeset_revision:
+    - 952059348a30
   name: vcffilter
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 5bd9783e982a
+- changeset_revision:
+    - 5bd9783e982a
   name: vcfgeno2haplo
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 0a69cff7946e
+- changeset_revision:
+    - 0a69cff7946e
   name: vcfallelicprimitives
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 3aa04b92957f
+- changeset_revision:
+    - 3aa04b92957f
   name: vcfbreakcreatemulti
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 1bc1b2b8b341
+- changeset_revision:
+    - 1bc1b2b8b341
   name: vcfvcfintersect
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: d64204113938
+- changeset_revision:
+    - d64204113938
   name: vcfannotate
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: d58a307b9cef
+- changeset_revision:
+    - d58a307b9cef
   name: vcfcommonsamples
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 1336a70f5c02
+- changeset_revision:
+    - 1336a70f5c02
   name: vcfflatten
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 48e458c721b3
+- changeset_revision:
+    - 48e458c721b3
   name: vcfdistance
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: c96a7e49150a
+- changeset_revision:
+    - c96a7e49150a
   name: vcfannotategenotypes
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 43cecdfe7107
+- changeset_revision:
+    - 43cecdfe7107
   name: vcfselectsamples
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 3296c3680d96
+- changeset_revision:
+    - 3296c3680d96
   name: bcftools_call
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 71e19ddf52f5
+- changeset_revision:
+    - 71e19ddf52f5
   name: vcftools_merge
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: aa232e38338f
+- changeset_revision:
+    - aa232e38338f
   name: vcftools_isec
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 6e073fc99d9c
+- changeset_revision:
+    - 6e073fc99d9c
   name: vt_variant_tools
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: e5e78d1e09a6
+- changeset_revision:
+    - e5e78d1e09a6
   name: bcftools
   owner: iuc
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: ad50c257e758
+- changeset_revision:
+    - ad50c257e758
   name: vcftools_compare
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 57a6550df582
+- changeset_revision:
+    - 57a6550df582
   name: vcftools_annotate
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 1363e5d4a8b8
+- changeset_revision:
+    - 1363e5d4a8b8
   name: vcftools_slice
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: 23436d1d0fa1
+- changeset_revision:
+    - 23436d1d0fa1
   name: vcftools_subset
   owner: devteam
   tool_panel_section_id: ngs:_variant_calling
-- changeset_revision: b7d7ae3963aa
+- changeset_revision:
+    - b7d7ae3963aa
   name: tag_pileup_frequency
   owner: iuc
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: f7a0d41036c7
+- changeset_revision:
+    - f7a0d41036c7
   name: sam_to_bam
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: ef11139d4545
+- changeset_revision:
+    - ef11139d4545
   name: pileup_interval
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 04866f817daa
+- changeset_revision:
+    - 04866f817daa
   name: bamtools
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: e2c1b62e1db1
+- changeset_revision:
+    - e2c1b62e1db1
   name: bamtools_split
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 7a68005de299
+- changeset_revision:
+    - 7a68005de299
   name: ngsutils_bam_filter
   owner: iuc
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: bd735cae4ce6
+- changeset_revision:
+    - bd735cae4ce6
   name: bamtools_filter
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 1977f1637890
+- changeset_revision:
+    - 1977f1637890
   name: sam_merge
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 12749212f61b
+- changeset_revision:
+    - 12749212f61b
   name: samtools_bedcov
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: cab3f8d35989
+- changeset_revision:
+    - cab3f8d35989
   name: samtools_sort
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 9129584416e2
+- changeset_revision:
+    - 9129584416e2
   name: samtools_rmdup
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 88b8c2916784
+- changeset_revision:
+    - 88b8c2916784
   name: samtools_idxstats
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: a4a10c7924d1
+- changeset_revision:
+    - a4a10c7924d1
   name: samtools_slice_bam
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 583abf29fc8e
+- changeset_revision:
+    - 583abf29fc8e
   name: samtools_mpileup
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 33208952b99d
+- changeset_revision:
+    - 33208952b99d
   name: samtools_calmd
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: cc61ade70eb8
+- changeset_revision:
+    - cc61ade70eb8
   name: samtools_flagstat
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: db000c6007a0
+- changeset_revision:
+    - db000c6007a0
   name: samtools_reheader
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: b7f7826ef1cd
+- changeset_revision:
+    - b7f7826ef1cd
   name: samtools_split
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 24c5d43cb545
+- changeset_revision:
+    - 24c5d43cb545
   name: samtools_stats
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: f57df915aa10
+- changeset_revision:
+    - f57df915aa10
   name: bam_to_sam
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 38ea74bd4054
+- changeset_revision:
+    - 38ea74bd4054
   name: samtools_sort
   owner: iuc
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 890d97772e2a
+- changeset_revision:
+    - 890d97772e2a
   name: sam_pileup
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: b7aa423007bf
+- changeset_revision:
+    - b7aa423007bf
   name: samtool_filter2
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 6166013090c0
+- changeset_revision:
+    - 6166013090c0
   name: samtools_phase
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 0b2424a404d9
+- changeset_revision:
+    - 0b2424a404d9
   name: sam_bitwise_flag_filter
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 8c737b8ddc45
+- changeset_revision:
+    - 8c737b8ddc45
   name: sam2interval
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: 85bedbea8a12
+- changeset_revision:
+    - 85bedbea8a12
   name: pileup_parser
   owner: devteam
   tool_panel_section_label: 'NGS: SAM Tools'
-- changeset_revision: b597e1cd14b1
+- changeset_revision:
+    - b597e1cd14b1
   name: gemini_db_info
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 9b462be5a604
+- changeset_revision:
+    - 9b462be5a604
   name: gemini_windower
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 95a149a9a75d
+- changeset_revision:
+    - 95a149a9a75d
   name: gemini_burden
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 99d6e7b1b7f1
+- changeset_revision:
+    - 99d6e7b1b7f1
   name: gemini_gene_wise
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: ac761838cdaf
+- changeset_revision:
+    - ac761838cdaf
   name: gemini_stats
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: dd963f00f297
+- changeset_revision:
+    - dd963f00f297
   name: gemini_mendel_errors
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 2281967e7bc3
+- changeset_revision:
+    - 2281967e7bc3
   name: gemini_amend
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 66bc68095012
+- changeset_revision:
+    - 66bc68095012
   name: gemini_pathways
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 187b57debbba
+- changeset_revision:
+    - 187b57debbba
   name: gemini_dump
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: bb4a5f979906
+- changeset_revision:
+    - bb4a5f979906
   name: gemini_region
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 9f0f5e984ae3
+- changeset_revision:
+    - 9f0f5e984ae3
   name: gemini_actionable_mutations
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: be7ac09bc2fa
+- changeset_revision:
+    - be7ac09bc2fa
   name: gemini_lof_sieve
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: ab195e756e5e
+- changeset_revision:
+    - ab195e756e5e
   name: gemini_query
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 8295781a3c27
+- changeset_revision:
+    - 8295781a3c27
   name: gemini_fusions
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 269c40fdcccb
+- changeset_revision:
+    - 269c40fdcccb
   name: gemini_load
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 8850488002dc
+- changeset_revision:
+    - 8850488002dc
   name: gemini_de_novo
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 3859552a63d8
+- changeset_revision:
+    - 3859552a63d8
   name: gemini_annotate
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 69ec574f6f41
+- changeset_revision:
+    - 69ec574f6f41
   name: gemini_recessive_and_dominant
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 91b4db3e6df4
+- changeset_revision:
+    - 91b4db3e6df4
   name: gemini_roh
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 230c975e7759
+- changeset_revision:
+    - 230c975e7759
   name: gemini_set_somatic
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: a875f940d8fd
+- changeset_revision:
+    - a875f940d8fd
   name: gemini_qc
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 6192f3a2f96f
+- changeset_revision:
+    - 6192f3a2f96f
   name: gemini_comp_hets
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 527c8e4a356f
+- changeset_revision:
+    - 527c8e4a356f
   name: gemini_interactions
   owner: iuc
   tool_panel_section_id: gemini
-- changeset_revision: 95e37a28704b
+- changeset_revision:
+    - 95e37a28704b
   name: stacks_sstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 5af94af9ec8f
+- changeset_revision:
+    - 5af94af9ec8f
   name: stacks_genotypes
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 2b1dd7ab69f7
+- changeset_revision:
+    - 2b1dd7ab69f7
   name: stacks_denovomap
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: e5c97f09fe06
+- changeset_revision:
+    - e5c97f09fe06
   name: stacks_ustacks
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: b08cd32d03ad
+- changeset_revision:
+    - b08cd32d03ad
   name: stacks_assembleperead
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 57910d476be9
+- changeset_revision:
+    - 57910d476be9
   name: stacks_procrad
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 4ee074ca88fb
+- changeset_revision:
+    - 4ee074ca88fb
   name: stacks_refmap
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: ff1f282d731e
+- changeset_revision:
+    - ff1f282d731e
   name: stacks_cstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 2360d8cf42f7
+- changeset_revision:
+    - 2360d8cf42f7
   name: stacks_rxstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 7ebc7d229deb
+- changeset_revision:
+    - 7ebc7d229deb
   name: stacks_pstacks
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 45db1ba16163
+- changeset_revision:
+    - 45db1ba16163
   name: stacks_populations
   owner: iuc
   tool_panel_section_label: RAD-seq
-- changeset_revision: 6ae9724caf4d
+- changeset_revision:
+    - 6ae9724caf4d
   name: column_order_header_sort
   owner: iuc
   tool_panel_section_label: Text Manipulation
-- changeset_revision: 372967836e98
+- changeset_revision:
+    - 372967836e98
   name: column_remove_by_header
   owner: iuc
   tool_panel_section_label: Text Manipulation
-- changeset_revision: d16f7cc26516
+- changeset_revision:
+    - d16f7cc26516
   name: metagenomeseq_normalization
   owner: iuc
   tool_panel_section_label: Text Manipulation
-- changeset_revision: e54940ea270c
+- changeset_revision:
+    - e54940ea270c
   name: gff3_rebase
   owner: iuc
   tool_panel_section_label: Text Manipulation
