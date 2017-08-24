@@ -3,8 +3,6 @@ install_resolver_dependencies: True
 install_tool_dependencies: False
 tools:
 - name: metilene
-  changeset_revision:
-    - cd253831a014
   owner: rnateam
   tool_panel_section_label: "Epigenetics"
 
@@ -12,29 +10,26 @@ tools:
   owner: bgruening
   tool_panel_section_label: "Mapping"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: bwameth
-  changeset_revision:
-    - a6ea26c1f225
   owner: iuc
   tool_panel_section_label: "Mapping"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: pileometh
-  changeset_revision:
-    - ccc755bdf11d
   owner: bgruening
   tool_panel_section_label: "Calling"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-
+  
 - name: suite_hicup
   owner: bgruening
   tool_panel_section_label: "Epigenetics"
 
 - name: suite_hicexplorer
   owner: bgruening
-  tool_panel_section_label: Epigenetics
+  tool_panel_section_label: "Epigenetics"
+
 - name: hifive
-  changeset_revision:
-    - 4a978cf8cf92
   owner: sauria
   tool_panel_section_label: "Epigenetics"
 
