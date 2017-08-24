@@ -24,6 +24,13 @@ pipeline {
         sh '''
         python scripts/update-trusted.py
         '''
+
+
+        sshagent(['501e17be-bcda-4159-8cc3-eae39c4797f5']) {
+            sh 'git add *.lock'
+            sh 'git commit -m "Updated trusted tools"'
+            sh 'git push origin master'
+        }
       }
     }
   }
