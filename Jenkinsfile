@@ -17,11 +17,9 @@ pipeline {
 
     stage('Updated Trusted Repositories') {
       steps {
-        if(fileExists("requirements.txt")){
-          sh '''
-          pip install --user -U requirements.txt
-          '''
-        }
+        sh '''
+        pip install --user -U requirements.txt
+        '''
 
         sh '''
         python scripts/update-trusted.py
