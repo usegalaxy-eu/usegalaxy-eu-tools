@@ -2,39 +2,39 @@ galaxy_instance: http://galaxy.uni-freiburg.de
 install_resolver_dependencies: True
 install_tool_dependencies: False
 tools:
-- changeset_revision:
+- name: graphclust_cmfinder
+  changeset_revision:
     - 7e7f43d58e13
-  name: graphclust_cmfinder
   owner: rnateam
   tool_panel_section_label: GraphClust
-- changeset_revision:
+- name: graphclust_postprocessing
+  changeset_revision:
     - e080ebe95476
-  name: graphclust_postprocessing
   owner: rnateam
   tool_panel_section_label: GraphClust
-- changeset_revision:
+- name: graphclust_fasta_to_gspan
+  changeset_revision:
     - fcb1bb6dc0f9
-  name: graphclust_fasta_to_gspan
   owner: rnateam
   tool_panel_section_label: GraphClust
-- changeset_revision:
+- name: graphclust_mlocarna
+  changeset_revision:
     - 98e9bc1fb249
-  name: graphclust_mlocarna
   owner: rnateam
   tool_panel_section_label: GraphClust
-- changeset_revision:
+- name: graphclust_nspdk
+  changeset_revision:
     - 2aaf391798a3
-  name: graphclust_nspdk
   owner: rnateam
   tool_panel_section_label: GraphClust
-- changeset_revision:
+- name: graphclust_prepocessing_for_mlocarna
+  changeset_revision:
     - 550ddcf5384c
-  name: graphclust_prepocessing_for_mlocarna
   owner: rnateam
   tool_panel_section_label: GraphClust
-- changeset_revision:
+- name: graphclust_preprocessing
+  changeset_revision:
     - 16bcaef3dc1e
-  name: graphclust_preprocessing
   owner: rnateam
   tool_panel_section_label: "GraphClust"
 

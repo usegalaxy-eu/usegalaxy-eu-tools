@@ -3,29 +3,29 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- changeset_revision:
+- name: uniprotxml_downloader
+  changeset_revision:
     - e1abc9a35c64
-  name: uniprotxml_downloader
   owner: galaxyp
   tool_panel_section_label: Get Data
-- changeset_revision:
+- name: dbbuilder
+  changeset_revision:
     - a85fbebe8b2f
-  name: dbbuilder
   owner: galaxyp
   tool_panel_section_label: Get Data
-- changeset_revision:
+- name: unipept
+  changeset_revision:
     - 34758ab8aaa4
-  name: unipept
   owner: galaxyp
   tool_panel_section_label: Get Data
-- changeset_revision:
+- name: map_peptides_to_bed
+  changeset_revision:
     - 78b8213e122d
-  name: map_peptides_to_bed
   owner: galaxyp
   tool_panel_section_label: Convert Formats
-- changeset_revision:
+- name: idconvert
+  changeset_revision:
     - 9e6e840d6b52
-  name: idconvert
   owner: galaxyp
   tool_panel_section_label: Convert Formats
 
@@ -33,42 +33,42 @@ tools:
   owner: galaxyp
   tool_panel_section_label: Convert Formats
 
-- changeset_revision:
+- name: msconvert_nix
+  changeset_revision:
     - c9b96a178758
-  name: msconvert_nix
   owner: galaxyp
   tool_panel_section_label: Convert Formats
-- changeset_revision:
+- name: msconvert
+  changeset_revision:
     - dd4ba10d0c45
-  name: msconvert
   owner: galaxyp
   tool_panel_section_label: Convert Formats
-- changeset_revision:
+- name: fasta_merge_files_and_filter_unique_sequences
+  changeset_revision:
     - 9ad0d336e5ed
-  name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   tool_panel_section_label: FASTA/FASTQ manipulation
-- changeset_revision:
+- name: peptideshaker
+  changeset_revision:
     - 78fad25eff17
-  name: peptideshaker
   owner: galaxyp
   tool_panel_section_label: Proteomics
-- changeset_revision:
+- name: hardklor
+  changeset_revision:
     - 539f157784e7
-  name: hardklor
   owner: galaxyp
   tool_panel_section_label: Proteomics
-- changeset_revision:
+- name: morpheus
+  changeset_revision:
     - e0104a9f20f0
-  name: morpheus
   owner: galaxyp
   tool_panel_section_label: Proteomics
 - name: msgfplus
   owner: galaxyp
   tool_panel_section_label: Proteomics
-- changeset_revision:
+- name: decoyfasta
+  changeset_revision:
     - c15d72720643
-  name: decoyfasta
   owner: galaxyp
   tool_panel_section_label: Proteomics
 - name: suite_openms
@@ -77,13 +77,13 @@ tools:
 - name: blastxml_to_tabular_selectable
   owner: galaxyp
   tool_panel_section_label: Proteomics
-- changeset_revision:
+- name: query_tabular
+  changeset_revision:
     - 49ca06d66762
-  name: query_tabular
   owner: jjohnson
   tool_panel_section_label: Proteomics
-- changeset_revision:
+- name: sqlite_to_tabular
+  changeset_revision:
     - 123b9ca5e26a
-  name: sqlite_to_tabular
   owner: jjohnson
   tool_panel_section_label: Proteomics
