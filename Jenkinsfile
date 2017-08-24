@@ -28,6 +28,8 @@ pipeline {
 
         sshagent(['501e17be-bcda-4159-8cc3-eae39c4797f5']) {
             sh 'git add *.lock'
+            git config --global user.email "jenkins@usegalaxy.eu"
+            git config --global user.name "usegalaxy.eu jenkins bot"
             sh 'git commit -m "Updated trusted tools"'
             sh 'git push origin master'
         }
