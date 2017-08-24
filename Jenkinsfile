@@ -3,12 +3,9 @@ pipeline {
   stages {
     stage('Linting') {
       steps {
-        sh '''pip install -U pip;
-
-
-
-        pip install --user -U requirements.txt
-        '''
+        sh '''pip install --user -U requirements.txt
+       
+'''
         sh '''
         for file in *.yaml; do
             python -c 'import sys; import yaml; import json; sys.stdout.write(json.dumps(yaml.load(sys.stdin), indent=2))' < $file;
