@@ -19,12 +19,15 @@ pipeline {
     stage('Updated Trusted Repositories') {
       steps {
         sh '''
+        git checkout
+        ''' + env.BRANCH_NAME
+
+        sh '''
         pip install --user -U -r requirements.txt
         '''
         sh '''
         python scripts/update-trusted.py
         '''
-
 
         sshagent(['501e17be-bcda-4159-8cc3-eae39c4797f5']) {
             sh 'git add *.lock'
