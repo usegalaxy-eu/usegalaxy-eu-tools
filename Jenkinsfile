@@ -19,8 +19,8 @@ pipeline {
     stage('Updated Trusted Repositories') {
       steps {
         sh '''
-        git checkout
-        ''' + env.BRANCH_NAME
+        git checkout master
+        '''
 
         sh '''
         pip install --user -U -r requirements.txt
