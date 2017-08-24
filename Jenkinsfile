@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage('Linting') {
       steps {
-        sh '''pip install --user -U requirements.txt
-       
-'''
+        sh '''
+        pip install --user -U -r requirements.txt
+        '''
         sh '''
         for file in *.yaml; do
             python -c 'import sys; import yaml; import json; sys.stdout.write(json.dumps(yaml.load(sys.stdin), indent=2))' < $file;
@@ -19,7 +19,7 @@ pipeline {
     stage('Updated Trusted Repositories') {
       steps {
         sh '''
-        pip install --user -U requirements.txt
+        pip install --user -U -r requirements.txt
         '''
         sh '''
         python scripts/update-trusted.py
