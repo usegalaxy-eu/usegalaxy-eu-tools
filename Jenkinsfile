@@ -33,8 +33,8 @@ pipeline {
             sh 'git add *.lock'
             sh 'git config --global user.email "jenkins@usegalaxy.eu"'
             sh 'git config --global user.name "usegalaxy.eu jenkins bot"'
-            sh 'git commit -m "Updated trusted tools"'
-            sh 'git push origin master'
+            sh 'git commit -m "Updated trusted tools" ||  true'
+            sh 'git push origin master || true'
         }
       }
     }
