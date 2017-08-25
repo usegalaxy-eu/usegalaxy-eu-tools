@@ -47,7 +47,7 @@ pipeline {
 
         withCredentials([string(credentialsId: 'GALAXY_API_KEY', variable: 'GALAXY_API_KEY')]) {
           sh '''
-          shed-install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
+          ~/.local/bin/shed-install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
           '''
         }
       }
