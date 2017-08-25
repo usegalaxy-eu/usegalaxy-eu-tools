@@ -38,5 +38,19 @@ pipeline {
         }
       }
     }
+
+    stage('Install Tools') {
+      steps {
+        sh '''
+        pip install --user -U ephemeris
+        '''
+
+        withCredentials([string(credentialsId: 'GALAXY_API_KEY', variable: 'GALAXY_API_KEY')]) {
+          sh '''
+          shed-install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
+          '''
+        }
+      }
+    }
   }
 }
