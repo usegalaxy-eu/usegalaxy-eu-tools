@@ -1,0 +1,338 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+
+    # data_retrieval
+  - name: 'suite_ebi_tools'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+
+  - name: 'suite_enasearch'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+
+  - name: 'suite_ncbi_entrez'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+
+  - name: 'sra_tools'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+
+    # text_manipulation
+  - name: 'add_value'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'change_case'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'column_join'
+    owner: 'jjohnson'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'collection_column_join'
+    owner: 'iuc'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'column_maker'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'concatenate_multiple_datasets'
+    owner: 'mvdbeek'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'convert_characters'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'cut_columns'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'merge_cols'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'regex_find_replace'
+    owner: 'galaxyp'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'remove_beginning'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'show_beginning'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'show_tail'
+    owner: 'devteam'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'split_file_on_column'
+    owner: 'bgruening'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'unique'
+    owner: 'bgruening'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'normalize_dataset'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'extract_min_max_lines'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'text_processing'
+    owner: 'bgruening'
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: 'suite_datamash'
+    owner: 'iuc'
+    tool_panel_section_label: 'Text Manipulation'
+
+    # seq_manipulation
+  - name: 'seq_filter_by_id'
+    owner: 'peterjc'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'seq_rename'
+    owner: 'peterjc'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'seq_select_by_id'
+    owner: 'peterjc'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_to_fasta'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fasta_to_tabular'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'split_paired_reads'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'convert_extract_sequence_file'
+    owner: 'bebatut'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fasta_add_barcode'
+    owner: 'bebatut'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_combiner'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_filter'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_groomer'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_manipulation'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_masker_by_quality'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_paired_end_deinterlacer'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_paired_end_interlacer'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_paired_end_joiner'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_paired_end_splitter'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_stats'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_to_tabular'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_trimmer'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastqtofasta'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'tabular_to_fastq'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+    # bam_sam_manipulation
+  - name: 'suite_samtools_1_2'
+    owner: 'devteam'
+    tool_panel_section_label: 'SAM Tools'
+
+    # biom_manipulation
+  - name: 'suite_biom_format'
+    owner: 'iuc'
+    tool_panel_section_label: 'BIOM manipulation'
+
+    # assembly
+  - name: 'fastq_paired_end_joiner'
+    owner: 'devteam'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+  - name: 'fastq_join'
+    owner: 'lparsons'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
+    # quality_control
+  - name: 'fastqc'
+    owner: 'devteam'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'prinseq'
+    owner: 'iuc'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'trim_galore'
+    owner: 'bgruening'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'trimmomatic'
+    owner: 'pjbriggs'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'multiqc'
+    owner: 'engineson'
+    tool_panel_section_label: 'Quality Control'
+
+    # clustering
+  - name: 'cdhit'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Multiple Alignments'
+
+  - name: 'format_cd_hit_output'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Multiple Alignments'
+
+    # sorting
+  - name: 'sortmerna'
+    owner: 'rnateam'
+    tool_panel_section_label: 'Annotation'
+
+  - name: 'data_manager_sortmerna_database_downloader'
+    owner: 'rnateam'
+
+    # similarity_search
+  - name: 'ncbi_blast_plus'
+    owner: 'devteam'
+    tool_panel_section_label: 'NCBI Blast'
+
+  - name: 'diamond'
+    owner: 'bgruening'
+    tool_panel_section_label: 'NCBI Blast'
+
+    # mapping
+  - name: 'bwa'
+    owner: 'devteam'
+    tool_panel_section_label: 'Mapping'
+
+  - name: 'bowtie2'
+    owner: 'devteam'
+    tool_panel_section_label: 'Mapping'
+
+    # alignment
+  - name: 'hmmer3'
+    owner: 'iuc'
+    tool_panel_section_label: 'Annotation'
+
+    # metagenomics_manipulation
+  - name: 'vsearch'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+    # amplicon_sequence_processing
+  - name: 'suite_mothur'
+    owner: 'iuc'
+    tool_panel_section_label: 'mothur'
+
+  - name: 'suite_qiime'
+    owner: 'iuc'
+    tool_panel_section_label: 'Qiime'
+
+  - name: 'data_manager_qiime_database_downloader'
+    owner: 'iuc'
+
+    # wgs_taxonomic_assignations
+  - name: 'suite_metaphlan2'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'format_metaphlan2_output'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'suite_kraken_0_10_5'
+    owner: 'devteam'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+    # metabolism_assignation
+  - name: 'suite_humann2'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'group_humann2_uniref_abundances_to_go'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'compare_humann2_output'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'interproscan5'
+    owner: 'bgruening'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'suite_picrust'
+    owner: 'iuc'
+    tool_panel_section_label: 'Annotation'
+
+    # combination_taxo_func
+  - name: 'combine_metaphlan2_humann2'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+    # visualization
+  - name: 'export2graphlan'
+    owner: 'iuc'
+    tool_panel_section_label: 'Graph/Display Data'
+
+  - name: 'suite_graphlan'
+    owner: 'iuc'
+    tool_panel_section_label: 'Graph/Display Data'
+
+  - name: 'taxonomy_krona_chart'
+    owner: 'crs4'
+    tool_panel_section_label: 'Graph/Display Data'
