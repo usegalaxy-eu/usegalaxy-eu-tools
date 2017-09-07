@@ -5,7 +5,7 @@ install_tool_dependencies: false
 
 tools:
 
-    # data_retrieval
+  # data_retrieval
   - name: 'suite_ebi_tools'
     owner: 'iuc'
     tool_panel_section_label: 'Get Data'
@@ -22,7 +22,7 @@ tools:
     owner: 'iuc'
     tool_panel_section_label: 'Get Data'
 
-    # text_manipulation
+  # text_manipulation
   - name: 'add_value'
     owner: 'devteam'
     tool_panel_section_label: 'Text Manipulation'
@@ -95,7 +95,7 @@ tools:
     owner: 'iuc'
     tool_panel_section_label: 'Text Manipulation'
 
-    # seq_manipulation
+  # seq_manipulation
   - name: 'seq_filter_by_id'
     owner: 'peterjc'
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
@@ -184,17 +184,17 @@ tools:
     owner: 'devteam'
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
-    # bam_sam_manipulation
+  # bam_sam_manipulation
   - name: 'suite_samtools_1_2'
     owner: 'devteam'
     tool_panel_section_label: 'SAM Tools'
 
-    # biom_manipulation
+  # biom_manipulation
   - name: 'suite_biom_format'
     owner: 'iuc'
     tool_panel_section_label: 'BIOM manipulation'
 
-    # assembly
+  # assembly
   - name: 'fastq_paired_end_joiner'
     owner: 'devteam'
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
@@ -203,7 +203,7 @@ tools:
     owner: 'lparsons'
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
-    # quality_control
+  # quality_control
   - name: 'fastqc'
     owner: 'devteam'
     tool_panel_section_label: 'Quality Control'
@@ -224,7 +224,7 @@ tools:
     owner: 'engineson'
     tool_panel_section_label: 'Quality Control'
 
-    # clustering
+  # clustering
   - name: 'cdhit'
     owner: 'bebatut'
     tool_panel_section_label: 'Multiple Alignments'
@@ -233,7 +233,7 @@ tools:
     owner: 'bebatut'
     tool_panel_section_label: 'Multiple Alignments'
 
-    # sorting
+  # sorting
   - name: 'sortmerna'
     owner: 'rnateam'
     tool_panel_section_label: 'Annotation'
@@ -241,7 +241,7 @@ tools:
   - name: 'data_manager_sortmerna_database_downloader'
     owner: 'rnateam'
 
-    # similarity_search
+  # similarity_search
   - name: 'ncbi_blast_plus'
     owner: 'devteam'
     tool_panel_section_label: 'NCBI Blast'
@@ -250,7 +250,7 @@ tools:
     owner: 'bgruening'
     tool_panel_section_label: 'NCBI Blast'
 
-    # mapping
+  # mapping
   - name: 'bwa'
     owner: 'devteam'
     tool_panel_section_label: 'Mapping'
@@ -259,17 +259,17 @@ tools:
     owner: 'devteam'
     tool_panel_section_label: 'Mapping'
 
-    # alignment
+  # alignment
   - name: 'hmmer3'
     owner: 'iuc'
     tool_panel_section_label: 'Annotation'
 
-    # metagenomics_manipulation
+  # metagenomics_manipulation
   - name: 'vsearch'
     owner: 'iuc'
     tool_panel_section_label: 'Metagenomic analyses'
 
-    # amplicon_sequence_processing
+  # amplicon_sequence_processing
   - name: 'suite_mothur'
     owner: 'iuc'
     tool_panel_section_label: 'mothur'
@@ -281,7 +281,7 @@ tools:
   - name: 'data_manager_qiime_database_downloader'
     owner: 'iuc'
 
-    # wgs_taxonomic_assignations
+  # wgs_taxonomic_assignations
   - name: 'suite_metaphlan2'
     owner: 'iuc'
     tool_panel_section_label: 'Metagenomic analyses'
@@ -294,7 +294,7 @@ tools:
     owner: 'devteam'
     tool_panel_section_label: 'Metagenomic analyses'
 
-    # metabolism_assignation
+  # metabolism_assignation
   - name: 'suite_humann2'
     owner: 'iuc'
     tool_panel_section_label: 'Metagenomic analyses'
@@ -315,12 +315,12 @@ tools:
     owner: 'iuc'
     tool_panel_section_label: 'Annotation'
 
-    # combination_taxo_func
+  # combination_taxo_func
   - name: 'combine_metaphlan2_humann2'
     owner: 'bebatut'
     tool_panel_section_label: 'Metagenomic analyses'
 
-    # visualization
+  # visualization
   - name: 'export2graphlan'
     owner: 'iuc'
     tool_panel_section_label: 'Graph/Display Data'
