@@ -6,7 +6,7 @@ install_tool_dependencies: false
 tools:
   - name: dwt_var_perfeature
     owner: devteam
-    tool_panel_section_name: Statistics
+    tool_panel_section_label: Statistics
 
   - name: suite_qiime
     owner: iuc
@@ -289,11 +289,11 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: tabular_to_fasta
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fasta_to_tabular
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fastqtofasta
     owner: devteam
@@ -309,7 +309,7 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: extract_genomic_dna
     owner: iuc
-    tool_panel_section_name: "Other Tools"
+    tool_panel_section_label: "Other Tools"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: concat
     owner: devteam
@@ -441,23 +441,23 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: best_regression_subsets
     owner: devteam
-    tool_panel_section_name: Statistics
+    tool_panel_section_label: Statistics
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: principal_component_analysis
     owner: devteam
-    tool_panel_section_name: Statistics
+    tool_panel_section_label: Statistics
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: kernel_principal_component_analysis
     owner: devteam
-    tool_panel_section_name: Statistics
+    tool_panel_section_label: Statistics
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: kernel_canonical_correlation_analysis
     owner: devteam
-    tool_panel_section_name: Statistics
+    tool_panel_section_label: Statistics
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: canonical_correlation_analysis
     owner: devteam
-    tool_panel_section_name: Statistics
+    tool_panel_section_label: Statistics
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: mutate_snp_codon
     owner: devteam
@@ -577,63 +577,63 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: lighter
     owner: bgruening
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: sickle
     owner: iuc
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fasta_compute_length
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fastq_join
     owner: lparsons
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: splitfasta
     owner: rnateam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: je_clip
     owner: gbcs-embl-heidelberg
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: je_demultiplex
     owner: gbcs-embl-heidelberg
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: je_demultiplex_illu
     owner: gbcs-embl-heidelberg
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: je_markdupes
     owner: gbcs-embl-heidelberg
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: align_back_trans
     owner: peterjc
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: seq_filter_by_mapping
     owner: peterjc
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: pear
     owner: iuc
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fastx_artifacts_filter
     owner: devteam
@@ -653,11 +653,11 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fasta_filter_by_length
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fasta_concatenate_by_species
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fastx_collapser
     owner: devteam
@@ -665,11 +665,11 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fasta_nucleotide_changer
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: fasta_formatter
     owner: devteam
-    tool_panel_section_name: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: trim_galore
     owner: bgruening
@@ -1093,11 +1093,11 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: varscan_version_2
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: freebayes
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcf2pgsnp
     owner: devteam
@@ -1145,7 +1145,7 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: snpsift_genesets
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: miranda
     owner: tgac
@@ -1189,19 +1189,19 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: snpsift_dbnsfp
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: snpsift
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: snpsift_dbnsfp_generic
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: snpeff
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: tmhmm_and_signalp
     owner: peterjc
@@ -1357,7 +1357,7 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: picard
     owner: devteam
-    tool_panel_section_name: Picard
+    tool_panel_section_label: Picard
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: emboss_5
     owner: devteam
@@ -1413,143 +1413,143 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: allele_counts
     owner: nick
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: naive_variant_caller
     owner: blankenberg
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: bamleftalign
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfcheck
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfaddinfo
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcf2tsv
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfleftalign
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfcombine
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfprimers
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfsort
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfhethom
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfrandomsample
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfbedintersect
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfgenotypes
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcffixup
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcffilter
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfgeno2haplo
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfallelicprimitives
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfbreakcreatemulti
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfvcfintersect
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfannotate
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfcommonsamples
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfflatten
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfdistance
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfannotategenotypes
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcfselectsamples
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: bcftools_call
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcftools_merge
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcftools_isec
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vt_variant_tools
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: bcftools
     owner: iuc
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcftools_compare
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcftools_annotate
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcftools_slice
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: vcftools_subset
     owner: devteam
-    tool_panel_section_name: "Variant Calling"
+    tool_panel_section_label: "Variant Calling"
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: deeptools_plot_fingerprint
     owner: bgruening
@@ -1729,95 +1729,95 @@ tools:
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_db_info
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_windower
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_burden
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_gene_wise
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_stats
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_mendel_errors
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_amend
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_pathways
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_dump
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_region
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_actionable_mutations
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_lof_sieve
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_query
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_fusions
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_load
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_de_novo
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_annotate
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_recessive_and_dominant
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_roh
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_set_somatic
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_qc
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_comp_hets
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: gemini_interactions
     owner: iuc
-    tool_panel_section_name: Gemini Tools
+    tool_panel_section_label: Gemini Tools
     tool_shed_url: toolshed.g2.bx.psu.edu
   - name: genome_diversity
     owner: miller-lab
