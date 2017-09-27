@@ -187,6 +187,7 @@ tools:
 
   - name: fastqtofasta
     owner: devteam
+
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: fastq_to_fasta
@@ -437,18 +438,27 @@ tools:
   - name: pear
     owner: iuc
     tool_panel_section_id: fasta_fastq_manipulation
+
+  - name: flash
+    owner: iuc
+    tool_panel_section_id: fasta_fastq_manipulation
+
   - name: fastx_artifacts_filter
     owner: devteam
+
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    
   - name: fastx_barcode_splitter
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    
   - name: fastx_clipper
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_nucleotides_distribution
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
+
   - name: fasta_filter_by_length
     owner: devteam
     tool_panel_section_id: fasta_fastq_manipulation
@@ -467,6 +477,7 @@ tools:
 
   - name: fastqc
     owner: devteam
+
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: fastq_paired_end_joiner
@@ -695,6 +706,7 @@ tools:
   - name: ccat
     owner: devteam
     tool_panel_section_label: 'Peak Calling'
+
 
   - name: bwameth
     owner: iuc
