@@ -200,7 +200,7 @@ tools:
 
   - name: extract_genomic_dna
     owner: iuc
-    tool_panel_section_id: ngs:_other_tools
+    tool_panel_section_name: "Other Tools"
 
   - name: concat
     owner: devteam
@@ -722,11 +722,11 @@ tools:
 
   - name: varscan_version_2
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: freebayes
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: vcf2pgsnp
     owner: devteam
@@ -773,7 +773,7 @@ tools:
 
   - name: snpsift_genesets
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: transtermhp
     owner: iuc
@@ -785,19 +785,19 @@ tools:
 
   - name: snpsift_dbnsfp
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: snpsift
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: snpsift_dbnsfp_generic
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: snpeff
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: dgidb_annotator
     owner: devteam
@@ -852,108 +852,108 @@ tools:
 
   - name: bamleftalign
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: vcfcheck
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: vcfaddinfo
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: vcf2tsv
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: vcfleftalign
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: vcfcombine
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfprimers
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfsort
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfhethom
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfrandomsample
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfbedintersect
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfgenotypes
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcffixup
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcffilter
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfgeno2haplo
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfallelicprimitives
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfbreakcreatemulti
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfvcfintersect
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfannotate
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfcommonsamples
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfflatten
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfdistance
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfannotategenotypes
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcfselectsamples
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: bcftools_call
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcftools_merge
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcftools_isec
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vt_variant_tools
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: bcftools
     owner: iuc
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcftools_compare
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcftools_annotate
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcftools_slice
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
   - name: vcftools_subset
     owner: devteam
-    tool_panel_section_id: ngs:_variant_calling
+    tool_panel_section_name: "Variant Calling"
 
   - name: tag_pileup_frequency
     owner: iuc
