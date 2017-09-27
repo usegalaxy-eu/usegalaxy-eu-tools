@@ -10,11 +10,11 @@ tools:
 
   - name: kallisto_quant
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: kallisto_pseudo
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: ggplot2_violin
     owner: iuc
@@ -38,7 +38,7 @@ tools:
 
   - name: idr
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: circos
     owner: iuc
@@ -187,11 +187,11 @@ tools:
 
   - name: fastqtofasta
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: fastq_to_fasta
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: length_and_gc_content
     owner: iuc
@@ -439,16 +439,16 @@ tools:
     tool_panel_section_id: fasta_fastq_manipulation
   - name: fastx_artifacts_filter
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_barcode_splitter
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_clipper
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_nucleotides_distribution
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fasta_filter_by_length
     owner: devteam
     tool_panel_section_id: fasta_fastq_manipulation
@@ -457,7 +457,7 @@ tools:
     tool_panel_section_id: fasta_fastq_manipulation
   - name: fastx_collapser
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fasta_nucleotide_changer
     owner: devteam
     tool_panel_section_id: fasta_fastq_manipulation
@@ -467,234 +467,234 @@ tools:
 
   - name: fastqc
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: short_reads_trim_seq
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: short_reads_figure_score
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: tabular_to_fastq
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_trimmer_by_quality
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_trimmer
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_to_tabular
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_stats
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_paired_end_splitter
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_paired_end_deinterlacer
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_masker_by_quality
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_manipulation
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_groomer
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_filter
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_combiner
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_trimmer
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_reverse_complement
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_renamer
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastx_quality_statistics
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_quality_filter
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_quality_converter
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fastq_quality_boxplot
     owner: devteam
-    tool_panel_section_label: 'NGS: QC and manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
 
   - name: rnaspades
     owner: iuc
-    tool_panel_section_label: 'NGS: Assembly'
+    tool_panel_section_label: 'Assembly'
 
   - name: unicycler
     owner: iuc
-    tool_panel_section_label: 'NGS: Assembly'
+    tool_panel_section_label: 'Assembly'
 
   - name: tophat2
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
   - name: bowtie2
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
   - name: rgrnastar
     owner: iuc
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
   - name: hisat2
     owner: iuc
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
   - name: bowtie_wrappers
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
   - name: bowtie_color_wrappers
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
 
   - name: bwa_mem
     owner: crs4
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
 
   - name: bwa_wrappers
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
 
   - name: megablast_xml_parser
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
 
   - name: megablast_wrapper
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
 
   - name: lastz_paired_reads
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
 
   - name: lastz
     owner: devteam
-    tool_panel_section_label: 'NGS: Mapping'
+    tool_panel_section_label: 'Mapping'
 
   - name: sailfish
     owner: bgruening
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: deseq2
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: limma_voom
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: salmon
     owner: bgruening
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: featurecounts
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: transdecoder
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: trinity
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: tophat_fusion_post
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: stringtie
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: dexseq
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: cuffdiff
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: cummerbund_to_tabular
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
   - name: cummerbund
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: cuffmerge
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
   - name: cuffquant
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
   - name: cuffnorm
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
   - name: cuffcompare
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
   - name: cufflinks
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: filter_transcripts_via_tracking
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: express
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: cufflinks
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: cuffcompare
     owner: devteam
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: masigpro
     owner: iuc
-    tool_panel_section_label: 'NGS: RNA Analysis'
+    tool_panel_section_label: 'RNA Analysis'
 
   - name: macs2
     owner: iuc
-    tool_panel_section_label: 'NGS: Peak Calling'
+    tool_panel_section_label: 'Peak Calling'
 
   - name: macs
     owner: devteam
-    tool_panel_section_label: 'NGS: Peak Calling'
+    tool_panel_section_label: 'Peak Calling'
 
   - name: sicer
     owner: devteam
-    tool_panel_section_label: 'NGS: Peak Calling'
+    tool_panel_section_label: 'Peak Calling'
 
   - name: ccat
     owner: devteam
-    tool_panel_section_label: 'NGS: Peak Calling'
+    tool_panel_section_label: 'Peak Calling'
 
   - name: bwameth
     owner: iuc
@@ -941,98 +941,98 @@ tools:
 
   - name: tag_pileup_frequency
     owner: iuc
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: sam_to_bam
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: pileup_interval
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: bamtools
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: bamtools_split
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: ngsutils_bam_filter
     owner: iuc
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: bamtools_filter
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: sam_merge
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: samtools_bedcov
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: samtools_sort
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: samtools_rmdup
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: samtools_idxstats
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: samtools_slice_bam
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: samtools_mpileup
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: samtools_calmd
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: samtools_flagstat
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: samtools_reheader
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: samtools_split
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: samtools_stats
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: bam_to_sam
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: samtools_sort
     owner: iuc
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: sam_pileup
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: samtool_filter2
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: samtools_phase
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
   - name: sam_bitwise_flag_filter
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: sam2interval
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: pileup_parser
     owner: devteam
-    tool_panel_section_label: 'NGS: SAM Tools'
+    tool_panel_section_label: 'SAM Tools'
 
   - name: gemini_db_info
     owner: iuc
