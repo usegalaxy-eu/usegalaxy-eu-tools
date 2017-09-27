@@ -179,11 +179,11 @@ tools:
 
   - name: tabular_to_fasta
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: fasta_to_tabular
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: fastqtofasta
     owner: devteam
@@ -417,31 +417,31 @@ tools:
 
   - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: sickle
     owner: iuc
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: fasta_compute_length
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: pear
     owner: iuc
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: flash
     owner: iuc
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: fastx_artifacts_filter
     owner: devteam
@@ -461,19 +461,19 @@ tools:
 
   - name: fasta_filter_by_length
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
   - name: fasta_concatenate_by_species
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
   - name: fastx_collapser
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ manipulation'
   - name: fasta_nucleotide_changer
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
   - name: fasta_formatter
     owner: devteam
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: fastqc
     owner: devteam
@@ -1238,7 +1238,7 @@ tools:
 
   - name: 'suite_umi_tools'
     owner: 'iuc'
-    tool_panel_section_id: fasta_fastq_manipulation
+    tool_panel_section_name: "FASTA/FASTQ manipulation"
 
   - name: suite_enasearch
     owner: iuc
