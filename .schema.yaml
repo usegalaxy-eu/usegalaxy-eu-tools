@@ -21,13 +21,6 @@ mapping:
                 "owner":
                     type: str
                     required: true
-                "tool_shed_url":
-                    type: str
-                    enum: [
-                        'https://toolshed.g2.bx.psu.edu',
-                        # TODO: Do we want to disallow TTS?
-                        'https://testtoolshed.g2.bx.psu.edu',
-                    ]
                 "tool_panel_section_label":
                     type: str
                     enum: [
