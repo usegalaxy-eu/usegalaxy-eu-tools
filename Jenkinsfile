@@ -26,6 +26,7 @@ pipeline {
 
 				sh 'git config --global user.email "jenkins@usegalaxy.eu"'
 				sh 'git config --global user.name "usegalaxy.eu jenkins bot"'
+				sh 'git config --global push.default current'
 
 				sh 'git add *.lock'
 				sh 'git commit -m "Updated trusted tools" || true'
@@ -36,7 +37,7 @@ pipeline {
 				sh 'git branch -d jenkins-merge'
 
 				sshagent(['github-erasche']) {
-					sh 'git push --repo git@github.com:usegalaxy-eu/usegalaxy-eu-tools.git master'
+					sh 'git push git@github.com:usegalaxy-eu/usegalaxy-eu-tools.git master'
 				}
 			}
 		}
