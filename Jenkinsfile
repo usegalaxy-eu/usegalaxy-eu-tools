@@ -35,6 +35,7 @@ pipeline {
 				sh 'git checkout master'
 				sh 'git merge --no-ff jenkins-merge'
 				sh 'git branch -d jenkins-merge'
+				sh 'ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts'
 
 				sshagent(['github-erasche']) {
 					sh 'git push git@github.com:usegalaxy-eu/usegalaxy-eu-tools.git master'
