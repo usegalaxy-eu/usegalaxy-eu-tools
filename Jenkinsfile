@@ -31,7 +31,7 @@ pipeline {
 				sh 'git commit -m "Updated trusted tools" || true'
 
 				sshagent(['github-erasche']) {
-					sh 'git push origin master || true'
+					sh 'git push -u origin master'
 				}
 			}
 		}
