@@ -1,19 +1,15 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'python:2.7'
+      args '-u root'
+    }
+  }
   stages {
     stage('Linting') {
       steps {
-        sh '''
-        pip install --user -U -r requirements.txt
-        '''
-        sh '''
-        for file in *.yaml; do
-            python -c 'import sys; import yaml; import json; sys.stdout.write(json.dumps(yaml.load(sys.stdin), indent=2))' < $file;
-        done;
-        for file in *.yaml.lock; do
-            python -c 'import sys; import yaml; import json; sys.stdout.write(json.dumps(yaml.load(sys.stdin), indent=2))' < $file;
-        done;
-        '''
+        sh 'pip install -r requirements.txt'
+        sh 'for i in *.yaml; do pykwalify -d $i -s .schema.yaml; done'
       }
     }
     stage('Updated Trusted Repositories') {
@@ -23,7 +19,7 @@ pipeline {
         '''
 
         sh '''
-        pip install --user -U -r requirements.txt
+        pip install -r requirements.txt
         '''
         sh '''
         python scripts/update-trusted.py
@@ -39,18 +35,5 @@ pipeline {
       }
     }
 
-    stage('Install Tools') {
-      steps {
-        sh '''
-        pip install --user -U ephemeris
-        '''
-
-        withCredentials([string(credentialsId: 'GALAXY_API_KEY', variable: 'GALAXY_API_KEY')]) {
-          sh '''
-          ~/.local/bin/shed-install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
-          '''
-        }
-      }
-    }
   }
 }

@@ -6,7 +6,7 @@ tools:
   - b8348686a0b9
   name: bedtools
   owner: iuc
-  tool_panel_section_label: BED tools
+  tool_panel_section_label: Operate on Genomic Intervals
 - changeset_revision:
   - 59a4c97b85d6
   name: kallisto_quant
@@ -100,7 +100,7 @@ tools:
   - cb1c59d69557
   name: dwt_var_perfeature
   owner: devteam
-  tool_panel_section_id: statistics
+  tool_panel_section_label: Statistics
 - changeset_revision:
   - f2aac0c5c60d
   name: merge_cols
@@ -223,12 +223,12 @@ tools:
   - 0b4e36026794
   name: tabular_to_fasta
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 7e801ab2b70e
   name: fasta_to_tabular
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 723b5b38d88a
   name: fastqtofasta
@@ -249,7 +249,7 @@ tools:
   - 8dd8e89c0603
   name: extract_genomic_dna
   owner: iuc
-  tool_panel_section_id: ngs:_other_tools
+  tool_panel_section_label: Other Tools
 - changeset_revision:
   - d491589307e7
   name: concat
@@ -386,27 +386,27 @@ tools:
   - 4f33ec73e445
   name: best_regression_subsets
   owner: devteam
-  tool_panel_section_id: statistics
+  tool_panel_section_label: Statistics
 - changeset_revision:
   - f568051cdf2e
   name: principal_component_analysis
   owner: devteam
-  tool_panel_section_id: statistics
+  tool_panel_section_label: Statistics
 - changeset_revision:
   - 3d58aa83e4a3
   name: kernel_principal_component_analysis
   owner: devteam
-  tool_panel_section_id: statistics
+  tool_panel_section_label: Statistics
 - changeset_revision:
   - 5ce5a2adb875
   name: kernel_canonical_correlation_analysis
   owner: devteam
-  tool_panel_section_id: statistics
+  tool_panel_section_label: Statistics
 - changeset_revision:
   - 9bc0c48a027f
   name: canonical_correlation_analysis
   owner: devteam
-  tool_panel_section_id: statistics
+  tool_panel_section_label: Statistics
 - changeset_revision:
   - 8f0af7251167
   name: mutate_snp_codon
@@ -532,34 +532,34 @@ tools:
   - 9ad0d336e5ed
   name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 3905ccd5c631
   - edaa8572219d
   name: sickle
   owner: iuc
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - ec6ddf449651
   name: fastq_paired_end_interlacer
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 6a7f5da7c76d
   name: fastq_paired_end_joiner
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - de2db1bdfbf8
   name: fasta_compute_length
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 240f611a46f3
   - 581e52f03c5d
   name: pear
   owner: iuc
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 09070cacefd8
   name: fastx_artifacts_filter
@@ -584,12 +584,12 @@ tools:
   - c8cd0a03db49
   name: fasta_filter_by_length
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 717aee069681
   name: fasta_concatenate_by_species
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 421f0af4ee95
   name: fastx_collapser
@@ -599,12 +599,12 @@ tools:
   - f81d4362b6c1
   name: fasta_nucleotide_changer
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 9457a20156db
   name: fasta_formatter
   owner: devteam
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
 - changeset_revision:
   - 484e86282f4b
   name: fastqc
@@ -956,12 +956,12 @@ tools:
   - bc1e0cd41241
   name: varscan_version_2
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - da6e10dee68b
   name: freebayes
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 5fca46616675
   name: vcf2pgsnp
@@ -1025,7 +1025,7 @@ tools:
   - 9e6fa49c1077
   name: snpsift_genesets
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 1d8ad7599f02
   name: transtermhp
@@ -1042,25 +1042,25 @@ tools:
   - dc480609d9c1
   name: snpsift_dbnsfp
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - bf8c1526871b
   - 9e8280e19338
   name: snpsift
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - a7cbaf3beadd
   - 0624d484adba
   name: snpsift_dbnsfp_generic
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - e09ce114d240
   - e8adfc4c0a6b
   name: snpeff
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - c5bb987015c5
   name: dgidb_annotator
@@ -1075,17 +1075,17 @@ tools:
   - b8348686a0b9
   name: bedtools
   owner: iuc
-  tool_panel_section_label: BED tools
+  tool_panel_section_label: Operate on Genomic Intervals
 - changeset_revision:
   - b8348686a0b9
   name: bedtools
   owner: iuc
-  tool_panel_section_label: BED tools
+  tool_panel_section_label: Operate on Genomic Intervals
 - changeset_revision:
   - ab1f60c26526
   name: picard
   owner: devteam
-  tool_panel_section_id: picard
+  tool_panel_section_label: Picard
 - changeset_revision:
   - 1b6538ec8b56
   name: emboss_5
@@ -1136,169 +1136,169 @@ tools:
   - e65540a91b87
   name: bamleftalign
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 40a339e4692e
   name: vcfcheck
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 196ed76d2619
   name: vcfaddinfo
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 8fb92fcd20ae
   name: vcf2tsv
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 8e02d116b0f9
   name: vcfleftalign
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 18f9f2624bd6
   name: vcfcombine
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - bc5949d36b34
   name: vcfprimers
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - a8c5440d69e3
   name: vcfsort
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - c9bb9f126282
   name: vcfhethom
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - c035d96c5cbe
   name: vcfrandomsample
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 31a86dbe17c0
   name: vcfbedintersect
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 82635a34fbe6
   name: vcfgenotypes
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 9d7e64e4b9fc
   name: vcffixup
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 952059348a30
   name: vcffilter
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 5bd9783e982a
   name: vcfgeno2haplo
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 0a69cff7946e
   name: vcfallelicprimitives
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 3aa04b92957f
   name: vcfbreakcreatemulti
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 1bc1b2b8b341
   name: vcfvcfintersect
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - d64204113938
   name: vcfannotate
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - d58a307b9cef
   name: vcfcommonsamples
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 1336a70f5c02
   name: vcfflatten
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 48e458c721b3
   name: vcfdistance
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - c96a7e49150a
   name: vcfannotategenotypes
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 43cecdfe7107
   name: vcfselectsamples
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 3296c3680d96
   - a531317a3527
   name: bcftools_call
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 71e19ddf52f5
   name: vcftools_merge
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - aa232e38338f
   name: vcftools_isec
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 6e073fc99d9c
   name: vt_variant_tools
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - e5e78d1e09a6
   - bdd0cb7fbedf
   name: bcftools
   owner: iuc
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - ad50c257e758
   name: vcftools_compare
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 57a6550df582
   name: vcftools_annotate
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 1363e5d4a8b8
   name: vcftools_slice
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - 23436d1d0fa1
   name: vcftools_subset
   owner: devteam
-  tool_panel_section_id: ngs:_variant_calling
+  tool_panel_section_label: Variant Calling
 - changeset_revision:
   - b7d7ae3963aa
   - fa82c3c9ced3
@@ -1441,132 +1441,132 @@ tools:
   - b597e1cd14b1
   name: gemini_db_info
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 9b462be5a604
   name: gemini_windower
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 95a149a9a75d
   name: gemini_burden
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 99d6e7b1b7f1
   - 0db31ae5295e
   name: gemini_gene_wise
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - ac761838cdaf
   - a0ee6874a23b
   name: gemini_stats
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - dd963f00f297
   - 009a8d614a83
   name: gemini_mendel_errors
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 2281967e7bc3
   name: gemini_amend
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 66bc68095012
   - 2bce41988d8e
   name: gemini_pathways
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 187b57debbba
   - c3da7c5f2141
   name: gemini_dump
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - bb4a5f979906
   - 0239bb5482c1
   name: gemini_region
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 9f0f5e984ae3
   name: gemini_actionable_mutations
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - be7ac09bc2fa
   - e1920f41a1ca
   name: gemini_lof_sieve
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - ab195e756e5e
   - 5596c2dc4218
   name: gemini_query
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 8295781a3c27
   - 37f9901b674d
   name: gemini_fusions
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 269c40fdcccb
   - 9f74d7b0704a
   name: gemini_load
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 8850488002dc
   name: gemini_de_novo
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 3859552a63d8
   name: gemini_annotate
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 69ec574f6f41
   - a78bfd5264b1
   name: gemini_recessive_and_dominant
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 91b4db3e6df4
   - e7ad2a721c4b
   name: gemini_roh
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 230c975e7759
   - 5fd4a5f9ee31
   name: gemini_set_somatic
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - a875f940d8fd
   - 5d18dcbf2a0c
   name: gemini_qc
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 6192f3a2f96f
   name: gemini_comp_hets
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 527c8e4a356f
   - 2ddee6cd4a5a
   name: gemini_interactions
   owner: iuc
-  tool_panel_section_id: gemini
+  tool_panel_section_label: Gemini Tools
 - changeset_revision:
   - 95e37a28704b
   - e880ddd2d8fa
@@ -1700,4 +1700,4 @@ tools:
   - c2664661e1c5
   name: suite_umi_tools
   owner: iuc
-  tool_panel_section_id: fasta_fastq_manipulation
+  tool_panel_section_label: FASTA/FASTQ manipulation
