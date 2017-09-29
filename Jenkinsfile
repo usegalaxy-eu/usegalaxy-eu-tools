@@ -30,6 +30,10 @@ pipeline {
 				sh 'git add *.lock'
 				sh 'git commit -m "Updated trusted tools" || true'
 
+				sh 'git checkout -b jenkins-merge'
+				sh 'git checkout master'
+				sh 'git merge --no-ff jenkins-merge'
+				sh 'git branch -d jenkins-merge'
 				sshagent(['github-erasche']) {
 					sh 'git push -u origin master'
 				}
