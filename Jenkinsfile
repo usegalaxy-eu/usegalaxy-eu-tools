@@ -34,9 +34,8 @@ pipeline {
 				sh 'git checkout master'
 				sh 'git merge --no-ff jenkins-merge'
 				sh 'git branch -d jenkins-merge'
-
 				sshagent(['github-erasche']) {
-					sh 'git push --repo git@github.com:usegalaxy-eu/usegalaxy-eu-tools.git master'
+					sh 'git push -u origin master'
 				}
 			}
 		}
