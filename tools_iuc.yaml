@@ -572,24 +572,31 @@ tools:
   - name: unicycler
     owner: iuc
     tool_panel_section_label: 'Assembly'
+  
   - name: quast
     owner: iuc
     tool_panel_section_label: 'Assembly'
+  
   - name: tophat2
     owner: devteam
     tool_panel_section_label: 'Mapping'
+  
   - name: bowtie2
     owner: devteam
     tool_panel_section_label: 'Mapping'
+  
   - name: rgrnastar
     owner: iuc
     tool_panel_section_label: 'Mapping'
+  
   - name: hisat2
     owner: iuc
     tool_panel_section_label: 'Mapping'
+  
   - name: bowtie_wrappers
     owner: devteam
     tool_panel_section_label: 'Mapping'
+  
   - name: bowtie_color_wrappers
     owner: devteam
     tool_panel_section_label: 'Mapping'
@@ -616,6 +623,10 @@ tools:
 
   - name: lastz
     owner: devteam
+    tool_panel_section_label: 'Mapping'
+
+  - name: minimap2
+    owner: iuc
     tool_panel_section_label: 'Mapping'
 
   - name: sailfish
@@ -1260,6 +1271,10 @@ tools:
     owner: iuc
     tool_panel_section_label: 'Quality Control'
 
+  - name: suite_hicexplorer
+    owner: bgruening
+    tool_panel_section_label: "Epigenetics"
+
   - name: metaspades
     owner: nml
     tool_panel_section_label: 'Assembly'
@@ -1267,3 +1282,4 @@ tools:
   - name: megahit
     owner: iuc
     tool_panel_section_label: 'Assembly'
+
