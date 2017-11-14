@@ -1299,7 +1299,11 @@ tools:
     owner: iuc
     tool_panel_section_label: Get Data
     tool_panel_section_label: 'Metagenomic analyses'
-    
+
+  - name: suite_bctools
+    owner: iuc
+    tool_panel_section_label: "FASTA/FASTQ manipulation"
+
   - name: spades
     owner: nml
     tool_panel_section_label: 'Assembly'
@@ -1307,3 +1311,4 @@ tools:
   - name: suite_onto_toolkit
     owner: iuc
     tool_panel_section_label: 'OBO Ontology manipulation'
+
