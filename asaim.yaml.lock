@@ -1,0 +1,161 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+- changeset_revision:
+  - !!python/unicode '9de1dc59ff70'
+  name: suite_ebi_tools
+  owner: iuc
+  tool_panel_section_label: Get Data
+- changeset_revision:
+  - !!python/unicode '3aa846f62284'
+  name: suite_enasearch
+  owner: iuc
+  tool_panel_section_label: Get Data
+- changeset_revision:
+  - !!python/unicode '3c74f6208bc5'
+  name: suite_ncbi_entrez
+  owner: iuc
+  tool_panel_section_label: Get Data
+- changeset_revision:
+  - !!python/unicode 'b723c120161a'
+  name: sra_tools
+  owner: iuc
+  tool_panel_section_label: Get Data
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: Quality Control
+- changeset_revision:
+  - !!python/unicode '6b865dde1baa'
+  name: prinseq
+  owner: iuc
+  tool_panel_section_label: Quality Control
+- name: trim_galore
+  owner: bgruening
+  tool_panel_section_label: Quality Control
+- name: trimmomatic
+  owner: pjbriggs
+  tool_panel_section_label: Quality Control
+- changeset_revision:
+  - !!python/unicode 'e4574a4d09d8'
+  name: multiqc
+  owner: iuc
+  tool_panel_section_label: Quality Control
+- name: cdhit
+  owner: bebatut
+  tool_panel_section_label: Multiple Alignments
+- name: format_cd_hit_output
+  owner: bebatut
+  tool_panel_section_label: Multiple Alignments
+- name: sortmerna
+  owner: rnateam
+  tool_panel_section_label: Annotation
+- name: data_manager_sortmerna_database_downloader
+  owner: rnateam
+  tool_panel_section_label: Data Managers
+- name: ncbi_blast_plus
+  owner: devteam
+  tool_panel_section_label: NCBI Blast
+- name: diamond
+  owner: bgruening
+  tool_panel_section_label: NCBI Blast
+- name: bwa
+  owner: devteam
+  tool_panel_section_label: Mapping
+- name: bowtie2
+  owner: devteam
+  tool_panel_section_label: Mapping
+- changeset_revision:
+  - !!python/unicode 'b5066aa77fea'
+  name: hmmer3
+  owner: iuc
+  tool_panel_section_label: Annotation
+- changeset_revision:
+  - !!python/unicode 'fae6527990af'
+  name: vsearch
+  owner: iuc
+  tool_panel_section_label: Metagenomic analyses
+- changeset_revision:
+  - !!python/unicode '280386b252a5'
+  name: nonpareil
+  owner: iuc
+  tool_panel_section_label: Metagenomic analyses
+- changeset_revision:
+  - !!python/unicode '02a822e32de7'
+  name: megahit
+  owner: iuc
+  tool_panel_section_label: Assembly
+- name: metaspades
+  owner: nml
+  tool_panel_section_label: Assembly
+- changeset_revision:
+  - !!python/unicode '736d51130b41'
+  name: quast
+  owner: iuc
+  tool_panel_section_label: Assembly
+- changeset_revision:
+  - !!python/unicode '56236acaad45'
+  name: valet
+  owner: iuc
+  tool_panel_section_label: Metagenomic analyses
+- changeset_revision:
+  - !!python/unicode '768c2e48b706'
+  name: suite_mothur
+  owner: iuc
+  tool_panel_section_label: mothur
+- changeset_revision:
+  - !!python/unicode 'b2e54849fd5c'
+  name: suite_qiime
+  owner: iuc
+  tool_panel_section_label: Qiime
+- changeset_revision:
+  - !!python/unicode 'cbe065fbd038'
+  name: data_manager_qiime_database_downloader
+  owner: iuc
+  tool_panel_section_label: Data Managers
+- changeset_revision:
+  - !!python/unicode 'ae46e4116c61'
+  name: suite_metaphlan2
+  owner: iuc
+  tool_panel_section_label: Metagenomic analyses
+- name: format_metaphlan2_output
+  owner: bebatut
+  tool_panel_section_label: Metagenomic analyses
+- name: suite_kraken_0_10_5
+  owner: devteam
+  tool_panel_section_label: Metagenomic analyses
+- changeset_revision:
+  - !!python/unicode 'b6817cd584e1'
+  name: suite_humann2
+  owner: iuc
+  tool_panel_section_label: Metagenomic analyses
+- name: group_humann2_uniref_abundances_to_go
+  owner: bebatut
+  tool_panel_section_label: Metagenomic analyses
+- name: compare_humann2_output
+  owner: bebatut
+  tool_panel_section_label: Metagenomic analyses
+- name: interproscan5
+  owner: bgruening
+  tool_panel_section_label: Metagenomic analyses
+- changeset_revision:
+  - !!python/unicode '9a3fe0bd7481'
+  name: suite_picrust
+  owner: iuc
+  tool_panel_section_label: Annotation
+- name: combine_metaphlan2_humann2
+  owner: bebatut
+  tool_panel_section_label: Metagenomic analyses
+- changeset_revision:
+  - !!python/unicode 'ed1becc01910'
+  name: export2graphlan
+  owner: iuc
+  tool_panel_section_label: Graph/Display Data
+- changeset_revision:
+  - !!python/unicode '0e3b8782641c'
+  name: suite_graphlan
+  owner: iuc
+  tool_panel_section_label: Graph/Display Data
+- name: taxonomy_krona_chart
+  owner: crs4
+  tool_panel_section_label: Graph/Display Data
