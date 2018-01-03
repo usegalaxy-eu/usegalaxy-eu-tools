@@ -10,11 +10,11 @@ source activate ephemeris
 
 ### Install/Update all tools specified in tools.yaml
 ```bash
-shed-install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
+shed-tools install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
 ```
 
 ### Install a single tool
 ```bash
-shed-install --name prokka --owner crs4 --section_label 'Annotation' -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
+shed-tools install -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de --name annotatemyids --owner iuc --section_label 'Annotation'
 ```
 
