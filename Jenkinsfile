@@ -21,6 +21,9 @@ pipeline {
 			}
 
 			steps {
+				sh 'git fetch origin'
+				sh 'git reset --hard origin/master'
+
 				sh 'pip install -r requirements.txt'
 				sh 'make update_trusted'
 
