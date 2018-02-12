@@ -22,10 +22,7 @@ pipeline {
 
 			steps {
 				sh 'git reset --hard origin/master'
-				sh 'git remote -v show'
 				sh 'git checkout master'
-				sh 'git branch'
-				sh 'git branch -a'
 
 				sh 'pip install -r requirements.txt'
 				sh 'make update_trusted'
