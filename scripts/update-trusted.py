@@ -37,7 +37,7 @@ for file in glob.glob("*.yaml"):
     for tool in unlocked['tools']:
         if tool['name'] not in locked_tools:
             # Add it to the set of locked tools.
-            locked.append(tool)
+            locked['tools'].append(tool)
 
     # Update any locked tools.
     for tool in locked['tools']:
