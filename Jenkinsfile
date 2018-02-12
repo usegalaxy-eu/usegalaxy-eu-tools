@@ -22,15 +22,16 @@ pipeline {
 
 			steps {
 				sh 'git reset --hard origin/master'
+				sh 'git remote -v show'
+				sh 'git checkout master'
+				sh 'git branch'
+				sh 'git branch -a'
 
 				sh 'pip install -r requirements.txt'
 				sh 'make update_trusted'
 
 				sh 'mkdir -p ~/.ssh'
 				sh 'ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts'
-				sh 'git remote -v show'
-				sh 'git branch'
-				sh 'git branch -a'
 
 				sshagent(['21341801-8530-459e-bed7-40057c7b98ff']) {
 					sh 'git push git@github.com:usegalaxy-eu/usegalaxy-eu-tools.git master'
