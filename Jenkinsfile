@@ -27,7 +27,7 @@ pipeline {
 				sh 'mkdir -p ~/.ssh'
 				sh 'ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts'
 
-				sshagent(['github-erasche']) {
+				sshagent(['21341801-8530-459e-bed7-40057c7b98ff']) {
 					sh 'git push git@github.com:usegalaxy-eu/usegalaxy-eu-tools.git master'
 				}
 			}
