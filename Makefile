@@ -14,7 +14,7 @@ lint: ## Lint the yaml files
 
 update_trusted: ## Run the update script + COMMIT THE RESULT
 	@# Again, could be made into a fancy target but since this should be run due to changes in remote system, we're doing it the KISS way.
-	python scripts/update-trusted.py
+	python scripts/update-trusted.py tools_iuc.yaml
 	git config user.email "admin@usegalaxy.eu"
 	git config user.name "usegalaxy.eu bot"
 	git config push.default current
