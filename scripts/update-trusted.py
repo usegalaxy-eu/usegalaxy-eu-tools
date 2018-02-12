@@ -41,7 +41,7 @@ def update_file(fn, dry):
             print(e)
             continue
 
-        print("  Found newer revision of %s/%s (%s)" % (tool['owner'], tool['name'], revs[0]))
+        print("Found newer revision of %s/%s (%s)" % (tool['owner'], tool['name'], revs[0]))
         if dry:
             continue
 
@@ -63,4 +63,4 @@ if __name__ == '__main__':
     parser.add_argument('fn', type=argparse.FileType('r'), help="Tool.yaml file")
     parser.add_argument('--dry-run', action='store_true', help="Trust all listed tools in the file, i.e. add the latest changest for them.")
     args = parser.parse_args()
-    update_file(args.fn, dry=args.dry_run)
+    update_file(args.fn.name, dry=args.dry_run)
