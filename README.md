@@ -1,20 +1,17 @@
-# Galaxy FR tools
-List of tools included in the Galaxy Freiburg instance
+# UseGalaxy tools
 
+There are a couple separate lists of tools contained here. The sum total of them make up the set of tools installed in UseGalaxy.eu
 
-### Actiavte Conda environment with ephemeris
-```
+## Installation
+
+```console
 export PATH=/usr/local/tools/_conda/bin/:$PATH
 source activate ephemeris
-```
-
-### Install/Update all tools specified in tools.yaml
-```bash
 shed-tools install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
 ```
 
-### Install a single tool
-```bash
+## Install of a Single Tool
+
+```console
 shed-tools install -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de --name annotatemyids --owner iuc --section_label 'Annotation'
 ```
-
