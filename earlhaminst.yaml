@@ -1,0 +1,175 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+
+    # data_retrieval
+  - name: 'suite_ebi_tools'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+
+  - name: 'suite_enasearch'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+
+  - name: 'suite_ncbi_entrez'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+
+  - name: 'sra_tools'
+    owner: 'iuc'
+    tool_panel_section_label: 'Get Data'
+   
+    # quality_control
+  - name: 'fastqc'
+    owner: 'devteam'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'prinseq'
+    owner: 'iuc'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'trim_galore'
+    owner: 'bgruening'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'trimmomatic'
+    owner: 'pjbriggs'
+    tool_panel_section_label: 'Quality Control'
+
+  - name: 'multiqc'
+    owner: 'iuc'
+    tool_panel_section_label: 'Quality Control'
+
+    # clustering
+  - name: 'cdhit'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Multiple Alignments'
+
+  - name: 'format_cd_hit_output'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Multiple Alignments'
+
+    # sorting
+  - name: 'sortmerna'
+    owner: 'rnateam'
+    tool_panel_section_label: 'Annotation'
+
+  - name: 'data_manager_sortmerna_database_downloader'
+    owner: 'rnateam'
+    tool_panel_section_label: Data Managers
+
+    # similarity_search
+  - name: 'ncbi_blast_plus'
+    owner: 'devteam'
+    tool_panel_section_label: 'NCBI Blast'
+
+  - name: 'diamond'
+    owner: 'bgruening'
+    tool_panel_section_label: 'NCBI Blast'
+
+    # mapping
+  - name: 'bwa'
+    owner: 'devteam'
+    tool_panel_section_label: 'Mapping'
+
+  - name: 'bowtie2'
+    owner: 'devteam'
+    tool_panel_section_label: 'Mapping'
+
+    # alignment
+  - name: 'hmmer3'
+    owner: 'iuc'
+    tool_panel_section_label: 'Annotation'
+
+    # metagenomics_manipulation
+  - name: 'vsearch'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+  - name: 'nonpareil'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+    # assembly
+  - name: 'megahit'
+    owner: 'iuc'
+    tool_panel_section_label: 'Assembly'
+
+  - name: 'metaspades'
+    owner: 'nml'
+    tool_panel_section_label: 'Assembly'
+
+  - name: 'quast'
+    owner: 'iuc'
+    tool_panel_section_label: 'Assembly'
+
+  - name: 'valet'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+    # amplicon_sequence_processing
+  - name: 'suite_mothur'
+    owner: 'iuc'
+    tool_panel_section_label: 'mothur'
+
+  - name: 'suite_qiime'
+    owner: 'iuc'
+    tool_panel_section_label: 'Qiime'
+
+  - name: 'data_manager_qiime_database_downloader'
+    owner: 'iuc'
+    tool_panel_section_label: Data Managers
+
+    # wgs_taxonomic_assignations
+  - name: 'suite_metaphlan2'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'format_metaphlan2_output'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'suite_kraken_0_10_5'
+    owner: 'devteam'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+    # metabolism_assignation
+  - name: 'suite_humann2'
+    owner: 'iuc'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'group_humann2_uniref_abundances_to_go'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'compare_humann2_output'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'interproscan5'
+    owner: 'bgruening'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+  - name: 'suite_picrust'
+    owner: 'iuc'
+    tool_panel_section_label: 'Annotation'
+
+    # combination_taxo_func
+  - name: 'combine_metaphlan2_humann2'
+    owner: 'bebatut'
+    tool_panel_section_label: 'Metagenomic analyses'
+
+    # visualization
+  - name: 'export2graphlan'
+    owner: 'iuc'
+    tool_panel_section_label: 'Graph/Display Data'
+
+  - name: 'suite_graphlan'
+    owner: 'iuc'
+    tool_panel_section_label: 'Graph/Display Data'
+
+  - name: 'taxonomy_krona_chart'
+    owner: 'crs4'
+    tool_panel_section_label: 'Graph/Display Data'
