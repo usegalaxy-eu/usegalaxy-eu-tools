@@ -23,9 +23,4 @@ update_trusted: ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
 	python scripts/update-tool.py tools_iuc.yaml
 
-commit_updates: ## COMMIT + PUSH the results
-	git config push.default current
-	git add *.lock
-	git commit --author "UseGalaxy.eu Bot <admin@usegalaxy.eu>" -m "Updated trusted tools" || true
-
 .PHONY: lint update_trusted help
