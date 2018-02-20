@@ -33,6 +33,10 @@ def update_file(fn, owner=None, name=None, without=False):
             print(e)
             continue
 
+        if revs[0] in tool.get('changeset_revision', []):
+            # The rev is already known, don't add again.
+            continue
+
         print("Found newer revision of %s/%s (%s)" % (tool['owner'], tool['name'], revs[0]))
 
         # Get latest rev, if not already added, add it.
