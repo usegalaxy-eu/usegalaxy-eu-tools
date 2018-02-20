@@ -464,7 +464,9 @@ tools:
   name: karyotype_plot
   owner: guru-ananda
   tool_panel_section_label: Graph/Display Data
-- name: covenntree
+- changeset_revision:
+  - 6ef7b64baed3
+  name: covenntree
   owner: steffen
   tool_panel_section_label: Graph/Display Data
 - changeset_revision:
@@ -1110,6 +1112,8 @@ tools:
 - name: vienna_rna
   owner: rnateam
   tool_panel_section_label: 'NGS: RNA Analysis'
+  changeset_revision:
+  - 04c56f5b0907
 - changeset_revision:
   - b1f5d49a6f30
   name: remurna
@@ -1562,9 +1566,6 @@ tools:
   name: protease_prediction
   owner: bgruening
   tool_panel_section_label: Proteomics
-- name: msgfplus
-  owner: galaxyp
-  tool_panel_section_label: Proteomics
 - changeset_revision:
   - c15d72720643
   name: decoyfasta
@@ -1633,6 +1634,9 @@ tools:
 - name: openbabel
   owner: bgruening
   tool_panel_section_label: ChemicalToolBox
+  changeset_revision:
+  - b52872a1755a
+  - 125da3a296ca
 - changeset_revision:
   - 6bb56f3a8de0
   name: rdkit
