@@ -3,6 +3,8 @@ LINTED_YAMLS := $(YAML_FILES:=.lint)
 CORRECT_YAMLS := $(YAML_FILES:=.fix)
 INSTALL_YAMLS := $(YAML_FILES:=.install)
 
+GALAXY_SERVER := https://usegalaxy.eu
+
 
 help:
 	@egrep '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-16s\033[0m %s\n", $$1, $$2}'
@@ -22,7 +24,8 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 	python scripts/update-tool.py $< --without
 
 %.install: %
-	shed-install -t $< -a $(GALAXY_API_KEY) --galaxy https://usegalaxy.eu
+	@echo "Installing any updated versions of $<"
+	@shed-tools install --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY)
 
 
 update_trusted: ## Run the update script
