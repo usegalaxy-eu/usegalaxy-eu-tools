@@ -1,6 +1,7 @@
 YAML_FILES := $(wildcard *.yaml)
 LINTED_YAMLS := $(YAML_FILES:=.lint)
 CORRECT_YAMLS := $(YAML_FILES:=.fix)
+INSTALL_YAMLS := $(YAML_FILES:=.install)
 
 
 help:
@@ -8,6 +9,7 @@ help:
 
 lint: $(LINTED_YAMLS) ## Lint the yaml files
 fix: $(CORRECT_YAMLS) ## Fix any issues (missing hashes, missing lockfiles, etc.)
+install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 
 %.lint: %
 	pykwalify -d $< -s .schema.yaml
@@ -18,6 +20,10 @@ fix: $(CORRECT_YAMLS) ## Fix any issues (missing hashes, missing lockfiles, etc.
 	python scripts/fix-lockfile.py $<
 	@# --without says only add those hashes for those missing hashes (zB new tools)
 	python scripts/update-tool.py $< --without
+
+%.install: %
+	shed-install -t $< -a $(GALAXY_API_KEY) --galaxy https://usegalaxy.eu
+
 
 update_trusted: ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
