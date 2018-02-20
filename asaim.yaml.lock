@@ -25,6 +25,15 @@ tools:
 - name: fastqc
   owner: devteam
   tool_panel_section_label: Quality Control
+  changeset_revision:
+  - 3a458e268066
+  - 3fdc1a74d866
+  - 9337dd1fbc66
+  - 484e86282f4b
+  - 28d39af2dd06
+  - e28c965eeed4
+  - 0b201de108b9
+  - d2cf2c0c8a11
 - changeset_revision:
   - 6b865dde1baa
   name: prinseq
@@ -33,9 +42,23 @@ tools:
 - name: trim_galore
   owner: bgruening
   tool_panel_section_label: Quality Control
+  changeset_revision:
+  - 1bf4789584dc
+  - 11962ce40855
+  - f1e71aeaa923
+  - eb546ac2aab2
+  - 2c1f0fe810f7
+  - 949f01671246
+  - 8352713cf939
 - name: trimmomatic
   owner: pjbriggs
   tool_panel_section_label: Quality Control
+  changeset_revision:
+  - 2bd7cdbb6228
+  - 415a165d92bb
+  - a60283899c6d
+  - 14d05f2d511d
+  - f8a9a5eaca8a
 - changeset_revision:
   - e4574a4d09d8
   name: multiqc
@@ -50,21 +73,54 @@ tools:
 - name: sortmerna
   owner: rnateam
   tool_panel_section_label: Annotation
+  changeset_revision:
+  - 65c38d020fea
+  - 59252ca85c74
+  - 185effcdfb68
+  - b482293b2987
 - name: data_manager_sortmerna_database_downloader
   owner: rnateam
   tool_panel_section_label: Data Managers
+  changeset_revision:
+  - 30bb49887172
 - name: ncbi_blast_plus
   owner: devteam
   tool_panel_section_label: NCBI Blast
+  changeset_revision:
+  - 2fe07f50a41e
+  - 3034ce97dd33
+  - 6f386c5dc4fb
+  - 7538e2bfcd41
+  - 6560192c5098
+  - 623f727cdff1
+  - 577d9c12411a
+  - 7f3c448e119b
+  - 393a7a35383c
+  - 70e7dcbf6573
+  - 9dabbfd73c8a
+  - b5f1f599d1fb
 - name: diamond
   owner: bgruening
   tool_panel_section_label: NCBI Blast
+  changeset_revision:
+  - 98037ef3d2a9
+  - 3c6b132b154a
 - name: bwa
   owner: devteam
   tool_panel_section_label: Mapping
+  changeset_revision:
+  - 48f306c57611
 - name: bowtie2
   owner: devteam
   tool_panel_section_label: Mapping
+  changeset_revision:
+  - a9d4f71dbfb0
+  - 96d2e31a3938
+  - 019c2a81547a
+  - ceb6467e276c
+  - 8ccbdbe9a695
+  - c1ec08cb34f9
+  - 42bb952b4e3c
 - changeset_revision:
   - b5066aa77fea
   name: hmmer3
@@ -88,6 +144,8 @@ tools:
 - name: metaspades
   owner: nml
   tool_panel_section_label: Assembly
+  changeset_revision:
+  - 01a241476407
 - changeset_revision:
   - 736d51130b41
   name: quast
@@ -121,9 +179,13 @@ tools:
 - name: format_metaphlan2_output
   owner: bebatut
   tool_panel_section_label: Metagenomic analyses
+  changeset_revision:
+  - 2bfa9b200600
 - name: suite_kraken_0_10_5
   owner: devteam
   tool_panel_section_label: Metagenomic analyses
+  changeset_revision:
+  - 1bcf0e168661
 - changeset_revision:
   - b6817cd584e1
   name: suite_humann2
@@ -132,12 +194,16 @@ tools:
 - name: group_humann2_uniref_abundances_to_go
   owner: bebatut
   tool_panel_section_label: Metagenomic analyses
+  changeset_revision:
+  - cad28d7b49d2
 - name: compare_humann2_output
   owner: bebatut
   tool_panel_section_label: Metagenomic analyses
 - name: interproscan5
   owner: bgruening
   tool_panel_section_label: Metagenomic analyses
+  changeset_revision:
+  - 82547f0d3a29
 - changeset_revision:
   - 9a3fe0bd7481
   - c48e45864e0c
@@ -147,6 +213,8 @@ tools:
 - name: combine_metaphlan2_humann2
   owner: bebatut
   tool_panel_section_label: Metagenomic analyses
+  changeset_revision:
+  - 31394a0c0242
 - changeset_revision:
   - ed1becc01910
   name: export2graphlan
@@ -160,3 +228,7 @@ tools:
 - name: taxonomy_krona_chart
   owner: crs4
   tool_panel_section_label: Graph/Display Data
+  changeset_revision:
+  - 020b3087d0b7
+  - f11a04ed443b
+  - 09552faff9c0
