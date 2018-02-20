@@ -64,10 +64,14 @@ tools:
   name: multiqc
   owner: iuc
   tool_panel_section_label: Quality Control
-- name: cdhit
+- changeset_revision:
+  - 54d811ad2b52
+  name: cdhit
   owner: bebatut
   tool_panel_section_label: Multiple Alignments
-- name: format_cd_hit_output
+- changeset_revision:
+  - 4015e9d6d277
+  name: format_cd_hit_output
   owner: bebatut
   tool_panel_section_label: Multiple Alignments
 - changeset_revision:
@@ -196,7 +200,9 @@ tools:
   name: group_humann2_uniref_abundances_to_go
   owner: bebatut
   tool_panel_section_label: Metagenomic analyses
-- name: compare_humann2_output
+- changeset_revision:
+  - c1aca37cb1fc
+  name: compare_humann2_output
   owner: bebatut
   tool_panel_section_label: Metagenomic analyses
 - changeset_revision:
