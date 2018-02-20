@@ -12,13 +12,13 @@ lint: ## Lint the yaml files
 	pykwalify -d tools_iuc.yaml     -s .schema.yaml
 	pykwalify -d tools.yaml         -s .schema.yaml
 
-update_trusted: ## Run the update script + COMMIT THE RESULT
+update_trusted: ## Run the update script
 	@# Again, could be made into a fancy target but since this should be run due to changes in remote system, we're doing it the KISS way.
 	python scripts/update-trusted.py tools_iuc.yaml
-	git config user.email "admin@usegalaxy.eu"
-	git config user.name "usegalaxy.eu bot"
+
+commit_updates: ## COMMIT + PUSH the results
 	git config push.default current
 	git add *.lock
-	git commit -m "Updated trusted tools" || true
+	git commit --author "UseGalaxy.eu Bot <admin@usegalaxy.eu>" -m "Updated trusted tools" || true
 
 .PHONY: lint update_trusted help
