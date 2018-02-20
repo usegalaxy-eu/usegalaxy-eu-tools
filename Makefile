@@ -1,20 +1,27 @@
+YAML_FILES := $(wildcard *.yaml)
+LINTED_YAMLS := $(YAML_FILES:=.lint)
+CORRECT_YAMLS := $(YAML_FILES:=.fix)
+
+
 help:
 	@egrep '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-16s\033[0m %s\n", $$1, $$2}'
 
-lint: ## Lint the yaml files
-	@# Running process' job to ensure requirements.txt is installed.
-	@# I spent 10 minutes reading makefile's manual before concluding it was a list of like 5 files that changes maybe 1/year.
-	pykwalify -d asaim.yaml         -s .schema.yaml
-	pykwalify -d epigenetics.yaml   -s .schema.yaml
-	pykwalify -d graphclust.yaml    -s .schema.yaml
-	pykwalify -d metabolomics.yaml  -s .schema.yaml
-	pykwalify -d tools_galaxyp.yaml -s .schema.yaml
-	pykwalify -d tools_iuc.yaml     -s .schema.yaml
-	pykwalify -d tools.yaml         -s .schema.yaml
+lint: $(LINTED_YAMLS) ## Lint the yaml files
+fix: $(CORRECT_YAMLS) ## Fix any issues (missing hashes, missing lockfiles, etc.)
+
+%.lint: %
+	pykwalify -d $< -s .schema.yaml
+	python scripts/identify-unpinned.py $<
+
+%.fix: %
+	@# Generates the lockfile or updates it if it is missing tools
+	python scripts/fix-lockfile.py $<
+	@# --without says only add those hashes for those missing hashes (zB new tools)
+	python scripts/update-tool.py $< --without
 
 update_trusted: ## Run the update script
-	@# Again, could be made into a fancy target but since this should be run due to changes in remote system, we're doing it the KISS way.
-	python scripts/update-trusted.py tools_iuc.yaml
+	@# Missing --without, so this updates all tools in the file.
+	python scripts/update-tool.py tools_iuc.yaml
 
 commit_updates: ## COMMIT + PUSH the results
 	git config push.default current
