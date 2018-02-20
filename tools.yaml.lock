@@ -1109,11 +1109,11 @@ tools:
   name: trinity
   owner: iuc
   tool_panel_section_label: 'NGS: RNA Analysis'
-- name: vienna_rna
+- changeset_revision:
+  - 04c56f5b0907
+  name: vienna_rna
   owner: rnateam
   tool_panel_section_label: 'NGS: RNA Analysis'
-  changeset_revision:
-  - 04c56f5b0907
 - changeset_revision:
   - b1f5d49a6f30
   name: remurna
@@ -1631,12 +1631,12 @@ tools:
   name: chemfp
   owner: bgruening
   tool_panel_section_label: ChemicalToolBox
-- name: openbabel
-  owner: bgruening
-  tool_panel_section_label: ChemicalToolBox
-  changeset_revision:
+- changeset_revision:
   - b52872a1755a
   - 125da3a296ca
+  name: openbabel
+  owner: bgruening
+  tool_panel_section_label: ChemicalToolBox
 - changeset_revision:
   - 6bb56f3a8de0
   name: rdkit

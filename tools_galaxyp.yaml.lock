@@ -27,12 +27,12 @@ tools:
   name: idconvert
   owner: galaxyp
   tool_panel_section_label: Convert Formats
-- name: idpquery
-  owner: galaxyp
-  tool_panel_section_label: Convert Formats
-  changeset_revision:
+- changeset_revision:
   - 66c38e74d1ae
   - 42dc8e9e58d8
+  name: idpquery
+  owner: galaxyp
+  tool_panel_section_label: Convert Formats
 - changeset_revision:
   - c9b96a178758
   name: msconvert_nix
@@ -63,29 +63,29 @@ tools:
   name: morpheus
   owner: galaxyp
   tool_panel_section_label: Proteomics
-- name: msgfplus
-  owner: galaxyp
-  tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - ee56530a559f
   - b4ccaf21855d
   - 09e0ae6f661b
   - 58f9cf0de6d4
+  name: msgfplus
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
 - changeset_revision:
   - c15d72720643
   name: decoyfasta
   owner: galaxyp
   tool_panel_section_label: Proteomics
-- name: suite_openms
-  owner: galaxyp
-  tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - a06f14681ead
-- name: blastxml_to_tabular_selectable
+  name: suite_openms
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - 5da5dcc5e13a
+  name: blastxml_to_tabular_selectable
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
 - changeset_revision:
   - 49ca06d66762
   name: query_tabular
@@ -101,56 +101,56 @@ tools:
   name: suite_query_tabular
   owner: iuc
   tool_panel_section_label: Proteomics
-- name: msi_preprocessing
-  owner: galaxyp
-  tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - 74fcb3c95a53
   - c4abf42419c2
-- name: msi_qualitycontrol
+  name: msi_preprocessing
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - 845073d506a8
   - 1ccbda92b76b
   - c6bc77c4731d
-- name: msi_ion_images
+  name: msi_qualitycontrol
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - 385e8a4accd9
-- name: msi_spectra_plot
+  name: msi_ion_images
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - c93ae3463b30
-- name: eggnog_mapper
+  name: msi_spectra_plot
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - 3c7c9396daaa
   - a37df6f6b869
+  name: eggnog_mapper
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
 - name: protein_properties
   owner: bgruening
   tool_panel_section_label: Proteomics
-- name: myrimatch
-  owner: galaxyp
-  tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - a039a8d4c7e0
-- name: idpqonvert
+  name: myrimatch
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - fb6ce5041417
-- name: idpassemble
+  name: idpqonvert
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - 39eaac8f3f42
-- name: proteomics_moff
+  name: idpassemble
   owner: galaxyp
   tool_panel_section_label: Proteomics
-  changeset_revision:
+- changeset_revision:
   - b4098353ee73
   - 28b65ce1a091
+  name: proteomics_moff
+  owner: galaxyp
+  tool_panel_section_label: Proteomics

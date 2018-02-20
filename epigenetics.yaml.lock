@@ -20,25 +20,22 @@ tools:
   name: pileometh
   owner: bgruening
   tool_panel_section_label: Calling
-- name: suite_hicup
-  owner: bgruening
-  tool_panel_section_label: Epigenetics
-  changeset_revision:
+- changeset_revision:
   - 5456a2c9b90e
-- name: suite_hicexplorer
+  name: suite_hicup
   owner: bgruening
   tool_panel_section_label: Epigenetics
-  changeset_revision:
+- changeset_revision:
   - 12aca5abdc48
+  name: suite_hicexplorer
+  owner: bgruening
+  tool_panel_section_label: Epigenetics
 - changeset_revision:
   - 4a978cf8cf92
   name: hifive
   owner: sauria
   tool_panel_section_label: Epigenetics
-- name: suite_deeptools
-  owner: bgruening
-  tool_panel_section_label: Epigenetics
-  changeset_revision:
+- changeset_revision:
   - 3d68b716965a
   - d1ea31015c11
   - 4ba8ae21b7f7
@@ -48,3 +45,6 @@ tools:
   - 197493196075
   - 1f56e7b59c07
   - e1b16ec924f8
+  name: suite_deeptools
+  owner: bgruening
+  tool_panel_section_label: Epigenetics
