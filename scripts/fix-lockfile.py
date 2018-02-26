@@ -23,13 +23,19 @@ def update_file(fn, dry):
 
     # Extract the name of every tool. This will potentially be outdated if
     # someone has added something to the main file. this is intentional.
-    locked_tools = [x['name'] for x in locked['tools']]
+    locked_tool_names = [x['name'] for x in locked['tools']]
 
     # As here we add any new tools in.
     for tool in unlocked['tools']:
-        if tool['name'] not in locked_tools:
+        # If it's not in our list of locked names.
+        if tool['name'] not in locked_tool_names:
             # Add it to the set of locked tools.
             locked['tools'].append(tool)
+
+        # Find a reference to the locked version of the tool from the unlocked one.
+        o = [x for x in locked['tools'] if x['name'] == tool['name']][0]
+        # Update the TPSL
+        o['tool_panel_section_label'] = tool['tool_panel_section_label']
 
     with open(fn + '.lock', 'w') as handle:
         yaml.dump(locked, handle, default_flow_style=False)
