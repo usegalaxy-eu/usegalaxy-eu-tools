@@ -4,17 +4,21 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: suite_mimodd
+    owner: wolma
+    tool_panel_section_label: MiModD
+ 
   - name: dwt_var_perfeature
     owner: devteam
     tool_panel_section_label: Statistics
 
   - name: suite_qiime
     owner: iuc
-    tool_panel_section_label: "Qiime"
+    tool_panel_section_label: Qiime
 
   - name: suite_mothur
     owner: iuc
-    tool_panel_section_label: "Mothur"
+    tool_panel_section_label: Mothur
 
   - name: bedtools
     owner: iuc
