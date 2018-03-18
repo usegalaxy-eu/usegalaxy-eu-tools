@@ -1416,3 +1416,511 @@ tools:
   - name: fasttree
     owner: iuc
     tool_panel_section_label: Genome Diversity
+
+  - name: mothur_create_database
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_shhh_flows
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_homova
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_mimarks_attributes
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_taxsummary
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pca
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_amova
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_unifrac_unweighted
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_classify_rf
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_classify_otu
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_dist_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_perseus
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_consensus_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_fastq_info
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_design
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_bin_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_fastq
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_dists
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_tree_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_single
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_trim_flows
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_filter_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_pintail
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_tax
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_sharedseqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_count_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_align_check
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_otulist
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_dist_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_group
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_mimarkspackage
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_hcluster
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_lefse
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_coremicrobiome
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sub_sample
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sens_spec
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_files
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_anosim
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_list_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_indicator
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_classify_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_label
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_rarefaction_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_mantel
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_rare
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_uchime
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_split_abund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_trim_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_split_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_filter_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_group
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster_classic
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_list_otulabels
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster_fragments
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_sabund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_dists
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_lefse
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_otulabels
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pcoa
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_nmds
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_sra
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_libshuff
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_classify_tree
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_unique_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sort_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_deunique_tree
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pcr_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pairwise_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_clearcut
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_normalize_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_align_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_slayer
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_rarefaction_single
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_otulabels
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pre_cluster
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_venn
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_metastats
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_screen_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_biom
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_collect_single
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_collect_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_otus
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_corr_axes
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_phylo_diversity
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_primer_design
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_rabund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_deunique_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_communitytype
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_otus
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_heatmap_bin
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_lineage
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_ccode
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_seq_error
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cooccurrence
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_parse_list
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_phylotype
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_qual
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster_split
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_degap_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_contigs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_lineage
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sffinfo
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_sfffiles
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_check
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_count_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_bellerophon
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chop_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_heatmap_sim
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_relabund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_parsimony
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_oturep
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_lookup
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_otu_hierarchy
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_reverse_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_otu_association
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_unifrac_weighted
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_shhh_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: suite_mothur
+    owner: iuc
+    tool_panel_section_label: Mothur 
