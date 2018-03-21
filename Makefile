@@ -1,5 +1,5 @@
 YAML_FILES := $(wildcard *.yaml)
-LOCK_FILES := $(wildcard *.yaml)
+LOCK_FILES := $(wildcard *.yaml.lock)
 LINTED_YAMLS := $(YAML_FILES:=.lint)
 CORRECT_YAMLS := $(YAML_FILES:=.fix)
 INSTALL_YAMLS := $(LOCK_FILES:=.install)
