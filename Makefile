@@ -1,7 +1,8 @@
 YAML_FILES := $(wildcard *.yaml)
+LOCK_FILES := $(wildcard *.yaml)
 LINTED_YAMLS := $(YAML_FILES:=.lint)
 CORRECT_YAMLS := $(YAML_FILES:=.fix)
-INSTALL_YAMLS := $(YAML_FILES:=.install)
+INSTALL_YAMLS := $(LOCK_FILES:=.install)
 
 GALAXY_SERVER := https://usegalaxy.eu
 
