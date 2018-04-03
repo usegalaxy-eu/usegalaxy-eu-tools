@@ -13,7 +13,7 @@ def update_file(fn):
     # As here we add any new tools in.
     unpinned = []
     for tool in locked['tools']:
-        if 'changeset_revision' not in tool:
+        if 'revisions' not in tool:
             exit_code = 1
             unpinned.append(tool)
 

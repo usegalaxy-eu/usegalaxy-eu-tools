@@ -18,7 +18,7 @@ def update_file(fn, owner=None, name=None, without=False):
     for tool in locked['tools']:
         # If without, then if it is lacking, we should exec.
         if without:
-            if 'changeset_revision' in tool:
+            if 'revisions' in tool:
                 continue
 
         if not without and owner and tool['owner'] != owner:
@@ -33,19 +33,19 @@ def update_file(fn, owner=None, name=None, without=False):
             print(e)
             continue
 
-        if revs[0] in tool.get('changeset_revision', []):
+        if revs[0] in tool.get('revisions', []):
             # The rev is already known, don't add again.
             continue
 
         print("Found newer revision of %s/%s (%s)" % (tool['owner'], tool['name'], revs[0]))
 
         # Get latest rev, if not already added, add it.
-        if 'changeset_revision' not in tool:
-            tool['changeset_revision'] = []
+        if 'revisions' not in tool:
+            tool['revisions'] = []
 
-        if revs[0] not in tool['changeset_revision']:
+        if revs[0] not in tool['revisions']:
             # TS doesn't support utf8 and we don't want to either.
-            tool['changeset_revision'].append(revs[0].encode('ascii'))
+            tool['revisions'].append(revs[0].encode('ascii'))
 
     with open(fn + '.lock', 'w') as handle:
         yaml.dump(locked, handle, default_flow_style=False)
