@@ -2,33 +2,33 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- revisions:
+- name: blast_parser
+  owner: earlhaminst
+  revisions:
   - 376ed15e0d27
-  name: blast_parser
-  owner: earlhaminst
   tool_panel_section_label: Phylogenetics
-- revisions:
+- name: hcluster_sg
+  owner: earlhaminst
+  revisions:
   - 4a233271d05a
-  name: hcluster_sg
-  owner: earlhaminst
   tool_panel_section_label: Phylogenetics
-- revisions:
+- name: hcluster_sg_parser
+  owner: earlhaminst
+  revisions:
   - dbc49bd1a3e9
-  name: hcluster_sg_parser
-  owner: earlhaminst
   tool_panel_section_label: Phylogenetics
-- revisions:
+- name: t_coffee
+  owner: earlhaminst
+  revisions:
   - df6527887a18
-  name: t_coffee
-  owner: earlhaminst
   tool_panel_section_label: Phylogenetics
-- revisions:
+- name: treebest_best
+  owner: earlhaminst
+  revisions:
   - 4f9e5110914b
-  name: treebest_best
-  owner: earlhaminst
   tool_panel_section_label: Phylogenetics
-- revisions:
-  - af9f72ddf7f9
-  name: gafa
+- name: gafa
   owner: earlhaminst
+  revisions:
+  - af9f72ddf7f9
   tool_panel_section_label: Phylogenetics

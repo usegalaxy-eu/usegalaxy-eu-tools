@@ -1,43 +1,45 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- revisions:
-  - cd253831a014
-  name: metilene
+- name: metilene
   owner: rnateam
+  revisions:
+  - cd253831a014
   tool_panel_section_label: Epigenetics
-- revisions:
-  - 9d02cd7883ad
-  name: bismark
+- name: bismark
   owner: bgruening
+  revisions:
+  - 9d02cd7883ad
   tool_panel_section_label: Mapping
-- revisions:
+- name: bwameth
+  owner: iuc
+  revisions:
   - a6ea26c1f225
   - f7094efef903
-  name: bwameth
-  owner: iuc
   tool_panel_section_label: Mapping
-- revisions:
+- name: pileometh
+  owner: bgruening
+  revisions:
   - ccc755bdf11d
-  name: pileometh
-  owner: bgruening
   tool_panel_section_label: Peak Calling
-- revisions:
+- name: suite_hicup
+  owner: bgruening
+  revisions:
   - 5456a2c9b90e
-  name: suite_hicup
-  owner: bgruening
   tool_panel_section_label: Epigenetics
-- revisions:
+- name: suite_hicexplorer
+  owner: bgruening
+  revisions:
   - 12aca5abdc48
-  name: suite_hicexplorer
-  owner: bgruening
   tool_panel_section_label: HiCExplorer
-- revisions:
-  - 4a978cf8cf92
-  name: hifive
+- name: hifive
   owner: sauria
+  revisions:
+  - 4a978cf8cf92
   tool_panel_section_label: Epigenetics
-- revisions:
+- name: suite_deeptools
+  owner: bgruening
+  revisions:
   - 3d68b716965a
   - d1ea31015c11
   - 4ba8ae21b7f7
@@ -47,6 +49,4 @@ tools:
   - 197493196075
   - 1f56e7b59c07
   - e1b16ec924f8
-  name: suite_deeptools
-  owner: bgruening
   tool_panel_section_label: Epigenetics

@@ -2,27 +2,29 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- revisions:
+- name: suite_ebi_tools
+  owner: iuc
+  revisions:
   - 9de1dc59ff70
-  name: suite_ebi_tools
-  owner: iuc
   tool_panel_section_label: Get Data
-- revisions:
+- name: suite_enasearch
+  owner: iuc
+  revisions:
   - 3aa846f62284
-  name: suite_enasearch
-  owner: iuc
   tool_panel_section_label: Get Data
-- revisions:
+- name: suite_ncbi_entrez
+  owner: iuc
+  revisions:
   - 3c74f6208bc5
-  name: suite_ncbi_entrez
-  owner: iuc
   tool_panel_section_label: Get Data
-- revisions:
+- name: sra_tools
+  owner: iuc
+  revisions:
   - b723c120161a
-  name: sra_tools
-  owner: iuc
   tool_panel_section_label: Get Data
-- revisions:
+- name: fastqc
+  owner: devteam
+  revisions:
   - 3a458e268066
   - 3fdc1a74d866
   - 9337dd1fbc66
@@ -31,15 +33,15 @@ tools:
   - e28c965eeed4
   - 0b201de108b9
   - d2cf2c0c8a11
-  name: fastqc
-  owner: devteam
   tool_panel_section_label: Quality Control
-- revisions:
-  - 6b865dde1baa
-  name: prinseq
+- name: prinseq
   owner: iuc
+  revisions:
+  - 6b865dde1baa
   tool_panel_section_label: Quality Control
-- revisions:
+- name: trim_galore
+  owner: bgruening
+  revisions:
   - 1bf4789584dc
   - 11962ce40855
   - f1e71aeaa923
@@ -47,47 +49,47 @@ tools:
   - 2c1f0fe810f7
   - 949f01671246
   - 8352713cf939
-  name: trim_galore
-  owner: bgruening
   tool_panel_section_label: Quality Control
-- revisions:
+- name: trimmomatic
+  owner: pjbriggs
+  revisions:
   - 2bd7cdbb6228
   - 415a165d92bb
   - a60283899c6d
   - 14d05f2d511d
   - f8a9a5eaca8a
-  name: trimmomatic
-  owner: pjbriggs
   tool_panel_section_label: Quality Control
-- revisions:
-  - e4574a4d09d8
-  name: multiqc
+- name: multiqc
   owner: iuc
+  revisions:
+  - e4574a4d09d8
   tool_panel_section_label: Quality Control
-- revisions:
+- name: cdhit
+  owner: bebatut
+  revisions:
   - 54d811ad2b52
-  name: cdhit
-  owner: bebatut
   tool_panel_section_label: Multiple Alignments
-- revisions:
+- name: format_cd_hit_output
+  owner: bebatut
+  revisions:
   - 4015e9d6d277
-  name: format_cd_hit_output
-  owner: bebatut
   tool_panel_section_label: Multiple Alignments
-- revisions:
+- name: sortmerna
+  owner: rnateam
+  revisions:
   - 65c38d020fea
   - 59252ca85c74
   - 185effcdfb68
   - b482293b2987
-  name: sortmerna
-  owner: rnateam
   tool_panel_section_label: Annotation
-- revisions:
-  - 30bb49887172
-  name: data_manager_sortmerna_database_downloader
+- name: data_manager_sortmerna_database_downloader
   owner: rnateam
+  revisions:
+  - 30bb49887172
   tool_panel_section_label: Data Managers
-- revisions:
+- name: ncbi_blast_plus
+  owner: devteam
+  revisions:
   - 2fe07f50a41e
   - 3034ce97dd33
   - 6f386c5dc4fb
@@ -100,21 +102,21 @@ tools:
   - 70e7dcbf6573
   - 9dabbfd73c8a
   - b5f1f599d1fb
-  name: ncbi_blast_plus
-  owner: devteam
   tool_panel_section_label: NCBI Blast
-- revisions:
+- name: diamond
+  owner: bgruening
+  revisions:
   - 98037ef3d2a9
   - 3c6b132b154a
-  name: diamond
-  owner: bgruening
   tool_panel_section_label: NCBI Blast
-- revisions:
-  - 48f306c57611
-  name: bwa
+- name: bwa
   owner: devteam
+  revisions:
+  - 48f306c57611
   tool_panel_section_label: Mapping
-- revisions:
+- name: bowtie2
+  owner: devteam
+  revisions:
   - a9d4f71dbfb0
   - 96d2e31a3938
   - 019c2a81547a
@@ -122,119 +124,117 @@ tools:
   - 8ccbdbe9a695
   - c1ec08cb34f9
   - 42bb952b4e3c
-  name: bowtie2
-  owner: devteam
   tool_panel_section_label: Mapping
-- revisions:
+- name: hmmer3
+  owner: iuc
+  revisions:
   - b5066aa77fea
-  name: hmmer3
-  owner: iuc
   tool_panel_section_label: Annotation
-- revisions:
+- name: vsearch
+  owner: iuc
+  revisions:
   - fae6527990af
-  name: vsearch
-  owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: nonpareil
+  owner: iuc
+  revisions:
   - 280386b252a5
-  name: nonpareil
-  owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: megahit
+  owner: iuc
+  revisions:
   - 02a822e32de7
-  name: megahit
-  owner: iuc
   tool_panel_section_label: Assembly
-- revisions:
-  - 01a241476407
-  name: metaspades
+- name: metaspades
   owner: nml
+  revisions:
+  - 01a241476407
   tool_panel_section_label: Assembly
-- revisions:
+- name: quast
+  owner: iuc
+  revisions:
   - 736d51130b41
-  name: quast
-  owner: iuc
   tool_panel_section_label: Assembly
-- revisions:
+- name: valet
+  owner: iuc
+  revisions:
   - 56236acaad45
-  name: valet
-  owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: suite_mothur
+  owner: iuc
+  revisions:
   - 768c2e48b706
-  name: suite_mothur
-  owner: iuc
   tool_panel_section_label: mothur
-- revisions:
+- name: suite_qiime
+  owner: iuc
+  revisions:
   - b2e54849fd5c
-  name: suite_qiime
-  owner: iuc
   tool_panel_section_label: Qiime
-- revisions:
+- name: data_manager_qiime_database_downloader
+  owner: iuc
+  revisions:
   - cbe065fbd038
-  name: data_manager_qiime_database_downloader
-  owner: iuc
   tool_panel_section_label: Data Managers
-- revisions:
+- name: suite_metaphlan2
+  owner: iuc
+  revisions:
   - ae46e4116c61
-  name: suite_metaphlan2
-  owner: iuc
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: format_metaphlan2_output
+  owner: bebatut
+  revisions:
   - 2bfa9b200600
-  name: format_metaphlan2_output
-  owner: bebatut
   tool_panel_section_label: Metagenomic analyses
-- revisions:
-  - 1bcf0e168661
-  name: suite_kraken_0_10_5
+- name: suite_kraken_0_10_5
   owner: devteam
+  revisions:
+  - 1bcf0e168661
   tool_panel_section_label: Metagenomic analyses
-- revisions:
-  - b6817cd584e1
-  name: suite_humann2
+- name: suite_humann2
   owner: iuc
+  revisions:
+  - b6817cd584e1
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: group_humann2_uniref_abundances_to_go
+  owner: bebatut
+  revisions:
   - cad28d7b49d2
-  name: group_humann2_uniref_abundances_to_go
-  owner: bebatut
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: compare_humann2_output
+  owner: bebatut
+  revisions:
   - c1aca37cb1fc
-  name: compare_humann2_output
-  owner: bebatut
   tool_panel_section_label: Metagenomic analyses
-- revisions:
-  - 82547f0d3a29
-  name: interproscan5
+- name: interproscan5
   owner: bgruening
+  revisions:
+  - 82547f0d3a29
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: suite_picrust
+  owner: iuc
+  revisions:
   - 9a3fe0bd7481
   - c48e45864e0c
-  name: suite_picrust
-  owner: iuc
   tool_panel_section_label: Annotation
-- revisions:
-  - 31394a0c0242
-  name: combine_metaphlan2_humann2
+- name: combine_metaphlan2_humann2
   owner: bebatut
+  revisions:
+  - 31394a0c0242
   tool_panel_section_label: Metagenomic analyses
-- revisions:
+- name: export2graphlan
+  owner: iuc
+  revisions:
   - ed1becc01910
-  name: export2graphlan
-  owner: iuc
   tool_panel_section_label: Graph/Display Data
-- revisions:
+- name: suite_graphlan
+  owner: iuc
+  revisions:
   - 0e3b8782641c
-  name: suite_graphlan
-  owner: iuc
   tool_panel_section_label: Graph/Display Data
-- revisions:
+- name: taxonomy_krona_chart
+  owner: crs4
+  revisions:
   - 020b3087d0b7
   - f11a04ed443b
   - 09552faff9c0
-  name: taxonomy_krona_chart
-  owner: crs4
   tool_panel_section_label: Graph/Display Data
