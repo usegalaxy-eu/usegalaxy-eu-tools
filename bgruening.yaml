@@ -4,6 +4,62 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: svm_classifier
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_sample_generator
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_pairwise_metrics
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: nn_classifier
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_numeric_clustering
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_ensemble
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_feature_selection
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_data_preprocess
+    owner: bgruening
+    tool_panel_section_label: Statistics
+  
+  - name: sklearn_clf_metrics
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_regression_metrics
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_discriminant_classifier
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_generalized_linear
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_model_validation
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: scipy_sparse
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
   - name: sklearn_suite
     owner: bgruening
     tool_panel_section_label: Statistics
