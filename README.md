@@ -19,7 +19,7 @@ File                                  | Tools
 ```console
 export PATH=/usr/local/tools/_conda/bin/:$PATH
 source activate ephemeris
-shed-tools install -t tools.yaml -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de
+shed-tools install -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de -t tools.yaml
 ```
 
 ## Install of a Single Tool
