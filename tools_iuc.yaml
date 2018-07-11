@@ -814,8 +814,20 @@ tools:
     owner: devteam
     tool_panel_section_label: DNA methylation
 
-  - name: varscan_version_2
-    owner: devteam
+  - name: varscan_mpileup
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: varscan_somatic
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: varscan_copynumber
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: suite_varscan
+    owner: iuc
     tool_panel_section_label: Variant Calling
 
   - name: freebayes
