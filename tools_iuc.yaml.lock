@@ -1950,6 +1950,7 @@ tools:
   revisions:
   - 83dd58273d4a
   - e8826fd7edc0
+  - 035a8df3214f
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: spades
   owner: nml
@@ -2813,3 +2814,23 @@ tools:
   revisions:
   - f73729b62b51
   tool_panel_section_label: FASTA/FASTQ manipulation
+- name: varscan_mpileup
+  owner: iuc
+  revisions:
+  - 1e667badbe87
+  tool_panel_section_label: Variant Calling
+- name: varscan_somatic
+  owner: iuc
+  revisions:
+  - 72b8ce355fae
+  tool_panel_section_label: Variant Calling
+- name: varscan_copynumber
+  owner: iuc
+  revisions:
+  - a584f046e4a7
+  tool_panel_section_label: Variant Calling
+- name: suite_varscan
+  owner: iuc
+  revisions:
+  - d4187d802dc3
+  tool_panel_section_label: Variant Calling
