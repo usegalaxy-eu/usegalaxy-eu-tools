@@ -4,7 +4,6 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-
   - name: 'collapse_collections'
     owner: 'nml'
     tool_panel_section_label: 'Collection Operations'
@@ -56,73 +55,46 @@ tools:
   - name: prinseq
     owner: iuc
     tool_panel_section_label: Text Manipulation
-  - name: add_value
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
+  
+ 
   - name: split_file_on_column
     owner: bgruening
     tool_panel_section_label: Text Manipulation
+  
   - name: merge_cols
     owner: devteam
     tool_panel_section_label: Text Manipulation
-  - name: text_processing
-    owner: bgruening
-    tool_panel_section_label: Text Manipulation
-  - name: column_maker
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
+  
   - name: coverage
     owner: devteam
     tool_panel_section_label: Text Manipulation
+ 
   - name: regex_replace
     owner: kellrott
     tool_panel_section_label: Text Manipulation
-  - name: tables_arithmetic_operations
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
+
   - name: merge
     owner: devteam
     tool_panel_section_label: Text Manipulation
+
   - name: intersect
     owner: devteam
     tool_panel_section_label: Text Manipulation
-  - name: flanking_features
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
+
   - name: join
     owner: devteam
     tool_panel_section_label: Text Manipulation
-  - name: cluster
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-  - name: get_flanks
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-  - name: complement
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
+
   - name: subtract
     owner: devteam
     tool_panel_section_label: Text Manipulation
-  - name: basecoverage
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
+
   - name: subtract_query
     owner: devteam
     tool_panel_section_label: Text Manipulation
-  - name: sed_wrapper
-    owner: bjoern-gruening
-    tool_panel_section_label: Text Manipulation
+
   - name: unique
     owner: bgruening
-    tool_panel_section_label: Text Manipulation
-  - name: dna_filtering
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-
-
-  - name: column_maker
-    owner: devteam
     tool_panel_section_label: Text Manipulation
 
   - name: reshape2_melt
@@ -137,39 +109,15 @@ tools:
     owner: devteam
     tool_panel_section_label: Text Manipulation
 
-  - name: merge_cols
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-
   - name: jq
     owner: iuc
-    tool_panel_section_label: Text Manipulation
-
-  - name: column_maker
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-
-  - name: coverage
-    owner: devteam
     tool_panel_section_label: Text Manipulation
 
   - name: tables_arithmetic_operations
     owner: devteam
     tool_panel_section_label: Text Manipulation
 
-  - name: merge
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-
-  - name: intersect
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-
   - name: flanking_features
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-
-  - name: join
     owner: devteam
     tool_panel_section_label: Text Manipulation
 
@@ -185,16 +133,13 @@ tools:
     owner: devteam
     tool_panel_section_label: Text Manipulation
 
-
   - name: basecoverage
     owner: devteam
     tool_panel_section_label: Text Manipulation
 
-
   - name: dna_filtering
     owner: devteam
     tool_panel_section_label: Text Manipulation
-
 
   - name: column_order_header_sort
     owner: iuc
@@ -212,71 +157,37 @@ tools:
     owner: iuc
     tool_panel_section_label: Text Manipulation
 
-
-
   - name: column_arrange_by_header
     owner: bgruening
     tool_panel_section_label: Filter and Sort
+
   - name: seq_filter_by_id
     owner: peterjc
     tool_panel_section_label: Filter and Sort
+
   - name: find_in_reference
     owner: jjohnson
     tool_panel_section_label: Filter and Sort
+
   - name: sample_seqs
     owner: peterjc
     tool_panel_section_label: Filter and Sort
-  - name: collection_column_join
-    owner: iuc
-    tool_panel_section_label: Join, Subtract and Group
-
-  # - install_repository_dependencies: true
-  #   install_resolver_dependencies: true
-  #   install_tool_dependencies: false
-  #   name: datamash_wrapper
-  #   owner: agordon
-  #   tool_panel_section_label: Join, Subtract and Group
 
   - name: suite_datamash
     owner: iuc
     tool_panel_section_label: Join, Subtract and Group
 
-
-
   - name: collection_column_join
     owner: iuc
     tool_panel_section_label: Join, Subtract and Group
 
-
-
   - name: numeric_clustering
     owner: bgruening
     tool_panel_section_label: Statistics
-  - name: t_test_two_samples
-    owner: devteam
-    tool_panel_section_label: Statistics
+
   - name: seq_composition
     owner: peterjc
     tool_panel_section_label: Statistics
-  - name: plot_from_lda
-    owner: devteam
-    tool_panel_section_label: Statistics
-  - name: mine
-    owner: devteam
-    tool_panel_section_label: Statistics
-  - name: lda_analysis
-    owner: devteam
-    tool_panel_section_label: Statistics
-  - name: generate_pc_lda_matrix
-    owner: devteam
-    tool_panel_section_label: Statistics
-  - name: count_gff_features
-    owner: devteam
-    tool_panel_section_label: Statistics
-  - name: correlation
-    owner: devteam
-    tool_panel_section_label: Statistics
-
 
   - name: t_test_two_samples
     owner: devteam
@@ -305,24 +216,27 @@ tools:
   - name: correlation
     owner: devteam
     tool_panel_section_label: Statistics
-
-
 
   - name: venn_list
     owner: peterjc
     tool_panel_section_label: Graph/Display Data
+
   - name: scatterplot
     owner: devteam
     tool_panel_section_label: Graph/Display Data
+
   - name: histogram
     owner: devteam
     tool_panel_section_label: Graph/Display Data
+
   - name: gmaj
     owner: devteam
     tool_panel_section_label: Graph/Display Data
+
   - name: xy_plot
     owner: devteam
     tool_panel_section_label: Graph/Display Data
+
   - name: draw_stacked_barplots
     owner: devteam
     tool_panel_section_label: Graph / Display Data
@@ -362,19 +276,22 @@ tools:
   - name: best_regression_subsets
     owner: devteam
     tool_panel_section_label: Statistics
+
   - name: principal_component_analysis
     owner: devteam
     tool_panel_section_label: Statistics
+
   - name: kernel_principal_component_analysis
     owner: devteam
     tool_panel_section_label: Statistics
+
   - name: kernel_canonical_correlation_analysis
     owner: devteam
     tool_panel_section_label: Statistics
+
   - name: canonical_correlation_analysis
     owner: devteam
     tool_panel_section_label: Statistics
-
 
   - name: sklearn_svm_classifier
     owner: bgruening
