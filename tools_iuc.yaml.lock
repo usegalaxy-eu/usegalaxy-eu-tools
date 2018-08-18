@@ -7,6 +7,7 @@ tools:
   revisions:
   - b8348686a0b9
   - 6bb3cd018203
+  - db1841942d2b
   tool_panel_section_label: Operate on Genomic Intervals
 - name: kallisto_quant
   owner: iuc
@@ -113,6 +114,7 @@ tools:
   owner: devteam
   revisions:
   - cb1c59d69557
+  - 7a15159140d1
   tool_panel_section_label: Statistics
 - name: merge_cols
   owner: devteam
@@ -795,6 +797,7 @@ tools:
   revisions:
   - 377ac2829eac
   - bbb007a39ac2
+  - b98f3fa516a3
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fastx_reverse_complement
   owner: devteam
@@ -1231,12 +1234,14 @@ tools:
   revisions:
   - b8348686a0b9
   - 6bb3cd018203
+  - db1841942d2b
   tool_panel_section_label: Operate on Genomic Intervals
 - name: bedtools
   owner: iuc
   revisions:
   - b8348686a0b9
   - 6bb3cd018203
+  - db1841942d2b
   tool_panel_section_label: Operate on Genomic Intervals
 - name: picard
   owner: devteam
@@ -1993,6 +1998,7 @@ tools:
   - 8defa76bf1b4
   - 3de29ae524a0
   - c8a5934f6a04
+  - 3657b4d9c528
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: codeml
   owner: iuc
@@ -3311,3 +3317,18 @@ tools:
   revisions:
   - f48ed38dfddf
   tool_panel_section_label: Annotation
+- name: scpipe
+  owner: iuc
+  revisions:
+  - 4ec6717872b1
+  tool_panel_section_label: RNA Analysis
+- name: charts
+  owner: iuc
+  revisions:
+  - a87a3773d8ed
+  tool_panel_section_label: Graph/Display Data
+- name: heinz
+  owner: iuc
+  revisions:
+  - e41ec5af7472
+  tool_panel_section_label: RNA Analysis
