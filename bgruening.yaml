@@ -4,7 +4,7 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-  - name: svm_classifier
+  - name: sklearn_svm_classifier
     owner: bgruening
     tool_panel_section_label: Statistics
 
@@ -12,11 +12,19 @@ tools:
     owner: bgruening
     tool_panel_section_label: Statistics
 
+  - name: sklearn_searchcv
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: sklearn_build_pipeline
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
   - name: sklearn_pairwise_metrics
     owner: bgruening
     tool_panel_section_label: Statistics
 
-  - name: nn_classifier
+  - name: sklearn_nn_classifier
     owner: bgruening
     tool_panel_section_label: Statistics
 
