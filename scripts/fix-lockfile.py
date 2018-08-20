@@ -21,24 +21,42 @@ def update_file(fn, dry):
         # Otherwise just clone the "unlocked" list.
         locked = copy.deepcopy(unlocked)
 
-    # Extract the name of every tool. This will potentially be outdated if
-    # someone has added something to the main file. this is intentional.
-    locked_tool_names = [x['name'] for x in locked['tools']]
+    # We will place entries in a cleaned lockfile, removing defunct entries, etc.
+    clean_lockfile = copy.deepcopy(locked)
+    clean_lockfile['tools'] = []
 
     # As here we add any new tools in.
     for tool in unlocked['tools']:
-        # If it's not in our list of locked names.
-        if tool['name'] not in locked_tool_names:
-            # Add it to the set of locked tools.
-            locked['tools'].append(tool)
+        # If we have an existing locked copy, we'll just use that.
+        locked_tools = [x for x in locked['tools'] if x['name'] == tool['name'] and x['owner'] == tool['owner']]
+        # If there are no copies of it seen in the lockfile, we'll just copy it
+        # over directly, without a reivision. Another script will fix that.
+        if len(locked) == 0:
+            # new tool, just add directly.
+            clean_lockfile['tools'].append(tool)
+            continue
 
-        # Find a reference to the locked version of the tool from the unlocked one.
-        o = [x for x in locked['tools'] if x['name'] == tool['name']][0]
-        # Update the TPSL
-        o['tool_panel_section_label'] = tool['tool_panel_section_label']
+        # Otherwise we hvae one or more locked versions so we'll harmonise +
+        # reduce. Revisions are the only thing that could be variable.
+        # Name/section/owner should not be. If they are, we take original human
+        # edited .yaml file as source of truth.
+
+        revisions = []
+        for locked_tool in locked_tools:
+            for revision in locked_tool.get('revisions', []):
+                revisions.append(revision)
+
+        new_tool = {
+            'name': tool['name'],
+            'owner': tool['owner'],
+            'tool_panel_section_label': tool['tool_panel_section_label'],
+            'revisions': list(set(revisions)),  # Cast to list for yaml serialization
+        }
+
+        clean_lockfile['tools'].append(new_tool)
 
     with open(fn + '.lock', 'w') as handle:
-        yaml.dump(locked, handle, default_flow_style=False)
+        yaml.dump(clean_lockfile, handle, default_flow_style=False)
 
 
 
