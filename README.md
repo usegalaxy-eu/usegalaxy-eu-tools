@@ -1,49 +1,40 @@
-# UseGalaxy tools
+# usegalaxy.\* tools
 
-There are a couple separate lists of tools contained here. The sum total of them make up the set of tools installed in UseGalaxy.eu
+Originally this repository was solely for the use of usegalaxy.eu, but we are looking at expanding that to the other usegalaxy.\* instances. Some documentation may be outdated while we figure out the new policies and procedures.
 
+Currently only UseGalaxy.eu is installing tools from this repository.
 
-File                                  | Tools
-------------------------------------- | -----------
-[asaim](./asaim.yaml)                 |
-[epigenetics](./epigenetics.yaml)     |
-[graphclust](./graphclust.yaml)       |
-[metabolomics](./metabolomics.yaml)   |
-[tools_galaxyp](./tools_galaxyp.yaml) | Proteomics Tools
-[tools_iuc](./tools_iuc.yaml)         | Most of the tools maintained by IUC. We aren't currently planning on automatically adding all the tools from IUC but we may reconsider this later.
-[tools](./tools.yaml)                 | Tools not contained in one of the other files.
+## Setup
 
+- `yaml` files are manually curated
+- `yaml.lock` files are automatically generated
+- Only IUC tools are automatically updated with the latest version each week
 
-## Updating a Tool
+## Requesting Tools in UseGalaxy.\*
 
-We have written a small script to help you in requesting updates to specific tools.
+Policies are not yet announced.
 
+The tools are losely grouped into several categories based on the yaml files. Please make your changes in the appropriate file and avoid creating a new yaml file unless necessary.
 
-```
-python scripts/update-tool.py --owner iuc metabolomics.yaml
-```
+### Updating an Existing Tool
 
-Will look through every tool in metabolomics.yaml, check if it is owned by IUC,
-and if it is, it will fetch the latest versions of that tool. If the latest
-version has not been seen before, it will be added to the .lock file. Jenkins
-will later install these versions automatically.
+- Edit the .yaml.lock file to add the latest/specific changeset revision for the tool. You can use `python scripts/update-tool.py --owner <repo-owner> --name <repo-name> <file.yaml.lock>` in order to do this if you just want to add the latest revision.
+- Open a pull request
 
-## Installation (Automatic)
+### Requesting a New Tool
 
-Is completely automated and runs on our Jenkins server. Every saturday morning
-it wakes up early and updates all IUC owned tools + ensures that all the yaml
-files are installed to usegalaxy.eu.
+- If you just want the latest version:
+	- Edit the .yaml file to add name/owner/section
+- If you want a specific version:
+	- Edit the .yaml file to add name/owner/section
+	- Run `make fix`
+	- Edit the .yaml.lock to correct the version number.
+- Open a pull request
 
-## Installation (Manual)
+## For UseGalaxy.\* Instance Administrators
 
-```console
-export PATH=/usr/local/tools/_conda/bin/:$PATH
-source activate ephemeris
-shed-tools install -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de -t tools.yaml
-```
+Set the environment variables `GALAXY_SERVER_URL` and `GALAXY_API_KEY` and run `make install`. This will install ALL of the tools from the .lock files. Be sure that the tool panel sections are pre-existing or it will make a mess of your tool panel. You can run `grep -o -h 'tool_panel_section_label:.*' *.yaml.lock | sort -u` for a list of categories.
 
-Or for a single tool
+## On UseGalaxy.eu
 
-```console
-shed-tools install -a $GALAXY_API_KEY --galaxy https://galaxy.uni-freiburg.de --name annotatemyids --owner iuc --section_label 'Annotation'
-```
+Currently, UseGalaxy.eu runs this on our Jenkins server. Every saturday morning it wakes up early and updates all IUC owned tools + ensures that all the yaml files are installed to usegalaxy.eu.
