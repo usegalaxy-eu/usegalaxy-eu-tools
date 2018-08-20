@@ -26,13 +26,13 @@ tools:
   owner: devteam
   revisions:
   - 3a458e268066
-  - 3fdc1a74d866
   - 9337dd1fbc66
   - 484e86282f4b
+  - 3fdc1a74d866
   - 28d39af2dd06
-  - e28c965eeed4
   - 0b201de108b9
   - d2cf2c0c8a11
+  - e28c965eeed4
   tool_panel_section_label: Quality Control
 - name: prinseq
   owner: iuc
@@ -42,22 +42,22 @@ tools:
 - name: trim_galore
   owner: bgruening
   revisions:
-  - 1bf4789584dc
-  - 11962ce40855
-  - f1e71aeaa923
   - eb546ac2aab2
-  - 2c1f0fe810f7
+  - 11962ce40855
   - 949f01671246
+  - 2c1f0fe810f7
   - 8352713cf939
+  - f1e71aeaa923
+  - 1bf4789584dc
   tool_panel_section_label: Quality Control
 - name: trimmomatic
   owner: pjbriggs
   revisions:
   - 2bd7cdbb6228
-  - 415a165d92bb
-  - a60283899c6d
   - 14d05f2d511d
+  - 415a165d92bb
   - f8a9a5eaca8a
+  - a60283899c6d
   tool_panel_section_label: Quality Control
 - name: multiqc
   owner: iuc
@@ -67,8 +67,8 @@ tools:
 - name: cdhit
   owner: bebatut
   revisions:
-  - 54d811ad2b52
   - 93f25d52cfa5
+  - 54d811ad2b52
   tool_panel_section_label: Multiple Alignments
 - name: format_cd_hit_output
   owner: bebatut
@@ -78,10 +78,10 @@ tools:
 - name: sortmerna
   owner: rnateam
   revisions:
-  - 65c38d020fea
-  - 59252ca85c74
   - 185effcdfb68
   - b482293b2987
+  - 59252ca85c74
+  - 65c38d020fea
   tool_panel_section_label: Annotation
 - name: data_manager_sortmerna_database_downloader
   owner: rnateam
@@ -91,24 +91,24 @@ tools:
 - name: ncbi_blast_plus
   owner: devteam
   revisions:
-  - 2fe07f50a41e
   - 3034ce97dd33
-  - 6f386c5dc4fb
-  - 7538e2bfcd41
   - 6560192c5098
-  - 623f727cdff1
+  - 6f386c5dc4fb
   - 577d9c12411a
   - 7f3c448e119b
-  - 393a7a35383c
+  - 2fe07f50a41e
   - 70e7dcbf6573
-  - 9dabbfd73c8a
+  - 623f727cdff1
   - b5f1f599d1fb
+  - 7538e2bfcd41
+  - 9dabbfd73c8a
+  - 393a7a35383c
   tool_panel_section_label: NCBI Blast
 - name: diamond
   owner: bgruening
   revisions:
-  - 98037ef3d2a9
   - 3c6b132b154a
+  - 98037ef3d2a9
   tool_panel_section_label: NCBI Blast
 - name: bwa
   owner: devteam
@@ -118,13 +118,13 @@ tools:
 - name: bowtie2
   owner: devteam
   revisions:
-  - a9d4f71dbfb0
-  - 96d2e31a3938
-  - 019c2a81547a
-  - ceb6467e276c
   - 8ccbdbe9a695
-  - c1ec08cb34f9
+  - 96d2e31a3938
+  - ceb6467e276c
   - 42bb952b4e3c
+  - c1ec08cb34f9
+  - a9d4f71dbfb0
+  - 019c2a81547a
   tool_panel_section_label: Mapping
 - name: hmmer3
   owner: iuc
@@ -214,8 +214,8 @@ tools:
 - name: suite_picrust
   owner: iuc
   revisions:
-  - 9a3fe0bd7481
   - c48e45864e0c
+  - 9a3fe0bd7481
   tool_panel_section_label: Annotation
 - name: combine_metaphlan2_humann2
   owner: bebatut
@@ -235,7 +235,7 @@ tools:
 - name: taxonomy_krona_chart
   owner: crs4
   revisions:
-  - 020b3087d0b7
-  - f11a04ed443b
   - 09552faff9c0
+  - f11a04ed443b
+  - 020b3087d0b7
   tool_panel_section_label: Graph/Display Data

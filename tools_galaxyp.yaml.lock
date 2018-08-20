@@ -30,9 +30,9 @@ tools:
 - name: idpquery
   owner: galaxyp
   revisions:
-  - 66c38e74d1ae
   - 42dc8e9e58d8
-  tool_panel_section_label: Proteomics
+  - 66c38e74d1ae
+  tool_panel_section_label: Convert Formats
 - name: msconvert_nix
   owner: galaxyp
   revisions:
@@ -66,10 +66,10 @@ tools:
 - name: msgfplus
   owner: galaxyp
   revisions:
-  - ee56530a559f
   - b4ccaf21855d
   - 09e0ae6f661b
   - 58f9cf0de6d4
+  - ee56530a559f
   tool_panel_section_label: Proteomics
 - name: decoyfasta
   owner: galaxyp
@@ -86,16 +86,6 @@ tools:
   revisions:
   - 5da5dcc5e13a
   tool_panel_section_label: Proteomics
-- name: query_tabular
-  owner: jjohnson
-  revisions:
-  - 49ca06d66762
-  tool_panel_section_label: Proteomics
-- name: sqlite_to_tabular
-  owner: jjohnson
-  revisions:
-  - 123b9ca5e26a
-  tool_panel_section_label: Proteomics
 - name: suite_query_tabular
   owner: iuc
   revisions:
@@ -110,9 +100,9 @@ tools:
 - name: msi_qualitycontrol
   owner: galaxyp
   revisions:
-  - 845073d506a8
-  - 1ccbda92b76b
   - c6bc77c4731d
+  - 1ccbda92b76b
+  - 845073d506a8
   tool_panel_section_label: Proteomics
 - name: msi_ion_images
   owner: galaxyp
@@ -124,11 +114,21 @@ tools:
   revisions:
   - c93ae3463b30
   tool_panel_section_label: Proteomics
+- name: msi_classification
+  owner: galaxyp
+  revisions:
+  - f0b415eb3bcf
+  tool_panel_section_label: Proteomics
+- name: mass_spectrometry_imaging_segmentations
+  owner: galaxyp
+  revisions:
+  - 0c1a9b68f436
+  tool_panel_section_label: Proteomics
 - name: eggnog_mapper
   owner: galaxyp
   revisions:
-  - 3c7c9396daaa
   - a37df6f6b869
+  - 3c7c9396daaa
   tool_panel_section_label: Proteomics
 - name: protein_properties
   owner: bgruening
@@ -150,19 +150,15 @@ tools:
   revisions:
   - 39eaac8f3f42
   tool_panel_section_label: Proteomics
+- name: idpquery
+  owner: galaxyp
+  revisions:
+  - 42dc8e9e58d8
+  - 66c38e74d1ae
+  tool_panel_section_label: Proteomics
 - name: proteomics_moff
   owner: galaxyp
   revisions:
   - b4098353ee73
   - 28b65ce1a091
-  tool_panel_section_label: Proteomics
-- name: mass_spectrometry_imaging_segmentations
-  owner: galaxyp
-  revisions:
-  - 0c1a9b68f436
-  tool_panel_section_label: Proteomics
-- name: msi_classification
-  owner: galaxyp
-  revisions:
-  - f0b415eb3bcf
   tool_panel_section_label: Proteomics

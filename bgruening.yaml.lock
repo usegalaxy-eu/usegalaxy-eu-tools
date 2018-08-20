@@ -2,45 +2,35 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- name: sklearn_suite
+- name: sklearn_svm_classifier
   owner: bgruening
   revisions:
-  - ed957fdd670d
-  tool_panel_section_label: Statistics
-- name: nanopolish_variants
-  owner: bgruening
-  revisions:
-  - 639b3a5bb415
-  tool_panel_section_label: Variant Calling
-- name: nanopolish_methylation
-  owner: bgruening
-  revisions:
-  - f9dadc362197
-  tool_panel_section_label: Epigenetics
-- name: nanopolish_eventalign
-  owner: bgruening
-  revisions:
-  - bee42f615f28
-  tool_panel_section_label: Assembly
-- name: svm_classifier
-  owner: bgruening
-  revisions:
-  - 6b31f5167cf8
+  - 295c383c3282
   tool_panel_section_label: Statistics
 - name: sklearn_sample_generator
   owner: bgruening
   revisions:
   - 0ba38603a0d6
   tool_panel_section_label: Statistics
+- name: sklearn_searchcv
+  owner: bgruening
+  revisions:
+  - 907bb0418c9f
+  tool_panel_section_label: Statistics
+- name: sklearn_build_pipeline
+  owner: bgruening
+  revisions:
+  - 9ddacd0b8c8b
+  tool_panel_section_label: Statistics
 - name: sklearn_pairwise_metrics
   owner: bgruening
   revisions:
   - bd9481c0af38
   tool_panel_section_label: Statistics
-- name: nn_classifier
+- name: sklearn_nn_classifier
   owner: bgruening
   revisions:
-  - 27f3cf899fd2
+  - 23fb598a09d7
   tool_panel_section_label: Statistics
 - name: sklearn_numeric_clustering
   owner: bgruening
@@ -92,28 +82,28 @@ tools:
   revisions:
   - 102c8bae2e9c
   tool_panel_section_label: Statistics
+- name: sklearn_suite
+  owner: bgruening
+  revisions:
+  - ed957fdd670d
+  tool_panel_section_label: Statistics
+- name: nanopolish_variants
+  owner: bgruening
+  revisions:
+  - 639b3a5bb415
+  tool_panel_section_label: Variant Calling
+- name: nanopolish_methylation
+  owner: bgruening
+  revisions:
+  - f9dadc362197
+  tool_panel_section_label: Epigenetics
+- name: nanopolish_eventalign
+  owner: bgruening
+  revisions:
+  - bee42f615f28
+  tool_panel_section_label: Assembly
 - name: racon
   owner: bgruening
   revisions:
   - 51fd3136069d
   tool_panel_section_label: Assembly
-- name: sklearn_svm_classifier
-  owner: bgruening
-  revisions:
-  - 295c383c3282
-  tool_panel_section_label: Statistics
-- name: sklearn_searchcv
-  owner: bgruening
-  revisions:
-  - 907bb0418c9f
-  tool_panel_section_label: Statistics
-- name: sklearn_build_pipeline
-  owner: bgruening
-  revisions:
-  - 9ddacd0b8c8b
-  tool_panel_section_label: Statistics
-- name: sklearn_nn_classifier
-  owner: bgruening
-  revisions:
-  - 23fb598a09d7
-  tool_panel_section_label: Statistics
