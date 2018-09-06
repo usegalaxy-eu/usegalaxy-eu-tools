@@ -27,6 +27,11 @@ tools:
   revisions:
   - 4ec6717872b1
   tool_panel_section_label: RNA Analysis
+- name: seurat
+  owner: iuc
+  revisions:
+  - 8d8412d35247
+  tool_panel_section_label: RNA Analysis
 - name: feelnc
   owner: iuc
   revisions:
@@ -320,6 +325,7 @@ tools:
 - name: fastq_to_fasta
   owner: devteam
   revisions:
+  - 02a5f43cd5d1
   - ce309f4ff17f
   - 186b8d913e6c
   tool_panel_section_label: FASTA/FASTQ manipulation
@@ -327,6 +333,7 @@ tools:
   owner: iuc
   revisions:
   - 415fd81b85d3
+  - a935cbdf1c0e
   - 988729b728f0
   - 3e2551a37201
   tool_panel_section_label: FASTA/FASTQ manipulation
@@ -425,6 +432,7 @@ tools:
   - 69c5e9c0add0
   - 2c9e5136b416
   - 8f33c9fbc119
+  - 558d652cd681
   tool_panel_section_label: Graph/Display Data
 - name: ucsc_custom_track
   owner: devteam
@@ -530,6 +538,7 @@ tools:
   owner: iuc
   revisions:
   - 64e681a1cad5
+  - 0080ad37f8a0
   tool_panel_section_label: Evolution
 - name: meme_meme
   owner: iuc
@@ -723,6 +732,7 @@ tools:
 - name: fastx_artifacts_filter
   owner: devteam
   revisions:
+  - 567d5b3c52b1
   - 09070cacefd8
   - dd3737e40dce
   tool_panel_section_label: FASTA/FASTQ manipulation
@@ -736,6 +746,7 @@ tools:
   owner: devteam
   revisions:
   - bdf1ce174e39
+  - 736b8f6ee456
   - 85263dc18cec
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fastx_nucleotides_distribution
@@ -764,6 +775,7 @@ tools:
 - name: fasta_nucleotide_changer
   owner: devteam
   revisions:
+  - 091ca73f5804
   - cc9a18dd41c9
   - f81d4362b6c1
   tool_panel_section_label: FASTA/FASTQ manipulation
@@ -880,6 +892,7 @@ tools:
 - name: fastx_trimmer
   owner: devteam
   revisions:
+  - 547e8d00f11c
   - b98f3fa516a3
   - bbb007a39ac2
   - 377ac2829eac
@@ -888,12 +901,14 @@ tools:
   owner: devteam
   revisions:
   - e246088b6e34
+  - 0c2907307ba4
   - 3f1017d3f785
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fastx_renamer
   owner: devteam
   revisions:
   - 02f8a17a4ebd
+  - 3599f5451ee2
   - d8a3d31554d7
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fastx_quality_statistics
@@ -905,6 +920,7 @@ tools:
 - name: fastq_quality_filter
   owner: devteam
   revisions:
+  - 7b4468117008
   - e41385662e5e
   - 43a7370aa010
   tool_panel_section_label: FASTA/FASTQ manipulation
@@ -1033,6 +1049,7 @@ tools:
   - 2445d53549ba
   - 6f50f36e4481
   - 1650a97189be
+  - 17e61517c166
   tool_panel_section_label: Mapping
 - name: migmap
   owner: iuc
@@ -1072,6 +1089,7 @@ tools:
   revisions:
   - 1b22d8a18acc
   - e7e885f718fb
+  - 6b0ba6de1424
   - 5a60f347f566
   tool_panel_section_label: RNA Analysis
 - name: featurecounts
@@ -1092,11 +1110,13 @@ tools:
   revisions:
   - 171b827eadf2
   - f7564c3f9dc0
+  - ca0588b09438
   - 606b7748965d
   tool_panel_section_label: RNA Analysis
 - name: trinity_super_transcripts
   owner: iuc
   revisions:
+  - 15f60c2e2d78
   - 64094e19077d
   tool_panel_section_label: RNA Analysis
 - name: trinity_align_and_estimate_abundance
@@ -1104,10 +1124,12 @@ tools:
   revisions:
   - afd41a430a76
   - a21e229da9a1
+  - aed859a021c0
   tool_panel_section_label: RNA Analysis
 - name: trinity_abundance_estimates_to_matrix
   owner: iuc
   revisions:
+  - 0f445c315a08
   - 13ab393ba794
   - 77fc547df6ff
   tool_panel_section_label: RNA Analysis
@@ -1115,17 +1137,20 @@ tools:
   owner: iuc
   revisions:
   - 1e8a2c87461a
+  - 8fed16891aaf
   - afa3a9786339
   tool_panel_section_label: RNA Analysis
 - name: trinity_filter_low_expr_transcripts
   owner: iuc
   revisions:
   - e659504d166c
+  - 7bd8f4770cec
   - 6821f5ea01d8
   tool_panel_section_label: RNA Analysis
 - name: trinity_run_de_analysis
   owner: iuc
   revisions:
+  - 2af5fd8210c5
   - 1563554bb3f0
   - 48537273a30b
   tool_panel_section_label: RNA Analysis
@@ -1133,6 +1158,7 @@ tools:
   owner: iuc
   revisions:
   - fed58c7879e4
+  - d8e02e80b0ad
   tool_panel_section_label: RNA Analysis
 - name: tophat_fusion_post
   owner: devteam
@@ -1423,6 +1449,7 @@ tools:
   - 479c4f2f4826
   - e09ce114d240
   - e8adfc4c0a6b
+  - c9ecd2a96ecf
   tool_panel_section_label: Variant Calling
 - name: dgidb_annotator
   owner: devteam
@@ -1525,7 +1552,8 @@ tools:
   tool_panel_section_label: Variant Calling
 - name: vcfdistance
   owner: iuc
-  revisions: []
+  revisions:
+  - c506b8275b1a
   tool_panel_section_label: Variant Calling
 - name: vcfcheck
   owner: devteam
