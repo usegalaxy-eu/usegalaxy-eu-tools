@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: plotly_parallel_coordinates_plot
+    owner: bgruening
+    tool_panel_section_label: Graph/Display Data
+
   - name: sklearn_svm_classifier
     owner: bgruening
     tool_panel_section_label: Statistics
