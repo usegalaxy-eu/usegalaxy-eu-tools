@@ -2,6 +2,10 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: plotly_parallel_coordinates_plot
+  owner: bgruening
+  revisions: []
+  tool_panel_section_label: Graph/Display Data
 - name: sklearn_svm_classifier
   owner: bgruening
   revisions:
@@ -107,3 +111,15 @@ tools:
   revisions:
   - 51fd3136069d
   tool_panel_section_label: Assembly
+- name: flye
+  owner: bgruening
+  revisions: []
+  tool_panel_section_label: Assembly
+- name: graphmap_overlap
+  owner: bgruening
+  revisions: []
+  tool_panel_section_label: Mapping
+- name: graphmap_align
+  owner: bgruening
+  revisions: []
+  tool_panel_section_label: Mapping
