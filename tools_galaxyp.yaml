@@ -88,29 +88,42 @@ tools:
     owner: galaxyp
     tool_panel_section_label: Proteomics
 
-  - name: msi_preprocessing
+  - name: cardinal_filtering
     owner: galaxyp
     tool_panel_section_label: Proteomics
 
-  - name: msi_qualitycontrol
+  - name: cardinal_segmentations
     owner: galaxyp
     tool_panel_section_label: Proteomics
 
-  - name: msi_ion_images
+  - name: cardinal_data_exporter
     owner: galaxyp
     tool_panel_section_label: Proteomics
 
-  - name: msi_spectra_plot
+  - name: cardinal_classification
     owner: galaxyp
     tool_panel_section_label: Proteomics
 
-  - name: msi_classification
+  - name: cardinal_mz_images
     owner: galaxyp
     tool_panel_section_label: Proteomics
 
-  - name: mass_spectrometry_imaging_segmentations
+  - name: cardinal_quality_report
     owner: galaxyp
     tool_panel_section_label: Proteomics
+
+  - name: cardinal_preprocessing
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: cardinal_spectra_plots
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: cardinal_combine
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
 
   - name: eggnog_mapper
     owner: galaxyp
