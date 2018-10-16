@@ -15,6 +15,7 @@ fix: $(CORRECT_YAMLS) ## Fix any issues (missing hashes, missing lockfiles, etc.
 install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 
 %.lint: %
+	python scripts/fix-lockfile.py $<
 	pykwalify -d $< -s .schema.yaml
 	python scripts/identify-unpinned.py $<
 
