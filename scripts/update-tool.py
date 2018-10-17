@@ -20,7 +20,7 @@ def update_file(fn, owner=None, name=None, without=False):
         logging.debug("Examining {owner}/{name}".format(**tool))
 
         if without:
-            if 'revisions' in tool:
+            if 'revisions' in tool and not len(tool.get('revisions', [])) == 0:
                 continue
 
         if not without and owner and tool['owner'] != owner:
