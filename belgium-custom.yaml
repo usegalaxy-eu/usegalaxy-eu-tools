@@ -1,0 +1,43 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+- name: data_manager_fetch_genome_dbkeys_all_fasta
+  owner: devteam
+  revisions:
+  - b1bc53e9bbc5
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_bowtie2_index_builder
+  owner: devteam
+  revisions:
+  - 83da94c0e4a6
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_hisat2_index_builder
+  owner: iuc
+  revisions:
+  - d210e1f185bd
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_fetch_gff
+  owner: ieguinoa
+  revisions:
+  - 4b10131cb66d
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_fetch_tx2gene
+  owner: ieguinoa
+  revisions:
+  - 7d3ffe28ff3f
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name:  data_manager_salmon_index_builder
+  owner: ieguinoa
+  revisions:
+  - c5dea2080109
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
