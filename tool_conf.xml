@@ -6,7 +6,6 @@
   <section id="liftOver" name="Lift-Over">
     <tool file="extract/liftOver_wrapper.xml" />
   </section>-->
-</toolbox>
 
 
 
@@ -17,7 +16,6 @@
 
 
 <section id="getext" name="Get Data">
-<tool id='test_tool' file='custom/test_tool.xml' />
 <tool id='upload' file="data_source/upload.xml" />
 <tool file="data_source/ucsc_tablebrowser.xml" />
 <!-- <tool file="data_source/ucsc_tablebrowser_test.xml" /> -->
@@ -290,3 +288,7 @@ Following bjoern tool_conf.xml file (https://gist.github.com/bgruening/1137798be
 </section>
 <section id="genome_editing" name="Genome editing">
 </section>
+
+
+
+</toolbox>
