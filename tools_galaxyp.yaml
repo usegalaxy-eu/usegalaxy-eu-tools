@@ -4,14 +4,6 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-  - name: uniprotxml_downloader
-    owner: galaxyp
-    tool_panel_section_label: Get Data
-
-  - name: dbbuilder
-    owner: galaxyp
-    tool_panel_section_label: Get Data
-
   - name: unipept
     owner: galaxyp
     tool_panel_section_label: Get Data
@@ -156,3 +148,4072 @@ tools:
   - name: proteomics_moff
     owner: galaxyp
     tool_panel_section_label: Proteomics
+
+  - name: retrieve_ensembl_bed
+    owner: galaxyp
+    tool_panel_section_label: Get Data
+
+  - name: ms_wiff_loader
+    owner: galaxyp
+    tool_panel_section_label: Get Data
+
+  - name: query_tabular
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: replace_chromosome_names
+    owner: earlhaminst
+    tool_panel_section_label: Text Manipulation
+
+  - name: sqlite_to_tabular
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: filter_tabular
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: reshape2_melt
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: reshape2_cast
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: datamash_ops
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: datamash_reverse
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: datamash_transpose
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: regex_find_replace
+    owner: galaxyp
+    tool_panel_section_label: Text Manipulation
+
+  - name: regex_find_replace
+    owner: galaxyp
+    tool_panel_section_label: Text Manipulation
+
+  - name: concatenate_multiple_datasets
+    owner: mvdbeek
+    tool_panel_section_label: Text Manipulation
+
+  - name: regex_replace
+    owner: kellrott
+    tool_panel_section_label: Text Manipulation
+
+  - name: column_maker
+    owner: devteam
+    tool_panel_section_label: Text Manipulation
+
+  - name: regex_find_replace
+    owner: jjohnson
+    tool_panel_section_label: Text Manipulation
+
+  - name: regex_find_replace
+    owner: jjohnson
+    tool_panel_section_label: Text Manipulation
+
+  - name: find_in_reference
+    owner: jjohnson
+    tool_panel_section_label: Text Manipulation
+
+  - name: filter_by_fasta_ids
+    owner: galaxyp
+    tool_panel_section_label: Filter and Sort
+
+  - name: filter_by_substring_match
+    owner: alan-blakely
+    tool_panel_section_label: Filter and Sort
+
+  - name: column_join
+    owner: jjohnson
+    tool_panel_section_label: Join, Subtract and Group
+
+  - name: gffcompare_to_bed
+    owner: galaxyp
+    tool_panel_section_label: Convert Formats
+
+  - name: bed_to_protein_map
+    owner: galaxyp
+    tool_panel_section_label: Convert Formats
+
+  - name: fastq_combiner
+    owner: devteam
+    tool_panel_section_label: Convert Formats
+
+  - name: sqlite_to_tabular
+    owner: jjohnson
+    tool_panel_section_label: Convert Formats
+
+  - name: translate_bed_sequences
+    owner: galaxyp
+    tool_panel_section_label: Convert Formats
+
+  - name: gffcompare
+    owner: iuc
+    tool_panel_section_label: Extract Features
+
+  - name: gffread
+    owner: devteam
+    tool_panel_section_label: Extract Features
+
+  - name: peca
+    owner: caleb-easterly
+    tool_panel_section_label: Statistics
+
+  - name: limma_norm
+    owner: caleb-easterly
+    tool_panel_section_label: Statistics
+
+  - name: seq_filter_by_id
+    owner: peterjc
+    tool_panel_section_label: FASTA manipulation
+
+  - name: filter_by_fasta_ids
+    owner: galaxyp
+    tool_panel_section_label: FASTA manipulation
+
+  - name: fastqtofasta
+    owner: devteam
+    tool_panel_section_label: FASTA manipulation
+
+  - name: concat_fasta_files
+    owner: mandorodriguez
+    tool_panel_section_label: FASTA manipulation
+
+  - name: fasta_to_tabular
+    owner: devteam
+    tool_panel_section_label: FASTA manipulation
+
+  - name: tabular_to_fasta
+    owner: devteam
+    tool_panel_section_label: FASTA manipulation
+
+  - name: fasta_compute_length
+    owner: devteam
+    tool_panel_section_label: FASTA manipulation
+
+  - name: fasta_formatter
+    owner: devteam
+    tool_panel_section_label: FASTA manipulation
+
+  - name: fasta_filter_by_length
+    owner: devteam
+    tool_panel_section_label: FASTA manipulation
+
+  - name: sample_seqs
+    owner: peterjc
+    tool_panel_section_label: FASTA manipulation
+
+  - name: mz_to_sqlite
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: msconvert_nix
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: mgf_formatter
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: msconvert_win
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: idconvert
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: ms_data_converter
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: proteinpilot
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: proteinpilot
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: proteinpilot
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: proteinpilot
+    owner: galaxyp
+    tool_panel_section_label: MS Data Conversion
+
+  - name: validate_fasta_database
+    owner: galaxyp
+    tool_panel_section_label: Sequence Database Tools
+
+  - name: fasta_merge_files_and_filter_unique_sequences
+    owner: galaxyp
+    tool_panel_section_label: Sequence Database Tools
+
+  - name: dbbuilder
+    owner: galaxyp
+    tool_panel_section_label: Sequence Database Tools
+
+  - name: uniprotxml_downloader
+    owner: galaxyp
+    tool_panel_section_label: Sequence Database Tools
+
+  - name: uniprot_rest_interface
+    owner: bgruening
+    tool_panel_section_label: Sequence Database Tools
+
+  - name: decoyfasta
+    owner: galaxyp
+    tool_panel_section_label: Sequence Database Tools
+
+  - name: fastq_join
+    owner: lparsons
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastq_to_fasta
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastq_manipulation
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastq_quality_filter
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastq_quality_converter
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastq_paired_end_joiner
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: trimmomatic
+    owner: pjbriggs
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: pear
+    owner: iuc
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastq_paired_end_splitter
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastq_groomer
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: fastqc
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: peptideshaker
+    owner: galaxyp
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: peptideshaker
+    owner: galaxyp
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: msgfplus
+    owner: galaxyp
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: myrimatch
+    owner: galaxyp
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: xtandem
+    owner: iracooke
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: xtandem
+    owner: iracooke
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: morpheus
+    owner: galaxyp
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: proteinpilot
+    owner: galaxyp
+    tool_panel_section_label: Protein/Peptide Search Algorithms
+
+  - name: proteinpilot
+    owner: galaxyp
+    tool_panel_section_label: Data Conversion Tools
+
+  - name: protxml_to_xls
+    owner: galaxyp
+    tool_panel_section_label: Data Conversion Tools
+
+  - name: pepxml_to_xls
+    owner: galaxyp
+    tool_panel_section_label: Data Conversion Tools
+
+  - name: xtandem
+    owner: iracooke
+    tool_panel_section_label: Data Conversion Tools
+
+  - name: psm_eval
+    owner: galaxyp
+    tool_panel_section_label: Visualizers
+
+  - name: scaffold
+    owner: galaxyp
+    tool_panel_section_label: Visualizers
+
+  - name: scaffold
+    owner: galaxyp
+    tool_panel_section_label: Visualizers
+
+  - name: proteomics_moff
+    owner: galaxyp
+    tool_panel_section_label: Quantification
+
+  - name: flashlfq
+    owner: galaxyp
+    tool_panel_section_label: Quantification
+
+  - name: ltq_iquant_cli
+    owner: galaxyp
+    tool_panel_section_label: Quantification
+
+  - name: blast_plus_remote_blastp
+    owner: galaxyp
+    tool_panel_section_label: BLAST-P
+
+  - name: quantp
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: cravatool
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: pep_pointer
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: translate_bed
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: map_peptides_to_bed
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: custom_pro_db
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: psm_to_sam
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: Proteogenomics
+
+  - name: peptide_to_gff
+    owner: galaxyp
+    tool_panel_section_label: Proteogenomics
+
+  - name: fastqc
+    owner: devteam
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: multiqc
+    owner: iuc
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: trimmomatic
+    owner: pjbriggs
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: trim_galore
+    owner: bgruening
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: prinseq
+    owner: iuc
+    tool_panel_section_label: NGS: QC and manipulation
+
+  - name: trinity_gene_to_trans_map
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: stringtie
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: stringtie
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: pizzly
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: hisat2
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: kallisto_quant
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: kallisto_pseudo
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cufflinks
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cummerbund
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cummerbund
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cummerbund
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cummerbund
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cummerbund
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cuffquant
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cuffnorm
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cuffmerge
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cuffcompare
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: cuffdiff
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: star_fusion
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: tophat2
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: samtools_slice_bam
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: rsem
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: rsem
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: rsem
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: filter_bed_on_splice_junctions
+    owner: jjohnson
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: tophat
+    owner: devteam
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: bwa
+    owner: devteam
+    tool_panel_section_label: NGS: Mapping
+
+  - name: bwa
+    owner: devteam
+    tool_panel_section_label: NGS: Mapping
+
+  - name: bowtie2
+    owner: devteam
+    tool_panel_section_label: NGS: Mapping
+
+  - name: abyss
+    owner: iuc
+    tool_panel_section_label: NGS: Mapping
+
+  - name: ucsc_blat
+    owner: yating-l
+    tool_panel_section_label: NGS: Mapping
+
+  - name: bowtie_wrappers
+    owner: devteam
+    tool_panel_section_label: NGS: Mapping
+
+  - name: trinity_samples_qccheck
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: trinity_align_and_estimate_abundance
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: trinity_abundance_estimates_to_matrix
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: describe_samples
+    owner: iuc
+    tool_panel_section_label: NGS: RNA Analysis
+
+  - name: samtools_fastx
+    owner: iuc
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtool_filter2
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: pileup_interval
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_sort
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_slice_bam
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_rmdup
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_phase
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_mpileup
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_flagstat
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: sam_to_bam
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: bam_to_sam
+    owner: devteam
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_parallel_mpileup
+    owner: yhoogstrate
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_filter
+    owner: jjohnson
+    tool_panel_section_label: NGS: SAM Tools
+
+  - name: bamtools_filter
+    owner: devteam
+    tool_panel_section_label: Bam Tools
+
+  - name: bamtools
+    owner: devteam
+    tool_panel_section_label: Bam Tools
+
+  - name: bamtools_split_ref
+    owner: jjohnson
+    tool_panel_section_label: Bam Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: bedtools
+    owner: iuc
+    tool_panel_section_label: Bed Tools
+
+  - name: freebayes
+    owner: devteam
+    tool_panel_section_label: NGS: Variant
+
+  - name: freebayes
+    owner: devteam
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpsift
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff
+    owner: iuc
+    tool_panel_section_label: NGS: Variant
+
+  - name: snpeff_to_peptides
+    owner: jjohnson
+    tool_panel_section_label: NGS: Variant
+
+  - name: bcftools_view
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_cnv
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_isec
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_norm
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_convert_to_vcf
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_csq
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_convert_from_vcf
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_roh
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_merge
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_setgt
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_fill_tags
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_counts
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_impute_info
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_query_list_samples
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_dosage
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_filter
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_missing2ref
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_concat
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_mendelian
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_fixploidy
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_reheader
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_tag2tag
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_annotate
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_stats
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_mpileup
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_call
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_query
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_consensus
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_gtcheck
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_fill_an_ac
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: bcftools_plugin_vcf2sex
+    owner: iuc
+    tool_panel_section_label: Bcf Tools 
+
+  - name: vcf2tsv
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfsort
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcffilter
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfvcfintersect
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfselectsamples
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfrandomsample
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfprimers
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfleftalign
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfgenotypes
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfflatten
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcffixup
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfgeno2haplo
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfhethom
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfdistance
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfcommonsamples
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfcombine
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfbreakcreatemulti
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfcheck
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfbedintersect
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfannotategenotypes
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfannotate
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfallelicprimitives
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: vcfaddinfo
+    owner: devteam
+    tool_panel_section_label: NGS: VCF Tools
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: emboss_5
+    owner: devteam
+    tool_panel_section_label: EMBOSS
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Blast
+
+  - name: blastxml_to_tabular_selectable
+    owner: galaxyp
+    tool_panel_section_label: Blast
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: picard
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: sam_merge
+    owner: devteam
+    tool_panel_section_label: Picard
+
+  - name: variant_select
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: print_reads
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: table_recalibration
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: variant_apply_recalibration
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: variant_annotator
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: variant_eval
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: depth_of_coverage
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: variants_validate
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: realigner_target_creator
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: count_covariates
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: variant_combine
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: unified_genotyper
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: analyze_covariates
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: indel_realigner
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: variant_filtration
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: variant_recalibrator
+    owner: devteam
+    tool_panel_section_label: NGS: GATK Tools
+
+  - name: proteinpilot
+    owner: galaxyp
+    tool_panel_section_label: Misc
+
+  - name: directag_and_tagrecon
+    owner: galaxyp
+    tool_panel_section_label: Misc
+
+  - name: myrimatch
+    owner: galaxyp
+    tool_panel_section_label: Misc
+
+  - name: idpqonvert
+    owner: galaxyp
+    tool_panel_section_label: Misc
+
+  - name: kraken_translate
+    owner: devteam
+    tool_panel_section_label: MetaGenomics
+
+  - name: kraken_report
+    owner: devteam
+    tool_panel_section_label: MetaGenomics
+
+  - name: kraken_report
+    owner: devteam
+    tool_panel_section_label: MetaGenomics
+
+  - name: kraken_filter
+    owner: devteam
+    tool_panel_section_label: MetaGenomics
+
+  - name: kraken
+    owner: devteam
+    tool_panel_section_label: MetaGenomics
+
+  - name: spectrast2spectrast_irt
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: peptideshaker
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: peptideshaker
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: reactome_pathwaymatcher
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: metaquant
+    owner: caleb-easterly
+    tool_panel_section_label: Beta Test Tools
+
+  - name: protein_transcript_correlation
+    owner: pravs
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: peptidegenomiccoordinate
+    owner: pravs
+    tool_panel_section_label: Beta Test Tools
+
+  - name: peptideshaker
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: peptideshaker
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: mzsqlite_psm_align
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: proteomic_cravat_score_and_annotate
+    owner: rsajulga
+    tool_panel_section_label: Beta Test Tools
+
+  - name: gffutils
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: split_file_to_collection
+    owner: caleb-easterly
+    tool_panel_section_label: Beta Test Tools
+
+  - name: cravat_score_and_annotate
+    owner: in_silico
+    tool_panel_section_label: Beta Test Tools
+
+  - name: cravat_annotate_mutations
+    owner: in_silico
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ensembl_cdna_translate
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: bed_to_protein_map
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: percolator
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: percolator
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: percolator
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: percolator
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: jbrowse
+    owner: iuc
+    tool_panel_section_label: Beta Test Tools
+
+  - name: jbrowse
+    owner: iuc
+    tool_panel_section_label: Beta Test Tools
+
+  - name: split_to_collection
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: diamond
+    owner: bgruening
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: ncbi_blast_plus
+    owner: devteam
+    tool_panel_section_label: Beta Test Tools
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: defuse
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: star_fusion
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: msfragger
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: pecan
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: pecan
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: msms_extractor
+    owner: pravs
+    tool_panel_section_label: Beta Test Tools
+
+  - name: remove_fasta_subsequences
+    owner: pravs
+    tool_panel_section_label: Beta Test Tools
+
+  - name: bamtools_split
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: bamtools_split
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: bamtools_split
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: bamtools_split
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: bamtools_split
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: psm_zscore
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: diamond
+    owner: bgruening
+    tool_panel_section_label: Beta Test Tools
+
+  - name: peptideshaker
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: peptideshaker
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: probamconvert
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: kobas
+    owner: iuc
+    tool_panel_section_label: Beta Test Tools
+
+  - name: kobas
+    owner: iuc
+    tool_panel_section_label: Beta Test Tools
+
+  - name: percolator
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: percolator
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: interproscan5
+    owner: bgruening
+    tool_panel_section_label: Beta Test Tools
+
+  - name: filterscans
+    owner: pravs
+    tool_panel_section_label: Beta Test Tools
+
+  - name: idpquery
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: idpassemble
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: dia_umpire
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: dia_umpire
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: trans_proteomic_pipeline
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: trans_proteomic_pipeline
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: trans_proteomic_pipeline
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: trans_proteomic_pipeline
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: samplespecificdbgenerator
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: Beta Test Tools
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: Beta Test Tools
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: Beta Test Tools
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: Beta Test Tools
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: Beta Test Tools
+
+  - name: map_ensembl_peptides_to_bed
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: lookup_replace
+    owner: jjohnson
+    tool_panel_section_label: Beta Test Tools
+
+  - name: translate_bed_sequences
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: map_peptides_to_bed
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: morpheus
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: psm_eval
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: morpheus
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: tpp_msconvert
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: iracooke
+    tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+    owner: iracooke
+    tool_panel_section_label: Beta Test Tools
+
+  - name: mz_to_sqlite
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: feature_alignment
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: pyprophet
+    owner: galaxyp
+    tool_panel_section_label: Beta Test Tools
+
+  - name: openms_xtandemadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_metaprosip
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafilternormalizer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathchromatogramextractor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafilterbernnorm
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_accuratemasssearch
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mapalignerposeclustering
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_ptpredict
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_seedlistgenerator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_xfdr
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_precursormasscorrector
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mrmmapper
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurelinkerunlabeledqt
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_decoydatabase
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_qccalculator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_cvinspector
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_transformationevaluation
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_maprttransformer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafiltermarkermower
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idripper
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idfileconverter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_rnpxlsearch
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathanalyzer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_highresprecursormasscorrector
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idscoreswitcher
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mapnormalizer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_fileconverter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_noisefiltersgolay
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathrtnormalizer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_filefilter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_metabolitespectralmatcher
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mzmlsplitter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_consensusid
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_ffeval
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_rtmodel
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_siriusadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_speclibsearcher
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_sequencecoveragecalculator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_additiveseries
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurefindercentroided
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_svmtheoreticalspectrumgeneratortrainer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathdiaprescoring
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_proteininference
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_rnpxlxicfilter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openpepxl
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_textexporter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_cometadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_digestormotif
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idmassaccuracy
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_peakpickeriterative
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_internalcalibration
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_labeledeval
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_filemerger
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_lowmempeakpickerhires
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathfeaturexmltotsv
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_proteinresolver
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_peptideindexer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mapaligneridentification
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_msgfplusadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_qcimporter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_proteinquantifier
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_targetedfileconverter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idextractor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_percolatoradapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_fuzzydiff
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_rtevaluation
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafilternlargest
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_fidoadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_rtpredict
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_qcexporter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idsplitter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_compnovocid
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathmzmlfilecacher
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_simplesearchengine
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_isobaricanalyzer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurefindermultiplex
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_iddecoyprobability
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathassaygenerator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathconfidencescoring
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_peakpickerwavelet
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_psmfeatureextractor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mapstatistics
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafilterthresholdmower
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mrmpairfinder
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_semanticvalidator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafilterscaler
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurelinkerlabeled
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurefindermetabo
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathworkflow
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_demeanderize
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_qcembedder
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_xmlvalidator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathdecoygenerator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_falsediscoveryrate
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurelinkerunlabeledkd
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idmapper
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_eicextractor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idmerger
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_inspectadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_peakpickerhires
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idposteriorerrorprobability
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mapalignerspectrum
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_qcshrinker
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_decharger
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurelinkerunlabeled
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_noisefiltergaussian
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathfilesplitter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurefindersuperhirn
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafilterparentpeakmower
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_digestor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mrmtransitiongrouppicker
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mascotadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurefinderisotopewavelet
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectramerger
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_masstraceextractor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mssimulator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mascotadapteronline
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_externalcalibration
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_ticcalculator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mztabexporter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_rnpxl
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_tofcalibration
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_speclibcreator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_consensusmapnormalizer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_compnovo
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_multiplexresolver
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_masscalculator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafilterwindowmower
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_erpairfinder
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurefinderidentification
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_inclusionexclusionlistcreator
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_lowmempeakpickerhires_randomaccess
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idconflictresolver
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_luciphoradapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_ptmodel
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_qcextractor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_baselinefilter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_precursorionselector
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_databasefilter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrafiltersqrtmower
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idfilter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openpepxllf
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_phosphoscoring
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_featurefindermrm
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_openswathrewritetofeaturexml
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_qcmerger
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_idrtcalibration
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_fileinfo
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_metaboliteadductdecharger
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_dtaextractor
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_spectrastsearchadapter
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_topperc
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_itraqanalyzer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_tmtanalyzer
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_mapalignmentevaluation
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_converttsvtotraml
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: openms_converttramltotsv
+    owner: galaxyp
+    tool_panel_section_label: OpenMS
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: TPP
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: TPP
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: TPP
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: TPP
+
+  - name: tpp_prophets
+    owner: iracooke
+    tool_panel_section_label: TPP
+
+  - name: sra_tools
+    owner: iuc
+    tool_panel_section_label: SRA ToolKit
+
+  - name: sra_tools
+    owner: iuc
+    tool_panel_section_label: SRA ToolKit
+
+  - name: sra_tools
+    owner: iuc
+    tool_panel_section_label: SRA ToolKit
+
+  - name: myrimatch
+    owner: galaxyp
+    tool_panel_section_label: Omicron
+
+  - name: idpqonvert
+    owner: galaxyp
+    tool_panel_section_label: Omicron
+
+  - name: idpqonvert
+    owner: galaxyp
+    tool_panel_section_label: Omicron
+
+  - name: stacks_procrad
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_refmap
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_cstacks
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_genotypes
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_populations
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_pstacks
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_denovomap
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_ustacks
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_sstacks
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_rxstacks
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: stacks_assembleperead
+    owner: iuc
+    tool_panel_section_label: Stacks
+
+  - name: query_tabular
+    owner: jjohnson
+    tool_panel_section_label: Archived Tools
+
+  - name: query_tabular
+    owner: jjohnson
+    tool_panel_section_label: Archived Tools
+
+  - name: query_tabular
+    owner: jjohnson
+    tool_panel_section_label: Archived Tools
+
+  - name: translate_bed_sequences
+    owner: jjohnson
+    tool_panel_section_label: Archived Tools
+
+  - name: peptideshaker
+    owner: galaxyp
+    tool_panel_section_label: Archived Tools
+
+  - name: peptideshaker
+    owner: galaxyp
+    tool_panel_section_label: Archived Tools
+
+  - name: split_tabular_columns
+    owner: jjohnson
+    tool_panel_section_label: Archived Tools
+
+  - name: saint_preprocessing
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: nsaf_scoring
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: prohits_dotplot_generator
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: saint_protein_interactions
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: filter_fasta
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: apostl_static_bubblegraph_generator
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: saintexpress
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: query_crapome
+    owner: bornea
+    tool_panel_section_label: Protein Affinity
+
+  - name: bibliospec
+    owner: galaxyp
+    tool_panel_section_label: DIA
+
+  - name: bibliospec
+    owner: galaxyp
+    tool_panel_section_label: DIA
+
+  - name: bibliospec
+    owner: galaxyp
+    tool_panel_section_label: DIA
+
+  - name: bibliospec
+    owner: galaxyp
+    tool_panel_section_label: DIA
+
+  - name: dia_umpire
+    owner: galaxyp
+    tool_panel_section_label: DIA
+
+  - name: dia_umpire
+    owner: galaxyp
+    tool_panel_section_label: DIA
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: text_processing
+    owner: bgruening
+    tool_panel_section_label: GNU Utilities
+
+  - name: pdb2pqr
+    owner: galaxyp
+    tool_panel_section_label: Computational Chemistry
+
+  - name: st_kinatest
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: st_nmf
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: stcommon_and_dif
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: st_kinamine
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: kinatest_r_7_7testing
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: commonality_finder
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: promap
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: negative_motif_finder_7_7
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: kinamine7_7
+    owner: jfb
+    tool_panel_section_label: Computational Chemistry
+
+  - name: collapse_collections
+    owner: nml
+    tool_panel_section_label: Collection Operations
+
+  - name: methylkit
+    owner: rnateam
+    tool_panel_section_label: Epigenetics
+
+  - name: metagene_annotator
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: sixgill
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: sixgill
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: sixgill
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: sixgill
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: eggnog_mapper
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: prepare_revigo
+    owner: caleb-easterly
+    tool_panel_section_label: MetaProteomics
+
+  - name: meta_proteome_analyzer
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: unipept
+    owner: galaxyp
+    tool_panel_section_label: MetaProteomics
+
+  - name: group_humann2_uniref_abundances_to_go
+    owner: bebatut
+    tool_panel_section_label: Tools from workflows
+
+  - name: combine_metaphlan2_humann2
+    owner: bebatut
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: valet
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: nonpareil
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_regroup_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_rna_dna_norm
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_split_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_strain_profiler
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_associate
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_barplot
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_split_stratified_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_unpack_pathways
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_renorm_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_rename_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_join_tables
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_reduce_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: humann2_genefamilies_genus_level
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: compare_humann2_output
+    owner: bebatut
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: merge_metaphlan_tables
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: metaphlan_hclust_heatmap
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: metaphlan2krona
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: metaphlan2
+    owner: iuc
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: format_metaphlan2_output
+    owner: bebatut
+    tool_panel_section_label: Metagenomic analyses
+
+  - name: cdhit
+    owner: bebatut
+    tool_panel_section_label: Multiple Alignments
+
+  - name: cdhit
+    owner: bebatut
+    tool_panel_section_label: Multiple Alignments
+
+  - name: format_cd_hit_output
+    owner: bebatut
+    tool_panel_section_label: Multiple Alignments
+
+  - name: quast
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: metaspades
+    owner: nml
+    tool_panel_section_label: Assembly
+
+  - name: megahit
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: fraggenescan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: mothur_make_contigs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_degap_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_mimarks_attributes
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_trim_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_slayer
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_taxonomy_to_krona
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_create_database
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_reverse_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pairwise_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sens_spec
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_lefse
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_rare
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_dists
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_metastats
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_fastq
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_mimarkspackage
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_otu_hierarchy
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_seq_error
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_otu_association
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_files
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_vsearch
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_taxsummary
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_relabund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sort_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chop_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_otulabels
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_mantel
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pcoa
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster_fragments
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_heatmap_bin
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_lineage
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_design
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_collect_single
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_sra
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_communitytype
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_shhh_flows
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_coremicrobiome
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_rename_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_split_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_split_abund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_heatmap_sim
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_biom
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pre_cluster
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_group
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_list_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_clearcut
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_bin_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_ccode
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_rarefaction_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_homova
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_lineage
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_check
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_venn
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_pintail
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_deunique_tree
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_lefse
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_otus
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_classify_tree
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_count_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_perseus
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_list_otulabels
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_trim_flows
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_fastq_info
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_tree_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_otulabels
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cooccurrence
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_deunique_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_rabund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_tax
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_align_check
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_sabund
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_consensus_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_uchime
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_chimera_bellerophon
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_classify_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_corr_axes
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_shhh_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_screen_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_lookup
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_rarefaction_single
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_parse_list
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_align_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_single
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_collect_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_phylo_diversity
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_dists
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_filter_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_filter_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_nmds
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_qual
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_make_group
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_unifrac_unweighted
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_dist_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_phylotype
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_otulist
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_sharedseqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_remove_otus
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_sfffiles
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pca
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sub_sample
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_get_oturep
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_unique_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_primer_design
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_parsimony
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_count_groups
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_indicator
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_libshuff
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_merge_count
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_unifrac_weighted
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_sffinfo
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_dist_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster_classic
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_cluster_split
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_summary_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_normalize_shared
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_pcr_seqs
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_amova
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_anosim
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_classify_otu
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: mothur_biom_info
+    owner: iuc
+    tool_panel_section_label: Mothur
+
+  - name: qiime_filter_otus_from_otu_table
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_filter_fasta
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_count_seqs
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_pick_otus
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_alpha_rarefaction
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_make_emperor
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_multiple_split_libraries_fastq
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_core_diversity
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_compare_categories
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_filter_alignment
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_validate_mapping_file
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_make_phylogeny
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_pick_closed_reference_otus
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_jackknifed_beta_diversity
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_filter_samples_from_otu_table
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_filter_taxa_from_otu_table
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_beta_diversity
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_pick_open_reference_otus
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_split_libraries
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_split_libraries_fastq
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_align_seqs
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_pick_rep_set
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_upgma_cluster
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_alpha_diversity
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_beta_diversity_through_plots
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_assign_taxonomy
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_plot_taxa_summary
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_multiple_join_paired_ends
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_extract_barcodes
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_make_otu_heatmap
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_summarize_taxa_through_plots
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: qiime_summarize_taxa
+    owner: iuc
+    tool_panel_section_label: Qiime
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: HMMER
+
+  - name: group_humann2_uniref_abundances_to_go
+    owner: bebatut
+    tool_panel_section_label: Tools from workflows
+
+  - name: export2graphlan
+    owner: iuc
+    tool_panel_section_label: Tools from workflows
+
+  - name: sortmerna
+    owner: rnateam
+    tool_panel_section_label: Tools from workflows
+
+  - name: graphlan
+    owner: iuc
+    tool_panel_section_label: Tools from workflows
+
+  - name: taxonomy_krona_chart
+    owner: crs4
+    tool_panel_section_label: Tools from workflows
+
+  - name: graphlan_annotate
+    owner: iuc
+    tool_panel_section_label: Tools from workflows
+
+  - name: trim_galore
+    owner: bgruening
+    tool_panel_section_label: Tools from workflows
+
+  - name: multiqc
+    owner: iuc
+    tool_panel_section_label: Tools from workflows
+
+  - name: quast
+    owner: iuc
+    tool_panel_section_label: Tools from workflows
+
+  - name: megahit
+    owner: iuc
+    tool_panel_section_label: Tools from workflows
+
+  - name: fastqc
+    owner: devteam
+    tool_panel_section_label: Tools from workflows
+
+  - name: fastq_to_fasta
+    owner: devteam
+    tool_panel_section_label: Tools from workflows
+
