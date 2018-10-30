@@ -969,7 +969,8 @@ tools:
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: multiqc
   owner: iuc
-  revisions: []
+  revisions:
+  - 1c2db0054039
   tool_panel_section_label: Quality Control
 - name: mira_assembler
   owner: peterjc
@@ -1330,28 +1331,28 @@ tools:
   owner: bgruening
   revisions:
   - ccc755bdf11d
-  tool_panel_section_label: DNA methylation
+  tool_panel_section_label: Epigenetics
 - name: bwameth
   owner: iuc
   revisions:
   - a6ea26c1f225
   - f7094efef903
-  tool_panel_section_label: DNA methylation
+  tool_panel_section_label: Epigenetics
 - name: metilene
   owner: rnateam
   revisions:
   - cd253831a014
-  tool_panel_section_label: DNA methylation
+  tool_panel_section_label: Epigenetics
 - name: rnbeads
   owner: pavlo-lutsik
   revisions:
   - 6b0981ab063e
-  tool_panel_section_label: DNA methylation
+  tool_panel_section_label: Epigenetics
 - name: vcf_filter
   owner: devteam
   revisions:
   - da1a6f33b504
-  tool_panel_section_label: DNA methylation
+  tool_panel_section_label: Epigenetics
 - name: varscan_version_2
   owner: devteam
   revisions:

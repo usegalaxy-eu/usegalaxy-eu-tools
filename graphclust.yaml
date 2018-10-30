@@ -3,6 +3,18 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: graphclust_postprocessing_no_align
+    owner: rnateam
+    tool_panel_section_label: "GraphClust"
+
+  - name: graphclust_aggregate_alignments
+    owner: rnateam
+    tool_panel_section_label: "GraphClust"
+
+  - name: graphclust_align_cluster
+    owner: rnateam
+    tool_panel_section_label: "GraphClust"
+
   - name: graphclust_cmfinder
     owner: rnateam
     tool_panel_section_label: "GraphClust"

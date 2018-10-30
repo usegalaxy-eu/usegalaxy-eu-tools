@@ -40,6 +40,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: volcanoplot
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
   - name: nanoplot
     owner: iuc
     tool_panel_section_label: Graph/Display Data
@@ -853,14 +857,13 @@ tools:
     owner: devteam
     tool_panel_section_label: Peak Calling
 
-
   - name: bwameth
     owner: iuc
-    tool_panel_section_label: DNA methylation
+    tool_panel_section_label: Epigenetics
 
   - name: vcf_filter
     owner: devteam
-    tool_panel_section_label: DNA methylation
+    tool_panel_section_label: Epigenetics
 
   - name: varscan_mpileup
     owner: iuc
@@ -915,6 +918,10 @@ tools:
     tool_panel_section_label: Phenotype Association
 
   - name: goseq
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: fgsea
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -1103,6 +1110,15 @@ tools:
     owner: devteam
     tool_panel_section_label: Variant Calling
   - name: bcftools_call
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+  - name: bcftools_norm
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+  - name: bcftools_csq
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+  - name: bcftools_cnv
     owner: iuc
     tool_panel_section_label: Variant Calling
   - name: vcftools_merge
