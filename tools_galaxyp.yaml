@@ -1,901 +1,161 @@
+---
 install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-  - name: retrieve_ensembl_bed
+  - name: uniprotxml_downloader
     owner: galaxyp
     tool_panel_section_label: Get Data
 
-  - name: ms_wiff_loader
+  - name: dbbuilder
     owner: galaxyp
     tool_panel_section_label: Get Data
 
-  - name: regex_find_replace
+  - name: unipept
     owner: galaxyp
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Get Data
 
-  - name: concatenate_multiple_datasets
-    owner: mvdbeek
-    tool_panel_section_label: Text Manipulation
-
-  - name: filter_by_substring_match
-    owner: alan-blakely
-    tool_panel_section_label: Filter and Sort
-
-  - name: column_join
-    owner: jjohnson
-    tool_panel_section_label: Join, Subtract and Group
-
-  - name: gffcompare_to_bed
+  - name: map_peptides_to_bed
     owner: galaxyp
     tool_panel_section_label: Convert Formats
 
-  - name: bed_to_protein_map
+  - name: idconvert
     owner: galaxyp
     tool_panel_section_label: Convert Formats
 
-  - name: translate_bed_sequences
+  - name: idpquery
     owner: galaxyp
     tool_panel_section_label: Convert Formats
 
-  - name: concat_fasta_files
-    owner: mandorodriguez
-    tool_panel_section_label: FASTA manipulation
-
-  - name: mz_to_sqlite
+  - name: thermo_raw_file_converter
     owner: galaxyp
-    tool_panel_section_label: MS Data Conversion
+    tool_panel_section_label: Convert Formats
 
-  - name: mgf_formatter
+  - name: msconvert_nix
     owner: galaxyp
-    tool_panel_section_label: MS Data Conversion
+    tool_panel_section_label: Convert Formats
 
-  - name: msconvert_win
+  - name: msconvert
     owner: galaxyp
-    tool_panel_section_label: MS Data Conversion
+    tool_panel_section_label: Convert Formats
 
-  - name: ms_data_converter
+  - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_label: MS Data Conversion
+    tool_panel_section_label: FASTA/FASTQ manipulation
 
-  - name: proteinpilot
+  - name: peptideshaker
     owner: galaxyp
-    tool_panel_section_label: MS Data Conversion
+    tool_panel_section_label: Proteomics
 
-  - name: validate_fasta_database
+  - name: lfq_protein_quant
     owner: galaxyp
-    tool_panel_section_label: Sequence Database Tools
+    tool_panel_section_label: Proteomics
 
-  - name: fastq_join
-    owner: lparsons
-    tool_panel_section_label: NGS
-
-  - name: trimmomatic
-    owner: pjbriggs
-    tool_panel_section_label: NGS
-
-  - name: xtandem
-    owner: iracooke
-    tool_panel_section_label: Protein
-
-  - name: proteinpilot
+  - name: quantp
     owner: galaxyp
-    tool_panel_section_label: Protein
+    tool_panel_section_label: Proteomics
 
-  - name: protxml_to_xls
+  - name: hardklor
     owner: galaxyp
-    tool_panel_section_label: Data Conversion Tools
+    tool_panel_section_label: Proteomics
 
-  - name: pepxml_to_xls
+  - name: morpheus
     owner: galaxyp
-    tool_panel_section_label: Data Conversion Tools
+    tool_panel_section_label: Proteomics
 
-  - name: xtandem
-    owner: iracooke
-    tool_panel_section_label: Data Conversion Tools
-
-  - name: psm_eval
+  - name: msgfplus
     owner: galaxyp
-    tool_panel_section_label: Visualizers
+    tool_panel_section_label: Proteomics
 
-  - name: scaffold
+  - name: decoyfasta
     owner: galaxyp
-    tool_panel_section_label: Visualizers
+    tool_panel_section_label: Proteomics
 
-  - name: blast_plus_remote_blastp
+  - name: suite_openms
     owner: galaxyp
-    tool_panel_section_label: BLAST-P
-
-  - name: cravatool
-    owner: galaxyp
-    tool_panel_section_label: Proteogenomics
-
-  - name: pep_pointer
-    owner: galaxyp
-    tool_panel_section_label: Proteogenomics
-
-  - name: translate_bed
-    owner: galaxyp
-    tool_panel_section_label: Proteogenomics
-
-  - name: custom_pro_db
-    owner: galaxyp
-    tool_panel_section_label: Proteogenomics
-
-  - name: psm_to_sam
-    owner: galaxyp
-    tool_panel_section_label: Proteogenomics
-
-  - name: peptide_to_gff
-    owner: galaxyp
-    tool_panel_section_label: Proteogenomics
-
-  - name: trim_galore
-    owner: bgruening
-    tool_panel_section_label: NGS
-
-  - name: trinity_gene_to_trans_map
-    owner: iuc
-    tool_panel_section_label: NGS
-
-  - name: defuse
-    owner: jjohnson
-    tool_panel_section_label: NGS
-
-  - name: pizzly
-    owner: iuc
-    tool_panel_section_label: NGS
-
-  - name: cummerbund
-    owner: jjohnson
-    tool_panel_section_label: NGS
-
-  - name: rsem
-    owner: jjohnson
-    tool_panel_section_label: NGS
-
-  - name: filter_bed_on_splice_junctions
-    owner: jjohnson
-    tool_panel_section_label: NGS
-
-  - name: tophat
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: abyss
-    owner: iuc
-    tool_panel_section_label: NGS
-
-  - name: ucsc_blat
-    owner: yating-l
-    tool_panel_section_label: NGS
-
-  - name: trinity_samples_qccheck
-    owner: iuc
-    tool_panel_section_label: NGS
-
-  - name: describe_samples
-    owner: iuc
-    tool_panel_section_label: NGS
-
-  - name: samtools_fastx
-    owner: iuc
-    tool_panel_section_label: NGS
-
-  - name: samtools_sort
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: samtools_parallel_mpileup
-    owner: yhoogstrate
-    tool_panel_section_label: NGS
-
-  - name: bamtools_split_ref
-    owner: jjohnson
-    tool_panel_section_label: Bam Tools
-
-  - name: snpeff_to_peptides
-    owner: jjohnson
-    tool_panel_section_label: NGS
-
-  - name: bcftools_view
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_isec
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_convert_to_vcf
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_convert_from_vcf
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_roh
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_merge
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_setgt
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_fill_tags
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_counts
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_impute_info
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_query_list_samples
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_dosage
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_filter
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_missing2ref
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_concat
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_mendelian
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_fixploidy
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_reheader
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_tag2tag
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_annotate
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_stats
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_mpileup
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_query
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_consensus
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_gtcheck
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_fill_an_ac
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: bcftools_plugin_vcf2sex
-    owner: iuc
-    tool_panel_section_label: Bcf Tools 
-
-  - name: vcfdistance
-    owner: devteam
-    tool_panel_section_label: NGS
+    tool_panel_section_label: Proteomics
 
   - name: blastxml_to_tabular_selectable
     owner: galaxyp
-    tool_panel_section_label: Blast
+    tool_panel_section_label: Proteomics
 
-  - name: variant_select
-    owner: devteam
-    tool_panel_section_label: NGS
+  - name: suite_query_tabular
+    owner: iuc
+    tool_panel_section_label: Proteomics
 
-  - name: print_reads
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: table_recalibration
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: variant_apply_recalibration
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: variant_annotator
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: variant_eval
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: depth_of_coverage
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: variants_validate
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: realigner_target_creator
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: count_covariates
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: variant_combine
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: unified_genotyper
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: analyze_covariates
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: indel_realigner
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: variant_filtration
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: variant_recalibrator
-    owner: devteam
-    tool_panel_section_label: NGS
-
-  - name: directag_and_tagrecon
+  - name: maldi_quant_preprocessing
     owner: galaxyp
-    tool_panel_section_label: Misc
+    tool_panel_section_label: Proteomics
 
-  - name: blosum
-    owner: oscar_b
-    tool_panel_section_label: Beta Test Tools
-
-  - name: select_random_lines
-    owner: pravs
-    tool_panel_section_label: Beta Test Tools
-
-  - name: spectrast2spectrast_irt
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: spectrast
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: peptideshaker
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: protein_transcript_correlation
-    owner: pravs
-    tool_panel_section_label: Beta Test Tools
-
-  - name: peptidegenomiccoordinate
-    owner: pravs
-    tool_panel_section_label: Beta Test Tools
-
-  - name: mzsqlite_psm_align
+  - name: maldi_quant_peak_detection
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: gffutils
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: cravat_score_and_annotate
-    owner: in_silico
-    tool_panel_section_label: Beta Test Tools
-
-  - name: cravat_annotate_mutations
-    owner: in_silico
-    tool_panel_section_label: Beta Test Tools
-
-  - name: ensembl_cdna_translate
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: split_to_collection
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: diamond
-    owner: bgruening
-    tool_panel_section_label: Beta Test Tools
-
-  - name: defuse
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: star_fusion
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: msfragger
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: pecan
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: msms_extractor
-    owner: pravs
-    tool_panel_section_label: Beta Test Tools
-
-  - name: remove_fasta_subsequences
-    owner: pravs
-    tool_panel_section_label: Beta Test Tools
-
-  - name: bamtools_split
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: psm_zscore
+  - name: cardinal_filtering
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: probamconvert
+  - name: cardinal_segmentations
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: interproscan5
-    owner: bgruening
-    tool_panel_section_label: Beta Test Tools
-
-  - name: filterscans
-    owner: pravs
-    tool_panel_section_label: Beta Test Tools
-
-  - name: trans_proteomic_pipeline
+  - name: cardinal_data_exporter
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: samplespecificdbgenerator
+  - name: cardinal_classification
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: map_ensembl_peptides_to_bed
+  - name: cardinal_mz_images
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: lookup_replace
-    owner: jjohnson
-    tool_panel_section_label: Beta Test Tools
-
-  - name: tpp_msconvert
+  - name: cardinal_quality_report
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: feature_alignment
+  - name: cardinal_preprocessing
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: pyprophet
+  - name: cardinal_spectra_plots
     owner: galaxyp
-    tool_panel_section_label: Beta Test Tools
+    tool_panel_section_label: Proteomics
 
-  - name: openms_itraqanalyzer
+  - name: cardinal_combine
     owner: galaxyp
-    tool_panel_section_label: OpenMS
+    tool_panel_section_label: Proteomics
 
   - name: megahit_contig2fastg
     owner: galaxyp
     tool_panel_section_label: Proteomics
 
-  - name: openms_tmtanalyzer
+  - name: eggnog_mapper
     owner: galaxyp
-    tool_panel_section_label: OpenMS
-
-  - name: openms_mapalignmentevaluation
-    owner: galaxyp
-    tool_panel_section_label: OpenMS
-
-  - name: openms_converttsvtotraml
-    owner: galaxyp
-    tool_panel_section_label: OpenMS
-
-  - name: openms_converttramltotsv
-    owner: galaxyp
-    tool_panel_section_label: OpenMS
-
-  - name: tpp_prophets
-    owner: iracooke
-    tool_panel_section_label: TPP
-
-  - name: translate_bed_sequences
-    owner: jjohnson
-    tool_panel_section_label: Archived Tools
-
-  - name: split_tabular_columns
-    owner: jjohnson
-    tool_panel_section_label: Archived Tools
-
-  - name: saint_preprocessing
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: nsaf_scoring
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: prohits_dotplot_generator
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: saint_protein_interactions
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: filter_fasta
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: apostl_static_bubblegraph_generator
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: saintexpress
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: query_crapome
-    owner: bornea
-    tool_panel_section_label: Protein Affinity
-
-  - name: bibliospec
-    owner: galaxyp
-    tool_panel_section_label: DIA
-
-  - name: dia_umpire
-    owner: galaxyp
-    tool_panel_section_label: DIA
-
-  - name: blosum_toolshed
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: pdb2pqr
-    owner: galaxyp
-    tool_panel_section_label: Computational Chemistry
-
-  - name: st_kinatest
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: st_nmf
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: stcommon_and_dif
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: st_kinamine
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: kinatest_r_7_7testing
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: commonality_finder
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: promap
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: negative_motif_finder_7_7
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: kinamine7_7
-    owner: jfb
-    tool_panel_section_label: Computational Chemistry
-
-  - name: methylkit
-    owner: rnateam
-    tool_panel_section_label: Epigenetics
-
-  - name: metagene_annotator
-    owner: galaxyp
-    tool_panel_section_label: MetaProteomics
-
-  - name: sixgill
-    owner: galaxyp
-    tool_panel_section_label: MetaProteomics
-
-  - name: meta_proteome_analyzer
-    owner: galaxyp
-    tool_panel_section_label: MetaProteomics
-
-  - name: group_humann2_uniref_abundances_to_go
-    owner: bebatut
-    tool_panel_section_label: Tools from workflows
-
-  - name: combine_metaphlan2_humann2
-    owner: bebatut
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_regroup_table
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_rna_dna_norm
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_split_table
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_strain_profiler
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_associate
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_barplot
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_split_stratified_table
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_unpack_pathways
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_renorm_table
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_rename_table
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_join_tables
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_reduce_table
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: humann2_genefamilies_genus_level
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: compare_humann2_output
-    owner: bebatut
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: merge_metaphlan_tables
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: metaphlan_hclust_heatmap
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: metaphlan2krona
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: metaphlan2
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: format_metaphlan2_output
-    owner: bebatut
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: cdhit
-    owner: bebatut
-    tool_panel_section_label: Multiple Alignments
-
-  - name: format_cd_hit_output
-    owner: bebatut
-    tool_panel_section_label: Multiple Alignments
-
-  - name: mothur_taxonomy_to_krona
-    owner: iuc
-    tool_panel_section_label: Mothur
-
-  - name: mothur_chimera_vsearch
-    owner: iuc
-    tool_panel_section_label: Mothur
-
-  - name: mothur_rename_seqs
-    owner: iuc
-    tool_panel_section_label: Mothur
-
-  - name: mothur_merge_count
-    owner: iuc
-    tool_panel_section_label: Mothur
-
-  - name: mothur_biom_info
-    owner: iuc
-    tool_panel_section_label: Mothur
-
-  - name: qiime_filter_otus_from_otu_table
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_filter_fasta
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_count_seqs
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_pick_otus
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_alpha_rarefaction
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_make_emperor
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_multiple_split_libraries_fastq
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_core_diversity
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_compare_categories
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_filter_alignment
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_validate_mapping_file
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_make_phylogeny
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_pick_closed_reference_otus
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_jackknifed_beta_diversity
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_filter_samples_from_otu_table
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_filter_taxa_from_otu_table
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_beta_diversity
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_pick_open_reference_otus
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_split_libraries
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_split_libraries_fastq
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_align_seqs
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_pick_rep_set
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_upgma_cluster
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_alpha_diversity
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_beta_diversity_through_plots
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_assign_taxonomy
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_plot_taxa_summary
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_multiple_join_paired_ends
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_extract_barcodes
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_make_otu_heatmap
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_summarize_taxa_through_plots
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: qiime_summarize_taxa
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: sortmerna
-    owner: rnateam
-    tool_panel_section_label: Tools from workflows
-
-  - name: trim_galore
+    tool_panel_section_label: Proteomics
+ 
+  - name: protein_properties
     owner: bgruening
-    tool_panel_section_label: Tools from workflows
+    tool_panel_section_label: Proteomics
 
+  - name: myrimatch
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: idpqonvert
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: idpassemble
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: idpquery
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: proteomics_moff
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
