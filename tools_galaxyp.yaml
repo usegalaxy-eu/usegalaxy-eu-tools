@@ -1,4 +1,3 @@
----
 install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
@@ -535,6 +534,10 @@ tools:
   - name: openms_itraqanalyzer
     owner: galaxyp
     tool_panel_section_label: OpenMS
+
+  - name: megahit_contig2fastg
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
 
   - name: openms_tmtanalyzer
     owner: galaxyp
