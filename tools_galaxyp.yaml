@@ -120,9 +120,6 @@ tools:
 		owner: pjbriggs
 		tool_panel_section_label: NGS: QC and manipulation
 
-  - name: pear
-		owner: iuc
-		tool_panel_section_label: NGS: QC and manipulation
 
   - name: fastq_paired_end_splitter
 		owner: devteam
@@ -196,10 +193,6 @@ tools:
 		owner: galaxyp
 		tool_panel_section_label: Proteogenomics
 
-  - name: multiqc
-		owner: iuc
-		tool_panel_section_label: NGS: QC and manipulation
-
   - name: trim_galore
 		owner: bgruening
 		tool_panel_section_label: NGS: QC and manipulation
@@ -212,23 +205,7 @@ tools:
 		owner: jjohnson
 		tool_panel_section_label: NGS: RNA Analysis
 
-  - name: stringtie
-		owner: iuc
-		tool_panel_section_label: NGS: RNA Analysis
-
   - name: pizzly
-		owner: iuc
-		tool_panel_section_label: NGS: RNA Analysis
-
-  - name: hisat2
-		owner: iuc
-		tool_panel_section_label: NGS: RNA Analysis
-
-  - name: kallisto_quant
-		owner: iuc
-		tool_panel_section_label: NGS: RNA Analysis
-
-  - name: kallisto_pseudo
 		owner: iuc
 		tool_panel_section_label: NGS: RNA Analysis
 
