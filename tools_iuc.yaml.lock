@@ -8,7 +8,33 @@ tools:
   - db1841942d2b
   - 6bb3cd018203
   - b8348686a0b9
+  - e19bebe96cd2
   tool_panel_section_label: Operate on Genomic Intervals
+- name: raceid_inspectclusters
+  owner: iuc
+  revisions:
+  - 9fec5dd8fbb9
+  tool_panel_section_label: RNA Analysis
+- name: raceid_filtnormconf
+  owner: iuc
+  revisions:
+  - 8dc8ff057b0f
+  tool_panel_section_label: RNA Analysis
+- name: raceid_clustering
+  owner: iuc
+  revisions:
+  - 4ea021bd7513
+  tool_panel_section_label: RNA Analysis
+- name: raceid_trajectory
+  owner: iuc
+  revisions:
+  - ff7cd3c7c1df
+  tool_panel_section_label: RNA Analysis
+- name: raceid_inspecttrajectory
+  owner: iuc
+  revisions:
+  - e0e9b24d76aa
+  tool_panel_section_label: RNA Analysis
 - name: kallisto_quant
   owner: iuc
   revisions:
@@ -378,6 +404,11 @@ tools:
   - a935cbdf1c0e
   - 988729b728f0
   - 3e2551a37201
+  tool_panel_section_label: FASTA/FASTQ manipulation
+- name: fasta_stats
+  owner: iuc
+  revisions:
+  - 9c620a950d3a
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: length_and_gc_content
   owner: iuc
@@ -1459,9 +1490,9 @@ tools:
   revisions:
   - ab492df30cdf
   - ade933eff007
-  - 783e8b70b047
-  - 9d1256d9ef0b
   - ae39895af5fe
+  - 9d1256d9ef0b
+  - 783e8b70b047
   tool_panel_section_label: Annotation
 - name: fgsea
   owner: iuc
@@ -1572,6 +1603,7 @@ tools:
   - db1841942d2b
   - 6bb3cd018203
   - b8348686a0b9
+  - e19bebe96cd2
   tool_panel_section_label: Operate on Genomic Intervals
 - name: bedtools
   owner: iuc
@@ -1579,6 +1611,7 @@ tools:
   - db1841942d2b
   - 6bb3cd018203
   - b8348686a0b9
+  - e19bebe96cd2
   tool_panel_section_label: Operate on Genomic Intervals
 - name: picard
   owner: devteam
@@ -2082,10 +2115,10 @@ tools:
 - name: gemini_gene_wise
   owner: iuc
   revisions:
-  - d46017ddbf94
-  - 0db31ae5295e
   - 99d6e7b1b7f1
+  - 0db31ae5295e
   - bc66ebfd4159
+  - d46017ddbf94
   tool_panel_section_label: Gemini Tools
 - name: gemini_stats
   owner: iuc
