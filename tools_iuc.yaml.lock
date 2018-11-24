@@ -6,10 +6,15 @@ tools:
   owner: iuc
   revisions:
   - db1841942d2b
-  - 6bb3cd018203
   - b8348686a0b9
+  - 6bb3cd018203
   - e19bebe96cd2
   tool_panel_section_label: Operate on Genomic Intervals
+- name: deg_annotate
+  owner: iuc
+  revisions:
+  - b42373cddb77
+  tool_panel_section_label: RNA Analysis
 - name: raceid_inspectclusters
   owner: iuc
   revisions:
@@ -1488,11 +1493,11 @@ tools:
 - name: goseq
   owner: iuc
   revisions:
-  - ab492df30cdf
   - ade933eff007
+  - ab492df30cdf
+  - 783e8b70b047
   - ae39895af5fe
   - 9d1256d9ef0b
-  - 783e8b70b047
   tool_panel_section_label: Annotation
 - name: fgsea
   owner: iuc
@@ -1601,16 +1606,16 @@ tools:
   owner: iuc
   revisions:
   - db1841942d2b
-  - 6bb3cd018203
   - b8348686a0b9
+  - 6bb3cd018203
   - e19bebe96cd2
   tool_panel_section_label: Operate on Genomic Intervals
 - name: bedtools
   owner: iuc
   revisions:
   - db1841942d2b
-  - 6bb3cd018203
   - b8348686a0b9
+  - 6bb3cd018203
   - e19bebe96cd2
   tool_panel_section_label: Operate on Genomic Intervals
 - name: picard
@@ -2115,10 +2120,10 @@ tools:
 - name: gemini_gene_wise
   owner: iuc
   revisions:
-  - 99d6e7b1b7f1
-  - 0db31ae5295e
   - bc66ebfd4159
+  - 0db31ae5295e
   - d46017ddbf94
+  - 99d6e7b1b7f1
   tool_panel_section_label: Gemini Tools
 - name: gemini_stats
   owner: iuc
