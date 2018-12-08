@@ -44,8 +44,8 @@ tools:
   owner: iuc
   revisions:
   - 59a4c97b85d6
-  - b818b23df1e0
   - 10c98fab6c5a
+  - b818b23df1e0
   tool_panel_section_label: RNA Analysis
 - name: slamdunk
   owner: iuc
@@ -202,6 +202,7 @@ tools:
   - 5e6237d58b0c
   - 26b7446bb17e
   - c38286ea7047
+  - 1790dcf3c32d
   tool_panel_section_label: Get Data
 - name: codeml
   owner: iuc
@@ -655,6 +656,36 @@ tools:
   - c1a9e644d580
   - dc25a5169a91
   tool_panel_section_label: Motif Tools
+- name: mummer_mummer
+  owner: iuc
+  revisions:
+  - 26f2cc1cc1e9
+  tool_panel_section_label: Multiple Alignments
+- name: mummer_show_coords
+  owner: iuc
+  revisions:
+  - f8734af48332
+  tool_panel_section_label: Multiple Alignments
+- name: mummer_dnadiff
+  owner: iuc
+  revisions:
+  - deacc6b40cc0
+  tool_panel_section_label: Multiple Alignments
+- name: mummer_nucmer
+  owner: iuc
+  revisions:
+  - a18fb4f826fc
+  tool_panel_section_label: Multiple Alignments
+- name: mummer_delta_filter
+  owner: iuc
+  revisions:
+  - 502018997bae
+  tool_panel_section_label: Multiple Alignments
+- name: mummer_mummerplot
+  owner: iuc
+  revisions:
+  - e8c60daa41e0
+  tool_panel_section_label: Multiple Alignments
 - name: msaboot
   owner: iuc
   revisions:
@@ -1077,6 +1108,7 @@ tools:
   revisions:
   - 736d51130b41
   - 0834c823d4b9
+  - 81df4950d65b
   tool_panel_section_label: Assembly
 - name: tophat2
   owner: devteam
@@ -1181,6 +1213,7 @@ tools:
   - d983d19fbbab
   - 9a616afdbda5
   - a416957ee305
+  - 89d26b11d452
   tool_panel_section_label: RNA Analysis
 - name: edger
   owner: iuc
@@ -1425,24 +1458,28 @@ tools:
   revisions:
   - 0bc800d67a0e
   - 1e667badbe87
+  - d7e6c347538d
   tool_panel_section_label: Variant Calling
 - name: varscan_somatic
   owner: iuc
   revisions:
   - 72b8ce355fae
   - 31a38ce7e8ae
+  - d37adcc2ec03
   tool_panel_section_label: Variant Calling
 - name: varscan_copynumber
   owner: iuc
   revisions:
   - a584f046e4a7
   - 8d8de66233ea
+  - e814a042315f
   tool_panel_section_label: Variant Calling
 - name: suite_varscan
   owner: iuc
   revisions:
   - d4187d802dc3
   - c037bdc0f28a
+  - 9bfb92848131
   tool_panel_section_label: Variant Calling
 - name: freebayes
   owner: devteam
@@ -1494,10 +1531,10 @@ tools:
 - name: goseq
   owner: iuc
   revisions:
-  - ae39895af5fe
+  - 783e8b70b047
   - ab492df30cdf
   - ade933eff007
-  - 783e8b70b047
+  - ae39895af5fe
   - 9d1256d9ef0b
   tool_panel_section_label: Annotation
 - name: fgsea
@@ -2022,8 +2059,8 @@ tools:
   owner: devteam
   revisions:
   - 33208952b99d
-  - 1ebb4ecdc1ef
   - e65c2cd0964c
+  - 1ebb4ecdc1ef
   tool_panel_section_label: SAM Tools
 - name: samtools_flagstat
   owner: devteam
@@ -2122,10 +2159,10 @@ tools:
 - name: gemini_gene_wise
   owner: iuc
   revisions:
-  - d46017ddbf94
-  - 0db31ae5295e
   - 99d6e7b1b7f1
+  - 0db31ae5295e
   - bc66ebfd4159
+  - d46017ddbf94
   tool_panel_section_label: Gemini Tools
 - name: gemini_stats
   owner: iuc
