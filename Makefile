@@ -3,6 +3,7 @@ LOCK_FILES := $(wildcard *.yaml.lock)
 LINTED_YAMLS := $(YAML_FILES:=.lint)
 CORRECT_YAMLS := $(YAML_FILES:=.fix)
 INSTALL_YAMLS := $(LOCK_FILES:=.install)
+UPDATE_TRUSTED_IUC := $(LOCK_FILES:.lock=.update_trusted_iuc)
 
 GALAXY_SERVER := https://usegalaxy.eu
 
@@ -30,10 +31,14 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 	@-shed-tools install --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY)
 
 
-update_trusted: ## Run the update script
+update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
 	python scripts/update-tool.py tools_iuc.yaml
 	python scripts/update-tool.py earlhaminst.yaml
+
+%.update_trusted_iuc: %
+	@# Update any tools owned by IUC in any other yaml file
+	python scripts/update-tool.py --owner iuc $<
 
 
 .PHONY: lint update_trusted help
