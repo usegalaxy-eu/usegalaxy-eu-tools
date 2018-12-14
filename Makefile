@@ -35,6 +35,7 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
 	python scripts/update-tool.py tools_iuc.yaml
 	python scripts/update-tool.py earlhaminst.yaml
+	python scripts/update-tool.py rnateam.yml
 
 %.update_trusted_iuc: %
 	@# Update any tools owned by IUC in any other yaml file
