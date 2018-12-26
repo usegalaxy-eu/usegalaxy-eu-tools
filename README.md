@@ -12,9 +12,25 @@ Currently only UseGalaxy.eu is installing tools from this repository.
 
 ## Requesting Tools in UseGalaxy.\*
 
-Policies are not yet announced.
+Policies are not set in stone and we would be happy to seek feedback and discussions.
+Currenty, we encourage everyone to submit tools via PRs to this repo. The tools are losely grouped into several categories based on the yaml files. Please make your changes in the appropriate file and avoid creating a new yaml file unless necessary.
 
-The tools are losely grouped into several categories based on the yaml files. Please make your changes in the appropriate file and avoid creating a new yaml file unless necessary.
+However, we promise a high-quality service to
+our users and we need to ensure sustainability of the installed tools. That means that tools are regularly updated, tested
+and can be adjusted to new developments.
+Therefore, we encourage everyone to follow the [IUC Guidelines](https://galaxy-iuc-standards.readthedocs.io/en/latest/index.html) for tool development and have automatic testing enabled via [CI](https://en.wikipedia.org/wiki/Continuous_integration).
+
+We encourage you to submit your tool to one of the larger community repositories, like
+
+ * [Galaxy Tools maintained by IUC](https://github.com/galaxyproject/tools-iuc)
+ * [Björn Grüning repo](https://github.com/bgruening/galaxytools)
+ * Peter Cock's repos:
+   * [pico repo](https://github.com/peterjc/pico_galaxy)
+ * [Galaxy Proteomics repo](https://github.com/galaxyproteomics/tools-galaxyp)
+ * [EI repo](https://github.com/TGAC/earlham-galaxytools)
+
+ These repositories have planemo CI testing enabled and have a larger communities in place that help you with maintaining the
+ tools.
 
 ### Updating an Existing Tool
 
