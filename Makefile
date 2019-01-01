@@ -36,6 +36,8 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python scripts/update-tool.py tools_iuc.yaml
 	python scripts/update-tool.py earlhaminst.yaml
 	python scripts/update-tool.py rnateam.yml
+	python scripts/update-tool.py bgruening.yml
+
 
 %.update_trusted_iuc: %
 	@# Update any tools owned by IUC in any other yaml file
