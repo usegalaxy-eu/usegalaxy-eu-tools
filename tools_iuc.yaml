@@ -1236,21 +1236,27 @@ tools:
   - name: samtools_bedcov
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_sort
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_rmdup
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_idxstats
     owner: devteam
     tool_panel_section_label: SAM Tools
+ 
   - name: samtools_slice_bam
     owner: devteam
     tool_panel_section_label: SAM Tools
+ 
   - name: samtools_mpileup
     owner: devteam
     tool_panel_section_label: SAM Tools
+ 
   - name: samtools_calmd
     owner: devteam
     tool_panel_section_label: SAM Tools
@@ -1305,6 +1311,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
+  - name: gemini_inheritance
+    owner: iuc
+    tool_panel_section_label: Gemini Tools
+
   - name: gemini_windower
     owner: iuc
     tool_panel_section_label: Gemini Tools
@@ -1320,24 +1330,12 @@ tools:
   - name: gemini_stats
     owner: iuc
     tool_panel_section_label: Gemini Tools
-
-  - name: gemini_mendel_errors
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
+ 
   - name: gemini_amend
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
   - name: gemini_pathways
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
-  - name: gemini_dump
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
-  - name: gemini_region
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
@@ -1352,14 +1350,12 @@ tools:
   - name: gemini_query
     owner: iuc
     tool_panel_section_label: Gemini Tools
+ 
   - name: gemini_fusions
     owner: iuc
     tool_panel_section_label: Gemini Tools
-  - name: gemini_load
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
 
-  - name: gemini_de_novo
+  - name: gemini_load
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
@@ -1380,10 +1376,6 @@ tools:
     tool_panel_section_label: Gemini Tools
 
   - name: gemini_qc
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
-  - name: gemini_comp_hets
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
@@ -1617,6 +1609,10 @@ tools:
   - name: porechop
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ manipulation
+
+  - name: spaln
+    owner: iuc
+    tool_panel_section_label: Annotation
 
   - name: annotatemyids
     owner: iuc
