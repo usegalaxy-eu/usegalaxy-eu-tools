@@ -1,6 +1,7 @@
 YAML_FILES := $(wildcard *.yaml)
 LOCK_FILES := $(wildcard *.yaml.lock)
 LINTED_YAMLS := $(YAML_FILES:=.lint)
+UPDATED_YAMLS := $(YAML_FILES:=.update)
 CORRECT_YAMLS := $(YAML_FILES:=.fix)
 INSTALL_YAMLS := $(LOCK_FILES:=.install)
 UPDATE_TRUSTED_IUC := $(LOCK_FILES:.lock=.update_trusted_iuc)
@@ -38,6 +39,11 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python scripts/update-tool.py rnateam.yaml
 	python scripts/update-tool.py bgruening.yaml
 
+update_all: $(UPDATED_YAMLS)
+
+%.update: ## Update all of the tools
+	@# Missing --without, so this updates all tools in the file.
+	python scripts/update-tool.py $<
 
 %.update_trusted_iuc: %
 	@# Update any tools owned by IUC in any other yaml file
