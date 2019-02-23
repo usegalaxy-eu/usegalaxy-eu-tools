@@ -12,6 +12,11 @@ tools:
   - db1841942d2b
   - b8348686a0b9
   tool_panel_section_label: Operate on Genomic Intervals
+- name: collection_element_identifiers
+  owner: iuc
+  revisions:
+  - 220ee3518f19
+  tool_panel_section_label: Collection Operations
 - name: crosscontamination_barcode_filter
   owner: iuc
   revisions:
@@ -537,6 +542,7 @@ tools:
   - 69c5e9c0add0
   - 558d652cd681
   - fa30df9b79c2
+  - d0743cb18ed8
   tool_panel_section_label: Graph/Display Data
 - name: ucsc_custom_track
   owner: devteam
@@ -1106,6 +1112,7 @@ tools:
   revisions:
   - 98242353faa4
   - 02a822e32de7
+  - de387b2b2803
   tool_panel_section_label: Assembly
 - name: rnaspades
   owner: iuc
@@ -1261,6 +1268,7 @@ tools:
   - 41573afd6871
   - bdebdea5f6a7
   - 81796eb60bd0
+  - 86b3df7db58b
   tool_panel_section_label: RNA Analysis
 - name: salmon
   owner: bgruening
@@ -1971,6 +1979,7 @@ tools:
   owner: iuc
   revisions:
   - 1829900b5dcd
+  - 2363ef414c9b
   tool_panel_section_label: Variant Calling
 - name: bcftools_call
   owner: iuc
@@ -1978,21 +1987,25 @@ tools:
   - a531317a3527
   - b03984136ce4
   - 3296c3680d96
+  - 0fba2c15b40d
   tool_panel_section_label: Variant Calling
 - name: bcftools_norm
   owner: iuc
   revisions:
   - a404f786a94c
+  - 19905c025d2a
   tool_panel_section_label: Variant Calling
 - name: bcftools_csq
   owner: iuc
   revisions:
   - 7cbf3c66d4ad
+  - 039ea3f1dea9
   tool_panel_section_label: Variant Calling
 - name: bcftools_cnv
   owner: iuc
   revisions:
   - 8408bffd5616
+  - bf1f4994f104
   tool_panel_section_label: Variant Calling
 - name: vcftools_merge
   owner: devteam
