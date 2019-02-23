@@ -1197,18 +1197,32 @@ tools:
   - name: bcftools_csq
     owner: iuc
     tool_panel_section_label: Variant Calling
+ 
+   - name: bcftools_plugin_frameshifts
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+ 
+  
+   - name: bcftools_plugin_color_chrs
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+ 
   - name: bcftools_cnv
     owner: iuc
     tool_panel_section_label: Variant Calling
+  
   - name: vcftools_merge
     owner: devteam
     tool_panel_section_label: Variant Calling
+  
   - name: vcftools_isec
     owner: devteam
     tool_panel_section_label: Variant Calling
+  
   - name: vt_variant_tools
     owner: iuc
     tool_panel_section_label: Variant Calling
+  
   - name: bcftools
     owner: iuc
     tool_panel_section_label: Variant Calling
