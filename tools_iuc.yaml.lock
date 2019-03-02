@@ -32,26 +32,31 @@ tools:
   owner: iuc
   revisions:
   - 9fec5dd8fbb9
+  - '106718959281'
   tool_panel_section_label: RNA Analysis
 - name: raceid_filtnormconf
   owner: iuc
   revisions:
   - 8dc8ff057b0f
+  - 56a093c2a3f9
   tool_panel_section_label: RNA Analysis
 - name: raceid_clustering
   owner: iuc
   revisions:
   - 4ea021bd7513
+  - 528a43b1cbcf
   tool_panel_section_label: RNA Analysis
 - name: raceid_trajectory
   owner: iuc
   revisions:
   - ff7cd3c7c1df
+  - 87de515af823
   tool_panel_section_label: RNA Analysis
 - name: raceid_inspecttrajectory
   owner: iuc
   revisions:
   - e0e9b24d76aa
+  - 5156383d3a5d
   tool_panel_section_label: RNA Analysis
 - name: kallisto_quant
   owner: iuc
@@ -357,6 +362,7 @@ tools:
   - 9c8536c7ed42
   - 58228a4d58fe
   - dfde09461b1e
+  - 071084070619
   tool_panel_section_label: Join, Subtract and Group
 - name: suite_datamash
   owner: iuc
@@ -533,6 +539,7 @@ tools:
 - name: jbrowse
   owner: iuc
   revisions:
+  - d0743cb18ed8
   - 8f33c9fbc119
   - 1cfc579079a6
   - 1c718d8b3532
@@ -542,7 +549,6 @@ tools:
   - 69c5e9c0add0
   - 558d652cd681
   - fa30df9b79c2
-  - d0743cb18ed8
   tool_panel_section_label: Graph/Display Data
 - name: ucsc_custom_track
   owner: devteam
@@ -1111,8 +1117,8 @@ tools:
   owner: iuc
   revisions:
   - 98242353faa4
-  - 02a822e32de7
   - de387b2b2803
+  - 02a822e32de7
   tool_panel_section_label: Assembly
 - name: rnaspades
   owner: iuc
@@ -1377,6 +1383,7 @@ tools:
   - 278b189248cd
   - f1c406f9554c
   - 4ca0e679f21e
+  - 9fd8b69e6e68
   tool_panel_section_label: RNA Analysis
 - name: cuffdiff
   owner: devteam
@@ -1984,10 +1991,10 @@ tools:
 - name: bcftools_call
   owner: iuc
   revisions:
-  - a531317a3527
   - b03984136ce4
-  - 3296c3680d96
+  - a531317a3527
   - 0fba2c15b40d
+  - 3296c3680d96
   tool_panel_section_label: Variant Calling
 - name: bcftools_norm
   owner: iuc
@@ -1998,14 +2005,24 @@ tools:
 - name: bcftools_csq
   owner: iuc
   revisions:
-  - 7cbf3c66d4ad
   - 039ea3f1dea9
+  - 7cbf3c66d4ad
+  tool_panel_section_label: Variant Calling
+- name: bcftools_plugin_frameshifts
+  owner: iuc
+  revisions:
+  - 96d2000977ab
+  tool_panel_section_label: Variant Calling
+- name: bcftools_plugin_color_chrs
+  owner: iuc
+  revisions:
+  - 71186bb66ca2
   tool_panel_section_label: Variant Calling
 - name: bcftools_cnv
   owner: iuc
   revisions:
-  - 8408bffd5616
   - bf1f4994f104
+  - 8408bffd5616
   tool_panel_section_label: Variant Calling
 - name: vcftools_merge
   owner: devteam
