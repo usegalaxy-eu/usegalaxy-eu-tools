@@ -31,20 +31,20 @@ tools:
 - name: raceid_inspectclusters
   owner: iuc
   revisions:
-  - 9fec5dd8fbb9
   - '106718959281'
+  - 9fec5dd8fbb9
   tool_panel_section_label: RNA Analysis
 - name: raceid_filtnormconf
   owner: iuc
   revisions:
-  - 8dc8ff057b0f
   - 56a093c2a3f9
+  - 8dc8ff057b0f
   tool_panel_section_label: RNA Analysis
 - name: raceid_clustering
   owner: iuc
   revisions:
-  - 4ea021bd7513
   - 528a43b1cbcf
+  - 4ea021bd7513
   tool_panel_section_label: RNA Analysis
 - name: raceid_trajectory
   owner: iuc
@@ -361,8 +361,8 @@ tools:
   revisions:
   - 9c8536c7ed42
   - 58228a4d58fe
-  - dfde09461b1e
   - 071084070619
+  - dfde09461b1e
   tool_panel_section_label: Join, Subtract and Group
 - name: suite_datamash
   owner: iuc
@@ -1378,12 +1378,12 @@ tools:
 - name: dexseq
   owner: iuc
   revisions:
-  - f89c9b25feb4
+  - 9fd8b69e6e68
+  - f1c406f9554c
   - 251393b72616
   - 278b189248cd
-  - f1c406f9554c
+  - f89c9b25feb4
   - 4ca0e679f21e
-  - 9fd8b69e6e68
   tool_panel_section_label: RNA Analysis
 - name: cuffdiff
   owner: devteam
@@ -3710,3 +3710,32 @@ tools:
   - e41ec5af7472
   - 5f589c91566e
   tool_panel_section_label: RNA Analysis
+- name: scanpy_cluster_reduce_dimension.xml
+  owner: iuc
+  revisions: []
+  tool_panel_section_label: Single-cell
+- name: scanpy_filter
+  owner: iuc
+  revisions:
+  - 6ea5a05a260a
+  tool_panel_section_label: Single-cell
+- name: scanpy_inspect
+  owner: iuc
+  revisions:
+  - 5d2e17328afe
+  tool_panel_section_label: Single-cell
+- name: scanpy_normalize
+  owner: iuc
+  revisions:
+  - ed64c90a9b93
+  tool_panel_section_label: Single-cell
+- name: scanpy_plot
+  owner: iuc
+  revisions:
+  - 397d2c97af05
+  tool_panel_section_label: Single-cell
+- name: scanpy_remove_confounders
+  owner: iuc
+  revisions:
+  - 9ca360dde8e3
+  tool_panel_section_label: Single-cell

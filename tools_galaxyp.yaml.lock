@@ -27,6 +27,7 @@ tools:
   owner: galaxyp
   revisions:
   - 9e6e840d6b52
+  - edb33e8224c6
   tool_panel_section_label: Convert Formats
 - name: idpquery
   owner: galaxyp
@@ -43,6 +44,7 @@ tools:
   owner: galaxyp
   revisions:
   - dd4ba10d0c45
+  - cc5ccfa8ee28
   tool_panel_section_label: Convert Formats
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
@@ -60,6 +62,11 @@ tools:
   owner: galaxyp
   revisions:
   - bb199421f731
+  tool_panel_section_label: Proteomics
+- name: dia_umpire
+  owner: galaxyp
+  revisions:
+  - 2b785516abfc
   tool_panel_section_label: Proteomics
 - name: quantp
   owner: galaxyp
@@ -82,10 +89,10 @@ tools:
   owner: galaxyp
   revisions:
   - b4ccaf21855d
-  - ee56530a559f
   - a26f5807eb85
-  - 58f9cf0de6d4
   - 09e0ae6f661b
+  - 58f9cf0de6d4
+  - ee56530a559f
   tool_panel_section_label: Proteomics
 - name: decoyfasta
   owner: galaxyp
@@ -126,54 +133,63 @@ tools:
   revisions:
   - 0c4579390f73
   - a2988d8d4b77
+  - 4b5513e25902
   tool_panel_section_label: Proteomics
 - name: cardinal_segmentations
   owner: galaxyp
   revisions:
   - e56a955cd1c0
   - 034885df9b09
+  - 09b638ceee45
   tool_panel_section_label: Proteomics
 - name: cardinal_data_exporter
   owner: galaxyp
   revisions:
   - e30d8b72415f
   - 28ba52c9548c
+  - d94770c22f13
   tool_panel_section_label: Proteomics
 - name: cardinal_classification
   owner: galaxyp
   revisions:
   - 2fdbbb1be2b0
   - cbc7e53518ce
+  - 585ef27873c9
   tool_panel_section_label: Proteomics
 - name: cardinal_mz_images
   owner: galaxyp
   revisions:
   - 2ba12c97f7cc
   - 27a4c660bbca
+  - 773a24b240e1
   tool_panel_section_label: Proteomics
 - name: cardinal_quality_report
   owner: galaxyp
   revisions:
   - d4803c1e5e19
   - 5f18275c250a
+  - 16556ca0196b
   tool_panel_section_label: Proteomics
 - name: cardinal_preprocessing
   owner: galaxyp
   revisions:
   - 8c05a34f160a
   - 1b875f0b8024
+  - f172efe92629
   tool_panel_section_label: Proteomics
 - name: cardinal_spectra_plots
   owner: galaxyp
   revisions:
   - 3642ed221eb2
   - 9c03e7a617cd
+  - 58c4aef16eb0
   tool_panel_section_label: Proteomics
 - name: cardinal_combine
   owner: galaxyp
   revisions:
   - 129cddd02600
   - 93be1d20b5c3
+  - fe5a1d487f32
   tool_panel_section_label: Proteomics
 - name: megahit_contig2fastg
   owner: iuc
@@ -225,6 +241,7 @@ tools:
   owner: galaxyp
   revisions:
   - a3a66063d460
+  - 2c7df0077d28
   tool_panel_section_label: Proteomics
 - name: gffcompare_to_bed
   owner: galaxyp
