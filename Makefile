@@ -39,6 +39,7 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python scripts/update-tool.py earlhaminst.yaml
 	python scripts/update-tool.py rnateam.yaml
 	python scripts/update-tool.py bgruening.yaml
+	python scripts/update-tool.py tools_galaxyp.yaml
 
 update_all: $(UPDATED_YAMLS)
 
