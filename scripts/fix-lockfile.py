@@ -1,6 +1,5 @@
 import yaml
 import os
-import glob
 import copy
 import argparse
 
@@ -50,7 +49,7 @@ def update_file(fn, dry):
             'name': tool['name'],
             'owner': tool['owner'],
             'tool_panel_section_label': tool['tool_panel_section_label'],
-            'revisions': list(set(revisions)),  # Cast to list for yaml serialization
+            'revisions': sorted(list(set(revisions))),  # Cast to list for yaml serialization
         }
 
         clean_lockfile['tools'].append(new_tool)
