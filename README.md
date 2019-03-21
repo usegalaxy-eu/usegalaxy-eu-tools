@@ -4,6 +4,16 @@ Originally this repository was solely for the use of usegalaxy.eu, but we are lo
 
 Currently only UseGalaxy.eu is installing tools from this repository.
 
+## Best used with ...
+
+[ephemeris](https://ephemeris.readthedocs.io/en/latest/). Ephemeris is a small Python library and set of scripts for managing the bootstrapping of Galaxy plugins - tools, index data, and workflows.
+
+You can use ephemeris with our tool defintions as easy as:
+
+```bash
+shed-tools install -t tools_iuc.yaml -g https://mygalaxy.xy -a API-KEY
+```
+
 ## Setup
 
 - `yaml` files are manually curated
