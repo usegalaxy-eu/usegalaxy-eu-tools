@@ -16,6 +16,7 @@ tools:
   owner: iuc
   revisions:
   - 220ee3518f19
+  - d3c07d270a50
   tool_panel_section_label: Collection Operations
 - name: crosscontamination_barcode_filter
   owner: iuc
@@ -132,9 +133,9 @@ tools:
 - name: ggplot2_pca
   owner: iuc
   revisions:
+  - 1b9406a1a769
   - bb6ec8e5387f
   - c21099566418
-  - 1b9406a1a769
   tool_panel_section_label: Graph/Display Data
 - name: pygenometracks
   owner: iuc
@@ -145,18 +146,18 @@ tools:
 - name: ggplot2_heatmap
   owner: iuc
   revisions:
+  - de002ba2b849
   - f44dc95928aa
   - fe8d4655ee10
-  - de002ba2b849
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_violin
   owner: iuc
   revisions:
   - 3a270cee1239
   - 43778344b955
+  - 637cf21db396
   - a597d59df9ee
   - d85535076554
-  - 637cf21db396
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap2
   owner: iuc
@@ -172,17 +173,18 @@ tools:
   - 1bff6682e780
   - 46f91106439b
   - 9a482995958c
-  - a78aa83f6625
   - 9cec81e1b90e
+  - a78aa83f6625
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_histogram
   owner: iuc
   revisions:
+  - 1f0242e49a58
   - 63a595b451d1
   - 9d060114554c
   - d3d92fb20389
   - f52035800250
-  - 1f0242e49a58
+  - 536078949ae4
   tool_panel_section_label: Graph/Display Data
 - name: tsne
   owner: iuc
@@ -555,6 +557,7 @@ tools:
   - d0743cb18ed8
   - dba3c47e1798
   - fa30df9b79c2
+  - 112eb40ba6cf
   tool_panel_section_label: Graph/Display Data
 - name: ucsc_custom_track
   owner: devteam
@@ -896,6 +899,7 @@ tools:
   revisions:
   - 13e98e2709b8
   - dce033fd3c80
+  - a27654fc4270
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fastx_artifacts_filter
   owner: devteam
@@ -1167,6 +1171,7 @@ tools:
   - 17062a0decb7
   - a54de7e658f7
   - a9d4f71dbfb0
+  - 017aba02828d
   tool_panel_section_label: Mapping
 - name: rgrnastar
   owner: iuc
@@ -1254,6 +1259,7 @@ tools:
 - name: deseq2
   owner: iuc
   revisions:
+  - 0696db066a5b
   - 3bf1b3ec1ddf
   - 6f91b8ce6e07
   - 89d26b11d452
@@ -1263,7 +1269,6 @@ tools:
   - d983d19fbbab
   - d9e5cadc7f0b
   - e5c8afac22a7
-  - 0696db066a5b
   tool_panel_section_label: RNA Analysis
 - name: edger
   owner: iuc
@@ -1518,9 +1523,9 @@ tools:
   revisions:
   - 0bc800d67a0e
   - 1e667badbe87
+  - 45288fb1f3f5
   - 7c5e867820cf
   - d7e6c347538d
-  - 45288fb1f3f5
   tool_panel_section_label: Variant Calling
 - name: varscan_somatic
   owner: iuc
@@ -1528,8 +1533,8 @@ tools:
   - 2657ab48e16a
   - 31a38ce7e8ae
   - 72b8ce355fae
-  - d37adcc2ec03
   - b79bb8b09822
+  - d37adcc2ec03
   tool_panel_section_label: Variant Calling
 - name: varscan_copynumber
   owner: iuc
@@ -1537,17 +1542,17 @@ tools:
   - 192bd5b78300
   - 8d8de66233ea
   - a584f046e4a7
-  - e814a042315f
   - c24910ad5441
+  - e814a042315f
   tool_panel_section_label: Variant Calling
 - name: suite_varscan
   owner: iuc
   revisions:
+  - 43975c89ccaa
   - 4555028c2815
   - 9bfb92848131
   - c037bdc0f28a
   - d4187d802dc3
-  - 43975c89ccaa
   tool_panel_section_label: Variant Calling
 - name: freebayes
   owner: devteam
@@ -1567,6 +1572,7 @@ tools:
   - 776ebd1239da
   - 82f2b6f20fa2
   - c9a8ef2aa380
+  - feb7e635c6af
   tool_panel_section_label: Variant Calling
 - name: vcf2pgsnp
   owner: devteam
@@ -1598,6 +1604,11 @@ tools:
   revisions:
   - 4a32700dcaa2
   tool_panel_section_label: Phenotype Association
+- name: tbprofiler
+  owner: iuc
+  revisions:
+  - 5182e1a99313
+  tool_panel_section_label: Annotation
 - name: goenrichment
   owner: iuc
   revisions:

@@ -38,8 +38,8 @@ tools:
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
-  - edbeb2956484
   - a3edda696e4d
+  - edbeb2956484
   tool_panel_section_label: Convert Formats
 - name: msconvert
   owner: galaxyp
@@ -48,6 +48,11 @@ tools:
   - cc5ccfa8ee28
   - dd4ba10d0c45
   tool_panel_section_label: Convert Formats
+- name: rawtools
+  owner: galaxyp
+  revisions:
+  - 51e4aa55ea04
+  tool_panel_section_label: Proteomics
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   revisions:
@@ -206,8 +211,8 @@ tools:
 - name: megahit_contig2fastg
   owner: iuc
   revisions:
-  - ed22349139ee
   - b910d0cbc00b
+  - ed22349139ee
   tool_panel_section_label: Proteomics
 - name: eggnog_mapper
   owner: galaxyp
@@ -248,8 +253,8 @@ tools:
   revisions:
   - 226287d75d96
   - 28b65ce1a091
-  - b4098353ee73
   - 7af419c90f5f
+  - b4098353ee73
   tool_panel_section_label: Proteomics
 - name: custom_pro_db
   owner: galaxyp
