@@ -27,8 +27,7 @@ for line in sys.stdin:
         sections[section].append((owner, repo, revision))
 
 
-print("""
----
+print("""---
 site: freiburg
 tags: [tools]
 title: UseGalaxy.eu Tool Updates for {date}
