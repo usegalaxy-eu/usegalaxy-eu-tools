@@ -4,6 +4,23 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: anndata_import
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: anndata_export
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: anndata_manipulate
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: anndata_inspect
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
   - name: bedtools
     owner: iuc
     tool_panel_section_label: Operate on Genomic Intervals
