@@ -2,6 +2,26 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: anndata_import
+  owner: iuc
+  revisions:
+  - 69e2275406fd
+  tool_panel_section_label: Single-cell
+- name: anndata_export
+  owner: iuc
+  revisions:
+  - fcb7370e827f
+  tool_panel_section_label: Single-cell
+- name: anndata_manipulate
+  owner: iuc
+  revisions:
+  - 0ef28c0963c8
+  tool_panel_section_label: Single-cell
+- name: anndata_inspect
+  owner: iuc
+  revisions:
+  - b2a6ce371781
+  tool_panel_section_label: Single-cell
 - name: bedtools
   owner: iuc
   revisions:
@@ -180,11 +200,11 @@ tools:
   owner: iuc
   revisions:
   - 1f0242e49a58
+  - 536078949ae4
   - 63a595b451d1
   - 9d060114554c
   - d3d92fb20389
   - f52035800250
-  - 536078949ae4
   tool_panel_section_label: Graph/Display Data
 - name: tsne
   owner: iuc
@@ -547,6 +567,7 @@ tools:
 - name: jbrowse
   owner: iuc
   revisions:
+  - 112eb40ba6cf
   - 1c718d8b3532
   - 1cfc579079a6
   - 2c9e5136b416
@@ -557,7 +578,7 @@ tools:
   - d0743cb18ed8
   - dba3c47e1798
   - fa30df9b79c2
-  - 112eb40ba6cf
+  - ca2def38369c
   tool_panel_section_label: Graph/Display Data
 - name: ucsc_custom_track
   owner: devteam
@@ -898,8 +919,8 @@ tools:
   owner: iuc
   revisions:
   - 13e98e2709b8
-  - dce033fd3c80
   - a27654fc4270
+  - dce033fd3c80
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fastx_artifacts_filter
   owner: devteam
@@ -1168,10 +1189,10 @@ tools:
 - name: bowtie2
   owner: devteam
   revisions:
+  - 017aba02828d
   - 17062a0decb7
   - a54de7e658f7
   - a9d4f71dbfb0
-  - 017aba02828d
   tool_panel_section_label: Mapping
 - name: rgrnastar
   owner: iuc
@@ -1787,6 +1808,7 @@ tools:
   owner: iuc
   revisions:
   - 0968856c687c
+  - d4bb87ca916d
   tool_panel_section_label: NCBI Blast
 - name: kraken_taxonomy_report
   owner: iuc
@@ -2170,6 +2192,7 @@ tools:
   - a430da4f04cd
   - cab3f8d35989
   - f56bdb93ae58
+  - e613c1ad4c4c
   tool_panel_section_label: SAM Tools
 - name: samtools_rmdup
   owner: devteam
