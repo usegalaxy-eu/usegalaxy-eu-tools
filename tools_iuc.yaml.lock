@@ -54,30 +54,35 @@ tools:
   revisions:
   - '106718959281'
   - 9fec5dd8fbb9
+  - 0fa80752a314
   tool_panel_section_label: RNA Analysis
 - name: raceid_filtnormconf
   owner: iuc
   revisions:
   - 56a093c2a3f9
   - 8dc8ff057b0f
+  - d55e29ac02e3
   tool_panel_section_label: RNA Analysis
 - name: raceid_clustering
   owner: iuc
   revisions:
   - 4ea021bd7513
   - 528a43b1cbcf
+  - d4646ce659b4
   tool_panel_section_label: RNA Analysis
 - name: raceid_trajectory
   owner: iuc
   revisions:
   - 87de515af823
   - ff7cd3c7c1df
+  - da7ff78fe296
   tool_panel_section_label: RNA Analysis
 - name: raceid_inspecttrajectory
   owner: iuc
   revisions:
   - 5156383d3a5d
   - e0e9b24d76aa
+  - 4164c0da0a5d
   tool_panel_section_label: RNA Analysis
 - name: kallisto_quant
   owner: iuc
@@ -575,10 +580,11 @@ tools:
   - 5f70e7fe6077
   - 69c5e9c0add0
   - 8f33c9fbc119
+  - ca2def38369c
   - d0743cb18ed8
   - dba3c47e1798
   - fa30df9b79c2
-  - ca2def38369c
+  - 2bb2e07a7a21
   tool_panel_section_label: Graph/Display Data
 - name: ucsc_custom_track
   owner: devteam
@@ -2191,8 +2197,8 @@ tools:
   revisions:
   - a430da4f04cd
   - cab3f8d35989
-  - f56bdb93ae58
   - e613c1ad4c4c
+  - f56bdb93ae58
   tool_panel_section_label: SAM Tools
 - name: samtools_rmdup
   owner: devteam
@@ -2260,6 +2266,11 @@ tools:
   - 88eedb4abea0
   - dc20f447c0e2
   - f57df915aa10
+  tool_panel_section_label: SAM Tools
+- name: samtools_depth
+  owner: iuc
+  revisions:
+  - 44de678a44c4
   tool_panel_section_label: SAM Tools
 - name: samtools_sort
   owner: iuc
@@ -2648,6 +2659,7 @@ tools:
   - 1c2db0054039
   - df99138d2776
   - e4574a4d09d8
+  - b2f1f75d49c4
   tool_panel_section_label: Quality Control
 - name: hicexplorer_hiccorrectmatrix
   owner: bgruening
