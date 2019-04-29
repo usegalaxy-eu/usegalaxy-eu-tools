@@ -34,6 +34,7 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 
 update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
+	python scripts/update-tool.py cheminformatics.yaml
 	python scripts/update-tool.py imaging.yaml
 	python scripts/update-tool.py tools_iuc.yaml
 	python scripts/update-tool.py earlhaminst.yaml
