@@ -1,5 +1,4 @@
 import yaml
-import os
 import sys
 import argparse
 
@@ -13,7 +12,7 @@ def update_file(fn):
     # As here we add any new tools in.
     unpinned = []
     for tool in locked['tools']:
-        if 'revisions' not in tool:
+        if len(tool.get('revisions', [])) == 0:
             exit_code = 1
             unpinned.append(tool)
 
