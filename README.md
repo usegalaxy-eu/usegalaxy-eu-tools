@@ -5,14 +5,12 @@ Originally this repository was solely for the use of usegalaxy.eu, but we are lo
 
 Currently only UseGalaxy.eu is installing tools from this repository.
 
-## Best used with ...
+## Usage
 
-[ephemeris](https://ephemeris.readthedocs.io/en/latest/). Ephemeris is a small Python library and set of scripts for managing the bootstrapping of Galaxy plugins - tools, index data, and workflows.
-
-You can use ephemeris with our tool defintions as easy as:
+With [ephemeris](https://ephemeris.readthedocs.io/en/latest/) installed, you can use our tool defintions easily:
 
 ```bash
-shed-tools install -t tools_iuc.yaml -g https://mygalaxy.xy -a API-KEY
+make tools_iuc.yaml.lock.install GALAXY_SERVER_URL=https://... GALAXY_API_KEY=...
 ```
 
 ## Setup
@@ -57,11 +55,3 @@ We encourage you to submit your tool to one of the larger community repositories
 	- Run `make fix`
 	- Edit the .yaml.lock to correct the version number.
 - Open a pull request
-
-## For UseGalaxy.\* Instance Administrators
-
-Set the environment variables `GALAXY_SERVER_URL` and `GALAXY_API_KEY` and run `make install`. This will install ALL of the tools from the .lock files. Be sure that the tool panel sections are pre-existing or it will make a mess of your tool panel. You can run `grep -o -h 'tool_panel_section_label:.*' *.yaml.lock | sort -u` for a list of categories.
-
-## On UseGalaxy.eu
-
-Currently, UseGalaxy.eu runs this on our Jenkins server. Every saturday morning it wakes up early and updates all IUC owned tools + ensures that all the yaml files are installed to usegalaxy.eu.
