@@ -7,10 +7,6 @@ tools:
     owner: 'nml'
     tool_panel_section_label: 'Collection Operations'
 
-  - name: dwt_var_perfeature
-    owner: devteam
-    tool_panel_section_label: 'Statistics'
-
   - name: transformation
     owner: ethevenot
     tool_panel_section_label: 'Statistics'
@@ -42,6 +38,91 @@ tools:
   - name: add_input_name_as_column
     owner: mvdbeek
     tool_panel_section_label: 'Text Manipulation'
+ 
+  - name: regex_replace
+    owner: kellrott
+    tool_panel_section_label: 'Text Manipulation'
+
+  - name: find_in_reference
+    owner: jjohnson
+    tool_panel_section_label: 'Filter and Sort'
+
+  - name: normalize_dataset
+    owner: bebatut
+    tool_panel_section_label: 'Statistics'
+    
+  - name: frogs_2_0_0
+    owner: frogs
+    tool_panel_section_label: 'Find Rapidly OTUs from NGS'
+    
+  - name: frogs_3_1_0
+    owner: frogs
+    tool_panel_section_label: 'Find Rapidly OTUs from NGS'
+
+
+  - name: csv_to_tabular
+    owner: mnhn65mo
+    tool_panel_section_label: 'File Conversion'
+    
+
+  - name: tabular_to_csv
+    owner: mnhn65mo
+    tool_panel_section_label: 'File Conversion'
+
+
+  - name: xls2tabular
+    owner: ylebras
+    tool_panel_section_label: 'File Conversion'
+    
+
+  - name: butterfly_analysis
+    owner: mnhn65mo
+    tool_panel_section_label: 'Graph/Display Data'
+    
+  - name: get_worldclim_data
+    owner: mnhn65mo
+    tool_panel_section_label: 'Get Data'
+    
+  - name: netcdf_handler
+    owner: mnhn65mo
+    tool_panel_section_label: 'File conversion'
+
+  - name: rdata_handler
+    owner: mnhn65mo
+    tool_panel_section_label: 'File conversion'
+    
+
+  - name: regionalgam
+    owner: mnhn65mo
+    tool_panel_section_label: 'Phenology & Abundance Index'
+    
+
+  - name: vigiechiro
+    owner: mnhn65mo
+    tool_panel_section_label: 'Animal Detection on Acoustic Recordings'
+     
+
+
+
+
+
+## trusted tools
+
+  - name: sample_seqs
+    owner: peterjc
+    tool_panel_section_label: 'Filter and Sort'
+
+  - name: suite_datamash
+    owner: iuc
+    tool_panel_section_label: 'Join, Subtract and Group'
+
+  - name: collection_column_join
+    owner: iuc
+    tool_panel_section_label: 'Join, Subtract and Group'
+
+  - name: numeric_clustering
+    owner: bgruening
+    tool_panel_section_label: 'Statistics'
 
   - name: text_processing
     owner: bgruening
@@ -67,10 +148,7 @@ tools:
   - name: coverage
     owner: devteam
     tool_panel_section_label: 'Text Manipulation'
- 
-  - name: regex_replace
-    owner: kellrott
-    tool_panel_section_label: 'Text Manipulation'
+
 
   - name: merge
     owner: devteam
@@ -164,29 +242,6 @@ tools:
     owner: peterjc
     tool_panel_section_label: 'Filter and Sort'
 
-  - name: find_in_reference
-    owner: jjohnson
-    tool_panel_section_label: 'Filter and Sort'
-
-  - name: sample_seqs
-    owner: peterjc
-    tool_panel_section_label: 'Filter and Sort'
-
-  - name: suite_datamash
-    owner: iuc
-    tool_panel_section_label: 'Join, Subtract and Group'
-
-  - name: collection_column_join
-    owner: iuc
-    tool_panel_section_label: 'Join, Subtract and Group'
-
-  - name: numeric_clustering
-    owner: bgruening
-    tool_panel_section_label: 'Statistics'
-
-  - name: normalize_dataset
-    owner: bebatut
-    tool_panel_section_label: 'Statistics'
 
   - name: seq_composition
     owner: peterjc
@@ -395,14 +450,6 @@ tools:
     owner: devteam
     tool_panel_section_label: 'File Conversion'
     
-  - name: frogs_2_0_0
-    owner: frogs
-    tool_panel_section_label: 'Find Rapidly OTUs from NGS'
-    
-  - name: frogs_3_1_0
-    owner: frogs
-    tool_panel_section_label: 'Find Rapidly OTUs from NGS'
-    
   - name: bwa
     owner: devteam
     tool_panel_section_label: 'Building LOCI from RADseq'
@@ -410,32 +457,6 @@ tools:
   - name: suite_stacks
     owner: iuc
     tool_panel_section_label: 'Building LOCI from RADseq'
-
-
-
-
-
-
-
-  - name: csv_to_tabular
-    owner: mnhn65mo
-    tool_panel_section_label: 'File Conversion'
-    
-
-  - name: tabular_to_csv
-    owner: mnhn65mo
-    tool_panel_section_label: 'File Conversion'
-
-
-  - name: xls2tabular
-    owner: ylebras
-    tool_panel_section_label: 'File Conversion'
-    
-
-  - name: butterfly_analysis
-    owner: mnhn65mo
-    tool_panel_section_label: 'Graph/Display Data'
-    
 
   - name: gdal_gdaladdo
     owner: ecology
@@ -460,7 +481,6 @@ tools:
   - name: gdal_gdal_translate
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
 
   - name: gdal_gdalwarp
     owner: ecology
@@ -474,38 +494,15 @@ tools:
 
   - name: gdal_ogrinfo
     owner: ecology
-    tool_panel_section_label: 'GIS Data Handling'
-    
-
-  - name: get_worldclim_data
-    owner: mnhn65mo
-    tool_panel_section_label: 'Get Data'
-    
+    tool_panel_section_label: 'GIS Data Handling'    
 
   - name: spocc_occ
     owner: ecology
     tool_panel_section_label: 'Get Data'
     
-
-  - name: netcdf_handler
-    owner: mnhn65mo
-    tool_panel_section_label: 'File conversion'
-    
-
-  - name: rdata_handler
-    owner: mnhn65mo
-    tool_panel_section_label: 'File conversion'
-    
-
-  - name: regionalgam
-    owner: mnhn65mo
-    tool_panel_section_label: 'Phenology & Abundance Index'
-    
-
-  - name: vigiechiro
-    owner: mnhn65mo
-    tool_panel_section_label: 'Animal Detection on Acoustic Recordings'
-     
+  - name: dwt_var_perfeature
+    owner: devteam
+    tool_panel_section_label: 'Statistics'
 
   - name: vigiechiro_bilanenrichipf
     owner: ecology
@@ -525,3 +522,4 @@ tools:
   - name: vigiechiro_idvalid
     owner: ecology
     tool_panel_section_label: 'Animal Detection on Acoustic Recordings'
+
