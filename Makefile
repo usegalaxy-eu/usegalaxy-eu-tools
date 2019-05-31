@@ -24,7 +24,7 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 %.fix: %
 	@# Generates the lockfile or updates it if it is missing tools
 	python scripts/fix-lockfile.py $<
-	@# --without says only add those hashes for those missing hashes (zB new tools)
+	@# --without says only add those hashes for those missing hashes (i.e. new tools)
 	python scripts/update-tool.py $< --without
 
 %.install: %
