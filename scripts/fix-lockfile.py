@@ -3,11 +3,6 @@ import os
 import copy
 import argparse
 
-from bioblend import toolshed
-
-
-ts = toolshed.ToolShedInstance(url='https://toolshed.g2.bx.psu.edu')
-
 
 def update_file(fn, dry):
     with open(fn, 'r') as handle:
