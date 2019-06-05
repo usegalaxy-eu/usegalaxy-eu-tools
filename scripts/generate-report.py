@@ -29,7 +29,7 @@ for line in sys.stdin:
         sections[section].append((owner, repo, revision))
         installing_repo = False
     elif "installed successfully" in line:
-        installed_repo = False
+        installing_repo = False
 
 print("""---
 site: freiburg
