@@ -8,12 +8,14 @@ today = datetime.date.today()
 sections = {}
 
 lastTool = None
+installing_repo = False
 for line in sys.stdin:
     # strip newline
     line = line.strip()
 
     # If it's a tool install, record tool name
     if line.startswith('(') and 'Installing repository' in line:
+        installing_repo = True
         q = line.split()
 
         repo = q[3]
@@ -23,9 +25,11 @@ for line in sys.stdin:
 
         if section not in sections:
             sections[section] = []
-
+    if installing_repo and not "is already installed." in line:
         sections[section].append((owner, repo, revision))
-
+        installing_repo = False
+    elif "installed successfully" in line:
+        installed_repo = False
 
 print("""---
 site: freiburg
