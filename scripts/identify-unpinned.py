@@ -6,7 +6,7 @@ import argparse
 def update_file(fn):
     # If a lock file exists, load it from that file
     with open(fn + '.lock', 'r') as handle:
-        locked = yaml.load(handle)
+        locked = yaml.safe_load(handle)
 
     exit_code = 0
     # As here we add any new tools in.

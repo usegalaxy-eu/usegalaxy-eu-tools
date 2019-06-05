@@ -352,22 +352,17 @@ tools:
     owner: kellrott
     tool_panel_section_label: 'Text Manipulation'
 
-  - name: suite_obitools
-    owner: iuc
-    tool_panel_section_label: 'DNA metabarcoding'
-    
-
   - name: fastq_groomer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
     
   - name: fastqc
     owner: devteam
-    tool_panel_section_label: 'FASTQ Quality Control'
+    tool_panel_section_label: 'Quality Control'
     
   - name: multiqc
     owner: iuc
-    tool_panel_section_label: 'FASTQ Quality Control'
+    tool_panel_section_label: 'Quality Control'
     
   - name: mothur_sffinfo
     owner: iuc
@@ -375,7 +370,7 @@ tools:
     
   - name: fastq_combiner
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: 'FASTA/FASTQ manipulation'
     
   - name: bwa
     owner: devteam

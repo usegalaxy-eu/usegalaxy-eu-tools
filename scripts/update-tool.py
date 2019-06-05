@@ -12,7 +12,7 @@ ts = toolshed.ToolShedInstance(url='https://toolshed.g2.bx.psu.edu')
 
 def update_file(fn, owner=None, name=None, without=False):
     with open(fn + '.lock', 'r') as handle:
-        locked = yaml.load(handle)
+        locked = yaml.safe_load(handle)
 
     # Update any locked tools.
     for tool in locked['tools']:
