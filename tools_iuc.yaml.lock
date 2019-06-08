@@ -42,8 +42,8 @@ tools:
 - name: crosscontamination_barcode_filter
   owner: iuc
   revisions:
-  - 582b7bd4ae4c
   - 253c9448f524
+  - 582b7bd4ae4c
   tool_panel_section_label: RNA Analysis
 - name: deg_annotate
   owner: iuc
@@ -477,12 +477,12 @@ tools:
 - name: fastp
   owner: iuc
   revisions:
+  - 1d8fe9bc4cb0
   - 3e2551a37201
   - 415fd81b85d3
   - 6c2351178f8d
   - 988729b728f0
   - a935cbdf1c0e
-  - 1d8fe9bc4cb0
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fasta_stats
   owner: iuc
@@ -1321,6 +1321,7 @@ tools:
 - name: limma_voom
   owner: iuc
   revisions:
+  - 0921444c832d
   - 41573afd6871
   - 5d903d528193
   - 7e8af58c8052
@@ -1329,7 +1330,6 @@ tools:
   - 97e06a4c7c75
   - bdebdea5f6a7
   - d5a940112511
-  - 0921444c832d
   tool_panel_section_label: RNA Analysis
 - name: salmon
   owner: bgruening
@@ -1347,6 +1347,7 @@ tools:
   - c7bd0cc53524
   - de2c5e5a206c
   - f3a5f075498f
+  - 9301937c9037
   tool_panel_section_label: RNA Analysis
 - name: transdecoder
   owner: iuc
@@ -1831,8 +1832,8 @@ tools:
   - 2a17c789e0a5
   - 6f9c0884a3e7
   - ab1f60c26526
-  - f6ced08779c4
   - b9fbec5ac6b2
+  - f6ced08779c4
   tool_panel_section_label: Picard
 - name: emboss_5
   owner: devteam
@@ -2103,34 +2104,34 @@ tools:
   owner: iuc
   revisions:
   - 19905c025d2a
-  - a404f786a94c
   - 76655fe2c70e
+  - a404f786a94c
   tool_panel_section_label: Variant Calling
 - name: bcftools_csq
   owner: iuc
   revisions:
   - 039ea3f1dea9
-  - 7cbf3c66d4ad
   - 40388f544e5d
+  - 7cbf3c66d4ad
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_frameshifts
   owner: iuc
   revisions:
-  - 96d2000977ab
   - 693d81b3e113
+  - 96d2000977ab
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_color_chrs
   owner: iuc
   revisions:
-  - 71186bb66ca2
   - 47ee1925fe9e
+  - 71186bb66ca2
   tool_panel_section_label: Variant Calling
 - name: bcftools_cnv
   owner: iuc
   revisions:
+  - 13fe14c56f6d
   - 8408bffd5616
   - bf1f4994f104
-  - 13fe14c56f6d
   tool_panel_section_label: Variant Calling
 - name: vcftools_merge
   owner: devteam
@@ -2855,10 +2856,10 @@ tools:
 - name: gffcompare
   owner: iuc
   revisions:
+  - 2bb86e2c417f
   - 3c97c841a443
   - c80cdc2eac6d
   - f99d7825a501
-  - 2bb86e2c417f
   tool_panel_section_label: Filter and Sort
 - name: suite_poretools
   owner: iuc
