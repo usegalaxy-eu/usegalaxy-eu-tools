@@ -12,24 +12,32 @@ installing_repo = False
 for line in sys.stdin:
     # strip newline
     line = line.strip()
-
     # If it's a tool install, record tool name
     if line.startswith('(') and 'Installing repository' in line:
+        # new installation begins
         installing_repo = True
         q = line.split()
-
         repo = q[3]
         owner = q[5]
         section = line[line.index('"') + 1:line.rindex('"')]
         revision = q[q.index('revision') + 1]
 
+    elif installing_repo and "is already installed." not in line:
+        # installing_repo was tracked and it was not already installed, so this is a true positive one
         if section not in sections:
             sections[section] = []
-    if installing_repo and not "is already installed." in line:
         sections[section].append((owner, repo, revision))
         installing_repo = False
-    elif "installed successfully" in line:
+    elif installing_repo and not line.startswith('('):
+        # We have been tracking a repo install, but nothing was installed. False positive.
+        # This happens when 'is already installed.' is part of the line string.
         installing_repo = False
+    elif "installed successfully" in line:
+        # installation is finished
+        installing_repo = False
+
+if not sections:
+    sys.exit(0)
 
 print("""---
 site: freiburg
