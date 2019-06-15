@@ -48,8 +48,6 @@ supporters:
 - elixir
 ---
 
-# Tool Updates
-
 On {date}, the tools on UseGalaxy.eu were updated by our automated tool update and installation process in [Jenkins Build #{build_number}](https://build.galaxyproject.eu/job/usegalaxy-eu/job/install-tools/#{build_number}/)
 
 """.format(date=today, build_number=os.environ.get('BUILD_NUMBER', '??')))
