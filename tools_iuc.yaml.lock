@@ -153,6 +153,7 @@ tools:
   revisions:
   - 4c172a4a4c9e
   - db1eeffba23e
+  - acd337269171
   tool_panel_section_label: Graph/Display Data
 - name: intervene
   owner: iuc
@@ -1289,6 +1290,7 @@ tools:
   revisions:
   - b2f1cf977ca9
   - fbbe507e692b
+  - 6ad9d48a512e
   tool_panel_section_label: RNA Analysis
 - name: sailfish
   owner: bgruening
@@ -1832,10 +1834,10 @@ tools:
   - 1cd1cf786389
   - 2a17c789e0a5
   - 6f9c0884a3e7
+  - 7d34178f2812
   - ab1f60c26526
   - b9fbec5ac6b2
   - f6ced08779c4
-  - 7d34178f2812
   tool_panel_section_label: Picard
 - name: emboss_5
   owner: devteam
@@ -2868,6 +2870,16 @@ tools:
   revisions:
   - 391220d7cfd6
   tool_panel_section_label: FASTA/FASTQ manipulation
+- name: miniasm
+  owner: iuc
+  revisions:
+  - 8b6d0d85252b
+  tool_panel_section_label: Nanopore
+- name: gfa_to_fa
+  owner: iuc
+  revisions:
+  - 49d6f8ef63b3
+  tool_panel_section_label: Convert Formats
 - name: bandage
   owner: iuc
   revisions:
@@ -2892,6 +2904,7 @@ tools:
   - 9ab35a2245ce
   - b467a89be0c6
   - ecc913a7334b
+  - 1aae04680c4b
   tool_panel_section_label: Annotation
 - name: suite_mageck
   owner: iuc
