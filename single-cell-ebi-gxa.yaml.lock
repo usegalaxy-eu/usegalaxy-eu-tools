@@ -1,0 +1,194 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+- name: dropletutils_read_10x
+  owner: ebi-gxa
+  revisions:
+  - d62a9aa0411e
+  tool_panel_section_label: HCA-Single Cell
+- name: gtf2gene_list
+  owner: ebi-gxa
+  revisions:
+  - 040d4b3a19d5
+  tool_panel_section_label: HCA-Single Cell
+- name: retrieve_scxa
+  owner: ebi-gxa
+  revisions:
+  - cd6b80f62fcc
+  tool_panel_section_label: HCA-Single Cell
+- name: sc3_calc_biology
+  owner: ebi-gxa
+  revisions:
+  - 2ee3dd245f72
+  tool_panel_section_label: HCA-Single Cell
+- name: sc3_calc_consens
+  owner: ebi-gxa
+  revisions:
+  - aa83350751f5
+  tool_panel_section_label: HCA-Single Cell
+- name: sc3_calc_dists
+  owner: ebi-gxa
+  revisions:
+  - d005fe979d80
+  tool_panel_section_label: HCA-Single Cell
+- name: sc3_calc_transfs
+  owner: ebi-gxa
+  revisions:
+  - b06019da7b5a
+  tool_panel_section_label: HCA-Single Cell
+- name: sc3_estimate_k
+  owner: ebi-gxa
+  revisions:
+  - aab4d3a52ee3
+  tool_panel_section_label: HCA-Single Cell
+- name: sc3_kmeans
+  owner: ebi-gxa
+  revisions:
+  - b3c3cf813a49
+  tool_panel_section_label: HCA-Single Cell
+- name: sc3_prepare
+  owner: ebi-gxa
+  revisions:
+  - 9a2b61bfdaa9
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_compute_graph
+  owner: ebi-gxa
+  revisions:
+  - 3d242b0d97d0
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_filter_cells
+  owner: ebi-gxa
+  revisions:
+  - 9f0ca1641ab2
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_filter_genes
+  owner: ebi-gxa
+  revisions:
+  - d1b97a5d5a8d
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_find_cluster
+  owner: ebi-gxa
+  revisions:
+  - ce27ae8a36cd
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_find_markers
+  owner: ebi-gxa
+  revisions:
+  - c608fd80ec15
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_find_variable_genes
+  owner: ebi-gxa
+  revisions:
+  - 305d0cbe0ffd
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_normalise_data
+  owner: ebi-gxa
+  revisions:
+  - 1dda36e73482
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_parameter_iterator
+  owner: ebi-gxa
+  revisions:
+  - 1a30a61effea
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_read_10x
+  owner: ebi-gxa
+  revisions:
+  - 572b6e3b2aff
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_run_pca
+  owner: ebi-gxa
+  revisions:
+  - 5063cd7f8c89
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_run_tsne
+  owner: ebi-gxa
+  revisions:
+  - f6f189ce4ebc
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_run_umap
+  owner: ebi-gxa
+  revisions:
+  - 88c1516e25e0
+  tool_panel_section_label: HCA-Single Cell
+- name: scanpy_scale_data
+  owner: ebi-gxa
+  revisions:
+  - 96b851e96dd0
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_create_seurat_object
+  owner: ebi-gxa
+  revisions:
+  - f8865ae30723
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_dim_plot
+  owner: ebi-gxa
+  revisions:
+  - 6e26ee99fdfc
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_export_cellbrowser
+  owner: ebi-gxa
+  revisions:
+  - 8c2b1d2659df
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_filter_cells
+  owner: ebi-gxa
+  revisions:
+  - c1848daebad1
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_find_clusters
+  owner: ebi-gxa
+  revisions:
+  - 8ea738667314
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_find_markers
+  owner: ebi-gxa
+  revisions:
+  - fde95fe95f15
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_find_variable_genes
+  owner: ebi-gxa
+  revisions:
+  - a56efad05337
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_normalise_data
+  owner: ebi-gxa
+  revisions:
+  - 619fead82856
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_read10x
+  owner: ebi-gxa
+  revisions:
+  - 1b8566f3c1d0
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_run_pca
+  owner: ebi-gxa
+  revisions:
+  - df80f3d2f9d4
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_run_tsne
+  owner: ebi-gxa
+  revisions:
+  - 3aea769deab1
+  tool_panel_section_label: HCA-Single Cell
+- name: seurat_scale_data
+  owner: ebi-gxa
+  revisions:
+  - 6166efaeb4a6
+  tool_panel_section_label: HCA-Single Cell
+- name: ucsc_cell_browser
+  owner: ebi-gxa
+  revisions:
+  - 674777a022e4
+  tool_panel_section_label: HCA-Single Cell
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - 0a8c6b61f0f4
+  tool_panel_section_label: Text Manipulation
+- name: umi_tools_count
+  owner: iuc
+  revisions:
+  - b557acca0b56
+  tool_panel_section_label: FASTA/FASTQ manipulation

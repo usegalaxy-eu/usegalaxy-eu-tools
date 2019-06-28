@@ -43,23 +43,23 @@ tools:
 
   - name: raceid_inspectclusters
     owner: iuc
-    tool_panel_section_label: RNA Analysis
+    tool_panel_section_label: Single-cell
 
   - name: raceid_filtnormconf
     owner: iuc
-    tool_panel_section_label: RNA Analysis
+    tool_panel_section_label: Single-cell
 
   - name: raceid_clustering
     owner: iuc
-    tool_panel_section_label: RNA Analysis
+    tool_panel_section_label: Single-cell
 
   - name: raceid_trajectory
     owner: iuc
-    tool_panel_section_label: RNA Analysis
+    tool_panel_section_label: Single-cell
 
   - name: raceid_inspecttrajectory
     owner: iuc
-    tool_panel_section_label: RNA Analysis
+    tool_panel_section_label: Single-cell
 
   - name: kallisto_quant
     owner: iuc
@@ -99,7 +99,7 @@ tools:
 
   - name: nanoplot
     owner: iuc
-    tool_panel_section_label: Graph/Display Data
+    tool_panel_section_label: Nanopore
 
   - name: intervene
     owner: iuc
@@ -1679,7 +1679,15 @@ tools:
 
   - name: suite_poretools
     owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
+    tool_panel_section_label: Nanopore
+
+  - name: miniasm
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: gfa_to_fa
+    owner: iuc
+    tool_panel_section_label: Convert Formats
 
   - name: bandage
     owner: iuc
@@ -1687,7 +1695,7 @@ tools:
 
   - name: porechop
     owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
+    tool_panel_section_label: Nanopore
 
   - name: spaln
     owner: iuc
@@ -2264,3 +2272,11 @@ tools:
   - name: scanpy_remove_confounders
     owner: iuc
     tool_panel_section_label: Single-cell
+
+  - name:  intermine_galaxy_exchange
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: compose_text_param
+    owner: iuc
+    tool_panel_section_label: Expression Tools

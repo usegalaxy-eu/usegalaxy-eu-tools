@@ -63,35 +63,35 @@ tools:
   - 0fa80752a314
   - '106718959281'
   - 9fec5dd8fbb9
-  tool_panel_section_label: RNA Analysis
+  tool_panel_section_label: Single-cell
 - name: raceid_filtnormconf
   owner: iuc
   revisions:
   - 56a093c2a3f9
   - 8dc8ff057b0f
   - d55e29ac02e3
-  tool_panel_section_label: RNA Analysis
+  tool_panel_section_label: Single-cell
 - name: raceid_clustering
   owner: iuc
   revisions:
   - 4ea021bd7513
   - 528a43b1cbcf
   - d4646ce659b4
-  tool_panel_section_label: RNA Analysis
+  tool_panel_section_label: Single-cell
 - name: raceid_trajectory
   owner: iuc
   revisions:
   - 87de515af823
   - da7ff78fe296
   - ff7cd3c7c1df
-  tool_panel_section_label: RNA Analysis
+  tool_panel_section_label: Single-cell
 - name: raceid_inspecttrajectory
   owner: iuc
   revisions:
   - 4164c0da0a5d
   - 5156383d3a5d
   - e0e9b24d76aa
-  tool_panel_section_label: RNA Analysis
+  tool_panel_section_label: Single-cell
 - name: kallisto_quant
   owner: iuc
   revisions:
@@ -152,8 +152,10 @@ tools:
   owner: iuc
   revisions:
   - 4c172a4a4c9e
+  - 645159bcee2d
+  - acd337269171
   - db1eeffba23e
-  tool_panel_section_label: Graph/Display Data
+  tool_panel_section_label: Nanopore
 - name: intervene
   owner: iuc
   revisions:
@@ -1287,6 +1289,7 @@ tools:
 - name: migmap
   owner: iuc
   revisions:
+  - 6ad9d48a512e
   - b2f1cf977ca9
   - fbbe507e692b
   tool_panel_section_label: RNA Analysis
@@ -1832,10 +1835,10 @@ tools:
   - 1cd1cf786389
   - 2a17c789e0a5
   - 6f9c0884a3e7
+  - 7d34178f2812
   - ab1f60c26526
   - b9fbec5ac6b2
   - f6ced08779c4
-  - 7d34178f2812
   tool_panel_section_label: Picard
 - name: emboss_5
   owner: devteam
@@ -2867,7 +2870,17 @@ tools:
   owner: iuc
   revisions:
   - 391220d7cfd6
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_label: Nanopore
+- name: miniasm
+  owner: iuc
+  revisions:
+  - 8b6d0d85252b
+  tool_panel_section_label: Assembly
+- name: gfa_to_fa
+  owner: iuc
+  revisions:
+  - 49d6f8ef63b3
+  tool_panel_section_label: Convert Formats
 - name: bandage
   owner: iuc
   revisions:
@@ -2878,7 +2891,7 @@ tools:
   owner: iuc
   revisions:
   - 93d623d9979c
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_label: Nanopore
 - name: spaln
   owner: iuc
   revisions:
@@ -2888,6 +2901,7 @@ tools:
   owner: iuc
   revisions:
   - 1a125daea0d8
+  - 1aae04680c4b
   - 38eedf3cc3c9
   - 9ab35a2245ce
   - b467a89be0c6
@@ -3867,3 +3881,13 @@ tools:
   revisions:
   - 9ca360dde8e3
   tool_panel_section_label: Single-cell
+- name: intermine_galaxy_exchange
+  owner: iuc
+  revisions:
+  - c24014d80001
+  tool_panel_section_label: Convert Formats
+- name: compose_text_param
+  owner: iuc
+  revisions:
+  - feb3acba1e0a
+  tool_panel_section_label: Expression Tools
