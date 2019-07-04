@@ -424,12 +424,12 @@ tools:
   - name: stacks2_populations
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-       
-  - name: stacks_rxstacks
+    
+  - name: stacks2_procrad
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
     
-  - name: stacks2_procrad
+  - name: stacks2_denovomap
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
     
@@ -437,7 +437,19 @@ tools:
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
     
+  - name: stacks2_tsv2bam
+    owner: iuc
+    tool_panel_section_label: 'RAD-seq'
+    
   - name: stacks2_clonefilter
+    owner: iuc
+    tool_panel_section_label: 'RAD-seq'
+    
+  - name: stacks2_kmerfilter
+    owner: iuc
+    tool_panel_section_label: 'RAD-seq'
+    
+  - name: stacks2_shortreads
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
     
