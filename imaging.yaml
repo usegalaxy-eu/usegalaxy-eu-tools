@@ -3,27 +3,65 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-  - name: landmark_registration
+  - name: imagej2_enhance_contrast
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
+
+  - name: imagej2_find_edges
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/  
+    
+  - name: color_deconvolution
     owner: imgteam
     tool_panel_section_label: "Imaging"
+    
+  - name: 2d_simple_filter
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: anisotropic_diffusion
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: imagej2_find_maxima
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
+
+  - name: imagej2_make_binary
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/  
 
   - name: 2d_auto_threshold
     owner: imgteam
     tool_panel_section_label: "Imaging"
+    
+  - name: imagej2_watershed_binary
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
+            
+  - name: landmark_registration
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: projective_transformation
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
+  - name: projective_transformation_points
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: imagej2_math
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
 
   - name: imagecoordinates_flipaxis
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: 2d_feature_extraction
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: 2d_simple_filter
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: anisotropic_diffusion
     owner: imgteam
     tool_panel_section_label: "Imaging"
 
@@ -35,71 +73,7 @@ tools:
     owner: imgteam
     tool_panel_section_label: "Imaging"
 
-  - name: colocalization_viz
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: color_deconvolution
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: concat_channels
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: coordinates_of_roi
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: count_objects
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: curl_post
-    owner: imgteam
-    tool_panel_section_label: "Send Data"
-
-  - name: detection_viz
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: labelimage2points
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: mahotas_features
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
   - name: mergeneighboursinlabelimage
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: overlay_moving_and_fixed_image
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: overlay_segmentation_mask
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: permutate_axis
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: points2binaryimage
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: points2labelimage
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: projective_transformation
-    owner: imgteam
-    tool_panel_section_label: "Imaging"
-
-  - name: projective_transformation_points
     owner: imgteam
     tool_panel_section_label: "Imaging"
 
@@ -115,7 +89,65 @@ tools:
     owner: imgteam
     tool_panel_section_label: "Imaging"
 
-  - name: visceral_evaluatesegmentation
+  - name: concat_channels
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: points2binaryimage
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: points2labelimage
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: labelimage2points
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: permutate_axis
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: imagej2_analyze_skeleton
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
+  
+  - name: imagej2_analyze_particles_binary
+    owner: iuc
+    tool_panel_section_label: "Imaging"
+    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
+  
+  - name: mahotas_features
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
+  - name: 2d_feature_extraction
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: count_objects
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+    
+  - name: coordinates_of_roi
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
+  - name: detection_viz
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
+  - name: colocalization_viz
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
+  - name: overlay_moving_and_fixed_image
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
+  - name: overlay_segmentation_mask
     owner: imgteam
     tool_panel_section_label: "Imaging"
 
@@ -123,5 +155,6 @@ tools:
     owner: imgteam
     tool_panel_section_label: "Imaging"
 
-
-
+  - name: visceral_evaluatesegmentation
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
