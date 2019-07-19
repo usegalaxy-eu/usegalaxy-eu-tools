@@ -2,17 +2,7 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 
-tools:
-  - name: imagej2_enhance_contrast
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-
-  - name: imagej2_find_edges
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/  
-    
+tools:    
   - name: color_deconvolution
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -25,16 +15,6 @@ tools:
     owner: imgteam
     tool_panel_section_label: "Imaging"
     
-  - name: imagej2_find_maxima
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-
-  - name: imagej2_make_binary
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/  
-
   - name: 2d_auto_threshold
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -42,12 +22,7 @@ tools:
   - name: 2d_local_threshold
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
-  - name: imagej2_watershed_binary
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-            
+                
   - name: landmark_registration
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -60,11 +35,6 @@ tools:
     owner: imgteam
     tool_panel_section_label: "Imaging"
     
-  - name: imagej2_math
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-
   - name: imagecoordinates_flipaxis
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -112,16 +82,6 @@ tools:
   - name: permutate_axis
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
-  - name: imagej2_analyze_skeleton
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  
-  - name: imagej2_analyze_particles_binary
-    owner: iuc
-    tool_panel_section_label: "Imaging"
-    tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
   
   - name: mahotas_features
     owner: imgteam
