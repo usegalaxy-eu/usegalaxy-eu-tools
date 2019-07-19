@@ -1,0 +1,111 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+- name: blast_to_scaffold
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: bowtie2
+  owner: devteam
+  tool_panel_section_label: Metavisitor
+
+- name: cherry_pick_fasta
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: concatenate_multiple_datasets
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: data_manager_bowtie2_index_builder
+  owner: devteam
+  tool_panel_section_label: null
+
+- name: data_manager_bowtie_index_builder
+  owner: iuc
+  tool_panel_section_label: null
+
+- name: data_manager_fetch_genome_dbkeys_all_fasta
+  owner: devteam
+  tool_panel_section_label: null
+
+- name: fasta_filter_by_length
+  owner: devteam
+  tool_panel_section_label: Metavisitor
+
+- name: fastx_trimmer
+  owner: devteam
+  tool_panel_section_label: Metavisitor
+
+- name: fetch_fasta_from_ncbi
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: khmer_normalize_by_median
+  owner: iuc
+  tool_panel_section_label: Metavisitor
+
+- name: blastparser_and_hits
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: cap3
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: sequence_format_converter
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: oases
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: sr_bowtie
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: small_rna_maps
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: ncbi_blast_plus
+  owner: devteam
+  tool_panel_section_label: Metavisitor
+
+- name: regex_find_replace
+  owner: galaxyp
+  tool_panel_section_label: Metavisitor
+
+- name: sra_tools
+  owner: iuc
+  tool_panel_section_label: Metavisitor
+
+- name: trinity
+  owner: iuc
+  tool_panel_section_label: Metavisitor
+
+- name: spades
+  owner: nml
+  tool_panel_section_label: Metavisitor
+
+- name: yac_clipper
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: vsearch
+  owner: iuc
+  tool_panel_section_label: Metavisitor
+
+- name: blast_unmatched
+  owner: artbio
+  tool_panel_section_label: Metavisitor
+
+- name: fasta_compute_length
+  owner: devteam
+  tool_panel_section_label: Metavisitor
