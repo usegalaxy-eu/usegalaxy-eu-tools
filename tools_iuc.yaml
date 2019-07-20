@@ -257,11 +257,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Join, Subtract and Group
 
-  - name: suite_datamash
-    owner: iuc
-    tool_panel_section_label: Join, Subtract and Group
-
-
   - name: subtract
     owner: devteam
     tool_panel_section_label: Join, Subtract and Group
@@ -855,10 +850,6 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
-  - name: suite_trinity
-    owner: iuc
-    tool_panel_section_label: RNA Analysis
-
   - name: trinotate
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -967,10 +958,6 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: varscan_copynumber
-    owner: iuc
-    tool_panel_section_label: Variant Calling
-
-  - name: suite_varscan
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -1534,22 +1521,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Data Managers
 
-  - name: suite_metaphlan2
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: suite_qiime
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: suite_qiime_add_on
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: suite_humann2
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
   ## IWtomic - Interval-Wise Testing for Omics Data
 
   - name: iwtomics_loadandplot
@@ -1564,17 +1535,9 @@ tools:
     owner: iuc
     tool_panel_section_label: Statistics
 
-  - name: suite_umi_tools
-    owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
-
   - name: umi_tools_count
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ manipulation
-
-  - name: suite_enasearch
-    owner: iuc
-    tool_panel_section_label: Get Data
 
   - name: multiqc
     owner: iuc
@@ -1636,9 +1599,6 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: suite_hicexplorer
-    owner: bgruening
-    tool_panel_section_label: HiCExplorer
 
   - name: metaspades
     owner: nml
@@ -1657,17 +1617,9 @@ tools:
     tool_panel_section_label: Get Data
     tool_panel_section_label: Metagenomic analyses
 
-  - name: suite_bctools
-    owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
-
   - name: spades
     owner: nml
     tool_panel_section_label: Assembly
-
-  - name: suite_onto_toolkit
-    owner: iuc
-    tool_panel_section_label: OBO Ontology manipulation
 
   - name: valet
     owner: iuc
@@ -1680,10 +1632,6 @@ tools:
   - name: gffcompare
     owner: iuc
     tool_panel_section_label: Filter and Sort
-
-  - name: suite_poretools
-    owner: iuc
-    tool_panel_section_label: Nanopore
 
   - name: miniasm
     owner: iuc
@@ -1708,10 +1656,6 @@ tools:
   - name: annotatemyids
     owner: iuc
     tool_panel_section_label: Annotation
-
-  - name: suite_mageck
-    owner: iuc
-    tool_panel_section_label: Genome editing
 
   - name: fasttree
     owner: iuc
@@ -2225,10 +2169,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Graph/Display Data
 
-  - name: suite_mothur
-    owner: iuc
-    tool_panel_section_label: Mothur
-
   - name: abricate
     owner: iuc
     tool_panel_section_label: Annotation
@@ -2274,10 +2214,6 @@ tools:
     tool_panel_section_label: Single-cell
 
   - name: scater_plot_pca
-    owner: iuc
-    tool_panel_section_label: Single-cell
-
-  - name: suite_scater
     owner: iuc
     tool_panel_section_label: Single-cell
 
