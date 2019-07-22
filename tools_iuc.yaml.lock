@@ -408,13 +408,6 @@ tools:
   - 9c8536c7ed42
   - dfde09461b1e
   tool_panel_section_label: Join, Subtract and Group
-- name: suite_datamash
-  owner: iuc
-  revisions:
-  - 2d85df079b20
-  - e4af96810404
-  - fbe724ced39e
-  tool_panel_section_label: Join, Subtract and Group
 - name: subtract
   owner: devteam
   revisions:
@@ -1416,14 +1409,6 @@ tools:
   - 2af5fd8210c5
   - 48537273a30b
   tool_panel_section_label: RNA Analysis
-- name: suite_trinity
-  owner: iuc
-  revisions:
-  - 06442031ea9e
-  - bcb1eff1d726
-  - d8e02e80b0ad
-  - fed58c7879e4
-  tool_panel_section_label: RNA Analysis
 - name: trinotate
   owner: iuc
   revisions:
@@ -1609,15 +1594,6 @@ tools:
   - a584f046e4a7
   - c24910ad5441
   - e814a042315f
-  tool_panel_section_label: Variant Calling
-- name: suite_varscan
-  owner: iuc
-  revisions:
-  - 43975c89ccaa
-  - 4555028c2815
-  - 9bfb92848131
-  - c037bdc0f28a
-  - d4187d802dc3
   tool_panel_section_label: Variant Calling
 - name: freebayes
   owner: devteam
@@ -1875,6 +1851,7 @@ tools:
 - name: ncbi_blast_plus
   owner: devteam
   revisions:
+  - 2889433c7ae1
   - 7f3c448e119b
   - c877294f8025
   - d375502056f1
@@ -2638,30 +2615,6 @@ tools:
   revisions:
   - 6843a0db2da0
   tool_panel_section_label: Data Managers
-- name: suite_metaphlan2
-  owner: iuc
-  revisions:
-  - ae46e4116c61
-  tool_panel_section_label: Metagenomic analyses
-- name: suite_qiime
-  owner: iuc
-  revisions:
-  - 8313f59413f0
-  - a3f284fa7215
-  - b2e54849fd5c
-  - c5d785da19a7
-  tool_panel_section_label: Qiime
-- name: suite_qiime_add_on
-  owner: iuc
-  revisions:
-  - cfdc0efb8b08
-  tool_panel_section_label: Qiime
-- name: suite_humann2
-  owner: iuc
-  revisions:
-  - a6d24a7c473f
-  - b6817cd584e1
-  tool_panel_section_label: Metagenomic analyses
 - name: iwtomics_loadandplot
   owner: iuc
   revisions:
@@ -2684,32 +2637,12 @@ tools:
   - 25030f0d1154
   - 4bd560127b68
   tool_panel_section_label: Statistics
-- name: suite_umi_tools
-  owner: iuc
-  revisions:
-  - 1cc341f20285
-  - 32db578d29b1
-  - 3657b4d9c528
-  - '384598789816'
-  - 3de29ae524a0
-  - 8632189ff7be
-  - 8defa76bf1b4
-  - c2664661e1c5
-  - c8a5934f6a04
-  - ddf98b8748d0
-  - e3313bb98911
-  tool_panel_section_label: FASTA/FASTQ manipulation
 - name: umi_tools_count
   owner: iuc
   revisions:
   - 8db56d2f8b72
   - b557acca0b56
   tool_panel_section_label: FASTA/FASTQ manipulation
-- name: suite_enasearch
-  owner: iuc
-  revisions:
-  - 3aa846f62284
-  tool_panel_section_label: Get Data
 - name: multiqc
   owner: iuc
   revisions:
@@ -2803,15 +2736,6 @@ tools:
   - 78e22ca9f2ce
   - aab371aa615e
   tool_panel_section_label: HiCExplorer
-- name: suite_hicexplorer
-  owner: bgruening
-  revisions:
-  - 695ad2efeb79
-  - '714964678346'
-  - aa5d613b707a
-  - d8e4c2fde8eb
-  - fa64378b04b1
-  tool_panel_section_label: HiCExplorer
 - name: metaspades
   owner: nml
   revisions:
@@ -2835,13 +2759,6 @@ tools:
   revisions:
   - 7709b8ca3296
   tool_panel_section_label: Metagenomic analyses
-- name: suite_bctools
-  owner: iuc
-  revisions:
-  - 035a8df3214f
-  - 83dd58273d4a
-  - e8826fd7edc0
-  tool_panel_section_label: FASTA/FASTQ manipulation
 - name: spades
   owner: nml
   revisions:
@@ -2851,12 +2768,6 @@ tools:
   - 9006e5836729
   - b8d633fbf5f5
   tool_panel_section_label: Assembly
-- name: suite_onto_toolkit
-  owner: iuc
-  revisions:
-  - 4a0219265081
-  - cbedf28208ae
-  tool_panel_section_label: OBO Ontology manipulation
 - name: valet
   owner: iuc
   revisions:
@@ -2875,11 +2786,6 @@ tools:
   - c80cdc2eac6d
   - f99d7825a501
   tool_panel_section_label: Filter and Sort
-- name: suite_poretools
-  owner: iuc
-  revisions:
-  - 391220d7cfd6
-  tool_panel_section_label: Nanopore
 - name: miniasm
   owner: iuc
   revisions:
@@ -2917,16 +2823,6 @@ tools:
   - b467a89be0c6
   - ecc913a7334b
   tool_panel_section_label: Annotation
-- name: suite_mageck
-  owner: iuc
-  revisions:
-  - 004e44994149
-  - 125a82d47d22
-  - 3269047c7d2e
-  - 5146f144e7d4
-  - b090e112e23b
-  - e17f44672822
-  tool_panel_section_label: Genome editing
 - name: fasttree
   owner: iuc
   revisions:
@@ -3815,15 +3711,6 @@ tools:
   revisions:
   - fe4235285ee8
   tool_panel_section_label: Graph/Display Data
-- name: suite_mothur
-  owner: iuc
-  revisions:
-  - 739aa9d138d6
-  - a5ee03dfb216
-  - d2fa47f91d9d
-  - e21dc6f8d8b6
-  - f9d288a66ab3
-  tool_panel_section_label: Mothur
 - name: abricate
   owner: iuc
   revisions:
@@ -3890,11 +3777,6 @@ tools:
   owner: iuc
   revisions:
   - bea3359ba852
-  tool_panel_section_label: Single-cell
-- name: suite_scater
-  owner: iuc
-  revisions:
-  - 6c8353ae0b39
   tool_panel_section_label: Single-cell
 - name: scanpy_cluster_reduce_dimension
   owner: iuc
