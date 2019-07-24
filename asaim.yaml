@@ -6,18 +6,6 @@ install_tool_dependencies: false
 tools:
 
     # data_retrieval
-  - name: 'suite_ebi_tools'
-    owner: 'iuc'
-    tool_panel_section_label: 'Get Data'
-
-  - name: 'suite_enasearch'
-    owner: 'iuc'
-    tool_panel_section_label: 'Get Data'
-
-  - name: 'suite_ncbi_entrez'
-    owner: 'iuc'
-    tool_panel_section_label: 'Get Data'
-
   - name: 'sra_tools'
     owner: 'iuc'
     tool_panel_section_label: 'Get Data'
@@ -110,35 +98,18 @@ tools:
     tool_panel_section_label: 'Metagenomic analyses'
 
     # amplicon_sequence_processing
-  - name: 'suite_mothur'
-    owner: 'iuc'
-    tool_panel_section_label: 'mothur'
-
-  - name: 'suite_qiime'
-    owner: 'iuc'
-    tool_panel_section_label: 'Qiime'
 
   - name: 'data_manager_qiime_database_downloader'
     owner: 'iuc'
     tool_panel_section_label: Data Managers
 
     # wgs_taxonomic_assignations
-  - name: 'suite_metaphlan2'
-    owner: 'iuc'
-    tool_panel_section_label: 'Metagenomic analyses'
 
   - name: 'format_metaphlan2_output'
     owner: 'bebatut'
     tool_panel_section_label: 'Metagenomic analyses'
 
-  - name: 'suite_kraken_0_10_5'
-    owner: 'devteam'
-    tool_panel_section_label: 'Metagenomic analyses'
-
     # metabolism_assignation
-  - name: 'suite_humann2'
-    owner: 'iuc'
-    tool_panel_section_label: 'Metagenomic analyses'
 
   - name: 'group_humann2_uniref_abundances_to_go'
     owner: 'bebatut'
@@ -152,10 +123,6 @@ tools:
     owner: 'bgruening'
     tool_panel_section_label: 'Metagenomic analyses'
 
-  - name: 'suite_picrust'
-    owner: 'iuc'
-    tool_panel_section_label: 'Annotation'
-
     # combination_taxo_func
   - name: 'combine_metaphlan2_humann2'
     owner: 'bebatut'
@@ -166,9 +133,6 @@ tools:
     owner: 'iuc'
     tool_panel_section_label: 'Graph/Display Data'
 
-  - name: 'suite_graphlan'
-    owner: 'iuc'
-    tool_panel_section_label: 'Graph/Display Data'
 
   - name: 'taxonomy_krona_chart'
     owner: 'crs4'

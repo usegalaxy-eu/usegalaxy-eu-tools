@@ -2,22 +2,6 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- name: suite_ebi_tools
-  owner: iuc
-  revisions:
-  - 9de1dc59ff70
-  tool_panel_section_label: Get Data
-- name: suite_enasearch
-  owner: iuc
-  revisions:
-  - 3aa846f62284
-  tool_panel_section_label: Get Data
-- name: suite_ncbi_entrez
-  owner: iuc
-  revisions:
-  - 3c74f6208bc5
-  - 9f0516ee8953
-  tool_panel_section_label: Get Data
 - name: sra_tools
   owner: iuc
   revisions:
@@ -173,43 +157,15 @@ tools:
   revisions:
   - 56236acaad45
   tool_panel_section_label: Metagenomic analyses
-- name: suite_mothur
-  owner: iuc
-  revisions:
-  - 768c2e48b706
-  - e21dc6f8d8b6
-  tool_panel_section_label: mothur
-- name: suite_qiime
-  owner: iuc
-  revisions:
-  - 8313f59413f0
-  - a3f284fa7215
-  - b2e54849fd5c
-  tool_panel_section_label: Qiime
 - name: data_manager_qiime_database_downloader
   owner: iuc
   revisions:
   - cbe065fbd038
   tool_panel_section_label: Data Managers
-- name: suite_metaphlan2
-  owner: iuc
-  revisions:
-  - ae46e4116c61
-  tool_panel_section_label: Metagenomic analyses
 - name: format_metaphlan2_output
   owner: bebatut
   revisions:
   - 2bfa9b200600
-  tool_panel_section_label: Metagenomic analyses
-- name: suite_kraken_0_10_5
-  owner: devteam
-  revisions:
-  - 1bcf0e168661
-  tool_panel_section_label: Metagenomic analyses
-- name: suite_humann2
-  owner: iuc
-  revisions:
-  - b6817cd584e1
   tool_panel_section_label: Metagenomic analyses
 - name: group_humann2_uniref_abundances_to_go
   owner: bebatut
@@ -226,12 +182,6 @@ tools:
   revisions:
   - 82547f0d3a29
   tool_panel_section_label: Metagenomic analyses
-- name: suite_picrust
-  owner: iuc
-  revisions:
-  - 9a3fe0bd7481
-  - c48e45864e0c
-  tool_panel_section_label: Annotation
 - name: combine_metaphlan2_humann2
   owner: bebatut
   revisions:
@@ -241,11 +191,6 @@ tools:
   owner: iuc
   revisions:
   - ed1becc01910
-  tool_panel_section_label: Graph/Display Data
-- name: suite_graphlan
-  owner: iuc
-  revisions:
-  - 0e3b8782641c
   tool_panel_section_label: Graph/Display Data
 - name: taxonomy_krona_chart
   owner: crs4
