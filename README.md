@@ -40,3 +40,5 @@ Always stick to the section names in tool_conf.xml
 
 Set the environment variables `GALAXY_SERVER_URL` and `GALAXY_API_KEY` and run `make install`. This will install ALL of the tools from the .lock files. Be sure that the tool panel sections are pre-existing or it will make a mess of your tool panel. You can run `grep -o -h 'tool_panel_section_label:.*' *.yaml.lock | sort -u` for a list of categories.
 
+By default the value install_repository_dependencies is set to True when running shed-tools install through Ephemeris. If preferred, this can be set to false to install the wrapper and Galaxy dependencies only. The resolver dependencies (e.g conda) can be installed later using Ephemeris (function install-tool-deps), Bioblend, or wait for them to be installed autoamatically at runtime. This is useful if you want to provide a large set of tools but most of them won't be used in the short term.
+ 
