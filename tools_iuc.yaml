@@ -4,7 +4,6 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-
   - name: anndata_import
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -1514,6 +1513,10 @@ tools:
     tool_panel_section_label: Text Manipulation
 
   - name: data_manager_qiime_database_downloader
+    owner: iuc
+    tool_panel_section_label: Data Managers
+
+  - name: data_manager_salmon_index_builder
     owner: iuc
     tool_panel_section_label: Data Managers
 
