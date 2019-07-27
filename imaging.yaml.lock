@@ -7,6 +7,11 @@ tools:
   - 0976b373a321
   - 8aa6e767f737
   tool_panel_section_label: Imaging
+- name: 2d_histogram_equalization
+  owner: imgteam
+  revisions:
+  - 70316d792fc9
+  tool_panel_section_label: Imaging
 - name: 2d_simple_filter
   owner: imgteam
   revisions:
@@ -22,12 +27,14 @@ tools:
 - name: 2d_auto_threshold
   owner: imgteam
   revisions:
+  - 4853fc2b50bf
   - d4da97f51700
   tool_panel_section_label: Imaging
 - name: 2d_local_threshold
   owner: imgteam
   revisions:
   - a20c14eb5f98
+  - c90b91f4a07b
   tool_panel_section_label: Imaging
 - name: landmark_registration
   owner: imgteam
@@ -155,6 +162,7 @@ tools:
   revisions:
   - 3f738d5d91bf
   - ec1ca4d62192
+  - f46f64f9590d
   tool_panel_section_label: Imaging
 - name: colocalization_viz
   owner: imgteam
@@ -184,8 +192,14 @@ tools:
   - 8c1a805c2fc5
   - d098aed00229
   tool_panel_section_label: Imaging
+- name: bfconvert
+  owner: imgteam
+  revisions:
+  - b07f4839ca77
+  tool_panel_section_label: Imaging
 - name: image_info
   owner: imgteam
   revisions:
+  - 7b6d9412c7f8
   - 8c25d4ff0b51
   tool_panel_section_label: Imaging

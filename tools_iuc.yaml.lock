@@ -1189,6 +1189,7 @@ tools:
   owner: iuc
   revisions:
   - 0834c823d4b9
+  - 59db8ea8c845
   - 736d51130b41
   - 81df4950d65b
   - f30d03867854
@@ -1655,12 +1656,14 @@ tools:
 - name: goenrichment
   owner: iuc
   revisions:
+  - 2c7c9646ccf0
   - 5ace5c7d1a86
   tool_panel_section_label: Annotation
 - name: goslimmer
   owner: iuc
   revisions:
   - 294de027cb5d
+  - de3e053bd6a5
   tool_panel_section_label: Annotation
 - name: goseq
   owner: iuc
@@ -2609,6 +2612,11 @@ tools:
   revisions:
   - 9e86c09a6cae
   - cbe065fbd038
+  tool_panel_section_label: Data Managers
+- name: data_manager_salmon_index_builder
+  owner: iuc
+  revisions:
+  - 7d4fd734b078
   tool_panel_section_label: Data Managers
 - name: data_manager_kallisto_index_builder
   owner: iuc
