@@ -5,6 +5,7 @@ tools:
 - name: uniprotxml_downloader
   owner: galaxyp
   revisions:
+  - 1a5690a5eedc
   - e1abc9a35c64
   tool_panel_section_label: Get Data
 - name: dbbuilder
@@ -60,6 +61,16 @@ tools:
   - 650d553c1fda
   - 9ad0d336e5ed
   tool_panel_section_label: FASTA/FASTQ manipulation
+- name: maxquant
+  owner: galaxyp
+  revisions:
+  - 8bac3cc5c5de
+  tool_panel_section_label: Proteomics
+- name: maxquant_mqpar
+  owner: galaxyp
+  revisions:
+  - 256cc0e17454
+  tool_panel_section_label: Proteomics
 - name: peptideshaker
   owner: galaxyp
   revisions:
@@ -108,23 +119,10 @@ tools:
   revisions:
   - c15d72720643
   tool_panel_section_label: Proteomics
-- name: suite_openms
-  owner: galaxyp
-  revisions:
-  - 0c22108365d1
-  - a06f14681ead
-  - d259a41e0901
-  tool_panel_section_label: Proteomics
 - name: blastxml_to_tabular_selectable
   owner: galaxyp
   revisions:
   - 5da5dcc5e13a
-  tool_panel_section_label: Proteomics
-- name: suite_query_tabular
-  owner: iuc
-  revisions:
-  - 0b50524a01e6
-  - 4712dbb7b00d
   tool_panel_section_label: Proteomics
 - name: maldi_quant_preprocessing
   owner: galaxyp
@@ -214,6 +212,7 @@ tools:
 - name: megahit_contig2fastg
   owner: iuc
   revisions:
+  - 4ec5b3777508
   - b910d0cbc00b
   - ed22349139ee
   tool_panel_section_label: Proteomics
@@ -321,9 +320,4 @@ tools:
   owner: galaxyp
   revisions:
   - 6cfd42b015b4
-  tool_panel_section_label: Proteomics
-- name: suite_metaquantome
-  owner: galaxyp
-  revisions:
-  - 1ad06ca0e870
   tool_panel_section_label: Proteomics

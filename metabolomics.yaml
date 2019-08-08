@@ -3,7 +3,21 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+# preprocessing
+## LCMS
+  - name: msnbase_readmsdata
+    owner: lecorguille
+    tool_panel_section_label: Metabolomics
+
   - name: xcms_xcmsset
+    owner: lecorguille
+    tool_panel_section_label: Metabolomics
+
+  - name: xcms_plot_chromatogram
+    owner: lecorguille
+    tool_panel_section_label: Metabolomics
+
+  - name: xcms_merge
     owner: lecorguille
     tool_panel_section_label: Metabolomics
 
@@ -15,18 +29,6 @@ tools:
     owner: lecorguille
     tool_panel_section_label: Metabolomics
 
-  - name: lipidmaps_textsearch
-    owner: fgiacomoni
-    tool_panel_section_label: Metabolomics
-
-  - name: probmetab
-    owner: mmonsoor
-    tool_panel_section_label: Metabolomics
-
-  - name: profia
-    owner: ethevenot
-    tool_panel_section_label: Metabolomics
-
   - name: xcms_fillpeaks
     owner: lecorguille
     tool_panel_section_label: Metabolomics
@@ -35,7 +37,143 @@ tools:
     owner: lecorguille
     tool_panel_section_label: Metabolomics
 
-  - name: xcms_merge
+  - name: xcms_summary
+    owner: lecorguille
+    tool_panel_section_label: Metabolomics
+
+  - name: camera_combinexsannos
+    owner: mmonsoor
+    tool_panel_section_label: Metabolomics
+
+
+## FIAMS
+  - name: profia
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+
+## GCMS
+  - name: metams_rungc
+    owner: yguitton
+    tool_panel_section_label: Metabolomics
+
+
+## NMR
+  - name: nmr_preprocessing
+    owner: marie-tremblay-metatoul
+    tool_panel_section_label: Metabolomics
+
+  - name: nmr_alignment
+    owner: marie-tremblay-metatoul
+    tool_panel_section_label: Metabolomics
+
+  - name: nmr_bucketing
+    owner: marie-tremblay-metatoul
+    tool_panel_section_label: Metabolomics
+
+
+# normalization_quality_control
+## LCMS_FIAMS
+  - name: batchcorrection
+    owner: melpetera
+    tool_panel_section_label: Metabolomics
+
+
+## ALL
+  - name: normalization
+    owner: marie-tremblay-metatoul
+    tool_panel_section_label: Metabolomics
+
+  - name: transformation
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+  - name: qualitymetrics
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+  - name: withinvariation
+    owner: yguitton
+    tool_panel_section_label: Metabolomics
+
+
+# statistics
+## ALL
+  - name: univariate
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+  - name: multivariate
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+  - name: anova
+    owner: lecorguille
+    tool_panel_section_label: Metabolomics
+
+  - name: mixmodel4repeated_measures
+    owner: jfrancoismartin
+    tool_panel_section_label: Metabolomics
+
+  - name: asca
+    owner: marie-tremblay-metatoul
+    tool_panel_section_label: Metabolomics
+
+  - name: biosigner
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+  - name: corr_table
+    owner: melpetera
+    tool_panel_section_label: Metabolomics
+
+  - name: heatmap
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+
+# annotation
+## LCMS_FIAMS
+  - name: hmdb_ms_search
+    owner: fgiacomoni
+    tool_panel_section_label: Metabolomics
+
+  - name: bank_inhouse
+    owner: fgiacomoni
+    tool_panel_section_label: Metabolomics
+
+  - name: lipidmaps_textsearch
+    owner: fgiacomoni
+    tool_panel_section_label: Metabolomics
+
+  - name: massbank_ws_searchspectrum
+    owner: fgiacomoni
+    tool_panel_section_label: Metabolomics
+
+  - name: lcmsmatching
+    owner: prog
+    tool_panel_section_label: Metabolomics
+
+## LCMS
+#  - name: probmetab
+#    owner: mmonsoor
+#    tool_panel_section_label: Metabolomics
+
+## GCMS
+  - name: golm_ws_lib_search
+    owner: fgiacomoni
+    tool_panel_section_label: Metabolomics
+
+
+## NMR
+  - name: nmr_annotation
+    owner: marie-tremblay-metatoul
+    tool_panel_section_label: Metabolomics
+
+
+# data_handling
+## ALL
+  - name: xcms_export_samplemetadata
     owner: lecorguille
     tool_panel_section_label: Metabolomics
 
@@ -43,8 +181,20 @@ tools:
     owner: melpetera
     tool_panel_section_label: Metabolomics
 
-  - name: xcms_summary
-    owner: lecorguille
+  - name: tablemerge
+    owner: melpetera
+    tool_panel_section_label: Metabolomics
+
+  - name: checkformat
+    owner: ethevenot
+    tool_panel_section_label: Metabolomics
+
+  - name: intensity_checks
+    owner: melpetera
+    tool_panel_section_label: Metabolomics
+
+  - name: idchoice
+    owner: melpetera
     tool_panel_section_label: Metabolomics
 
   - name: w4mclassfilter
@@ -59,74 +209,4 @@ tools:
     owner: eschen42
     tool_panel_section_label: Metabolomics
 
-  - name: camera_combinexsannos
-    owner: mmonsoor
-    tool_panel_section_label: Metabolomics
 
-  - name: batchcorrection
-    owner: melpetera
-    tool_panel_section_label: Metabolomics
-
-  - name: qualitymetrics
-    owner: ethevenot
-    tool_panel_section_label: Metabolomics
-
-  - name: hmdb_ms_search
-    owner: fgiacomoni
-    tool_panel_section_label: Metabolomics
-
-  - name: univariate
-    owner: ethevenot
-    tool_panel_section_label: Metabolomics
-
-  - name: lcmsmatching
-    owner: prog
-    tool_panel_section_label: Metabolomics
-
-  - name: biosigner
-    owner: ethevenot
-    tool_panel_section_label: Metabolomics
-
-  - name: multivariate
-    owner: ethevenot
-    tool_panel_section_label: Metabolomics
-
-  - name: metams_rungc
-    owner: yguitton
-    tool_panel_section_label: Metabolomics
-
-  - name: withinvariation
-    owner: yguitton
-    tool_panel_section_label: Metabolomics
-
-  - name: nmr_preprocessing
-    owner: marie-tremblay-metatoul
-    tool_panel_section_label: Metabolomics
-
-  - name: nmr_alignment
-    owner: marie-tremblay-metatoul
-    tool_panel_section_label: Metabolomics
-
-  - name: nmr_bucketing
-    owner: marie-tremblay-metatoul
-    tool_panel_section_label: Metabolomics
-
-  - name: nmr_normalization
-    owner: marie-tremblay-metatoul
-    tool_panel_section_label: Metabolomics
-
-  - name: normalization
-    owner: marie-tremblay-metatoul
-    tool_panel_section_label: Metabolomics
-
-  - name: transformation
-    owner: ethevenot
-    tool_panel_section_label: Metabolomics
-
-  - name: golm_ws_lib_search
-    owner: fgiacomoni
-    tool_panel_section_label: Metabolomics
-
-  - name: checkformat
-    owner: ethevenot
-    tool_panel_section_label: Metabolomics

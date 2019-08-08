@@ -1,125 +1,46 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- name: landmark_registration
+- name: color_deconvolution
   owner: imgteam
   revisions:
-  - a71239f3543a
-  - b0503eec7bd6
+  - 0976b373a321
+  - 8aa6e767f737
   tool_panel_section_label: Imaging
-- name: 2d_auto_threshold
+- name: 2d_histogram_equalization
   owner: imgteam
   revisions:
-  - d4da97f51700
-  tool_panel_section_label: Imaging
-- name: imagecoordinates_flipaxis
-  owner: imgteam
-  revisions:
-  - 5a210baa2ff1
-  - d0960e1b25a8
-  tool_panel_section_label: Imaging
-- name: 2d_feature_extraction
-  owner: imgteam
-  revisions:
-  - 96909b9d1df1
+  - 70316d792fc9
   tool_panel_section_label: Imaging
 - name: 2d_simple_filter
   owner: imgteam
   revisions:
+  - dba87c4b32d3
   - f264ae82f735
   tool_panel_section_label: Imaging
 - name: anisotropic_diffusion
   owner: imgteam
   revisions:
+  - 17d3cfba9b5a
   - d13e26f576bc
   tool_panel_section_label: Imaging
-- name: binary2labelimage
+- name: 2d_auto_threshold
   owner: imgteam
   revisions:
-  - b97a362ff321
+  - 4853fc2b50bf
+  - d4da97f51700
   tool_panel_section_label: Imaging
-- name: binaryimage2points
+- name: 2d_local_threshold
   owner: imgteam
   revisions:
-  - cb1eaebdb4c4
+  - a20c14eb5f98
+  - c90b91f4a07b
   tool_panel_section_label: Imaging
-- name: colocalization_viz
+- name: landmark_registration
   owner: imgteam
   revisions:
-  - 9ddb11b272ee
-  tool_panel_section_label: Imaging
-- name: color_deconvolution
-  owner: imgteam
-  revisions:
-  - 8aa6e767f737
-  tool_panel_section_label: Imaging
-- name: concat_channels
-  owner: imgteam
-  revisions:
-  - 30517f733f7b
-  tool_panel_section_label: Imaging
-- name: coordinates_of_roi
-  owner: imgteam
-  revisions:
-  - 02a686fc1654
-  - 0d30ffea8874
-  - 24d9bd16c953
-  - ee045a6bbdef
-  tool_panel_section_label: Imaging
-- name: count_objects
-  owner: imgteam
-  revisions:
-  - 895a29ebd0c7
-  tool_panel_section_label: Imaging
-- name: curl_post
-  owner: imgteam
-  revisions:
-  - 7f9434fc9d4c
-  tool_panel_section_label: Send Data
-- name: detection_viz
-  owner: imgteam
-  revisions:
-  - 3f738d5d91bf
-  tool_panel_section_label: Imaging
-- name: labelimage2points
-  owner: imgteam
-  revisions:
-  - 39e6d6a84257
-  tool_panel_section_label: Imaging
-- name: mahotas_features
-  owner: imgteam
-  revisions:
-  - 7f3d9a1a0447
-  tool_panel_section_label: Imaging
-- name: mergeneighboursinlabelimage
-  owner: imgteam
-  revisions:
-  - 07ac39c0e949
-  tool_panel_section_label: Imaging
-- name: overlay_moving_and_fixed_image
-  owner: imgteam
-  revisions:
-  - 165a9330fc90
-  tool_panel_section_label: Imaging
-- name: overlay_segmentation_mask
-  owner: imgteam
-  revisions:
-  - 63b2a10b1001
-  tool_panel_section_label: Imaging
-- name: permutate_axis
-  owner: imgteam
-  revisions:
-  - 0bbe34198e24
-  tool_panel_section_label: Imaging
-- name: points2binaryimage
-  owner: imgteam
-  revisions:
-  - dd513c9f5230
-  tool_panel_section_label: Imaging
-- name: points2labelimage
-  owner: imgteam
-  revisions:
-  - dcc8c1d6af48
+  - a71239f3543a
+  - b0503eec7bd6
   tool_panel_section_label: Imaging
 - name: projective_transformation
   owner: imgteam
@@ -132,11 +53,45 @@ tools:
   - ed8a71e13f7b
   - f1744c5654b9
   tool_panel_section_label: Imaging
+- name: imagecoordinates_flipaxis
+  owner: imgteam
+  revisions:
+  - 5a210baa2ff1
+  - d0960e1b25a8
+  tool_panel_section_label: Imaging
+- name: 2d_split_binaryimage_by_watershed
+  owner: imgteam
+  revisions:
+  - 5e21d7342593
+  tool_panel_section_label: Imaging
+- name: 2d_filter_segmentation_by_features
+  owner: imgteam
+  revisions:
+  - e576b73a2e2f
+  tool_panel_section_label: Imaging
+- name: binary2labelimage
+  owner: imgteam
+  revisions:
+  - 6c92ac9ce868
+  - b97a362ff321
+  tool_panel_section_label: Imaging
+- name: binaryimage2points
+  owner: imgteam
+  revisions:
+  - cb1eaebdb4c4
+  tool_panel_section_label: Imaging
+- name: mergeneighboursinlabelimage
+  owner: imgteam
+  revisions:
+  - 07ac39c0e949
+  - c6a6ab7c9940
+  tool_panel_section_label: Imaging
 - name: scale_image
   owner: imgteam
   revisions:
   - 3e4231ed875e
   - c4c76f1ebad2
+  - f3c05a734dd1
   tool_panel_section_label: Imaging
 - name: slice_image
   owner: imgteam
@@ -148,14 +103,103 @@ tools:
   revisions:
   - 597b7ef44b05
   tool_panel_section_label: Imaging
+- name: concat_channels
+  owner: imgteam
+  revisions:
+  - 30517f733f7b
+  - d42501109c05
+  tool_panel_section_label: Imaging
+- name: points2binaryimage
+  owner: imgteam
+  revisions:
+  - dd513c9f5230
+  tool_panel_section_label: Imaging
+- name: points2labelimage
+  owner: imgteam
+  revisions:
+  - 9bd039f46843
+  - dcc8c1d6af48
+  tool_panel_section_label: Imaging
+- name: labelimage2points
+  owner: imgteam
+  revisions:
+  - 07525a7d9ea0
+  - 39e6d6a84257
+  tool_panel_section_label: Imaging
+- name: permutate_axis
+  owner: imgteam
+  revisions:
+  - 0bbe34198e24
+  - 5b82f2186244
+  tool_panel_section_label: Imaging
+- name: mahotas_features
+  owner: imgteam
+  revisions:
+  - 7f3d9a1a0447
+  tool_panel_section_label: Imaging
+- name: 2d_feature_extraction
+  owner: imgteam
+  revisions:
+  - 6fdb3542a406
+  - 96909b9d1df1
+  - f03b4da203d0
+  tool_panel_section_label: Imaging
+- name: count_objects
+  owner: imgteam
+  revisions:
+  - 895a29ebd0c7
+  tool_panel_section_label: Imaging
+- name: coordinates_of_roi
+  owner: imgteam
+  revisions:
+  - 02a686fc1654
+  - 0d30ffea8874
+  - 24d9bd16c953
+  - ee045a6bbdef
+  tool_panel_section_label: Imaging
+- name: detection_viz
+  owner: imgteam
+  revisions:
+  - 3f738d5d91bf
+  - ec1ca4d62192
+  - f46f64f9590d
+  tool_panel_section_label: Imaging
+- name: colocalization_viz
+  owner: imgteam
+  revisions:
+  - 9ddb11b272ee
+  - fc85eb253163
+  tool_panel_section_label: Imaging
+- name: overlay_moving_and_fixed_image
+  owner: imgteam
+  revisions:
+  - 165a9330fc90
+  tool_panel_section_label: Imaging
+- name: overlay_segmentation_mask
+  owner: imgteam
+  revisions:
+  - 63b2a10b1001
+  - 8ad39f493587
+  tool_panel_section_label: Imaging
+- name: wsi_extract_top_view
+  owner: imgteam
+  revisions:
+  - a1d02d2e814a
+  tool_panel_section_label: Imaging
 - name: visceral_evaluatesegmentation
   owner: imgteam
   revisions:
   - 8c1a805c2fc5
   - d098aed00229
   tool_panel_section_label: Imaging
-- name: wsi_extract_top_view
+- name: bfconvert
   owner: imgteam
   revisions:
-  - a1d02d2e814a
+  - b07f4839ca77
+  tool_panel_section_label: Imaging
+- name: image_info
+  owner: imgteam
+  revisions:
+  - 7b6d9412c7f8
+  - 8c25d4ff0b51
   tool_panel_section_label: Imaging
