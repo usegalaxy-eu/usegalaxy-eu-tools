@@ -41,10 +41,36 @@ tools:
 - name: sklearn_svm_classifier
   owner: bgruening
   revisions:
+  - 153f237ddb36
   - 1a9d5a8fff12
   - 295c383c3282
   - 372582a7a34d
   - e1b37bdc5fbd
+  tool_panel_section_label: Statistics
+- name: sklearn_train_test_eval
+  owner: bgruening
+  revisions:
+  - 68aaa903052a
+  tool_panel_section_label: Statistics
+- name: model_prediction
+  owner: bgruening
+  revisions:
+  - db511406350a
+  tool_panel_section_label: Statistics
+- name: keras_batch_models
+  owner: bgruening
+  revisions:
+  - 000a3868885b
+  tool_panel_section_label: Statistics
+- name: keras_model_builder
+  owner: bgruening
+  revisions:
+  - 818896cd2213
+  tool_panel_section_label: Statistics
+- name: keras_model_config
+  owner: bgruening
+  revisions:
+  - 1046cf73236b
   tool_panel_section_label: Statistics
 - name: sklearn_sample_generator
   owner: bgruening
@@ -53,12 +79,14 @@ tools:
   - 4ba68dd788b3
   - 86a086d2bbed
   - 97b467e06354
+  - ebf295f2faf6
   tool_panel_section_label: Statistics
 - name: sklearn_estimator_attributes
   owner: bgruening
   revisions:
   - 2ad4c2798be7
   - 84ddbf61e107
+  - c411ff569a26
   tool_panel_section_label: Statistics
 - name: sklearn_stacking_ensemble_models
   owner: bgruening
@@ -72,12 +100,14 @@ tools:
   - 1c4a241bef5c
   - 21d3e08b1a48
   - 4368259ff821
+  - 82b6104d4682
   - 907bb0418c9f
   tool_panel_section_label: Statistics
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
   - 019bd8289224
+  - 775b004b7920
   - 913ee94945f3
   - 99038af8deda
   - 9ddacd0b8c8b
@@ -89,12 +119,14 @@ tools:
   - 86020dbc8ef7
   - a61375e306c1
   - bd9481c0af38
+  - e84c0db80565
   tool_panel_section_label: Statistics
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
   - 23fb598a09d7
   - c030e4bb1b39
+  - d0efc68a3ddb
   - e9ba818e7877
   - ed7b1654e841
   tool_panel_section_label: Statistics
@@ -102,6 +134,7 @@ tools:
   owner: bgruening
   revisions:
   - 27903ce9b4be
+  - 37e193b3fdd7
   - 9d234733ccfd
   - abb5a3f256e3
   - ff955d4fc5b1
@@ -111,12 +144,14 @@ tools:
   revisions:
   - 360330a867f0
   - 39ae276e75d9
+  - dde0f1654d18
   - e94395c672bd
   - f4d8a82e167c
   tool_panel_section_label: Statistics
 - name: sklearn_feature_selection
   owner: bgruening
   revisions:
+  - 0b88494bdcac
   - 231e9a9849e8
   - 2bbbac61e48d
   - 58322d3c7bd3
@@ -126,6 +161,7 @@ tools:
   owner: bgruening
   revisions:
   - 4fc54bac4254
+  - 685046e0381a
   - 9ac0b78c6b6d
   - 9e43ee712723
   - d6b8103c909c
@@ -134,6 +170,7 @@ tools:
   owner: bgruening
   revisions:
   - 3cd0dbc038ec
+  - 44f0ce9488fb
   - 5621f2be9fbc
   - 68afcd163b3d
   - 9bf11bbeccc3
@@ -142,6 +179,7 @@ tools:
   owner: bgruening
   revisions:
   - 268ecaf96b68
+  - 28d51b976c29
   - 3badea963c3b
   - 40ee30b5e456
   - 64c87ceb6766
@@ -153,11 +191,13 @@ tools:
   - 3e2921875c58
   - 5552eda109bd
   - 75bcb7c19fcf
+  - 9bb505eafac9
   tool_panel_section_label: Statistics
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
   - 6cf4b82c72bc
+  - 9d3a024cf2da
   - b628de0d101f
   - bf32512b1418
   - e3bc646e63b2
@@ -169,6 +209,7 @@ tools:
   - 60b8a683ba99
   - 86e1e2874460
   - cf9aa11b91c8
+  - efbec977a47d
   tool_panel_section_label: Statistics
 - name: scipy_sparse
   owner: bgruening
@@ -177,6 +218,7 @@ tools:
   - 27c0b1a050df
   - 648b81bca7c5
   - b9ed7b774ba3
+  - d0ed8e976b79
   tool_panel_section_label: Statistics
 - name: nanopolish_variants
   owner: bgruening
