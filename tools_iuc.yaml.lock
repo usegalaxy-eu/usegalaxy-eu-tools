@@ -62,12 +62,14 @@ tools:
   revisions:
   - 0fa80752a314
   - '106718959281'
+  - 20f522154663
   - 9fec5dd8fbb9
   tool_panel_section_label: Single-cell
 - name: raceid_filtnormconf
   owner: iuc
   revisions:
   - 56a093c2a3f9
+  - 5d5b14dbd092
   - 8dc8ff057b0f
   - d55e29ac02e3
   tool_panel_section_label: Single-cell
@@ -77,10 +79,12 @@ tools:
   - 4ea021bd7513
   - 528a43b1cbcf
   - d4646ce659b4
+  - ee0bbc160cb1
   tool_panel_section_label: Single-cell
 - name: raceid_trajectory
   owner: iuc
   revisions:
+  - 3e5bb16abb55
   - 87de515af823
   - da7ff78fe296
   - ff7cd3c7c1df
@@ -90,6 +94,7 @@ tools:
   revisions:
   - 4164c0da0a5d
   - 5156383d3a5d
+  - 86e2358cf273
   - e0e9b24d76aa
   tool_panel_section_label: Single-cell
 - name: kallisto_quant
@@ -782,6 +787,11 @@ tools:
   revisions:
   - e3698ac146d7
   tool_panel_section_label: Metagenomic analyses
+- name: crispr_studio
+  owner: iuc
+  revisions:
+  - 7346619ad005
+  tool_panel_section_label: Genome editing
 - name: vegan_diversity
   owner: iuc
   revisions:
@@ -1227,6 +1237,7 @@ tools:
   - 318b2a9d54dd
   - bc685d13b637
   - d5659efd66aa
+  - d82339e37e8e
   tool_panel_section_label: Mapping
 - name: star_fusion
   owner: iuc
@@ -1591,12 +1602,14 @@ tools:
   - 45288fb1f3f5
   - 7c5e867820cf
   - d7e6c347538d
+  - e3f170cc4f95
   tool_panel_section_label: Variant Calling
 - name: varscan_somatic
   owner: iuc
   revisions:
   - 2657ab48e16a
   - 31a38ce7e8ae
+  - 4e97191a1ff7
   - 72b8ce355fae
   - b79bb8b09822
   - d37adcc2ec03
@@ -1604,6 +1617,7 @@ tools:
 - name: varscan_copynumber
   owner: iuc
   revisions:
+  - 0bc56f894766
   - 192bd5b78300
   - 8d8de66233ea
   - a584f046e4a7
@@ -1664,6 +1678,7 @@ tools:
 - name: tbprofiler
   owner: iuc
   revisions:
+  - 19793eecc9f0
   - 49b819f88c2b
   - 5182e1a99313
   tool_panel_section_label: Annotation
