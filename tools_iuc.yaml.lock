@@ -116,6 +116,11 @@ tools:
   revisions:
   - bda6012394f7
   tool_panel_section_label: Metagenomic analyses
+- name: pipelign
+  owner: iuc
+  revisions:
+  - cd9d1eccda7e
+  tool_panel_section_label: Multiple Alignments
 - name: ruvseq
   owner: iuc
   revisions:
@@ -184,6 +189,7 @@ tools:
   revisions:
   - 0ea86f6bf2a1
   - 2074627b0f83
+  - c171f2b7d76e
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap
   owner: iuc
@@ -1232,6 +1238,7 @@ tools:
   revisions:
   - 017aba02828d
   - 17062a0decb7
+  - 749c918495f7
   - a54de7e658f7
   - a9d4f71dbfb0
   tool_panel_section_label: Mapping
@@ -1752,6 +1759,7 @@ tools:
 - name: roary
   owner: iuc
   revisions:
+  - 15ca041134a9
   - a9098353ae22
   - e02e9af2743f
   - f1ccc8a6eb05
@@ -3794,6 +3802,61 @@ tools:
   owner: iuc
   revisions:
   - 850e213bee26
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_busted
+  owner: iuc
+  revisions:
+  - b678fe748dc5
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_bgm
+  owner: iuc
+  revisions:
+  - bf97cacc1a55
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_gard
+  owner: iuc
+  revisions:
+  - 1942d02039c2
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_absrel
+  owner: iuc
+  revisions:
+  - 5c87e4907e08
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_fubar
+  owner: iuc
+  revisions:
+  - 0f108ee932ea
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_relax
+  owner: iuc
+  revisions:
+  - 551616a65f8f
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_fade
+  owner: iuc
+  revisions:
+  - 6164d9298db9
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_sm19
+  owner: iuc
+  revisions:
+  - ae7c42d49717
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_meme
+  owner: iuc
+  revisions:
+  - 7b3f9c78cf6d
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_slac
+  owner: iuc
+  revisions:
+  - c2bed8cc8fc1
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_fel
+  owner: iuc
+  revisions:
+  - 6c3ece5fb602
   tool_panel_section_label: Phylogenetics
 - name: ucsc_fasplit
   owner: iuc
