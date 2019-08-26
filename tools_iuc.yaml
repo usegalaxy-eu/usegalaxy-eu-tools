@@ -4,9 +4,61 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: anndata_import
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: anndata_export
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: anndata_manipulate
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: anndata_inspect
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
   - name: bedtools
     owner: iuc
     tool_panel_section_label: Operate on Genomic Intervals
+
+  - name: collection_element_identifiers
+    owner: iuc
+    tool_panel_section_label: Collection Operations
+
+  - name: crosscontamination_barcode_filter
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: deg_annotate
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: dropletutils
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: raceid_inspectclusters
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: raceid_filtnormconf
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: raceid_clustering
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: raceid_trajectory
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: raceid_inspecttrajectory
+    owner: iuc
+    tool_panel_section_label: Single-cell
 
   - name: kallisto_quant
     owner: iuc
@@ -19,6 +71,10 @@ tools:
   - name: plasflow
     owner: iuc
     tool_panel_section_label: Metagenomic analyses
+
+  - name: pipelign
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
 
   - name: ruvseq
     owner: iuc
@@ -40,9 +96,13 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
-  - name: nanoplot
+  - name: volcanoplot
     owner: iuc
     tool_panel_section_label: Graph/Display Data
+
+  - name: nanoplot
+    owner: iuc
+    tool_panel_section_label: Nanopore
 
   - name: intervene
     owner: iuc
@@ -99,6 +159,10 @@ tools:
   - name: ebi_metagenomics_run_downloader
     owner: iuc
     tool_panel_section_label: Get Data
+
+  - name: table_compute
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
 
   - name: column_maker
     owner: devteam
@@ -200,11 +264,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Join, Subtract and Group
 
-  - name: suite_datamash
-    owner: iuc
-    tool_panel_section_label: Join, Subtract and Group
-
-
   - name: subtract
     owner: devteam
     tool_panel_section_label: Join, Subtract and Group
@@ -247,6 +306,10 @@ tools:
     tool_panel_section_label: FASTA/FASTQ manipulation
 
   - name: fastp
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ manipulation
+
+  - name: fasta_stats
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ manipulation
 
@@ -375,7 +438,7 @@ tools:
   - name: canonical_correlation_analysis
     owner: devteam
     tool_panel_section_label: Statistics
- 
+
   - name: mutate_snp_codon
     owner: devteam
     tool_panel_section_label: Evolution
@@ -408,10 +471,34 @@ tools:
     owner: devteam
     tool_panel_section_label: Motif Tools
 
+  - name: mummer_mummer
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: mummer_show_coords
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: mummer_dnadiff
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: mummer_nucmer
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: mummer_delta_filter
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: mummer_mummerplot
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
   - name: msaboot
     owner: iuc
     tool_panel_section_label: Multiple Alignments
- 
+
   - name: clustalw
     owner: devteam
     tool_panel_section_label: Multiple Alignments
@@ -419,6 +506,10 @@ tools:
   - name: bio_hansel
     owner: iuc
     tool_panel_section_label: Metagenomic analyses
+
+  - name: crispr_studio
+    owner: iuc
+    tool_panel_section_label: Genome editing
 
   - name: vegan_diversity
     owner: iuc
@@ -638,6 +729,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: idba_tran
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: idba_hybrid
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: megahit
     owner: iuc
     tool_panel_section_label: Assembly
@@ -667,6 +766,10 @@ tools:
     tool_panel_section_label: Mapping
 
   - name: rgrnastar
+    owner: iuc
+    tool_panel_section_label: Mapping
+
+  - name: rna_starsolo
     owner: iuc
     tool_panel_section_label: Mapping
 
@@ -770,7 +873,7 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
-  - name: suite_trinity
+  - name: trinotate
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -833,6 +936,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: genrich
+    owner: iuc
+    tool_panel_section_label: Peak Calling
+
   - name: macs2
     owner: iuc
     tool_panel_section_label: Peak Calling
@@ -853,14 +960,17 @@ tools:
     owner: devteam
     tool_panel_section_label: Peak Calling
 
-
   - name: bwameth
     owner: iuc
-    tool_panel_section_label: DNA methylation
+    tool_panel_section_label: Epigenetics
 
   - name: vcf_filter
     owner: devteam
-    tool_panel_section_label: DNA methylation
+    tool_panel_section_label: Epigenetics
+
+  - name: basil
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: varscan_mpileup
     owner: iuc
@@ -871,10 +981,6 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: varscan_copynumber
-    owner: iuc
-    tool_panel_section_label: Variant Calling
-
-  - name: suite_varscan
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -914,9 +1020,29 @@ tools:
     owner: devteam
     tool_panel_section_label: Phenotype Association
 
+  - name: tbprofiler
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: goenrichment
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: goslimmer
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: goseq
     owner: iuc
     tool_panel_section_label: Annotation
+
+  - name: fgsea
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: egsea
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
 
   - name: kobas
     owner: iuc
@@ -924,6 +1050,10 @@ tools:
 
   - name: prokka
     owner: crs4
+    tool_panel_section_label: Annotation
+
+  - name: mlst
+    owner: iuc
     tool_panel_section_label: Annotation
 
   - name: roary
@@ -989,18 +1119,27 @@ tools:
   - name: picard
     owner: devteam
     tool_panel_section_label: Picard
+
   - name: emboss_5
     owner: devteam
     tool_panel_section_label: EMBOSS Tools
+
+  - name: kraken2
+    owner: iuc
+    tool_panel_section_label: NCBI Blast
+
   - name: kraken_taxonomy_report
     owner: iuc
     tool_panel_section_label: NCBI Blast
+
   - name: ncbi_blast_plus
     owner: devteam
     tool_panel_section_label: NCBI Blast
+
   - name: kraken2tax
     owner: devteam
     tool_panel_section_label: NCBI Blast
+
   - name: kraken
     owner: devteam
     tool_panel_section_label: NCBI Blast
@@ -1102,18 +1241,48 @@ tools:
   - name: vcfselectsamples
     owner: devteam
     tool_panel_section_label: Variant Calling
+
+  - name: bcftools_consensus
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: bcftools_call
     owner: iuc
     tool_panel_section_label: Variant Calling
+
+  - name: bcftools_norm
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_csq
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_plugin_frameshifts
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+
+  - name: bcftools_plugin_color_chrs
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_cnv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: vcftools_merge
     owner: devteam
     tool_panel_section_label: Variant Calling
+
   - name: vcftools_isec
     owner: devteam
     tool_panel_section_label: Variant Calling
+
   - name: vt_variant_tools
     owner: iuc
     tool_panel_section_label: Variant Calling
+
   - name: bcftools
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -1160,21 +1329,27 @@ tools:
   - name: samtools_bedcov
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_sort
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_rmdup
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_idxstats
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_slice_bam
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_mpileup
     owner: devteam
     tool_panel_section_label: SAM Tools
+
   - name: samtools_calmd
     owner: devteam
     tool_panel_section_label: SAM Tools
@@ -1197,6 +1372,10 @@ tools:
 
   - name: bam_to_sam
     owner: devteam
+    tool_panel_section_label: SAM Tools
+
+  - name: samtools_depth
+    owner: iuc
     tool_panel_section_label: SAM Tools
 
   - name: samtools_sort
@@ -1229,6 +1408,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
+  - name: gemini_inheritance
+    owner: iuc
+    tool_panel_section_label: Gemini Tools
+
   - name: gemini_windower
     owner: iuc
     tool_panel_section_label: Gemini Tools
@@ -1245,23 +1428,11 @@ tools:
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
-  - name: gemini_mendel_errors
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
   - name: gemini_amend
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
   - name: gemini_pathways
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
-  - name: gemini_dump
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
-  - name: gemini_region
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
@@ -1276,22 +1447,16 @@ tools:
   - name: gemini_query
     owner: iuc
     tool_panel_section_label: Gemini Tools
+
   - name: gemini_fusions
     owner: iuc
     tool_panel_section_label: Gemini Tools
+
   - name: gemini_load
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
-  - name: gemini_de_novo
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
   - name: gemini_annotate
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
-  - name: gemini_recessive_and_dominant
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
@@ -1304,10 +1469,6 @@ tools:
     tool_panel_section_label: Gemini Tools
 
   - name: gemini_qc
-    owner: iuc
-    tool_panel_section_label: Gemini Tools
-
-  - name: gemini_comp_hets
     owner: iuc
     tool_panel_section_label: Gemini Tools
 
@@ -1379,25 +1540,13 @@ tools:
     owner: iuc
     tool_panel_section_label: Data Managers
 
-  - name: data_manager_kallisto_index_builder
+  - name: data_manager_salmon_index_builder
     owner: iuc
     tool_panel_section_label: Data Managers
 
-  - name: suite_metaphlan2
+  - name: data_manager_kallisto_index_builder
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
-
-  - name: suite_qiime
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: suite_qiime_add_on
-    owner: iuc
-    tool_panel_section_label: Qiime
-
-  - name: suite_humann2
-    owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Data Managers
 
   ## IWtomic - Interval-Wise Testing for Omics Data
 
@@ -1413,17 +1562,9 @@ tools:
     owner: iuc
     tool_panel_section_label: Statistics
 
-  - name: suite_umi_tools
-    owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
-
   - name: umi_tools_count
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ manipulation
-
-  - name: suite_enasearch
-    owner: iuc
-    tool_panel_section_label: Get Data
 
   - name: multiqc
     owner: iuc
@@ -1432,27 +1573,27 @@ tools:
   - name: hicexplorer_hiccorrectmatrix
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicplotdistvscounts
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicpca
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicsummatrices
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicaggregatecontacts
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hiccomparematrices
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hiccorrelate
     owner: bgruening
     tool_panel_section_label: HiCExplorer
@@ -1460,34 +1601,31 @@ tools:
   - name: hicexplorer_hictransform
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
-  - name: hicexplorer_hicplotviewpoint  
+
+  - name: hicexplorer_hicplotviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicbuildmatrix
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicplotmatrix
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicmergematrixbins
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicplottads
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicfindtads
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: suite_hicexplorer
-    owner: bgruening
-    tool_panel_section_label: HiCExplorer
 
   - name: metaspades
     owner: nml
@@ -1506,17 +1644,9 @@ tools:
     tool_panel_section_label: Get Data
     tool_panel_section_label: Metagenomic analyses
 
-  - name: suite_bctools
-    owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
-
   - name: spades
     owner: nml
     tool_panel_section_label: Assembly
-
-  - name: suite_onto_toolkit
-    owner: iuc
-    tool_panel_section_label: OBO Ontology manipulation
 
   - name: valet
     owner: iuc
@@ -1530,9 +1660,13 @@ tools:
     owner: iuc
     tool_panel_section_label: Filter and Sort
 
-  - name: suite_poretools
+  - name: miniasm
     owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
+    tool_panel_section_label: Assembly
+
+  - name: gfa_to_fa
+    owner: iuc
+    tool_panel_section_label: Convert Formats
 
   - name: bandage
     owner: iuc
@@ -1540,15 +1674,15 @@ tools:
 
   - name: porechop
     owner: iuc
-    tool_panel_section_label: FASTA/FASTQ manipulation
+    tool_panel_section_label: Nanopore
+
+  - name: spaln
+    owner: iuc
+    tool_panel_section_label: Annotation
 
   - name: annotatemyids
     owner: iuc
     tool_panel_section_label: Annotation
-
-  - name: suite_mageck
-    owner: iuc
-    tool_panel_section_label: Genome editing
 
   - name: fasttree
     owner: iuc
@@ -2062,10 +2196,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Graph/Display Data
 
-  - name: suite_mothur
-    owner: iuc
-    tool_panel_section_label: Mothur
-
   - name: abricate
     owner: iuc
     tool_panel_section_label: Annotation
@@ -2073,7 +2203,55 @@ tools:
   - name: gtftobed12
     owner: iuc
     tool_panel_section_label: Convert Formats
- 
+
+  - name: phyml
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_busted
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_bgm
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_gard
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_absrel
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_fubar
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_relax
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_fade
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_sm19
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_meme
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_slac
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_fel
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: ucsc_fasplit
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ manipulation
@@ -2085,3 +2263,59 @@ tools:
   - name: heinz
     owner: iuc
     tool_panel_section_label: RNA Analysis
+
+  - name: scater_create_qcmetric_ready_sce
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scater_filter
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scater_normalize
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scater_plot_dist_scatter
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scater_plot_exprs_freq
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scater_plot_pca
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scanpy_cluster_reduce_dimension
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scanpy_filter
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scanpy_inspect
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scanpy_normalize
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scanpy_plot
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scanpy_remove_confounders
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name:  intermine_galaxy_exchange
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: compose_text_param
+    owner: iuc
+    tool_panel_section_label: Expression Tools
