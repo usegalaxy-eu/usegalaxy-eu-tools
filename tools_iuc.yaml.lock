@@ -28,6 +28,7 @@ tools:
   - 4f7a5ccd2ae9
   - 6bb3cd018203
   - 87ee588b3d45
+  - b28e0cfa7ba1
   - b8348686a0b9
   - db1841942d2b
   - dde39ba9c031
@@ -56,6 +57,7 @@ tools:
   owner: iuc
   revisions:
   - 4cd9f0008d9c
+  - a8aa294401be
   - cfe1e6c28d95
   tool_panel_section_label: Single-cell
 - name: raceid_inspectclusters
@@ -924,6 +926,7 @@ tools:
   owner: iuc
   revisions:
   - 3905ccd5c631
+  - 6756c87dc2d4
   - edaa8572219d
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: fastq_paired_end_interlacer
@@ -1262,6 +1265,7 @@ tools:
   owner: iuc
   revisions:
   - 3a1253ee137b
+  - 58b278def57e
   - 61cb2042581a
   tool_panel_section_label: Mapping
 - name: star_fusion
@@ -1394,6 +1398,7 @@ tools:
   revisions:
   - 1759d845181e
   - 9301937c9037
+  - a37612abf7f9
   - af814359d244
   - c7bd0cc53524
   - de2c5e5a206c
@@ -1727,6 +1732,7 @@ tools:
   - 07f6832bdd4d
   - 67c29afac85f
   - 783e8b70b047
+  - 8b3e3657034e
   - 9d1256d9ef0b
   - ab492df30cdf
   - ade933eff007
@@ -1858,6 +1864,7 @@ tools:
   - 4f7a5ccd2ae9
   - 6bb3cd018203
   - 87ee588b3d45
+  - b28e0cfa7ba1
   - b8348686a0b9
   - db1841942d2b
   - dde39ba9c031
@@ -1869,6 +1876,7 @@ tools:
   - 4f7a5ccd2ae9
   - 6bb3cd018203
   - 87ee588b3d45
+  - b28e0cfa7ba1
   - b8348686a0b9
   - db1841942d2b
   - dde39ba9c031
@@ -2314,6 +2322,7 @@ tools:
   owner: devteam
   revisions:
   - 04d5581db1f5
+  - 7a6034296ae9
   - 811fc2d75ad4
   - 87398ae795c7
   - 88b8c2916784
@@ -2343,6 +2352,7 @@ tools:
   owner: devteam
   revisions:
   - 13c4ad597626
+  - 22970df7a40e
   - 4e404acfafa6
   - cc61ade70eb8
   - db17d5321bad
@@ -2364,6 +2374,7 @@ tools:
   owner: devteam
   revisions:
   - 24c5d43cb545
+  - 47035d167365
   - 5a08c09b9311
   - 793ad847121d
   - 8cfc17e27132
@@ -3875,6 +3886,7 @@ tools:
 - name: seqtk
   owner: iuc
   revisions:
+  - 288f7f69fe25
   - a09586d5149a
   - bc7d99f46a5d
   - ecf1c30da3a2
@@ -3890,30 +3902,36 @@ tools:
   owner: iuc
   revisions:
   - 2d455a7e8a3d
+  - fd808de478b1
   tool_panel_section_label: Single-cell
 - name: scater_filter
   owner: iuc
   revisions:
+  - b7ea9f09c02f
   - e6ca62ac65c6
   tool_panel_section_label: Single-cell
 - name: scater_normalize
   owner: iuc
   revisions:
   - 87757f7b9974
+  - 946179ef029c
   tool_panel_section_label: Single-cell
 - name: scater_plot_dist_scatter
   owner: iuc
   revisions:
+  - 2e41b35b5bdd
   - 4887c4c69847
   tool_panel_section_label: Single-cell
 - name: scater_plot_exprs_freq
   owner: iuc
   revisions:
+  - 058b40656107
   - a8290d207005
   tool_panel_section_label: Single-cell
 - name: scater_plot_pca
   owner: iuc
   revisions:
+  - 46fc6751d746
   - bea3359ba852
   tool_panel_section_label: Single-cell
 - name: scanpy_cluster_reduce_dimension
@@ -3961,3 +3979,8 @@ tools:
   revisions:
   - bd99e8fbde97
   tool_panel_section_label: Graph/Display Data
+- name: moabs
+  owner: iuc
+  revisions:
+  - 26d7ec4af119
+  tool_panel_section_label: Epigenetics
