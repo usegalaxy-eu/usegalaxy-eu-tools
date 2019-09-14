@@ -269,6 +269,7 @@ tools:
 - name: table_compute
   owner: iuc
   revisions:
+  - 02c3e335a695
   - 1b0f96ed73f2
   - dddadbbac949
   tool_panel_section_label: Text Manipulation
@@ -297,6 +298,7 @@ tools:
   - 5e6237d58b0c
   - b723c120161a
   - c38286ea7047
+  - f5ea3ce9b9b0
   tool_panel_section_label: Get Data
 - name: codeml
   owner: iuc
@@ -437,6 +439,31 @@ tools:
   - 5bc2dacbe729
   - 7a2a604ae9c8
   tool_panel_section_label: Join, Subtract and Group
+- name: crossmap_bam
+  owner: iuc
+  revisions:
+  - 5051467dc96a
+  tool_panel_section_label: Convert Formats
+- name: crossmap_bed
+  owner: iuc
+  revisions:
+  - e6c68525e9ee
+  tool_panel_section_label: Convert Formats
+- name: crossmap_gff
+  owner: iuc
+  revisions:
+  - e80720e27001
+  tool_panel_section_label: Convert Formats
+- name: crossmap_vcf
+  owner: iuc
+  revisions:
+  - 9d61d74f03a4
+  tool_panel_section_label: Convert Formats
+- name: crossmap_wig
+  owner: iuc
+  revisions:
+  - 3cb69f2ecea2
+  tool_panel_section_label: Convert Formats
 - name: bam_to_scidx
   owner: iuc
   revisions:
@@ -610,6 +637,7 @@ tools:
   - 69c5e9c0add0
   - 6b774e9d6387
   - 8f33c9fbc119
+  - 9de82b4963e6
   - ca2def38369c
   - d0743cb18ed8
   - dba3c47e1798
@@ -946,6 +974,7 @@ tools:
 - name: fasta_compute_length
   owner: devteam
   revisions:
+  - 2051602a5f97
   - d8cc2c8eef14
   - de2db1bdfbf8
   tool_panel_section_label: FASTA/FASTQ manipulation
@@ -1389,9 +1418,20 @@ tools:
   revisions:
   - 1b22d8a18acc
   - 2c0ca397d302
+  - 4de6e2e40c7a
   - 5a60f347f566
   - 6b0ba6de1424
   - e7e885f718fb
+  tool_panel_section_label: RNA Analysis
+- name: alevin
+  owner: bgruening
+  revisions:
+  - 908a8d400fa2
+  tool_panel_section_label: RNA Analysis
+- name: salmonquantmerge
+  owner: bgruening
+  revisions:
+  - 43658f594542
   tool_panel_section_label: RNA Analysis
 - name: featurecounts
   owner: iuc
@@ -1671,6 +1711,7 @@ tools:
 - name: snippy
   owner: iuc
   revisions:
+  - 0aa87d97847f
   - 776ebd1239da
   - 82f2b6f20fa2
   - 9bccc8404a3c
@@ -1713,6 +1754,11 @@ tools:
   - 19793eecc9f0
   - 49b819f88c2b
   - 5182e1a99313
+  tool_panel_section_label: Annotation
+- name: socru
+  owner: iuc
+  revisions:
+  - ce0c9fe32e04
   tool_panel_section_label: Annotation
 - name: goenrichment
   owner: iuc
@@ -2735,6 +2781,7 @@ tools:
   revisions:
   - 70cb5527defb
   - 8db56d2f8b72
+  - 933220bbc2ae
   - b557acca0b56
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: multiqc
@@ -3810,6 +3857,7 @@ tools:
   revisions:
   - 78c75f134c16
   - 862f5a86854d
+  - f9bf6a8d8547
   tool_panel_section_label: Annotation
 - name: gtftobed12
   owner: iuc
@@ -3887,6 +3935,7 @@ tools:
   owner: iuc
   revisions:
   - 288f7f69fe25
+  - 58c8ece95b53
   - a09586d5149a
   - bc7d99f46a5d
   - ecf1c30da3a2
