@@ -72,6 +72,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic analyses
 
+  - name: pipelign
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
   - name: ruvseq
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -155,6 +159,10 @@ tools:
   - name: ebi_metagenomics_run_downloader
     owner: iuc
     tool_panel_section_label: Get Data
+
+  - name: table_compute
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
 
   - name: column_maker
     owner: devteam
@@ -259,6 +267,26 @@ tools:
   - name: subtract
     owner: devteam
     tool_panel_section_label: Join, Subtract and Group
+
+  - name: crossmap_bam
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: crossmap_bed
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: crossmap_gff
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: crossmap_vcf
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: crossmap_wig
+    owner: iuc
+    tool_panel_section_label: Convert Formats
 
   - name: bam_to_scidx
     owner: iuc
@@ -498,6 +526,10 @@ tools:
   - name: bio_hansel
     owner: iuc
     tool_panel_section_label: Metagenomic analyses
+
+  - name: crispr_studio
+    owner: iuc
+    tool_panel_section_label: Genome editing
 
   - name: vegan_diversity
     owner: iuc
@@ -757,6 +789,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Mapping
 
+  - name: rna_starsolo
+    owner: iuc
+    tool_panel_section_label: Mapping
+
   - name: star_fusion
     owner: iuc
     tool_panel_section_label: Mapping
@@ -818,6 +854,14 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: salmon
+    owner: bgruening
+    tool_panel_section_label: RNA Analysis
+
+  - name: alevin
+    owner: bgruening
+    tool_panel_section_label: RNA Analysis
+
+  - name: salmonquantmerge
     owner: bgruening
     tool_panel_section_label: RNA Analysis
 
@@ -1005,6 +1049,10 @@ tools:
     tool_panel_section_label: Phenotype Association
 
   - name: tbprofiler
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: socru
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -2192,6 +2240,50 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: hyphy_busted
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_bgm
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_gard
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_absrel
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_fubar
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_relax
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_fade
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_sm19
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_meme
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_slac
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_fel
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: ucsc_fasplit
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ manipulation
@@ -2259,3 +2351,11 @@ tools:
   - name: compose_text_param
     owner: iuc
     tool_panel_section_label: Expression Tools
+
+  - name: pathview
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
+  - name: moabs
+    owner: iuc
+    tool_panel_section_label: Epigenetics

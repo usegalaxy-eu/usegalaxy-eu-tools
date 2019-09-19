@@ -4,6 +4,11 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  
+  - name: padel
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+  
   - name: gmx_npt
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
@@ -156,6 +161,14 @@ tools:
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
 
+  - name: autodock_vina_prepare_ligand
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: autodock_vina
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
   - name: get_online_data
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
@@ -185,5 +198,9 @@ tools:
     tool_panel_section_label: ChemicalToolBox
  
   - name: chembl
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+ 
+  - name: fpocket
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
