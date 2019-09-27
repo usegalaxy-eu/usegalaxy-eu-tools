@@ -29,7 +29,7 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 
 %.install: %
 	@echo "Installing any updated versions of $<"
-	@-shed-tools install --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
+	@-shed-tools install --toolsfile --install_resolver_dependencies $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
 
 
 update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
