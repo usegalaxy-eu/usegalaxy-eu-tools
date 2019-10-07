@@ -741,6 +741,10 @@ tools:
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ manipulation
 
+  - name: abyss
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: shovill
     owner: iuc
     tool_panel_section_label: Assembly
@@ -1049,6 +1053,10 @@ tools:
     tool_panel_section_label: Phenotype Association
 
   - name: tbprofiler
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: tbvcfreport
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -2297,6 +2305,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: scater_create_qcmetric_ready_sce
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scater_plot_tsne
     owner: iuc
     tool_panel_section_label: Single-cell
 

@@ -105,6 +105,7 @@ tools:
   revisions:
   - 10c98fab6c5a
   - 59a4c97b85d6
+  - 60f888039fb2
   - b818b23df1e0
   tool_panel_section_label: RNA Analysis
 - name: slamdunk
@@ -135,6 +136,7 @@ tools:
   revisions:
   - 1c75aa5de15e
   - 2953303df011
+  - 5ae5c312d718
   - 63f76b9f4ba7
   tool_panel_section_label: RNA Analysis
 - name: scpipe
@@ -193,6 +195,7 @@ tools:
   - 0ea86f6bf2a1
   - 2074627b0f83
   - c171f2b7d76e
+  - c237ba772225
   - feab9265552d
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap
@@ -251,6 +254,7 @@ tools:
 - name: circos
   owner: iuc
   revisions:
+  - 014a21767ac4
   - ae9994cf526f
   - ef5f8bbf7730
   tool_panel_section_label: Graph/Display Data
@@ -480,6 +484,7 @@ tools:
   owner: devteam
   revisions:
   - 0232f19d300f
+  - 69e0806b63a4
   - 9f243677c4c6
   tool_panel_section_label: Convert Formats
 - name: ucsc_twobittofa
@@ -637,7 +642,6 @@ tools:
   - 8f33c9fbc119
   - 9de82b4963e6
   - ca2def38369c
-  - d0743cb18ed8
   - dba3c47e1798
   - fa30df9b79c2
   tool_panel_section_label: Graph/Display Data
@@ -1200,6 +1204,11 @@ tools:
   - 3987db70a4b0
   - f95284aa2946
   tool_panel_section_label: FASTA/FASTQ manipulation
+- name: abyss
+  owner: iuc
+  revisions:
+  - 2b89471cca20
+  tool_panel_section_label: Assembly
 - name: shovill
   owner: iuc
   revisions:
@@ -1418,6 +1427,7 @@ tools:
   - 2c0ca397d302
   - 4de6e2e40c7a
   - 5a60f347f566
+  - 666bb48b1007
   - 6b0ba6de1424
   - e7e885f718fb
   tool_panel_section_label: RNA Analysis
@@ -1425,11 +1435,13 @@ tools:
   owner: bgruening
   revisions:
   - 908a8d400fa2
+  - c0ea43315baf
   tool_panel_section_label: RNA Analysis
 - name: salmonquantmerge
   owner: bgruening
   revisions:
   - 43658f594542
+  - 992c077f6e41
   tool_panel_section_label: RNA Analysis
 - name: featurecounts
   owner: iuc
@@ -1650,6 +1662,7 @@ tools:
 - name: bwameth
   owner: iuc
   revisions:
+  - 29bdbc353f20
   - 95219305823a
   - a6ea26c1f225
   - f7094efef903
@@ -1752,6 +1765,11 @@ tools:
   - 19793eecc9f0
   - 49b819f88c2b
   - 5182e1a99313
+  tool_panel_section_label: Annotation
+- name: tbvcfreport
+  owner: iuc
+  revisions:
+  - 02d81b994ef5
   tool_panel_section_label: Annotation
 - name: socru
   owner: iuc
@@ -2652,11 +2670,13 @@ tools:
   owner: iuc
   revisions:
   - 95e37a28704b
+  - e38d181d4e72
   - e880ddd2d8fa
   tool_panel_section_label: RAD-seq
 - name: stacks_genotypes
   owner: iuc
   revisions:
+  - 00f4a4e553ae
   - 5af94af9ec8f
   - dbe3901aace2
   tool_panel_section_label: RAD-seq
@@ -2665,10 +2685,12 @@ tools:
   revisions:
   - 2b1dd7ab69f7
   - b8827c571fbd
+  - eb1e95f88e96
   tool_panel_section_label: RAD-seq
 - name: stacks_ustacks
   owner: iuc
   revisions:
+  - b6de94f2edc0
   - c2e3eca527c2
   - e5c97f09fe06
   tool_panel_section_label: RAD-seq
@@ -2676,6 +2698,7 @@ tools:
   owner: iuc
   revisions:
   - b08cd32d03ad
+  - bc108981ca68
   - fea78fd36a05
   tool_panel_section_label: RAD-seq
 - name: stacks_procrad
@@ -2683,17 +2706,20 @@ tools:
   revisions:
   - 57910d476be9
   - 5d12647ff71f
+  - 8fe258d72ff3
   tool_panel_section_label: RAD-seq
 - name: stacks_refmap
   owner: iuc
   revisions:
   - 4ee074ca88fb
+  - 7c42e6768c41
   - ba76bd1eef47
   tool_panel_section_label: RAD-seq
 - name: stacks_cstacks
   owner: iuc
   revisions:
   - 5bd1418f4227
+  - dab92afa0c98
   - ff1f282d731e
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks
@@ -2701,18 +2727,21 @@ tools:
   revisions:
   - 2360d8cf42f7
   - 77f5db795774
+  - 9d0ac63dcfcd
   tool_panel_section_label: RAD-seq
 - name: stacks_pstacks
   owner: iuc
   revisions:
   - 0f16a6c30085
   - 7ebc7d229deb
+  - ede5223bc7f1
   tool_panel_section_label: RAD-seq
 - name: stacks_populations
   owner: iuc
   revisions:
   - 45db1ba16163
   - 47e83073b7a1
+  - d504d945a655
   tool_panel_section_label: RAD-seq
 - name: column_order_header_sort
   owner: iuc
@@ -2745,6 +2774,7 @@ tools:
 - name: data_manager_salmon_index_builder
   owner: iuc
   revisions:
+  - 6b0f2bdcc1b7
   - 7d4fd734b078
   tool_panel_section_label: Data Managers
 - name: data_manager_kallisto_index_builder
@@ -3950,6 +3980,11 @@ tools:
   revisions:
   - 2d455a7e8a3d
   - fd808de478b1
+  tool_panel_section_label: Single-cell
+- name: scater_plot_tsne
+  owner: iuc
+  revisions:
+  - a30f4bfe8f01
   tool_panel_section_label: Single-cell
 - name: scater_filter
   owner: iuc

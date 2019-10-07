@@ -2,6 +2,41 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: rdock_rbdock
+  owner: bgruening
+  revisions:
+  - 1a1600fde77a
+  tool_panel_section_label: ChemicalToolBox
+- name: rdock_rbcavity
+  owner: bgruening
+  revisions:
+  - 06f376dc117a
+  tool_panel_section_label: ChemicalToolBox
+- name: sucos_max_score
+  owner: bgruening
+  revisions:
+  - bb5365381c8f
+  tool_panel_section_label: ChemicalToolBox
+- name: sucos_clustering
+  owner: bgruening
+  revisions:
+  - f80cfac80c53
+  tool_panel_section_label: ChemicalToolBox
+- name: sucos_docking_scoring
+  owner: bgruening
+  revisions:
+  - f8f53668d5a2
+  tool_panel_section_label: ChemicalToolBox
+- name: sucos_clustering
+  owner: bgruening
+  revisions:
+  - f80cfac80c53
+  tool_panel_section_label: ChemicalToolBox
+- name: sucos_clustering
+  owner: bgruening
+  revisions:
+  - f80cfac80c53
+  tool_panel_section_label: ChemicalToolBox
 - name: padel
   owner: bgruening
   revisions:
@@ -260,6 +295,7 @@ tools:
   owner: bgruening
   revisions:
   - 4f7c5cad3377
+  - 73c2c9774c2d
   - 761762031eee
   tool_panel_section_label: ChemicalToolBox
 - name: autodock_vina_prepare_ligand
@@ -271,6 +307,7 @@ tools:
   owner: bgruening
   revisions:
   - 0ae768a0e5c0
+  - 7b2f205b3f68
   tool_panel_section_label: ChemicalToolBox
 - name: get_online_data
   owner: bgruening
