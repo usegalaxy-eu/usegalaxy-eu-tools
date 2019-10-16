@@ -6,151 +6,151 @@ install_tool_dependencies: false
 tools:
   - name: dropletutils_read_10x
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_utils_viz'
     
   - name: gtf2gene_list
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_utils_viz'
     
   - name: retrieve_scxa
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_get-scrna'
     
   - name: hca_matrix_downloader
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_get-scrna'
     
   - name: sc3_calc_biology
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_sc3_tools'
     
   - name: sc3_calc_consens
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_sc3_tools'
     
   - name: sc3_calc_dists
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_sc3_tools'
     
   - name: sc3_calc_transfs
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_sc3_tools'
 #    
   - name: sc3_estimate_k
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_sc3_tools'
     
   - name: sc3_kmeans
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_sc3_tools'
     
   - name: sc3_prepare
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_sc3_tools'
     
   - name: scanpy_compute_graph
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_filter_cells
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_filter_genes
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_find_cluster
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_find_markers
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_find_variable_genes
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_normalise_data
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_parameter_iterator
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_read_10x
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_run_pca
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_run_tsne
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_run_umap
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_scale_data
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: seurat_create_seurat_object
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_dim_plot
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_export_cellbrowser
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_filter_cells
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_find_clusters
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_find_markers
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_find_variable_genes
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_normalise_data
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_read10x
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_run_pca
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_run_tsne
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_scale_data
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_seurat_tools'
   
   - name: ucsc_cell_browser
     owner: ebi-gxa
-    tool_panel_section_label: 'HCA-Single Cell'
+    tool_panel_section_id: 'hca_sc_utils_viz'
     
   - name: text_processing
     owner: bgruening
