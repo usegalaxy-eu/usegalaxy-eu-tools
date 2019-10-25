@@ -849,6 +849,11 @@ tools:
   - d6694932c5e0
   - f8aad74cc8c1
   tool_panel_section_label: Multiple Alignments
+- name: sina
+  owner: iuc
+  revisions:
+  - fd62f1b940f6
+  tool_panel_section_label: Multiple Alignments
 - name: bio_hansel
   owner: iuc
   revisions:
@@ -2246,6 +2251,7 @@ tools:
   - 1829900b5dcd
   - 2363ef414c9b
   - 70b8e9908ea8
+  - a87ae767b01d
   - c82130967bd2
   - f867422772d6
   tool_panel_section_label: Variant Calling
@@ -2438,6 +2444,16 @@ tools:
   - 68ba55e96489
   - a4a10c7924d1
   tool_panel_section_label: SAM Tools
+- name: samtools_markdup
+  owner: iuc
+  revisions:
+  - 83b8e36e9cbe
+  tool_panel_section_label: SAM Tools
+- name: samtools_merge
+  owner: iuc
+  revisions:
+  - 740ce0a18f0d
+  tool_panel_section_label: SAM Tools
 - name: samtools_mpileup
   owner: devteam
   revisions:
@@ -2504,6 +2520,21 @@ tools:
   revisions:
   - 38ea74bd4054
   - 80fffde691eb
+  tool_panel_section_label: SAM Tools
+- name: samtools_view
+  owner: iuc
+  revisions:
+  - ff313de5f7f4
+  tool_panel_section_label: SAM Tools
+- name: samtools_fastx
+  owner: iuc
+  revisions:
+  - a8d69aee190e
+  tool_panel_section_label: SAM Tools
+- name: samtools_fixmate
+  owner: iuc
+  revisions:
+  - bc0cc7bfbfe9
   tool_panel_section_label: SAM Tools
 - name: sam_pileup
   owner: devteam
