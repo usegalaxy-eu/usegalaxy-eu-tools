@@ -227,10 +227,10 @@ tools:
     tool_panel_section_label: Convert Formats
   - name: tabular_to_fasta
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_to_tabular
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastqtofasta
     owner: devteam
     tool_panel_section_label: 'Quality Control'
@@ -440,49 +440,49 @@ tools:
     tool_panel_section_label: Metagenomic analyses
   - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: lighter
     owner: bgruening
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: sickle
     owner: iuc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_compute_length
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_join
     owner: lparsons
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: splitfasta
     owner: rnateam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_clip
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_demultiplex
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_demultiplex_illu
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_markdupes
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: align_back_trans
     owner: peterjc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: seq_filter_by_mapping
     owner: peterjc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: pear
     owner: iuc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_artifacts_filter
     owner: devteam
     tool_panel_section_label: 'Quality Control'
@@ -497,100 +497,100 @@ tools:
     tool_panel_section_label: 'Quality Control'
   - name: fasta_filter_by_length
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_concatenate_by_species
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_collapser
     owner: devteam
     tool_panel_section_label: 'Quality Control'
   - name: fasta_nucleotide_changer
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_formatter
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: trim_galore
     owner: bgruening
     tool_panel_section_label: 'Quality Control'
   - name: fastqc
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: trimmomatic
     owner: pjbriggs
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: cutadapt
     owner: lparsons
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: short_reads_trim_seq
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: short_reads_figure_score
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: tabular_to_fastq
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_trimmer_by_quality
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_trimmer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_to_tabular
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_stats
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_splitter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_deinterlacer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_masker_by_quality
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_manipulation
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_groomer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_filter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_combiner
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_trimmer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_reverse_complement
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_renamer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_quality_statistics
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_quality_filter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_quality_converter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_quality_boxplot
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: multiqc
     owner: iuc
     tool_panel_section_label: 'Quality Control'
