@@ -26,6 +26,16 @@ tools:
   - 05304c5c195d
   - b2a6ce371781
   tool_panel_section_label: Single-cell
+- name: bedtools
+  owner: iuc
+  revisions:
+  - 4f7a5ccd2ae9
+  - 6bb3cd018203
+  - b28e0cfa7ba1
+  - b8348686a0b9
+  - dde39ba9c031
+  - e19bebe96cd2
+  tool_panel_section_label: Operate on Genomic Intervals
 - name: collection_element_identifiers
   owner: iuc
   revisions:
@@ -116,7 +126,7 @@ tools:
   owner: iuc
   revisions:
   - bda6012394f7
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: pipelign
   owner: iuc
   revisions:
@@ -328,6 +338,11 @@ tools:
   revisions:
   - 5ff75eb1a893
   tool_panel_section_label: Text Manipulation
+- name: maxbin2
+  owner: mbernt
+  revisions:
+  - 6a638de7915c
+  tool_panel_section_label: Metagenomic Analysis
 - name: column_maker
   owner: devteam
   revisions:
@@ -483,6 +498,7 @@ tools:
   revisions:
   - 0232f19d300f
   - 69e0806b63a4
+  - 6ea09f60dee9
   - 9f243677c4c6
   tool_panel_section_label: Convert Formats
 - name: ucsc_twobittofa
@@ -517,6 +533,7 @@ tools:
   revisions:
   - 4844c1810c16
   - 723b5b38d88a
+  - a64c24430f5e
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_to_fasta
   owner: devteam
@@ -841,7 +858,7 @@ tools:
   owner: iuc
   revisions:
   - e3698ac146d7
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: crispr_studio
   owner: iuc
   revisions:
@@ -853,106 +870,106 @@ tools:
   - a2c047a2c380
   - c58e19ff504a
   - db56c8e79b1e
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: vegan_fisher_alpha
   owner: iuc
   revisions:
   - a5a453f92273
   - d6b92ca3a9a1
   - f9966e11885b
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: vegan_rarefaction
   owner: iuc
   revisions:
   - 3d1d965b6423
   - b0d5976540e3
   - dd2705a31239
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: vsearch
   owner: iuc
   revisions:
   - 576963db5f1b
   - b3c7199d8786
   - fae6527990af
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_filter_abundance
   owner: iuc
   revisions:
   - a4970dfc331c
   - dbe616d126b1
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_filter_below_abundance_cutoff
   owner: iuc
   revisions:
   - bf716cfc3225
   - d9cc87dfec6e
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_extract_partitions
   owner: iuc
   revisions:
   - 518ba4a77274
   - 7d8138b4a593
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_abundance_distribution
   owner: iuc
   revisions:
   - 5a97c5bbd51e
   - a02efb62565b
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_count_median
   owner: iuc
   revisions:
   - 5efc5f21d0c1
   - 7aa811aa3b93
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_partition
   owner: iuc
   revisions:
   - 766ec3dad7ff
   - c393687bd857
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_normalize_by_median
   owner: iuc
   revisions:
   - bfd859f04a89
   - f0290a079720
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: khmer_abundance_distribution_single
   owner: iuc
   revisions:
   - 09c6a051c5fd
   - 792d520ba676
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: t2t_report
   owner: devteam
   revisions:
   - 592acb9505fc
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: t2ps
   owner: devteam
   revisions:
   - 4d9910e996f7
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: poisson2test
   owner: devteam
   revisions:
   - 5ff18ec88181
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: lca_wrapper
   owner: devteam
   revisions:
   - 33e8ed5a4601
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: gi2taxonomy
   owner: devteam
   revisions:
   - 7b1b03c4465d
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: find_diag_hits
   owner: devteam
   revisions:
   - acf51ff24c7d
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   revisions:
@@ -970,6 +987,7 @@ tools:
 - name: fastq_paired_end_interlacer
   owner: devteam
   revisions:
+  - 3e396e702cea
   - b89bdf6acb6c
   - ec6ddf449651
   - ef49268ee579
@@ -977,6 +995,7 @@ tools:
 - name: fastq_paired_end_joiner
   owner: devteam
   revisions:
+  - 09a2199cd356
   - 2793d1d765b9
   - 6a7f5da7c76d
   - 822cc1e6274e
@@ -1071,6 +1090,7 @@ tools:
 - name: fastq_paired_end_joiner
   owner: devteam
   revisions:
+  - 09a2199cd356
   - 2793d1d765b9
   - 6a7f5da7c76d
   - 822cc1e6274e
@@ -1088,6 +1108,7 @@ tools:
 - name: tabular_to_fastq
   owner: devteam
   revisions:
+  - 68f57cc8fad0
   - 92034dcbb40a
   - b8cdc0507586
   tool_panel_section_label: FASTA/FASTQ
@@ -1102,29 +1123,34 @@ tools:
   owner: devteam
   revisions:
   - 2d0d13b0b0f1
+  - 33794bdb7fe0
   - e0cfb5a703ce
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_to_tabular
   owner: devteam
   revisions:
+  - 614a63f14adf
   - 7da7ddea4425
   - ccf4e1d1fcbe
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_stats
   owner: devteam
   revisions:
+  - b1cea1b2fcd0
   - daaf552153fe
   - e2cf940128d5
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_paired_end_splitter
   owner: devteam
   revisions:
+  - 35e38452bb3f
   - 9bbe5b7ffa12
   - c80bce242eec
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_paired_end_interlacer
   owner: devteam
   revisions:
+  - 3e396e702cea
   - b89bdf6acb6c
   - ec6ddf449651
   - ef49268ee579
@@ -1132,12 +1158,14 @@ tools:
 - name: fastq_paired_end_deinterlacer
   owner: devteam
   revisions:
+  - 03d57fea6482
   - b7ce72b00e62
   - f0949bc49926
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_masker_by_quality
   owner: devteam
   revisions:
+  - 9282652e7234
   - 9d234265981e
   - eb592e9ec47a
   tool_panel_section_label: FASTA/FASTQ
@@ -1145,24 +1173,28 @@ tools:
   owner: devteam
   revisions:
   - 4ac14b275aca
+  - 7861f3b10c68
   - bb07615a5b6a
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_groomer
   owner: devteam
   revisions:
   - 71e5fa25b8a2
+  - 8611b80a14d6
   - e4d28c94242d
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_filter
   owner: devteam
   revisions:
   - 06934412f56d
+  - 10b75444feae
   - b957f55f3955
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_combiner
   owner: devteam
   revisions:
   - 56389130cb63
+  - b05e39b9c170
   - e711d52c7509
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_trimmer
@@ -1479,6 +1511,7 @@ tools:
   revisions:
   - 171b827eadf2
   - 606b7748965d
+  - 940901f74064
   - c9cfec002f71
   - ca0588b09438
   - f7564c3f9dc0
@@ -1489,11 +1522,13 @@ tools:
   - 15f60c2e2d78
   - 3abd51c4b151
   - 64094e19077d
+  - b34de8dc0f64
   tool_panel_section_label: RNA Analysis
 - name: trinity_align_and_estimate_abundance
   owner: iuc
   revisions:
   - 478f36effca1
+  - 6d6b72d14170
   - a21e229da9a1
   - aed859a021c0
   - afd41a430a76
@@ -1504,11 +1539,13 @@ tools:
   - 0f445c315a08
   - 13ab393ba794
   - 77fc547df6ff
+  - cdde9062b49c
   - d6a479fd4281
   tool_panel_section_label: RNA Analysis
 - name: trinity_contig_exn50_statistic
   owner: iuc
   revisions:
+  - 03ca5ddc37a9
   - 1e8a2c87461a
   - 34a018cbee9c
   - 8fed16891aaf
@@ -1519,6 +1556,7 @@ tools:
   revisions:
   - 6821f5ea01d8
   - 7bd8f4770cec
+  - b10270739c1b
   - e406ac71165d
   - e659504d166c
   tool_panel_section_label: RNA Analysis
@@ -1529,6 +1567,7 @@ tools:
   - 1d689e4e1caf
   - 2af5fd8210c5
   - 48537273a30b
+  - fd588e138aa6
   tool_panel_section_label: RNA Analysis
 - name: trinotate
   owner: iuc
@@ -1941,16 +1980,6 @@ tools:
   - 792f3cb0eff4
   - c5bb987015c5
   tool_panel_section_label: Annotation
-- name: bedtools
-  owner: iuc
-  revisions:
-  - 4f7a5ccd2ae9
-  - 6bb3cd018203
-  - b28e0cfa7ba1
-  - b8348686a0b9
-  - dde39ba9c031
-  - e19bebe96cd2
-  tool_panel_section_label: Operate on Genomic Intervals
 - name: picard
   owner: devteam
   revisions:
@@ -1969,7 +1998,7 @@ tools:
   - 8992d258e42f
   - ce22ceec214a
   - dc492eb6a4fc
-  tool_panel_section_label: EMBOSS Tools
+  tool_panel_section_label: EMBOSS
 - name: kraken2
   owner: iuc
   revisions:
@@ -2542,21 +2571,25 @@ tools:
 - name: qualimap_bamqc
   owner: iuc
   revisions:
+  - 4a89c6f84425
   - ac607906f10a
   tool_panel_section_label: SAM/BAM
 - name: qualimap_multi_bamqc
   owner: iuc
   revisions:
   - 16beb83e370c
+  - adfe9fda2c5f
   tool_panel_section_label: SAM/BAM
 - name: qualimap_rnaseq
   owner: iuc
   revisions:
   - 613e6446ea5d
+  - ce0da6c9f49e
   tool_panel_section_label: RNA Analysis
 - name: qualimap_counts
   owner: iuc
   revisions:
+  - 1672b9bea89b
   - e020be4f281b
   tool_panel_section_label: RNA Analysis
 - name: gemini_db_info
@@ -2567,12 +2600,12 @@ tools:
   - b597e1cd14b1
   - bc8b01d1b496
   - f3cc64057b4e
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_inheritance
   owner: iuc
   revisions:
   - 3123ce7acd0e
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_windower
   owner: iuc
   revisions:
@@ -2581,7 +2614,7 @@ tools:
   - 9aad9ef0502c
   - 9b462be5a604
   - dc57a6135295
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_burden
   owner: iuc
   revisions:
@@ -2590,7 +2623,7 @@ tools:
   - 95a149a9a75d
   - c70d79e0eed7
   - fd6052cdc2c3
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_gene_wise
   owner: iuc
   revisions:
@@ -2600,7 +2633,7 @@ tools:
   - a26f0a30df65
   - bc66ebfd4159
   - d46017ddbf94
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_stats
   owner: iuc
   revisions:
@@ -2610,7 +2643,7 @@ tools:
   - ac761838cdaf
   - cdd90678004a
   - ee894347fcd6
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_amend
   owner: iuc
   revisions:
@@ -2619,7 +2652,7 @@ tools:
   - 4e0b84607b3d
   - a02cd62adb70
   - bff8fad3fb69
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_pathways
   owner: iuc
   revisions:
@@ -2629,7 +2662,7 @@ tools:
   - 69b5327a1f88
   - 6b09debcfc49
   - c63b7eefb07a
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_actionable_mutations
   owner: iuc
   revisions:
@@ -2638,7 +2671,7 @@ tools:
   - 712aa8283200
   - 9f0f5e984ae3
   - a0379503290f
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_lof_sieve
   owner: iuc
   revisions:
@@ -2648,7 +2681,7 @@ tools:
   - be7ac09bc2fa
   - dda378a72430
   - e1920f41a1ca
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_query
   owner: iuc
   revisions:
@@ -2658,7 +2691,7 @@ tools:
   - 7ca6716748c2
   - ab195e756e5e
   - cd00221d67cb
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_fusions
   owner: iuc
   revisions:
@@ -2668,7 +2701,7 @@ tools:
   - 8295781a3c27
   - 91d53f89ca54
   - b35fd707c586
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_load
   owner: iuc
   revisions:
@@ -2679,7 +2712,7 @@ tools:
   - b2c25142267e
   - b5b53c27baca
   - cf61daf064fe
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_annotate
   owner: iuc
   revisions:
@@ -2688,7 +2721,7 @@ tools:
   - 5bcaca8085bd
   - 8da05bf2b1d1
   - 8f53b238a360
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_roh
   owner: iuc
   revisions:
@@ -2698,7 +2731,7 @@ tools:
   - ce54eb6fd5f9
   - d65ca2fa673b
   - e7ad2a721c4b
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_set_somatic
   owner: iuc
   revisions:
@@ -2708,7 +2741,7 @@ tools:
   - '991049484627'
   - 9ed33f571d1d
   - ef9991a4a9a7
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_qc
   owner: iuc
   revisions:
@@ -2718,7 +2751,7 @@ tools:
   - 9872131c2377
   - 9e83673fa6d2
   - a875f940d8fd
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: gemini_interactions
   owner: iuc
   revisions:
@@ -2728,7 +2761,7 @@ tools:
   - 527c8e4a356f
   - 7028ca3cac1c
   - a6d326ffbb72
-  tool_panel_section_label: Gemini Tools
+  tool_panel_section_label: Gemini
 - name: stacks_sstacks
   owner: iuc
   revisions:
@@ -2985,12 +3018,12 @@ tools:
   owner: iuc
   revisions:
   - 280386b252a5
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: gdcwebapp
   owner: iuc
   revisions:
   - 7709b8ca3296
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Get Data
 - name: spades
   owner: nml
   revisions:
@@ -3004,7 +3037,7 @@ tools:
   owner: iuc
   revisions:
   - 56236acaad45
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: fraggenescan
   owner: iuc
   revisions:
@@ -3948,6 +3981,7 @@ tools:
   owner: iuc
   revisions:
   - 1bb2ba6d3d96
+  - 4efdca267d51
   - 78c75f134c16
   - 862f5a86854d
   - f9bf6a8d8547
