@@ -115,6 +115,11 @@ tools:
   revisions:
   - d38cfb922f95
   tool_panel_section_label: Variant Calling
+- name: gatk4_mutect2
+  owner: iuc
+  revisions:
+  - f41a1e03538b
+  tool_panel_section_label: Variant Calling
 - name: slamdunk
   owner: iuc
   revisions:
@@ -126,6 +131,61 @@ tools:
   owner: iuc
   revisions:
   - bda6012394f7
+  tool_panel_section_label: Metagenomic Analysis
+- name: data_manager_dada2
+  owner: iuc
+  revisions:
+  - f57c13f5878b
+  tool_panel_section_label: Data Managers
+- name: dada2_filterandtrim
+  owner: iuc
+  revisions:
+  - cc41546adf56
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_dada
+  owner: iuc
+  revisions:
+  - ce4aec98949d
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_removebimeradenovo
+  owner: iuc
+  revisions:
+  - 1937c2b4da7a
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_learnerrors
+  owner: iuc
+  revisions:
+  - fd892c845981
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_makesequencetable
+  owner: iuc
+  revisions:
+  - 6e0946238688
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_assigntaxonomyaddspecies
+  owner: iuc
+  revisions:
+  - 18517edb4733
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_seqcounts
+  owner: iuc
+  revisions:
+  - d26cea4b4cc4
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_mergepairs
+  owner: iuc
+  revisions:
+  - 805daed21ef3
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_plotcomplexity
+  owner: iuc
+  revisions:
+  - ab2030f217a9
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_plotqualityprofile
+  owner: iuc
+  revisions:
+  - 371afe17d247
   tool_panel_section_label: Metagenomic Analysis
 - name: pipelign
   owner: iuc
