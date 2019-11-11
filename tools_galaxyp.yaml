@@ -42,7 +42,7 @@ tools:
 
   - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_label: FASTA/FASTQ manipulation
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: maxquant
     owner: galaxyp
@@ -210,4 +210,12 @@ tools:
     
   - name: metaquantome_viz
     owner: galaxyp
-    tool_panel_section_label: Proteomics  
+    tool_panel_section_label: Proteomics 
+    
+  - name: maxbin2
+    owner: mbernt
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: msms_extractor
+    owner: galaxyp
+    tool_panel_section_label: Convert Formats

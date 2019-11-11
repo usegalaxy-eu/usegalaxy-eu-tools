@@ -20,13 +20,13 @@ tools:
   - 9337dd1fbc66
   - d2cf2c0c8a11
   - e28c965eeed4
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
 - name: prinseq
   owner: iuc
   revisions:
   - 02befcb391f5
   - 6b865dde1baa
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
 - name: trim_galore
   owner: bgruening
   revisions:
@@ -37,7 +37,7 @@ tools:
   - 949f01671246
   - eb546ac2aab2
   - f1e71aeaa923
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_label: FASTA/FASTQ
 - name: trimmomatic
   owner: pjbriggs
   revisions:
@@ -46,7 +46,7 @@ tools:
   - 415a165d92bb
   - a60283899c6d
   - f8a9a5eaca8a
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_label: FASTA/FASTQ
 - name: multiqc
   owner: iuc
   revisions:
@@ -54,7 +54,7 @@ tools:
   - 1c2db0054039
   - b2f1f75d49c4
   - e4574a4d09d8
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
 - name: cdhit
   owner: bebatut
   revisions:
@@ -128,12 +128,12 @@ tools:
   revisions:
   - b3c7199d8786
   - fae6527990af
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: nonpareil
   owner: iuc
   revisions:
   - 280386b252a5
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: megahit
   owner: iuc
   revisions:
@@ -158,7 +158,7 @@ tools:
   owner: iuc
   revisions:
   - 56236acaad45
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_qiime_database_downloader
   owner: iuc
   revisions:
@@ -168,27 +168,27 @@ tools:
   owner: bebatut
   revisions:
   - 2bfa9b200600
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: group_humann2_uniref_abundances_to_go
   owner: bebatut
   revisions:
   - cad28d7b49d2
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: compare_humann2_output
   owner: bebatut
   revisions:
   - c1aca37cb1fc
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: interproscan5
   owner: bgruening
   revisions:
   - 82547f0d3a29
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: combine_metaphlan2_humann2
   owner: bebatut
   revisions:
   - 31394a0c0242
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: export2graphlan
   owner: iuc
   revisions:

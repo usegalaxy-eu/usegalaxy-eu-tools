@@ -43,9 +43,12 @@ def update_file(fn, dry):
         new_tool = {
             'name': tool['name'],
             'owner': tool['owner'],
-            'tool_panel_section_label': tool['tool_panel_section_label'],
             'revisions': sorted(list(set(revisions))),  # Cast to list for yaml serialization
         }
+        if tool.get('tool_panel_section_id'):
+            new_tool.update({'tool_panel_section_id': tool['tool_panel_section_id']})
+        if tool.get('tool_panel_section_label'):
+            new_tool.update({'tool_panel_section_label': tool['tool_panel_section_label']})
 
         clean_lockfile['tools'].append(new_tool)
 

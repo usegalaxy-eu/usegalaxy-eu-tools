@@ -6,6 +6,8 @@ tools:
   owner: bgruening
   revisions:
   - 1a1600fde77a
+  - 5f291eef9ef3
+  - bad150d12198
   tool_panel_section_label: ChemicalToolBox
 - name: rdock_rbcavity
   owner: bgruening
@@ -15,26 +17,31 @@ tools:
 - name: sucos_max_score
   owner: bgruening
   revisions:
+  - 8eab6d2b7bdf
   - bb5365381c8f
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
   owner: bgruening
   revisions:
+  - 334ad24525db
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_docking_scoring
   owner: bgruening
   revisions:
+  - 2e67eea82ff7
   - f8f53668d5a2
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
   owner: bgruening
   revisions:
+  - 334ad24525db
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
   owner: bgruening
   revisions:
+  - 334ad24525db
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
 - name: padel
@@ -53,27 +60,34 @@ tools:
   owner: chemteam
   revisions:
   - acce5039ece7
+  - b61cbdf78765
+  - d76bea4c85f3
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_setup
   owner: chemteam
   revisions:
+  - 35b314fe6c90
   - 4c48f2526697
   - acc9922f3eab
+  - b43abebffad6
   - c124921a9e5f
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_em
   owner: chemteam
   revisions:
+  - 40835063146c
   - 5ced6b7070b6
   - 6d9a9ab96195
+  - c1e98d48b8b4
   - ea7b9183bf30
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_solvate
   owner: chemteam
   revisions:
-  - 65946f250c89
+  - 7161b230adad
   - 77aaf9a68166
   - b37a1d7bf6c2
+  - cdacad684da1
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_md
   owner: chemteam
@@ -93,11 +107,20 @@ tools:
   owner: chemteam
   revisions:
   - 33ed3c26b8c2
+  - 7445eb668895
   - 9987b0933704
+  - f2faba46d680
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_sim
+  owner: chemteam
+  revisions:
+  - 1a5960636405
+  - ec3f665cca3e
   tool_panel_section_label: ChemicalToolBox
 - name: ctb_rdkit_descriptors
   owner: bgruening
   revisions:
+  - 617d4555d8d3
   - 6674260c1459
   - 749cc765636b
   tool_panel_section_label: ChemicalToolBox
@@ -105,17 +128,20 @@ tools:
   owner: chemteam
   revisions:
   - 0b8a0ce446f5
+  - 539fb45630e6
   - ddb1ae2cf028
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_angle
   owner: chemteam
   revisions:
   - ad135cf42274
+  - e7d0075052c9
   - fc7293c6cb6a
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_rdf
   owner: chemteam
   revisions:
+  - 36babbdd7818
   - 49dac57d004a
   - 9bb57bd1fdc8
   tool_panel_section_label: ChemicalToolBox
@@ -123,44 +149,57 @@ tools:
   owner: chemteam
   revisions:
   - 554f60da9c8f
+  - d8178fe9aaff
   - f95d4348ed7c
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_distance
   owner: chemteam
   revisions:
+  - 312f912de69d
   - 489b25966bb9
   - c33b972fe040
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_ramachandran_plot
   owner: chemteam
   revisions:
+  - ce0728b92289
   - d710c7f00ae6
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_hbonds
   owner: chemteam
   revisions:
   - 469ad3ea5a5f
+  - 5c38e38dbc35
+  tool_panel_section_label: ChemicalToolBox
+- name: vmd_hbonds
+  owner: chemteam
+  revisions:
+  - 8aa5e465b043
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_cosine_analysis
   owner: chemteam
   revisions:
+  - d18e7db42633
   - ebeb72aa39a8
   tool_panel_section_label: ChemicalToolBox
 - name: bio3d_rmsf
   owner: chemteam
   revisions:
   - 4354d92dc1aa
+  - 6bcb804a54c3
   - e838317708a6
   tool_panel_section_label: ChemicalToolBox
 - name: bio3d_rmsd
   owner: chemteam
   revisions:
   - 75fd897bd85d
+  - 77e28e1da9f4
   - f871c9a8cb7c
   tool_panel_section_label: ChemicalToolBox
 - name: bio3d_pca
   owner: chemteam
   revisions:
+  - 24867ab16f36
   - 994c509873db
   - f56fb2762abb
   tool_panel_section_label: ChemicalToolBox
@@ -169,12 +208,14 @@ tools:
   revisions:
   - 65bfd1b90b96
   - 7ac6900f4790
+  - f61a718993fd
   tool_panel_section_label: ChemicalToolBox
 - name: bio3d_dccm
   owner: chemteam
   revisions:
   - 18440ff54f63
   - 386b4f4b6a85
+  - c9ae0c833ded
   tool_panel_section_label: ChemicalToolBox
 - name: prepare_ligands_for_docking
   owner: bgruening
@@ -297,6 +338,7 @@ tools:
   - 4f7c5cad3377
   - 73c2c9774c2d
   - 761762031eee
+  - 908880455b2d
   tool_panel_section_label: ChemicalToolBox
 - name: autodock_vina_prepare_ligand
   owner: bgruening
@@ -327,6 +369,7 @@ tools:
 - name: mordred
   owner: bgruening
   revisions:
+  - d074b0c2b54f
   - e2f40a02f31a
   - ea68b86303e2
   tool_panel_section_label: ChemicalToolBox
@@ -334,15 +377,18 @@ tools:
   owner: chemteam
   revisions:
   - 2e202f6c3034
+  - 597ee2f97479
   tool_panel_section_label: ChemicalToolBox
 - name: ambertools_antechamber
   owner: chemteam
   revisions:
   - 511c4bd8aa6d
+  - 59a0424937cc
   tool_panel_section_label: ChemicalToolBox
 - name: ambertools_parmchk2
   owner: chemteam
   revisions:
+  - 00ff41b1d49a
   - a0099ea2ef8b
   tool_panel_section_label: ChemicalToolBox
 - name: chembl
@@ -356,4 +402,9 @@ tools:
   owner: bgruening
   revisions:
   - 2063e965531c
+  tool_panel_section_label: ChemicalToolBox
+- name: sdf_to_tab
+  owner: bgruening
+  revisions:
+  - 06828e0cc8a7
   tool_panel_section_label: ChemicalToolBox

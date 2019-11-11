@@ -7,6 +7,11 @@ tools:
   revisions:
   - 86a20118e743
   tool_panel_section_label: Metabolomics
+- name: genform
+  owner: workflow4metabolomics
+  revisions:
+  - 963722c4e1da
+  tool_panel_section_label: Metabolomics
 - name: xcms_xcmsset
   owner: lecorguille
   revisions:
@@ -238,6 +243,7 @@ tools:
   - 38f509903a0b
   - 649cb1bafd3e
   - 9f5c0e23c205
+  - c18040b6e8b9
   tool_panel_section_label: Metabolomics
 - name: w4mjoinpn
   owner: eschen42
@@ -251,4 +257,19 @@ tools:
   - 2ae2d26e3270
   - ddaf84e15d06
   - ddcc33ff3205
+  tool_panel_section_label: Metabolomics
+- name: msconvert
+  owner: galaxyp
+  revisions:
+  - 9ec469ff191a
+  tool_panel_section_label: Metabolomics
+- name: thermo_raw_file_converter
+  owner: galaxyp
+  revisions:
+  - 77a18a61aeed
+  tool_panel_section_label: Metabolomics
+- name: msms_extractor
+  owner: galaxyp
+  revisions:
+  - 4bef80b09854
   tool_panel_section_label: Metabolomics

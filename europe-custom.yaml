@@ -227,16 +227,16 @@ tools:
     tool_panel_section_label: Convert Formats
   - name: tabular_to_fasta
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_to_tabular
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastqtofasta
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: fastq_to_fasta
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: length_and_gc_content
     owner: iuc
     tool_panel_section_label: Extract Features
@@ -386,214 +386,214 @@ tools:
     tool_panel_section_label: Multiple Alignments
   - name: vegan_diversity
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: vegan_fisher_alpha
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: vegan_rarefaction
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: vsearch
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_filter_abundance
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_filter_below_abundance_cutoff
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_extract_partitions
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_abundance_distribution
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_count_median
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_partition
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_normalize_by_median
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: khmer_abundance_distribution_single
     owner: iuc
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: t2t_report
     owner: devteam
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: t2ps
     owner: devteam
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: poisson2test
     owner: devteam
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: lca_wrapper
     owner: devteam
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: gi2taxonomy
     owner: devteam
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: find_diag_hits
     owner: devteam
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
   - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: lighter
     owner: bgruening
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: sickle
     owner: iuc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_compute_length
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_join
     owner: lparsons
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: splitfasta
     owner: rnateam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_clip
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_demultiplex
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_demultiplex_illu
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_markdupes
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: align_back_trans
     owner: peterjc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: seq_filter_by_mapping
     owner: peterjc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: pear
     owner: iuc
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_artifacts_filter
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: fastx_barcode_splitter
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: fastx_clipper
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: fastx_nucleotides_distribution
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: fasta_filter_by_length
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_concatenate_by_species
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_collapser
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: fasta_nucleotide_changer
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_formatter
     owner: devteam
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: trim_galore
     owner: bgruening
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
   - name: fastqc
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: trimmomatic
     owner: pjbriggs
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: cutadapt
     owner: lparsons
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: short_reads_trim_seq
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: short_reads_figure_score
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: tabular_to_fastq
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_trimmer_by_quality
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_trimmer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_to_tabular
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_stats
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_splitter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_paired_end_deinterlacer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_masker_by_quality
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_manipulation
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_groomer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_filter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_combiner
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_trimmer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_reverse_complement
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_renamer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastx_quality_statistics
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_quality_filter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_quality_converter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: fastq_quality_boxplot
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
   - name: multiqc
     owner: iuc
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
 
   - name: mira_assembler
     owner: peterjc
@@ -1029,7 +1029,7 @@ tools:
     tool_panel_section_label: Picard
   - name: emboss_5
     owner: devteam
-    tool_panel_section_label: EMBOSS Tools
+    tool_panel_section_label: EMBOSS
   - name: kraken_taxonomy_report
     owner: iuc
     tool_panel_section_label: NCBI Blast
@@ -1171,6 +1171,9 @@ tools:
   - name: vcftools_subset
     owner: devteam
     tool_panel_section_label: "Variant Calling"
+  - name: exomedepth
+    owner: crs4
+    tool_panel_section_label: "Variant Calling"
   - name: deeptools_plot_fingerprint
     owner: bgruening
     tool_panel_section_label: deepTools
@@ -1218,160 +1221,160 @@ tools:
     tool_panel_section_label: deepTools
   - name: tag_pileup_frequency
     owner: iuc
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: sam_to_bam
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: pileup_interval
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: bamtools
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: bamtools_split
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: ngsutils_bam_filter
     owner: iuc
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: bamtools_filter
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: sam_merge
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: bamhash
     owner: bgruening
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_bedcov
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_sort
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_rmdup
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_idxstats
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_slice_bam
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_mpileup
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_calmd
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_flagstat
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_reheader
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_split
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_stats
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: bam_to_sam
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_sort
     owner: iuc
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: sam_pileup
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_filter
     owner: jjohnson
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtool_filter2
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: samtools_phase
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: sam_bitwise_flag_filter
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: sam2interval
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: pileup_parser
     owner: devteam
-    tool_panel_section_label: 'SAM Tools'
+    tool_panel_section_label: 'SAM/BAM'
   - name: gemini_db_info
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_windower
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_burden
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_gene_wise
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_stats
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_mendel_errors
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_amend
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_pathways
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_dump
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_region
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_actionable_mutations
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_lof_sieve
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_query
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_fusions
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_load
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_de_novo
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_annotate
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_recessive_and_dominant
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_roh
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_set_somatic
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_qc
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_comp_hets
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: gemini_interactions
     owner: iuc
-    tool_panel_section_label: Gemini Tools
+    tool_panel_section_label: Gemini
   - name: genome_diversity
     owner: miller-lab
     tool_panel_section_label: Genome Diversity

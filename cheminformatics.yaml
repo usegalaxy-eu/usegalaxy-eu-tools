@@ -69,6 +69,10 @@ tools:
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
 
+  - name: gmx_sim
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
   - name: ctb_rdkit_descriptors
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
@@ -98,6 +102,10 @@ tools:
     tool_panel_section_label: ChemicalToolBox
 
   - name: mdanalysis_hbonds
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: vmd_hbonds
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
 
@@ -230,5 +238,9 @@ tools:
     tool_panel_section_label: ChemicalToolBox
  
   - name: fpocket
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: sdf_to_tab
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox

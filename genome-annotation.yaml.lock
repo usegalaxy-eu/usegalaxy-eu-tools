@@ -52,7 +52,7 @@ tools:
   revisions:
   - 930893c83a1a
   - da787fc8b740
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: busco
   owner: iuc
   revisions:
@@ -78,8 +78,8 @@ tools:
 - name: maker
   owner: iuc
   revisions:
+  - 5e96efe6e6c6
   - 73a79dec987b
-  - 96ac930d84fa
   - d3a2072d8745
   tool_panel_section_label: Annotation
 - name: maker_map_ids
@@ -102,4 +102,9 @@ tools:
   owner: iuc
   revisions:
   - a0d092f27fdf
+  tool_panel_section_label: Annotation
+- name: blastxml_to_gapped_gff3
+  owner: iuc
+  revisions:
+  - 561e827baa5f
   tool_panel_section_label: Annotation

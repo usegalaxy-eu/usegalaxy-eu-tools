@@ -27,7 +27,6 @@ tools:
 - name: idconvert
   owner: galaxyp
   revisions:
-  - 9e6e840d6b52
   - edb33e8224c6
   tool_panel_section_label: Convert Formats
 - name: idpquery
@@ -61,7 +60,7 @@ tools:
   revisions:
   - 650d553c1fda
   - 9ad0d336e5ed
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_label: FASTA/FASTQ
 - name: maxquant
   owner: galaxyp
   revisions:
@@ -327,3 +326,13 @@ tools:
   revisions:
   - 6cfd42b015b4
   tool_panel_section_label: Proteomics
+- name: maxbin2
+  owner: mbernt
+  revisions:
+  - 6a638de7915c
+  tool_panel_section_label: Metagenomic Analysis
+- name: msms_extractor
+  owner: galaxyp
+  revisions:
+  - 4bef80b09854
+  tool_panel_section_label: Convert Formats
