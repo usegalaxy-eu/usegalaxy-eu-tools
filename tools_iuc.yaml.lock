@@ -557,6 +557,7 @@ tools:
   owner: devteam
   revisions:
   - 0232f19d300f
+  - 4dea02886337
   - 69e0806b63a4
   - 6ea09f60dee9
   - 9f243677c4c6
@@ -1575,6 +1576,7 @@ tools:
   - 940901f74064
   - c9cfec002f71
   - ca0588b09438
+  - db1f362cca3e
   - f7564c3f9dc0
   tool_panel_section_label: RNA Analysis
 - name: trinity_super_transcripts
@@ -1583,6 +1585,7 @@ tools:
   - 15f60c2e2d78
   - 3abd51c4b151
   - 64094e19077d
+  - 6723249ce1bd
   - b34de8dc0f64
   tool_panel_section_label: RNA Analysis
 - name: trinity_align_and_estimate_abundance
@@ -1590,6 +1593,7 @@ tools:
   revisions:
   - 478f36effca1
   - 6d6b72d14170
+  - 983552d5822d
   - a21e229da9a1
   - aed859a021c0
   - afd41a430a76
@@ -1597,6 +1601,7 @@ tools:
 - name: trinity_abundance_estimates_to_matrix
   owner: iuc
   revisions:
+  - 08326e2e82f1
   - 0f445c315a08
   - 13ab393ba794
   - 77fc547df6ff
@@ -1609,12 +1614,14 @@ tools:
   - 03ca5ddc37a9
   - 1e8a2c87461a
   - 34a018cbee9c
+  - 3cdcd5753218
   - 8fed16891aaf
   - afa3a9786339
   tool_panel_section_label: RNA Analysis
 - name: trinity_filter_low_expr_transcripts
   owner: iuc
   revisions:
+  - 42f93482524f
   - 6821f5ea01d8
   - 7bd8f4770cec
   - b10270739c1b
@@ -1628,6 +1635,7 @@ tools:
   - 1d689e4e1caf
   - 2af5fd8210c5
   - 48537273a30b
+  - f3924bd07cba
   - fd588e138aa6
   tool_panel_section_label: RNA Analysis
 - name: trinotate
@@ -1874,6 +1882,31 @@ tools:
   revisions:
   - 4a32700dcaa2
   tool_panel_section_label: Phenotype Association
+- name: gprofiler_convert
+  owner: iuc
+  revisions:
+  - e219aca2f9fc
+  tool_panel_section_label: Annotation
+- name: gprofiler_orth
+  owner: iuc
+  revisions:
+  - 89cf0828d89d
+  tool_panel_section_label: Annotation
+- name: gprofiler_gost
+  owner: iuc
+  revisions:
+  - 51916b7025ba
+  tool_panel_section_label: Annotation
+- name: gprofiler_random
+  owner: iuc
+  revisions:
+  - 39a063071667
+  tool_panel_section_label: Annotation
+- name: gprofiler_snpense
+  owner: iuc
+  revisions:
+  - f83a08dff6f0
+  tool_panel_section_label: Annotation
 - name: tbprofiler
   owner: iuc
   revisions:
@@ -1956,6 +1989,7 @@ tools:
   owner: iuc
   revisions:
   - 15ca041134a9
+  - 809e42326fc2
   - a9098353ae22
   - e02e9af2743f
   - f1ccc8a6eb05
