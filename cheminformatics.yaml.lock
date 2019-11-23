@@ -59,6 +59,7 @@ tools:
 - name: md_converter
   owner: chemteam
   revisions:
+  - 1c25c23ff450
   - acce5039ece7
   - b61cbdf78765
   - d76bea4c85f3
@@ -71,12 +72,14 @@ tools:
   - acc9922f3eab
   - b43abebffad6
   - c124921a9e5f
+  - c7bcae9fe040
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_em
   owner: chemteam
   revisions:
   - 40835063146c
   - 5ced6b7070b6
+  - 6b79ed3d924d
   - 6d9a9ab96195
   - c1e98d48b8b4
   - ea7b9183bf30
@@ -84,6 +87,7 @@ tools:
 - name: gmx_solvate
   owner: chemteam
   revisions:
+  - 645139abefae
   - 7161b230adad
   - 77aaf9a68166
   - b37a1d7bf6c2
@@ -106,6 +110,7 @@ tools:
 - name: gmx_merge_topology_files
   owner: chemteam
   revisions:
+  - 19d4b07e7ca7
   - 33ed3c26b8c2
   - 7445eb668895
   - 9987b0933704
@@ -115,12 +120,19 @@ tools:
   owner: chemteam
   revisions:
   - 1a5960636405
+  - 5642f48f5698
   - ec3f665cca3e
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_fep
   owner: chemteam
   revisions:
   - 19d1d4c30402
+  - 453311042f29
+  tool_panel_section_label: ChemicalToolBox
+- name: alchemical_analysis
+  owner: chemteam
+  revisions:
+  - 5f136e371f44
   tool_panel_section_label: ChemicalToolBox
 - name: ctb_rdkit_descriptors
   owner: bgruening
