@@ -47,6 +47,10 @@ tools:
   - name: sc3_prepare
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_sc3_tools'
+  
+  - name: anndata_ops
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_compute_graph
     owner: ebi-gxa
@@ -143,6 +147,10 @@ tools:
   - name: seurat_filter_cells
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_seurat_tools'
+  
+  - name: seurat_find_neighbours
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_seurat_tools'
     
   - name: seurat_find_clusters
     owner: ebi-gxa
@@ -217,6 +225,10 @@ tools:
     tool_panel_section_id: 'hca_sc_sccaf_tools'
     
   - name: sccaf_asses_merger
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_sccaf_tools'
+    
+  - name: sccaf_regress_out
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_sccaf_tools'
     
