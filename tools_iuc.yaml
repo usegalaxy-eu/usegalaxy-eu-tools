@@ -32,6 +32,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: tximport
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: deg_annotate
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -63,6 +67,10 @@ tools:
   - name: kallisto_quant
     owner: iuc
     tool_panel_section_label: RNA Analysis
+
+  - name: variant_analyzer
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: mixcr_analyze
     owner: iuc
@@ -1806,6 +1814,10 @@ tools:
   - name: nonpareil
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+
+  - name: ncbi_acc_download
+    owner: iuc
+    tool_panel_section_label: Get Data
 
   - name: gdcwebapp
     owner: iuc
