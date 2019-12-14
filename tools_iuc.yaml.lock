@@ -7,11 +7,13 @@ tools:
   revisions:
   - 69e2275406fd
   - a61350ab6563
+  - e175d4067b00
   tool_panel_section_label: Single-cell
 - name: anndata_export
   owner: iuc
   revisions:
   - a9ab1b0a00dd
+  - e0395cca2c57
   - fcb7370e827f
   tool_panel_section_label: Single-cell
 - name: anndata_manipulate
@@ -19,11 +21,13 @@ tools:
   revisions:
   - 0ef28c0963c8
   - 19592ec717ef
+  - a56baceb1900
   tool_panel_section_label: Single-cell
 - name: anndata_inspect
   owner: iuc
   revisions:
   - 05304c5c195d
+  - 6a1a3dab235a
   - b2a6ce371781
   tool_panel_section_label: Single-cell
 - name: bedtools
@@ -48,6 +52,11 @@ tools:
   - 253c9448f524
   - 582b7bd4ae4c
   - 5ade5cf200da
+  tool_panel_section_label: RNA Analysis
+- name: tximport
+  owner: iuc
+  revisions:
+  - 206a71a69161
   tool_panel_section_label: RNA Analysis
 - name: deg_annotate
   owner: iuc
@@ -111,6 +120,11 @@ tools:
   - 60f888039fb2
   - b818b23df1e0
   tool_panel_section_label: RNA Analysis
+- name: variant_analyzer
+  owner: iuc
+  revisions:
+  - 3556001ff2db
+  tool_panel_section_label: Variant Calling
 - name: mixcr_analyze
   owner: iuc
   revisions:
@@ -134,11 +148,46 @@ tools:
   revisions:
   - bda6012394f7
   tool_panel_section_label: Metagenomic Analysis
+- name: cat_prepare
+  owner: iuc
+  revisions:
+  - b6c5e7343617
+  tool_panel_section_label: Metagenomic Analysis
+- name: cat_bins
+  owner: iuc
+  revisions:
+  - 0094893f5001
+  tool_panel_section_label: Metagenomic Analysis
+- name: cat_contigs
+  owner: iuc
+  revisions:
+  - 11a61934bfb3
+  tool_panel_section_label: Metagenomic Analysis
+- name: cat_summarise
+  owner: iuc
+  revisions:
+  - db1360aae489
+  tool_panel_section_label: Metagenomic Analysis
+- name: cat_add_names
+  owner: iuc
+  revisions:
+  - 13192095fd5a
+  tool_panel_section_label: Metagenomic Analysis
+- name: graphembed
+  owner: iuc
+  revisions:
+  - f28678233baf
+  tool_panel_section_label: Statistics
 - name: data_manager_dada2
   owner: iuc
   revisions:
   - bf7b2c14cabc
   - f57c13f5878b
+  tool_panel_section_label: Data Managers
+- name: data_manager_cat
+  owner: iuc
+  revisions:
+  - cffd8e2382cf
   tool_panel_section_label: Data Managers
 - name: dada2_filterandtrim
   owner: iuc
@@ -228,6 +277,7 @@ tools:
 - name: seurat
   owner: iuc
   revisions:
+  - 7319f83ae734
   - 8d8412d35247
   tool_panel_section_label: RNA Analysis
 - name: feelnc
@@ -565,6 +615,7 @@ tools:
   owner: iuc
   revisions:
   - 08b6255afde7
+  - 4eb3cc1f8466
   - 541f300f322d
   - 9ba78e8985dc
   tool_panel_section_label: Convert Formats
@@ -853,6 +904,7 @@ tools:
 - name: meme_meme
   owner: iuc
   revisions:
+  - 3f0dd362b755
   - 57e5d9382f36
   - d20e391eb22f
   - e8b209806a20
@@ -860,6 +912,7 @@ tools:
 - name: meme_fimo
   owner: iuc
   revisions:
+  - 0c5239d1aa65
   - 40b8472e91ca
   - 4eb02864e5df
   - c1a9a297ba8b
@@ -871,6 +924,7 @@ tools:
   - 793225b11202
   - a0fa4efeeee3
   - b48e673af4e8
+  - ff2f53a32d0e
   tool_panel_section_label: Motif Tools
 - name: meme_chip
   owner: iuc
@@ -3178,6 +3232,11 @@ tools:
   revisions:
   - 280386b252a5
   tool_panel_section_label: Metagenomic Analysis
+- name: ncbi_acc_download
+  owner: iuc
+  revisions:
+  - 1c58de56d587
+  tool_panel_section_label: Get Data
 - name: gdcwebapp
   owner: iuc
   revisions:
@@ -4407,11 +4466,13 @@ tools:
   revisions:
   - 0e212e42ef88
   - 20cfb9f3dded
+  - ac8e59e87ce3
   - dc2de14881ba
   tool_panel_section_label: Single-cell
 - name: scanpy_filter
   owner: iuc
   revisions:
+  - 0a6de5e65992
   - 6a76b60e05f5
   - 6ea5a05a260a
   - e62673c32a5d
@@ -4422,12 +4483,14 @@ tools:
   - 5d2e17328afe
   - 7d22964a8639
   - a755eaa1cc32
+  - cc0deb593fc8
   tool_panel_section_label: Single-cell
 - name: scanpy_normalize
   owner: iuc
   revisions:
   - 8e0f141c8c66
   - a9f14e2d1655
+  - d7ea9b5e6df1
   - ed64c90a9b93
   tool_panel_section_label: Single-cell
 - name: scanpy_plot
@@ -4435,11 +4498,13 @@ tools:
   revisions:
   - 397d2c97af05
   - 4bfb75bb7c8e
+  - a8f865950ac4
   - e4c0f5ee8e17
   tool_panel_section_label: Single-cell
 - name: scanpy_remove_confounders
   owner: iuc
   revisions:
+  - 00305dc2dd6f
   - 94c8f42efc47
   - 9ca360dde8e3
   - a89ee42625ad
