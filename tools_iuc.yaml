@@ -1773,63 +1773,138 @@ tools:
   - name: multiqc
     owner: iuc
     tool_panel_section_label: Quality Control
-
-  - name: hicexplorer_hiccorrectmatrix
+  
+  - name: hicexplorer_chicqualitycontrol
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicplotdistvscounts
+    
+  - name: hicexplorer_chicviewpointbackgroundmodel
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicpca
+   
+  - name: hicexplorer_chicviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
+    
+  - name: hicexplorer_chicsignificantinteractions
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+    
+  - name: hicexplorer_chicaggregatestatistic
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+   
+  - name: hicexplorer_chicdifferentialtest
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+    
+  - name: hicexplorer_chicplotviewpoint
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+  
+  - name: hicexplorer_hicquickqc
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer 
+  
+  - name: hicexplorer_hicinfo
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer  
+  
+  - name: hicexplorer_hicfindrestrictionsites
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+    
+  - name: hicexplorer_hicbuildmatrix
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer    
+    
+  - name: hicexplorer_hicadjustmatrix
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+ 
+  - name: hicexplorer_hicconvertformat
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer 
+ 
+  - name: hicexplorer_hicmergematrixbins
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer  
+ 
   - name: hicexplorer_hicsummatrices
-    owner: bgruening
-    tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicaggregatecontacts
-    owner: bgruening
-    tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hiccomparematrices
-    owner: bgruening
-    tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hiccorrelate
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
   - name: hicexplorer_hictransform
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicplotviewpoint
+  
+  - name: hicexplorer_hicnormalize
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer    
+    
+  - name: hicexplorer_hiccorrectmatrix
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicbuildmatrix
+    
+  - name: hicexplorer_hicaggregatecontacts
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicplotmatrix
+    
+  - name: hicexplorer_hicaverageregions
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicmergematrixbins
+    
+  - name: hicexplorer_hiccomparematrices
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
-  - name: hicexplorer_hicplottads
+    
+  - name: hicexplorer_hiccompartmentspolarization
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer   
+      
+  - name: hicexplorer_hiccorrelate
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
+    
+  - name: hicexplorer_hicdetectloops
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer  
+ 
+  - name: hicexplorer_hicmergeloops
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer  
+  
+  - name: hicexplorer_hicvalidatelocations
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+  
   - name: hicexplorer_hicfindtads
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-
+    
+  - name: hicexplorer_hicpca
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+  
+  - name: hicexplorer_hicplotaverageregions
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+  
+  - name: hicexplorer_hicplotdistvscounts
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer 
+    
+  - name: hicexplorer_hicplotmatrix
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer 
+    
+  - name: hicexplorer_hicplotsvl
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer 
+    
+  - name: hicexplorer_hicplotviewpoint
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
 
   - name: metaspades
     owner: nml
