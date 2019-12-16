@@ -3130,89 +3130,196 @@ tools:
   - df99138d2776
   - e4574a4d09d8
   tool_panel_section_label: Quality Control
-- name: hicexplorer_hiccorrectmatrix
+- name: hicexplorer_chicqualitycontrol
   owner: bgruening
   revisions:
-  - 92fc291ceb1a
-  - d5bf8c60d661
+  - 000ddd5f0f82
   tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicplotdistvscounts
+- name: hicexplorer_chicviewpointbackgroundmodel
   owner: bgruening
   revisions:
-  - 6abd5817e0cd
-  - d7a84a789c83
+  - bd11c6a972ef
   tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicpca
+- name: hicexplorer_chicviewpoint
   owner: bgruening
   revisions:
-  - d5a86de86846
-  - ebb9b94138c1
+  - 6d76e532b669
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_chicsignificantinteractions
+  owner: bgruening
+  revisions:
+  - 2f279a01f3ff
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_chicaggregatestatistic
+  owner: bgruening
+  revisions:
+  - ee745fbe9f14
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_chicdifferentialtest
+  owner: bgruening
+  revisions:
+  - fa6fc09ba259
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_chicplotviewpoint
+  owner: bgruening
+  revisions:
+  - ae8bf5420df2
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicquickqc
+  owner: bgruening
+  revisions:
+  - 269c4246279d
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicinfo
+  owner: bgruening
+  revisions:
+  - 708e1b8eff5c
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicfindrestrictionsites
+  owner: bgruening
+  revisions:
+  - 8339f6708553
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicbuildmatrix
+  owner: bgruening
+  revisions:
+  - 4b85ea34afae
+  - 4ceaee0043a5
+  - 9767c021cd58
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicadjustmatrix
+  owner: bgruening
+  revisions:
+  - 74b3932d0836
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicconvertformat
+  owner: bgruening
+  revisions:
+  - e136f22c2a0f
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicmergematrixbins
+  owner: bgruening
+  revisions:
+  - 49c8055f6830
+  - 90645548f8cc
+  - a1cf508bff84
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicsummatrices
   owner: bgruening
   revisions:
   - 6d1526527417
   - c4ee66c35eb6
-  tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicaggregatecontacts
-  owner: bgruening
-  revisions:
-  - a48457358aa8
-  - ccd1d3013827
-  tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hiccomparematrices
-  owner: bgruening
-  revisions:
-  - a0ab04565c73
-  - b6c95ff7c3c3
-  tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hiccorrelate
-  owner: bgruening
-  revisions:
-  - 8a5b13451a9e
-  - fe0243c46b36
+  - e89bc5e38823
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hictransform
   owner: bgruening
   revisions:
   - 09ae55eb26fa
   - 0c13bd882a1a
+  - ae9cc6dbfaca
   tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicplotviewpoint
+- name: hicexplorer_hicnormalize
   owner: bgruening
   revisions:
-  - 67bd57e960a3
-  - eec0210589b3
+  - 4f36f2d51d33
   tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicbuildmatrix
+- name: hicexplorer_hiccorrectmatrix
   owner: bgruening
   revisions:
-  - 4ceaee0043a5
-  - 9767c021cd58
+  - 92fc291ceb1a
+  - 9949f055db84
+  - d5bf8c60d661
   tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicplotmatrix
+- name: hicexplorer_hicaggregatecontacts
   owner: bgruening
   revisions:
-  - a9050bffb50c
-  - c2521cba1c32
+  - a48457358aa8
+  - ccd1d3013827
+  - ce16a538ab46
   tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicmergematrixbins
+- name: hicexplorer_hicaverageregions
   owner: bgruening
   revisions:
-  - 90645548f8cc
-  - a1cf508bff84
+  - f7c0aedd4be3
   tool_panel_section_label: HiCExplorer
-- name: hicexplorer_hicplottads
+- name: hicexplorer_hiccomparematrices
   owner: bgruening
   revisions:
-  - 5e0a39c5bcf6
-  - a67942d17a91
+  - 55b4b8bc250d
+  - a0ab04565c73
+  - b6c95ff7c3c3
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hiccompartmentspolarization
+  owner: bgruening
+  revisions:
+  - 8d764e8acdf5
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hiccorrelate
+  owner: bgruening
+  revisions:
+  - 8a5b13451a9e
+  - e89d515c3594
+  - fe0243c46b36
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicdetectloops
+  owner: bgruening
+  revisions:
+  - 2d1f9759fa0e
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicmergeloops
+  owner: bgruening
+  revisions:
+  - 49b82255b72f
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicvalidatelocations
+  owner: bgruening
+  revisions:
+  - f011486cbaaa
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicfindtads
   owner: bgruening
   revisions:
+  - 6b7987d22eab
   - 78e22ca9f2ce
   - aab371aa615e
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicpca
+  owner: bgruening
+  revisions:
+  - b4b8343dd681
+  - d5a86de86846
+  - ebb9b94138c1
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicplotaverageregions
+  owner: bgruening
+  revisions:
+  - ebe2b2d82a32
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicplotdistvscounts
+  owner: bgruening
+  revisions:
+  - 34dc1acfcc62
+  - 6abd5817e0cd
+  - d7a84a789c83
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicplotmatrix
+  owner: bgruening
+  revisions:
+  - 40b33e101621
+  - a9050bffb50c
+  - c2521cba1c32
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicplotsvl
+  owner: bgruening
+  revisions:
+  - 450605e43e25
+  tool_panel_section_label: HiCExplorer
+- name: hicexplorer_hicplotviewpoint
+  owner: bgruening
+  revisions:
+  - 5e9c304c424c
+  - 67bd57e960a3
+  - eec0210589b3
   tool_panel_section_label: HiCExplorer
 - name: metaspades
   owner: nml
