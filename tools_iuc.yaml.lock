@@ -277,6 +277,7 @@ tools:
 - name: seurat
   owner: iuc
   revisions:
+  - 321bdd834266
   - 7319f83ae734
   - 8d8412d35247
   tool_panel_section_label: RNA Analysis
@@ -284,6 +285,7 @@ tools:
   owner: iuc
   revisions:
   - 17a77824c8e4
+  - 75427ceb32d1
   - b36afbb04e1c
   tool_panel_section_label: RNA Analysis
 - name: volcanoplot
@@ -784,6 +786,7 @@ tools:
   - 1cfc579079a6
   - 2bb2e07a7a21
   - 2c9e5136b416
+  - 3235aeb45c22
   - 558d652cd681
   - 5f70e7fe6077
   - 69c5e9c0add0
@@ -1027,18 +1030,21 @@ tools:
 - name: khmer_filter_abundance
   owner: iuc
   revisions:
+  - 8c6433857aa8
   - a4970dfc331c
   - dbe616d126b1
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_filter_below_abundance_cutoff
   owner: iuc
   revisions:
+  - 569001af897d
   - bf716cfc3225
   - d9cc87dfec6e
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_extract_partitions
   owner: iuc
   revisions:
+  - 2c763fb18010
   - 518ba4a77274
   - 7d8138b4a593
   tool_panel_section_label: Metagenomic Analysis
@@ -1047,11 +1053,13 @@ tools:
   revisions:
   - 5a97c5bbd51e
   - a02efb62565b
+  - e0de12ae3fc2
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_count_median
   owner: iuc
   revisions:
   - 5efc5f21d0c1
+  - 77410799e8e9
   - 7aa811aa3b93
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_partition
@@ -1059,10 +1067,12 @@ tools:
   revisions:
   - 766ec3dad7ff
   - c393687bd857
+  - e562293ee5ec
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_normalize_by_median
   owner: iuc
   revisions:
+  - 557cc16931f4
   - bfd859f04a89
   - f0290a079720
   tool_panel_section_label: Metagenomic Analysis
@@ -1070,6 +1080,7 @@ tools:
   owner: iuc
   revisions:
   - 09c6a051c5fd
+  - 55109291a355
   - 792d520ba676
   tool_panel_section_label: Metagenomic Analysis
 - name: t2t_report
@@ -1185,6 +1196,7 @@ tools:
   revisions:
   - 2fd6033d0e9c
   - c8cd0a03db49
+  - e626b3ff9922
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_concatenate_by_species
   owner: devteam
@@ -2134,6 +2146,31 @@ tools:
   - 54b6b4d0613a
   - b5066aa77fea
   tool_panel_section_label: Annotation
+- name: lofreq_call
+  owner: iuc
+  revisions:
+  - 31216d510164
+  tool_panel_section_label: Variant Calling
+- name: lofreq_indelqual
+  owner: iuc
+  revisions:
+  - 5d6a078d30b0
+  tool_panel_section_label: Variant Calling
+- name: lofreq_filter
+  owner: iuc
+  revisions:
+  - 6f9ffff040ce
+  tool_panel_section_label: Variant Calling
+- name: lofreq_alnqual
+  owner: iuc
+  revisions:
+  - 606542a18f82
+  tool_panel_section_label: Variant Calling
+- name: lofreq_viterbi
+  owner: iuc
+  revisions:
+  - 33a416e1659e
+  tool_panel_section_label: Variant Calling
 - name: snpsift_dbnsfp
   owner: iuc
   revisions:
@@ -4573,6 +4610,7 @@ tools:
   revisions:
   - 0e212e42ef88
   - 20cfb9f3dded
+  - 766be978777a
   - ac8e59e87ce3
   - dc2de14881ba
   tool_panel_section_label: Single-cell
@@ -4582,6 +4620,7 @@ tools:
   - 0a6de5e65992
   - 6a76b60e05f5
   - 6ea5a05a260a
+  - a72e9faea895
   - e62673c32a5d
   tool_panel_section_label: Single-cell
 - name: scanpy_inspect
@@ -4589,12 +4628,14 @@ tools:
   revisions:
   - 5d2e17328afe
   - 7d22964a8639
+  - 9d1997b08ed6
   - a755eaa1cc32
   - cc0deb593fc8
   tool_panel_section_label: Single-cell
 - name: scanpy_normalize
   owner: iuc
   revisions:
+  - 55f2212bb675
   - 8e0f141c8c66
   - a9f14e2d1655
   - d7ea9b5e6df1
@@ -4606,12 +4647,14 @@ tools:
   - 397d2c97af05
   - 4bfb75bb7c8e
   - a8f865950ac4
+  - cb18f2388815
   - e4c0f5ee8e17
   tool_panel_section_label: Single-cell
 - name: scanpy_remove_confounders
   owner: iuc
   revisions:
   - 00305dc2dd6f
+  - 7a6701edcc92
   - 94c8f42efc47
   - 9ca360dde8e3
   - a89ee42625ad
