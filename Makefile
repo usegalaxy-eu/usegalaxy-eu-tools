@@ -42,6 +42,7 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python scripts/update-tool.py bgruening.yaml
 	python scripts/update-tool.py tools_galaxyp.yaml
 	python scripts/update-tool.py single-cell-ebi-gxa.yaml
+	python scripts/update-tool.py genome-annotation.yaml
 
 update_all: $(UPDATED_YAMLS)
 
