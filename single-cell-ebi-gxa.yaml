@@ -8,6 +8,10 @@ tools:
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_utils_viz'
     
+  - name: dropletutils_empty_drops
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_utils_viz'
+    
   - name: gtf2gene_list
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_utils_viz'
@@ -47,6 +51,10 @@ tools:
   - name: sc3_prepare
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_sc3_tools'
+    
+  - name: anndata_ops
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_compute_graph
     owner: ebi-gxa
@@ -176,6 +184,10 @@ tools:
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_seurat_tools'
     
+  - name: seurat_find_neighbours
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_seurat_tools'
+    
   - name: monocle3_create
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_monocle3_tools'
@@ -220,6 +232,10 @@ tools:
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_sccaf_tools'
     
+  - name: sccaf_regress_out
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_sccaf_tools'
+    
   - name: scmap_index_cell
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scmap_tools'
@@ -255,3 +271,11 @@ tools:
   - name: umi_tools_count
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
+ 
+  - name: salmon_kallisto_mtx_to_10x
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_utils_viz'
+    
+  - name: droplet_barcode_plot
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_utils_viz'
