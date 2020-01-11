@@ -7,11 +7,13 @@ tools:
   revisions:
   - 69e2275406fd
   - a61350ab6563
+  - b5c7ba11401d
   - e175d4067b00
   tool_panel_section_label: Single-cell
 - name: anndata_export
   owner: iuc
   revisions:
+  - 8623710d083c
   - a9ab1b0a00dd
   - e0395cca2c57
   - fcb7370e827f
@@ -21,14 +23,21 @@ tools:
   revisions:
   - 0ef28c0963c8
   - 19592ec717ef
+  - 6db1b06e6bbb
   - a56baceb1900
   tool_panel_section_label: Single-cell
 - name: anndata_inspect
   owner: iuc
   revisions:
   - 05304c5c195d
+  - 286a24ac079c
   - 6a1a3dab235a
   - b2a6ce371781
+  tool_panel_section_label: Single-cell
+- name: modify_loom
+  owner: iuc
+  revisions:
+  - c8e4d0b9ae8c
   tool_panel_section_label: Single-cell
 - name: bedtools
   owner: iuc
@@ -39,7 +48,7 @@ tools:
   - b8348686a0b9
   - dde39ba9c031
   - e19bebe96cd2
-  tool_panel_section_label: Operate on Genomic Intervals
+  tool_panel_section_label: BED
 - name: collection_element_identifiers
   owner: iuc
   revisions:
@@ -151,27 +160,32 @@ tools:
 - name: cat_prepare
   owner: iuc
   revisions:
+  - 8315b5cebb82
   - b6c5e7343617
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_bins
   owner: iuc
   revisions:
   - 0094893f5001
+  - 18676df0cb3a
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_contigs
   owner: iuc
   revisions:
   - 11a61934bfb3
+  - c6c77d840993
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_summarise
   owner: iuc
   revisions:
+  - 7f1aaa1932d8
   - db1360aae489
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_add_names
   owner: iuc
   revisions:
   - 13192095fd5a
+  - 8dfc90f35aba
   tool_panel_section_label: Metagenomic Analysis
 - name: graphembed
   owner: iuc
@@ -328,6 +342,7 @@ tools:
   - 2074627b0f83
   - c171f2b7d76e
   - c237ba772225
+  - eca03db4f612
   - feab9265552d
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap
@@ -387,6 +402,7 @@ tools:
   owner: iuc
   revisions:
   - 014a21767ac4
+  - 184dfd9e113d
   - fd59d783248a
   tool_panel_section_label: Graph/Display Data
 - name: ebi_search_rest_results
@@ -1501,6 +1517,7 @@ tools:
   revisions:
   - 04b73d626680
   - 0b44456754e2
+  - 137942fac417
   - 93704f98f56e
   tool_panel_section_label: Mapping
 - name: hisat2
