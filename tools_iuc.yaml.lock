@@ -5,6 +5,7 @@ tools:
 - name: anndata_import
   owner: iuc
   revisions:
+  - 080eab96d846
   - 69e2275406fd
   - a61350ab6563
   - b5c7ba11401d
@@ -13,6 +14,7 @@ tools:
 - name: anndata_export
   owner: iuc
   revisions:
+  - 016308443041
   - 8623710d083c
   - a9ab1b0a00dd
   - e0395cca2c57
@@ -23,6 +25,7 @@ tools:
   revisions:
   - 0ef28c0963c8
   - 19592ec717ef
+  - 4000634ece52
   - 6db1b06e6bbb
   - a56baceb1900
   tool_panel_section_label: Single-cell
@@ -32,11 +35,13 @@ tools:
   - 05304c5c195d
   - 286a24ac079c
   - 6a1a3dab235a
+  - 70f5f1fee692
   - b2a6ce371781
   tool_panel_section_label: Single-cell
 - name: modify_loom
   owner: iuc
   revisions:
+  - 81a28c2705b0
   - c8e4d0b9ae8c
   tool_panel_section_label: Single-cell
 - name: bedtools
@@ -150,6 +155,7 @@ tools:
   revisions:
   - 24657d5edede
   - 3fd7458bc861
+  - 8b62f89924a7
   - fe3fe68b09a7
   tool_panel_section_label: RNA Analysis
 - name: plasflow
@@ -293,6 +299,7 @@ tools:
   revisions:
   - 321bdd834266
   - 7319f83ae734
+  - 7a5cd7987b03
   - 8d8412d35247
   tool_panel_section_label: RNA Analysis
 - name: feelnc
@@ -1923,6 +1930,7 @@ tools:
   - 31a38ce7e8ae
   - 4e97191a1ff7
   - 72b8ce355fae
+  - a57606054bd7
   - b79bb8b09822
   - d37adcc2ec03
   tool_panel_section_label: Variant Calling
@@ -2030,6 +2038,7 @@ tools:
 - name: tetyper
   owner: iuc
   revisions:
+  - 36093854bfc7
   - 8bc80c2a15b3
   tool_panel_section_label: Annotation
 - name: fargene
@@ -2042,6 +2051,7 @@ tools:
   owner: iuc
   revisions:
   - 19793eecc9f0
+  - 4272bd430a01
   - 49b819f88c2b
   - 5182e1a99313
   - c2656b729ee9
@@ -2111,6 +2121,7 @@ tools:
   - 3a0bd09a41dd
   - 95505a9fa26f
   - a17498c603ec
+  - bf68eb663bc3
   - eaee459f3d69
   tool_panel_section_label: Annotation
 - name: mlst
@@ -2124,6 +2135,7 @@ tools:
   - 15ca041134a9
   - 809e42326fc2
   - a9098353ae22
+  - dbe2b2204555
   - e02e9af2743f
   - f1ccc8a6eb05
   tool_panel_section_label: Annotation
@@ -2217,6 +2229,7 @@ tools:
   - 268d162b9c49
   - 36dc3690a82c
   - 479c4f2f4826
+  - 74aebe30fb52
   - 8f92c2b26e6d
   - c9ecd2a96ecf
   - dd3622f501f3
@@ -3071,6 +3084,7 @@ tools:
 - name: stacks_assembleperead
   owner: iuc
   revisions:
+  - 0c741f364d18
   - b08cd32d03ad
   - bc108981ca68
   - fea78fd36a05
@@ -3193,6 +3207,7 @@ tools:
   revisions:
   - 161f4383df15
   - 1c2db0054039
+  - 3d93dd18d9f8
   - b2f1f75d49c4
   - df99138d2776
   - e4574a4d09d8
@@ -4719,3 +4734,28 @@ tools:
   revisions:
   - 1959cc43b414
   tool_panel_section_label: Phylogenetics
+- name: chira_collapse
+  owner: iuc
+  revisions:
+  - 872249f5495a
+  tool_panel_section_label: RNA Analysis
+- name: chira_map
+  owner: iuc
+  revisions:
+  - 6c398f64ad6a
+  tool_panel_section_label: RNA Analysis
+- name: chira_merge
+  owner: iuc
+  revisions:
+  - 5db894671434
+  tool_panel_section_label: RNA Analysis
+- name: chira_quantify
+  owner: iuc
+  revisions:
+  - 1bfa8c091530
+  tool_panel_section_label: RNA Analysis
+- name: chira_extract
+  owner: iuc
+  revisions:
+  - 0a3107204741
+  tool_panel_section_label: RNA Analysis
