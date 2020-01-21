@@ -19,7 +19,7 @@ tools:
   - name: anndata_inspect
     owner: iuc
     tool_panel_section_label: Single-cell
-    
+
   - name: modify_loom
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -107,7 +107,7 @@ tools:
   - name: cat_summarise
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
- 
+
   - name: cat_add_names
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -399,7 +399,7 @@ tools:
   - name: ucsc_twobittofa
     owner: iuc
     tool_panel_section_label: Convert Formats
-    
+
   - name: bax2bam
     owner: iuc
     tool_panel_section_label: Convert Formats
@@ -770,7 +770,7 @@ tools:
   - name: fastqc
     owner: devteam
 
-    tool_panel_section_label: FASTA/FASTQ
+    tool_panel_section_label: 'FASTQ Quality Control'
 
   - name: fastq_paired_end_joiner
     owner: devteam
@@ -1175,19 +1175,19 @@ tools:
   - name: gprofiler_random
     owner: iuc
     tool_panel_section_label: Annotation
- 
+
   - name: gprofiler_snpense
     owner: iuc
     tool_panel_section_label: Annotation
- 
+
   - name: tetyper
     owner: iuc
     tool_panel_section_label: Annotation
- 
+
   - name: fargene
     owner: iuc
     tool_panel_section_label: Annotation
- 
+
   - name: tbprofiler
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1797,63 +1797,63 @@ tools:
   - name: multiqc
     owner: iuc
     tool_panel_section_label: Quality Control
-  
+
   - name: hicexplorer_chicqualitycontrol
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_chicviewpointbackgroundmodel
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-   
+
   - name: hicexplorer_chicviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_chicsignificantinteractions
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_chicaggregatestatistic
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-   
+
   - name: hicexplorer_chicdifferentialtest
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_chicplotviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-  
+
   - name: hicexplorer_hicquickqc
     owner: bgruening
-    tool_panel_section_label: HiCExplorer 
-  
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicinfo
     owner: bgruening
-    tool_panel_section_label: HiCExplorer  
-  
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicfindrestrictionsites
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicbuildmatrix
     owner: bgruening
-    tool_panel_section_label: HiCExplorer    
-    
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicadjustmatrix
     owner: bgruening
     tool_panel_section_label: HiCExplorer
- 
+
   - name: hicexplorer_hicconvertformat
     owner: bgruening
-    tool_panel_section_label: HiCExplorer 
- 
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicmergematrixbins
     owner: bgruening
-    tool_panel_section_label: HiCExplorer  
- 
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicsummatrices
     owner: bgruening
     tool_panel_section_label: HiCExplorer
@@ -1861,71 +1861,71 @@ tools:
   - name: hicexplorer_hictransform
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-  
+
   - name: hicexplorer_hicnormalize
     owner: bgruening
-    tool_panel_section_label: HiCExplorer    
-    
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hiccorrectmatrix
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicaggregatecontacts
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicaverageregions
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hiccomparematrices
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hiccompartmentspolarization
     owner: bgruening
-    tool_panel_section_label: HiCExplorer   
-      
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hiccorrelate
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicdetectloops
     owner: bgruening
-    tool_panel_section_label: HiCExplorer  
- 
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicmergeloops
     owner: bgruening
-    tool_panel_section_label: HiCExplorer  
-  
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicvalidatelocations
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-  
+
   - name: hicexplorer_hicfindtads
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-    
+
   - name: hicexplorer_hicpca
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-  
+
   - name: hicexplorer_hicplotaverageregions
     owner: bgruening
     tool_panel_section_label: HiCExplorer
-  
+
   - name: hicexplorer_hicplotdistvscounts
     owner: bgruening
-    tool_panel_section_label: HiCExplorer 
-    
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicplotmatrix
     owner: bgruening
-    tool_panel_section_label: HiCExplorer 
-    
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicplotsvl
     owner: bgruening
-    tool_panel_section_label: HiCExplorer 
-    
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicplotviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
@@ -2664,4 +2664,4 @@ tools:
 
   - name: chira_extract
     owner: iuc
-    tool_panel_section_label: RNA Analysis    
+    tool_panel_section_label: RNA Analysis
