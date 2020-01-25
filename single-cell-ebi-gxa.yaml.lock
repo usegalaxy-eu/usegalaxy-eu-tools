@@ -8,6 +8,11 @@ tools:
   - d62a9aa0411e
   - f25f42dc256a
   tool_panel_section_id: hca_sc_utils_viz
+- name: dropletutils_empty_drops
+  owner: ebi-gxa
+  revisions:
+  - da189ce4016b
+  tool_panel_section_id: hca_sc_utils_viz
 - name: gtf2gene_list
   owner: ebi-gxa
   revisions:
@@ -63,6 +68,11 @@ tools:
   revisions:
   - 9a2b61bfdaa9
   tool_panel_section_id: hca_sc_sc3_tools
+- name: anndata_ops
+  owner: ebi-gxa
+  revisions:
+  - ec4604919de3
+  tool_panel_section_id: hca_sc_scanpy_tools
 - name: scanpy_compute_graph
   owner: ebi-gxa
   revisions:
@@ -313,6 +323,11 @@ tools:
   - 3d0bfc2a233e
   - 6166efaeb4a6
   tool_panel_section_id: hca_sc_seurat_tools
+- name: seurat_find_neighbours
+  owner: ebi-gxa
+  revisions:
+  - 4fff8ad1c76d
+  tool_panel_section_id: hca_sc_seurat_tools
 - name: monocle3_create
   owner: ebi-gxa
   revisions:
@@ -371,6 +386,11 @@ tools:
   - 933fad89b50a
   - 99d15ded4d5f
   tool_panel_section_id: hca_sc_sccaf_tools
+- name: sccaf_regress_out
+  owner: ebi-gxa
+  revisions:
+  - 5ef0610e9f50
+  tool_panel_section_id: hca_sc_sccaf_tools
 - name: scmap_index_cell
   owner: ebi-gxa
   revisions:
@@ -420,3 +440,13 @@ tools:
   - 933220bbc2ae
   - b557acca0b56
   tool_panel_section_label: FASTA/FASTQ
+- name: salmon_kallisto_mtx_to_10x
+  owner: ebi-gxa
+  revisions:
+  - 60fa6080f86f
+  tool_panel_section_id: hca_sc_utils_viz
+- name: droplet_barcode_plot
+  owner: ebi-gxa
+  revisions:
+  - 04f32429dcf2
+  tool_panel_section_id: hca_sc_utils_viz
