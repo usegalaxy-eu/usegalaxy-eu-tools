@@ -80,7 +80,23 @@ tools:
   - name:  gmx_trj
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
-    
+
+  - name: gmx_energy
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: gmx_restraints
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_makendx
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_editconf
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
   - name:  alchemical_analysis
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
@@ -142,6 +158,10 @@ tools:
     tool_panel_section_label: ChemicalToolBox
 
   - name: bio3d_dccm
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: fastpca
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
 
