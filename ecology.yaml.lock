@@ -322,6 +322,7 @@ tools:
   - 0ea86f6bf2a1
   - c171f2b7d76e
   - c237ba772225
+  - eca03db4f612
   - feab9265552d
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap
@@ -478,22 +479,74 @@ tools:
   owner: devteam
   revisions:
   - e7b2202befea
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
 - name: multiqc
   owner: iuc
   revisions:
+  - 3d93dd18d9f8
   - b2f1f75d49c4
   tool_panel_section_label: Quality Control
 - name: mothur_sffinfo
   owner: iuc
   revisions:
   - 12507ed33710
+  - f3a65ee4bfda
   tool_panel_section_label: Mothur
 - name: fastq_combiner
   owner: devteam
   revisions:
   - 56389130cb63
   tool_panel_section_label: FASTA/FASTQ
+- name: obi_illumina_pairend
+  owner: iuc
+  revisions:
+  - 94f412098ac8
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_ngsfilter
+  owner: iuc
+  revisions:
+  - 76e69de726b2
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_annotate
+  owner: iuc
+  revisions:
+  - 3021b9f5809f
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_grep
+  owner: iuc
+  revisions:
+  - e9e49cf06b42
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_uniq
+  owner: iuc
+  revisions:
+  - c0f7b58b4ce4
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_clean
+  owner: iuc
+  revisions:
+  - 7d16de45c021
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_convert
+  owner: iuc
+  revisions:
+  - 4d705e3443a7
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_sort
+  owner: iuc
+  revisions:
+  - 12b9e285ca1c
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_tab
+  owner: iuc
+  revisions:
+  - 3299c7d5268f
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_stat
+  owner: iuc
+  revisions:
+  - 39320fee9d70
+  tool_panel_section_label: DNA Metabarcoding
 - name: bwa
   owner: devteam
   revisions:
@@ -508,6 +561,7 @@ tools:
 - name: stacks2_cstacks
   owner: iuc
   revisions:
+  - c541e62d6c56
   - da351b9031de
   - f4aab9196d1e
   tool_panel_section_label: RAD-seq
@@ -640,6 +694,7 @@ tools:
 - name: stacks_assembleperead
   owner: iuc
   revisions:
+  - 0c741f364d18
   - b08cd32d03ad
   - bc108981ca68
   tool_panel_section_label: RAD-seq

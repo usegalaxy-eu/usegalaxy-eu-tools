@@ -59,6 +59,7 @@ tools:
 - name: md_converter
   owner: chemteam
   revisions:
+  - 1c25c23ff450
   - acce5039ece7
   - b61cbdf78765
   - d76bea4c85f3
@@ -68,24 +69,36 @@ tools:
   revisions:
   - 35b314fe6c90
   - 4c48f2526697
+  - 5463ee41fe6b
   - acc9922f3eab
   - b43abebffad6
   - c124921a9e5f
+  - c7bcae9fe040
+  - ccdf0b30a422
+  - cf03bccaa325
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_em
   owner: chemteam
   revisions:
   - 40835063146c
+  - 476cdf677b03
   - 5ced6b7070b6
+  - 6b79ed3d924d
   - 6d9a9ab96195
+  - 8d4c8a79eadd
+  - 91fc33483094
   - c1e98d48b8b4
   - ea7b9183bf30
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_solvate
   owner: chemteam
   revisions:
+  - 3c77d66e7fe5
+  - 589652e8eb31
+  - 645139abefae
   - 7161b230adad
   - 77aaf9a68166
+  - 970455561ad1
   - b37a1d7bf6c2
   - cdacad684da1
   tool_panel_section_label: ChemicalToolBox
@@ -106,16 +119,63 @@ tools:
 - name: gmx_merge_topology_files
   owner: chemteam
   revisions:
+  - 19d4b07e7ca7
   - 33ed3c26b8c2
+  - 439bf0e21ca1
   - 7445eb668895
+  - 8ddd75c21cbd
   - 9987b0933704
+  - f24cd390b743
   - f2faba46d680
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_sim
   owner: chemteam
   revisions:
+  - 171ce1253b19
   - 1a5960636405
+  - 4dba9a5b74fc
+  - 5642f48f5698
+  - b1061cc2653a
+  - cdaed42b4223
   - ec3f665cca3e
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_fep
+  owner: chemteam
+  revisions:
+  - 19d1d4c30402
+  - 453311042f29
+  - c1bcdba99bb3
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_trj
+  owner: chemteam
+  revisions:
+  - bb0053c4e4f2
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_energy
+  owner: chemteam
+  revisions:
+  - b4a47b4ed264
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_restraints
+  owner: chemteam
+  revisions:
+  - f79f4671eaf2
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_makendx
+  owner: chemteam
+  revisions:
+  - 01a435922dd5
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_editconf
+  owner: chemteam
+  revisions:
+  - e69ce1e7fb6a
+  tool_panel_section_label: ChemicalToolBox
+- name: alchemical_analysis
+  owner: chemteam
+  revisions:
+  - 5f136e371f44
+  - c1fa72716efc
   tool_panel_section_label: ChemicalToolBox
 - name: ctb_rdkit_descriptors
   owner: bgruening
@@ -216,6 +276,11 @@ tools:
   - 18440ff54f63
   - 386b4f4b6a85
   - c9ae0c833ded
+  tool_panel_section_label: ChemicalToolBox
+- name: fastpca
+  owner: chemteam
+  revisions:
+  - dd195f7a791c
   tool_panel_section_label: ChemicalToolBox
 - name: prepare_ligands_for_docking
   owner: bgruening

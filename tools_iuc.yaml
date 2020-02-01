@@ -20,15 +20,23 @@ tools:
     owner: iuc
     tool_panel_section_label: Single-cell
 
+  - name: modify_loom
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
   - name: bedtools
     owner: iuc
-    tool_panel_section_label: Operate on Genomic Intervals
+    tool_panel_section_label: BED
 
   - name: collection_element_identifiers
     owner: iuc
     tool_panel_section_label: Collection Operations
 
   - name: crosscontamination_barcode_filter
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: tximport
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -64,6 +72,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: variant_analyzer
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: mixcr_analyze
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -80,7 +92,35 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: cat_prepare
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: cat_bins
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: cat_contigs
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: cat_summarise
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: cat_add_names
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: graphembed
+    owner: iuc
+    tool_panel_section_label: Statistics
+
   - name: data_manager_dada2
+    owner: iuc
+    tool_panel_section_label: Data Managers
+
+  - name: data_manager_cat
     owner: iuc
     tool_panel_section_label: Data Managers
 
@@ -359,7 +399,7 @@ tools:
   - name: ucsc_twobittofa
     owner: iuc
     tool_panel_section_label: Convert Formats
-    
+
   - name: bax2bam
     owner: iuc
     tool_panel_section_label: Convert Formats
@@ -730,7 +770,7 @@ tools:
   - name: fastqc
     owner: devteam
 
-    tool_panel_section_label: FASTA/FASTQ
+    tool_panel_section_label: 'FASTQ Quality Control'
 
   - name: fastq_paired_end_joiner
     owner: devteam
@@ -842,6 +882,10 @@ tools:
     tool_panel_section_label: Assembly
 
   - name: quast
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: colibread_lordec
     owner: iuc
     tool_panel_section_label: Assembly
 
@@ -1116,6 +1160,38 @@ tools:
     owner: devteam
     tool_panel_section_label: Phenotype Association
 
+  - name: repeat_masker
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: gprofiler_convert
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: gprofiler_orth
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: gprofiler_gost
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: gprofiler_random
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: gprofiler_snpense
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: tetyper
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: fargene
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: tbprofiler
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1191,6 +1267,26 @@ tools:
   - name: hmmer3
     owner: iuc
     tool_panel_section_label: Annotation
+
+  - name: lofreq_call
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: lofreq_indelqual
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: lofreq_filter
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: lofreq_alnqual
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: lofreq_viterbi
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: snpsift_dbnsfp
     owner: iuc
@@ -1706,39 +1802,43 @@ tools:
     owner: iuc
     tool_panel_section_label: Quality Control
 
-  - name: hicexplorer_hiccorrectmatrix
+  - name: hicexplorer_chicqualitycontrol
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hicplotdistvscounts
+  - name: hicexplorer_chicviewpointbackgroundmodel
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hicpca
+  - name: hicexplorer_chicviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hicsummatrices
+  - name: hicexplorer_chicsignificantinteractions
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hicaggregatecontacts
+  - name: hicexplorer_chicaggregatestatistic
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hiccomparematrices
+  - name: hicexplorer_chicdifferentialtest
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hiccorrelate
+  - name: hicexplorer_chicplotviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hictransform
+  - name: hicexplorer_hicquickqc
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hicplotviewpoint
+  - name: hicexplorer_hicinfo
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicfindrestrictionsites
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
@@ -1746,7 +1846,11 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hicplotmatrix
+  - name: hicexplorer_hicadjustmatrix
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicconvertformat
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
@@ -1754,7 +1858,51 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
-  - name: hicexplorer_hicplottads
+  - name: hicexplorer_hicsummatrices
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hictransform
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicnormalize
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hiccorrectmatrix
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicaggregatecontacts
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicaverageregions
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hiccomparematrices
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hiccompartmentspolarization
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hiccorrelate
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicdetectloops
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicmergeloops
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicvalidatelocations
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
@@ -1762,6 +1910,85 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
+  - name: hicexplorer_hicpca
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicplotaverageregions
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicplotdistvscounts
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicplotmatrix
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicplotsvl
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicplotviewpoint
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+    
+  - name: schicexplorer_schicqualitycontrol
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+    
+  - name: schicexplorer_schicadjustmatrix
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schiccluster
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicclustercompartments
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicclusterminhash
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicclustersvl
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicconsensusmatrices
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicdemultiplex
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicinfo
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicmergematrixbins
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicmergetomcool
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicnormalize
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicplotclusterprofiles
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
+
+  - name: schicexplorer_schicplotconsensusmatrices
+    owner: iuc
+    tool_panel_section_label: HiCExplorer
 
   - name: metaspades
     owner: nml
@@ -1774,6 +2001,10 @@ tools:
   - name: nonpareil
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+
+  - name: ncbi_acc_download
+    owner: iuc
+    tool_panel_section_label: Get Data
 
   - name: gdcwebapp
     owner: iuc
@@ -2474,3 +2705,23 @@ tools:
   - name: snp_dists
     owner: iuc
     tool_panel_section_label: Phylogenetics
+
+  - name: chira_collapse
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: chira_map
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: chira_merge
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: chira_quantify
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: chira_extract
+    owner: iuc
+    tool_panel_section_label: RNA Analysis

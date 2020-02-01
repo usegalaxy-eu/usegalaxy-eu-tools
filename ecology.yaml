@@ -39,11 +39,11 @@ tools:
   - name: datamash_ops
     owner: iuc
     tool_panel_section_label: 'Join, Subtract and Group'
-    
+
   - name: datamash_reverse
     owner: iuc
     tool_panel_section_label: 'Join, Subtract and Group'
-    
+
   - name: datamash_transpose
     owner: iuc
     tool_panel_section_label: 'Join, Subtract and Group'
@@ -67,16 +67,16 @@ tools:
   - name: prinseq
     owner: iuc
     tool_panel_section_label: 'Text Manipulation'
-  
- 
+
+
   - name: split_file_on_column
     owner: bgruening
     tool_panel_section_label: 'Text Manipulation'
-  
+
   - name: merge_cols
     owner: devteam
     tool_panel_section_label: 'Text Manipulation'
-  
+
   - name: coverage
     owner: devteam
     tool_panel_section_label: 'Text Manipulation'
@@ -383,152 +383,191 @@ tools:
   - name: fastq_groomer
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ'
-    
+
   - name: fastqc
     owner: devteam
-    tool_panel_section_label: 'Quality Control'
-    
+    tool_panel_section_label: 'FASTQ Quality Control'
+
   - name: multiqc
     owner: iuc
     tool_panel_section_label: 'Quality Control'
-    
+
   - name: mothur_sffinfo
     owner: iuc
     tool_panel_section_label: 'Mothur'
-    
+
   - name: fastq_combiner
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ'
-    
+
+  - name: obi_illumina_pairend
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_ngsfilter
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_annotate
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_grep
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_uniq
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_clean
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_convert
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_sort
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_tab
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_stat
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
   - name: bwa
     owner: devteam
     tool_panel_section_label: 'RAD-seq'
 
-
   - name: stacks2_ustacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_cstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_sstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_gstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_populations
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_procrad
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_denovomap
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_refmap
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_tsv2bam
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_clonefilter
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_kmerfilter
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks2_shortreads
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
 
   - name: stacks_ustacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_cstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_sstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_pstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_genotypes
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_populations
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_sstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_rxstacks
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_procrad
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_refmap
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_clonefilter
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_assembleperead
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
-    
+
   - name: stacks_stats
     owner: iuc
     tool_panel_section_label: 'RAD-seq'
 
-    
-    
-    
+
+
+
 
   - name: gdal_gdaladdo
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
+
 
   - name: gdal_gdalbuildvrt
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
+
 
   - name: gdal_gdalinfo
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
+
 
   - name: gdal_gdal_merge
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
+
 
   - name: gdal_gdal_translate
     owner: ecology
@@ -537,21 +576,21 @@ tools:
   - name: gdal_gdalwarp
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
+
 
   - name: gdal_ogr2ogr
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
+
 
   - name: gdal_ogrinfo
     owner: ecology
-    tool_panel_section_label: 'GIS Data Handling'    
+    tool_panel_section_label: 'GIS Data Handling'
 
   - name: spocc_occ
     owner: ecology
     tool_panel_section_label: 'Get Data'
-    
+
   - name: dwt_var_perfeature
     owner: devteam
     tool_panel_section_label: 'Statistics'
@@ -559,17 +598,17 @@ tools:
   - name: vigiechiro_bilanenrichipf
     owner: ecology
     tool_panel_section_label: 'Animal Detection on Acoustic Recordings'
-      
+
 
   - name: vigiechiro_bilanenrichirp
     owner: ecology
     tool_panel_section_label: 'Animal Detection on Acoustic Recordings'
-    
+
 
   - name: vigiechiro_idcorrect_2ndlayer
     owner: ecology
     tool_panel_section_label: 'Animal Detection on Acoustic Recordings'
-    
+
 
   - name: vigiechiro_idvalid
     owner: ecology
