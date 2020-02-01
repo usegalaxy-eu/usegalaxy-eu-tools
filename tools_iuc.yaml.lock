@@ -84,6 +84,7 @@ tools:
   - 1797cbe967d1
   - 4cd9f0008d9c
   - a8aa294401be
+  - cdf4443d5625
   - cfe1e6c28d95
   - f0de368eabca
   tool_panel_section_label: Single-cell
@@ -93,6 +94,7 @@ tools:
   - 0fa80752a314
   - '106718959281'
   - 20f522154663
+  - 37a47c4fd84d
   - 9fec5dd8fbb9
   tool_panel_section_label: Single-cell
 - name: raceid_filtnormconf
@@ -100,6 +102,7 @@ tools:
   revisions:
   - 56a093c2a3f9
   - 5d5b14dbd092
+  - 7608d5faee41
   - 8dc8ff057b0f
   - d55e29ac02e3
   tool_panel_section_label: Single-cell
@@ -108,12 +111,14 @@ tools:
   revisions:
   - 4ea021bd7513
   - 528a43b1cbcf
+  - 7e014059a88d
   - ee0bbc160cb1
   tool_panel_section_label: Single-cell
 - name: raceid_trajectory
   owner: iuc
   revisions:
   - 3e5bb16abb55
+  - 44b935f2271b
   - 87de515af823
   - da7ff78fe296
   - ff7cd3c7c1df
@@ -123,6 +128,7 @@ tools:
   revisions:
   - 4164c0da0a5d
   - 5156383d3a5d
+  - 69018f285aa3
   - 86e2358cf273
   - e0e9b24d76aa
   tool_panel_section_label: Single-cell
@@ -697,6 +703,7 @@ tools:
   - 02a5f43cd5d1
   - 186b8d913e6c
   - ce309f4ff17f
+  - e282bc27be9a
   tool_panel_section_label: FASTA/FASTQ
 - name: fastp
   owner: iuc
@@ -821,6 +828,7 @@ tools:
   - 9de82b4963e6
   - ca2def38369c
   - dba3c47e1798
+  - edb534491f92
   - fa30df9b79c2
   tool_panel_section_label: Graph/Display Data
 - name: ucsc_custom_track
@@ -922,6 +930,7 @@ tools:
   revisions:
   - 05ee0a74faef
   - 288db50d1fb9
+  - 973a28be3b7f
   - d1c340a5664b
   tool_panel_section_label: Evolution
 - name: structure
@@ -1202,6 +1211,7 @@ tools:
   revisions:
   - 09070cacefd8
   - 567d5b3c52b1
+  - d5e9e83cd3d8
   - dd3737e40dce
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_barcode_splitter
@@ -1216,6 +1226,7 @@ tools:
   revisions:
   - 736b8f6ee456
   - 85263dc18cec
+  - b8658f852bc7
   - bdf1ce174e39
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_nucleotides_distribution
@@ -1223,6 +1234,7 @@ tools:
   revisions:
   - 21796f46e0ba
   - 63d6e2daad48
+  - ad116ae3f4d9
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_filter_by_length
   owner: devteam
@@ -1247,6 +1259,7 @@ tools:
   revisions:
   - 091ca73f5804
   - cc9a18dd41c9
+  - ec0b5076173a
   - f81d4362b6c1
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_formatter
@@ -1379,6 +1392,7 @@ tools:
   revisions:
   - 377ac2829eac
   - 547e8d00f11c
+  - 61b4cedc8934
   - b98f3fa516a3
   - bbb007a39ac2
   tool_panel_section_label: FASTA/FASTQ
@@ -1387,6 +1401,7 @@ tools:
   revisions:
   - 0c2907307ba4
   - 3f1017d3f785
+  - 6027ef51ef91
   - e246088b6e34
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_renamer
@@ -1394,6 +1409,7 @@ tools:
   revisions:
   - 02f8a17a4ebd
   - 3599f5451ee2
+  - b29d37ca9e41
   - d8a3d31554d7
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_quality_statistics
@@ -1407,6 +1423,7 @@ tools:
   revisions:
   - 43a7370aa010
   - 7b4468117008
+  - ce9cd02d5b88
   - e41385662e5e
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_quality_converter
@@ -1419,6 +1436,7 @@ tools:
   owner: devteam
   revisions:
   - 3987db70a4b0
+  - 7cf5b1d072b5
   - f95284aa2946
   tool_panel_section_label: FASTA/FASTQ
 - name: abyss
@@ -1975,6 +1993,7 @@ tools:
   revisions:
   - 0aa87d97847f
   - 32f2211eeec3
+  - 3fe8ef358d66
   - 4df82423ba61
   - 776ebd1239da
   - 82f2b6f20fa2
@@ -2195,27 +2214,32 @@ tools:
 - name: lofreq_call
   owner: iuc
   revisions:
+  - 03627f24605f
   - 31216d510164
   tool_panel_section_label: Variant Calling
 - name: lofreq_indelqual
   owner: iuc
   revisions:
+  - 2ae554b4bcca
   - 5d6a078d30b0
   tool_panel_section_label: Variant Calling
 - name: lofreq_filter
   owner: iuc
   revisions:
   - 6f9ffff040ce
+  - fdba1586551d
   tool_panel_section_label: Variant Calling
 - name: lofreq_alnqual
   owner: iuc
   revisions:
+  - 2953c43180c0
   - 606542a18f82
   tool_panel_section_label: Variant Calling
 - name: lofreq_viterbi
   owner: iuc
   revisions:
   - 33a416e1659e
+  - ecd80c7c3886
   tool_panel_section_label: Variant Calling
 - name: snpsift_dbnsfp
   owner: iuc
