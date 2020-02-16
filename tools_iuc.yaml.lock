@@ -31,6 +31,7 @@ tools:
   - 6db1b06e6bbb
   - a56baceb1900
   - b03c60f8528f
+  - d4af736e7b83
   tool_panel_section_label: Single-cell
 - name: anndata_inspect
   owner: iuc
@@ -359,6 +360,7 @@ tools:
   revisions:
   - 0ea86f6bf2a1
   - 2074627b0f83
+  - 5cec5fb749f0
   - c171f2b7d76e
   - c237ba772225
   - eca03db4f612
@@ -828,6 +830,7 @@ tools:
   - 3235aeb45c22
   - 558d652cd681
   - 5f70e7fe6077
+  - 667e17248bfe
   - 69c5e9c0add0
   - 6b774e9d6387
   - 8f33c9fbc119
@@ -1727,6 +1730,7 @@ tools:
   - 606b7748965d
   - c9cfec002f71
   - ca0588b09438
+  - d84caa5a98ad
   - db1f362cca3e
   - f7564c3f9dc0
   tool_panel_section_label: RNA Analysis
@@ -1737,12 +1741,14 @@ tools:
   - 3abd51c4b151
   - 64094e19077d
   - 6723249ce1bd
+  - 6f480aee5877
   - b34de8dc0f64
   tool_panel_section_label: RNA Analysis
 - name: trinity_align_and_estimate_abundance
   owner: iuc
   revisions:
   - 478f36effca1
+  - 56162e446004
   - 6d6b72d14170
   - 983552d5822d
   - a21e229da9a1
@@ -1755,6 +1761,7 @@ tools:
   - 08326e2e82f1
   - 0f445c315a08
   - 13ab393ba794
+  - 59fff1388bc2
   - 77fc547df6ff
   - cdde9062b49c
   - d6a479fd4281
@@ -1766,12 +1773,14 @@ tools:
   - 1e8a2c87461a
   - 34a018cbee9c
   - 3cdcd5753218
+  - 62b05e565a45
   - 8fed16891aaf
   - afa3a9786339
   tool_panel_section_label: RNA Analysis
 - name: trinity_filter_low_expr_transcripts
   owner: iuc
   revisions:
+  - 42c5172815f7
   - 42f93482524f
   - 6821f5ea01d8
   - 7bd8f4770cec
@@ -1782,6 +1791,7 @@ tools:
 - name: trinity_run_de_analysis
   owner: iuc
   revisions:
+  - 04936df18de3
   - 1563554bb3f0
   - 1d689e4e1caf
   - 2af5fd8210c5
@@ -1946,6 +1956,11 @@ tools:
   owner: devteam
   revisions:
   - da1a6f33b504
+  tool_panel_section_label: Epigenetics
+- name: seacr
+  owner: iuc
+  revisions:
+  - c8ff96b9fb97
   tool_panel_section_label: Epigenetics
 - name: basil
   owner: iuc
@@ -2224,6 +2239,7 @@ tools:
   revisions:
   - 03627f24605f
   - 31216d510164
+  - dfadc322b065
   tool_panel_section_label: Variant Calling
 - name: lofreq_indelqual
   owner: iuc
@@ -2596,6 +2612,11 @@ tools:
   - c82130967bd2
   - e522022137f6
   - f867422772d6
+  tool_panel_section_label: Variant Calling
+- name: bcftools_merge
+  owner: iuc
+  revisions:
+  - 9473302f4588
   tool_panel_section_label: Variant Calling
 - name: bcftools_call
   owner: iuc
@@ -3596,6 +3617,11 @@ tools:
   owner: iuc
   revisions:
   - 1a1e085c352e
+  tool_panel_section_label: HiCExplorer
+- name: schicexplorer_schiccorrectmatrices
+  owner: iuc
+  revisions:
+  - 104bedd292cd
   tool_panel_section_label: HiCExplorer
 - name: metaspades
   owner: nml
@@ -4733,55 +4759,66 @@ tools:
   owner: iuc
   revisions:
   - b678fe748dc5
+  - d6389faa75ff
   tool_panel_section_label: Phylogenetics
 - name: hyphy_bgm
   owner: iuc
   revisions:
+  - 1df765cc6bcb
   - bf97cacc1a55
   tool_panel_section_label: Phylogenetics
 - name: hyphy_gard
   owner: iuc
   revisions:
   - 1942d02039c2
+  - bff9a82d630d
   tool_panel_section_label: Phylogenetics
 - name: hyphy_absrel
   owner: iuc
   revisions:
+  - 181f5b9f139f
   - 5c87e4907e08
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fubar
   owner: iuc
   revisions:
   - 0f108ee932ea
+  - 93a0cf4ea5fc
   tool_panel_section_label: Phylogenetics
 - name: hyphy_relax
   owner: iuc
   revisions:
+  - 134d46bd47dd
   - 551616a65f8f
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fade
   owner: iuc
   revisions:
   - 6164d9298db9
+  - b959fd359a6b
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
   owner: iuc
   revisions:
+  - a96a307afb40
   - ae7c42d49717
   tool_panel_section_label: Phylogenetics
 - name: hyphy_meme
   owner: iuc
   revisions:
+  - 33040ebb30c6
   - 7b3f9c78cf6d
   tool_panel_section_label: Phylogenetics
 - name: hyphy_slac
   owner: iuc
   revisions:
+  - 8522e7cc4fb4
   - c2bed8cc8fc1
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fel
   owner: iuc
   revisions:
+  - 1b62167f7ab2
   - 6c3ece5fb602
   tool_panel_section_label: Phylogenetics
 - name: ucsc_fasplit
@@ -4853,6 +4890,7 @@ tools:
   revisions:
   - 0e212e42ef88
   - 20cfb9f3dded
+  - 6f2d2c7f77ee
   - 766be978777a
   - ac8e59e87ce3
   - dc2de14881ba
@@ -4863,12 +4901,14 @@ tools:
   - 0a6de5e65992
   - 6a76b60e05f5
   - 6ea5a05a260a
+  - 8b9610ab366a
   - a72e9faea895
   - e62673c32a5d
   tool_panel_section_label: Single-cell
 - name: scanpy_inspect
   owner: iuc
   revisions:
+  - 08192eebb47d
   - 5d2e17328afe
   - 7d22964a8639
   - 9d1997b08ed6
@@ -4882,6 +4922,7 @@ tools:
   - 8e0f141c8c66
   - a9f14e2d1655
   - d7ea9b5e6df1
+  - ec32793ce1dd
   - ed64c90a9b93
   tool_panel_section_label: Single-cell
 - name: scanpy_plot
@@ -4889,6 +4930,7 @@ tools:
   revisions:
   - 397d2c97af05
   - 4bfb75bb7c8e
+  - 8599fd07d140
   - a8f865950ac4
   - cb18f2388815
   - e4c0f5ee8e17
@@ -4897,6 +4939,7 @@ tools:
   owner: iuc
   revisions:
   - 00305dc2dd6f
+  - 524aa62a6066
   - 7a6701edcc92
   - 94c8f42efc47
   - 9ca360dde8e3
