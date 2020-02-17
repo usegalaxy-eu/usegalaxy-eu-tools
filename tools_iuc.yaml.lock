@@ -175,6 +175,16 @@ tools:
   revisions:
   - bda6012394f7
   tool_panel_section_label: Metagenomic Analysis
+- name: mash
+  owner: iuc
+  revisions:
+  - 7f7d8b0c8517
+  tool_panel_section_label: Metagenomic Analysis
+- name: mash_sketch
+  owner: iuc
+  revisions:
+  - 68084b06ae83
+  tool_panel_section_label: Metagenomic Analysis
 - name: cat_prepare
   owner: iuc
   revisions:
@@ -2319,6 +2329,7 @@ tools:
   - 2a17c789e0a5
   - 6f9c0884a3e7
   - 7d34178f2812
+  - 9ffcddf6f9c0
   - ab1f60c26526
   - b9fbec5ac6b2
   - f6ced08779c4
@@ -4758,6 +4769,7 @@ tools:
 - name: hyphy_busted
   owner: iuc
   revisions:
+  - 8c8640ca39d7
   - b678fe748dc5
   - d6389faa75ff
   tool_panel_section_label: Phylogenetics
@@ -4766,52 +4778,61 @@ tools:
   revisions:
   - 1df765cc6bcb
   - bf97cacc1a55
+  - f276acfde263
   tool_panel_section_label: Phylogenetics
 - name: hyphy_gard
   owner: iuc
   revisions:
   - 1942d02039c2
   - bff9a82d630d
+  - c454b670f35f
   tool_panel_section_label: Phylogenetics
 - name: hyphy_absrel
   owner: iuc
   revisions:
   - 181f5b9f139f
   - 5c87e4907e08
+  - bf204aabbf56
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fubar
   owner: iuc
   revisions:
   - 0f108ee932ea
   - 93a0cf4ea5fc
+  - bece0bad8e89
   tool_panel_section_label: Phylogenetics
 - name: hyphy_relax
   owner: iuc
   revisions:
   - 134d46bd47dd
   - 551616a65f8f
+  - 6dd3c73bd80a
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fade
   owner: iuc
   revisions:
   - 6164d9298db9
   - b959fd359a6b
+  - c16dd6b14657
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
   owner: iuc
   revisions:
   - a96a307afb40
   - ae7c42d49717
+  - c60fcdf8f01e
   tool_panel_section_label: Phylogenetics
 - name: hyphy_meme
   owner: iuc
   revisions:
   - 33040ebb30c6
   - 7b3f9c78cf6d
+  - 8366d5b28b49
   tool_panel_section_label: Phylogenetics
 - name: hyphy_slac
   owner: iuc
   revisions:
+  - 232bd7cd4639
   - 8522e7cc4fb4
   - c2bed8cc8fc1
   tool_panel_section_label: Phylogenetics
@@ -4819,6 +4840,7 @@ tools:
   owner: iuc
   revisions:
   - 1b62167f7ab2
+  - 2442e8b5e363
   - 6c3ece5fb602
   tool_panel_section_label: Phylogenetics
 - name: ucsc_fasplit
