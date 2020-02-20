@@ -711,6 +711,7 @@ tools:
 - name: fastqtofasta
   owner: devteam
   revisions:
+  - 297962e79f39
   - 4844c1810c16
   - 723b5b38d88a
   - a64c24430f5e
@@ -1191,6 +1192,7 @@ tools:
 - name: fastq_paired_end_interlacer
   owner: devteam
   revisions:
+  - 2ccb8dcabddc
   - 3e396e702cea
   - b89bdf6acb6c
   - ec6ddf449651
@@ -1203,6 +1205,7 @@ tools:
   - 2793d1d765b9
   - 6a7f5da7c76d
   - 822cc1e6274e
+  - c885369b207b
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_compute_length
   owner: devteam
@@ -1303,6 +1306,7 @@ tools:
   - 2793d1d765b9
   - 6a7f5da7c76d
   - 822cc1e6274e
+  - c885369b207b
   tool_panel_section_label: FASTA/FASTQ
 - name: short_reads_trim_seq
   owner: devteam
@@ -1317,6 +1321,7 @@ tools:
 - name: tabular_to_fastq
   owner: devteam
   revisions:
+  - 2dcfbbf9071a
   - 68f57cc8fad0
   - 92034dcbb40a
   - b8cdc0507586
@@ -1333,11 +1338,13 @@ tools:
   revisions:
   - 2d0d13b0b0f1
   - 33794bdb7fe0
+  - b63b2bfb3ea3
   - e0cfb5a703ce
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_to_tabular
   owner: devteam
   revisions:
+  - 4b347702c4aa
   - 614a63f14adf
   - 7da7ddea4425
   - ccf4e1d1fcbe
@@ -1348,10 +1355,12 @@ tools:
   - b1cea1b2fcd0
   - daaf552153fe
   - e2cf940128d5
+  - f0e7deab6518
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_paired_end_splitter
   owner: devteam
   revisions:
+  - 249c8393f2d4
   - 35e38452bb3f
   - 9bbe5b7ffa12
   - c80bce242eec
@@ -1359,6 +1368,7 @@ tools:
 - name: fastq_paired_end_interlacer
   owner: devteam
   revisions:
+  - 2ccb8dcabddc
   - 3e396e702cea
   - b89bdf6acb6c
   - ec6ddf449651
@@ -1370,24 +1380,28 @@ tools:
   - 03d57fea6482
   - b7ce72b00e62
   - f0949bc49926
+  - f3936d0632cb
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_masker_by_quality
   owner: devteam
   revisions:
   - 9282652e7234
   - 9d234265981e
+  - 9dfda4e310ed
   - eb592e9ec47a
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_manipulation
   owner: devteam
   revisions:
   - 4ac14b275aca
+  - 5b87038565bb
   - 7861f3b10c68
   - bb07615a5b6a
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_groomer
   owner: devteam
   revisions:
+  - 47e5dbc3e790
   - 71e5fa25b8a2
   - 8611b80a14d6
   - e4d28c94242d
@@ -1397,6 +1411,7 @@ tools:
   revisions:
   - 06934412f56d
   - 10b75444feae
+  - 81a9090d6df3
   - b957f55f3955
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_combiner
@@ -1405,6 +1420,7 @@ tools:
   - 56389130cb63
   - b05e39b9c170
   - e711d52c7509
+  - f1dc2a761c30
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_trimmer
   owner: devteam
@@ -1534,6 +1550,11 @@ tools:
   revisions:
   - 74878f127e47
   tool_panel_section_label: Assembly
+- name: kma
+  owner: iuc
+  revisions:
+  - 2595c27071c2
+  tool_panel_section_label: Mapping
 - name: tophat2
   owner: devteam
   revisions:
@@ -2065,6 +2086,11 @@ tools:
   revisions:
   - 4a32700dcaa2
   tool_panel_section_label: Phenotype Association
+- name: fastani
+  owner: iuc
+  revisions:
+  - 2c7ac12ad75a
+  tool_panel_section_label: Annotation
 - name: repeat_masker
   owner: bgruening
   revisions:
@@ -2330,6 +2356,7 @@ tools:
   - 6f9c0884a3e7
   - 7d34178f2812
   - 9ffcddf6f9c0
+  - a1f0b3f4b781
   - ab1f60c26526
   - b9fbec5ac6b2
   - f6ced08779c4
@@ -3276,6 +3303,11 @@ tools:
   - e54940ea270c
   - ea35a85b941d
   tool_panel_section_label: Text Manipulation
+- name: data_manager_build_kma_index
+  owner: iuc
+  revisions:
+  - 889cc43b72d6
+  tool_panel_section_label: Data Managers
 - name: data_manager_qiime_database_downloader
   owner: iuc
   revisions:
@@ -3735,6 +3767,7 @@ tools:
   owner: iuc
   revisions:
   - c7e73acfa3eb
+  - e005e659ae21
   - ef46a404db96
   tool_panel_section_label: Genome Diversity
 - name: mothur_create_database
@@ -4759,6 +4792,7 @@ tools:
   revisions:
   - 57d45064f114
   - 75a14cc16d4d
+  - b026dae67fba
   tool_panel_section_label: Convert Formats
 - name: phyml
   owner: iuc
@@ -4914,6 +4948,7 @@ tools:
   - 20cfb9f3dded
   - 6f2d2c7f77ee
   - 766be978777a
+  - 77b91b9bdf52
   - ac8e59e87ce3
   - dc2de14881ba
   tool_panel_section_label: Single-cell
@@ -4925,6 +4960,7 @@ tools:
   - 6ea5a05a260a
   - 8b9610ab366a
   - a72e9faea895
+  - a97abb8cd15b
   - e62673c32a5d
   tool_panel_section_label: Single-cell
 - name: scanpy_inspect
@@ -4932,6 +4968,7 @@ tools:
   revisions:
   - 08192eebb47d
   - 5d2e17328afe
+  - 5e9171dc8244
   - 7d22964a8639
   - 9d1997b08ed6
   - a755eaa1cc32
@@ -4940,6 +4977,7 @@ tools:
 - name: scanpy_normalize
   owner: iuc
   revisions:
+  - 3bcd5445cd7a
   - 55f2212bb675
   - 8e0f141c8c66
   - a9f14e2d1655
@@ -4955,6 +4993,7 @@ tools:
   - 8599fd07d140
   - a8f865950ac4
   - cb18f2388815
+  - dbbe1ea8ecb1
   - e4c0f5ee8e17
   tool_panel_section_label: Single-cell
 - name: scanpy_remove_confounders
@@ -4966,6 +5005,7 @@ tools:
   - 94c8f42efc47
   - 9ca360dde8e3
   - a89ee42625ad
+  - f2f6c703da06
   tool_panel_section_label: Single-cell
 - name: intermine_galaxy_exchange
   owner: iuc
