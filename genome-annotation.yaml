@@ -42,7 +42,7 @@ tools:
 
   - name: staramr
     owner: nml
-    tool_panel_section_label: Metagenomic analyses
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: busco
     owner: iuc
@@ -73,5 +73,33 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: progressivemauve
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bp_genbank2gff3
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: blastxml_to_gapped_gff3
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: gff_to_prot
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: transit_gumbel
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: transit_hmm
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: transit_resampling
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: transit_tn5gaps
     owner: iuc
     tool_panel_section_label: Annotation

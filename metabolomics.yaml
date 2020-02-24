@@ -9,6 +9,10 @@ tools:
     owner: lecorguille
     tool_panel_section_label: Metabolomics
 
+  - name: genform
+    owner: workflow4metabolomics
+    tool_panel_section_label: Metabolomics
+
   - name: xcms_xcmsset
     owner: lecorguille
     tool_panel_section_label: Metabolomics
@@ -44,7 +48,44 @@ tools:
   - name: camera_combinexsannos
     owner: mmonsoor
     tool_panel_section_label: Metabolomics
+    
+  - name: mspurity_flagremove
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
 
+## MS/MS
+
+  - name: mspurity_puritya
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_frag4feature
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_filterfragspectra
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_averagefragspectra
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_createdatabase
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_createmsp
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+   
+  - name: mspurity_dimspredictpuritysingle
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+  
+  - name: mspurity_purityx
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
 
 ## FIAMS
   - name: profia
@@ -164,6 +205,18 @@ tools:
     owner: fgiacomoni
     tool_panel_section_label: Metabolomics
 
+## MS/MS
+  - name: mspurity_spectralmatching
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+    
+  - name: metfrag
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: sirius_csifingerid
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
 
 ## NMR
   - name: nmr_annotation
@@ -209,4 +262,15 @@ tools:
     owner: eschen42
     tool_panel_section_label: Metabolomics
 
+  - name: msconvert
+    owner: galaxyp
+    tool_panel_section_label: Metabolomics
+
+  - name: thermo_raw_file_converter
+    owner: galaxyp
+    tool_panel_section_label: Metabolomics
+
+  - name: msms_extractor
+    owner: galaxyp
+    tool_panel_section_label: Metabolomics
 

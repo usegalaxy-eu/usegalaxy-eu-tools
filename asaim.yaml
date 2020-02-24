@@ -13,23 +13,23 @@ tools:
     # quality_control
   - name: 'fastqc'
     owner: 'devteam'
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
 
   - name: 'prinseq'
     owner: 'iuc'
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
 
   - name: 'trim_galore'
     owner: 'bgruening'
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
 
   - name: 'trimmomatic'
     owner: 'pjbriggs'
-    tool_panel_section_label: "FASTA/FASTQ manipulation"
+    tool_panel_section_label: "FASTA/FASTQ"
 
   - name: 'multiqc'
     owner: 'iuc'
-    tool_panel_section_label: 'Quality Control'
+    tool_panel_section_label: 'FASTQ Quality Control'
 
     # clustering
   - name: 'cdhit'
@@ -75,10 +75,10 @@ tools:
     # metagenomics_manipulation
   - name: 'vsearch'
     owner: 'iuc'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
   - name: 'nonpareil'
     owner: 'iuc'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
     # assembly
   - name: 'megahit'
@@ -95,7 +95,7 @@ tools:
 
   - name: 'valet'
     owner: 'iuc'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
     # amplicon_sequence_processing
 
@@ -107,26 +107,26 @@ tools:
 
   - name: 'format_metaphlan2_output'
     owner: 'bebatut'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
     # metabolism_assignation
 
   - name: 'group_humann2_uniref_abundances_to_go'
     owner: 'bebatut'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
   - name: 'compare_humann2_output'
     owner: 'bebatut'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
   - name: 'interproscan5'
     owner: 'bgruening'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
     # combination_taxo_func
   - name: 'combine_metaphlan2_humann2'
     owner: 'bebatut'
-    tool_panel_section_label: 'Metagenomic analyses'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
     # visualization
   - name: 'export2graphlan'

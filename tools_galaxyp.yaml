@@ -42,7 +42,7 @@ tools:
 
   - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_label: FASTA/FASTQ manipulation
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: maxquant
     owner: galaxyp
@@ -136,6 +136,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Proteomics
 
+  - name: data_manager_eggnog_mapper_abspath
+    owner: galaxyp
+    tool_panel_section_label: Data Managers
+
   - name: eggnog_mapper
     owner: galaxyp
     tool_panel_section_label: Proteomics
@@ -210,4 +214,32 @@ tools:
     
   - name: metaquantome_viz
     owner: galaxyp
-    tool_panel_section_label: Proteomics  
+    tool_panel_section_label: Proteomics 
+    
+  - name: maxbin2
+    owner: mbernt
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: msms_extractor
+    owner: galaxyp
+    tool_panel_section_label: Convert Formats
+    
+  - name: peptide_genomic_coordinate
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: quantwiz_iq
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: sixgill
+    owner: galaxyp
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: metagene_annotator
+    owner: galaxyp
+    tool_panel_section_label: Metagenomic Analysis
+    
+    
+    
+    

@@ -4,6 +4,39 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: rdock_rbdock
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: rdock_rbcavity
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: sucos_max_score
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: sucos_clustering
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: sucos_docking_scoring
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: sucos_clustering
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: sucos_clustering
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: padel
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+  
   - name: gmx_npt
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
@@ -36,6 +69,38 @@ tools:
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
 
+  - name: gmx_sim
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_fep
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_trj
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: gmx_energy
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: gmx_restraints
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_makendx
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_editconf
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  alchemical_analysis
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+    
   - name: ctb_rdkit_descriptors
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
@@ -68,6 +133,10 @@ tools:
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
 
+  - name: vmd_hbonds
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
   - name: mdanalysis_cosine_analysis
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
@@ -89,6 +158,10 @@ tools:
     tool_panel_section_label: ChemicalToolBox
 
   - name: bio3d_dccm
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: fastpca
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
 
@@ -156,6 +229,14 @@ tools:
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
 
+  - name: autodock_vina_prepare_ligand
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: autodock_vina
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
   - name: get_online_data
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
@@ -182,4 +263,16 @@ tools:
 
   - name: ambertools_parmchk2
     owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+ 
+  - name: chembl
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+ 
+  - name: fpocket
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: sdf_to_tab
+    owner: bgruening
     tool_panel_section_label: ChemicalToolBox

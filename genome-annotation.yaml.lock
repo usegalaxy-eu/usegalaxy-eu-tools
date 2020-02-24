@@ -6,68 +6,81 @@ tools:
   owner: gga
   revisions:
   - 331a3bde732e
+  - dca2fb399ee6
   tool_panel_section_label: Apollo
 - name: apollo_feat_from_gff3
   owner: gga
   revisions:
+  - 5d1cf95ade8a
   - 922dd0b252c8
   tool_panel_section_label: Apollo
 - name: apollo_export
   owner: gga
   revisions:
   - ad02f02c75e3
+  - c3b5bc8b4080
   tool_panel_section_label: Apollo
 - name: apollo_iframe
   owner: gga
   revisions:
   - 860ca63f4a59
+  - c6172b538caf
   tool_panel_section_label: Apollo
 - name: apollo_create_or_update
   owner: gga
   revisions:
   - 496444ad9291
+  - d72192ec8e39
   tool_panel_section_label: Apollo
 - name: apollo_delete_organism
   owner: gga
   revisions:
   - b67ea77f5fe6
+  - dd63c6e11a95
   tool_panel_section_label: Apollo
 - name: apollo_create_account
   owner: gga
   revisions:
+  - a46a509386d3
   - e80d29fd2a33
   tool_panel_section_label: Apollo
 - name: apollo_list_organism
   owner: gga
   revisions:
   - 2c749ed310da
+  - bc2b80fc7e30
   tool_panel_section_label: Apollo
 - name: apollo_delete_features
   owner: gga
   revisions:
   - 3f0f2af50989
+  - df0e4eb2dfa5
   tool_panel_section_label: Apollo
 - name: staramr
   owner: nml
   revisions:
+  - 5f43703968cf
   - 930893c83a1a
   - da787fc8b740
-  tool_panel_section_label: Metagenomic analyses
+  tool_panel_section_label: Metagenomic Analysis
 - name: busco
   owner: iuc
   revisions:
   - 1440ae06552f
+  - 1e62c28ba91d
   - 5ecdeca79a0d
   tool_panel_section_label: Annotation
 - name: augustus
   owner: bgruening
   revisions:
+  - ca6d970d931c
   - f5075dee9d6b
   tool_panel_section_label: Annotation
 - name: augustus_training
   owner: bgruening
   revisions:
   - 1fbb1135da16
+  - 6519ebe25019
   - 86c89c3bd99d
   tool_panel_section_label: Annotation
 - name: fasta_stats
@@ -78,8 +91,8 @@ tools:
 - name: maker
   owner: iuc
   revisions:
+  - 5e96efe6e6c6
   - 73a79dec987b
-  - 96ac930d84fa
   - d3a2072d8745
   tool_panel_section_label: Annotation
 - name: maker_map_ids
@@ -97,4 +110,44 @@ tools:
   owner: iuc
   revisions:
   - bdb752f3c6bb
+  tool_panel_section_label: Annotation
+- name: bp_genbank2gff3
+  owner: iuc
+  revisions:
+  - a0d092f27fdf
+  tool_panel_section_label: Annotation
+- name: blastxml_to_gapped_gff3
+  owner: iuc
+  revisions:
+  - 561e827baa5f
+  tool_panel_section_label: Annotation
+- name: gff_to_prot
+  owner: iuc
+  revisions:
+  - 2aea122fbd25
+  - b12ff7a3ee41
+  tool_panel_section_label: Annotation
+- name: transit_gumbel
+  owner: iuc
+  revisions:
+  - ecce0cbe659f
+  - f50807720df1
+  tool_panel_section_label: Annotation
+- name: transit_hmm
+  owner: iuc
+  revisions:
+  - 532a84f0de1e
+  - a15f2773a7d7
+  tool_panel_section_label: Annotation
+- name: transit_resampling
+  owner: iuc
+  revisions:
+  - 0e0618c96ca4
+  - ad4d42fabf32
+  tool_panel_section_label: Annotation
+- name: transit_tn5gaps
+  owner: iuc
+  revisions:
+  - 4aaabd55eab8
+  - c68753eedf72
   tool_panel_section_label: Annotation

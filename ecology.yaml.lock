@@ -320,6 +320,11 @@ tools:
   owner: iuc
   revisions:
   - 0ea86f6bf2a1
+  - 5cec5fb749f0
+  - c171f2b7d76e
+  - c237ba772225
+  - eca03db4f612
+  - feab9265552d
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap
   owner: iuc
@@ -470,27 +475,79 @@ tools:
   owner: devteam
   revisions:
   - 71e5fa25b8a2
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_label: FASTA/FASTQ
 - name: fastqc
   owner: devteam
   revisions:
   - e7b2202befea
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
 - name: multiqc
   owner: iuc
   revisions:
+  - 3d93dd18d9f8
   - b2f1f75d49c4
   tool_panel_section_label: Quality Control
 - name: mothur_sffinfo
   owner: iuc
   revisions:
   - 12507ed33710
+  - f3a65ee4bfda
   tool_panel_section_label: Mothur
 - name: fastq_combiner
   owner: devteam
   revisions:
   - 56389130cb63
-  tool_panel_section_label: FASTA/FASTQ manipulation
+  tool_panel_section_label: FASTA/FASTQ
+- name: obi_illumina_pairend
+  owner: iuc
+  revisions:
+  - 94f412098ac8
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_ngsfilter
+  owner: iuc
+  revisions:
+  - 76e69de726b2
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_annotate
+  owner: iuc
+  revisions:
+  - 3021b9f5809f
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_grep
+  owner: iuc
+  revisions:
+  - e9e49cf06b42
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_uniq
+  owner: iuc
+  revisions:
+  - c0f7b58b4ce4
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_clean
+  owner: iuc
+  revisions:
+  - 7d16de45c021
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_convert
+  owner: iuc
+  revisions:
+  - 4d705e3443a7
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_sort
+  owner: iuc
+  revisions:
+  - 12b9e285ca1c
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_tab
+  owner: iuc
+  revisions:
+  - 3299c7d5268f
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_stat
+  owner: iuc
+  revisions:
+  - 39320fee9d70
+  tool_panel_section_label: DNA Metabarcoding
 - name: bwa
   owner: devteam
   revisions:
@@ -499,127 +556,155 @@ tools:
 - name: stacks2_ustacks
   owner: iuc
   revisions:
+  - 21d2aa544835
   - 7e5a174bc201
   tool_panel_section_label: RAD-seq
 - name: stacks2_cstacks
   owner: iuc
   revisions:
+  - c541e62d6c56
   - da351b9031de
+  - f4aab9196d1e
   tool_panel_section_label: RAD-seq
 - name: stacks2_sstacks
   owner: iuc
   revisions:
   - b7babdb3c219
+  - e58e2ecb6285
   tool_panel_section_label: RAD-seq
 - name: stacks2_gstacks
   owner: iuc
   revisions:
+  - 27359c6bf3e3
   - d35cb34f2b85
   tool_panel_section_label: RAD-seq
 - name: stacks2_populations
   owner: iuc
   revisions:
+  - 38942a7e3801
   - 6fba323a242d
+  - 9a44832748c5
   tool_panel_section_label: RAD-seq
 - name: stacks2_procrad
   owner: iuc
   revisions:
   - 9993234400f1
+  - ca7aa77c7f57
   tool_panel_section_label: RAD-seq
 - name: stacks2_denovomap
   owner: iuc
   revisions:
+  - afdbc7fcce70
   - b9822370f843
   tool_panel_section_label: RAD-seq
 - name: stacks2_refmap
   owner: iuc
   revisions:
+  - 319b10947ec1
   - 45385ba40a75
   tool_panel_section_label: RAD-seq
 - name: stacks2_tsv2bam
   owner: iuc
   revisions:
   - 1b270fc77c81
+  - 8c2617661c49
   tool_panel_section_label: RAD-seq
 - name: stacks2_clonefilter
   owner: iuc
   revisions:
   - 1b6d07160736
+  - b75174403a65
   tool_panel_section_label: RAD-seq
 - name: stacks2_kmerfilter
   owner: iuc
   revisions:
+  - 38c9f9a680f0
   - b2e3553e1be2
   tool_panel_section_label: RAD-seq
 - name: stacks2_shortreads
   owner: iuc
   revisions:
+  - 1974fee35ca7
   - ad7a60726fc3
   tool_panel_section_label: RAD-seq
 - name: stacks_ustacks
   owner: iuc
   revisions:
+  - b6de94f2edc0
   - e5c97f09fe06
   tool_panel_section_label: RAD-seq
 - name: stacks_cstacks
   owner: iuc
   revisions:
+  - dab92afa0c98
   - ff1f282d731e
   tool_panel_section_label: RAD-seq
 - name: stacks_sstacks
   owner: iuc
   revisions:
   - 95e37a28704b
+  - e38d181d4e72
   tool_panel_section_label: RAD-seq
 - name: stacks_pstacks
   owner: iuc
   revisions:
   - 7ebc7d229deb
+  - ede5223bc7f1
   tool_panel_section_label: RAD-seq
 - name: stacks_genotypes
   owner: iuc
   revisions:
+  - 00f4a4e553ae
   - 5af94af9ec8f
   tool_panel_section_label: RAD-seq
 - name: stacks_populations
   owner: iuc
   revisions:
   - 45db1ba16163
+  - d504d945a655
   tool_panel_section_label: RAD-seq
 - name: stacks_sstacks
   owner: iuc
   revisions:
   - 95e37a28704b
+  - e38d181d4e72
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks
   owner: iuc
   revisions:
   - 2360d8cf42f7
+  - 9d0ac63dcfcd
   tool_panel_section_label: RAD-seq
 - name: stacks_procrad
   owner: iuc
   revisions:
   - 57910d476be9
+  - 8fe258d72ff3
   tool_panel_section_label: RAD-seq
 - name: stacks_refmap
   owner: iuc
   revisions:
   - 4ee074ca88fb
+  - 7c42e6768c41
   tool_panel_section_label: RAD-seq
 - name: stacks_clonefilter
   owner: iuc
   revisions:
+  - 5d12a1115770
   - a0a51078cb61
   tool_panel_section_label: RAD-seq
 - name: stacks_assembleperead
   owner: iuc
   revisions:
+  - 0c741f364d18
   - b08cd32d03ad
+  - bc108981ca68
   tool_panel_section_label: RAD-seq
 - name: stacks_stats
   owner: iuc
   revisions:
   - 3c4c922a4fb0
+  - a89b5f7813ad
   tool_panel_section_label: RAD-seq
 - name: gdal_gdaladdo
   owner: ecology
