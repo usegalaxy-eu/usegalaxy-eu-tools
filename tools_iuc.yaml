@@ -4,6 +4,83 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: deeptools_estimatereadfiltering
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_plot_enrichment
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_alignmentsieve
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_compute_matrix_operations
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_plot_fingerprint
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_plot_coverage
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_plot_correlation
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_plot_profile
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_multi_bigwig_summary
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_compute_gc_bias
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_compute_matrix
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_plot_pca
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_multi_bam_summary
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_correct_gc_bias
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_plot_heatmap
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_bigwig_compare
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_bam_pe_fragmentsize
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_bam_coverage
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_bam_compare
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
   - name: anndata_import
     owner: iuc
     tool_panel_section_label: Single-cell
