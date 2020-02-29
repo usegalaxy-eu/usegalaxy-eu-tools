@@ -2,6 +2,101 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: deeptools_estimatereadfiltering
+  owner: bgruening
+  revisions:
+  - 71082dac170c
+  tool_panel_section_label: deepTools
+- name: deeptools_plot_enrichment
+  owner: bgruening
+  revisions:
+  - e65d16fb2724
+  tool_panel_section_label: deepTools
+- name: deeptools_alignmentsieve
+  owner: bgruening
+  revisions:
+  - 6531acf8209f
+  tool_panel_section_label: deepTools
+- name: deeptools_compute_matrix_operations
+  owner: bgruening
+  revisions:
+  - ee3a1b0f45f1
+  tool_panel_section_label: deepTools
+- name: deeptools_plot_fingerprint
+  owner: bgruening
+  revisions:
+  - 2da482e408b8
+  tool_panel_section_label: deepTools
+- name: deeptools_plot_coverage
+  owner: bgruening
+  revisions:
+  - 56bce3c82278
+  tool_panel_section_label: deepTools
+- name: deeptools_plot_correlation
+  owner: bgruening
+  revisions:
+  - 32e451def88c
+  tool_panel_section_label: deepTools
+- name: deeptools_plot_profile
+  owner: bgruening
+  revisions:
+  - c361b12d207a
+  tool_panel_section_label: deepTools
+- name: deeptools_multi_bigwig_summary
+  owner: bgruening
+  revisions:
+  - 3c9f0c486cca
+  tool_panel_section_label: deepTools
+- name: deeptools_compute_gc_bias
+  owner: bgruening
+  revisions:
+  - 2bc10a9ca58b
+  tool_panel_section_label: deepTools
+- name: deeptools_compute_matrix
+  owner: bgruening
+  revisions:
+  - 514fa53b5efb
+  tool_panel_section_label: deepTools
+- name: deeptools_plot_pca
+  owner: bgruening
+  revisions:
+  - 69264da0ce77
+  tool_panel_section_label: deepTools
+- name: deeptools_multi_bam_summary
+  owner: bgruening
+  revisions:
+  - 78f405266706
+  tool_panel_section_label: deepTools
+- name: deeptools_correct_gc_bias
+  owner: bgruening
+  revisions:
+  - 2c37ce318bc3
+  tool_panel_section_label: deepTools
+- name: deeptools_plot_heatmap
+  owner: bgruening
+  revisions:
+  - a4dfb122e52b
+  tool_panel_section_label: deepTools
+- name: deeptools_bigwig_compare
+  owner: bgruening
+  revisions:
+  - 26e7304d6737
+  tool_panel_section_label: deepTools
+- name: deeptools_bam_pe_fragmentsize
+  owner: bgruening
+  revisions:
+  - 62eb6d63f582
+  tool_panel_section_label: deepTools
+- name: deeptools_bam_coverage
+  owner: bgruening
+  revisions:
+  - bb1e4f63e0e6
+  tool_panel_section_label: deepTools
+- name: deeptools_bam_compare
+  owner: bgruening
+  revisions:
+  - e821645ef8fc
+  tool_panel_section_label: deepTools
 - name: anndata_import
   owner: iuc
   revisions:
@@ -179,11 +274,13 @@ tools:
   owner: iuc
   revisions:
   - 7f7d8b0c8517
+  - f8e51626fc56
   tool_panel_section_label: Metagenomic Analysis
 - name: mash_sketch
   owner: iuc
   revisions:
   - 68084b06ae83
+  - 77289957d47b
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_prepare
   owner: iuc
@@ -220,6 +317,11 @@ tools:
   revisions:
   - f28678233baf
   tool_panel_section_label: Statistics
+- name: data_manager_mash_sketch_builder
+  owner: iuc
+  revisions:
+  - 2af9137ba067
+  tool_panel_section_label: Data Managers
 - name: data_manager_dada2
   owner: iuc
   revisions:
@@ -1850,6 +1952,7 @@ tools:
 - name: stringtie
   owner: iuc
   revisions:
+  - 1ebd14235b92
   - 62d212192002
   - 6e45b443ef1f
   - dd4df992d93d
@@ -5090,3 +5193,18 @@ tools:
   revisions:
   - 57aa9597cd31
   tool_panel_section_label: Imaging
+- name: proteinortho
+  owner: iuc
+  revisions:
+  - 4850f0d15f01
+  tool_panel_section_label: Proteomics
+- name: proteinortho_grab_proteins
+  owner: iuc
+  revisions:
+  - d348c3a151d9
+  tool_panel_section_label: Proteomics
+- name: proteinortho_summary
+  owner: iuc
+  revisions:
+  - 2e0e9c418a85
+  tool_panel_section_label: Proteomics
