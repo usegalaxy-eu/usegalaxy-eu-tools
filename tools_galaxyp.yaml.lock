@@ -2,6 +2,36 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: pyprophet_export
+  owner: galaxyp
+  revisions:
+  - 2bc6bbf651b9
+  tool_panel_section_label: Proteomics
+- name: pyprophet_subsample
+  owner: galaxyp
+  revisions:
+  - 973e601622a1
+  tool_panel_section_label: Proteomics
+- name: pyprophet_score
+  owner: galaxyp
+  revisions:
+  - 8b11789d8b95
+  tool_panel_section_label: Proteomics
+- name: pyprophet_protein
+  owner: galaxyp
+  revisions:
+  - 741138de814c
+  tool_panel_section_label: Proteomics
+- name: pyprophet_peptide
+  owner: galaxyp
+  revisions:
+  - 611120fd1717
+  tool_panel_section_label: Proteomics
+- name: pyprophet_merge
+  owner: galaxyp
+  revisions:
+  - 73736112135d
+  tool_panel_section_label: Proteomics
 - name: uniprotxml_downloader
   owner: galaxyp
   revisions:
