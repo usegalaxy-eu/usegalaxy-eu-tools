@@ -555,6 +555,11 @@ tools:
   - a1ef6c88ee37
   - e2e9fae080ad
   tool_panel_section_label: Get Data
+- name: iedb_api
+  owner: iuc
+  revisions:
+  - fe3c43451319
+  tool_panel_section_label: Get Data
 - name: table_compute
   owner: iuc
   revisions:
@@ -814,6 +819,7 @@ tools:
   owner: devteam
   revisions:
   - 7e801ab2b70e
+  - e7ed3c310b74
   tool_panel_section_label: FASTA/FASTQ
 - name: fastqtofasta
   owner: devteam
@@ -1318,6 +1324,7 @@ tools:
   owner: devteam
   revisions:
   - 2051602a5f97
+  - 7d37cfda8e00
   - d8cc2c8eef14
   - de2db1bdfbf8
   tool_panel_section_label: FASTA/FASTQ
@@ -1369,12 +1376,14 @@ tools:
   owner: devteam
   revisions:
   - 2fd6033d0e9c
+  - 8cacfcf96a52
   - c8cd0a03db49
   - e626b3ff9922
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_concatenate_by_species
   owner: devteam
   revisions:
+  - 25b8736c627a
   - 717aee069681
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_collapser
@@ -1438,6 +1447,7 @@ tools:
   revisions:
   - 04a609b0fdf6
   - 25c24379693a
+  - 8050e091e99b
   - c64d534a763c
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_trimmer
@@ -1785,6 +1795,7 @@ tools:
   - 0696db066a5b
   - 3bf1b3ec1ddf
   - 6f91b8ce6e07
+  - 71bacea10eee
   - 89d26b11d452
   - 9a616afdbda5
   - a416957ee305
@@ -2354,6 +2365,7 @@ tools:
   owner: iuc
   revisions:
   - 2485637fe656
+  - a03dead1bede
   - b03ae2ba8688
   - f48ed38dfddf
   tool_panel_section_label: Annotation
@@ -4917,6 +4929,7 @@ tools:
 - name: hyphy_busted
   owner: iuc
   revisions:
+  - 5e122852e898
   - 8c8640ca39d7
   - b678fe748dc5
   - d6389faa75ff
@@ -4925,6 +4938,7 @@ tools:
 - name: hyphy_bgm
   owner: iuc
   revisions:
+  - 1647c9f95dc7
   - 1df765cc6bcb
   - 823a5afee916
   - bf97cacc1a55
@@ -4935,12 +4949,14 @@ tools:
   revisions:
   - 1942d02039c2
   - 6283babe736e
+  - 7f14d76f86ca
   - bff9a82d630d
   - c454b670f35f
   tool_panel_section_label: Phylogenetics
 - name: hyphy_absrel
   owner: iuc
   revisions:
+  - 0122b28acc5f
   - 181f5b9f139f
   - 5c87e4907e08
   - bf204aabbf56
@@ -4953,6 +4969,7 @@ tools:
   - 3285fd1f4bde
   - 93a0cf4ea5fc
   - bece0bad8e89
+  - ce53071d60a9
   tool_panel_section_label: Phylogenetics
 - name: hyphy_relax
   owner: iuc
@@ -4961,6 +4978,7 @@ tools:
   - 551616a65f8f
   - 6dd3c73bd80a
   - 7827dfb71693
+  - b5d981229301
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fade
   owner: iuc
@@ -4969,10 +4987,12 @@ tools:
   - 6164d9298db9
   - b959fd359a6b
   - c16dd6b14657
+  - d55ab4b13106
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
   owner: iuc
   revisions:
+  - 1a32b8e86fc6
   - 5f1830cb9135
   - a96a307afb40
   - ae7c42d49717
@@ -4981,6 +5001,7 @@ tools:
 - name: hyphy_meme
   owner: iuc
   revisions:
+  - 2c0308ac90e1
   - 33040ebb30c6
   - 4d5768ad6316
   - 7b3f9c78cf6d
@@ -4991,6 +5012,7 @@ tools:
   revisions:
   - 232bd7cd4639
   - 25782236e47e
+  - 382b8cd86c0e
   - 8522e7cc4fb4
   - c2bed8cc8fc1
   tool_panel_section_label: Phylogenetics
@@ -5001,6 +5023,7 @@ tools:
   - 2442e8b5e363
   - 4eba0baf0278
   - 6c3ece5fb602
+  - f40d481b7c8b
   tool_panel_section_label: Phylogenetics
 - name: ucsc_fasplit
   owner: iuc
@@ -5177,15 +5200,18 @@ tools:
   owner: iuc
   revisions:
   - 5db894671434
+  - ce26b5a859ba
   tool_panel_section_label: RNA Analysis
 - name: chira_quantify
   owner: iuc
   revisions:
   - 1bfa8c091530
+  - 2b150f2a012b
   tool_panel_section_label: RNA Analysis
 - name: chira_extract
   owner: iuc
   revisions:
+  - 061844f6837f
   - 0a3107204741
   tool_panel_section_label: RNA Analysis
 - name: idr_download_by_ids

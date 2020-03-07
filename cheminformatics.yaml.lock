@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: mmpbsa_mmgbsa
+  owner: chemteam
+  revisions:
+  - 52e64e8cf203
+  tool_panel_section_label: ChemicalToolBox
 - name: rdock_rbdock
   owner: bgruening
   revisions:
