@@ -317,6 +317,11 @@ tools:
   revisions:
   - f28678233baf
   tool_panel_section_label: Statistics
+- name: data_manager_mitos
+  owner: iuc
+  revisions:
+  - 26a6f95e82c8
+  tool_panel_section_label: Data Managers
 - name: data_manager_mash_sketch_builder
   owner: iuc
   revisions:
@@ -2217,6 +2222,16 @@ tools:
   revisions:
   - 4a32700dcaa2
   tool_panel_section_label: Phenotype Association
+- name: mitos
+  owner: iuc
+  revisions:
+  - 52742626480e
+  tool_panel_section_label: Annotation
+- name: mitos2
+  owner: iuc
+  revisions:
+  - 79e259afea34
+  tool_panel_section_label: Annotation
 - name: seq2hla
   owner: iuc
   revisions:
@@ -5051,11 +5066,17 @@ tools:
   - 034f76ead49a
   - 850e213bee26
   tool_panel_section_label: Phylogenetics
+- name: hyphy_prime
+  owner: iuc
+  revisions:
+  - 725ef5f6d749
+  tool_panel_section_label: Phylogenetics
 - name: hyphy_busted
   owner: iuc
   revisions:
   - 4ff928db5592
   - 5e122852e898
+  - 6647e04e92a7
   - 8c8640ca39d7
   - b678fe748dc5
   - d6389faa75ff
@@ -5068,6 +5089,7 @@ tools:
   - 1df765cc6bcb
   - 823a5afee916
   - bf97cacc1a55
+  - c669c8f7c6f6
   - f276acfde263
   - fb142ad9b580
   tool_panel_section_label: Phylogenetics
@@ -5077,6 +5099,7 @@ tools:
   - 1942d02039c2
   - 6283babe736e
   - 7f14d76f86ca
+  - aa8cc71438cf
   - bff9a82d630d
   - c454b670f35f
   - c96eee4ebe63
@@ -5089,6 +5112,7 @@ tools:
   - 5c87e4907e08
   - bf204aabbf56
   - c5533a61ea60
+  - cce7b18495e4
   - f73435dc282b
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fubar
@@ -5097,6 +5121,7 @@ tools:
   - 0f108ee932ea
   - 3285fd1f4bde
   - 93a0cf4ea5fc
+  - 9d2714133deb
   - bece0bad8e89
   - ce53071d60a9
   - da68d7067bf8
@@ -5105,6 +5130,7 @@ tools:
   owner: iuc
   revisions:
   - 134d46bd47dd
+  - 2fe09c202bbe
   - 551616a65f8f
   - 6dd3c73bd80a
   - 7827dfb71693
@@ -5119,6 +5145,7 @@ tools:
   - 62971c58f0dc
   - b959fd359a6b
   - c16dd6b14657
+  - c257fa0a98a7
   - d55ab4b13106
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
@@ -5127,6 +5154,7 @@ tools:
   - 1a32b8e86fc6
   - 1cd3060a8504
   - 5f1830cb9135
+  - 6cf8d753e93e
   - a96a307afb40
   - ae7c42d49717
   - c60fcdf8f01e
@@ -5136,6 +5164,7 @@ tools:
   revisions:
   - 2c0308ac90e1
   - 33040ebb30c6
+  - 3d1f153e2aa1
   - 4d5768ad6316
   - 74b590fdc6a0
   - 7b3f9c78cf6d
@@ -5144,6 +5173,7 @@ tools:
 - name: hyphy_slac
   owner: iuc
   revisions:
+  - 0b4ee5db66ca
   - 232bd7cd4639
   - 25782236e47e
   - 36a50b938d70
@@ -5159,6 +5189,7 @@ tools:
   - 4eba0baf0278
   - 6400b683aced
   - 6c3ece5fb602
+  - 8389039f7fbc
   - f40d481b7c8b
   tool_panel_section_label: Phylogenetics
 - name: ucsc_fasplit
