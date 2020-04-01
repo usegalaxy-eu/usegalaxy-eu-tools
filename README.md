@@ -1,9 +1,10 @@
 # usegalaxy.be tools
 
 This repository contains the lists of tools installed in usegalaxy.be.
-The tools installed are basically split in 2 lists:
+The tools installed are basically split in 3 lists:
 - tools_iuc.yaml updated from upstream usegalaxy.\* repo (https://github.com/usegalaxy-eu/usegalaxy-eu-tools)
 - belgium-custom.yaml listing tools installed only in usegalaxy.be.
+- GTN_tutorials_tools.yaml listing tools from the [Galaxy Training Network](https://github.com/galaxyproject/training-material). This list is based on GTN release [2020-04-01](https://github.com/galaxyproject/training-material/releases/tag/2020-04-01).
 
 Tools are included initially in the belgium-custom list and, if the tool meets the requirements, a request is made and it is later included upstream in the tools_iuc.
 
