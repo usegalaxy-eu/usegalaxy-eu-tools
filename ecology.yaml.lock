@@ -1,6 +1,31 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: stoc_maketable
+  owner: ecology
+  revisions:
+  - 22a784d2b0e0
+  tool_panel_section_label: Species abundance
+- name: stoc_filteringsp
+  owner: ecology
+  revisions:
+  - 2e45ae3b297a
+  tool_panel_section_label: Species abundance
+- name: stoc_mainglm
+  owner: ecology
+  revisions:
+  - df3ce23d0d23
+  tool_panel_section_label: Species abundance
+- name: stoc_mainglm_group
+  owner: ecology
+  revisions:
+  - 06a11044e089
+  tool_panel_section_label: Species abundance
+- name: stoc_trend_indic
+  owner: ecology
+  revisions:
+  - 916b49d725ba
+  tool_panel_section_label: Species abundance
 - name: regionalgam_ab_index
   owner: ecology
   revisions:
