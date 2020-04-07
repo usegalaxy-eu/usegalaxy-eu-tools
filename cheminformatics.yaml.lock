@@ -2,47 +2,102 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: mmpbsa_mmgbsa
+  owner: chemteam
+  revisions:
+  - 52e64e8cf203
+  tool_panel_section_label: ChemicalToolBox
+- name: xchem_transfs_scoring
+  owner: bgruening
+  revisions:
+  - de29b4f35536
+  tool_panel_section_label: ChemicalToolBox
+- name: rxdock_sort_filter
+  owner: bgruening
+  revisions:
+  - 475cde209992
+  tool_panel_section_label: ChemicalToolBox
+- name: rxdock_rbdock
+  owner: bgruening
+  revisions:
+  - 35ee2e002bb0
+  tool_panel_section_label: ChemicalToolBox
+- name: rxdock_rbcavity
+  owner: bgruening
+  revisions:
+  - e99f861ba68a
+  tool_panel_section_label: ChemicalToolBox
+- name: rdock_sort_filter
+  owner: bgruening
+  revisions:
+  - 4812dc209abd
+  - 784a9f7f079e
+  tool_panel_section_label: ChemicalToolBox
 - name: rdock_rbdock
   owner: bgruening
   revisions:
+  - 1709d2c3dc20
   - 1a1600fde77a
   - 5f291eef9ef3
+  - a428230b38f6
   - bad150d12198
   tool_panel_section_label: ChemicalToolBox
 - name: rdock_rbcavity
   owner: bgruening
   revisions:
   - 06f376dc117a
+  - 5f73eb32ddbf
+  - d52d6ee95cf2
+  tool_panel_section_label: ChemicalToolBox
+- name: openbabel_structure_distance_finder
+  owner: bgruening
+  revisions:
+  - c066b5accacf
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_max_score
   owner: bgruening
   revisions:
+  - 2f110aef9b53
   - 8eab6d2b7bdf
   - bb5365381c8f
+  - bf99565cec1f
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
   owner: bgruening
   revisions:
   - 334ad24525db
+  - 58d18838e244
+  - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_docking_scoring
   owner: bgruening
   revisions:
   - 2e67eea82ff7
+  - 8161c08627bf
+  - a3c1e2eea7d3
   - f8f53668d5a2
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
   owner: bgruening
   revisions:
   - 334ad24525db
+  - 58d18838e244
+  - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
   owner: bgruening
   revisions:
   - 334ad24525db
+  - 58d18838e244
+  - bd12f4b4c3a8
   - f80cfac80c53
+  tool_panel_section_label: ChemicalToolBox
+- name: qed
+  owner: bgruening
+  revisions:
+  - ab73abead7fa
   tool_panel_section_label: ChemicalToolBox
 - name: padel
   owner: bgruening
@@ -60,6 +115,7 @@ tools:
   owner: chemteam
   revisions:
   - 1c25c23ff450
+  - 79e8ab8f1e81
   - acce5039ece7
   - b61cbdf78765
   - d76bea4c85f3
@@ -181,9 +237,11 @@ tools:
 - name: ctb_rdkit_descriptors
   owner: bgruening
   revisions:
+  - 414edd9ea77d
   - 617d4555d8d3
   - 6674260c1459
   - 749cc765636b
+  - d68bf44e1f5c
   tool_panel_section_label: ChemicalToolBox
 - name: packmol
   owner: chemteam
@@ -295,10 +353,12 @@ tools:
   revisions:
   - 06340f46ecb8
   - 2ba07316c7e0
+  - b8838a9aa31a
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_remsmall
   owner: bgruening
   revisions:
+  - 0c95b0f51114
   - 11952f619e90
   - ac9567d307a2
   - c8d8caa9a54d
@@ -310,14 +370,17 @@ tools:
   - 14712e15f196
   - 1c418abdafd9
   - 50dc8ca09a50
+  - 8b23033ff72c
   - 99517f9b780d
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_change_title
   owner: bgruening
   revisions:
   - 3bf4dcc945f9
+  - 49d21d05f77c
   - 9c15e92bed39
   - a84187d7bda6
+  - eed751918a20
   - f924a1728291
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_genprop
@@ -326,12 +389,14 @@ tools:
   - 53cf744d1c6f
   - a26f96c1f061
   - aafffb37d168
+  - c427987b54fd
   - ebe0654a8b85
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_remions
   owner: bgruening
   revisions:
   - 04da8dc033e1
+  - 34fb5da28776
   - 76bbd52058ab
   - abceed0106cd
   - cc8ca507174f
@@ -348,11 +413,13 @@ tools:
   - 3ec5e9a716ac
   - 672b3365ddbc
   - ed50b83b02e9
+  - ff95203c7e4b
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_spectrophore_search
   owner: bgruening
   revisions:
   - 0b9ee280c439
+  - 3d91d24e89c5
   - 63a121e6f224
   - aedce3959676
   - f93f3e01abe8
@@ -363,6 +430,7 @@ tools:
   - 00263ca6ffb8
   - 0bf5331f62ef
   - 44488fa95d1d
+  - 612c134546a2
   - adc3b24c083f
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_compound_convert
@@ -372,6 +440,7 @@ tools:
   - a072cb207571
   - a9df9aae60bb
   - d00ae56d3ba5
+  - e6011617c748
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_subsearch
   owner: bgruening
@@ -380,6 +449,7 @@ tools:
   - 80d78559a5a3
   - 9a83f24376b0
   - ab2b9d87b067
+  - fc199b60875d
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_filter
   owner: bgruening
@@ -388,18 +458,22 @@ tools:
   - 69e02cf88856
   - 72d13f75b67c
   - a9ea2eac7300
+  - da0059ee548a
+  - da03b00048b1
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_addh
   owner: bgruening
   revisions:
   - 0691e5e97cd5
   - 883fe4f7f1b2
+  - 976a5975b952
   - bfb8555f0003
   - d2e6d682bcd0
   tool_panel_section_label: ChemicalToolBox
 - name: openbabel_remduplicates
   owner: bgruening
   revisions:
+  - 1dd562ae055d
   - 39895aff0dd7
   - 65254472e5b4
   - d751e92477ea
@@ -452,12 +526,14 @@ tools:
   - 0d640d752e8a
   - 2e202f6c3034
   - 597ee2f97479
+  - c6afbb28f547
   tool_panel_section_label: ChemicalToolBox
 - name: ambertools_antechamber
   owner: chemteam
   revisions:
   - 511c4bd8aa6d
   - 59a0424937cc
+  - ca57ded3ec32
   - d3cdf6fe972a
   tool_panel_section_label: ChemicalToolBox
 - name: ambertools_parmchk2
@@ -466,11 +542,13 @@ tools:
   - 00ff41b1d49a
   - 3549852f413f
   - a0099ea2ef8b
+  - dbfb86927de6
   tool_panel_section_label: ChemicalToolBox
 - name: chembl
   owner: bgruening
   revisions:
   - 6f8458d1cf46
+  - 8b6ba267714b
   - 915e9be38994
   - f56492688f43
   tool_panel_section_label: ChemicalToolBox
@@ -478,9 +556,18 @@ tools:
   owner: bgruening
   revisions:
   - 2063e965531c
+  - 909c8763f127
   tool_panel_section_label: ChemicalToolBox
 - name: sdf_to_tab
   owner: bgruening
   revisions:
   - 06828e0cc8a7
+  - 193389d3a5f0
+  - 71bc02c59d3a
+  tool_panel_section_label: ChemicalToolBox
+- name: enumerate_charges
+  owner: bgruening
+  revisions:
+  - 0f3e5c69251e
+  - 2a868592ebcb
   tool_panel_section_label: ChemicalToolBox
