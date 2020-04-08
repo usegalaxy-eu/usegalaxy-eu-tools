@@ -4,7 +4,6 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-
   - name: deeptools_estimatereadfiltering
     owner: bgruening
     tool_panel_section_label: deepTools
@@ -148,6 +147,14 @@ tools:
   - name: kallisto_quant
     owner: iuc
     tool_panel_section_label: RNA Analysis
+
+  - name: odgi_build
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: odgi_viz
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: variant_analyzer
     owner: iuc
