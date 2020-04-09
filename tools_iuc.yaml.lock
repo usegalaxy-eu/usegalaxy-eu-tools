@@ -241,6 +241,31 @@ tools:
   - 60f888039fb2
   - b818b23df1e0
   tool_panel_section_label: RNA Analysis
+- name: vg_convert
+  owner: iuc
+  revisions:
+  - e68d9dfa62a2
+  tool_panel_section_label: Variant Calling
+- name: vg_deconstruct
+  owner: iuc
+  revisions:
+  - a347dad1f305
+  tool_panel_section_label: Variant Calling
+- name: vg_view
+  owner: iuc
+  revisions:
+  - 95ec8f978762
+  tool_panel_section_label: Variant Calling
+- name: odgi_build
+  owner: iuc
+  revisions:
+  - 7fb3bb1e221e
+  tool_panel_section_label: Variant Calling
+- name: odgi_viz
+  owner: iuc
+  revisions:
+  - 536768de4748
+  tool_panel_section_label: Variant Calling
 - name: variant_analyzer
   owner: iuc
   revisions:
@@ -326,6 +351,7 @@ tools:
   owner: iuc
   revisions:
   - 2af9137ba067
+  - b6016642539d
   tool_panel_section_label: Data Managers
 - name: data_manager_dada2
   owner: iuc
@@ -574,6 +600,7 @@ tools:
 - name: iedb_api
   owner: iuc
   revisions:
+  - 6cf84410cb2e
   - fe3c43451319
   tool_panel_section_label: Get Data
 - name: table_compute
@@ -1790,6 +1817,7 @@ tools:
   - 17e61517c166
   - 2445d53549ba
   - 3f4d6399997b
+  - 53c0b7a1a0c3
   - 6f50f36e4481
   - b3eab4b67562
   tool_panel_section_label: Mapping
@@ -2424,6 +2452,11 @@ tools:
   - 54b6b4d0613a
   - b5066aa77fea
   tool_panel_section_label: Annotation
+- name: seqwish
+  owner: iuc
+  revisions:
+  - 7f7a074326ac
+  tool_panel_section_label: Variant Calling
 - name: lofreq_call
   owner: iuc
   revisions:
@@ -3485,6 +3518,7 @@ tools:
   owner: iuc
   revisions:
   - 889cc43b72d6
+  - 8c2e674a93bb
   tool_panel_section_label: Data Managers
 - name: data_manager_qiime_database_downloader
   owner: iuc
@@ -3929,6 +3963,11 @@ tools:
   - 104bedd292cd
   - 16dda99bd733
   tool_panel_section_label: HiCExplorer
+- name: minia
+  owner: iuc
+  revisions:
+  - 0a66ef6dacb7
+  tool_panel_section_label: Assembly
 - name: metaspades
   owner: nml
   revisions:
@@ -5062,6 +5101,11 @@ tools:
   - 75a14cc16d4d
   - b026dae67fba
   tool_panel_section_label: Convert Formats
+- name: raxml
+  owner: iuc
+  revisions:
+  - 14eb2acf30e3
+  tool_panel_section_label: Phylogenetics
 - name: phyml
   owner: iuc
   revisions:
@@ -5359,6 +5403,7 @@ tools:
   owner: iuc
   revisions:
   - 2a57d2ef04c6
+  - 2bf45c7fbeea
   - 7587218b4253
   - 872249f5495a
   - b3065e4df04c
@@ -5367,6 +5412,7 @@ tools:
   owner: iuc
   revisions:
   - 39bb70c2764e
+  - 67a73fead553
   - 6c398f64ad6a
   - 7ab33ce63e4d
   - d4355828b4d3
@@ -5376,6 +5422,7 @@ tools:
   revisions:
   - 0170de5072d4
   - 5db894671434
+  - a1dc6db337ca
   - c96f1a93beb7
   - ce26b5a859ba
   - cfd572ff72aa
@@ -5384,6 +5431,7 @@ tools:
   owner: iuc
   revisions:
   - 1bfa8c091530
+  - 1fe9daabe09c
   - 2b150f2a012b
   - 35a20c16a49e
   - 903f7a4cfbf0
@@ -5397,6 +5445,7 @@ tools:
   - 7e316a1fe98e
   - d129b3dfd2b8
   - dea6bc47a47e
+  - e82eda6acb29
   tool_panel_section_label: RNA Analysis
 - name: idr_download_by_ids
   owner: iuc
