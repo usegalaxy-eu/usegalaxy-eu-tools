@@ -20,7 +20,7 @@ tools:
   - b28e0cfa7ba1
   - b8348686a0b9
   - dde39ba9c031
-  tool_panel_section_label: Operate on Genomic Intervals
+  tool_panel_section_label: BED
 - name: pizzly
   owner: iuc
   revisions:
@@ -123,6 +123,7 @@ tools:
   revisions:
   - 1790dcf3c32d
   - 26b7446bb17e
+  - aad3885b3216
   - b723c120161a
   - f5ea3ce9b9b0
   tool_panel_section_label: Get Data
@@ -455,6 +456,7 @@ tools:
   - 2bb2e07a7a21
   - 2c9e5136b416
   - 3235aeb45c22
+  - 667e17248bfe
   - 69c5e9c0add0
   - 6b774e9d6387
   - 9de82b4963e6
@@ -1128,6 +1130,7 @@ tools:
   revisions:
   - 0696db066a5b
   - 6f91b8ce6e07
+  - 71bacea10eee
   - 89d26b11d452
   - a6fc9228e1a0
   - d983d19fbbab
@@ -1164,6 +1167,7 @@ tools:
   revisions:
   - 606b7748965d
   - c9cfec002f71
+  - d84caa5a98ad
   - db1f362cca3e
   - f7564c3f9dc0
   tool_panel_section_label: RNA Analysis
@@ -1200,6 +1204,7 @@ tools:
 - name: stringtie
   owner: iuc
   revisions:
+  - 1ebd14235b92
   - 62d212192002
   - 6e45b443ef1f
   - dd4df992d93d
@@ -1730,24 +1735,6 @@ tools:
   revisions:
   - 4a978cf8cf92
   tool_panel_section_label: Test Tools
-- name: bedtools
-  owner: iuc
-  revisions:
-  - 4f7a5ccd2ae9
-  - 87ee588b3d45
-  - b28e0cfa7ba1
-  - b8348686a0b9
-  - dde39ba9c031
-  tool_panel_section_label: Operate on Genomic Intervals
-- name: bedtools
-  owner: iuc
-  revisions:
-  - 4f7a5ccd2ae9
-  - 87ee588b3d45
-  - b28e0cfa7ba1
-  - b8348686a0b9
-  - dde39ba9c031
-  tool_panel_section_label: Operate on Genomic Intervals
 - name: translate_bed_sequences
   owner: jjohnson
   revisions:
@@ -2254,6 +2241,7 @@ tools:
   owner: iuc
   revisions:
   - 496124e09f82
+  - 7d75673f4d6f
   - b597e1cd14b1
   - bc8b01d1b496
   - f3cc64057b4e
@@ -2261,6 +2249,7 @@ tools:
 - name: gemini_windower
   owner: iuc
   revisions:
+  - 0c58ba91d018
   - 3b5b1ebc8423
   - 9aad9ef0502c
   - 9b462be5a604
@@ -2273,11 +2262,13 @@ tools:
   - 699ce2631e79
   - 95a149a9a75d
   - c70d79e0eed7
+  - df57188562f0
   tool_panel_section_label: Gemini
 - name: gemini_gene_wise
   owner: iuc
   revisions:
   - 0db31ae5295e
+  - 452104bdc655
   - 4b26f6c99227
   - 4f55668547fc
   - 99d6e7b1b7f1
@@ -2286,6 +2277,7 @@ tools:
 - name: gemini_stats
   owner: iuc
   revisions:
+  - 5c9efee9cb1e
   - 73b103195e2a
   - 86d4303cc3ca
   - a0ee6874a23b
@@ -2305,6 +2297,7 @@ tools:
   - 2281967e7bc3
   - a02cd62adb70
   - b8b120a4cef7
+  - be828b79bd4d
   - bff8fad3fb69
   tool_panel_section_label: Gemini
 - name: gemini_pathways
@@ -2313,6 +2306,7 @@ tools:
   - 2bce41988d8e
   - 66bc68095012
   - 69b5327a1f88
+  - 9199331c3421
   - c63b7eefb07a
   - d5ec6384a3be
   tool_panel_section_label: Gemini
@@ -2333,6 +2327,7 @@ tools:
 - name: gemini_actionable_mutations
   owner: iuc
   revisions:
+  - 142d95ab942e
   - 643a9ad97f08
   - 712aa8283200
   - 9f0f5e984ae3
@@ -2342,6 +2337,7 @@ tools:
   owner: iuc
   revisions:
   - 295814260d95
+  - 2969a1f43b7d
   - 93a391b4602c
   - be7ac09bc2fa
   - dda378a72430
@@ -2355,12 +2351,14 @@ tools:
   - 840fb4850be3
   - ab195e756e5e
   - cd00221d67cb
+  - da74170c55c7
   tool_panel_section_label: Gemini
 - name: gemini_fusions
   owner: iuc
   revisions:
   - 37f9901b674d
   - 6e3d2bd01a96
+  - 8151a5a0e4f6
   - 8295781a3c27
   - 8a68d9a33023
   - b35fd707c586
@@ -2369,6 +2367,7 @@ tools:
   owner: iuc
   revisions:
   - 269c40fdcccb
+  - 45296e47d565
   - 5c5cdbdc3534
   - 64132aa2d62a
   - 9f74d7b0704a
@@ -2388,6 +2387,7 @@ tools:
   - 3859552a63d8
   - 567837ca5f33
   - 5bcaca8085bd
+  - f2f3bc622a16
   tool_panel_section_label: Gemini
 - name: gemini_recessive_and_dominant
   owner: iuc
@@ -2399,6 +2399,7 @@ tools:
 - name: gemini_roh
   owner: iuc
   revisions:
+  - 345d41f3f574
   - 60f477e3c79b
   - 91b4db3e6df4
   - ce54eb6fd5f9
@@ -2413,6 +2414,7 @@ tools:
   - 5fd4a5f9ee31
   - 7b031989ea12
   - '991049484627'
+  - e4e2128460e3
   tool_panel_section_label: Gemini
 - name: gemini_qc
   owner: iuc
@@ -2421,6 +2423,7 @@ tools:
   - 246ad1a7ff20
   - 5d18dcbf2a0c
   - 8414eecc3828
+  - 86e46972e183
   - a875f940d8fd
   tool_panel_section_label: Gemini
 - name: gemini_comp_hets
@@ -2432,6 +2435,7 @@ tools:
 - name: gemini_interactions
   owner: iuc
   revisions:
+  - 2550239feed5
   - 2ddee6cd4a5a
   - 527c8e4a356f
   - 7028ca3cac1c

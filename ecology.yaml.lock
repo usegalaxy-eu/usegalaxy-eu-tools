@@ -1,6 +1,31 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: stoc_maketable
+  owner: ecology
+  revisions:
+  - 22a784d2b0e0
+  tool_panel_section_label: Species abundance
+- name: stoc_filteringsp
+  owner: ecology
+  revisions:
+  - 2e45ae3b297a
+  tool_panel_section_label: Species abundance
+- name: stoc_mainglm
+  owner: ecology
+  revisions:
+  - df3ce23d0d23
+  tool_panel_section_label: Species abundance
+- name: stoc_mainglm_group
+  owner: ecology
+  revisions:
+  - 06a11044e089
+  tool_panel_section_label: Species abundance
+- name: stoc_trend_indic
+  owner: ecology
+  revisions:
+  - 916b49d725ba
+  tool_panel_section_label: Species abundance
 - name: regionalgam_ab_index
   owner: ecology
   revisions:
@@ -70,6 +95,7 @@ tools:
   owner: bgruening
   revisions:
   - 0a8c6b61f0f4
+  - fb4ff3c42cd3
   tool_panel_section_label: Text Manipulation
 - name: column_maker
   owner: devteam
@@ -320,6 +346,7 @@ tools:
   owner: iuc
   revisions:
   - 0ea86f6bf2a1
+  - 5cec5fb749f0
   - c171f2b7d76e
   - c237ba772225
   - eca03db4f612
@@ -384,80 +411,96 @@ tools:
   owner: bgruening
   revisions:
   - 1a9d5a8fff12
+  - d2afc87db26b
   tool_panel_section_label: Statistics
 - name: sklearn_sample_generator
   owner: bgruening
   revisions:
   - 97b467e06354
+  - b4ba9602a36e
   tool_panel_section_label: Statistics
 - name: sklearn_searchcv
   owner: bgruening
   revisions:
+  - 1ae5dfd5ac17
   - 1c4a241bef5c
   tool_panel_section_label: Statistics
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
   - 913ee94945f3
+  - 97dce66fe158
   tool_panel_section_label: Statistics
 - name: sklearn_pairwise_metrics
   owner: bgruening
   revisions:
+  - 7366e5108e9f
   - 86020dbc8ef7
   tool_panel_section_label: Statistics
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
+  - 39ae3c043096
   - e9ba818e7877
   tool_panel_section_label: Statistics
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
+  - 1dd433d2c92c
   - abb5a3f256e3
   tool_panel_section_label: Statistics
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
+  - 3ab7af14f1b5
   - e94395c672bd
   tool_panel_section_label: Statistics
 - name: sklearn_feature_selection
   owner: bgruening
   revisions:
+  - ae0fafb53c1d
   - ec25331946b8
   tool_panel_section_label: Statistics
 - name: sklearn_data_preprocess
   owner: bgruening
   revisions:
+  - 826c3e68e7a9
   - 9e43ee712723
   tool_panel_section_label: Statistics
 - name: sklearn_clf_metrics
   owner: bgruening
   revisions:
+  - 55703205546f
   - 9bf11bbeccc3
   tool_panel_section_label: Statistics
 - name: sklearn_regression_metrics
   owner: bgruening
   revisions:
+  - 1e98dbb8d5bc
   - 40ee30b5e456
   tool_panel_section_label: Statistics
 - name: sklearn_discriminant_classifier
   owner: bgruening
   revisions:
+  - 237ae72d58a3
   - 5552eda109bd
   tool_panel_section_label: Statistics
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
+  - 3e4a7684d402
   - b628de0d101f
   tool_panel_section_label: Statistics
 - name: sklearn_model_validation
   owner: bgruening
   revisions:
+  - 0474777be433
   - cf9aa11b91c8
   tool_panel_section_label: Statistics
 - name: scipy_sparse
   owner: bgruening
   revisions:
+  - a84e6ffd3735
   - b9ed7b774ba3
   tool_panel_section_label: Statistics
 - name: regex_find_replace
@@ -473,6 +516,7 @@ tools:
 - name: fastq_groomer
   owner: devteam
   revisions:
+  - 47e5dbc3e790
   - 71e5fa25b8a2
   tool_panel_section_label: FASTA/FASTQ
 - name: fastqc
@@ -496,6 +540,7 @@ tools:
   owner: devteam
   revisions:
   - 56389130cb63
+  - f1dc2a761c30
   tool_panel_section_label: FASTA/FASTQ
 - name: obi_illumina_pairend
   owner: iuc
@@ -580,6 +625,7 @@ tools:
 - name: stacks2_populations
   owner: iuc
   revisions:
+  - 38942a7e3801
   - 6fba323a242d
   - 9a44832748c5
   tool_panel_section_label: RAD-seq
