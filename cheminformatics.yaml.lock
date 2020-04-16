@@ -2,6 +2,16 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: openduck_run_smd
+  owner: bgruening
+  revisions:
+  - 05c95b16823b
+  tool_panel_section_label: ChemicalToolBox
+- name: openduck_chunk
+  owner: bgruening
+  revisions:
+  - 89c3bd4f50a3
+  tool_panel_section_label: ChemicalToolBox
 - name: mmpbsa_mmgbsa
   owner: chemteam
   revisions:
@@ -13,6 +23,7 @@ tools:
   revisions:
   - 8d9c8ba2ec86
   - de29b4f35536
+  - f6f9b47d02b6
   tool_panel_section_label: ChemicalToolBox
 - name: rxdock_sort_filter
   owner: bgruening
@@ -34,6 +45,7 @@ tools:
   revisions:
   - 4812dc209abd
   - 784a9f7f079e
+  - a6ec6c55267e
   tool_panel_section_label: ChemicalToolBox
 - name: rdock_rbdock
   owner: bgruening
@@ -43,11 +55,13 @@ tools:
   - 5f291eef9ef3
   - a428230b38f6
   - bad150d12198
+  - e4b7d1507a75
   tool_panel_section_label: ChemicalToolBox
 - name: rdock_rbcavity
   owner: bgruening
   revisions:
   - 06f376dc117a
+  - 2f218be61685
   - 5f73eb32ddbf
   - d52d6ee95cf2
   tool_panel_section_label: ChemicalToolBox
@@ -65,12 +79,14 @@ tools:
   - 8eab6d2b7bdf
   - bb5365381c8f
   - bf99565cec1f
+  - d4c67ced6abc
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
   owner: bgruening
   revisions:
   - 334ad24525db
   - 58d18838e244
+  - 791c86130585
   - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
@@ -80,6 +96,7 @@ tools:
   - 2e67eea82ff7
   - 8161c08627bf
   - a3c1e2eea7d3
+  - a574f6e8b909
   - f8f53668d5a2
   tool_panel_section_label: ChemicalToolBox
 - name: sucos_clustering
@@ -87,6 +104,7 @@ tools:
   revisions:
   - 334ad24525db
   - 58d18838e244
+  - 791c86130585
   - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
@@ -95,6 +113,7 @@ tools:
   revisions:
   - 334ad24525db
   - 58d18838e244
+  - 791c86130585
   - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
@@ -134,6 +153,7 @@ tools:
   - b43abebffad6
   - c124921a9e5f
   - c7bcae9fe040
+  - cac1886249a2
   - ccdf0b30a422
   - cf03bccaa325
   tool_panel_section_label: ChemicalToolBox
@@ -149,10 +169,12 @@ tools:
   - 91fc33483094
   - c1e98d48b8b4
   - ea7b9183bf30
+  - eb6564a60136
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_solvate
   owner: chemteam
   revisions:
+  - 1809414a9454
   - 3c77d66e7fe5
   - 589652e8eb31
   - 645139abefae
@@ -179,6 +201,7 @@ tools:
 - name: gmx_merge_topology_files
   owner: chemteam
   revisions:
+  - 06ea4e040d45
   - 19d4b07e7ca7
   - 33ed3c26b8c2
   - 439bf0e21ca1
@@ -193,6 +216,7 @@ tools:
   revisions:
   - 171ce1253b19
   - 1a5960636405
+  - 2e219a2d9327
   - 4dba9a5b74fc
   - 5642f48f5698
   - b1061cc2653a
@@ -209,27 +233,32 @@ tools:
 - name: gmx_trj
   owner: chemteam
   revisions:
+  - b2acdbff8dfb
   - bb0053c4e4f2
   - e9cc595562b8
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_energy
   owner: chemteam
   revisions:
+  - 5579659312e6
   - b4a47b4ed264
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_restraints
   owner: chemteam
   revisions:
+  - 42e4eda6eb5d
   - f79f4671eaf2
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_makendx
   owner: chemteam
   revisions:
   - 01a435922dd5
+  - a80e10e9f686
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_editconf
   owner: chemteam
   revisions:
+  - 3b8a9d5ced85
   - e69ce1e7fb6a
   tool_panel_section_label: ChemicalToolBox
 - name: alchemical_analysis
