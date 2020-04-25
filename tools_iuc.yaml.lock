@@ -343,6 +343,11 @@ tools:
   revisions:
   - f28678233baf
   tool_panel_section_label: Statistics
+- name: data_manager_primer_scheme_bedfiles
+  owner: iuc
+  revisions:
+  - cce5d9327cd6
+  tool_panel_section_label: Data Managers
 - name: data_manager_mitos
   owner: iuc
   revisions:
@@ -892,6 +897,7 @@ tools:
   - 6c2351178f8d
   - 988729b728f0
   - a935cbdf1c0e
+  - dbf9c561ef29
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_stats
   owner: iuc
@@ -2154,6 +2160,11 @@ tools:
   owner: devteam
   revisions:
   - da1a6f33b504
+  tool_panel_section_label: Epigenetics
+- name: seacr
+  owner: iuc
+  revisions:
+  - 66b7657f0bd6
   tool_panel_section_label: Epigenetics
 - name: basil
   owner: iuc
@@ -5085,6 +5096,7 @@ tools:
   - 4efdca267d51
   - 78c75f134c16
   - 862f5a86854d
+  - b734db305578
   - f9bf6a8d8547
   tool_panel_section_label: Annotation
 - name: biom_convert
@@ -5103,6 +5115,7 @@ tools:
   owner: iuc
   revisions:
   - 14eb2acf30e3
+  - 73a469f7dc96
   tool_panel_section_label: Phylogenetics
 - name: phyml
   owner: iuc
@@ -5114,6 +5127,7 @@ tools:
   owner: iuc
   revisions:
   - 725ef5f6d749
+  - 8f66e659530b
   tool_panel_section_label: Phylogenetics
 - name: hyphy_busted
   owner: iuc
@@ -5123,12 +5137,14 @@ tools:
   - 6647e04e92a7
   - 8c8640ca39d7
   - b678fe748dc5
+  - cde38657e82c
   - d6389faa75ff
   - f9a193154a55
   tool_panel_section_label: Phylogenetics
 - name: hyphy_bgm
   owner: iuc
   revisions:
+  - 0669558ebc6b
   - 1647c9f95dc7
   - 1df765cc6bcb
   - 823a5afee916
@@ -5140,6 +5156,7 @@ tools:
 - name: hyphy_gard
   owner: iuc
   revisions:
+  - 03f1b4c09330
   - 1942d02039c2
   - 6283babe736e
   - 7f14d76f86ca
@@ -5153,6 +5170,7 @@ tools:
   revisions:
   - 0122b28acc5f
   - 181f5b9f139f
+  - 4aad5b48d5b2
   - 5c87e4907e08
   - bf204aabbf56
   - c5533a61ea60
@@ -5164,6 +5182,7 @@ tools:
   revisions:
   - 0f108ee932ea
   - 3285fd1f4bde
+  - 73833ae53fbb
   - 93a0cf4ea5fc
   - 9d2714133deb
   - bece0bad8e89
@@ -5174,6 +5193,7 @@ tools:
   owner: iuc
   revisions:
   - 134d46bd47dd
+  - 2e65b13d8b13
   - 2fe09c202bbe
   - 551616a65f8f
   - 6dd3c73bd80a
@@ -5191,6 +5211,7 @@ tools:
   - c16dd6b14657
   - c257fa0a98a7
   - d55ab4b13106
+  - e7be036f1616
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
   owner: iuc
@@ -5198,6 +5219,7 @@ tools:
   - 1a32b8e86fc6
   - 1cd3060a8504
   - 5f1830cb9135
+  - 638942ba8e37
   - 6cf8d753e93e
   - a96a307afb40
   - ae7c42d49717
@@ -5213,6 +5235,7 @@ tools:
   - 74b590fdc6a0
   - 7b3f9c78cf6d
   - 8366d5b28b49
+  - c5e1017b9232
   tool_panel_section_label: Phylogenetics
 - name: hyphy_slac
   owner: iuc
@@ -5222,6 +5245,7 @@ tools:
   - 25782236e47e
   - 36a50b938d70
   - 382b8cd86c0e
+  - 5856faafe469
   - 8522e7cc4fb4
   - c2bed8cc8fc1
   tool_panel_section_label: Phylogenetics
@@ -5230,6 +5254,7 @@ tools:
   revisions:
   - 1b62167f7ab2
   - 2442e8b5e363
+  - 4926c55123d1
   - 4eba0baf0278
   - 6400b683aced
   - 6c3ece5fb602
@@ -5451,6 +5476,11 @@ tools:
   - dea6bc47a47e
   - e82eda6acb29
   tool_panel_section_label: RNA Analysis
+- name: idr_download_by_ids
+  owner: iuc
+  revisions:
+  - 381f248febba
+  tool_panel_section_label: Imaging
 - name: proteinortho
   owner: iuc
   revisions:
@@ -5470,17 +5500,20 @@ tools:
   owner: iuc
   revisions:
   - a38934e303b9
+  - d6e72da3ec35
   - f362150bef41
   tool_panel_section_label: Virology
 - name: ivar_getmasked
   owner: iuc
   revisions:
   - ad0dc9f4c9e2
+  - d7e79eb3bcb3
   - fafb3d685fa9
   tool_panel_section_label: Virology
 - name: ivar_removereads
   owner: iuc
   revisions:
+  - 94df24c6bc00
   - 9eaadf03e0df
   - bd2a7d1316b9
   tool_panel_section_label: Virology
@@ -5489,11 +5522,13 @@ tools:
   revisions:
   - 2b95d5c04908
   - c88553ec696e
+  - f91cfb73d369
   tool_panel_section_label: Virology
 - name: ivar_trim
   owner: iuc
   revisions:
   - 8858fa037a15
+  - cb903c9dc33d
   - d37ede8589b2
   tool_panel_section_label: Virology
 - name: ivar_variants
@@ -5501,6 +5536,7 @@ tools:
   revisions:
   - 12d66d0d05ac
   - c5c9f02b6167
+  - e1a015876aa9
   tool_panel_section_label: Virology
 - name: bayescan
   owner: iuc
