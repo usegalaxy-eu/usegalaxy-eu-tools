@@ -188,6 +188,14 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: drep_dereplicate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: drep_compare
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: plasflow
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -311,6 +319,18 @@ tools:
   - name: volcanoplot
     owner: iuc
     tool_panel_section_label: Graph/Display Data
+
+  - name: nanopolishcomp_eventaligncollapse
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: nanopolishcomp_freqmethcalculate
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: nanocompore_sampcomp
+    owner: iuc
+    tool_panel_section_label: Nanopore
 
   - name: nanopolishcomp_eventaligncollapse
     owner: iuc
@@ -2753,6 +2773,14 @@ tools:
   - name: gtftobed12
     owner: iuc
     tool_panel_section_label: Convert Formats
+
+  - name: sarscov2summary
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: sarscov2formatter
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
 
   - name: raxml
     owner: iuc
