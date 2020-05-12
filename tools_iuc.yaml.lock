@@ -284,6 +284,7 @@ tools:
 - name: gatk4_mutect2
   owner: iuc
   revisions:
+  - 287c4af133e6
   - 3be27a9a7313
   - f41a1e03538b
   - fd2d6e035c3f
@@ -296,6 +297,16 @@ tools:
   - 8b62f89924a7
   - fe3fe68b09a7
   tool_panel_section_label: RNA Analysis
+- name: drep_dereplicate
+  owner: iuc
+  revisions:
+  - 8dfcdbeaeed8
+  tool_panel_section_label: Metagenomic Analysis
+- name: drep_compare
+  owner: iuc
+  revisions:
+  - ef1c257adcbd
+  tool_panel_section_label: Metagenomic Analysis
 - name: plasflow
   owner: iuc
   revisions:
@@ -477,6 +488,7 @@ tools:
   - 321bdd834266
   - 7319f83ae734
   - 7a5cd7987b03
+  - 82fcdf530f87
   - 8d8412d35247
   tool_panel_section_label: RNA Analysis
 - name: feelnc
@@ -498,6 +510,23 @@ tools:
   owner: iuc
   revisions:
   - 6847a625db4d
+  - ad011fc670d6
+  tool_panel_section_label: Nanopore
+- name: nanopolishcomp_freqmethcalculate
+  owner: iuc
+  revisions:
+  - 80b6e23cb70d
+  tool_panel_section_label: Nanopore
+- name: nanocompore_sampcomp
+  owner: iuc
+  revisions:
+  - 557cf45ff2c8
+  tool_panel_section_label: Nanopore
+- name: nanopolishcomp_eventaligncollapse
+  owner: iuc
+  revisions:
+  - 6847a625db4d
+  - ad011fc670d6
   tool_panel_section_label: Nanopore
 - name: medaka_consensus
   owner: iuc
@@ -5128,6 +5157,16 @@ tools:
   - 75a14cc16d4d
   - b026dae67fba
   tool_panel_section_label: Convert Formats
+- name: sarscov2summary
+  owner: iuc
+  revisions:
+  - 4ad8b610ea41
+  tool_panel_section_label: Phylogenetics
+- name: sarscov2formatter
+  owner: iuc
+  revisions:
+  - 1c664ff29354
+  tool_panel_section_label: Phylogenetics
 - name: raxml
   owner: iuc
   revisions:
@@ -5146,6 +5185,7 @@ tools:
   - 70aa4bada58d
   - 725ef5f6d749
   - 8f66e659530b
+  - e06961ac014b
   tool_panel_section_label: Phylogenetics
 - name: hyphy_busted
   owner: iuc
@@ -5154,6 +5194,7 @@ tools:
   - 4ff928db5592
   - 5e122852e898
   - 6647e04e92a7
+  - 686a8b41d09c
   - 8c8640ca39d7
   - b678fe748dc5
   - cde38657e82c
@@ -5167,6 +5208,7 @@ tools:
   - 14e7ae9331cb
   - 1647c9f95dc7
   - 1df765cc6bcb
+  - 7fd2d1451728
   - 823a5afee916
   - bf97cacc1a55
   - c669c8f7c6f6
@@ -5179,6 +5221,7 @@ tools:
   - 03f1b4c09330
   - 1942d02039c2
   - 6283babe736e
+  - 7a2092844346
   - 7f14d76f86ca
   - aa8cc71438cf
   - bff9a82d630d
@@ -5196,6 +5239,7 @@ tools:
   - 5c87e4907e08
   - bf204aabbf56
   - c5533a61ea60
+  - c78f3d7dd1db
   - cce7b18495e4
   - f73435dc282b
   tool_panel_section_label: Phylogenetics
@@ -5211,11 +5255,13 @@ tools:
   - bece0bad8e89
   - ce53071d60a9
   - da68d7067bf8
+  - ff1e9dd7ad13
   tool_panel_section_label: Phylogenetics
 - name: hyphy_relax
   owner: iuc
   revisions:
   - 134d46bd47dd
+  - 2ccc579efdde
   - 2e65b13d8b13
   - 2fe09c202bbe
   - 551616a65f8f
@@ -5233,6 +5279,7 @@ tools:
   - 62971c58f0dc
   - 7c41611bf5b7
   - b959fd359a6b
+  - bf27b3df1a4f
   - c16dd6b14657
   - c257fa0a98a7
   - d55ab4b13106
@@ -5249,6 +5296,7 @@ tools:
   - 6cf8d753e93e
   - a96a307afb40
   - ae7c42d49717
+  - c102811766ef
   - c60fcdf8f01e
   tool_panel_section_label: Phylogenetics
 - name: hyphy_meme
@@ -5262,6 +5310,7 @@ tools:
   - 74b590fdc6a0
   - 7b3f9c78cf6d
   - 8366d5b28b49
+  - b69685ed772e
   - c5e1017b9232
   tool_panel_section_label: Phylogenetics
 - name: hyphy_slac
@@ -5272,6 +5321,7 @@ tools:
   - 25782236e47e
   - 36a50b938d70
   - 382b8cd86c0e
+  - 4ddef72f7f21
   - 5856faafe469
   - 8522e7cc4fb4
   - b82429e9c6a9
@@ -5287,6 +5337,7 @@ tools:
   - 6400b683aced
   - 6c3ece5fb602
   - 8389039f7fbc
+  - ae95a6b22562
   - b6e3961a25ff
   - f40d481b7c8b
   tool_panel_section_label: Phylogenetics
@@ -5460,11 +5511,13 @@ tools:
   - 7587218b4253
   - 872249f5495a
   - b3065e4df04c
+  - c319651a733a
   - dd2b0bde0be1
   tool_panel_section_label: RNA Analysis
 - name: chira_map
   owner: iuc
   revisions:
+  - 1d3be7700f70
   - 39bb70c2764e
   - 668f0b2f63ec
   - 67a73fead553
@@ -5476,6 +5529,7 @@ tools:
   owner: iuc
   revisions:
   - 0170de5072d4
+  - 35f433d0bd7f
   - 5db894671434
   - 7f9cf152cf8f
   - a1dc6db337ca
@@ -5492,6 +5546,7 @@ tools:
   - 35a20c16a49e
   - 3d93761a6663
   - 903f7a4cfbf0
+  - a1694947910f
   - f1ac3a1f01cf
   tool_panel_section_label: RNA Analysis
 - name: chira_extract
@@ -5500,6 +5555,7 @@ tools:
   - 061844f6837f
   - 0a3107204741
   - 7e316a1fe98e
+  - 89ab3b2973d8
   - bc08c22dfd38
   - d129b3dfd2b8
   - dea6bc47a47e
