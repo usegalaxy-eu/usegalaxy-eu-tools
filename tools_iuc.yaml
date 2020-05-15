@@ -4,7 +4,6 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-
   - name: deeptools_estimatereadfiltering
     owner: bgruening
     tool_panel_section_label: deepTools
@@ -149,6 +148,30 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: artic_minion
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: vg_convert
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: vg_deconstruct
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: vg_view
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: odgi_build
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: odgi_viz
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: variant_analyzer
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -164,6 +187,14 @@ tools:
   - name: slamdunk
     owner: iuc
     tool_panel_section_label: RNA Analysis
+
+  - name: drep_dereplicate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: drep_compare
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: plasflow
     owner: iuc
@@ -200,6 +231,10 @@ tools:
   - name: graphembed
     owner: iuc
     tool_panel_section_label: Statistics
+
+  - name: data_manager_primer_scheme_bedfiles
+    owner: iuc
+    tool_panel_section_label: Data Managers
 
   - name: data_manager_mitos
     owner: iuc
@@ -284,6 +319,22 @@ tools:
   - name: volcanoplot
     owner: iuc
     tool_panel_section_label: Graph/Display Data
+
+  - name: nanopolishcomp_eventaligncollapse
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: nanopolishcomp_freqmethcalculate
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: nanocompore_sampcomp
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: nanopolishcomp_eventaligncollapse
+    owner: iuc
+    tool_panel_section_label: Nanopore
 
   - name: medaka_consensus
     owner: iuc
@@ -1181,6 +1232,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: tetoolkit_tetranscripts
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: genrich
     owner: iuc
     tool_panel_section_label: Peak Calling
@@ -1277,7 +1332,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
  
-
   - name: seq2hla
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1393,6 +1447,10 @@ tools:
   - name: hmmer3
     owner: iuc
     tool_panel_section_label: Annotation
+
+  - name: seqwish
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: lofreq_call
     owner: iuc
@@ -2131,7 +2189,11 @@ tools:
   - name: schicexplorer_schiccorrectmatrices
     owner: iuc
     tool_panel_section_label: HiCExplorer
-    
+
+  - name: minia
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: metaspades
     owner: nml
     tool_panel_section_label: Assembly
@@ -2716,6 +2778,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: sarscov2summary
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: sarscov2formatter
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: raxml
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: phyml
     owner: iuc
     tool_panel_section_label: Phylogenetics
@@ -2916,5 +2990,7 @@ tools:
     owner: iuc
     tool_panel_section_label: Virology
 
-
+  - name: bayescan
+    owner: iuc
+    tool_panel_section_label: RAD-seq
 
