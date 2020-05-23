@@ -241,6 +241,22 @@ tools:
   - 60f888039fb2
   - b818b23df1e0
   tool_panel_section_label: RNA Analysis
+- name: medaka_consensus
+  owner: iuc
+  revisions:
+  - 0632744d5a5f
+  - 1c4402b9244d
+  tool_panel_section_label: Variant Calling
+- name: medaka_consensus_pipeline
+  owner: iuc
+  revisions:
+  - ef94bace3a3c
+  tool_panel_section_label: Variant Calling
+- name: medaka_variant_pipeline
+  owner: iuc
+  revisions:
+  - 711d4deb7bdf
+  tool_panel_section_label: Variant Calling
 - name: artic_minion
   owner: iuc
   revisions:
@@ -531,6 +547,7 @@ tools:
 - name: medaka_consensus
   owner: iuc
   revisions:
+  - 0632744d5a5f
   - 1c4402b9244d
   tool_panel_section_label: Nanopore
 - name: nanoplot
@@ -1837,6 +1854,7 @@ tools:
   owner: devteam
   revisions:
   - 01ac0a5fedc3
+  - 3fe632431b68
   - 8d2a528a9513
   - c71dd035971e
   tool_panel_section_label: Mapping
@@ -3243,6 +3261,7 @@ tools:
 - name: qualimap_bamqc
   owner: iuc
   revisions:
+  - 19ece8afbaab
   - 4a89c6f84425
   - ac607906f10a
   - e7fd6754d093
@@ -3636,6 +3655,7 @@ tools:
   - 1c2db0054039
   - 3d93dd18d9f8
   - b2f1f75d49c4
+  - bf675f34b056
   - df99138d2776
   - e4574a4d09d8
   tool_panel_section_label: Quality Control
@@ -5419,12 +5439,14 @@ tools:
   - 766be978777a
   - 77b91b9bdf52
   - ac8e59e87ce3
+  - b2df381a6004
   - dc2de14881ba
   tool_panel_section_label: Single-cell
 - name: scanpy_filter
   owner: iuc
   revisions:
   - 0a6de5e65992
+  - 3c86f71498bc
   - 6a76b60e05f5
   - 6ea5a05a260a
   - 8b9610ab366a
@@ -5438,6 +5460,7 @@ tools:
   - 08192eebb47d
   - 5d2e17328afe
   - 5e9171dc8244
+  - 6c145a6868cc
   - 7d22964a8639
   - 9d1997b08ed6
   - a755eaa1cc32
@@ -5449,6 +5472,7 @@ tools:
   - 3bcd5445cd7a
   - 55f2212bb675
   - 8e0f141c8c66
+  - a407e7f8bdc1
   - a9f14e2d1655
   - d7ea9b5e6df1
   - ec32793ce1dd
@@ -5459,6 +5483,7 @@ tools:
   revisions:
   - 397d2c97af05
   - 4bfb75bb7c8e
+  - 7647e5cd1b8b
   - 8599fd07d140
   - a8f865950ac4
   - cb18f2388815
@@ -5469,6 +5494,7 @@ tools:
   owner: iuc
   revisions:
   - 00305dc2dd6f
+  - 215733a383f2
   - 524aa62a6066
   - 7a6701edcc92
   - 94c8f42efc47
