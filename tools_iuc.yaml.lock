@@ -128,6 +128,11 @@ tools:
   - b03c60f8528f
   - d4af736e7b83
   tool_panel_section_label: Single-cell
+- name: kc_align
+  owner: iuc
+  revisions:
+  - 8dc7708c3266
+  tool_panel_section_label: Multiple Alignments
 - name: anndata_inspect
   owner: iuc
   revisions:
@@ -245,22 +250,26 @@ tools:
   owner: iuc
   revisions:
   - 0632744d5a5f
+  - 12c40c8c86db
   - 1c4402b9244d
   tool_panel_section_label: Variant Calling
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
+  - 551f8c9bc4cf
   - ef94bace3a3c
   tool_panel_section_label: Variant Calling
 - name: medaka_variant
   owner: iuc
   revisions:
   - 3cde72a6e37c
+  - 43388fc8ad0b
   tool_panel_section_label: Variant Calling
 - name: medaka_variant_pipeline
   owner: iuc
   revisions:
   - 711d4deb7bdf
+  - 92cdc29a8620
   tool_panel_section_label: Variant Calling
 - name: artic_minion
   owner: iuc
@@ -646,6 +655,7 @@ tools:
   revisions:
   - 014a21767ac4
   - 184dfd9e113d
+  - 4b519282a05b
   - 740057a5126d
   - a64dc31ab7f2
   - fd59d783248a
@@ -5541,6 +5551,7 @@ tools:
 - name: chira_collapse
   owner: iuc
   revisions:
+  - 0208cadda55b
   - 2a57d2ef04c6
   - 2bf45c7fbeea
   - 7587218b4253
@@ -5556,6 +5567,7 @@ tools:
   - 39bb70c2764e
   - 668f0b2f63ec
   - 67a73fead553
+  - 6b83059e8f34
   - 6c398f64ad6a
   - 7ab33ce63e4d
   - d4355828b4d3
@@ -5568,6 +5580,7 @@ tools:
   - 5db894671434
   - 7f9cf152cf8f
   - a1dc6db337ca
+  - c836a05bd6a3
   - c96f1a93beb7
   - ce26b5a859ba
   - cfd572ff72aa
@@ -5582,6 +5595,7 @@ tools:
   - 3d93761a6663
   - 903f7a4cfbf0
   - a1694947910f
+  - e40017f9cff1
   - f1ac3a1f01cf
   tool_panel_section_label: RNA Analysis
 - name: chira_extract
@@ -5589,6 +5603,7 @@ tools:
   revisions:
   - 061844f6837f
   - 0a3107204741
+  - 56b2d956a1a6
   - 7e316a1fe98e
   - 89ab3b2973d8
   - bc08c22dfd38
