@@ -4,6 +4,12 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: ont_fast5_api_fast5_subset
+    owner: bgruening
+    tool_panel_section_label: Nanopore
+
+
   - name: deeptools_estimatereadfiltering
     owner: bgruening
     tool_panel_section_label: deepTools
@@ -345,6 +351,10 @@ tools:
     tool_panel_section_label: Nanopore
 
   - name: nanopolishcomp_freqmethcalculate
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: nanocompore_db
     owner: iuc
     tool_panel_section_label: Nanopore
 
