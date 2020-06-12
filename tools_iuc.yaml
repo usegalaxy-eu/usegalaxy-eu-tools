@@ -6,9 +6,20 @@ install_tool_dependencies: false
 tools:
 
   - name: ont_fast5_api_fast5_subset
-    owner: bgruening
+    owner: iuc
     tool_panel_section_label: Nanopore
 
+  - name: ont_fast5_api_compress_fast5
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: ont_fast5_api_single_to_multi_fast5
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: ont_fast5_api_multi_to_single_fast5
+    owner: iuc
+    tool_panel_section_label: Nanopore
 
   - name: deeptools_estimatereadfiltering
     owner: bgruening
