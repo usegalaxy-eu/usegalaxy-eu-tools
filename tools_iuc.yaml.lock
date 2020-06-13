@@ -2,6 +2,26 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: ont_fast5_api_fast5_subset
+  owner: iuc
+  revisions:
+  - 3bdd8fa109b1
+  tool_panel_section_label: Nanopore
+- name: ont_fast5_api_compress_fast5
+  owner: iuc
+  revisions:
+  - 7147b894702a
+  tool_panel_section_label: Nanopore
+- name: ont_fast5_api_single_to_multi_fast5
+  owner: iuc
+  revisions:
+  - ceec541f4955
+  tool_panel_section_label: Nanopore
+- name: ont_fast5_api_multi_to_single_fast5
+  owner: iuc
+  revisions:
+  - 1a37f742e7d7
+  tool_panel_section_label: Nanopore
 - name: deeptools_estimatereadfiltering
   owner: bgruening
   revisions:
@@ -274,6 +294,7 @@ tools:
 - name: artic_minion
   owner: iuc
   revisions:
+  - 376a706dda11
   - c411e2205442
   tool_panel_section_label: Variant Calling
 - name: vg_convert
@@ -511,10 +532,12 @@ tools:
   revisions:
   - 4ec6717872b1
   - 5c4bca9dd4a2
+  - 7397e6badc11
   tool_panel_section_label: RNA Analysis
 - name: seurat
   owner: iuc
   revisions:
+  - 06ed31cf52ed
   - 321bdd834266
   - 7319f83ae734
   - 7a5cd7987b03
@@ -547,10 +570,16 @@ tools:
   revisions:
   - 80b6e23cb70d
   tool_panel_section_label: Nanopore
+- name: nanocompore_db
+  owner: iuc
+  revisions:
+  - b6eeea872fd2
+  tool_panel_section_label: Nanopore
 - name: nanocompore_sampcomp
   owner: iuc
   revisions:
   - 557cf45ff2c8
+  - c43f4b80f5a9
   tool_panel_section_label: Nanopore
 - name: nanopolishcomp_eventaligncollapse
   owner: iuc
@@ -658,6 +687,7 @@ tools:
   - 4b519282a05b
   - 740057a5126d
   - a64dc31ab7f2
+  - e6cbe3190642
   - fd59d783248a
   tool_panel_section_label: Graph/Display Data
 - name: ebi_search_rest_results
@@ -707,6 +737,7 @@ tools:
   - 26b7446bb17e
   - 5534eb46de20
   - 5e6237d58b0c
+  - 7068f48d0ef9
   - aad3885b3216
   - b723c120161a
   - c441583adae5
@@ -2493,6 +2524,7 @@ tools:
   owner: iuc
   revisions:
   - 1f5641a52664
+  - ded48b36f3b7
   tool_panel_section_label: Annotation
 - name: roary
   owner: iuc
@@ -4162,6 +4194,7 @@ tools:
   - 38eedf3cc3c9
   - 9ab35a2245ce
   - b467a89be0c6
+  - b5d8e5475247
   - ecc913a7334b
   tool_panel_section_label: Annotation
 - name: fasttree
@@ -5404,6 +5437,7 @@ tools:
 - name: heinz
   owner: iuc
   revisions:
+  - 2b80a2596064
   - 5f589c91566e
   - 704c401e0afb
   - e41ec5af7472
@@ -5566,6 +5600,7 @@ tools:
   - 2bf45c7fbeea
   - 7587218b4253
   - 872249f5495a
+  - 872c99389c69
   - b3065e4df04c
   - c319651a733a
   - dd2b0bde0be1
@@ -5580,6 +5615,7 @@ tools:
   - 6b83059e8f34
   - 6c398f64ad6a
   - 7ab33ce63e4d
+  - b91f9fcd9fc7
   - d4355828b4d3
   tool_panel_section_label: RNA Analysis
 - name: chira_merge
@@ -5589,6 +5625,7 @@ tools:
   - 35f433d0bd7f
   - 5db894671434
   - 7f9cf152cf8f
+  - 948f4bc1f030
   - a1dc6db337ca
   - c836a05bd6a3
   - c96f1a93beb7
@@ -5604,6 +5641,7 @@ tools:
   - 35a20c16a49e
   - 3d93761a6663
   - 903f7a4cfbf0
+  - 96ed25eb39f0
   - a1694947910f
   - e40017f9cff1
   - f1ac3a1f01cf
@@ -5615,6 +5653,7 @@ tools:
   - 0a3107204741
   - 56b2d956a1a6
   - 7e316a1fe98e
+  - 7ec1d063fecd
   - 89ab3b2973d8
   - bc08c22dfd38
   - d129b3dfd2b8
@@ -5626,6 +5665,7 @@ tools:
   revisions:
   - 11036f6197d6
   - 381f248febba
+  - e08b1dc0480c
   tool_panel_section_label: Imaging
 - name: proteinortho
   owner: iuc
