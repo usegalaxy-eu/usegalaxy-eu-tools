@@ -5,11 +5,13 @@ tools:
 - name: psy_maps
   owner: climate
   revisions:
+  - 706666d912d5
   - db8d76da4174
   tool_panel_section_label: Climate Analysis
 - name: climate_stripes
   owner: climate
   revisions:
+  - c6f2435d680b
   - fec3147b0206
   tool_panel_section_label: Climate Analysis
 - name: cds_essential_variability
@@ -27,6 +29,16 @@ tools:
   revisions:
   - 4bb2f6091660
   tool_panel_section_label: Climate Analysis
+- name: xarray_metadata_info
+  owner: ecology
+  revisions:
+  - 7edbe5ae8b72
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_select
+  owner: ecology
+  revisions:
+  - 225d0d275a24
+  tool_panel_section_label: GIS Data Handling
 - name: gdal_gdaladdo
   owner: ecology
   revisions:
@@ -135,6 +147,7 @@ tools:
 - name: ggplot2_point
   owner: iuc
   revisions:
+  - 87908c76ca8d
   - 9cec81e1b90e
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_histogram

@@ -4,6 +4,35 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: diapysef
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: pyprophet_export
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: pyprophet_subsample
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: pyprophet_score
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: pyprophet_protein
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: pyprophet_peptide
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: pyprophet_merge
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+ 
   - name: uniprotxml_downloader
     owner: galaxyp
     tool_panel_section_label: Get Data
@@ -227,3 +256,19 @@ tools:
   - name: peptide_genomic_coordinate
     owner: galaxyp
     tool_panel_section_label: Proteomics
+    
+  - name: quantwiz_iq
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+    
+  - name: sixgill
+    owner: galaxyp
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: metagene_annotator
+    owner: galaxyp
+    tool_panel_section_label: Metagenomic Analysis
+    
+    
+    
+    

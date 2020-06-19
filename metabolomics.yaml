@@ -48,6 +48,81 @@ tools:
   - name: camera_combinexsannos
     owner: mmonsoor
     tool_panel_section_label: Metabolomics
+    
+  - name: mspurity_flagremove
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+## MS/MS
+  - name: mspurity_puritya
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_frag4feature
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_filterfragspectra
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_averagefragspectra
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_createdatabase
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: mspurity_createmsp
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+   
+  - name: mspurity_dimspredictpuritysingle
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+  
+  - name: mspurity_purityx
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+
+## DIMS
+  - name: dimspy_process_scans
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_replicate_filter
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_align_samples
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_blank_filter
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_sample_filter
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_missing_values_sample_filter
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_hdf5_to_txt
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_get_peaklists
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: dimspy_merge_peaklists
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
 
 
 ## FIAMS
@@ -168,6 +243,18 @@ tools:
     owner: fgiacomoni
     tool_panel_section_label: Metabolomics
 
+## MS/MS
+  - name: mspurity_spectralmatching
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+    
+  - name: metfrag
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
+
+  - name: sirius_csifingerid
+    owner: computational-metabolomics
+    tool_panel_section_label: Metabolomics
 
 ## NMR
   - name: nmr_annotation

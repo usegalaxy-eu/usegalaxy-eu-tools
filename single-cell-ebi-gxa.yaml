@@ -8,6 +8,10 @@ tools:
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_utils_viz'
     
+  - name: dropletutils_empty_drops
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_utils_viz'
+    
   - name: gtf2gene_list
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_utils_viz'
@@ -47,6 +51,10 @@ tools:
   - name: sc3_prepare
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_sc3_tools'
+    
+  - name: anndata_ops
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: scanpy_compute_graph
     owner: ebi-gxa
@@ -176,6 +184,10 @@ tools:
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_seurat_tools'
     
+  - name: seurat_find_neighbours
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_seurat_tools'
+    
   - name: monocle3_create
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_monocle3_tools'
@@ -207,6 +219,10 @@ tools:
   - name: monocle3_reducedim
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_monocle3_tools'
+    
+  - name: monocle3_topmarkers
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_monocle3_tools'
   
   - name: run_sccaf
     owner: ebi-gxa
@@ -217,6 +233,10 @@ tools:
     tool_panel_section_id: 'hca_sc_sccaf_tools'
     
   - name: sccaf_asses_merger
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_sccaf_tools'
+    
+  - name: sccaf_regress_out
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_sccaf_tools'
     
@@ -239,6 +259,10 @@ tools:
   - name: scmap_select_features
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scmap_tools'
+  
+  - name: scmap_get_std_output
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scmap_tools'
     
   - name: ucsc_cell_browser
     owner: ebi-gxa
@@ -255,3 +279,87 @@ tools:
   - name: umi_tools_count
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
+ 
+  - name: salmon_kallisto_mtx_to_10x
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_utils_viz'
+    
+  - name: droplet_barcode_plot
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_utils_viz'
+    
+  - name: ct_build_cell_ontology_dict
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_label_analysis_tools'
+
+  - name: ct_combine_tool_outputs
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_label_analysis_tools'
+
+  - name: ct_get_consensus_outputs
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_label_analysis_tools'
+
+  - name: ct_get_empirical_dist
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_label_analysis_tools'
+
+  - name: ct_get_tool_perf_table
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_label_analysis_tools'
+
+  - name: ct_get_tool_pvals
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_label_analysis_tools'
+
+  - name: garnett_check_markers
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_garnett_tools'
+
+  - name: garnett_classify_cells
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_garnett_tools'
+
+  - name: garnett_get_feature_genes
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_garnett_tools'
+
+  - name: garnett_get_std_output
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_garnett_tools'
+
+  - name: garnett_train_classifier
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_garnett_tools'
+
+  - name: garnett_transform_markers
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_garnett_tools'
+
+  - name: update_marker_file
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_garnett_tools'
+
+  - name: scpred_eigen_decompose
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scpred_tools'
+
+  - name: scpred_get_feature_space
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scpred_tools'
+
+  - name: scpred_get_std_output
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scpred_tools'
+
+  - name: scpred_predict_labels
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scpred_tools'
+
+  - name: scpred_train_model
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scpred_tools'
+
+  - name: scpred_traint_test_split
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scpred_tools'

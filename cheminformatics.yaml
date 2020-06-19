@@ -5,11 +5,51 @@ install_tool_dependencies: false
 
 tools:
 
+  - name: openduck_run_smd
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: openduck_chunk
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: mmpbsa_mmgbsa
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: xchem_transfs_scoring
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: rxdock_sort_filter
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: rxdock_rbdock
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: rxdock_rbcavity
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: rdock_sort_filter
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
   - name: rdock_rbdock
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
 
   - name: rdock_rbcavity
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: ctb_frankenstein_ligand
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: openbabel_structure_distance_finder
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
 
@@ -30,6 +70,10 @@ tools:
     tool_panel_section_label: ChemicalToolBox
 
   - name: sucos_clustering
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: qed
     owner: bgruening
     tool_panel_section_label: ChemicalToolBox
 
@@ -80,7 +124,23 @@ tools:
   - name:  gmx_trj
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
-    
+
+  - name: gmx_energy
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: gmx_restraints
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_makendx
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name:  gmx_editconf
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
   - name:  alchemical_analysis
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
@@ -142,6 +202,10 @@ tools:
     tool_panel_section_label: ChemicalToolBox
 
   - name: bio3d_dccm
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: fastpca
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
 
@@ -255,4 +319,12 @@ tools:
 
   - name: sdf_to_tab
     owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enumerate_charges
+    owner: bgruening
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: parmconv
+    owner: chemteam
     tool_panel_section_label: ChemicalToolBox

@@ -4,6 +4,27 @@ install_tool_dependencies: false
 
 tools:
 
+
+  - name: stoc_maketable
+    owner: ecology
+    tool_panel_section_label: 'Species abundance'
+    
+  - name: stoc_filteringsp
+    owner: ecology
+    tool_panel_section_label: 'Species abundance'
+    
+  - name: stoc_mainglm
+    owner: ecology
+    tool_panel_section_label: 'Species abundance'
+    
+  - name: stoc_mainglm_group
+    owner: ecology
+    tool_panel_section_label: 'Species abundance'
+ 
+  - name: stoc_trend_indic
+    owner: ecology
+    tool_panel_section_label: 'Species abundance'
+    
   - name: regionalgam_ab_index
     owner: ecology
     tool_panel_section_label: 'Species abundance'
@@ -548,6 +569,14 @@ tools:
 
 
 
+
+  - name: xarray_metadata_info
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
+    
+  - name: xarray_select
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
 
   - name: gdal_gdaladdo
     owner: ecology
