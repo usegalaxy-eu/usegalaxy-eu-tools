@@ -11,6 +11,7 @@ tools:
   owner: galaxyp
   revisions:
   - 2bc6bbf651b9
+  - 3cf580bf28e2
   - bd693a71a50b
   - ece83e6b5328
   tool_panel_section_label: Proteomics
@@ -39,6 +40,7 @@ tools:
   owner: galaxyp
   revisions:
   - 0477424813de
+  - 4504b3bc1eed
   - 56f6a3d1080a
   - 611120fd1717
   tool_panel_section_label: Proteomics
@@ -66,6 +68,7 @@ tools:
   - 34758ab8aaa4
   - 4953dcd7dd39
   - 917fd3ebc223
+  - 9aaa46d45472
   tool_panel_section_label: Get Data
 - name: map_peptides_to_bed
   owner: galaxyp
@@ -82,6 +85,7 @@ tools:
   owner: galaxyp
   revisions:
   - 42dc8e9e58d8
+  - 47c6b21c0afe
   - 66c38e74d1ae
   tool_panel_section_label: Convert Formats
 - name: thermo_raw_file_converter
@@ -120,6 +124,7 @@ tools:
   - 666f3453a99d
   - 7f432d87c82c
   - 8bac3cc5c5de
+  - ea0a1d50c83f
   tool_panel_section_label: Proteomics
 - name: maxquant_mqpar
   owner: galaxyp
@@ -338,21 +343,25 @@ tools:
   revisions:
   - a039a8d4c7e0
   - e26ef51ef341
+  - ea7872c231de
   tool_panel_section_label: Proteomics
 - name: idpqonvert
   owner: galaxyp
   revisions:
+  - 2ec9bd69259e
   - fb6ce5041417
   tool_panel_section_label: Proteomics
 - name: idpassemble
   owner: galaxyp
   revisions:
   - 39eaac8f3f42
+  - 7cb061557b06
   tool_panel_section_label: Proteomics
 - name: idpquery
   owner: galaxyp
   revisions:
   - 42dc8e9e58d8
+  - 47c6b21c0afe
   - 66c38e74d1ae
   tool_panel_section_label: Proteomics
 - name: proteomics_moff
@@ -460,3 +469,8 @@ tools:
   revisions:
   - b04960a7abf5
   tool_panel_section_label: Metagenomic Analysis
+- name: pepquery
+  owner: galaxyp
+  revisions:
+  - 32d3818fc635
+  tool_panel_section_label: Proteomics

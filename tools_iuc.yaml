@@ -4,6 +4,23 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: ont_fast5_api_fast5_subset
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: ont_fast5_api_compress_fast5
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: ont_fast5_api_single_to_multi_fast5
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: ont_fast5_api_multi_to_single_fast5
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: deeptools_estimatereadfiltering
     owner: bgruening
     tool_panel_section_label: deepTools
@@ -92,6 +109,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Single-cell
 
+  - name: kc_align
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
   - name: anndata_inspect
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -147,6 +168,22 @@ tools:
   - name: kallisto_quant
     owner: iuc
     tool_panel_section_label: RNA Analysis
+
+  - name: medaka_consensus
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: medaka_consensus_pipeline
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: medaka_variant
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: medaka_variant_pipeline
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: artic_minion
     owner: iuc
@@ -328,15 +365,15 @@ tools:
     owner: iuc
     tool_panel_section_label: Nanopore
 
+  - name: nanocompore_db
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: nanocompore_sampcomp
     owner: iuc
     tool_panel_section_label: Nanopore
 
   - name: nanopolishcomp_eventaligncollapse
-    owner: iuc
-    tool_panel_section_label: Nanopore
-
-  - name: medaka_consensus
     owner: iuc
     tool_panel_section_label: Nanopore
 
@@ -778,6 +815,10 @@ tools:
   - name: sina
     owner: iuc
     tool_panel_section_label: Multiple Alignments
+
+  - name: last
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: bio_hansel
     owner: iuc
@@ -1485,6 +1526,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: snpeff
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: snpeff_sars_cov_2
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -2854,6 +2899,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: htseq_count
+    owner: lparsons
+    tool_panel_section_label: RNA Analysis
+
   - name: scater_create_qcmetric_ready_sce
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -2994,3 +3043,58 @@ tools:
     owner: iuc
     tool_panel_section_label: RAD-seq
 
+  - name: humann2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_associate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_barplot
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_genefamilies_genus_level
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_join_tables
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_reduce_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_regroup_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_rename_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_renorm_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_rna_dna_norm
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_split_stratified_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_split_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_strain_profiler
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann2_unpack_pathways
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
