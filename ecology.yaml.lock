@@ -1,6 +1,26 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: pampa_presabs
+  owner: ecology
+  revisions:
+  - c9dfe4e20a45
+  tool_panel_section_label: Species abundance
+- name: pampa_communitymetrics
+  owner: ecology
+  revisions:
+  - ddd5b2e74b8b
+  tool_panel_section_label: Species abundance
+- name: pampa_glmsp
+  owner: ecology
+  revisions:
+  - 0778efa9eb2e
+  tool_panel_section_label: Species abundance
+- name: pampa_glmcomm
+  owner: ecology
+  revisions:
+  - f0dc3958e65d
+  tool_panel_section_label: Species abundance
 - name: stoc_maketable
   owner: ecology
   revisions:
@@ -347,6 +367,7 @@ tools:
   revisions:
   - 0ea86f6bf2a1
   - 326a3db8d9d1
+  - 4ac4e7083b7e
   - 5cec5fb749f0
   - c171f2b7d76e
   - c237ba772225
