@@ -4,7 +4,6 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-
   - name: ont_fast5_api_fast5_subset
     owner: iuc
     tool_panel_section_label: Nanopore
@@ -597,6 +596,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: interval2maf
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
   - name: tabular_to_fasta
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
@@ -820,6 +823,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
+  - name: metaeuk_easy_predict
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: last
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -1038,6 +1045,7 @@ tools:
   - name: fastq_quality_converter
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+
   - name: fastq_quality_boxplot
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
