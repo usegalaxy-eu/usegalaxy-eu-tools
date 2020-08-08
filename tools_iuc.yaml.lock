@@ -288,28 +288,28 @@ tools:
   - 12c40c8c86db
   - 1c4402b9244d
   - a95960a63220
-  tool_panel_section_label: Variant Calling
+  tool_panel_section_label: Nanopore
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
   - 551f8c9bc4cf
   - 6a87478ed985
   - ef94bace3a3c
-  tool_panel_section_label: Variant Calling
+  tool_panel_section_label: Nanopore
 - name: medaka_variant
   owner: iuc
   revisions:
   - 3cde72a6e37c
   - 43388fc8ad0b
   - d50c1d5b72ce
-  tool_panel_section_label: Variant Calling
+  tool_panel_section_label: Nanopore
 - name: medaka_variant_pipeline
   owner: iuc
   revisions:
   - 711d4deb7bdf
   - 92cdc29a8620
   - ce2bf68a260d
-  tool_panel_section_label: Variant Calling
+  tool_panel_section_label: Nanopore
 - name: artic_minion
   owner: iuc
   revisions:
@@ -1001,6 +1001,11 @@ tools:
   - 4445939cacc9
   - ee356d7a5518
   tool_panel_section_label: Convert Formats
+- name: interval2maf
+  owner: iuc
+  revisions:
+  - cfea1d6354db
+  tool_panel_section_label: Convert Formats
 - name: tabular_to_fasta
   owner: devteam
   revisions:
@@ -1365,6 +1370,11 @@ tools:
   - 49b937f12aa4
   - fd62f1b940f6
   tool_panel_section_label: Multiple Alignments
+- name: metaeuk_easy_predict
+  owner: iuc
+  revisions:
+  - 5f6ebc3103ee
+  tool_panel_section_label: Metagenomic Analysis
 - name: last
   owner: iuc
   revisions:
@@ -1819,16 +1829,19 @@ tools:
   owner: iuc
   revisions:
   - 2ed5c0795f99
+  - 694b0f55b744
   - fdaf2375d405
   tool_panel_section_label: Assembly
 - name: idba_tran
   owner: iuc
   revisions:
+  - 33f00ff1cb22
   - a30d991a3fdd
   tool_panel_section_label: Assembly
 - name: idba_hybrid
   owner: iuc
   revisions:
+  - 5ece301faf6b
   - a81c5169e9fc
   tool_panel_section_label: Assembly
 - name: megahit
@@ -1901,6 +1914,7 @@ tools:
   - 0a563fd2f22e
   - 318b2a9d54dd
   - 41929aa1e7f3
+  - 5ec75f5dae3c
   - 850f3679b9b4
   - b9e04854e2bb
   - bc685d13b637
@@ -1915,6 +1929,7 @@ tools:
   - 58b278def57e
   - 61cb2042581a
   - c23da6257d6a
+  - e403d27e8f24
   tool_panel_section_label: Mapping
 - name: star_fusion
   owner: iuc

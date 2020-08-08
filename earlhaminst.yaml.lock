@@ -2,6 +2,16 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: apoc
+  owner: earlhaminst
+  revisions:
+  - 67d2a6f3b4e3
+  tool_panel_section_label: ChemicalToolBox
+- name: smina
+  owner: earlhaminst
+  revisions:
+  - 7c0bb0c48a27
+  tool_panel_section_label: ChemicalToolBox
 - name: blast_parser
   owner: earlhaminst
   revisions:
