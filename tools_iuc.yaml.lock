@@ -279,6 +279,7 @@ tools:
 - name: control_freec
   owner: iuc
   revisions:
+  - 2c6349fb175c
   - e46944a59b31
   tool_panel_section_label: Variant Calling
 - name: bcftools_concat
@@ -783,6 +784,7 @@ tools:
   - 494b2ec08162
   - 5534eb46de20
   - 5e6237d58b0c
+  - 653e89d73fc4
   - 7068f48d0ef9
   - 751a694ec620
   - aad3885b3216
@@ -1007,6 +1009,11 @@ tools:
   - 4445939cacc9
   - ee356d7a5518
   tool_panel_section_label: Convert Formats
+- name: genebed_maf_to_fasta
+  owner: iuc
+  revisions:
+  - f24a9ff28d3c
+  tool_panel_section_label: Convert Formats
 - name: interval2maf
   owner: iuc
   revisions:
@@ -1156,6 +1163,7 @@ tools:
   owner: iuc
   revisions:
   - 0ae74c70b267
+  - 17359b808b01
   - 1c718d8b3532
   - 1cfc579079a6
   - 2bb2e07a7a21
@@ -1897,6 +1905,7 @@ tools:
 - name: colibread_lordec
   owner: iuc
   revisions:
+  - 435a98f01ae9
   - 74878f127e47
   tool_panel_section_label: Assembly
 - name: kma
@@ -2491,6 +2500,7 @@ tools:
 - name: repeat_masker
   owner: bgruening
   revisions:
+  - 438f65cb1d14
   - ade773848c3d
   - d7540a923c7b
   tool_panel_section_label: Annotation
@@ -5404,6 +5414,7 @@ tools:
   - 725ef5f6d749
   - 8f66e659530b
   - 9f566d869e2f
+  - dc774be95f6c
   - e06961ac014b
   tool_panel_section_label: Phylogenetics
 - name: hyphy_busted
@@ -5418,6 +5429,7 @@ tools:
   - 8c8640ca39d7
   - b678fe748dc5
   - cde38657e82c
+  - cff70490dbec
   - d6389faa75ff
   - f9a193154a55
   tool_panel_section_label: Phylogenetics
@@ -5430,6 +5442,7 @@ tools:
   - 1df765cc6bcb
   - 7fd2d1451728
   - 823a5afee916
+  - a54340ea0866
   - bf97cacc1a55
   - c669c8f7c6f6
   - f22ed633b72b
@@ -5444,6 +5457,7 @@ tools:
   - 6283babe736e
   - 7a2092844346
   - 7f14d76f86ca
+  - 83f146502c0f
   - aa8cc71438cf
   - bff9a82d630d
   - c454b670f35f
@@ -5459,6 +5473,7 @@ tools:
   - 181f5b9f139f
   - 4aad5b48d5b2
   - 5c87e4907e08
+  - 81e66674859e
   - 8834daeb9892
   - bf204aabbf56
   - c5533a61ea60
@@ -5472,6 +5487,7 @@ tools:
   - 0f108ee932ea
   - 3285fd1f4bde
   - 37f6c6344193
+  - 600647840e87
   - 658ad6851b71
   - 73833ae53fbb
   - 93a0cf4ea5fc
@@ -5489,6 +5505,7 @@ tools:
   - 2e65b13d8b13
   - 2fe09c202bbe
   - 4d13ff4556da
+  - 4e9485eb5e9d
   - 551616a65f8f
   - 6dd3c73bd80a
   - 7827dfb71693
@@ -5504,6 +5521,7 @@ tools:
   - 6164d9298db9
   - 62971c58f0dc
   - 7c41611bf5b7
+  - a1a03eb66960
   - b959fd359a6b
   - bf27b3df1a4f
   - c16dd6b14657
@@ -5517,6 +5535,7 @@ tools:
   - 056a5b14721d
   - 1a32b8e86fc6
   - 1cd3060a8504
+  - 40e9160dbbbb
   - 5c2640980c0a
   - 5f1830cb9135
   - 638942ba8e37
@@ -5537,6 +5556,7 @@ tools:
   - 74b590fdc6a0
   - 7b3f9c78cf6d
   - 8366d5b28b49
+  - a114682b2788
   - b69685ed772e
   - c5e1017b9232
   - dd45dc0b8c11
@@ -5546,6 +5566,7 @@ tools:
   revisions:
   - 0b4ee5db66ca
   - 232bd7cd4639
+  - 24742f335426
   - 25782236e47e
   - 36a50b938d70
   - 382b8cd86c0e
@@ -5569,6 +5590,7 @@ tools:
   - 9862c57d02a6
   - ae95a6b22562
   - b6e3961a25ff
+  - d968c5dddfeb
   - f40d481b7c8b
   tool_panel_section_label: Phylogenetics
 - name: ucsc_fasplit
@@ -5751,6 +5773,7 @@ tools:
   revisions:
   - 0208cadda55b
   - 2a57d2ef04c6
+  - 2b2bfeda00d0
   - 2bf45c7fbeea
   - 5ba5704a8105
   - 7587218b4253
@@ -5775,6 +5798,7 @@ tools:
   - 6c398f64ad6a
   - 771cffc56c87
   - 7ab33ce63e4d
+  - 92dbdc4d2722
   - b91f9fcd9fc7
   - c097b1f83439
   - d4355828b4d3
@@ -5792,6 +5816,7 @@ tools:
   - 948f4bc1f030
   - 9ef3526640f8
   - a1dc6db337ca
+  - bd57d16524fe
   - c836a05bd6a3
   - c96f1a93beb7
   - ce26b5a859ba
@@ -5807,6 +5832,7 @@ tools:
   - 35a20c16a49e
   - 3d93761a6663
   - 55d273c0c574
+  - 7fb3fc24be0e
   - 903f7a4cfbf0
   - 96ed25eb39f0
   - a1694947910f
@@ -5823,6 +5849,7 @@ tools:
   - 0a3107204741
   - 56b2d956a1a6
   - 5b4cd19272d5
+  - 6977e9b7143d
   - 7e316a1fe98e
   - 7ec1d063fecd
   - 89ab3b2973d8
