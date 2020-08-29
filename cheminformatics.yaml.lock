@@ -416,6 +416,7 @@ tools:
   revisions:
   - 62ce73c9d737
   - 7c5fd4117a07
+  - a0d210b9d287
   - ad135cf42274
   - e7d0075052c9
   - fc7293c6cb6a
@@ -424,6 +425,7 @@ tools:
   owner: chemteam
   revisions:
   - 0f17d0720565
+  - 1a220575ad7a
   - 36babbdd7818
   - 49dac57d004a
   - 9bb57bd1fdc8
@@ -435,6 +437,7 @@ tools:
   - 0493024c3318
   - 47dd4e854598
   - 554f60da9c8f
+  - aaa130695a2b
   - d8178fe9aaff
   - f95d4348ed7c
   tool_panel_section_label: ChemicalToolBox
@@ -446,10 +449,12 @@ tools:
   - aa4090b50e7b
   - c33b972fe040
   - d540ea77b909
+  - ffd6f8d159e1
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_ramachandran_plot
   owner: chemteam
   revisions:
+  - 70a2d548e62c
   - 8bd0e29927da
   - b348dfa55e0a
   - ce0728b92289
@@ -459,6 +464,7 @@ tools:
   owner: chemteam
   revisions:
   - 469ad3ea5a5f
+  - 4c36f5ad2799
   - 5c38e38dbc35
   - 5efd0c95f97e
   - d23ef0663267
@@ -472,9 +478,25 @@ tools:
   owner: chemteam
   revisions:
   - 9a3a1f698fc6
+  - a842da7ef42b
   - d18e7db42633
   - e39bc1f90d8f
   - ebeb72aa39a8
+  tool_panel_section_label: ChemicalToolBox
+- name: mdanalysis_endtoend
+  owner: chemteam
+  revisions:
+  - 78aa3659fcd1
+  tool_panel_section_label: ChemicalToolBox
+- name: mdanalysis_ramachandran_protein
+  owner: chemteam
+  revisions:
+  - 0f270722aca6
+  tool_panel_section_label: ChemicalToolBox
+- name: mdanalysis_extract_rmsd
+  owner: chemteam
+  revisions:
+  - 743bd6aa3c7a
   tool_panel_section_label: ChemicalToolBox
 - name: bio3d_rmsf
   owner: chemteam
@@ -514,7 +536,18 @@ tools:
 - name: fastpca
   owner: chemteam
   revisions:
+  - d9f8cc3258f9
   - dd195f7a791c
+  tool_panel_section_label: ChemicalToolBox
+- name: biomd_extract_clusters
+  owner: chemteam
+  revisions:
+  - ad49025ba90d
+  tool_panel_section_label: ChemicalToolBox
+- name: biomd_rmsd_clustering
+  owner: chemteam
+  revisions:
+  - ee1f38eb220e
   tool_panel_section_label: ChemicalToolBox
 - name: prepare_ligands_for_docking
   owner: bgruening
