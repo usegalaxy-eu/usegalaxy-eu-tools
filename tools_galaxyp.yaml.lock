@@ -2,6 +2,41 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: encyclopedia_library_to_blib
+  owner: galaxyp
+  revisions:
+  - 0202b8f3a516
+  tool_panel_section_label: Proteomics
+- name: encyclopedia_searchtolib
+  owner: galaxyp
+  revisions:
+  - 62a718b76f62
+  tool_panel_section_label: Proteomics
+- name: encyclopedia_prosit_csv_to_library
+  owner: galaxyp
+  revisions:
+  - 8a9cef108b0c
+  tool_panel_section_label: Proteomics
+- name: encyclopedia_walnut
+  owner: galaxyp
+  revisions:
+  - ce1a157a41bd
+  tool_panel_section_label: Proteomics
+- name: encyclopedia_quantify
+  owner: galaxyp
+  revisions:
+  - 4081e4faa4ab
+  tool_panel_section_label: Proteomics
+- name: encyclopedia_fasta_to_prosit_csv
+  owner: galaxyp
+  revisions:
+  - ca7a315fb902
+  tool_panel_section_label: Proteomics
+- name: encyclopedia_encyclopedia
+  owner: galaxyp
+  revisions:
+  - d0ea7589e95f
+  tool_panel_section_label: Proteomics
 - name: diapysef
   owner: galaxyp
   revisions:
@@ -67,6 +102,7 @@ tools:
   owner: galaxyp
   revisions:
   - a85fbebe8b2f
+  - c1b437242fee
   tool_panel_section_label: Get Data
 - name: unipept
   owner: galaxyp
