@@ -135,6 +135,22 @@ tools:
   - name: scanpy_scale_data
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scanpy_tools'
+
+  - name: scanpy_integrate_combat
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
+  
+  - name: scanpy_integrate_harmony
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools' 
+    
+  - name: scanpy_integrate_mnn
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
+    
+  - name: scanpy_integrate_bbknn
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: seurat_create_seurat_object
     owner: ebi-gxa
