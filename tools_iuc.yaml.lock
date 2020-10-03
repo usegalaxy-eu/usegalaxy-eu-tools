@@ -155,6 +155,11 @@ tools:
   - b03c60f8528f
   - d4af736e7b83
   tool_panel_section_label: Single-cell
+- name: chromeister
+  owner: iuc
+  revisions:
+  - adea31d84cb9
+  tool_panel_section_label: Multiple Alignments
 - name: kc_align
   owner: iuc
   revisions:
@@ -276,6 +281,26 @@ tools:
   - 60f888039fb2
   - b818b23df1e0
   tool_panel_section_label: RNA Analysis
+- name: delly_lr
+  owner: iuc
+  revisions:
+  - 629a0066003d
+  tool_panel_section_label: Variant Calling
+- name: delly_call
+  owner: iuc
+  revisions:
+  - 36772204dee5
+  tool_panel_section_label: Variant Calling
+- name: delly_merge
+  owner: iuc
+  revisions:
+  - 6331d804f983
+  tool_panel_section_label: Variant Calling
+- name: delly_filter
+  owner: iuc
+  revisions:
+  - a75e05f20a66
+  tool_panel_section_label: Variant Calling
 - name: sniffles
   owner: iuc
   revisions:
@@ -340,6 +365,7 @@ tools:
   owner: iuc
   revisions:
   - 376a706dda11
+  - 94020e19b46c
   - c411e2205442
   tool_panel_section_label: Variant Calling
 - name: vg_convert
@@ -390,6 +416,7 @@ tools:
   owner: iuc
   revisions:
   - 57ac42ec1be3
+  - f76d842e960f
   tool_panel_section_label: Variant Calling
 - name: slamdunk
   owner: iuc
@@ -602,6 +629,7 @@ tools:
   revisions:
   - 06ed31cf52ed
   - 321bdd834266
+  - 4c139a9415d7
   - 7319f83ae734
   - 764f076e9d52
   - 7a5cd7987b03
@@ -974,17 +1002,20 @@ tools:
   revisions:
   - 0f0cf480051b
   - 5051467dc96a
+  - 60ca8d013263
   tool_panel_section_label: Convert Formats
 - name: crossmap_bed
   owner: iuc
   revisions:
   - 91efc13d3ec1
+  - cdbdce00f5f6
   - e6c68525e9ee
   tool_panel_section_label: Convert Formats
 - name: crossmap_gff
   owner: iuc
   revisions:
   - 09c6a9e067f9
+  - 88d180fb6d67
   - e80720e27001
   tool_panel_section_label: Convert Formats
 - name: crossmap_vcf
@@ -992,11 +1023,13 @@ tools:
   revisions:
   - 97979c3d179f
   - 9d61d74f03a4
+  - b21851ddcc79
   tool_panel_section_label: Convert Formats
 - name: crossmap_wig
   owner: iuc
   revisions:
   - 3cb69f2ecea2
+  - 5f893ed3c5ed
   - e8d84292e510
   tool_panel_section_label: Convert Formats
 - name: bam_to_scidx
@@ -1413,6 +1446,7 @@ tools:
 - name: sina
   owner: iuc
   revisions:
+  - 482052b30b78
   - 49b937f12aa4
   - fd62f1b940f6
   tool_panel_section_label: Multiple Alignments

@@ -81,6 +81,7 @@ tools:
   - 35422e51b804
   - 98f37271c17c
   - a4ad76e3dc4a
+  - c09d61ede252
   - d868221262d5
   - ec4604919de3
   - f0a29f4b9be9
@@ -90,6 +91,7 @@ tools:
   revisions:
   - 232937b5bb8f
   - 3bce5710a90b
+  - 3cf0177ed87e
   - 3d242b0d97d0
   - 53e6944bd162
   - 6b2673e1f4c6
@@ -134,6 +136,7 @@ tools:
 - name: scanpy_find_cluster
   owner: ebi-gxa
   revisions:
+  - 15e8a4c60418
   - 2704d80b7e91
   - 2784759ad631
   - 455846afcc73
@@ -160,6 +163,7 @@ tools:
   - af9cf232d6c9
   - c18f446dcfbf
   - c608fd80ec15
+  - cc776860fae1
   - f00adc96e0bf
   - fb9bd74c32b0
   tool_panel_section_id: hca_sc_scanpy_tools
@@ -332,6 +336,7 @@ tools:
   - 2e74fd7b5f45
   - 3589dfaef3f6
   - 45674f057a31
+  - 9d2b6c6f9e07
   - a597590ccf6c
   - af9b447bcde8
   - b5e1939cc155
@@ -371,6 +376,26 @@ tools:
   - c8f196ccf34a
   - ea8fd43b7e1e
   - eabf8e76e007
+  tool_panel_section_id: hca_sc_scanpy_tools
+- name: scanpy_integrate_combat
+  owner: ebi-gxa
+  revisions:
+  - 0752a5c8a9da
+  tool_panel_section_id: hca_sc_scanpy_tools
+- name: scanpy_integrate_harmony
+  owner: ebi-gxa
+  revisions:
+  - 739f68e3cbca
+  tool_panel_section_id: hca_sc_scanpy_tools
+- name: scanpy_integrate_mnn
+  owner: ebi-gxa
+  revisions:
+  - dc7fa97154f1
+  tool_panel_section_id: hca_sc_scanpy_tools
+- name: scanpy_integrate_bbknn
+  owner: ebi-gxa
+  revisions:
+  - 26805c747e15
   tool_panel_section_id: hca_sc_scanpy_tools
 - name: seurat_create_seurat_object
   owner: ebi-gxa
@@ -569,6 +594,11 @@ tools:
   revisions:
   - 5ef0610e9f50
   tool_panel_section_id: hca_sc_sccaf_tools
+- name: scmap_preprocess_sce
+  owner: ebi-gxa
+  revisions:
+  - 10c060627ef9
+  tool_panel_section_id: hca_sc_scmap_tools
 - name: scmap_index_cell
   owner: ebi-gxa
   revisions:
@@ -767,6 +797,11 @@ tools:
   - 9f3ce66cd91f
   - d276a8dd73c7
   tool_panel_section_id: hca_sc_scpred_tools
+- name: scpred_preprocess_data
+  owner: ebi-gxa
+  revisions:
+  - 9ce18a0e5cfd
+  tool_panel_section_id: hca_sc_scpred_tools
 - name: scpred_predict_labels
   owner: ebi-gxa
   revisions:
@@ -788,3 +823,33 @@ tools:
   - a6d66c9953ed
   - bb71ba86e806
   tool_panel_section_id: hca_sc_scpred_tools
+- name: scater_read_10x_results
+  owner: ebi-gxa
+  revisions:
+  - da3f394039b5
+  tool_panel_section_id: hca_sc_scater_tools
+- name: scater_normalize
+  owner: ebi-gxa
+  revisions:
+  - c01a342be892
+  tool_panel_section_id: hca_sc_scater_tools
+- name: scater_is_outlier
+  owner: ebi-gxa
+  revisions:
+  - add247843ef0
+  tool_panel_section_id: hca_sc_scater_tools
+- name: scater_filter
+  owner: ebi-gxa
+  revisions:
+  - 32f886c22e75
+  tool_panel_section_id: hca_sc_scater_tools
+- name: scater_calculate_qc_metrics
+  owner: ebi-gxa
+  revisions:
+  - 2fd982fab98a
+  tool_panel_section_id: hca_sc_scater_tools
+- name: scater_calculate_cpm
+  owner: ebi-gxa
+  revisions:
+  - 66e18f77e161
+  tool_panel_section_id: hca_sc_scater_tools
