@@ -163,6 +163,7 @@ tools:
 - name: kc_align
   owner: iuc
   revisions:
+  - 1c65ddbaeefa
   - 8dc7708c3266
   tool_panel_section_label: Multiple Alignments
 - name: anndata_inspect
@@ -366,6 +367,7 @@ tools:
   revisions:
   - 376a706dda11
   - 94020e19b46c
+  - a346730e5552
   - c411e2205442
   tool_panel_section_label: Variant Calling
 - name: vg_convert
@@ -416,6 +418,7 @@ tools:
   owner: iuc
   revisions:
   - 57ac42ec1be3
+  - 66b35562554d
   - f76d842e960f
   tool_panel_section_label: Variant Calling
 - name: slamdunk
@@ -1889,6 +1892,11 @@ tools:
   - 7cf5b1d072b5
   - f95284aa2946
   tool_panel_section_label: FASTA/FASTQ
+- name: novoplasty
+  owner: iuc
+  revisions:
+  - 7c2f5268d01c
+  tool_panel_section_label: Assembly
 - name: abyss
   owner: iuc
   revisions:
@@ -2148,12 +2156,14 @@ tools:
   - 6b0ba6de1424
   - 7fdb9d1591e2
   - b265be7af3db
+  - cc05793bb896
   - e3d32471da11
   - e7e885f718fb
   tool_panel_section_label: RNA Analysis
 - name: alevin
   owner: bgruening
   revisions:
+  - 04b494623f8e
   - 0a5258e41227
   - 53d74155bb52
   - 908a8d400fa2
@@ -2169,6 +2179,7 @@ tools:
   - 43658f594542
   - 85b3dc9b6830
   - 992c077f6e41
+  - cfb0849582e1
   - f6e3a10a88e5
   tool_panel_section_label: RNA Analysis
 - name: featurecounts
@@ -2188,6 +2199,7 @@ tools:
   revisions:
   - 0db979fead3a
   - 8aef9a17faae
+  - c6334cb383ff
   tool_panel_section_label: RNA Analysis
 - name: trinity
   owner: iuc
@@ -2388,6 +2400,7 @@ tools:
   owner: iuc
   revisions:
   - 2dfbcb88d16a
+  - 313414e9abcf
   - bf4ee2810759
   tool_panel_section_label: RNA Analysis
 - name: genrich
@@ -2760,12 +2773,14 @@ tools:
   - 3b4b2121842f
   - 65432c3abf6c
   - dfadc322b065
+  - e1461b5c52a0
   tool_panel_section_label: Variant Calling
 - name: lofreq_indelqual
   owner: iuc
   revisions:
   - 2ae554b4bcca
   - 354b534eeab7
+  - 426d707dfc47
   - 5d6a078d30b0
   - c27549b9aa1f
   - f4473557ffc7
@@ -2775,6 +2790,7 @@ tools:
   revisions:
   - 6f9ffff040ce
   - 701d134358ad
+  - 7dfca164d2e3
   - 950d1d49d678
   - 9cb929f21cfa
   - fdba1586551d
@@ -2782,6 +2798,7 @@ tools:
 - name: lofreq_alnqual
   owner: iuc
   revisions:
+  - 09d6e4693887
   - 2953c43180c0
   - 435b157bed6d
   - 606542a18f82
@@ -2792,6 +2809,7 @@ tools:
   owner: iuc
   revisions:
   - 33a416e1659e
+  - aa35ee7f3ab2
   - af7e416d8176
   - cdaab621d454
   - dbd9f2db9ed8
@@ -3862,6 +3880,7 @@ tools:
   - 161f4383df15
   - 1c2db0054039
   - 3d93dd18d9f8
+  - 5e33b465d8d5
   - b2f1f75d49c4
   - bf675f34b056
   - df99138d2776
