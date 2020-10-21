@@ -242,7 +242,7 @@ tools:
     tool_panel_section_label: Extract Features
   - name: extract_genomic_dna
     owner: iuc
-    tool_panel_section_label: "Other Tools"
+    tool_panel_section_id: fetch_sequences___alignments
   - name: concat
     owner: devteam
     tool_panel_section_label: Operate on Genomic Intervals
@@ -829,9 +829,6 @@ tools:
   - name: metilene
     owner: rnateam
     tool_panel_section_label: Epigenetics
-  - name: rnbeads
-    owner: pavlo-lutsik
-    tool_panel_section_label: Epigenetics
   - name: vcf_filter
     owner: devteam
     tool_panel_section_label: Epigenetics
@@ -1216,9 +1213,6 @@ tools:
   - name: tag_pileup_frequency
     owner: iuc
     tool_panel_section_label: 'SAM/BAM'
-  - name: sam_to_bam
-    owner: devteam
-    tool_panel_section_label: 'SAM/BAM'
   - name: pileup_interval
     owner: devteam
     tool_panel_section_label: 'SAM/BAM'
@@ -1273,25 +1267,13 @@ tools:
   - name: samtools_stats
     owner: devteam
     tool_panel_section_label: 'SAM/BAM'
-  - name: bam_to_sam
-    owner: devteam
-    tool_panel_section_label: 'SAM/BAM'
-  - name: samtools_sort
-    owner: iuc
-    tool_panel_section_label: 'SAM/BAM'
   - name: sam_pileup
     owner: devteam
-    tool_panel_section_label: 'SAM/BAM'
-  - name: samtools_filter
-    owner: jjohnson
     tool_panel_section_label: 'SAM/BAM'
   - name: samtool_filter2
     owner: devteam
     tool_panel_section_label: 'SAM/BAM'
   - name: samtools_phase
-    owner: devteam
-    tool_panel_section_label: 'SAM/BAM'
-  - name: sam_bitwise_flag_filter
     owner: devteam
     tool_panel_section_label: 'SAM/BAM'
   - name: sam2interval

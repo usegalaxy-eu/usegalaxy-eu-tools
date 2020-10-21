@@ -1,6 +1,26 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: pampa_presabs
+  owner: ecology
+  revisions:
+  - c9dfe4e20a45
+  tool_panel_section_label: Species abundance
+- name: pampa_communitymetrics
+  owner: ecology
+  revisions:
+  - ddd5b2e74b8b
+  tool_panel_section_label: Species abundance
+- name: pampa_glmsp
+  owner: ecology
+  revisions:
+  - 0778efa9eb2e
+  tool_panel_section_label: Species abundance
+- name: pampa_glmcomm
+  owner: ecology
+  revisions:
+  - f0dc3958e65d
+  tool_panel_section_label: Species abundance
 - name: stoc_maketable
   owner: ecology
   revisions:
@@ -347,6 +367,7 @@ tools:
   revisions:
   - 0ea86f6bf2a1
   - 326a3db8d9d1
+  - 4ac4e7083b7e
   - 5cec5fb749f0
   - c171f2b7d76e
   - c237ba772225
@@ -414,91 +435,91 @@ tools:
   revisions:
   - 1a9d5a8fff12
   - d2afc87db26b
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_sample_generator
   owner: bgruening
   revisions:
   - 97b467e06354
   - b4ba9602a36e
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_searchcv
   owner: bgruening
   revisions:
   - 1ae5dfd5ac17
   - 1c4a241bef5c
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
   - 913ee94945f3
   - 97dce66fe158
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_pairwise_metrics
   owner: bgruening
   revisions:
   - 7366e5108e9f
   - 86020dbc8ef7
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
   - 39ae3c043096
   - e9ba818e7877
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
   - 1dd433d2c92c
   - abb5a3f256e3
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
   - 3ab7af14f1b5
   - e94395c672bd
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_feature_selection
   owner: bgruening
   revisions:
   - ae0fafb53c1d
   - ec25331946b8
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_data_preprocess
   owner: bgruening
   revisions:
   - 826c3e68e7a9
   - 9e43ee712723
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_clf_metrics
   owner: bgruening
   revisions:
   - 55703205546f
   - 9bf11bbeccc3
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_regression_metrics
   owner: bgruening
   revisions:
   - 1e98dbb8d5bc
   - 40ee30b5e456
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_discriminant_classifier
   owner: bgruening
   revisions:
   - 237ae72d58a3
   - 5552eda109bd
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
   - 3e4a7684d402
   - b628de0d101f
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: sklearn_model_validation
   owner: bgruening
   revisions:
   - 0474777be433
   - cf9aa11b91c8
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Machine Learning
 - name: scipy_sparse
   owner: bgruening
   revisions:
@@ -530,6 +551,7 @@ tools:
   owner: iuc
   revisions:
   - 3d93dd18d9f8
+  - 5e33b465d8d5
   - b2f1f75d49c4
   - bf675f34b056
   tool_panel_section_label: Quality Control
@@ -605,23 +627,26 @@ tools:
   revisions:
   - 21d2aa544835
   - 7e5a174bc201
+  - d033e1ccb386
   tool_panel_section_label: RAD-seq
 - name: stacks2_cstacks
   owner: iuc
   revisions:
-  - c541e62d6c56
   - da351b9031de
   - f4aab9196d1e
+  - fcce77c09289
   tool_panel_section_label: RAD-seq
 - name: stacks2_sstacks
   owner: iuc
   revisions:
+  - 0b8c84a7fdb5
   - b7babdb3c219
   - e58e2ecb6285
   tool_panel_section_label: RAD-seq
 - name: stacks2_gstacks
   owner: iuc
   revisions:
+  - 1d839ead7ad3
   - 27359c6bf3e3
   - d35cb34f2b85
   tool_panel_section_label: RAD-seq
@@ -631,16 +656,19 @@ tools:
   - 38942a7e3801
   - 6fba323a242d
   - 9a44832748c5
+  - b242deb58952
   tool_panel_section_label: RAD-seq
 - name: stacks2_procrad
   owner: iuc
   revisions:
   - 9993234400f1
+  - bd5ff77e2036
   - ca7aa77c7f57
   tool_panel_section_label: RAD-seq
 - name: stacks2_denovomap
   owner: iuc
   revisions:
+  - 421c33b8bf17
   - afdbc7fcce70
   - b9822370f843
   tool_panel_section_label: RAD-seq
@@ -649,29 +677,34 @@ tools:
   revisions:
   - 319b10947ec1
   - 45385ba40a75
+  - 6dafad990086
   tool_panel_section_label: RAD-seq
 - name: stacks2_tsv2bam
   owner: iuc
   revisions:
   - 1b270fc77c81
   - 8c2617661c49
+  - bf0e43ab0416
   tool_panel_section_label: RAD-seq
 - name: stacks2_clonefilter
   owner: iuc
   revisions:
   - 1b6d07160736
+  - 2f1d464ebfd2
   - b75174403a65
   tool_panel_section_label: RAD-seq
 - name: stacks2_kmerfilter
   owner: iuc
   revisions:
   - 38c9f9a680f0
+  - 8a55d29c8fcf
   - b2e3553e1be2
   tool_panel_section_label: RAD-seq
 - name: stacks2_shortreads
   owner: iuc
   revisions:
   - 1974fee35ca7
+  - 43e3eeb2e0ec
   - ad7a60726fc3
   tool_panel_section_label: RAD-seq
 - name: stacks_ustacks

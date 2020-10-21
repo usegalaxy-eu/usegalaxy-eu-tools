@@ -4,7 +4,6 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-
   - name: ont_fast5_api_fast5_subset
     owner: iuc
     tool_panel_section_label: Nanopore
@@ -109,6 +108,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Single-cell
 
+  - name: chromeister
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
   - name: kc_align
     owner: iuc
     tool_panel_section_label: Multiple Alignments
@@ -128,6 +131,10 @@ tools:
   - name: collection_element_identifiers
     owner: iuc
     tool_panel_section_label: Collection Operations
+
+  - name: rnaquast
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
 
   - name: crosscontamination_barcode_filter
     owner: iuc
@@ -169,21 +176,57 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
-  - name: medaka_consensus
+  - name: delly_lr
     owner: iuc
     tool_panel_section_label: Variant Calling
+
+  - name: delly_call
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_merge
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_filter
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: sniffles
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cutesv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: control_freec
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: vardict_java
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_concat
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: medaka_consensus
+    owner: iuc
+    tool_panel_section_label: Nanopore
 
   - name: medaka_consensus_pipeline
     owner: iuc
-    tool_panel_section_label: Variant Calling
+    tool_panel_section_label: Nanopore
 
   - name: medaka_variant
     owner: iuc
-    tool_panel_section_label: Variant Calling
+    tool_panel_section_label: Nanopore
 
   - name: medaka_variant_pipeline
     owner: iuc
-    tool_panel_section_label: Variant Calling
+    tool_panel_section_label: Nanopore
 
   - name: artic_minion
     owner: iuc
@@ -218,6 +261,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: gatk4_mutect2
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: plink
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -593,6 +640,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: genebed_maf_to_fasta
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: interval2maf
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
   - name: tabular_to_fasta
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
@@ -628,7 +683,7 @@ tools:
 
   - name: extract_genomic_dna
     owner: iuc
-    tool_panel_section_label: Other Tools
+    tool_panel_section_id: fetch_sequences___alignments
 
   - name: concat
     owner: devteam
@@ -780,6 +835,10 @@ tools:
     owner: devteam
     tool_panel_section_label: Motif Tools
 
+  - name: maf_stats
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
   - name: mummer_mummer
     owner: iuc
     tool_panel_section_label: Multiple Alignments
@@ -815,6 +874,10 @@ tools:
   - name: sina
     owner: iuc
     tool_panel_section_label: Multiple Alignments
+
+  - name: metaeuk_easy_predict
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: last
     owner: iuc
@@ -1034,9 +1097,14 @@ tools:
   - name: fastq_quality_converter
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+
   - name: fastq_quality_boxplot
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+
+  - name: novoplasty
+    owner: iuc
+    tool_panel_section_label: Assembly
 
   - name: abyss
     owner: iuc
@@ -1731,9 +1799,6 @@ tools:
   - name: tag_pileup_frequency
     owner: iuc
     tool_panel_section_label: SAM/BAM
-  - name: sam_to_bam
-    owner: devteam
-    tool_panel_section_label: SAM/BAM
   - name: pileup_interval
     owner: devteam
     tool_panel_section_label: SAM/BAM
@@ -1807,15 +1872,7 @@ tools:
     owner: devteam
     tool_panel_section_label: SAM/BAM
 
-  - name: bam_to_sam
-    owner: devteam
-    tool_panel_section_label: SAM/BAM
-
   - name: samtools_depth
-    owner: iuc
-    tool_panel_section_label: SAM/BAM
-
-  - name: samtools_sort
     owner: iuc
     tool_panel_section_label: SAM/BAM
 
@@ -1841,10 +1898,6 @@ tools:
   - name: samtools_phase
     owner: devteam
     tool_panel_section_label: SAM/BAM
-  - name: sam_bitwise_flag_filter
-    owner: devteam
-    tool_panel_section_label: SAM/BAM
-
   - name: sam2interval
     owner: devteam
     tool_panel_section_label: SAM/BAM
@@ -3098,3 +3151,7 @@ tools:
   - name: humann2_unpack_pathways
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+
+  - name: fastqe
+    owner: iuc
+    tool_panel_section_label: FASTQ Quality Control

@@ -124,7 +124,10 @@ tools:
   revisions:
   - 1790dcf3c32d
   - 26b7446bb17e
+  - 494b2ec08162
+  - 653e89d73fc4
   - 7068f48d0ef9
+  - 751a694ec620
   - aad3885b3216
   - b723c120161a
   - c441583adae5
@@ -373,7 +376,7 @@ tools:
   - c8467246b57e
   - e1f5bdd8279c
   - e400dcbc60d0
-  tool_panel_section_label: Other Tools
+  tool_panel_section_id: fetch_sequences___alignments
 - name: concat
   owner: devteam
   revisions:
@@ -455,6 +458,7 @@ tools:
   owner: iuc
   revisions:
   - 0ae74c70b267
+  - 17359b808b01
   - 1cfc579079a6
   - 2bb2e07a7a21
   - 2c9e5136b416
@@ -1011,6 +1015,7 @@ tools:
   - 161f4383df15
   - 1c2db0054039
   - 3d93dd18d9f8
+  - 5e33b465d8d5
   - b2f1f75d49c4
   - bf675f34b056
   tool_panel_section_label: FASTQ Quality Control
@@ -1071,6 +1076,7 @@ tools:
   - 0a563fd2f22e
   - 318b2a9d54dd
   - 41929aa1e7f3
+  - 5ec75f5dae3c
   - 850f3679b9b4
   - b9e04854e2bb
   - bc685d13b637
@@ -1150,6 +1156,7 @@ tools:
   owner: iuc
   revisions:
   - 1759d845181e
+  - 90d16db017d7
   - 9301937c9037
   - a37612abf7f9
   - af814359d244
@@ -1166,6 +1173,7 @@ tools:
   revisions:
   - 0db979fead3a
   - 8aef9a17faae
+  - c6334cb383ff
   tool_panel_section_label: RNA Analysis
 - name: trinity
   owner: iuc
@@ -1413,11 +1421,6 @@ tools:
   owner: rnateam
   revisions:
   - cd253831a014
-  tool_panel_section_label: Epigenetics
-- name: rnbeads
-  owner: pavlo-lutsik
-  revisions:
-  - 6b0981ab063e
   tool_panel_section_label: Epigenetics
 - name: vcf_filter
   owner: devteam
@@ -2098,11 +2101,6 @@ tools:
   - b7d7ae3963aa
   - fa82c3c9ced3
   tool_panel_section_label: SAM/BAM
-- name: sam_to_bam
-  owner: devteam
-  revisions:
-  - f7a0d41036c7
-  tool_panel_section_label: SAM/BAM
 - name: pileup_interval
   owner: devteam
   revisions:
@@ -2196,26 +2194,10 @@ tools:
   revisions:
   - 24c5d43cb545
   tool_panel_section_label: SAM/BAM
-- name: bam_to_sam
-  owner: devteam
-  revisions:
-  - f57df915aa10
-  tool_panel_section_label: SAM/BAM
-- name: samtools_sort
-  owner: iuc
-  revisions:
-  - 38ea74bd4054
-  - 80fffde691eb
-  tool_panel_section_label: SAM/BAM
 - name: sam_pileup
   owner: devteam
   revisions:
   - 890d97772e2a
-  tool_panel_section_label: SAM/BAM
-- name: samtools_filter
-  owner: jjohnson
-  revisions:
-  - 9710e9bcc5f3
   tool_panel_section_label: SAM/BAM
 - name: samtool_filter2
   owner: devteam
@@ -2226,11 +2208,6 @@ tools:
   owner: devteam
   revisions:
   - 6166013090c0
-  tool_panel_section_label: SAM/BAM
-- name: sam_bitwise_flag_filter
-  owner: devteam
-  revisions:
-  - 0b2424a404d9
   tool_panel_section_label: SAM/BAM
 - name: sam2interval
   owner: devteam
@@ -2506,7 +2483,6 @@ tools:
   owner: iuc
   revisions:
   - 5bd1418f4227
-  - c541e62d6c56
   - dab92afa0c98
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks

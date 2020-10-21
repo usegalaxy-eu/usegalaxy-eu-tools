@@ -135,6 +135,22 @@ tools:
   - name: scanpy_scale_data
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scanpy_tools'
+
+  - name: scanpy_integrate_combat
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
+  
+  - name: scanpy_integrate_harmony
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools' 
+    
+  - name: scanpy_integrate_mnn
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
+    
+  - name: scanpy_integrate_bbknn
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scanpy_tools'
     
   - name: seurat_create_seurat_object
     owner: ebi-gxa
@@ -239,7 +255,11 @@ tools:
   - name: sccaf_regress_out
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_sccaf_tools'
-    
+  
+  - name: scmap_preprocess_sce
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scmap_tools'
+  
   - name: scmap_index_cell
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scmap_tools'
@@ -352,6 +372,10 @@ tools:
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scpred_tools'
 
+  - name: scpred_preprocess_data
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scpred_tools'
+    
   - name: scpred_predict_labels
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scpred_tools'
@@ -363,3 +387,28 @@ tools:
   - name: scpred_traint_test_split
     owner: ebi-gxa
     tool_panel_section_id: 'hca_sc_scpred_tools'
+    
+  - name: scater_read_10x_results
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scater_tools'
+    
+  - name: scater_normalize
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scater_tools'
+    
+  - name: scater_is_outlier
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scater_tools'
+    
+  - name: scater_filter
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scater_tools'
+    
+  - name: scater_calculate_qc_metrics
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scater_tools'
+
+  - name: scater_calculate_cpm
+    owner: ebi-gxa
+    tool_panel_section_id: 'hca_sc_scater_tools'
+  
