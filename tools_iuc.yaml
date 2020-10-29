@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: ngmlr
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: ont_fast5_api_fast5_subset
     owner: iuc
     tool_panel_section_label: Nanopore
