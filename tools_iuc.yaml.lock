@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: ngmlr
+  owner: iuc
+  revisions:
+  - 95e4757d8da7
+  tool_panel_section_label: Nanopore
 - name: ont_fast5_api_fast5_subset
   owner: iuc
   revisions:
@@ -292,20 +297,24 @@ tools:
   owner: iuc
   revisions:
   - 629a0066003d
+  - d5124d5c8131
   tool_panel_section_label: Variant Calling
 - name: delly_call
   owner: iuc
   revisions:
   - 36772204dee5
+  - 53d90d86fc83
   tool_panel_section_label: Variant Calling
 - name: delly_merge
   owner: iuc
   revisions:
   - 6331d804f983
+  - 97c7441aed0d
   tool_panel_section_label: Variant Calling
 - name: delly_filter
   owner: iuc
   revisions:
+  - 9919057a466c
   - a75e05f20a66
   tool_panel_section_label: Variant Calling
 - name: sniffles
@@ -505,6 +514,11 @@ tools:
   revisions:
   - f28678233baf
   tool_panel_section_label: Statistics
+- name: ega_download_client
+  owner: iuc
+  revisions:
+  - caf213d51d6c
+  tool_panel_section_label: Send Data
 - name: data_manager_primer_scheme_bedfiles
   owner: iuc
   revisions:
@@ -2458,6 +2472,7 @@ tools:
   owner: devteam
   revisions:
   - 4a14714649b4
+  - 5c2cc3b58c7d
   - 74c9214cc8e6
   tool_panel_section_label: Peak Calling
 - name: ccat
@@ -5494,6 +5509,7 @@ tools:
 - name: hyphy_prime
   owner: iuc
   revisions:
+  - 1d9d3c6bc246
   - 70aa4bada58d
   - 725ef5f6d749
   - 8f66e659530b
@@ -5514,6 +5530,7 @@ tools:
   - 8c8640ca39d7
   - 98ee8ba908d6
   - b678fe748dc5
+  - c92d5ec5d8d7
   - cde38657e82c
   - cff70490dbec
   - d6389faa75ff
@@ -5526,6 +5543,7 @@ tools:
   - 14e7ae9331cb
   - 1647c9f95dc7
   - 1df765cc6bcb
+  - 26ad9a6b1293
   - 7fd2d1451728
   - 823a5afee916
   - 91006eb8b84e
@@ -5541,6 +5559,7 @@ tools:
   revisions:
   - 03f1b4c09330
   - 1942d02039c2
+  - 42efcb0955e6
   - 6283babe736e
   - 7a2092844346
   - 7f14d76f86ca
@@ -5557,6 +5576,7 @@ tools:
   owner: iuc
   revisions:
   - 0122b28acc5f
+  - 0b58ef9e84b2
   - 107d3ba7024a
   - 181f5b9f139f
   - 4aad5b48d5b2
@@ -5576,6 +5596,7 @@ tools:
   - 0f108ee932ea
   - 3285fd1f4bde
   - 37f6c6344193
+  - 3db56014322f
   - 47145f568cd6
   - 600647840e87
   - 658ad6851b71
@@ -5603,6 +5624,7 @@ tools:
   - 9158a34fc9c5
   - b5d981229301
   - c62ddfa33ac5
+  - ea64cc9a06e4
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fade
   owner: iuc
@@ -5612,6 +5634,7 @@ tools:
   - 6164d9298db9
   - 62971c58f0dc
   - 7c41611bf5b7
+  - 7dbcce65a8ff
   - a1a03eb66960
   - a4398cfa8792
   - b959fd359a6b
@@ -5627,6 +5650,7 @@ tools:
   - 056a5b14721d
   - 1a32b8e86fc6
   - 1cd3060a8504
+  - 2126c9e28ce6
   - 23b9bd244670
   - 40e9160dbbbb
   - 5c2640980c0a
@@ -5647,6 +5671,7 @@ tools:
   - 3d1f153e2aa1
   - 4d5768ad6316
   - 546f2f99b820
+  - 5b380f4dbf1c
   - 74b590fdc6a0
   - 7b3f9c78cf6d
   - 8366d5b28b49
@@ -5671,12 +5696,14 @@ tools:
   - b82429e9c6a9
   - c2bed8cc8fc1
   - d6f4ff2aed07
+  - dc9e52b2d0e1
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fel
   owner: iuc
   revisions:
   - 1b62167f7ab2
   - 2442e8b5e363
+  - 2e5ab7526bd4
   - 4926c55123d1
   - 4eba0baf0278
   - 6400b683aced
