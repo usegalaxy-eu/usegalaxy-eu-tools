@@ -32,7 +32,7 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 	@-shed-tools install --install_resolver_dependencies --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
 
 pr_check:
-	for changed_yaml in `git diff remotes/origin/master --name-only | grep .yaml$$`; do python scripts/pr-check.py $${changed_yaml}; done
+	for changed_yaml in `git diff remotes/origin/master --name-only | grep .yaml$$`; do python scripts/pr-check.py $${changed_yaml} && pykwalify -d $${changed_yaml} -s .schema.yaml ; done
 
 update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
