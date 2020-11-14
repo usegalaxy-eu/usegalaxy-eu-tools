@@ -293,6 +293,16 @@ tools:
   - 60f888039fb2
   - b818b23df1e0
   tool_panel_section_label: RNA Analysis
+- name: lumpy_prep
+  owner: iuc
+  revisions:
+  - 21f2361c32c9
+  tool_panel_section_label: Variant Calling
+- name: lumpy_sv
+  owner: iuc
+  revisions:
+  - 477a07f387e0
+  tool_panel_section_label: Variant Calling
 - name: delly_lr
   owner: iuc
   revisions:
@@ -422,6 +432,7 @@ tools:
   owner: iuc
   revisions:
   - 3556001ff2db
+  - 3f1dbd2c59bf
   tool_panel_section_label: Variant Calling
 - name: mixcr_analyze
   owner: iuc
@@ -1105,11 +1116,13 @@ tools:
 - name: genebed_maf_to_fasta
   owner: iuc
   revisions:
+  - 020c78e91cc5
   - f24a9ff28d3c
   tool_panel_section_label: Convert Formats
 - name: interval2maf
   owner: iuc
   revisions:
+  - b79f6002b176
   - cfea1d6354db
   tool_panel_section_label: Convert Formats
 - name: tabular_to_fasta
@@ -1425,6 +1438,7 @@ tools:
 - name: maf_stats
   owner: iuc
   revisions:
+  - 0c84cce7b030
   - 5a92f4c476b5
   tool_panel_section_label: Multiple Alignments
 - name: mummer_mummer
@@ -1497,6 +1511,7 @@ tools:
 - name: last
   owner: iuc
   revisions:
+  - 3de2195f32c0
   - 86206f93fb13
   - 9a7e91fc6562
   - bf30030e5265
@@ -1933,6 +1948,11 @@ tools:
   owner: iuc
   revisions:
   - 7c2f5268d01c
+  tool_panel_section_label: Assembly
+- name: shasta
+  owner: iuc
+  revisions:
+  - 60573349e9ae
   tool_panel_section_label: Assembly
 - name: abyss
   owner: iuc
@@ -2797,6 +2817,66 @@ tools:
   revisions:
   - 54b6b4d0613a
   - b5066aa77fea
+  tool_panel_section_label: Annotation
+- name: hmmer_hmmsearch
+  owner: iuc
+  revisions:
+  - b774ae8e1609
+  tool_panel_section_label: Annotation
+- name: hmmer_hmmemit
+  owner: iuc
+  revisions:
+  - 9415f29a3926
+  tool_panel_section_label: Annotation
+- name: hmmer_hmmalign
+  owner: iuc
+  revisions:
+  - b2453ee52845
+  tool_panel_section_label: Annotation
+- name: hmmer_nhmmscan
+  owner: iuc
+  revisions:
+  - 2d406da5d34e
+  tool_panel_section_label: Annotation
+- name: hmmer_jackhmmer
+  owner: iuc
+  revisions:
+  - 5113c71c7031
+  tool_panel_section_label: Annotation
+- name: hmmer_phmmer
+  owner: iuc
+  revisions:
+  - c1de05e20868
+  tool_panel_section_label: Annotation
+- name: hmmer_hmmscan
+  owner: iuc
+  revisions:
+  - be7097d6e3ff
+  tool_panel_section_label: Annotation
+- name: hmmer_hmmfetch
+  owner: iuc
+  revisions:
+  - fb459c8fb2ba
+  tool_panel_section_label: Annotation
+- name: hmmer_alimask
+  owner: iuc
+  revisions:
+  - b4dc65565864
+  tool_panel_section_label: Annotation
+- name: hmmer_hmmconvert
+  owner: iuc
+  revisions:
+  - 8d5ec58d2172
+  tool_panel_section_label: Annotation
+- name: hmmer_hmmbuild
+  owner: iuc
+  revisions:
+  - 750269125dc9
+  tool_panel_section_label: Annotation
+- name: hmmer_nhmmer
+  owner: iuc
+  revisions:
+  - b4fe2f703b4b
   tool_panel_section_label: Annotation
 - name: seqwish
   owner: iuc
