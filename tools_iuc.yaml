@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: ngmlr
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: ont_fast5_api_fast5_subset
     owner: iuc
     tool_panel_section_label: Nanopore
@@ -132,6 +136,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Collection Operations
 
+  - name: rnaquast
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: crosscontamination_barcode_filter
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -171,6 +179,14 @@ tools:
   - name: kallisto_quant
     owner: iuc
     tool_panel_section_label: RNA Analysis
+
+  - name: lumpy_prep
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: lumpy_sv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: delly_lr
     owner: iuc
@@ -311,6 +327,10 @@ tools:
   - name: graphembed
     owner: iuc
     tool_panel_section_label: Statistics
+
+  - name: ega_download_client
+    owner: iuc
+    tool_panel_section_label: Get Data
 
   - name: data_manager_primer_scheme_bedfiles
     owner: iuc
@@ -1102,6 +1122,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: shasta
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: abyss
     owner: iuc
     tool_panel_section_label: Assembly
@@ -1550,6 +1574,54 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmsearch
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmemit
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmalign
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_nhmmscan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_jackhmmer
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_phmmer
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmscan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmfetch
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_alimask
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmconvert
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmbuild
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_nhmmer
     owner: iuc
     tool_panel_section_label: Annotation
 
