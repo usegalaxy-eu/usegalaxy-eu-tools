@@ -21,6 +21,11 @@ tools:
   revisions:
   - f0dc3958e65d
   tool_panel_section_label: Species abundance
+- name: pampa_plotglm
+  owner: ecology
+  revisions:
+  - 3ab852a7ff53
+  tool_panel_section_label: Species abundance
 - name: stoc_maketable
   owner: ecology
   revisions:
@@ -361,11 +366,13 @@ tools:
   owner: iuc
   revisions:
   - 1b9406a1a769
+  - 90928b255abb
   tool_panel_section_label: Graph/Display Data
 - name: pygenometracks
   owner: iuc
   revisions:
   - 0ea86f6bf2a1
+  - 2824d77cd8f8
   - 326a3db8d9d1
   - 4ac4e7083b7e
   - 5cec5fb749f0
@@ -377,12 +384,14 @@ tools:
 - name: ggplot2_heatmap
   owner: iuc
   revisions:
+  - a4d83ba2a1bc
   - de002ba2b849
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_violin
   owner: iuc
   revisions:
   - 637cf21db396
+  - d8305f18060e
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap2
   owner: iuc
@@ -394,10 +403,12 @@ tools:
   revisions:
   - 87908c76ca8d
   - 9cec81e1b90e
+  - a36551483a8f
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_histogram
   owner: iuc
   revisions:
+  - 497d700a5229
   - 536078949ae4
   tool_panel_section_label: Graph/Display Data
 - name: tsne
@@ -554,6 +565,7 @@ tools:
   - 5e33b465d8d5
   - b2f1f75d49c4
   - bf675f34b056
+  - c19b16e5729c
   tool_panel_section_label: Quality Control
 - name: mothur_sffinfo
   owner: iuc
