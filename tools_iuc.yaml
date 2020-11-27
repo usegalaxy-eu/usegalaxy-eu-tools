@@ -4,6 +4,14 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: flair_collapse
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: flair_correct
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: ngmlr
     owner: iuc
     tool_panel_section_label: Nanopore
