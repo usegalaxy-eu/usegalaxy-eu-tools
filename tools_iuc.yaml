@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: ena_upload
+    owner: iuc
+    tool_panel_section_label: Send Data
+
   - name: flair_collapse
     owner: iuc
     tool_panel_section_label: Nanopore
