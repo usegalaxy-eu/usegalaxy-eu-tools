@@ -2,6 +2,21 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: ena_upload
+  owner: iuc
+  revisions:
+  - 382518f24d6d
+  tool_panel_section_label: Send Data
+- name: flair_collapse
+  owner: iuc
+  revisions:
+  - 57dc46adf2da
+  tool_panel_section_label: Nanopore
+- name: flair_correct
+  owner: iuc
+  revisions:
+  - 6927379c9ede
+  tool_panel_section_label: Nanopore
 - name: ngmlr
   owner: iuc
   revisions:
@@ -534,6 +549,7 @@ tools:
 - name: data_manager_primer_scheme_bedfiles
   owner: iuc
   revisions:
+  - 157a5c9ea72a
   - a2953ef09fe1
   - b3710e492ee4
   - cce5d9327cd6
@@ -541,6 +557,7 @@ tools:
 - name: data_manager_mitos
   owner: iuc
   revisions:
+  - 19d9be08560c
   - 26a6f95e82c8
   tool_panel_section_label: Data Managers
 - name: data_manager_mash_sketch_builder
@@ -548,10 +565,12 @@ tools:
   revisions:
   - 2af9137ba067
   - b6016642539d
+  - ce1d5c8d5bff
   tool_panel_section_label: Data Managers
 - name: data_manager_dada2
   owner: iuc
   revisions:
+  - 38ccd4589990
   - a6a81f921701
   - bf7b2c14cabc
   - c29275496061
@@ -560,6 +579,7 @@ tools:
 - name: data_manager_cat
   owner: iuc
   revisions:
+  - 74af283d8ebd
   - cffd8e2382cf
   tool_panel_section_label: Data Managers
 - name: dada2_filterandtrim
@@ -826,6 +846,7 @@ tools:
   owner: iuc
   revisions:
   - d3ebbf39b1c5
+  - de7795890bc5
   tool_panel_section_label: RNA Analysis
 - name: circos
   owner: iuc
@@ -835,6 +856,7 @@ tools:
   - 4b519282a05b
   - 740057a5126d
   - a64dc31ab7f2
+  - df7356989ac1
   - e6cbe3190642
   - fd59d783248a
   tool_panel_section_label: Graph/Display Data
@@ -1656,6 +1678,7 @@ tools:
   - 2904d46167da
   - 650d553c1fda
   - 9ad0d336e5ed
+  - f546e7278f04
   tool_panel_section_label: FASTA/FASTQ
 - name: sickle
   owner: iuc
@@ -2108,6 +2131,7 @@ tools:
   - 6daca6da3059
   - a26ed87f444c
   - a86e80d3c09c
+  - d4b55e2beb12
   tool_panel_section_label: Mapping
 - name: bowtie_wrappers
   owner: devteam
@@ -2190,6 +2214,7 @@ tools:
   - a6fc9228e1a0
   - d983d19fbbab
   - d9e5cadc7f0b
+  - de44f8eff84a
   - e5c8afac22a7
   tool_panel_section_label: RNA Analysis
 - name: edger
@@ -3027,6 +3052,7 @@ tools:
   revisions:
   - 0968856c687c
   - 328c607150ff
+  - 4a9da2b6c2e3
   - d4bb87ca916d
   tool_panel_section_label: NCBI Blast
 - name: kraken_taxonomy_report
@@ -3954,6 +3980,7 @@ tools:
 - name: data_manager_build_kma_index
   owner: iuc
   revisions:
+  - 2c532a6eee3f
   - 889cc43b72d6
   - 8c2e674a93bb
   tool_panel_section_label: Data Managers
@@ -3962,6 +3989,7 @@ tools:
   revisions:
   - 9e86c09a6cae
   - cbe065fbd038
+  - cc18f0f3514c
   tool_panel_section_label: Data Managers
 - name: data_manager_salmon_index_builder
   owner: iuc
@@ -3974,6 +4002,7 @@ tools:
 - name: data_manager_kallisto_index_builder
   owner: iuc
   revisions:
+  - 18e2dd472525
   - 6843a0db2da0
   tool_panel_section_label: Data Managers
 - name: iwtomics_loadandplot
@@ -4019,6 +4048,7 @@ tools:
   - c19b16e5729c
   - df99138d2776
   - e4574a4d09d8
+  - f7985e0479b9
   tool_panel_section_label: Quality Control
 - name: hicexplorer_chicqualitycontrol
   owner: bgruening
@@ -4537,6 +4567,7 @@ tools:
   - 1a125daea0d8
   - 1aae04680c4b
   - 38eedf3cc3c9
+  - 44018dd6b447
   - 9ab35a2245ce
   - b467a89be0c6
   - b5d8e5475247
@@ -5500,6 +5531,7 @@ tools:
   revisions:
   - 3dab7d200c10
   - 4b72b6c43327
+  - 829bb93d3add
   - ab12df91b47f
   - c3203178c41f
   - f65c34178487
@@ -5572,6 +5604,7 @@ tools:
   revisions:
   - 29f963e785a0
   - 35a4e758bbed
+  - 35fd955898e0
   - 3eeb1a2b2ae4
   - 6e1047fa1a51
   tool_panel_section_label: Mothur
@@ -6216,12 +6249,18 @@ tools:
   - dea6bc47a47e
   - e82eda6acb29
   tool_panel_section_label: RNA Analysis
+- name: spyboat
+  owner: iuc
+  revisions:
+  - 76733d05d8ef
+  tool_panel_section_label: Imaging
 - name: idr_download_by_ids
   owner: iuc
   revisions:
   - 11036f6197d6
   - 381f248febba
   - 5c743356df83
+  - 97f70f7ed077
   - e08b1dc0480c
   - f067504aa92a
   tool_panel_section_label: Imaging

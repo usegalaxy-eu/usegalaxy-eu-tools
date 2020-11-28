@@ -4,21 +4,25 @@ tools:
 - name: pampa_presabs
   owner: ecology
   revisions:
+  - 8d8aec182fb1
   - c9dfe4e20a45
   tool_panel_section_label: Species abundance
 - name: pampa_communitymetrics
   owner: ecology
   revisions:
+  - 5bd7ddd7601f
   - ddd5b2e74b8b
   tool_panel_section_label: Species abundance
 - name: pampa_glmsp
   owner: ecology
   revisions:
   - 0778efa9eb2e
+  - 6c14021f678e
   tool_panel_section_label: Species abundance
 - name: pampa_glmcomm
   owner: ecology
   revisions:
+  - 44b9069775ca
   - f0dc3958e65d
   tool_panel_section_label: Species abundance
 - name: pampa_plotglm
@@ -30,25 +34,30 @@ tools:
   owner: ecology
   revisions:
   - 22a784d2b0e0
+  - af4987066235
   tool_panel_section_label: Species abundance
 - name: stoc_filteringsp
   owner: ecology
   revisions:
   - 2e45ae3b297a
+  - fd0687e91bf6
   tool_panel_section_label: Species abundance
 - name: stoc_mainglm
   owner: ecology
   revisions:
+  - a961be0a964f
   - df3ce23d0d23
   tool_panel_section_label: Species abundance
 - name: stoc_mainglm_group
   owner: ecology
   revisions:
   - 06a11044e089
+  - 8f953c35c787
   tool_panel_section_label: Species abundance
 - name: stoc_trend_indic
   owner: ecology
   revisions:
+  - 5c244408661f
   - 916b49d725ba
   tool_panel_section_label: Species abundance
 - name: regionalgam_ab_index
@@ -120,12 +129,14 @@ tools:
   owner: bgruening
   revisions:
   - 0a8c6b61f0f4
+  - ddf54b12c295
   - fb4ff3c42cd3
   tool_panel_section_label: Text Manipulation
 - name: column_maker
   owner: devteam
   revisions:
   - 464b9305180e
+  - 6e8d94597139
   tool_panel_section_label: Text Manipulation
 - name: prinseq
   owner: iuc
@@ -140,6 +151,7 @@ tools:
 - name: merge_cols
   owner: devteam
   revisions:
+  - ae7843d06f8f
   - f2aac0c5c60d
   tool_panel_section_label: Text Manipulation
 - name: coverage
@@ -345,6 +357,7 @@ tools:
 - name: histogram
   owner: devteam
   revisions:
+  - 6f134426c2b0
   - cdb9e89e2970
   tool_panel_section_label: Graph/Display Data
 - name: gmaj
@@ -444,12 +457,14 @@ tools:
 - name: sklearn_svm_classifier
   owner: bgruening
   revisions:
+  - 02d2be90dedb
   - 1a9d5a8fff12
   - d2afc87db26b
   tool_panel_section_label: Machine Learning
 - name: sklearn_sample_generator
   owner: bgruening
   revisions:
+  - 7068b5fcd623
   - 97b467e06354
   - b4ba9602a36e
   tool_panel_section_label: Machine Learning
@@ -458,16 +473,19 @@ tools:
   revisions:
   - 1ae5dfd5ac17
   - 1c4a241bef5c
+  - e5a5ad882f1f
   tool_panel_section_label: Machine Learning
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
   - 913ee94945f3
   - 97dce66fe158
+  - 9c3e1d3235c8
   tool_panel_section_label: Machine Learning
 - name: sklearn_pairwise_metrics
   owner: bgruening
   revisions:
+  - 226524df8c6c
   - 7366e5108e9f
   - 86020dbc8ef7
   tool_panel_section_label: Machine Learning
@@ -475,6 +493,7 @@ tools:
   owner: bgruening
   revisions:
   - 39ae3c043096
+  - cd02bf168d23
   - e9ba818e7877
   tool_panel_section_label: Machine Learning
 - name: sklearn_numeric_clustering
@@ -482,16 +501,19 @@ tools:
   revisions:
   - 1dd433d2c92c
   - abb5a3f256e3
+  - ad7e0b4291ee
   tool_panel_section_label: Machine Learning
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
   - 3ab7af14f1b5
+  - 841a6cc5fc58
   - e94395c672bd
   tool_panel_section_label: Machine Learning
 - name: sklearn_feature_selection
   owner: bgruening
   revisions:
+  - 6d21b03e00a1
   - ae0fafb53c1d
   - ec25331946b8
   tool_panel_section_label: Machine Learning
@@ -500,35 +522,41 @@ tools:
   revisions:
   - 826c3e68e7a9
   - 9e43ee712723
+  - eb9da067ab26
   tool_panel_section_label: Machine Learning
 - name: sklearn_clf_metrics
   owner: bgruening
   revisions:
   - 55703205546f
   - 9bf11bbeccc3
+  - adc6137e7c73
   tool_panel_section_label: Machine Learning
 - name: sklearn_regression_metrics
   owner: bgruening
   revisions:
   - 1e98dbb8d5bc
   - 40ee30b5e456
+  - 7d98dfb04d27
   tool_panel_section_label: Machine Learning
 - name: sklearn_discriminant_classifier
   owner: bgruening
   revisions:
   - 237ae72d58a3
+  - 2d032cff49eb
   - 5552eda109bd
   tool_panel_section_label: Machine Learning
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
   - 3e4a7684d402
+  - 40f4447733b2
   - b628de0d101f
   tool_panel_section_label: Machine Learning
 - name: sklearn_model_validation
   owner: bgruening
   revisions:
   - 0474777be433
+  - bfc7bdfcb423
   - cf9aa11b91c8
   tool_panel_section_label: Machine Learning
 - name: scipy_sparse
@@ -536,11 +564,13 @@ tools:
   revisions:
   - a84e6ffd3735
   - b9ed7b774ba3
+  - ecd247e1ea9c
   tool_panel_section_label: Statistics
 - name: regex_find_replace
   owner: galaxyp
   revisions:
   - 209b7c5ee9d7
+  - ae8c4b2488e7
   tool_panel_section_label: Text Manipulation
 - name: regex_replace
   owner: kellrott
@@ -566,6 +596,7 @@ tools:
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
+  - f7985e0479b9
   tool_panel_section_label: Quality Control
 - name: mothur_sffinfo
   owner: iuc
@@ -634,6 +665,7 @@ tools:
   owner: devteam
   revisions:
   - 01ac0a5fedc3
+  - 3fe632431b68
   tool_panel_section_label: RAD-seq
 - name: stacks2_ustacks
   owner: iuc
@@ -803,11 +835,13 @@ tools:
   owner: ecology
   revisions:
   - 7edbe5ae8b72
+  - e8650cdf092f
   tool_panel_section_label: GIS Data Handling
 - name: xarray_select
   owner: ecology
   revisions:
   - 225d0d275a24
+  - 6baac361495b
   tool_panel_section_label: GIS Data Handling
 - name: gdal_gdaladdo
   owner: ecology
@@ -866,6 +900,7 @@ tools:
 - name: dwt_var_perfeature
   owner: devteam
   revisions:
+  - 6c29c7e347e8
   - 7a15159140d1
   tool_panel_section_label: Statistics
 - name: vigiechiro_bilanenrichipf
