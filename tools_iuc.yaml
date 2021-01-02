@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: busco
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: ena_upload
     owner: iuc
     tool_panel_section_label: Send Data
