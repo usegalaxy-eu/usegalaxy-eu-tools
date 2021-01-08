@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: busco
+  owner: iuc
+  revisions:
+  - 602fb8e63aa7
+  tool_panel_section_label: Annotation
 - name: ena_upload
   owner: iuc
   revisions:
@@ -150,6 +155,7 @@ tools:
   - 69e2275406fd
   - a61350ab6563
   - b5c7ba11401d
+  - cfc3f5a57dc6
   - e175d4067b00
   tool_panel_section_label: Single-cell
 - name: anndata_export
@@ -160,6 +166,7 @@ tools:
   - 379014a57491
   - 8623710d083c
   - a9ab1b0a00dd
+  - c0b037b12765
   - e0395cca2c57
   - fcb7370e827f
   tool_panel_section_label: Single-cell
@@ -173,6 +180,7 @@ tools:
   - 6db1b06e6bbb
   - a56baceb1900
   - b03c60f8528f
+  - b85871dd69f9
   - d4af736e7b83
   tool_panel_section_label: Single-cell
 - name: chromeister
@@ -184,6 +192,7 @@ tools:
 - name: gecko
   owner: iuc
   revisions:
+  - 5efbd15675ca
   - 8acaa11e3b6b
   tool_panel_section_label: Multiple Alignments
 - name: kc_align
@@ -196,6 +205,7 @@ tools:
 - name: anndata_inspect
   owner: iuc
   revisions:
+  - 038e32885fec
   - 05304c5c195d
   - 286a24ac079c
   - 39e945f0b2c1
@@ -207,6 +217,7 @@ tools:
 - name: modify_loom
   owner: iuc
   revisions:
+  - 59be31ac9dc3
   - 81a28c2705b0
   - 9210c3553cdd
   - c8e4d0b9ae8c
@@ -256,6 +267,7 @@ tools:
   owner: iuc
   revisions:
   - 1797cbe967d1
+  - 2c1200fba922
   - 4cd9f0008d9c
   - 8855361fcfc5
   - a8aa294401be
@@ -318,6 +330,7 @@ tools:
 - name: snpfreqplot
   owner: iuc
   revisions:
+  - 3d0adeee3f2b
   - dc51db22310c
   tool_panel_section_label: Variant Calling
 - name: lumpy_prep
@@ -2050,6 +2063,7 @@ tools:
 - name: rnaspades
   owner: iuc
   revisions:
+  - 03fd468e158f
   - 0d30fed9628b
   - 9e58ff014088
   tool_panel_section_label: Assembly
@@ -2225,6 +2239,7 @@ tools:
   revisions:
   - 0696db066a5b
   - 3bf1b3ec1ddf
+  - 6a3a025714d3
   - 6f91b8ce6e07
   - 71bacea10eee
   - 89d26b11d452
@@ -2743,6 +2758,7 @@ tools:
 - name: tbprofiler
   owner: iuc
   revisions:
+  - 037a11682176
   - 19793eecc9f0
   - 200c378d85f3
   - 4272bd430a01
@@ -3618,6 +3634,7 @@ tools:
   owner: iuc
   revisions:
   - b01db2684fa5
+  - b72793637686
   - bf328cec6a42
   - ff313de5f7f4
   tool_panel_section_label: SAM/BAM
@@ -4575,6 +4592,11 @@ tools:
   revisions:
   - 1f0a3e4497d4
   tool_panel_section_label: Extract Features
+- name: xpath
+  owner: iuc
+  revisions:
+  - f85221724099
+  tool_panel_section_label: Filter and Sort
 - name: gffcompare
   owner: iuc
   revisions:
@@ -5945,6 +5967,7 @@ tools:
   - 6fede7bd6c8f
   - 70aa4bada58d
   - 725ef5f6d749
+  - 76f42c7f9b7b
   - 82665e97c156
   - 8f66e659530b
   - 9f566d869e2f
@@ -5961,6 +5984,7 @@ tools:
   - 5e122852e898
   - 6647e04e92a7
   - 686a8b41d09c
+  - 6acfd47732d1
   - 75b6fe730cee
   - 8c8640ca39d7
   - 98ee8ba908d6
@@ -5988,6 +6012,7 @@ tools:
   - ac0b16f873f7
   - bf97cacc1a55
   - c669c8f7c6f6
+  - cebcce34d63b
   - f22ed633b72b
   - f276acfde263
   - fb142ad9b580
@@ -6000,6 +6025,7 @@ tools:
   - 42efcb0955e6
   - 6223845127ea
   - 6283babe736e
+  - 6a726db04d4b
   - 7a2092844346
   - 7f14d76f86ca
   - 83f146502c0f
@@ -6025,6 +6051,7 @@ tools:
   - 6a457678efcb
   - 81e66674859e
   - 8834daeb9892
+  - b89cac5156ec
   - bf204aabbf56
   - c5533a61ea60
   - c78f3d7dd1db
@@ -6043,6 +6070,7 @@ tools:
   - 600647840e87
   - 658ad6851b71
   - 73833ae53fbb
+  - 80c9e5256a0d
   - 93a0cf4ea5fc
   - 9d2714133deb
   - a6da5885846e
@@ -6062,6 +6090,7 @@ tools:
   - 4d13ff4556da
   - 4e9485eb5e9d
   - 551616a65f8f
+  - 63f85ef1a3d5
   - 6a6300b42803
   - 6dd3c73bd80a
   - 7827dfb71693
@@ -6077,6 +6106,7 @@ tools:
   revisions:
   - 048d3f9c9efc
   - 16b4a3869bd5
+  - 29515b569f8b
   - 3b8114109e84
   - 6164d9298db9
   - 62971c58f0dc
@@ -6101,6 +6131,7 @@ tools:
   - 2126c9e28ce6
   - 23b9bd244670
   - 40e9160dbbbb
+  - 466217f0aa76
   - 5c2640980c0a
   - 5f1830cb9135
   - 638942ba8e37
@@ -6129,6 +6160,7 @@ tools:
   - a114682b2788
   - b69685ed772e
   - c5e1017b9232
+  - d9dc61719379
   - dd45dc0b8c11
   - f9988f5f30e0
   tool_panel_section_label: Phylogenetics
@@ -6146,6 +6178,7 @@ tools:
   - 5856faafe469
   - 6b987524ea27
   - 8522e7cc4fb4
+  - ae4e61b62996
   - b0b16acfcbe3
   - b82429e9c6a9
   - c2bed8cc8fc1
@@ -6170,6 +6203,7 @@ tools:
   - b6e3961a25ff
   - c32f3d3e8a92
   - d968c5dddfeb
+  - e961403fdba3
   - f40d481b7c8b
   tool_panel_section_label: Phylogenetics
 - name: ucsc_fasplit
