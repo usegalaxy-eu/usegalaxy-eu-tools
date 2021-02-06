@@ -4,6 +4,26 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: busco
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ena_upload
+    owner: iuc
+    tool_panel_section_label: Send Data
+
+  - name: flair_collapse
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: flair_correct
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: ngmlr
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: ont_fast5_api_fast5_subset
     owner: iuc
     tool_panel_section_label: Nanopore
@@ -111,6 +131,10 @@ tools:
   - name: chromeister
     owner: iuc
     tool_panel_section_label: Multiple Alignments
+    
+  - name: gecko
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
 
   - name: kc_align
     owner: iuc
@@ -176,6 +200,46 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: strelka_germline
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: strelka_somatic
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: irissv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: jasminesv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: vcfanno
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: snpfreqplot
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: lumpy_prep
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: lumpy_sv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_cnv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_classify
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: delly_lr
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -189,6 +253,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: delly_filter
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+    
+  - name: sansa_annotate
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -315,6 +383,10 @@ tools:
   - name: graphembed
     owner: iuc
     tool_panel_section_label: Statistics
+
+  - name: ega_download_client
+    owner: iuc
+    tool_panel_section_label: Get Data
 
   - name: data_manager_primer_scheme_bedfiles
     owner: iuc
@@ -647,6 +719,10 @@ tools:
   - name: interval2maf
     owner: iuc
     tool_panel_section_label: Convert Formats
+
+  - name: trimns
+    owner: devteam
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: tabular_to_fasta
     owner: devteam
@@ -1102,7 +1178,19 @@ tools:
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: purge_dups
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: salsa
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: novoplasty
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: shasta
     owner: iuc
     tool_panel_section_label: Assembly
 
@@ -1437,6 +1525,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: kofamscan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: mitos2
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1554,6 +1646,54 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: hmmer3
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmsearch
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmemit
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmalign
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_nhmmscan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_jackhmmer
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_phmmer
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmscan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmfetch
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_alimask
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmconvert
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_hmmbuild
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hmmer_nhmmer
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -2324,6 +2464,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Extract Features
 
+  - name: xpath
+    owner: iuc
+    tool_panel_section_label: Filter and Sort
+
   - name: gffcompare
     owner: iuc
     tool_panel_section_label: Filter and Sort
@@ -3051,6 +3195,10 @@ tools:
   - name: chira_extract
     owner: iuc
     tool_panel_section_label: RNA Analysis
+
+  - name: spyboat
+    owner: iuc
+    tool_panel_section_label: Imaging
 
   - name: idr_download_by_ids
     owner: iuc

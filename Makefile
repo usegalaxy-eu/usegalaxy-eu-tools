@@ -31,6 +31,8 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 	@echo "Installing any updated versions of $<"
 	@-shed-tools install --install_resolver_dependencies --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
 
+pr_check:
+	for changed_yaml in `git diff remotes/origin/master --name-only | grep .yaml$$`; do python scripts/pr-check.py $${changed_yaml} && pykwalify -d $${changed_yaml} -s .schema.yaml ; done
 
 update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
@@ -40,6 +42,7 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python scripts/update-tool.py earlhaminst.yaml
 	python scripts/update-tool.py rnateam.yaml
 	python scripts/update-tool.py bgruening.yaml
+	python scripts/update-tool.py ecology.yaml
 	python scripts/update-tool.py tools_galaxyp.yaml
 	python scripts/update-tool.py single-cell-ebi-gxa.yaml
 	python scripts/update-tool.py genome-annotation.yaml
@@ -55,4 +58,4 @@ update_all: $(UPDATED_YAMLS)
 	python scripts/update-tool.py --owner iuc $<
 
 
-.PHONY: lint update_trusted help
+.PHONY: pr_check lint update_trusted help

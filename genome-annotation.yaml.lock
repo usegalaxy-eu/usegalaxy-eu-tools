@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: aegean_canongff3
+  owner: iuc
+  revisions:
+  - 3f438bf5475d
+  tool_panel_section_label: Annotation
 - name: apollo_fetch_jbrowse
   owner: gga
   revisions:
@@ -108,6 +113,7 @@ tools:
   - 1e62c28ba91d
   - 4048d82f0c88
   - 5ecdeca79a0d
+  - 602fb8e63aa7
   tool_panel_section_label: Annotation
 - name: augustus
   owner: bgruening
@@ -130,20 +136,34 @@ tools:
 - name: maker
   owner: iuc
   revisions:
+  - 5201ec38c01f
   - 5e96efe6e6c6
   - 73a79dec987b
   - d3a2072d8745
+  - d46d803ca6cc
   tool_panel_section_label: Annotation
 - name: maker_map_ids
   owner: iuc
   revisions:
   - 1b3626164087
   - 326f9c294b09
+  - e408aa831db3
+  - f1912d5575df
+  tool_panel_section_label: Annotation
+- name: aegean_locuspocus
+  owner: iuc
+  revisions:
+  - c4ac24510b55
   tool_panel_section_label: Annotation
 - name: snap_training
   owner: iuc
   revisions:
   - 2a598c0aa042
+  tool_panel_section_label: Annotation
+- name: aegean_parseval
+  owner: iuc
+  revisions:
+  - 1b52f0c8ad7f
   tool_panel_section_label: Annotation
 - name: progressivemauve
   owner: iuc
@@ -161,6 +181,11 @@ tools:
   owner: iuc
   revisions:
   - 561e827baa5f
+  tool_panel_section_label: Annotation
+- name: aegean_gaeval
+  owner: iuc
+  revisions:
+  - 1dd7adc21b6d
   tool_panel_section_label: Annotation
 - name: gff_to_prot
   owner: iuc
@@ -191,4 +216,9 @@ tools:
   revisions:
   - 4aaabd55eab8
   - c68753eedf72
+  tool_panel_section_label: Annotation
+- name: tbl2gff3
+  owner: iuc
+  revisions:
+  - 4a7f4b0cc0a3
   tool_panel_section_label: Annotation
