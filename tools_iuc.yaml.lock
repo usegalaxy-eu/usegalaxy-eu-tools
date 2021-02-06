@@ -438,6 +438,7 @@ tools:
   owner: iuc
   revisions:
   - 874cc12ae316
+  - d40d4bf05718
   tool_panel_section_label: Variant Calling
 - name: medaka_consensus
   owner: iuc
@@ -659,10 +660,12 @@ tools:
   - 777f9846c56d
   - ca73bbac615a
   - cc41546adf56
+  - f732237754fc
   tool_panel_section_label: Metagenomic Analysis
 - name: dada2_dada
   owner: iuc
   revisions:
+  - 18a502a9d287
   - 2222f08c8316
   - 6b4ddc3b64bd
   - ce4aec98949d
@@ -671,6 +674,7 @@ tools:
 - name: dada2_removebimeradenovo
   owner: iuc
   revisions:
+  - 04144473e59e
   - 1937c2b4da7a
   - 5b752525bd6f
   - 7f8f0e9fcb37
@@ -680,6 +684,7 @@ tools:
   owner: iuc
   revisions:
   - 39638e0aff59
+  - 8c202e741d68
   - afdfa35a89d9
   - c48d42d65d2b
   - fd892c845981
@@ -687,6 +692,7 @@ tools:
 - name: dada2_makesequencetable
   owner: iuc
   revisions:
+  - 1c9b3bcd4261
   - 6e0946238688
   - 99c6929236fa
   - 9ccec6ed8e82
@@ -698,6 +704,7 @@ tools:
   - 18517edb4733
   - 1c9715cef808
   - 4d89978c6188
+  - 5b5a7af9fbb4
   - 79212a309499
   tool_panel_section_label: Metagenomic Analysis
 - name: dada2_seqcounts
@@ -706,12 +713,14 @@ tools:
   - 4cc834cce4fb
   - 7d28da5e9e27
   - d26cea4b4cc4
+  - d943081510da
   - f74c56549143
   tool_panel_section_label: Metagenomic Analysis
 - name: dada2_mergepairs
   owner: iuc
   revisions:
   - 0b884b080bb6
+  - 306a40d4bb8f
   - 69900ffd3b8e
   - 805daed21ef3
   - b1e55c248f17
@@ -723,6 +732,7 @@ tools:
   - 498d57610fcd
   - 806fe614ca46
   - ab2030f217a9
+  - ac72310b038a
   tool_panel_section_label: Metagenomic Analysis
 - name: dada2_plotqualityprofile
   owner: iuc
@@ -730,6 +740,7 @@ tools:
   - 2a90d2fd3336
   - 371afe17d247
   - 52a911972c02
+  - f947b4bb5107
   - fa11922f3d91
   tool_panel_section_label: Metagenomic Analysis
 - name: pipelign
@@ -991,6 +1002,7 @@ tools:
   - aad3885b3216
   - b723c120161a
   - c441583adae5
+  - e08a7ad4378b
   - f5ea3ce9b9b0
   tool_panel_section_label: Get Data
 - name: codeml
@@ -1231,6 +1243,11 @@ tools:
   - b79f6002b176
   - cfea1d6354db
   tool_panel_section_label: Convert Formats
+- name: trimns
+  owner: iuc
+  revisions:
+  - 30178a68af68
+  tool_panel_section_label: FASTA/FASTQ
 - name: tabular_to_fasta
   owner: devteam
   revisions:
@@ -1386,6 +1403,7 @@ tools:
   - 667e17248bfe
   - 69c5e9c0add0
   - 6b774e9d6387
+  - 6cd09d7b5f37
   - 8774b28235bb
   - 8f33c9fbc119
   - 9de82b4963e6
@@ -2054,6 +2072,11 @@ tools:
   - 7cf5b1d072b5
   - f95284aa2946
   tool_panel_section_label: FASTA/FASTQ
+- name: purge_dups
+  owner: iuc
+  revisions:
+  - 8ec117da1796
+  tool_panel_section_label: Assembly
 - name: salsa
   owner: iuc
   revisions:
@@ -2387,6 +2410,7 @@ tools:
   - 0db979fead3a
   - 8aef9a17faae
   - c6334cb383ff
+  - d0d4cef4f967
   tool_panel_section_label: RNA Analysis
 - name: trinity
   owner: iuc
@@ -3439,6 +3463,7 @@ tools:
   - 70b8e9908ea8
   - a87ae767b01d
   - c82130967bd2
+  - d6dc477167f8
   - e522022137f6
   - f867422772d6
   tool_panel_section_label: Variant Calling
@@ -3446,11 +3471,13 @@ tools:
   owner: iuc
   revisions:
   - 9473302f4588
+  - e03f2f3ac3a9
   tool_panel_section_label: Variant Calling
 - name: bcftools_call
   owner: iuc
   revisions:
   - 01fd33bc2e75
+  - 072f606e2e69
   - 0fba2c15b40d
   - 3296c3680d96
   - 4fa18320d29b
@@ -3468,6 +3495,7 @@ tools:
   - 93bdd3bf5743
   - a404f786a94c
   - a62e934346f5
+  - c077f71d351f
   - da6fc9f4a367
   tool_panel_section_label: Variant Calling
 - name: bcftools_csq
@@ -3479,6 +3507,7 @@ tools:
   - 7cbf3c66d4ad
   - f10f5b4e7854
   - fa67bc6d3b41
+  - fdd127bd4a32
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_frameshifts
   owner: iuc
@@ -3488,6 +3517,7 @@ tools:
   - 77877eec9e8b
   - 96d2000977ab
   - a1c4d50c97e0
+  - eb22990a2be9
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_color_chrs
   owner: iuc
@@ -3497,10 +3527,12 @@ tools:
   - 71186bb66ca2
   - 71dfde92fd57
   - 87aa2e0a126e
+  - c39113e2ae34
   tool_panel_section_label: Variant Calling
 - name: bcftools_cnv
   owner: iuc
   revisions:
+  - 01d6b7d6365e
   - 13fe14c56f6d
   - 635532ff1ac9
   - 8408bffd5616
@@ -6690,6 +6722,7 @@ tools:
 - name: spyboat
   owner: iuc
   revisions:
+  - 4626a83601d4
   - 639d2031d998
   - 76733d05d8ef
   tool_panel_section_label: Imaging
@@ -6780,70 +6813,84 @@ tools:
   owner: iuc
   revisions:
   - b168c0ef3c14
+  - bb13650e8115
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_associate
   owner: iuc
   revisions:
   - 845c14a229d9
+  - e57b437186b3
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_barplot
   owner: iuc
   revisions:
+  - 56cb2b0269d1
   - fc30f1dec9b9
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_genefamilies_genus_level
   owner: iuc
   revisions:
   - 6d364c65c946
+  - 79cd822debef
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_join_tables
   owner: iuc
   revisions:
   - 12103efd0e34
+  - 300fd72ce167
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_reduce_table
   owner: iuc
   revisions:
   - 1c802bbbed99
+  - 7f7cc8d4d6b7
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_regroup_table
   owner: iuc
   revisions:
   - 6aad8ca3918b
+  - 88ff1d78fd30
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_rename_table
   owner: iuc
   revisions:
   - 1e64b34515d9
+  - 252ae00df89c
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_renorm_table
   owner: iuc
   revisions:
+  - cd235981c423
   - d77397f09da1
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_rna_dna_norm
   owner: iuc
   revisions:
+  - 6893a2b1da17
   - ac0528dec32b
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_split_stratified_table
   owner: iuc
   revisions:
+  - 28763c8b43f8
   - d4d2e6e286a4
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_split_table
   owner: iuc
   revisions:
+  - 63cc5fd0f8d6
   - 8b6486103663
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_strain_profiler
   owner: iuc
   revisions:
+  - 1595f7cadbf9
   - df0f0e817dca
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2_unpack_pathways
   owner: iuc
   revisions:
+  - 3115a530686e
   - 7f208f1eb64f
   tool_panel_section_label: Metagenomic Analysis
 - name: fastqe
