@@ -200,6 +200,26 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: strelka_germline
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: strelka_somatic
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: irissv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: jasminesv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: vcfanno
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: snpfreqplot
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -209,6 +229,14 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: lumpy_sv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_cnv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_classify
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -225,6 +253,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: delly_filter
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+    
+  - name: sansa_annotate
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -688,6 +720,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: trimns
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: tabular_to_fasta
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
@@ -1142,6 +1178,18 @@ tools:
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: mitobim
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: purge_dups
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: salsa
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: novoplasty
     owner: iuc
     tool_panel_section_label: Assembly
@@ -1478,6 +1526,10 @@ tools:
     tool_panel_section_label: Phenotype Association
 
   - name: mitos
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: kofamscan
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -3255,3 +3307,7 @@ tools:
   - name: fastqe
     owner: iuc
     tool_panel_section_label: FASTQ Quality Control
+    
+  - name: jvarkit_wgscoverageplotter
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data

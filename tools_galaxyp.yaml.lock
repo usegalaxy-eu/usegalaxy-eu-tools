@@ -91,11 +91,18 @@ tools:
   - 73736112135d
   - a67b508b1dc5
   tool_panel_section_label: Proteomics
+- name: msstatstmt
+  owner: galaxyp
+  revisions:
+  - b79d4c961009
+  - fd3dc69b78ff
+  tool_panel_section_label: Proteomics
 - name: msstats
   owner: galaxyp
   revisions:
   - 3e2606fa85bf
   - 52ac6fde9a5b
+  - 8212e342e482
   tool_panel_section_label: Proteomics
 - name: uniprotxml_downloader
   owner: galaxyp
@@ -191,6 +198,7 @@ tools:
 - name: peptideshaker
   owner: galaxyp
   revisions:
+  - 1beff3ddce58
   - 78fad25eff17
   - 7fdd9119cc4f
   - 864bd76db767
@@ -484,6 +492,7 @@ tools:
   - 0f62097d7c1a
   - 7e572e148175
   - 9a4cfc910674
+  - ba5368c19dbd
   tool_panel_section_label: Convert Formats
 - name: translate_bed
   owner: galaxyp
@@ -511,6 +520,7 @@ tools:
 - name: metaquantome_db
   owner: galaxyp
   revisions:
+  - 0ed07016d668
   - 7c45aa1c9464
   - 85b8866f06d7
   - f1834b310c09
@@ -520,12 +530,14 @@ tools:
   revisions:
   - 170b5fa2402d
   - 1974224d63c2
+  - 352b37c66d97
   - eb65ab160a10
   tool_panel_section_label: Proteomics
 - name: metaquantome_filter
   owner: galaxyp
   revisions:
   - 2ee495a1fc84
+  - 4f359549383c
   - 7d1c20b315ff
   - 99450519d727
   tool_panel_section_label: Proteomics
@@ -535,18 +547,21 @@ tools:
   - 49a957fb353a
   - ac3511167a71
   - c7745841de24
+  - e79958768a2c
   tool_panel_section_label: Proteomics
 - name: metaquantome_stat
   owner: galaxyp
   revisions:
   - 020a9ecdc1e1
   - 982a442a98dd
+  - d2eac53666f0
   - da986f83631b
   tool_panel_section_label: Proteomics
 - name: metaquantome_viz
   owner: galaxyp
   revisions:
   - 02da24eac445
+  - 1199751329b0
   - 6cfd42b015b4
   - 944b43462104
   tool_panel_section_label: Proteomics
@@ -759,6 +774,7 @@ tools:
 - name: openms_psmfeatureextractor
   owner: galaxyp
   revisions:
+  - 047020d9012f
   - 151e4b119c70
   - 3787addbb8e1
   - 59736982ab7b
@@ -1894,9 +1910,15 @@ tools:
   owner: galaxyp
   revisions:
   - ad3e9fdeabb7
+  - d8d23dfcf68b
   tool_panel_section_label: Proteomics
 - name: fastg2protlib
   owner: galaxyp
   revisions:
   - 6b226c5907a1
+  tool_panel_section_label: Proteomics
+- name: pyteomics_mztab2tsv
+  owner: galaxyp
+  revisions:
+  - a475c1906e0b
   tool_panel_section_label: Proteomics
