@@ -450,6 +450,7 @@ tools:
   - 5901bb391198
   - 84dcccebad3d
   - a95960a63220
+  - fbf007713188
   tool_panel_section_label: Nanopore
 - name: medaka_consensus_pipeline
   owner: iuc
@@ -459,6 +460,7 @@ tools:
   - 6a87478ed985
   - a1b70f038b4a
   - b35de691c42c
+  - d915879a88bc
   - ef94bace3a3c
   tool_panel_section_label: Nanopore
 - name: medaka_variant
@@ -468,6 +470,7 @@ tools:
   - 2308bc523659
   - 3cde72a6e37c
   - 43388fc8ad0b
+  - aabb4e1c0b7b
   - d50c1d5b72ce
   - e86fcef8ed91
   tool_panel_section_label: Nanopore
@@ -479,6 +482,7 @@ tools:
   - 711d4deb7bdf
   - 92cdc29a8620
   - ce2bf68a260d
+  - ea1833858055
   - efca385ce679
   tool_panel_section_label: Nanopore
 - name: artic_minion
@@ -958,6 +962,7 @@ tools:
   owner: iuc
   revisions:
   - 6cf84410cb2e
+  - 7ed6dda64a81
   - a09849898387
   - e95d3221b7f0
   - fe3c43451319
@@ -2072,6 +2077,11 @@ tools:
   - 7cf5b1d072b5
   - f95284aa2946
   tool_panel_section_label: FASTA/FASTQ
+- name: mitobim
+  owner: iuc
+  revisions:
+  - ea46115c7f1e
+  tool_panel_section_label: Assembly
 - name: purge_dups
   owner: iuc
   revisions:
@@ -2296,6 +2306,7 @@ tools:
   - 3f4d6399997b
   - 53c0b7a1a0c3
   - 6f50f36e4481
+  - 77b2770508f6
   - 8c6cd2650d1f
   - b3eab4b67562
   tool_panel_section_label: Mapping
@@ -4178,6 +4189,7 @@ tools:
   revisions:
   - 276b4111b253
   - 70cb5527defb
+  - 8250ea3a1501
   - 8db56d2f8b72
   - 933220bbc2ae
   - b557acca0b56
@@ -6900,3 +6912,8 @@ tools:
   - a252d8415583
   - ece21607a21d
   tool_panel_section_label: FASTQ Quality Control
+- name: jvarkit_wgscoverageplotter
+  owner: iuc
+  revisions:
+  - ac048a34cac3
+  tool_panel_section_label: Graph/Display Data
