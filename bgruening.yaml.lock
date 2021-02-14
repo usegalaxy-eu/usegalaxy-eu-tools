@@ -1,0 +1,244 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: true
+tools:
+- name: plotly_ml_performance_plots
+  owner: bgruening
+  revisions:
+  - 4fac53da862f
+  tool_panel_section_label: Graph/Display Data
+- name: plotly_regression_performance_plots
+  owner: bgruening
+  revisions:
+  - 0800a1b66bbd
+  tool_panel_section_label: Graph/Display Data
+- name: pandas_rolling_window
+  owner: bgruening
+  revisions:
+  - a06f7b5c4dc7
+  tool_panel_section_label: Statistics
+- name: split_file_to_collection
+  owner: bgruening
+  revisions:
+  - 2ddc36385d7a
+  tool_panel_section_label: Collection Operations
+- name: graphicsmagick_image_convert
+  owner: bgruening
+  revisions:
+  - 4e9a3745dce4
+  tool_panel_section_label: Convert Formats
+- name: graphicsmagick_image_montage
+  owner: bgruening
+  revisions:
+  - 190b3bcc00aa
+  tool_panel_section_label: Convert Formats
+- name: sklearn_svm_classifier
+  owner: bgruening
+  revisions:
+  - 02d2be90dedb
+  tool_panel_section_label: Machine Learning
+- name: sklearn_train_test_eval
+  owner: bgruening
+  revisions:
+  - 1b68acd5ac08
+  tool_panel_section_label: Machine Learning
+- name: model_prediction
+  owner: bgruening
+  revisions:
+  - 65820fb7257b
+  tool_panel_section_label: Machine Learning
+- name: keras_batch_models
+  owner: bgruening
+  revisions:
+  - 000a3868885b
+  tool_panel_section_label: Machine Learning
+- name: keras_model_builder
+  owner: bgruening
+  revisions:
+  - 053570bac5ea
+  tool_panel_section_label: Machine Learning
+- name: keras_model_config
+  owner: bgruening
+  revisions:
+  - 0fd7d8e90e2a
+  tool_panel_section_label: Machine Learning
+- name: sklearn_sample_generator
+  owner: bgruening
+  revisions:
+  - 0ba38603a0d6
+  tool_panel_section_label: Machine Learning
+- name: sklearn_estimator_attributes
+  owner: bgruening
+  revisions:
+  - 07843f917990
+  tool_panel_section_label: Machine Learning
+- name: sklearn_stacking_ensemble_models
+  owner: bgruening
+  revisions:
+  - 0e20520a63ee
+  tool_panel_section_label: Machine Learning
+- name: sklearn_searchcv
+  owner: bgruening
+  revisions:
+  - 103aaea17119
+  tool_panel_section_label: Machine Learning
+- name: sklearn_build_pipeline
+  owner: bgruening
+  revisions:
+  - 019bd8289224
+  tool_panel_section_label: Machine Learning
+- name: sklearn_pairwise_metrics
+  owner: bgruening
+  revisions:
+  - 1682b64aad9e
+  tool_panel_section_label: Machine Learning
+- name: sklearn_nn_classifier
+  owner: bgruening
+  revisions:
+  - 23fb598a09d7
+  tool_panel_section_label: Machine Learning
+- name: sklearn_numeric_clustering
+  owner: bgruening
+  revisions:
+  - 1dd433d2c92c
+  tool_panel_section_label: Machine Learning
+- name: sklearn_ensemble
+  owner: bgruening
+  revisions:
+  - 172365bc2b5f
+  tool_panel_section_label: Machine Learning
+- name: sklearn_feature_selection
+  owner: bgruening
+  revisions:
+  - 07b34d5284f6
+  tool_panel_section_label: Machine Learning
+- name: sklearn_data_preprocess
+  owner: bgruening
+  revisions:
+  - 1b5cd2d16fb1
+  tool_panel_section_label: Machine Learning
+- name: sklearn_clf_metrics
+  owner: bgruening
+  revisions:
+  - 3cd0dbc038ec
+  tool_panel_section_label: Machine Learning
+- name: sklearn_regression_metrics
+  owner: bgruening
+  revisions:
+  - 146133e04fbc
+  tool_panel_section_label: Machine Learning
+- name: sklearn_discriminant_classifier
+  owner: bgruening
+  revisions:
+  - 18b39ada6f35
+  tool_panel_section_label: Machine Learning
+- name: sklearn_generalized_linear
+  owner: bgruening
+  revisions:
+  - 3e4a7684d402
+  tool_panel_section_label: Machine Learning
+- name: sklearn_model_validation
+  owner: bgruening
+  revisions:
+  - 0474777be433
+  tool_panel_section_label: Machine Learning
+- name: sklearn_fitted_model_eval
+  owner: bgruening
+  revisions:
+  - 044729657181
+  tool_panel_section_label: Machine Learning
+- name: sklearn_model_fit
+  owner: bgruening
+  revisions:
+  - 1c25f305db70
+  tool_panel_section_label: Machine Learning
+- name: sklearn_train_test_split
+  owner: bgruening
+  revisions:
+  - 0985b0dd6f1a
+  tool_panel_section_label: Machine Learning
+- name: sklearn_lightgbm
+  owner: bgruening
+  revisions:
+  - 9b70bf3306e5
+  tool_panel_section_label: Machine Learning
+- name: sklearn_pca
+  owner: bgruening
+  revisions:
+  - 2d7016b3ae92
+  tool_panel_section_label: Machine Learning
+- name: ml_visualization_ex
+  owner: bgruening
+  revisions:
+  - 05143043ca13
+  tool_panel_section_label: Machine Learning
+- name: keras_train_and_eval
+  owner: bgruening
+  revisions:
+  - 03f61bb3ca43
+  tool_panel_section_label: Machine Learning
+- name: scipy_sparse
+  owner: bgruening
+  revisions:
+  - 102c8bae2e9c
+  tool_panel_section_label: Statistics
+- name: nanopolish_variants
+  owner: bgruening
+  revisions:
+  - 639b3a5bb415
+  tool_panel_section_label: Nanopore
+- name: nanopolish_methylation
+  owner: bgruening
+  revisions:
+  - 02e3c674d917
+  tool_panel_section_label: Nanopore
+- name: nanopolish_eventalign
+  owner: bgruening
+  revisions:
+  - 0938217b3221
+  tool_panel_section_label: Nanopore
+- name: nanopolish_polya
+  owner: bgruening
+  revisions:
+  - 449e9aeded2d
+  tool_panel_section_label: Nanopore
+- name: racon
+  owner: bgruening
+  revisions:
+  - 51fd3136069d
+  tool_panel_section_label: Assembly
+- name: flye
+  owner: bgruening
+  revisions:
+  - 1ce9b1d72ec3
+  tool_panel_section_label: Assembly
+- name: graphmap_overlap
+  owner: bgruening
+  revisions:
+  - d0a712cf0518
+  tool_panel_section_label: Mapping
+- name: graphmap_align
+  owner: bgruening
+  revisions:
+  - 190175f4e143
+  tool_panel_section_label: Mapping
+- name: create_tool_recommendation_model
+  owner: bgruening
+  revisions:
+  - 12764915e1c5
+  tool_panel_section_label: Statistics
+- name: replace_column_by_key_value_file
+  owner: bgruening
+  revisions:
+  - d533e4b75800
+  tool_panel_section_label: Text Manipulation
+- name: diff
+  owner: bgruening
+  revisions:
+  - 02dfbbf869d8
+  tool_panel_section_label: Text Manipulation
+- name: add_line_to_file
+  owner: bgruening
+  revisions:
+  - 8e251055b1a9
+  tool_panel_section_label: Text Manipulation
