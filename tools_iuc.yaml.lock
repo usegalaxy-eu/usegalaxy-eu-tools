@@ -154,6 +154,7 @@ tools:
   - 32e547223c9e
   - 69e2275406fd
   - a61350ab6563
+  - ae1e5d9d8972
   - b5c7ba11401d
   - cfc3f5a57dc6
   - e175d4067b00
@@ -167,6 +168,7 @@ tools:
   - 8623710d083c
   - a9ab1b0a00dd
   - c0b037b12765
+  - c5ac926c838f
   - e0395cca2c57
   - fcb7370e827f
   tool_panel_section_label: Single-cell
@@ -178,6 +180,7 @@ tools:
   - 4000634ece52
   - 43cb7b5a6fe7
   - 6db1b06e6bbb
+  - 8db95f488f0f
   - a56baceb1900
   - b03c60f8528f
   - b85871dd69f9
@@ -209,6 +212,7 @@ tools:
   - 038e32885fec
   - 05304c5c195d
   - 286a24ac079c
+  - 383dcb0500f9
   - 39e945f0b2c1
   - 6a1a3dab235a
   - 70f5f1fee692
@@ -219,6 +223,7 @@ tools:
   owner: iuc
   revisions:
   - 59be31ac9dc3
+  - 7784821452ac
   - 81a28c2705b0
   - 9210c3553cdd
   - c8e4d0b9ae8c
@@ -245,6 +250,7 @@ tools:
   owner: iuc
   revisions:
   - 33c060ec0ac9
+  - e989670c7fc7
   tool_panel_section_label: RNA Analysis
 - name: crosscontamination_barcode_filter
   owner: iuc
@@ -2187,6 +2193,31 @@ tools:
   - 6322de5e24e5
   - 74878f127e47
   tool_panel_section_label: Assembly
+- name: trycycler_cluster
+  owner: iuc
+  revisions:
+  - 189e837009c9
+  tool_panel_section_label: Assembly
+- name: trycycler_consensus
+  owner: iuc
+  revisions:
+  - e59bee4565b3
+  tool_panel_section_label: Assembly
+- name: trycycler_partition
+  owner: iuc
+  revisions:
+  - 4688ae3b49b5
+  tool_panel_section_label: Assembly
+- name: trycycler_reconcile_msa
+  owner: iuc
+  revisions:
+  - b64696992ee9
+  tool_panel_section_label: Assembly
+- name: trycycler_subsample
+  owner: iuc
+  revisions:
+  - 383bb5ad32e2
+  tool_panel_section_label: Assembly
 - name: kma
   owner: iuc
   revisions:
@@ -2792,6 +2823,11 @@ tools:
   revisions:
   - 79e259afea34
   tool_panel_section_label: Annotation
+- name: optitype
+  owner: iuc
+  revisions:
+  - fd974c5df8bc
+  tool_panel_section_label: Annotation
 - name: seq2hla
   owner: iuc
   revisions:
@@ -2930,6 +2966,7 @@ tools:
   - 95505a9fa26f
   - a17498c603ec
   - bf68eb663bc3
+  - d643e3b03500
   - eaee459f3d69
   tool_panel_section_label: Annotation
 - name: mlst
@@ -2943,6 +2980,7 @@ tools:
   revisions:
   - 15ac71df11a0
   - 15ca041134a9
+  - 78608ec02d62
   - 809e42326fc2
   - a9098353ae22
   - dbe2b2204555
@@ -3200,6 +3238,7 @@ tools:
   - 328c607150ff
   - 4a9da2b6c2e3
   - d4bb87ca916d
+  - e674066930b2
   tool_panel_section_label: NCBI Blast
 - name: kraken_taxonomy_report
   owner: iuc
