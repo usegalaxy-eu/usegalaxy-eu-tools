@@ -1,6 +1,6 @@
 install_repository_dependencies: true
 install_resolver_dependencies: true
-install_tool_dependencies: true
+install_tool_dependencies: false
 tools:
 - name: fastqc
   owner: devteam
@@ -312,7 +312,7 @@ tools:
   owner: devteam
   revisions:
   - 3fe632431b68
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: prokka
   owner: crs4
@@ -642,7 +642,7 @@ tools:
   owner: devteam
   revisions:
   - 8d2a528a9513
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
   owner: iuc
@@ -828,7 +828,7 @@ tools:
   owner: crs4
   revisions:
   - ebb02ba5987c
-  tool_panel_section_label: Epigenetics
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: hicexplorer_hicbuildmatrix
   owner: bgruening
@@ -1045,25 +1045,19 @@ tools:
   owner: pjbriggs
   revisions:
   - 898b67846b47
-  tool_panel_section_label: Epigenetics
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: trimmomatic
-  owner: pjbriggs
-  revisions:
-  - 898b67846b47
-  tool_panel_section_label: Epigenetics
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: bwa
   owner: devteam
   revisions:
   - 3fe632431b68
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: bwa
   owner: devteam
   revisions:
   - 3fe632431b68
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: deeptools_bam_compare
   owner: bgruening
@@ -1231,7 +1225,7 @@ tools:
   owner: iuc
   revisions:
   - a6ea26c1f225
-  tool_panel_section_label: Epigenetics
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: replace_column_by_key_value_file
   owner: bgruening
@@ -1796,7 +1790,7 @@ tools:
   owner: ethevenot
   revisions:
   - 3017385625f6
-  tool_panel_section_label: Statistics
+  tool_panel_section_label: Metabolomics
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: hmdb_ms_search
   owner: fgiacomoni
@@ -2024,7 +2018,7 @@ tools:
   owner: iuc
   revisions:
   - 3d93dd18d9f8
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: sortmerna
   owner: rnateam
@@ -2876,7 +2870,7 @@ tools:
   owner: galaxyp
   revisions:
   - 3cf310697624
-  tool_panel_section_label: Proteomics
+  tool_panel_section_label: Metabolomics
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: openms_openswathworkflow
   owner: galaxyp
@@ -3465,7 +3459,7 @@ tools:
   owner: galaxyp
   revisions:
   - 9ec469ff191a
-  tool_panel_section_label: Proteomics
+  tool_panel_section_label: Metabolomics
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: peptideshaker
   owner: galaxyp
@@ -3839,7 +3833,7 @@ tools:
   owner: iuc
   revisions:
   - 1c2db0054039
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastqc
   owner: devteam
@@ -3857,7 +3851,7 @@ tools:
   owner: iuc
   revisions:
   - 1c2db0054039
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: bowtie2
   owner: devteam
@@ -3893,7 +3887,7 @@ tools:
   owner: iuc
   revisions:
   - 1c2db0054039
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: bowtie2
   owner: devteam
@@ -4465,7 +4459,7 @@ tools:
   owner: iuc
   revisions:
   - f7985e0479b9
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: dropletutils
   owner: iuc
@@ -4489,7 +4483,7 @@ tools:
   owner: iuc
   revisions:
   - 1c2db0054039
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastqc
   owner: devteam
@@ -4549,7 +4543,7 @@ tools:
   owner: iuc
   revisions:
   - 5e33b465d8d5
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: datamash_transpose
   owner: iuc
@@ -4597,13 +4591,13 @@ tools:
   owner: iuc
   revisions:
   - 3bad335ccea9
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: trimmomatic
   owner: pjbriggs
   revisions:
   - f8a9a5eaca8a
-  tool_panel_section_label: RNA Analysis
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastqc
   owner: devteam
@@ -4657,7 +4651,7 @@ tools:
   owner: pjbriggs
   revisions:
   - 898b67846b47
-  tool_panel_section_label: RNA Analysis
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: hisat2
   owner: iuc
@@ -4813,7 +4807,7 @@ tools:
   owner: iuc
   revisions:
   - 1c2db0054039
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: rseqc
   owner: nilesh
@@ -4957,7 +4951,7 @@ tools:
   owner: devteam
   revisions:
   - 4f774c1e6049
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: freebayes
   owner: devteam
@@ -4993,7 +4987,7 @@ tools:
   owner: devteam
   revisions:
   - 8d2a528a9513
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastqc
   owner: devteam
@@ -5011,7 +5005,7 @@ tools:
   owner: iuc
   revisions:
   - b2f1f75d49c4
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: samtools_rmdup
   owner: devteam
@@ -5107,7 +5101,7 @@ tools:
   owner: devteam
   revisions:
   - 4f774c1e6049
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: picard
   owner: devteam
@@ -5155,7 +5149,7 @@ tools:
   owner: iuc
   revisions:
   - bf675f34b056
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: snpeff
   owner: iuc
@@ -5191,19 +5185,19 @@ tools:
   owner: pjbriggs
   revisions:
   - dfa082f84068
-  tool_panel_section_label: Variant Calling
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: bwa
   owner: devteam
   revisions:
   - 3fe632431b68
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
   owner: iuc
   revisions:
   - bf675f34b056
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastqc
   owner: devteam
@@ -5215,7 +5209,7 @@ tools:
   owner: devteam
   revisions:
   - 3fe632431b68
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: samtools_rmdup
   owner: devteam
@@ -5330,7 +5324,7 @@ tools:
   owner: devteam
   revisions:
   - 3fe632431b68
-  tool_panel_section_label: RAD-seq
+  tool_panel_section_label: Mapping
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: fastqc
   owner: devteam
@@ -5408,13 +5402,13 @@ tools:
   owner: pjbriggs
   revisions:
   - dfa082f84068
-  tool_panel_section_label: Variant Calling
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
   owner: iuc
   revisions:
   - bf675f34b056
-  tool_panel_section_label: Quality Control
+  tool_panel_section_label: FASTQ Quality Control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: snippy
   owner: iuc
