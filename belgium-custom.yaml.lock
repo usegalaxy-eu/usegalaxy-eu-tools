@@ -17,6 +17,7 @@ tools:
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
+  - 4d3eff1bc421
   - b1bc53e9bbc5
   tool_panel_section_label: None
 - name: data_manager_bowtie2_index_builder
@@ -122,3 +123,21 @@ tools:
   - cf1df6b2220a
   tool_panel_section_label: Graph/Display Data
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: cutadapt
+  owner: lparsons
+  revisions:
+  - 093678460093
+  tool_panel_section_label: FASTA/FASTQ
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: je_demultiplex
+  owner: gbcs-embl-heidelberg
+  revisions:
+  - bd3cdf128bcb
+  tool_panel_section_label: FASTA/FASTQ
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: suite_mageck
+  owner: iuc
+  revisions:
+  - 1aaea8924858
+  tool_panel_section_label: Genome editing
+
