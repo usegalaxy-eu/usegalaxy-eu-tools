@@ -4,6 +4,26 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: busco
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ena_upload
+    owner: iuc
+    tool_panel_section_label: Send Data
+
+  - name: pycoqc
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: flair_collapse
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: flair_correct
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: ngmlr
     owner: iuc
     tool_panel_section_label: Nanopore
@@ -115,6 +135,10 @@ tools:
   - name: chromeister
     owner: iuc
     tool_panel_section_label: Multiple Alignments
+    
+  - name: gecko
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
 
   - name: kc_align
     owner: iuc
@@ -180,11 +204,47 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: get_hrun
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: strelka_germline
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: strelka_somatic
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: irissv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: jasminesv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: vcfanno
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: snpfreqplot
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: lumpy_prep
     owner: iuc
     tool_panel_section_label: Variant Calling
 
   - name: lumpy_sv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_cnv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: delly_classify
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -201,6 +261,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: delly_filter
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+    
+  - name: sansa_annotate
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -352,6 +416,78 @@ tools:
     owner: iuc
     tool_panel_section_label: Data Managers
 
+  - name: data_manager_fetch_genome_dbkeys_all_fasta
+    owner: devteam
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_sam_fasta_index_builder 
+    owner: devteam
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_bowtie2_index_builder 
+    owner: devteam
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_bwa_mem_index_builder 
+    owner: devteam
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_twobit_builder 
+    owner: devteam
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_star_index_builder 
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_build_kraken_database 
+    owner: devteam
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_diamond_database_builder
+    owner: bgruening
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_fetch_ncbi_taxonomy
+    owner: devteam
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_hisat2_index_builder
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_metaphlan2_database_downloader
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_humann2_database_downloader
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_fetch_busco 
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_kallisto_index_builder 
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_bwameth_index_builder
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_salmon_index_builder 
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_build_kraken2_database 
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
+  - name: data_manager_build_kma_index
+    owner: iuc
+    tool_panel_section_label: Data Managers
+ 
   - name: dada2_filterandtrim
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -663,6 +799,10 @@ tools:
   - name: interval2maf
     owner: iuc
     tool_panel_section_label: Convert Formats
+
+  - name: trimns
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: tabular_to_fasta
     owner: devteam
@@ -1118,6 +1258,22 @@ tools:
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: mitobim
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: hifiasm
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: purge_dups
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: salsa
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: novoplasty
     owner: iuc
     tool_panel_section_label: Assembly
@@ -1167,6 +1323,26 @@ tools:
     tool_panel_section_label: Assembly
 
   - name: colibread_lordec
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_cluster
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_consensus
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_partition
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_reconcile_msa
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_subsample
     owner: iuc
     tool_panel_section_label: Assembly
 
@@ -1457,10 +1633,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: kofamscan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: mitos2
     owner: iuc
     tool_panel_section_label: Annotation
  
+  - name: optitype
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: seq2hla
     owner: iuc
     tool_panel_section_label: Annotation
@@ -2392,6 +2576,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Extract Features
 
+  - name: xpath
+    owner: iuc
+    tool_panel_section_label: Filter and Sort
+
   - name: gffcompare
     owner: iuc
     tool_panel_section_label: Filter and Sort
@@ -3120,6 +3308,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: spyboat
+    owner: iuc
+    tool_panel_section_label: Imaging
+
   - name: idr_download_by_ids
     owner: iuc
     tool_panel_section_label: Imaging
@@ -3223,3 +3415,7 @@ tools:
   - name: fastqe
     owner: iuc
     tool_panel_section_label: FASTQ Quality Control
+    
+  - name: jvarkit_wgscoverageplotter
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data

@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: aegean_canongff3
+    owner: iuc
+    tool_panel_section_label: Annotation
+    
   - name: apollo_fetch_jbrowse
     owner: gga
     tool_panel_section_label: Apollo
@@ -68,7 +72,15 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: aegean_locuspocus
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: snap_training
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: aegean_parseval
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -81,6 +93,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: blastxml_to_gapped_gff3
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: aegean_gaeval
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -101,5 +117,9 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: transit_tn5gaps
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: tbl2gff3
     owner: iuc
     tool_panel_section_label: Annotation

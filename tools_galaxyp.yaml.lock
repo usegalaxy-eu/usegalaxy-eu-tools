@@ -37,6 +37,11 @@ tools:
   revisions:
   - d0ea7589e95f
   tool_panel_section_label: Proteomics
+- name: dialignr
+  owner: galaxyp
+  revisions:
+  - fbbbf8c145fc
+  tool_panel_section_label: Proteomics
 - name: diapysef
   owner: galaxyp
   revisions:
@@ -86,11 +91,19 @@ tools:
   - 73736112135d
   - a67b508b1dc5
   tool_panel_section_label: Proteomics
+- name: msstatstmt
+  owner: galaxyp
+  revisions:
+  - b79d4c961009
+  - fd3dc69b78ff
+  tool_panel_section_label: Proteomics
 - name: msstats
   owner: galaxyp
   revisions:
   - 3e2606fa85bf
   - 52ac6fde9a5b
+  - 593839e1f2c3
+  - 8212e342e482
   tool_panel_section_label: Proteomics
 - name: uniprotxml_downloader
   owner: galaxyp
@@ -103,6 +116,7 @@ tools:
   revisions:
   - a85fbebe8b2f
   - c1b437242fee
+  - e9df53a75f3c
   tool_panel_section_label: Get Data
 - name: unipept
   owner: galaxyp
@@ -139,12 +153,15 @@ tools:
   - 344e10282449
   - 63769c4217a7
   - 77a18a61aeed
+  - 92ac8e086317
   - a3edda696e4d
   - edbeb2956484
   tool_panel_section_label: Convert Formats
 - name: msconvert
   owner: galaxyp
   revisions:
+  - 3cf310697624
+  - 6153e8ada1ee
   - 9b61227976d6
   - 9ec469ff191a
   - cc5ccfa8ee28
@@ -160,12 +177,14 @@ tools:
   revisions:
   - 650d553c1fda
   - 9ad0d336e5ed
+  - f546e7278f04
   tool_panel_section_label: FASTA/FASTQ
 - name: maxquant
   owner: galaxyp
   revisions:
   - 175e062b6a17
   - 2133b0be850a
+  - 37d669de2828
   - 666f3453a99d
   - 7f432d87c82c
   - 8bac3cc5c5de
@@ -178,10 +197,12 @@ tools:
   - 26693e21c3c8
   - 2d67fb758956
   - 3fc2116ac6d9
+  - 9cb7dcc07dae
   tool_panel_section_label: Proteomics
 - name: peptideshaker
   owner: galaxyp
   revisions:
+  - 1beff3ddce58
   - 78fad25eff17
   - 7fdd9119cc4f
   - 864bd76db767
@@ -261,6 +282,7 @@ tools:
   - a2988d8d4b77
   - a4475567dd22
   - a8157342d9a3
+  - b8c79e70516d
   - d2ccd8348018
   - e92efed83208
   tool_panel_section_label: Proteomics
@@ -276,6 +298,7 @@ tools:
   - 9f7d1ec01767
   - b16b64ca7b7c
   - b591450b3d1c
+  - cc430977c8ff
   - e56a955cd1c0
   - f4fcd7c81b5b
   tool_panel_section_label: Proteomics
@@ -285,6 +308,7 @@ tools:
   - 137bfc63e758
   - 28ba52c9548c
   - 350a84ea795c
+  - 4fbffddde8cd
   - 653e66bd9eed
   - 8da3511c9467
   - 90d2e00e1304
@@ -306,6 +330,7 @@ tools:
   - 47fc5b518ffc
   - 585ef27873c9
   - 6f4c34f8d5ba
+  - b18329a8ac14
   - b574b84afc4d
   - cbc7e53518ce
   tool_panel_section_label: Proteomics
@@ -318,6 +343,7 @@ tools:
   - 2ba12c97f7cc
   - 4a05e47cd0ea
   - 56b3b7d5f2b5
+  - 59e85306eae5
   - 5e6f8fb2df07
   - 773a24b240e1
   - 7828af552085
@@ -332,6 +358,7 @@ tools:
   - 16556ca0196b
   - 19f68d9ae773
   - 3b7a35d50ebf
+  - 5a35e3a8d013
   - 5f18275c250a
   - 74b61bf5bc4b
   - bb9500286fe4
@@ -356,6 +383,7 @@ tools:
   - e86a8be551b9
   - ed9ed1e6cca2
   - f172efe92629
+  - f1897eb07081
   tool_panel_section_label: Proteomics
 - name: cardinal_spectra_plots
   owner: galaxyp
@@ -363,6 +391,7 @@ tools:
   - 043f9c91f686
   - 0b7e00e5b9d2
   - 10566783d718
+  - 1693b2126f30
   - 3642ed221eb2
   - 58c4aef16eb0
   - 64ea4507e0bd
@@ -380,12 +409,14 @@ tools:
   - 392b2dfd261d
   - 48c07268f341
   - 525f201b86c1
+  - 5f066029763e
   - 7cd9208028bf
   - 7e18fcb92a6a
   - 93be1d20b5c3
   - b41107d8fe89
   - bb1ac6b47a6c
   - c3eb5cd37ebe
+  - e215f71d7983
   - fe5a1d487f32
   tool_panel_section_label: Proteomics
 - name: megahit_contig2fastg
@@ -400,6 +431,7 @@ tools:
   revisions:
   - 2aec8d30ff42
   - 9d5f039c637f
+  - b711f5b6bd44
   tool_panel_section_label: Data Managers
 - name: eggnog_mapper
   owner: galaxyp
@@ -407,6 +439,7 @@ tools:
   - 2667d24b58a0
   - 3c7c9396daaa
   - 3cb37af59360
+  - 4e4c6329f6cd
   - a37df6f6b869
   - a5a3bdd0954b
   tool_panel_section_label: Proteomics
@@ -466,6 +499,7 @@ tools:
   - 0f62097d7c1a
   - 7e572e148175
   - 9a4cfc910674
+  - ba5368c19dbd
   tool_panel_section_label: Convert Formats
 - name: translate_bed
   owner: galaxyp
@@ -493,42 +527,61 @@ tools:
 - name: metaquantome_db
   owner: galaxyp
   revisions:
+  - 0ed07016d668
   - 7c45aa1c9464
+  - 85b8866f06d7
+  - a72ac2c7cc5b
   - f1834b310c09
   tool_panel_section_label: Proteomics
 - name: metaquantome_expand
   owner: galaxyp
   revisions:
   - 170b5fa2402d
+  - 1974224d63c2
+  - 352b37c66d97
+  - 990b4560ead7
   - eb65ab160a10
   tool_panel_section_label: Proteomics
 - name: metaquantome_filter
   owner: galaxyp
   revisions:
   - 2ee495a1fc84
+  - 4f359549383c
   - 7d1c20b315ff
+  - 99450519d727
+  - deaf035bbe9f
   tool_panel_section_label: Proteomics
 - name: metaquantome_sample
   owner: galaxyp
   revisions:
   - 49a957fb353a
   - ac3511167a71
+  - c1343e3389ca
+  - c7745841de24
+  - e79958768a2c
   tool_panel_section_label: Proteomics
 - name: metaquantome_stat
   owner: galaxyp
   revisions:
   - 020a9ecdc1e1
   - 982a442a98dd
+  - d2eac53666f0
+  - d46d64e7964d
+  - da986f83631b
   tool_panel_section_label: Proteomics
 - name: metaquantome_viz
   owner: galaxyp
   revisions:
   - 02da24eac445
+  - 1199751329b0
   - 6cfd42b015b4
+  - 944b43462104
+  - 9bf325045235
   tool_panel_section_label: Proteomics
 - name: maxbin2
   owner: mbernt
   revisions:
+  - 4ef88f9a195d
   - 6a638de7915c
   - cfd50144a871
   tool_panel_section_label: Metagenomic Analysis
@@ -680,6 +733,7 @@ tools:
   - 2e87a752617e
   - a407b6790342
   - bf88d58b098c
+  - c18d8efa4474
   - e3310bcd96d7
   tool_panel_section_label: Proteomics
 - name: openms_idripper
@@ -733,8 +787,10 @@ tools:
 - name: openms_psmfeatureextractor
   owner: galaxyp
   revisions:
+  - 047020d9012f
   - 151e4b119c70
   - 3787addbb8e1
+  - 59736982ab7b
   - 8d4b175e06b5
   - db2f53435366
   tool_panel_section_label: Proteomics
@@ -1033,6 +1089,7 @@ tools:
   - 52a0856534d9
   - 5a9c3e827da5
   - 6bcc338b9dc6
+  - e133b5c8878f
   tool_panel_section_label: Proteomics
 - name: openms_mapaligneridentification
   owner: galaxyp
@@ -1047,6 +1104,7 @@ tools:
   revisions:
   - 01731de4b735
   - 1a6f39227aca
+  - 2d655933d65f
   - ac6f09817679
   - d784e23cc91c
   tool_panel_section_label: Proteomics
@@ -1456,6 +1514,7 @@ tools:
   - 01dbaf6a57e0
   - 205508001e9a
   - 4e77b8f12cd3
+  - abffdfee3021
   - feebe2054e40
   tool_panel_section_label: Proteomics
 - name: openms_speclibcreator
@@ -1565,6 +1624,7 @@ tools:
 - name: openms_assaygeneratormetabo
   owner: galaxyp
   revisions:
+  - 11ac8ae77fb7
   - 200e9206e53a
   - 2c3d2c216ff9
   - cb9d2162b340
@@ -1763,6 +1823,7 @@ tools:
   - 720efe4c4f10
   - b67078922766
   - bd5d779a7a38
+  - cab9b21eabf9
   tool_panel_section_label: Proteomics
 - name: openms_openswathrewritetofeaturexml
   owner: galaxyp
@@ -1791,6 +1852,7 @@ tools:
 - name: openms_novoradapter
   owner: galaxyp
   revisions:
+  - 031adfb7fce0
   - 16fcd0ea9937
   - 562d46a2f8b6
   - 846eea397eba
@@ -1857,4 +1919,20 @@ tools:
   revisions:
   - b71c651e7950
   - ddcab0f11473
+  tool_panel_section_label: Proteomics
+- name: meta_proteome_analyzer
+  owner: galaxyp
+  revisions:
+  - ad3e9fdeabb7
+  - d8d23dfcf68b
+  tool_panel_section_label: Proteomics
+- name: fastg2protlib
+  owner: galaxyp
+  revisions:
+  - 6b226c5907a1
+  tool_panel_section_label: Proteomics
+- name: pyteomics_mztab2tsv
+  owner: galaxyp
+  revisions:
+  - a475c1906e0b
   tool_panel_section_label: Proteomics
