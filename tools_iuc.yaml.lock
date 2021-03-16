@@ -6,12 +6,18 @@ tools:
   owner: iuc
   revisions:
   - 602fb8e63aa7
+  - cf13a1e03e5b
   tool_panel_section_label: Annotation
 - name: ena_upload
   owner: iuc
   revisions:
   - 382518f24d6d
   tool_panel_section_label: Send Data
+- name: pycoqc
+  owner: iuc
+  revisions:
+  - 3a2f2e24c37e
+  tool_panel_section_label: Nanopore
 - name: flair_collapse
   owner: iuc
   revisions:
@@ -334,9 +340,15 @@ tools:
   - 60f888039fb2
   - b818b23df1e0
   tool_panel_section_label: RNA Analysis
+- name: get_hrun
+  owner: iuc
+  revisions:
+  - 84f70ce0b830
+  tool_panel_section_label: Variant Calling
 - name: strelka_germline
   owner: iuc
   revisions:
+  - 19481653a22f
   - 1fbe84e8a740
   tool_panel_section_label: Variant Calling
 - name: strelka_somatic
@@ -667,6 +679,102 @@ tools:
   - 74af283d8ebd
   - cffd8e2382cf
   tool_panel_section_label: Data Managers
+- name: data_manager_fetch_genome_dbkeys_all_fasta
+  owner: devteam
+  revisions:
+  - 4d3eff1bc421
+  tool_panel_section_label: Data Managers
+- name: data_manager_sam_fasta_index_builder
+  owner: devteam
+  revisions:
+  - 3e4d45aca422
+  tool_panel_section_label: Data Managers
+- name: data_manager_bowtie2_index_builder
+  owner: devteam
+  revisions:
+  - 1586b111d2a3
+  tool_panel_section_label: Data Managers
+- name: data_manager_bwa_mem_index_builder
+  owner: devteam
+  revisions:
+  - 63d5652be07a
+  tool_panel_section_label: Data Managers
+- name: data_manager_twobit_builder
+  owner: devteam
+  revisions:
+  - 625fd9476402
+  tool_panel_section_label: Data Managers
+- name: data_manager_star_index_builder
+  owner: iuc
+  revisions:
+  - d3879aceba04
+  tool_panel_section_label: Data Managers
+- name: data_manager_build_kraken_database
+  owner: devteam
+  revisions:
+  - 889a857303e0
+  tool_panel_section_label: Data Managers
+- name: data_manager_diamond_database_builder
+  owner: bgruening
+  revisions:
+  - 5a0d0bee4f8d
+  tool_panel_section_label: Data Managers
+- name: data_manager_fetch_ncbi_taxonomy
+  owner: devteam
+  revisions:
+  - 9de2fb1ce1fb
+  tool_panel_section_label: Data Managers
+- name: data_manager_hisat2_index_builder
+  owner: iuc
+  revisions:
+  - a04cebcd77f4
+  tool_panel_section_label: Data Managers
+- name: data_manager_metaphlan2_database_downloader
+  owner: iuc
+  revisions:
+  - 83f07f40b200
+  tool_panel_section_label: Data Managers
+- name: data_manager_humann2_database_downloader
+  owner: iuc
+  revisions:
+  - ff9cf22838d4
+  tool_panel_section_label: Data Managers
+- name: data_manager_fetch_busco
+  owner: iuc
+  revisions:
+  - 15b97817550a
+  tool_panel_section_label: Data Managers
+- name: data_manager_kallisto_index_builder
+  owner: iuc
+  revisions:
+  - 18e2dd472525
+  - 6843a0db2da0
+  tool_panel_section_label: Data Managers
+- name: data_manager_bwameth_index_builder
+  owner: iuc
+  revisions:
+  - fca923910aaa
+  tool_panel_section_label: Data Managers
+- name: data_manager_salmon_index_builder
+  owner: iuc
+  revisions:
+  - 57274fe5e01a
+  - 6437fc47878f
+  - 6b0f2bdcc1b7
+  - 7d4fd734b078
+  tool_panel_section_label: Data Managers
+- name: data_manager_build_kraken2_database
+  owner: iuc
+  revisions:
+  - 0eebe086fd58
+  tool_panel_section_label: Data Managers
+- name: data_manager_build_kma_index
+  owner: iuc
+  revisions:
+  - 2c532a6eee3f
+  - 889cc43b72d6
+  - 8c2e674a93bb
+  tool_panel_section_label: Data Managers
 - name: dada2_filterandtrim
   owner: iuc
   revisions:
@@ -987,6 +1095,7 @@ tools:
 - name: column_maker
   owner: devteam
   revisions:
+  - 02026300aa45
   - 13b6f0007d9e
   - 427903d47026
   - 464b9305180e
@@ -1069,6 +1178,7 @@ tools:
 - name: column_maker
   owner: devteam
   revisions:
+  - 02026300aa45
   - 13b6f0007d9e
   - 427903d47026
   - 464b9305180e
@@ -2095,9 +2205,15 @@ tools:
   revisions:
   - ea46115c7f1e
   tool_panel_section_label: Assembly
+- name: hifiasm
+  owner: bgruening
+  revisions:
+  - 6505bd37670d
+  tool_panel_section_label: Assembly
 - name: purge_dups
   owner: iuc
   revisions:
+  - 29151e779524
   - 8ec117da1796
   tool_panel_section_label: Assembly
 - name: salsa
@@ -2257,6 +2373,7 @@ tools:
   - 850f3679b9b4
   - b9e04854e2bb
   - bc685d13b637
+  - c772497b2c32
   - d5659efd66aa
   - d82339e37e8e
   - e132e7d02a3e
@@ -2269,6 +2386,7 @@ tools:
   - 3a1253ee137b
   - 58b278def57e
   - 61cb2042581a
+  - a6fba3d92531
   - c23da6257d6a
   - e403d27e8f24
   - ec9cbd6b9a49
@@ -4247,6 +4365,7 @@ tools:
   - 1c2db0054039
   - 3d93dd18d9f8
   - 5e33b465d8d5
+  - 75c93c70d094
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
@@ -4784,6 +4903,7 @@ tools:
   revisions:
   - 49d6f8ef63b3
   - 8e9d604e92f4
+  - e33c82b63727
   tool_panel_section_label: Convert Formats
 - name: bandage
   owner: iuc
@@ -6596,6 +6716,7 @@ tools:
   revisions:
   - 0e212e42ef88
   - 20cfb9f3dded
+  - 35bc2eb568ed
   - 6f2d2c7f77ee
   - 766be978777a
   - 77b91b9bdf52
@@ -6614,6 +6735,7 @@ tools:
   - a72e9faea895
   - a97abb8cd15b
   - e62673c32a5d
+  - f87ed6503715
   tool_panel_section_label: Single-cell
 - name: scanpy_inspect
   owner: iuc
@@ -6624,6 +6746,7 @@ tools:
   - 6c145a6868cc
   - 7d22964a8639
   - 9d1997b08ed6
+  - 9d33775ec67d
   - a755eaa1cc32
   - cc0deb593fc8
   tool_panel_section_label: Single-cell
@@ -6631,6 +6754,7 @@ tools:
   owner: iuc
   revisions:
   - 3bcd5445cd7a
+  - 5342ce58cd1e
   - 55f2212bb675
   - 8e0f141c8c66
   - a407e7f8bdc1
@@ -6644,6 +6768,7 @@ tools:
   revisions:
   - 397d2c97af05
   - 4bfb75bb7c8e
+  - 6adf98e782f3
   - 7647e5cd1b8b
   - 8599fd07d140
   - a8f865950ac4
@@ -6658,6 +6783,7 @@ tools:
   - 215733a383f2
   - 524aa62a6066
   - 7a6701edcc92
+  - 80d4e2cac903
   - 94c8f42efc47
   - 9ca360dde8e3
   - a89ee42625ad
