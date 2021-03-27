@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: scoary
+  owner: iuc
+  revisions:
+  - 42a1a5750539
+  tool_panel_section_label: Metagenomic Analysis
 - name: busco
   owner: iuc
   revisions:
@@ -243,6 +248,7 @@ tools:
   - 6bb3cd018203
   - b28e0cfa7ba1
   - b8348686a0b9
+  - ce3c7f062223
   - dde39ba9c031
   - e19bebe96cd2
   tool_panel_section_label: BED
@@ -1639,6 +1645,7 @@ tools:
   - 86206f93fb13
   - 9a7e91fc6562
   - bf30030e5265
+  - f5a5a2b39ff2
   tool_panel_section_label: Metagenomic Analysis
 - name: bio_hansel
   owner: iuc
@@ -1683,6 +1690,7 @@ tools:
   owner: iuc
   revisions:
   - 8c6433857aa8
+  - 97f65399e30d
   - a4970dfc331c
   - dbe616d126b1
   tool_panel_section_label: Metagenomic Analysis
@@ -1690,6 +1698,7 @@ tools:
   owner: iuc
   revisions:
   - 569001af897d
+  - b469ab47b490
   - bf716cfc3225
   - d9cc87dfec6e
   tool_panel_section_label: Metagenomic Analysis
@@ -1699,17 +1708,20 @@ tools:
   - 2c763fb18010
   - 518ba4a77274
   - 7d8138b4a593
+  - 98b53d46e851
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_abundance_distribution
   owner: iuc
   revisions:
   - 5a97c5bbd51e
   - a02efb62565b
+  - c0caca5af183
   - e0de12ae3fc2
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_count_median
   owner: iuc
   revisions:
+  - 06d1d91c67e5
   - 5efc5f21d0c1
   - 77410799e8e9
   - 7aa811aa3b93
@@ -1718,6 +1730,7 @@ tools:
   owner: iuc
   revisions:
   - 766ec3dad7ff
+  - b7429b53be2a
   - c393687bd857
   - e562293ee5ec
   tool_panel_section_label: Metagenomic Analysis
@@ -1726,6 +1739,7 @@ tools:
   revisions:
   - 557cc16931f4
   - bfd859f04a89
+  - e84073b420a8
   - f0290a079720
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_abundance_distribution_single
@@ -1734,6 +1748,7 @@ tools:
   - 09c6a051c5fd
   - 55109291a355
   - 792d520ba676
+  - c018a72b523e
   tool_panel_section_label: Metagenomic Analysis
 - name: t2t_report
   owner: devteam
@@ -2419,6 +2434,7 @@ tools:
   - c0ea43315baf
   - e53f19161c59
   - e572598580c2
+  - ecb9ea6269ee
   tool_panel_section_label: RNA Analysis
 - name: salmonquantmerge
   owner: bgruening
