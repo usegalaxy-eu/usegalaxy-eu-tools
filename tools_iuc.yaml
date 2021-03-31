@@ -8,6 +8,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Statistics
 
+  - name: scoary
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: busco
     owner: iuc
     tool_panel_section_label: Annotation
@@ -399,98 +403,6 @@ tools:
   - name: ega_download_client
     owner: iuc
     tool_panel_section_label: Get Data
-
-  - name: data_manager_primer_scheme_bedfiles
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_mitos
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_mash_sketch_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_dada2
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_cat
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_fetch_genome_dbkeys_all_fasta
-    owner: devteam
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_sam_fasta_index_builder 
-    owner: devteam
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_bowtie2_index_builder 
-    owner: devteam
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_bwa_mem_index_builder 
-    owner: devteam
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_twobit_builder 
-    owner: devteam
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_star_index_builder 
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_build_kraken_database 
-    owner: devteam
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_diamond_database_builder
-    owner: bgruening
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_fetch_ncbi_taxonomy
-    owner: devteam
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_hisat2_index_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_metaphlan2_database_downloader
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_humann2_database_downloader
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_fetch_busco 
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_kallisto_index_builder 
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_bwameth_index_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_salmon_index_builder 
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_build_kraken2_database 
-    owner: iuc
-    tool_panel_section_label: Data Managers
- 
-  - name: data_manager_build_kma_index
-    owner: iuc
-    tool_panel_section_label: Data Managers
  
   - name: dada2_filterandtrim
     owner: iuc
@@ -2310,22 +2222,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Text Manipulation
 
-  - name: data_manager_build_kma_index
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_qiime_database_downloader
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_salmon_index_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_kallisto_index_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
   ## IWtomic - Interval-Wise Testing for Omics Data
 
   - name: iwtomics_loadandplot
@@ -2347,6 +2243,18 @@ tools:
   - name: multiqc
     owner: iuc
     tool_panel_section_label: Quality Control
+
+  - name: hicexplorer_hichyperoptdetectloops
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicdifferentialtad
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicmergedomains
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
 
   - name: hicexplorer_chicqualitycontrol
     owner: bgruening
@@ -3421,5 +3329,9 @@ tools:
     tool_panel_section_label: FASTQ Quality Control
     
   - name: jvarkit_wgscoverageplotter
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
+  - name: pe_histogram
     owner: iuc
     tool_panel_section_label: Graph/Display Data
