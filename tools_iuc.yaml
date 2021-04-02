@@ -1960,13 +1960,19 @@ tools:
   - name: vcftools_slice
     owner: devteam
     tool_panel_section_label: Variant Calling
+
   - name: vcftools_subset
     owner: devteam
     tool_panel_section_label: Variant Calling
 
+  - name: bamutil_diff
+    owner: iuc
+    tool_panel_section_label: SAM/BAM
+
   - name: tag_pileup_frequency
     owner: iuc
     tool_panel_section_label: SAM/BAM
+
   - name: pileup_interval
     owner: devteam
     tool_panel_section_label: SAM/BAM
