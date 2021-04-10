@@ -31,12 +31,14 @@ tools:
 - name: flair_collapse
   owner: iuc
   revisions:
+  - 03b7b7811ea6
   - 57dc46adf2da
   tool_panel_section_label: Nanopore
 - name: flair_correct
   owner: iuc
   revisions:
   - 6927379c9ede
+  - c784170f3b5e
   tool_panel_section_label: Nanopore
 - name: ngmlr
   owner: iuc
@@ -347,6 +349,7 @@ tools:
   owner: iuc
   revisions:
   - 10c98fab6c5a
+  - 40985510cd98
   - 59a4c97b85d6
   - 60f888039fb2
   - b818b23df1e0
@@ -763,6 +766,7 @@ tools:
 - name: kallisto_pseudo
   owner: iuc
   revisions:
+  - 01247aaf0a10
   - 1c75aa5de15e
   - 2953303df011
   - 5ae5c312d718
@@ -948,6 +952,11 @@ tools:
   - df7356989ac1
   - e6cbe3190642
   - fd59d783248a
+  tool_panel_section_label: Graph/Display Data
+- name: pretext_snapshot
+  owner: iuc
+  revisions:
+  - 02b21260faf4
   tool_panel_section_label: Graph/Display Data
 - name: ebi_search_rest_results
   owner: iuc
@@ -1695,6 +1704,11 @@ tools:
   - 9495df9dd6ef
   - b3c7199d8786
   - fae6527990af
+  tool_panel_section_label: Metagenomic Analysis
+- name: meryl
+  owner: iuc
+  revisions:
+  - 35ac9de60bec
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_filter_abundance
   owner: iuc
@@ -2809,6 +2823,7 @@ tools:
   - 9bccc8404a3c
   - c9a8ef2aa380
   - e32aac2299fb
+  - fa016f1eea1a
   - feb7e635c6af
   tool_panel_section_label: Variant Calling
 - name: vcf2pgsnp
@@ -2865,6 +2880,7 @@ tools:
   owner: iuc
   revisions:
   - 52bba1cd3823
+  - 5a7cd6c39085
   tool_panel_section_label: Annotation
 - name: fastani
   owner: iuc
@@ -4380,6 +4396,7 @@ tools:
   - 8339f6708553
   - 8823a9d45ed0
   - 8ea7e91d13b3
+  - 9369e9b11b8d
   - ad852622d00a
   - fc0667d83f7c
   tool_panel_section_label: HiCExplorer
@@ -6265,6 +6282,7 @@ tools:
   owner: iuc
   revisions:
   - 1bb2ba6d3d96
+  - 3f3e247c053d
   - 4efdca267d51
   - 78c75f134c16
   - 862f5a86854d
@@ -6283,6 +6301,11 @@ tools:
   - 75a14cc16d4d
   - b026dae67fba
   tool_panel_section_label: Convert Formats
+- name: nextalign
+  owner: iuc
+  revisions:
+  - d1dd7d1b07f6
+  tool_panel_section_label: Phylogenetics
 - name: sarscov2summary
   owner: iuc
   revisions:
@@ -6310,6 +6333,7 @@ tools:
 - name: hyphy_prime
   owner: iuc
   revisions:
+  - 02f0dfb10421
   - 1d9d3c6bc246
   - 6fede7bd6c8f
   - 70aa4bada58d
@@ -6345,6 +6369,7 @@ tools:
   - cde38657e82c
   - cff70490dbec
   - d6389faa75ff
+  - eb26b02af55a
   - f9a193154a55
   tool_panel_section_label: Phylogenetics
 - name: hyphy_bgm
@@ -6356,6 +6381,7 @@ tools:
   - 1647c9f95dc7
   - 1df765cc6bcb
   - 26ad9a6b1293
+  - 373afb209788
   - 63b9f220f585
   - 7fd2d1451728
   - 823a5afee916
@@ -6376,6 +6402,7 @@ tools:
   - 02b8758214b0
   - 03f1b4c09330
   - 1942d02039c2
+  - 3b96e92e8ec3
   - 42efcb0955e6
   - 6223845127ea
   - 6283babe736e
@@ -6403,6 +6430,7 @@ tools:
   - 3b8b5bde0bd9
   - 4aad5b48d5b2
   - 4cc4dbca2f02
+  - 5a7c56a5cc08
   - 5c87e4907e08
   - 6a457678efcb
   - 81e66674859e
@@ -6437,6 +6465,7 @@ tools:
   - c8f912a7a967
   - ce53071d60a9
   - da68d7067bf8
+  - f9f0518a0053
   - ff1e9dd7ad13
   tool_panel_section_label: Phylogenetics
 - name: hyphy_relax
@@ -6456,6 +6485,7 @@ tools:
   - 7827dfb71693
   - 7cd99ec269ee
   - 9158a34fc9c5
+  - 91e47cb67709
   - b5d981229301
   - b8bdfac5a326
   - ba548f24669a
@@ -6482,6 +6512,7 @@ tools:
   - c1244c2d8bbc
   - c16dd6b14657
   - c257fa0a98a7
+  - c6355a5b0483
   - d55ab4b13106
   - e7be036f1616
   tool_panel_section_label: Phylogenetics
@@ -6494,6 +6525,7 @@ tools:
   - 1cd3060a8504
   - 2126c9e28ce6
   - 23b9bd244670
+  - 386b975927dd
   - 40e9160dbbbb
   - 4636d51b049c
   - 466217f0aa76
@@ -6511,6 +6543,7 @@ tools:
 - name: hyphy_meme
   owner: iuc
   revisions:
+  - 24a21a467399
   - 2c0308ac90e1
   - 33040ebb30c6
   - 36f47ae7dd8c
@@ -6544,6 +6577,7 @@ tools:
   - 4b63a5c3c6da
   - 4ddef72f7f21
   - 5856faafe469
+  - 599e492f8063
   - 6b987524ea27
   - 8522e7cc4fb4
   - a2e3319aca46
@@ -6574,6 +6608,7 @@ tools:
   - c32f3d3e8a92
   - ccf8f1712632
   - d968c5dddfeb
+  - e15ef3031bf9
   - e961403fdba3
   - f40d481b7c8b
   tool_panel_section_label: Phylogenetics
@@ -6761,6 +6796,7 @@ tools:
 - name: chira_collapse
   owner: iuc
   revisions:
+  - 00187b27f5e5
   - 0208cadda55b
   - 2a57d2ef04c6
   - 2b2bfeda00d0
@@ -6792,6 +6828,7 @@ tools:
   - b91f9fcd9fc7
   - c097b1f83439
   - d4355828b4d3
+  - e7a9859e0040
   - f37ad333627a
   tool_panel_section_label: RNA Analysis
 - name: chira_merge
@@ -6806,6 +6843,7 @@ tools:
   - 948f4bc1f030
   - 9ef3526640f8
   - a1dc6db337ca
+  - b8cb089a8e59
   - bd57d16524fe
   - c836a05bd6a3
   - c96f1a93beb7
@@ -6823,6 +6861,7 @@ tools:
   - 3d93761a6663
   - 55d273c0c574
   - 7fb3fc24be0e
+  - 8e3da3c5b851
   - 903f7a4cfbf0
   - 96ed25eb39f0
   - a1694947910f
@@ -6843,6 +6882,7 @@ tools:
   - 7e316a1fe98e
   - 7ec1d063fecd
   - 89ab3b2973d8
+  - 8b2c1d1556ac
   - 97ca48f470ef
   - a618f28e1496
   - bc08c22dfd38
