@@ -210,6 +210,7 @@ tools:
   - 7e2fe094981e
   - a6d1f83c46b4
   - adea31d84cb9
+  - e483be1014b6
   tool_panel_section_label: Multiple Alignments
 - name: gecko
   owner: iuc
@@ -1709,6 +1710,11 @@ tools:
   owner: iuc
   revisions:
   - 35ac9de60bec
+  tool_panel_section_label: Metagenomic Analysis
+- name: jellyfish
+  owner: iuc
+  revisions:
+  - b4038a4d48f5
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_filter_abundance
   owner: iuc
@@ -6301,6 +6307,11 @@ tools:
   - 75a14cc16d4d
   - b026dae67fba
   tool_panel_section_label: Convert Formats
+- name: pangolin
+  owner: iuc
+  revisions:
+  - 0ec813ad2910
+  tool_panel_section_label: Phylogenetics
 - name: nextalign
   owner: iuc
   revisions:
@@ -6688,6 +6699,7 @@ tools:
   - 0e212e42ef88
   - 20cfb9f3dded
   - 35bc2eb568ed
+  - 3e4e1cf73d98
   - 6f2d2c7f77ee
   - 766be978777a
   - 77b91b9bdf52
@@ -6700,6 +6712,7 @@ tools:
   revisions:
   - 0a6de5e65992
   - 3c86f71498bc
+  - 5511647110ff
   - 6a76b60e05f5
   - 6ea5a05a260a
   - 8b9610ab366a
@@ -6720,11 +6733,13 @@ tools:
   - 9d33775ec67d
   - a755eaa1cc32
   - cc0deb593fc8
+  - e4c99c83dfbf
   tool_panel_section_label: Single-cell
 - name: scanpy_normalize
   owner: iuc
   revisions:
   - 3bcd5445cd7a
+  - 51d945eab1e1
   - 5342ce58cd1e
   - 55f2212bb675
   - 8e0f141c8c66
@@ -6742,6 +6757,7 @@ tools:
   - 6adf98e782f3
   - 7647e5cd1b8b
   - 8599fd07d140
+  - 9a169729c9f9
   - a8f865950ac4
   - cb18f2388815
   - dbbe1ea8ecb1
@@ -6758,6 +6774,7 @@ tools:
   - 94c8f42efc47
   - 9ca360dde8e3
   - a89ee42625ad
+  - c2ef03559dc6
   - f2f6c703da06
   tool_panel_section_label: Single-cell
 - name: intermine_galaxy_exchange
