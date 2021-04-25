@@ -448,6 +448,7 @@ tools:
 - name: sansa_annotate
   owner: iuc
   revisions:
+  - 30079fa4e2fd
   - e3862632706d
   - fb00426402b0
   tool_panel_section_label: Variant Calling
@@ -482,6 +483,7 @@ tools:
 - name: medaka_consensus
   owner: iuc
   revisions:
+  - 0413e62b757a
   - 0632744d5a5f
   - 12c40c8c86db
   - 1c4402b9244d
@@ -496,6 +498,7 @@ tools:
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
+  - 1ca4ce7241fd
   - 2c72b8c09a70
   - 35666d44fe7a
   - 551f8c9bc4cf
@@ -514,6 +517,7 @@ tools:
   - 3cde72a6e37c
   - 43388fc8ad0b
   - 43815fa60f3a
+  - 9fb055604648
   - aabb4e1c0b7b
   - d50c1d5b72ce
   - e86fcef8ed91
@@ -527,6 +531,7 @@ tools:
   - 336b3def9b2b
   - 5c959a2dde5f
   - 711d4deb7bdf
+  - 7623e5888be9
   - 92cdc29a8620
   - ce2bf68a260d
   - ea1833858055
@@ -620,11 +625,13 @@ tools:
   owner: iuc
   revisions:
   - 7f7d8b0c8517
+  - 86dec4abcea8
   - f8e51626fc56
   tool_panel_section_label: Metagenomic Analysis
 - name: mash_sketch
   owner: iuc
   revisions:
+  - 43f9ca23c132
   - 68084b06ae83
   - 77289957d47b
   tool_panel_section_label: Metagenomic Analysis
@@ -990,6 +997,7 @@ tools:
   revisions:
   - 02c3e335a695
   - 60ff16842fcd
+  - 93a3ce78ce55
   tool_panel_section_label: Text Manipulation
 - name: column_maker
   owner: devteam
@@ -1139,12 +1147,6 @@ tools:
   - 4cd116158aef
   - a72f0decd7b3
   tool_panel_section_label: Text Manipulation
-- name: complement
-  owner: devteam
-  revisions:
-  - 38c8bb402872
-  - d958d5a0d1e8
-  tool_panel_section_label: Text Manipulation
 - name: subtract
   owner: devteam
   revisions:
@@ -1255,6 +1257,7 @@ tools:
   owner: iuc
   revisions:
   - 4445939cacc9
+  - 5bd67e012d54
   - ee356d7a5518
   tool_panel_section_label: Convert Formats
 - name: genebed_maf_to_fasta
@@ -1322,6 +1325,7 @@ tools:
 - name: fasta_stats
   owner: iuc
   revisions:
+  - 16f1f3e2de42
   - 9c620a950d3a
   tool_panel_section_label: FASTA/FASTQ
 - name: length_and_gc_content
@@ -1434,6 +1438,7 @@ tools:
   - 8774b28235bb
   - 8f33c9fbc119
   - 9de82b4963e6
+  - a6e57ff585c0
   - ca2def38369c
   - dba3c47e1798
   - edb534491f92
@@ -2187,13 +2192,10 @@ tools:
   - 5ece301faf6b
   - a81c5169e9fc
   tool_panel_section_label: Assembly
-- name: megahit
+- name: merqury
   owner: iuc
   revisions:
-  - 02a822e32de7
-  - 7518ee87b53d
-  - 98242353faa4
-  - de387b2b2803
+  - 9d79beb19ac3
   tool_panel_section_label: Assembly
 - name: rnaspades
   owner: iuc
@@ -3791,6 +3793,7 @@ tools:
   owner: iuc
   revisions:
   - 83b8e36e9cbe
+  - a312a0fdaf31
   tool_panel_section_label: SAM/BAM
 - name: samtools_merge
   owner: iuc
@@ -4803,6 +4806,7 @@ tools:
   revisions:
   - 6d447ebb2bf4
   - 6de3e77073ad
+  - dfefaf2bab95
   tool_panel_section_label: Assembly
 - name: nonpareil
   owner: iuc
@@ -6317,6 +6321,7 @@ tools:
   owner: iuc
   revisions:
   - 0ec813ad2910
+  - b6abccb1f25b
   tool_panel_section_label: Phylogenetics
 - name: nextalign
   owner: iuc
@@ -6347,6 +6352,26 @@ tools:
   - 2bf47d57ebb5
   - 850e213bee26
   tool_panel_section_label: Phylogenetics
+- name: hyphy_conv
+  owner: iuc
+  revisions:
+  - c1d24ff838c8
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_annotate
+  owner: iuc
+  revisions:
+  - ad5901c44e66
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_strike_ambigs
+  owner: iuc
+  revisions:
+  - 4e3212e05a8f
+  tool_panel_section_label: Phylogenetics
+- name: hyphy_cfel
+  owner: iuc
+  revisions:
+  - 710fdaa85384
+  tool_panel_section_label: Phylogenetics
 - name: hyphy_prime
   owner: iuc
   revisions:
@@ -6359,6 +6384,7 @@ tools:
   - 82665e97c156
   - 8f66e659530b
   - 9f566d869e2f
+  - a61b2b6c7089
   - a8f760e7c322
   - acd9dfe3dec0
   - bdcfaa985c16
@@ -6381,6 +6407,7 @@ tools:
   - 8c8640ca39d7
   - 98ee8ba908d6
   - 9c62228ef17c
+  - b6509de48a62
   - b678fe748dc5
   - c92d5ec5d8d7
   - cde38657e82c
@@ -6409,6 +6436,7 @@ tools:
   - c669c8f7c6f6
   - cebcce34d63b
   - df8c64576038
+  - e14d926dfdc4
   - f22ed633b72b
   - f276acfde263
   - fb142ad9b580
@@ -6421,6 +6449,7 @@ tools:
   - 1942d02039c2
   - 3b96e92e8ec3
   - 42efcb0955e6
+  - 4755f52427c4
   - 6223845127ea
   - 6283babe736e
   - 6a726db04d4b
@@ -6459,6 +6488,7 @@ tools:
   - cce7b18495e4
   - d033ffc1c161
   - d7c7ef3353fe
+  - f04a1264e2a2
   - f73435dc282b
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fubar
@@ -6466,6 +6496,7 @@ tools:
   revisions:
   - 0f108ee932ea
   - 271afda54a6d
+  - '296409764676'
   - 3285fd1f4bde
   - 37f6c6344193
   - 3db56014322f
@@ -6488,6 +6519,7 @@ tools:
 - name: hyphy_relax
   owner: iuc
   revisions:
+  - 098451b762fb
   - 134d46bd47dd
   - 169f4d983656
   - 2ccc579efdde
@@ -6519,6 +6551,7 @@ tools:
   - 3b8114109e84
   - 6164d9298db9
   - 62971c58f0dc
+  - 64380f4e296a
   - 751948c21000
   - 7c41611bf5b7
   - 7dbcce65a8ff
@@ -6550,6 +6583,7 @@ tools:
   - 5f1830cb9135
   - 638942ba8e37
   - 6cf8d753e93e
+  - 6d529bf13e2e
   - 77d74f012ecc
   - 92ef8f2da655
   - a96a307afb40
@@ -6579,6 +6613,7 @@ tools:
   - c5e1017b9232
   - d9dc61719379
   - dd45dc0b8c11
+  - efdd06f7f857
   - f9988f5f30e0
   tool_panel_section_label: Phylogenetics
 - name: hyphy_slac
@@ -6602,6 +6637,7 @@ tools:
   - b0b16acfcbe3
   - b82429e9c6a9
   - c2bed8cc8fc1
+  - d430eba4a90e
   - d6f4ff2aed07
   - dc9e52b2d0e1
   tool_panel_section_label: Phylogenetics
@@ -6623,6 +6659,7 @@ tools:
   - af7490b6329b
   - b6e3961a25ff
   - c32f3d3e8a92
+  - c6dcbc9f94f2
   - ccf8f1712632
   - d968c5dddfeb
   - e15ef3031bf9
