@@ -6,7 +6,7 @@ Some documentation may be outdated while we figure out the new policies and proc
 
 Currently only UseGalaxy.eu is installing tools from this repository.
 
-All installed tools are alos listed on our [webpage](https://galaxyproject.eu/tools).
+All installed tools are also listed on our [webpage](https://galaxyproject.eu/tools).
 
 ## Usage
 
