@@ -2411,6 +2411,7 @@ tools:
   - 8c6cd2650d1f
   - b3eab4b67562
   - f54f5baedfdd
+  tool_panel_section_label: Mapping
 - name: winnowmap
   owner: iuc
   revisions:
@@ -2536,6 +2537,7 @@ tools:
   revisions:
   - 171b827eadf2
   - 26d5493b20b6
+  - 5b60313a6ce7
   - 606b7748965d
   - c9cfec002f71
   - ca0588b09438
@@ -6666,6 +6668,7 @@ tools:
   revisions:
   - 08449da86cdf
   - 0b4ee5db66ca
+  - 0c6724c345d9
   - 232bd7cd4639
   - 24742f335426
   - 25782236e47e
@@ -6685,6 +6688,12 @@ tools:
   - d430eba4a90e
   - d6f4ff2aed07
   - dc9e52b2d0e1
+  tool_panel_section_label: Phylogenetics
+- name: usher
+  owner: iuc
+  revisions:
+  - 524cb8f7a69a
+  tool_panel_section_label: Phylogenetics
 - name: usher_matutils
   owner: iuc
   revisions:
@@ -7195,6 +7204,80 @@ tools:
   - 7f208f1eb64f
   - cad93abecac9
   tool_panel_section_label: Metagenomic Analysis
+- name: humann
+  owner: iuc
+  revisions:
+  - 65c80ca30373
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_associate
+  owner: iuc
+  revisions:
+  - 10fdefbf5920
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_barplot
+  owner: iuc
+  revisions:
+  - 5240d62d864d
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_join_tables
+  owner: iuc
+  revisions:
+  - cf7f80d59099
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_reduce_table
+  owner: iuc
+  revisions:
+  - c2488dbc8e39
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_regroup_table
+  owner: iuc
+  revisions:
+  - 26ce946f4da9
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_rename_table
+  owner: iuc
+  revisions:
+  - d24841f5c3d2
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_renorm_table
+  owner: iuc
+  revisions:
+  - e3391ccf21a0
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_rna_dna_norm
+  owner: iuc
+  revisions:
+  - ec422794133f
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_split_stratified_table
+  owner: iuc
+  revisions:
+  - 75bedfb2078b
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_split_table
+  owner: iuc
+  revisions:
+  - 506d4a349aa1
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_strain_profiler
+  owner: iuc
+  revisions:
+  - 0ff86e44895c
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_unpack_pathways
+  owner: iuc
+  revisions:
+  - c3d043160f09
+  tool_panel_section_label: Metagenomic Analysis
+- name: humann_unpack_pathways
+  owner: iuc
+  revisions:
+  - c3d043160f09
+  tool_panel_section_label: Metagenomic Analysis
+- name: data_manager_humann_database_downloader
+  owner: iuc
+  revisions:
+  - 60eb2512c5a0
 - name: fastqe
   owner: iuc
   revisions:
@@ -7213,3 +7296,32 @@ tools:
   revisions:
   - bd1416eea1f0
   tool_panel_section_label: Graph/Display Data
+- name: metaphlan
+  owner: iuc
+  revisions:
+  - f5df500fcc3c
+  tool_panel_section_label: Metagenomic Analysis
+- name: merge_metaphlan_tables
+  owner: iuc
+  revisions:
+  - 3f05bf162005
+  tool_panel_section_label: Metagenomic Analysis
+- name: extract_metaphlan_database
+  owner: iuc
+  revisions:
+  - 5b2f8b6a3609
+  tool_panel_section_label: Metagenomic Analysis
+- name: customize_metaphlan_database
+  owner: iuc
+  revisions:
+  - a6c3f4f439f7
+  tool_panel_section_label: Metagenomic Analysis
+- name: customize_metaphlan_database
+  owner: iuc
+  revisions:
+  - a6c3f4f439f7
+  tool_panel_section_label: Metagenomic Analysis
+- name: data_manager_metaphlan_database_downloader
+  owner: iuc
+  revisions:
+  - 9c43baa60906
