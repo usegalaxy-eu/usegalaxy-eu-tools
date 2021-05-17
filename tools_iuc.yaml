@@ -584,6 +584,26 @@ tools:
     owner: iuc
     tool_panel_section_label: Evolution
 
+  - name: rapidnj
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93_filter
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93_cluster
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93_readreduce
+    owner: iuc
+    tool_panel_section_label: Evolution
+
   - name: prinseq
     owner: iuc
     tool_panel_section_label: Text Manipulation
@@ -669,6 +689,10 @@ tools:
     tool_panel_section_label: Join, Subtract and Group
 
   - name: crossmap_bam
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: bioext_bam2msa
     owner: iuc
     tool_panel_section_label: Convert Formats
 
@@ -1308,6 +1332,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: bioext_bealign
+    owner: iuc
+    tool_panel_section_label: Mapping
+
   - name: kma
     owner: iuc
     tool_panel_section_label: Mapping
@@ -1368,7 +1396,7 @@ tools:
     owner: iuc
     tool_panel_section_label: Mapping
 
-    name: winnowmap
+  - name: winnowmap
     owner: iuc
     tool_panel_section_label: Mapping
 
@@ -3188,11 +3216,19 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+<<<<<<< HEAD
     name: usher
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
     name: usher_matutils
+=======
+  - name: usher
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: usher_matutils
+>>>>>>> 48c2ce07e5cd0446f137667e3b2a92c5b5016ded
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
@@ -3420,6 +3456,65 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: humann
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_associate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_barplot
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_join_tables
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_reduce_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_regroup_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_rename_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_renorm_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_rna_dna_norm
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_split_stratified_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_split_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_strain_profiler
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_unpack_pathways
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_unpack_pathways
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: data_manager_humann_database_downloader
+    owner: iuc
+
   - name: fastqe
     owner: iuc
     tool_panel_section_label: FASTQ Quality Control
@@ -3431,3 +3526,26 @@ tools:
   - name: pe_histogram
     owner: iuc
     tool_panel_section_label: Graph/Display Data
+  
+  - name: metaphlan
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: merge_metaphlan_tables
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: extract_metaphlan_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: customize_metaphlan_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+      
+  - name: customize_metaphlan_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+  
+  - name: data_manager_metaphlan_database_downloader
+    owner: iuc
