@@ -381,6 +381,7 @@ tools:
 - name: irissv
   owner: iuc
   revisions:
+  - 1d4f065fa0ef
   - 30fc9f2bcbe4
   tool_panel_section_label: Variant Calling
 - name: jasminesv
@@ -975,6 +976,7 @@ tools:
   revisions:
   - 02b21260faf4
   - 7a5eaa19e92f
+  - 7c9417381ad5
   tool_panel_section_label: Graph/Display Data
 - name: ebi_search_rest_results
   owner: iuc
@@ -1050,6 +1052,31 @@ tools:
   - 961a712f9743
   - b2b8e75a962d
   - ba71e26d5bdc
+  tool_panel_section_label: Evolution
+- name: rapidnj
+  owner: iuc
+  revisions:
+  - 9f4a66e22580
+  tool_panel_section_label: Evolution
+- name: tn93
+  owner: iuc
+  revisions:
+  - 9d793e88e15f
+  tool_panel_section_label: Evolution
+- name: tn93_filter
+  owner: iuc
+  revisions:
+  - ba95715078c9
+  tool_panel_section_label: Evolution
+- name: tn93_cluster
+  owner: iuc
+  revisions:
+  - af03f3398f03
+  tool_panel_section_label: Evolution
+- name: tn93_readreduce
+  owner: iuc
+  revisions:
+  - 84849140a3bc
   tool_panel_section_label: Evolution
 - name: prinseq
   owner: iuc
@@ -1198,6 +1225,11 @@ tools:
   - 0f0cf480051b
   - 5051467dc96a
   - 60ca8d013263
+  tool_panel_section_label: Convert Formats
+- name: bioext_bam2msa
+  owner: iuc
+  revisions:
+  - f5792425ea50
   tool_panel_section_label: Convert Formats
 - name: crossmap_bed
   owner: iuc
@@ -1722,13 +1754,19 @@ tools:
   - b3c7199d8786
   - fae6527990af
   tool_panel_section_label: Metagenomic Analysis
+- name: bellerophon
+  owner: iuc
+  revisions:
+  - eca6296a091a
+  tool_panel_section_label: Assembly
 - name: meryl
   owner: iuc
   revisions:
   - 35ac9de60bec
   - 9f7a227436d6
   - d5d68989caec
-  tool_panel_section_label: Metagenomic Analysis
+  - d63739222f68
+  tool_panel_section_label: Assembly
 - name: genomescope
   owner: iuc
   revisions:
@@ -1737,7 +1775,13 @@ tools:
 - name: pretext_map
   owner: iuc
   revisions:
+  - 02831bf9e95f
   - 7c2e9bc2123b
+  tool_panel_section_label: Assembly
+- name: bionano_scaffold
+  owner: bgruening
+  revisions:
+  - 8cc3862f8b8e
   tool_panel_section_label: Assembly
 - name: jellyfish
   owner: iuc
@@ -2284,6 +2328,11 @@ tools:
   revisions:
   - 383bb5ad32e2
   tool_panel_section_label: Assembly
+- name: bioext_bealign
+  owner: iuc
+  revisions:
+  - f9b72a376ec9
+  tool_panel_section_label: Mapping
 - name: kma
   owner: iuc
   revisions:
@@ -2401,6 +2450,7 @@ tools:
 - name: minimap2
   owner: iuc
   revisions:
+  - 037c6e54df11
   - 1650a97189be
   - 17e61517c166
   - 2445d53549ba
@@ -2931,6 +2981,7 @@ tools:
   owner: bgruening
   revisions:
   - 438f65cb1d14
+  - 72aade318318
   - ade773848c3d
   - bfc70c8cc5ca
   - d7540a923c7b
@@ -2987,6 +3038,7 @@ tools:
   - 49b819f88c2b
   - 5182e1a99313
   - c2656b729ee9
+  - e1a9d6fd258d
   tool_panel_section_label: Annotation
 - name: tbvcfreport
   owner: iuc
@@ -6348,11 +6400,13 @@ tools:
   owner: iuc
   revisions:
   - 0f20ed06ed6c
+  - 6cd62b6d2b5c
   tool_panel_section_label: Phylogenetics
 - name: pangolin
   owner: iuc
   revisions:
   - 0ec813ad2910
+  - 514a786baaa9
   - b6abccb1f25b
   tool_panel_section_label: Phylogenetics
 - name: nextalign
@@ -6474,6 +6528,7 @@ tools:
   - bf97cacc1a55
   - c669c8f7c6f6
   - cebcce34d63b
+  - d1c977aee228
   - d88bbb287923
   - df8c64576038
   - e14d926dfdc4
@@ -7051,6 +7106,7 @@ tools:
 - name: ivar_consensus
   owner: iuc
   revisions:
+  - 5e668dc9f379
   - 78bbd17d0703
   - 7f781286b55f
   - a38934e303b9
@@ -7069,6 +7125,7 @@ tools:
   owner: iuc
   revisions:
   - 3d18f8c3c0f6
+  - 75c279fa403a
   - 94df24c6bc00
   - 9eaadf03e0df
   - bd2a7d1316b9
@@ -7079,6 +7136,7 @@ tools:
   revisions:
   - 2b95d5c04908
   - 2c47c138176e
+  - 51afc8a64951
   - 7fe36019c073
   - c88553ec696e
   - f91cfb73d369
@@ -7089,6 +7147,7 @@ tools:
   - 5d6ed46cc101
   - 8858fa037a15
   - cb903c9dc33d
+  - cf65217ad61c
   - d37ede8589b2
   - db536ad45f28
   tool_panel_section_label: Virology
@@ -7096,6 +7155,7 @@ tools:
   owner: iuc
   revisions:
   - 12d66d0d05ac
+  - 49236b03e4fd
   - aa9de8f20668
   - c5c9f02b6167
   - e1a015876aa9
@@ -7208,76 +7268,91 @@ tools:
   owner: iuc
   revisions:
   - 65c80ca30373
+  - 6b7622dda516
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_associate
   owner: iuc
   revisions:
   - 10fdefbf5920
+  - 67b835aace09
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_barplot
   owner: iuc
   revisions:
   - 5240d62d864d
+  - 79698158a59c
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_join_tables
   owner: iuc
   revisions:
+  - cb7de6e163ca
   - cf7f80d59099
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_reduce_table
   owner: iuc
   revisions:
+  - 324c12894d59
   - c2488dbc8e39
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_regroup_table
   owner: iuc
   revisions:
   - 26ce946f4da9
+  - c409a495841f
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_rename_table
   owner: iuc
   revisions:
+  - 71ea608ddfa3
   - d24841f5c3d2
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_renorm_table
   owner: iuc
   revisions:
+  - 4137b492233e
   - e3391ccf21a0
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_rna_dna_norm
   owner: iuc
   revisions:
+  - 1e55949cf16e
   - ec422794133f
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_split_stratified_table
   owner: iuc
   revisions:
   - 75bedfb2078b
+  - e2c71b852aba
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_split_table
   owner: iuc
   revisions:
   - 506d4a349aa1
+  - f00f2c835ac2
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_strain_profiler
   owner: iuc
   revisions:
   - 0ff86e44895c
+  - 9540860a506f
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_unpack_pathways
   owner: iuc
   revisions:
+  - 4033827c76b8
   - c3d043160f09
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_unpack_pathways
   owner: iuc
   revisions:
+  - 4033827c76b8
   - c3d043160f09
   tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_humann_database_downloader
   owner: iuc
   revisions:
   - 60eb2512c5a0
+  - 87febc68b45b
 - name: fastqe
   owner: iuc
   revisions:
@@ -7299,26 +7374,31 @@ tools:
 - name: metaphlan
   owner: iuc
   revisions:
+  - b89b0765695d
   - f5df500fcc3c
   tool_panel_section_label: Metagenomic Analysis
 - name: merge_metaphlan_tables
   owner: iuc
   revisions:
+  - 2e5ae05160e0
   - 3f05bf162005
   tool_panel_section_label: Metagenomic Analysis
 - name: extract_metaphlan_database
   owner: iuc
   revisions:
+  - 1aaa9b943a83
   - 5b2f8b6a3609
   tool_panel_section_label: Metagenomic Analysis
 - name: customize_metaphlan_database
   owner: iuc
   revisions:
+  - 025b0113ee97
   - a6c3f4f439f7
   tool_panel_section_label: Metagenomic Analysis
 - name: customize_metaphlan_database
   owner: iuc
   revisions:
+  - 025b0113ee97
   - a6c3f4f439f7
   tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_metaphlan_database_downloader
