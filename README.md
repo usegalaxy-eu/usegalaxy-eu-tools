@@ -1,9 +1,12 @@
 # usegalaxy.\* tools [![Build Status](https://build.galaxyproject.eu/buildStatus/icon?style=flat-square&subject=Update%20Trusted&job=usegalaxy-eu%2Fupdate-trusted-tools)](https://build.galaxyproject.eu/job/usegalaxy-eu/job/update-trusted-tools/) [![Build Status](https://build.galaxyproject.eu/buildStatus/icon?style=flat-square&subject=Install%20Tools&job=usegalaxy-eu%2Finstall-tools)](https://build.galaxyproject.eu/job/usegalaxy-eu/job/install-tools/)
 
 
-Originally this repository was solely for the use of usegalaxy.eu, but we are looking at expanding that to the other usegalaxy.\* instances. Some documentation may be outdated while we figure out the new policies and procedures.
+Originally this repository was solely for the use of usegalaxy.eu, but we are looking at expanding that to the other usegalaxy.\* instances.
+Some documentation may be outdated while we figure out the new policies and procedures.
 
 Currently only UseGalaxy.eu is installing tools from this repository.
+
+All installed tools are also listed on our [webpage](https://galaxyproject.eu/tools).
 
 ## Usage
 

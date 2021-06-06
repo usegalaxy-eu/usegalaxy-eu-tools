@@ -50,6 +50,11 @@ tools:
   - 0332c2ff19f2
   - d804c6e6d5ad
   tool_panel_section_label: ChemicalToolBox
+- name: traj_selections_and_merge
+  owner: chemteam
+  revisions:
+  - f4a1e92ca3d2
+  tool_panel_section_label: ChemicalToolBox
 - name: ctb_im_constrained_conf_gen
   owner: bgruening
   revisions:
@@ -89,6 +94,8 @@ tools:
   revisions:
   - 51023da731c0
   - 52e64e8cf203
+  - '879662481176'
+  - cf2be7b90ea5
   - d09f116dfca5
   tool_panel_section_label: ChemicalToolBox
 - name: xchem_transfs_scoring
@@ -182,6 +189,7 @@ tools:
   - 55ac04db36aa
   - 85fad59f8168
   - 8eab6d2b7bdf
+  - 9b48456a96fe
   - bb5365381c8f
   - bf99565cec1f
   - d4c67ced6abc
@@ -193,6 +201,7 @@ tools:
   - 334ad24525db
   - 58d18838e244
   - 791c86130585
+  - b8725fec8c7b
   - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
@@ -200,6 +209,7 @@ tools:
   owner: bgruening
   revisions:
   - 2e67eea82ff7
+  - 4f1896782f7c
   - 8161c08627bf
   - a3c1e2eea7d3
   - a574f6e8b909
@@ -213,6 +223,7 @@ tools:
   - 334ad24525db
   - 58d18838e244
   - 791c86130585
+  - b8725fec8c7b
   - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
@@ -223,6 +234,7 @@ tools:
   - 334ad24525db
   - 58d18838e244
   - 791c86130585
+  - b8725fec8c7b
   - bd12f4b4c3a8
   - f80cfac80c53
   tool_panel_section_label: ChemicalToolBox
@@ -244,6 +256,7 @@ tools:
   - 79e8ab8f1e81
   - acce5039ece7
   - b61cbdf78765
+  - ccfbd956a2d3
   - d76bea4c85f3
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_setup
@@ -404,6 +417,7 @@ tools:
   - 617d4555d8d3
   - 6674260c1459
   - 749cc765636b
+  - a1c53f0533b0
   - cf725c82c865
   - d68bf44e1f5c
   tool_panel_section_label: ChemicalToolBox
@@ -821,18 +835,22 @@ tools:
   owner: chemteam
   revisions:
   - 0d640d752e8a
+  - 2417677038b2
   - 27ee142314a9
   - 2e202f6c3034
   - 597ee2f97479
   - c6afbb28f547
+  - c8cdde00b105
   - f4230f116196
   tool_panel_section_label: ChemicalToolBox
 - name: ambertools_antechamber
   owner: chemteam
   revisions:
+  - 04f6bb5fe7c7
   - 29aa7091e533
   - 511c4bd8aa6d
   - 59a0424937cc
+  - 8029dfe04b28
   - ca57ded3ec32
   - d3cdf6fe972a
   - e4de81eea04c
@@ -843,6 +861,8 @@ tools:
   - 00ff41b1d49a
   - 3549852f413f
   - 6aa2b60f3195
+  - 79f570a89e3d
+  - 7afe7044a2aa
   - 96b872138d3b
   - a0099ea2ef8b
   - dbfb86927de6
@@ -857,6 +877,7 @@ tools:
   - 8b6ba267714b
   - 915e9be38994
   - a43a00845834
+  - a446ea7e2bc1
   - f56492688f43
   tool_panel_section_label: ChemicalToolBox
 - name: chembl_structure_pipeline
@@ -876,6 +897,7 @@ tools:
   revisions:
   - 06828e0cc8a7
   - 193389d3a5f0
+  - 351fbd750a6d
   - 55553120df69
   - 71bc02c59d3a
   tool_panel_section_label: ChemicalToolBox
@@ -885,11 +907,14 @@ tools:
   - 0f3e5c69251e
   - 2a868592ebcb
   - 36360fa103d6
+  - bbbf5fb356dd
   tool_panel_section_label: ChemicalToolBox
 - name: parmconv
   owner: chemteam
   revisions:
+  - 2b82fc7bec67
   - 6c6cecf51bd0
+  - b500cc25dd15
   - da2252f1ccab
   tool_panel_section_label: ChemicalToolBox
 - name: apoc

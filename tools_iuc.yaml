@@ -4,6 +4,14 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: rgcca
+    owner: iuc
+    tool_panel_section_label: Statistics
+
+  - name: scoary
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: busco
     owner: iuc
     tool_panel_section_label: Annotation
@@ -11,6 +19,10 @@ tools:
   - name: ena_upload
     owner: iuc
     tool_panel_section_label: Send Data
+
+  - name: pycoqc
+    owner: iuc
+    tool_panel_section_label: Nanopore
 
   - name: flair_collapse
     owner: iuc
@@ -200,6 +212,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: get_hrun
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: strelka_germline
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -387,27 +403,7 @@ tools:
   - name: ega_download_client
     owner: iuc
     tool_panel_section_label: Get Data
-
-  - name: data_manager_primer_scheme_bedfiles
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_mitos
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_mash_sketch_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_dada2
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_cat
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
+ 
   - name: dada2_filterandtrim
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -548,6 +544,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Graph/Display Data
 
+  - name: pretext_snapshot
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
   - name: ebi_search_rest_results
     owner: iuc
     tool_panel_section_label: Get Data
@@ -581,6 +581,26 @@ tools:
     tool_panel_section_label: Get Data
 
   - name: codeml
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: rapidnj
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93_filter
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93_cluster
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: tn93_readreduce
     owner: iuc
     tool_panel_section_label: Evolution
 
@@ -644,10 +664,6 @@ tools:
     owner: devteam
     tool_panel_section_label: Text Manipulation
 
-  - name: complement
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
-
   - name: subtract
     owner: devteam
     tool_panel_section_label: Text Manipulation
@@ -673,6 +689,10 @@ tools:
     tool_panel_section_label: Join, Subtract and Group
 
   - name: crossmap_bam
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: bioext_bam2msa
     owner: iuc
     tool_panel_section_label: Convert Formats
 
@@ -721,7 +741,7 @@ tools:
     tool_panel_section_label: Convert Formats
 
   - name: trimns
-    owner: devteam
+    owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
   - name: tabular_to_fasta
@@ -852,21 +872,27 @@ tools:
   - name: delete_overlapping_indels
     owner: devteam
     tool_panel_section_label: Regional Variation
+  
   - name: compute_motifs_frequency
     owner: devteam
     tool_panel_section_label: Regional Variation
+  
   - name: compute_motif_frequencies_for_all_motifs
     owner: devteam
     tool_panel_section_label: Regional Variation
+  
   - name: categorize_elements_satisfying_criteria
     owner: devteam
     tool_panel_section_label: Regional Variation
+  
   - name: best_regression_subsets
     owner: devteam
     tool_panel_section_label: Statistics
+  
   - name: principal_component_analysis
     owner: devteam
     tool_panel_section_label: Statistics
+  
   - name: kernel_principal_component_analysis
     owner: devteam
     tool_panel_section_label: Statistics
@@ -983,6 +1009,30 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: bellerophon
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: meryl
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: genomescope
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: pretext_map
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: bionano_scaffold
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: jellyfish
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: khmer_filter_abundance
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -1086,22 +1136,25 @@ tools:
   - name: fasta_filter_by_length
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fasta_concatenate_by_species
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastx_collapser
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fasta_nucleotide_changer
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fasta_formatter
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
   - name: fastqc
     owner: devteam
-
     tool_panel_section_label: 'FASTQ Quality Control'
 
   - name: fastq_paired_end_joiner
@@ -1119,54 +1172,71 @@ tools:
   - name: tabular_to_fastq
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_trimmer_by_quality
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_trimmer
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_to_tabular
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_stats
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_paired_end_splitter
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_paired_end_interlacer
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_paired_end_deinterlacer
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_masker_by_quality
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_manipulation
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_groomer
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_filter
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_combiner
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastx_trimmer
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastx_reverse_complement
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastx_renamer
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastx_quality_statistics
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+  
   - name: fastq_quality_filter
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
@@ -1177,6 +1247,14 @@ tools:
   - name: fastq_quality_boxplot
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
+
+  - name: mitobim
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: hifiasm
+    owner: bgruening
+    tool_panel_section_label: Assembly
 
   - name: purge_dups
     owner: iuc
@@ -1218,6 +1296,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+    name: merqury
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: rnaspades
     owner: iuc
     tool_panel_section_label: Assembly
@@ -1237,6 +1319,30 @@ tools:
   - name: colibread_lordec
     owner: iuc
     tool_panel_section_label: Assembly
+
+  - name: trycycler_cluster
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_consensus
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_partition
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_reconcile_msa
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: trycycler_subsample
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: bioext_bealign
+    owner: iuc
+    tool_panel_section_label: Mapping
 
   - name: kma
     owner: iuc
@@ -1298,6 +1404,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Mapping
 
+  - name: winnowmap
+    owner: iuc
+    tool_panel_section_label: Mapping
+
   - name: migmap
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -1324,7 +1434,7 @@ tools:
 
   - name: alevin
     owner: bgruening
-    tool_panel_section_label: RNA Analysis
+    tool_panel_section_label: Single-cell
 
   - name: salmonquantmerge
     owner: bgruening
@@ -1533,6 +1643,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
  
+  - name: optitype
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: seq2hla
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1932,13 +2046,19 @@ tools:
   - name: vcftools_slice
     owner: devteam
     tool_panel_section_label: Variant Calling
+
   - name: vcftools_subset
     owner: devteam
     tool_panel_section_label: Variant Calling
 
+  - name: bamutil_diff
+    owner: iuc
+    tool_panel_section_label: SAM/BAM
+
   - name: tag_pileup_frequency
     owner: iuc
     tool_panel_section_label: SAM/BAM
+
   - name: pileup_interval
     owner: devteam
     tool_panel_section_label: SAM/BAM
@@ -2194,22 +2314,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Text Manipulation
 
-  - name: data_manager_build_kma_index
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_qiime_database_downloader
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_salmon_index_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
-  - name: data_manager_kallisto_index_builder
-    owner: iuc
-    tool_panel_section_label: Data Managers
-
   ## IWtomic - Interval-Wise Testing for Omics Data
 
   - name: iwtomics_loadandplot
@@ -2231,6 +2335,18 @@ tools:
   - name: multiqc
     owner: iuc
     tool_panel_section_label: Quality Control
+
+  - name: hicexplorer_hichyperoptdetectloops
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicdifferentialtad
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hicmergedomains
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
 
   - name: hicexplorer_chicqualitycontrol
     owner: bgruening
@@ -3020,6 +3136,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: nextclade
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: pangolin
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: nextalign
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: sarscov2summary
     owner: iuc
     tool_panel_section_label: Phylogenetics
@@ -3033,6 +3161,22 @@ tools:
     tool_panel_section_label: Phylogenetics
 
   - name: phyml
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_conv
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_annotate
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_strike_ambigs
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_cfel
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
@@ -3077,6 +3221,14 @@ tools:
     tool_panel_section_label: Phylogenetics
 
   - name: hyphy_slac
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: usher
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: usher_matutils
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
@@ -3157,6 +3309,10 @@ tools:
     tool_panel_section_label: Convert Formats
 
   - name: compose_text_param
+    owner: iuc
+    tool_panel_section_label: Expression Tools
+
+  - name: calculate_numeric_param
     owner: iuc
     tool_panel_section_label: Expression Tools
 
@@ -3300,6 +3456,96 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: humann
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_associate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_barplot
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_join_tables
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_reduce_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_regroup_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_rename_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_renorm_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_rna_dna_norm
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_split_stratified_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_split_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_strain_profiler
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_unpack_pathways
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: humann_unpack_pathways
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: data_manager_humann_database_downloader
+    owner: iuc
+
   - name: fastqe
     owner: iuc
     tool_panel_section_label: FASTQ Quality Control
+    
+  - name: jvarkit_wgscoverageplotter
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
+  - name: pe_histogram
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+  
+  - name: metaphlan
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: merge_metaphlan_tables
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: extract_metaphlan_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: customize_metaphlan_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+      
+  - name: customize_metaphlan_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+  
+  - name: data_manager_metaphlan_database_downloader
+    owner: iuc
