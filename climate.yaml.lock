@@ -19,6 +19,11 @@ tools:
   revisions:
   - b9d9fe0c2ce7
   tool_panel_section_label: Climate Analysis
+- name: c3s
+  owner: climate
+  revisions:
+  - 250554670f72
+  tool_panel_section_label: Climate Analysis
 - name: shift_longitudes
   owner: climate
   revisions:
@@ -43,6 +48,21 @@ tools:
   owner: ecology
   revisions:
   - 225d0d275a24
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_coords_info
+  owner: ecology
+  revisions:
+  - fea8a53f8099
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_netcdf2netcdf
+  owner: ecology
+  revisions:
+  - b0780241f916
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_mapplot
+  owner: ecology
+  revisions:
+  - d7479b6dfbe8
   tool_panel_section_label: GIS Data Handling
 - name: gdal_gdaladdo
   owner: ecology

@@ -808,6 +808,7 @@ tools:
   - 7319f83ae734
   - 764f076e9d52
   - 7a5cd7987b03
+  - 828324f3292f
   - 82fcdf530f87
   - 8d8412d35247
   tool_panel_section_label: RNA Analysis
@@ -825,6 +826,7 @@ tools:
   - 59ebf2c42c0e
   - 6d532d760950
   - 73b8cb5bddcd
+  - 83c573f2e73c
   - d1d39c72b755
   tool_panel_section_label: Graph/Display Data
 - name: nanopolishcomp_eventaligncollapse
@@ -1309,6 +1311,11 @@ tools:
   - b79f6002b176
   - cfea1d6354db
   tool_panel_section_label: Convert Formats
+- name: cutadapt
+  owner: lparsons
+  revisions:
+  - 288f97432497
+  tool_panel_section_label: FASTA/FASTQ
 - name: trimns
   owner: iuc
   revisions:
@@ -1762,6 +1769,7 @@ tools:
 - name: meryl
   owner: iuc
   revisions:
+  - 31fa26c0692b
   - 35ac9de60bec
   - 9f7a227436d6
   - d5d68989caec
@@ -2010,7 +2018,7 @@ tools:
   - ddf5c37952ac
   - e28c965eeed4
   - e7b2202befea
-  tool_panel_section_label: FASTQ Quality Control
+  tool_panel_section_label: FASTA/FASTQ
 - name: fastq_paired_end_joiner
   owner: devteam
   revisions:
@@ -2454,6 +2462,7 @@ tools:
   - 037c6e54df11
   - 1650a97189be
   - 17e61517c166
+  - 1f06dccdc5d1
   - 2445d53549ba
   - 3f4d6399997b
   - 53c0b7a1a0c3
@@ -2949,6 +2958,21 @@ tools:
   revisions:
   - 4a32700dcaa2
   tool_panel_section_label: Phenotype Association
+- name: glimmer_build_icm
+  owner: bgruening
+  revisions:
+  - 15ad71e21010
+  tool_panel_section_label: Annotation
+- name: glimmer_knowledge_based
+  owner: bgruening
+  revisions:
+  - febc61f3c67d
+  tool_panel_section_label: Annotation
+- name: glimmer_not_knowledge_based
+  owner: bgruening
+  revisions:
+  - 2529762847c3
+  tool_panel_section_label: Annotation
 - name: mitos
   owner: iuc
   revisions:
@@ -3084,6 +3108,7 @@ tools:
   - ade933eff007
   - ae39895af5fe
   - bbcf5f7f2af2
+  - ef2ad746b589
   tool_panel_section_label: Annotation
 - name: fgsea
   owner: iuc
@@ -6405,6 +6430,7 @@ tools:
   owner: iuc
   revisions:
   - 0f20ed06ed6c
+  - 3b75d5285aff
   - 6cd62b6d2b5c
   tool_panel_section_label: Phylogenetics
 - name: pangolin
@@ -6445,9 +6471,15 @@ tools:
   - 2bf47d57ebb5
   - 850e213bee26
   tool_panel_section_label: Phylogenetics
+- name: hyphy_summary
+  owner: iuc
+  revisions:
+  - 37887c2733a3
+  tool_panel_section_label: Phylogenetics
 - name: hyphy_conv
   owner: iuc
   revisions:
+  - 38755f5207a5
   - c1d24ff838c8
   - f6e7b5955712
   tool_panel_section_label: Phylogenetics
@@ -6456,16 +6488,19 @@ tools:
   revisions:
   - a88848771d2d
   - ad5901c44e66
+  - f7810488bd92
   tool_panel_section_label: Phylogenetics
 - name: hyphy_strike_ambigs
   owner: iuc
   revisions:
   - 4bf743518e41
   - 4e3212e05a8f
+  - 7b214c69e387
   tool_panel_section_label: Phylogenetics
 - name: hyphy_cfel
   owner: iuc
   revisions:
+  - 0990351232c6
   - 710fdaa85384
   - fb833dd994f2
   tool_panel_section_label: Phylogenetics
@@ -6488,12 +6523,14 @@ tools:
   - bdcfaa985c16
   - dc774be95f6c
   - e06961ac014b
+  - e2942cd87117
   tool_panel_section_label: Phylogenetics
 - name: hyphy_busted
   owner: iuc
   revisions:
   - 04d4919c73d4
   - 12bc58a60606
+  - 1e712a6b98ff
   - 2228dcc23dd9
   - 35df756079a3
   - 4ff928db5592
@@ -6518,6 +6555,7 @@ tools:
 - name: hyphy_bgm
   owner: iuc
   revisions:
+  - 0286ee7cc27d
   - 0669558ebc6b
   - 082d47606949
   - 14e7ae9331cb
@@ -6559,6 +6597,7 @@ tools:
   - 7f14d76f86ca
   - 83f146502c0f
   - 88c4aa435ded
+  - 8c388fd08c09
   - a185b079b095
   - aa8cc71438cf
   - b0af57c1a968
@@ -6575,6 +6614,7 @@ tools:
   - 0b58ef9e84b2
   - 107d3ba7024a
   - 181f5b9f139f
+  - 260a5a236b66
   - 3b8b5bde0bd9
   - 4aad5b48d5b2
   - 4cc4dbca2f02
@@ -6606,6 +6646,7 @@ tools:
   - 47145f568cd6
   - 600647840e87
   - 658ad6851b71
+  - 6cb6a5e71ccb
   - 73833ae53fbb
   - 80c9e5256a0d
   - 93a0cf4ea5fc
@@ -6644,6 +6685,7 @@ tools:
   - b8bdfac5a326
   - ba548f24669a
   - c62ddfa33ac5
+  - d62d58407443
   - ea64cc9a06e4
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fade
@@ -6670,6 +6712,7 @@ tools:
   - c257fa0a98a7
   - c6355a5b0483
   - d55ab4b13106
+  - d71d20c0ac09
   - e7be036f1616
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
@@ -6692,6 +6735,7 @@ tools:
   - 6cf8d753e93e
   - 6d529bf13e2e
   - 77d74f012ecc
+  - 87dd1c1c84d1
   - 92ef8f2da655
   - a96a307afb40
   - ae7c42d49717
@@ -6718,6 +6762,7 @@ tools:
   - a4bf56abff97
   - b69685ed772e
   - c5e1017b9232
+  - d653a76f16ee
   - d9dc61719379
   - dd45dc0b8c11
   - e0763df98352
@@ -6739,6 +6784,7 @@ tools:
   - 4ddef72f7f21
   - 5856faafe469
   - 599e492f8063
+  - 5f54f026fbe3
   - 6b987524ea27
   - 8522e7cc4fb4
   - a2e3319aca46
@@ -6764,6 +6810,7 @@ tools:
   owner: iuc
   revisions:
   - 1b62167f7ab2
+  - 1dc833581081
   - 2442e8b5e363
   - 2e5ab7526bd4
   - 31b7af192fd3
@@ -7116,6 +7163,7 @@ tools:
   - 78bbd17d0703
   - 7f781286b55f
   - a38934e303b9
+  - d1459d85ff18
   - d6e72da3ec35
   - f362150bef41
   tool_panel_section_label: Virology
@@ -7131,6 +7179,7 @@ tools:
   owner: iuc
   revisions:
   - 3d18f8c3c0f6
+  - 43aac8d29685
   - 75c279fa403a
   - 94df24c6bc00
   - 9eaadf03e0df
@@ -7142,6 +7191,7 @@ tools:
   revisions:
   - 2b95d5c04908
   - 2c47c138176e
+  - 4abcfbc2e5b6
   - 51afc8a64951
   - 7fe36019c073
   - c88553ec696e
@@ -7150,6 +7200,7 @@ tools:
 - name: ivar_trim
   owner: iuc
   revisions:
+  - 364f4ffec275
   - 5d6ed46cc101
   - 8858fa037a15
   - cb903c9dc33d
@@ -7161,6 +7212,7 @@ tools:
   owner: iuc
   revisions:
   - 12d66d0d05ac
+  - 252dfb042563
   - 49236b03e4fd
   - aa9de8f20668
   - c5c9f02b6167
@@ -7366,7 +7418,7 @@ tools:
   - 8d3aff8ba8ad
   - a252d8415583
   - ece21607a21d
-  tool_panel_section_label: FASTQ Quality Control
+  tool_panel_section_label: FASTA/FASTQ
 - name: jvarkit_wgscoverageplotter
   owner: iuc
   revisions:

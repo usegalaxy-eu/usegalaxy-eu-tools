@@ -13,11 +13,11 @@ tools:
     # quality_control
   - name: 'fastqc'
     owner: 'devteam'
-    tool_panel_section_label: 'FASTQ Quality Control'
+    tool_panel_section_label: "FASTA/FASTQ"
 
   - name: 'prinseq'
     owner: 'iuc'
-    tool_panel_section_label: 'FASTQ Quality Control'
+    tool_panel_section_label: "FASTA/FASTQ"
 
   - name: 'trim_galore'
     owner: 'bgruening'
@@ -29,7 +29,7 @@ tools:
 
   - name: 'multiqc'
     owner: 'iuc'
-    tool_panel_section_label: 'FASTQ Quality Control'
+    tool_panel_section_label: "FASTA/FASTQ"
 
     # clustering
   - name: 'cdhit'
