@@ -2204,6 +2204,7 @@ tools:
   owner: bgruening
   revisions:
   - 6505bd37670d
+  - f3c89da3af16
   tool_panel_section_label: Assembly
 - name: purge_dups
   owner: iuc
@@ -3741,6 +3742,66 @@ tools:
   - 96d2000977ab
   - a1c4d50c97e0
   - eb22990a2be9
+  tool_panel_section_label: Variant Calling
+- name: bcftools_mpileup
+  owner: iuc
+  revisions:
+  - 0dbff46d5a1b
+  tool_panel_section_label: Variant Calling
+- name: bcftools_view
+  owner: iuc
+  revisions:
+  - 98d5499ead46
+  tool_panel_section_label: Variant Calling
+- name: bcftools_stats
+  owner: iuc
+  revisions:
+  - b17394940c7a
+  tool_panel_section_label: Variant Calling
+- name: bcftools_roh
+  owner: iuc
+  revisions:
+  - b76adb2f1c51
+  tool_panel_section_label: Variant Calling
+- name: bcftools_reheader
+  owner: iuc
+  revisions:
+  - 9ef52d95114b
+  tool_panel_section_label: Variant Calling
+- name: bcftools_query
+  owner: iuc
+  revisions:
+  - c9c5718edc19
+  tool_panel_section_label: Variant Calling
+- name: bcftools_isec
+  owner: iuc
+  revisions:
+  - 02f349bdbf96
+  tool_panel_section_label: Variant Calling
+- name: bcftools_gtcheck
+  owner: iuc
+  revisions:
+  - 672b6c02fbc7
+  tool_panel_section_label: Variant Calling
+- name: bcftools_filter
+  owner: iuc
+  revisions:
+  - 6ca7c55a27e8
+  tool_panel_section_label: Variant Calling
+- name: bcftools_convert_to_vcf
+  owner: iuc
+  revisions:
+  - fec517907949
+  tool_panel_section_label: Variant Calling
+- name: bcftools_convert_from_vcf
+  owner: iuc
+  revisions:
+  - b8e9da766b0f
+  tool_panel_section_label: Variant Calling
+- name: bcftools_annotate
+  owner: iuc
+  revisions:
+  - 403553ae19f6
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_color_chrs
   owner: iuc
