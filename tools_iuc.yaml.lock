@@ -300,6 +300,7 @@ tools:
   - 4cd9f0008d9c
   - 8855361fcfc5
   - a8aa294401be
+  - a9caad671439
   - cdf4443d5625
   - cfe1e6c28d95
   - f0de368eabca
@@ -602,6 +603,11 @@ tools:
   - 66b35562554d
   - f76d842e960f
   tool_panel_section_label: Variant Calling
+- name: beagle
+  owner: iuc
+  revisions:
+  - 553b27c30eb8
+  tool_panel_section_label: Variant Calling
 - name: slamdunk
   owner: iuc
   revisions:
@@ -883,6 +889,7 @@ tools:
 - name: intervene
   owner: iuc
   revisions:
+  - 08780101bc36
   - f5fa293605ca
   tool_panel_section_label: Graph/Display Data
 - name: charts
@@ -1094,6 +1101,7 @@ tools:
   owner: iuc
   revisions:
   - 02befcb391f5
+  - 654b3a274ed5
   - 6b865dde1baa
   tool_panel_section_label: Text Manipulation
 - name: add_value
@@ -1241,6 +1249,7 @@ tools:
 - name: bioext_bam2msa
   owner: iuc
   revisions:
+  - 0a4ad829d87a
   - f5792425ea50
   tool_panel_section_label: Convert Formats
 - name: crossmap_bed
@@ -1381,6 +1390,7 @@ tools:
   owner: iuc
   revisions:
   - 16f1f3e2de42
+  - 56022eb50bbd
   - 9c620a950d3a
   - cd0874854f51
   tool_panel_section_label: FASTA/FASTQ
@@ -2357,6 +2367,7 @@ tools:
 - name: bioext_bealign
   owner: iuc
   revisions:
+  - d8b6f0adaa79
   - f9b72a376ec9
   tool_panel_section_label: Mapping
 - name: kma
@@ -3095,6 +3106,7 @@ tools:
   owner: iuc
   revisions:
   - 02d81b994ef5
+  - adc0645b945c
   tool_panel_section_label: Annotation
 - name: tb_variant_filter
   owner: iuc
@@ -3419,6 +3431,7 @@ tools:
   owner: devteam
   revisions:
   - 1b6538ec8b56
+  - 63dd26468588
   - 8992d258e42f
   - ce22ceec214a
   - ce385837c160
@@ -5096,6 +5109,7 @@ tools:
   - b467a89be0c6
   - b5d8e5475247
   - ecc913a7334b
+  - f29602ae449e
   tool_panel_section_label: Annotation
 - name: fasttree
   owner: iuc
@@ -6523,6 +6537,7 @@ tools:
   - 0ec813ad2910
   - 42126b414951
   - 42a174224817
+  - 437e28791761
   - 514a786baaa9
   - b6abccb1f25b
   tool_panel_section_label: Phylogenetics
@@ -6560,6 +6575,7 @@ tools:
   owner: iuc
   revisions:
   - 37887c2733a3
+  - bd90215b7d15
   - d7c01f81739b
   tool_panel_section_label: Phylogenetics
 - name: hyphy_conv
@@ -6567,6 +6583,7 @@ tools:
   revisions:
   - 1fdaf5c6a59f
   - 38755f5207a5
+  - 6569d04885e5
   - c1d24ff838c8
   - f6e7b5955712
   tool_panel_section_label: Phylogenetics
@@ -6574,6 +6591,7 @@ tools:
   owner: iuc
   revisions:
   - 0cd45491b297
+  - 68cd2d8e3840
   - a88848771d2d
   - ad5901c44e66
   - f7810488bd92
@@ -6583,6 +6601,7 @@ tools:
   revisions:
   - 4bf743518e41
   - 4e3212e05a8f
+  - 50554f806e16
   - 79dc560d8ea3
   - 7b214c69e387
   tool_panel_section_label: Phylogenetics
@@ -6591,6 +6610,7 @@ tools:
   revisions:
   - 0990351232c6
   - 4d712e32039e
+  - 643be54bef90
   - 710fdaa85384
   - fb833dd994f2
   tool_panel_section_label: Phylogenetics
@@ -6610,6 +6630,7 @@ tools:
   - a61b2b6c7089
   - a8f760e7c322
   - acd9dfe3dec0
+  - b3b775a4ae1f
   - bdcfaa985c16
   - d8092fd69175
   - dc774be95f6c
@@ -6639,6 +6660,7 @@ tools:
   - b678fe748dc5
   - c92d5ec5d8d7
   - cde38657e82c
+  - cfbb255acb43
   - cff70490dbec
   - d6389faa75ff
   - eb26b02af55a
@@ -6652,6 +6674,7 @@ tools:
   - 082d47606949
   - 14e7ae9331cb
   - 1647c9f95dc7
+  - 194108d6da22
   - 1df765cc6bcb
   - 26ad9a6b1293
   - 31e1a5940620
@@ -6678,6 +6701,7 @@ tools:
   revisions:
   - 02b8758214b0
   - 03f1b4c09330
+  - 053b20029378
   - 1942d02039c2
   - 1fb98a84e86d
   - 3b96e92e8ec3
@@ -6707,6 +6731,7 @@ tools:
   - 0122b28acc5f
   - 0b58ef9e84b2
   - 107d3ba7024a
+  - '113854308427'
   - 181f5b9f139f
   - 260a5a236b66
   - 3b8b5bde0bd9
@@ -6749,6 +6774,7 @@ tools:
   - 9d2714133deb
   - a6da5885846e
   - af40a8b95f8d
+  - b2096be81d82
   - bece0bad8e89
   - c8f912a7a967
   - cd41e7a4d35f
@@ -6784,6 +6810,7 @@ tools:
   - c62ddfa33ac5
   - d62d58407443
   - ea64cc9a06e4
+  - ed0f10a1db94
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fade
   owner: iuc
@@ -6812,6 +6839,7 @@ tools:
   - d55ab4b13106
   - d71d20c0ac09
   - e7be036f1616
+  - fccaa7ba05fd
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
   owner: iuc
@@ -6834,6 +6862,7 @@ tools:
   - 6cf8d753e93e
   - 6d529bf13e2e
   - 77d74f012ecc
+  - 86e10267b4cc
   - 87dd1c1c84d1
   - 92ef8f2da655
   - a96a307afb40
@@ -6862,6 +6891,7 @@ tools:
   - a4bf56abff97
   - b69685ed772e
   - c5e1017b9232
+  - d0f087aae1a3
   - d653a76f16ee
   - d9dc61719379
   - dd45dc0b8c11
@@ -6887,6 +6917,7 @@ tools:
   - 5f54f026fbe3
   - 67d3fc9ae1c3
   - 6b987524ea27
+  - 82c77ba28d70
   - 8522e7cc4fb4
   - a2e3319aca46
   - ae4e61b62996
@@ -6910,6 +6941,7 @@ tools:
 - name: hyphy_fel
   owner: iuc
   revisions:
+  - 09afc9104fc8
   - 1b62167f7ab2
   - 1dc833581081
   - 2442e8b5e363
@@ -7519,6 +7551,7 @@ tools:
   - 819b8c1657d5
   - 8d3aff8ba8ad
   - a252d8415583
+  - ecb38e2798cd
   - ece21607a21d
   tool_panel_section_label: FASTA/FASTQ
 - name: jvarkit_wgscoverageplotter
