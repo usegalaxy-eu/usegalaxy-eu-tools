@@ -15,6 +15,7 @@ tools:
 - name: busco
   owner: iuc
   revisions:
+  - 2dd755c1c6ff
   - 602fb8e63aa7
   - cf13a1e03e5b
   tool_panel_section_label: Annotation
@@ -23,6 +24,7 @@ tools:
   revisions:
   - 382518f24d6d
   - 57251c760cab
+  - 9e2df763086c
   tool_panel_section_label: Send Data
 - name: pycoqc
   owner: iuc
@@ -406,11 +408,13 @@ tools:
   owner: iuc
   revisions:
   - 21f2361c32c9
+  - 80adce82354c
   tool_panel_section_label: Variant Calling
 - name: lumpy_sv
   owner: iuc
   revisions:
   - 477a07f387e0
+  - 88b35d91a662
   tool_panel_section_label: Variant Calling
 - name: delly_cnv
   owner: iuc
@@ -611,6 +615,7 @@ tools:
 - name: slamdunk
   owner: iuc
   revisions:
+  - 141f65f7c7c8
   - 24657d5edede
   - 3fd7458bc861
   - 8b62f89924a7
@@ -1239,12 +1244,18 @@ tools:
   - 5bc2dacbe729
   - 7a2a604ae9c8
   tool_panel_section_label: Join, Subtract and Group
+- name: crossmap_region
+  owner: iuc
+  revisions:
+  - 8635b6b8a8f2
+  tool_panel_section_label: Convert Formats
 - name: crossmap_bam
   owner: iuc
   revisions:
   - 0f0cf480051b
   - 5051467dc96a
   - 60ca8d013263
+  - e5340c09200a
   tool_panel_section_label: Convert Formats
 - name: bioext_bam2msa
   owner: iuc
@@ -1258,17 +1269,20 @@ tools:
   - 91efc13d3ec1
   - cdbdce00f5f6
   - e6c68525e9ee
+  - f4a70882a71b
   tool_panel_section_label: Convert Formats
 - name: crossmap_gff
   owner: iuc
   revisions:
   - 09c6a9e067f9
+  - 4d97434ea0fb
   - 88d180fb6d67
   - e80720e27001
   tool_panel_section_label: Convert Formats
 - name: crossmap_vcf
   owner: iuc
   revisions:
+  - 71730c177cdf
   - 97979c3d179f
   - 9d61d74f03a4
   - b21851ddcc79
@@ -1276,6 +1290,7 @@ tools:
 - name: crossmap_wig
   owner: iuc
   revisions:
+  - 282a658c6569
   - 3cb69f2ecea2
   - 5f893ed3c5ed
   - e8d84292e510
@@ -2389,6 +2404,7 @@ tools:
   - 17062a0decb7
   - 749c918495f7
   - a54de7e658f7
+  - a6d65b0c67af
   - a9d4f71dbfb0
   tool_panel_section_label: Mapping
 - name: rgrnastar
@@ -2505,6 +2521,7 @@ tools:
 - name: winnowmap
   owner: iuc
   revisions:
+  - 35ea4a8b1ea6
   - 44231ef8167a
   tool_panel_section_label: Mapping
 - name: migmap
@@ -2615,6 +2632,7 @@ tools:
   - a37612abf7f9
   - af814359d244
   - c7bd0cc53524
+  - ce44c6f2ba38
   - de2c5e5a206c
   - ea04b737afa0
   - f3a5f075498f
@@ -2884,6 +2902,7 @@ tools:
   - 29bdbc353f20
   - 95219305823a
   - a6ea26c1f225
+  - b4e6819b25ef
   - f7094efef903
   tool_panel_section_label: Epigenetics
 - name: vcf_filter
@@ -2957,6 +2976,7 @@ tools:
   - 82f2b6f20fa2
   - 9bccc8404a3c
   - c9a8ef2aa380
+  - d220115f882b
   - e32aac2299fb
   - fa016f1eea1a
   - feb7e635c6af
