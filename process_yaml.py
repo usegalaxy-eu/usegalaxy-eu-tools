@@ -195,23 +195,24 @@ def update_revision_from_base(base_dict, updated_dict):
     updated_tools_list = []
     # load base tools list in dict
     tools_list = []
-    tools_list_eu = []  
-    for i in base_dict['tools']:
-        tools_list.append({j:i[j] for j in i if j != 'revisions'})
-    
-    for i in updated_dict['tools']:
-        tools_list_eu.append({j:i[j] for j in i if j != 'revisions'})
+    tools_list_updates = []
 
-    
+    # copy base and updated tools entries (except the revisions list of each)
+    for tool_entry in base_dict['tools']:
+        tools_list.append({key_name: tool_entry[key_name] for key_name in tool_entry if key_name != 'revisions'})
+
+    for updated_tool_entry in updated_dict['tools']:
+        tools_list_updates.append({key_name: updated_tool_entry[key_name] for key_name in updated_tool_entry if key_name != 'revisions'})
+    #
     for tool, rev  in zip(tools_list, base_dict['tools']):
         # print(i)
         # print(j)
-        if tool in tools_list_eu:
-            i = tools_list_eu.index(tool)
+        if tool in tools_list_updates:
+            tool_index = tools_list_updates.index(tool)
             # print(updated_dict['tools'][i]['revisions'], rev['revisions'])
-            if updated_dict['tools'][i]['revisions'][0] not in rev['revisions']:
+            if updated_dict['tools'][tool_index]['revisions'][0] not in rev['revisions']:
                 # print(i)
-                rev['revisions'].insert(0, updated_dict['tools'][i]['revisions'][0])
+                rev['revisions'].insert(0, updated_dict['tools'][tool_index]['revisions'][0])
         updated_tools_list.append(rev)
 
     ret_dict = {
