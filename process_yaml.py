@@ -152,6 +152,7 @@ def update_from_base(base_dict, updated_dict):
         else:
             dict_key = tool['name'] + '_' + tool['tool_panel_section_id']
         if dict_key in base_tools.keys():
+            print(base_tools[dict_key],tool['revisions'])
             new_entry['revisions'] = update_revisions(dict_key, base_tools[dict_key],
                                                       tool['revisions'])
         else:
@@ -185,44 +186,89 @@ def update_from_base(base_dict, updated_dict):
     return ret_dict
 
 
-argparser = argparse.ArgumentParser(description='Arguments to parse.')
-argparser.add_argument('--update', action='store_true', help='Update from a base file')
-argparser.add_argument('--add_sections', action='store_true', help='Add/update sections labels when possible using a base (reference) file')
-argparser.add_argument('--lint', action='store_true', help='Lint the section labels/ids')
-argparser.add_argument('--tools_yaml', '-y', dest='tools_yaml', type=str, required=True,
-                       help='Required file with full/updated set of tools')
-argparser.add_argument('--base_file', '-b', dest='base_file_path', type=str,
-                       help='File to use as base reference when running with update True')
-argparser.add_argument('--out_file', '-o', type=str,
-                       help='File to use as base reference when running with update True')
-args = argparser.parse_args()
+def update_revision_from_base(base_dict, updated_dict):
+    """
+    Takes a dict with a base list of tools and revisions and an updated one.
+    Prints a list with the tools and revisions from the base lists plus:
+        - the latest revision of the tools included in the base
+    """
+    updated_tools_list = []
+    # load base tools list in dict
+    tools_list = []
+    tools_list_eu = []  
+    for i in base_dict['tools']:
+        tools_list.append({j:i[j] for j in i if j != 'revisions'})
+    
+    for i in updated_dict['tools']:
+        tools_list_eu.append({j:i[j] for j in i if j != 'revisions'})
+
+    
+    for tool, rev  in zip(tools_list, base_dict['tools']):
+        # print(i)
+        # print(j)
+        if tool in tools_list_eu:
+            i = tools_list_eu.index(tool)
+            # print(updated_dict['tools'][i]['revisions'], rev['revisions'])
+            if updated_dict['tools'][i]['revisions'][0] not in rev['revisions']:
+                # print(i)
+                rev['revisions'].insert(0, updated_dict['tools'][i]['revisions'][0])
+        updated_tools_list.append(rev)
+
+    ret_dict = {
+        'install_repository_dependencies': True,
+        'install_resolver_dependencies': True,
+        'install_tool_dependencies': False,
+        'tools': updated_tools_list
+    }
+    return ret_dict
 
 
-# Common use cases:
-#   Merge contents of a tools yaml file with another:
-#   process_yaml.py --update --base_file base.yaml.lock --tools_yaml new.yaml.lock -o merge_updated.yaml.lock
+
+if __name__ == '__main__':
+
+    argparser = argparse.ArgumentParser(description='Arguments to parse.')
+    argparser.add_argument('--update', action='store_true', help='Update from a base file')
+    argparser.add_argument('--revision_only', action='store_true', help='Only update revisions from a base file')
+    argparser.add_argument('--add_sections', action='store_true', help='Add/update sections labels when possible using a base (reference) file')
+    argparser.add_argument('--lint', action='store_true', help='Lint the section labels/ids')
+    argparser.add_argument('--tools_yaml', '-y', dest='tools_yaml', type=str, required=True,
+                        help='Required file with full/updated set of tools')
+    argparser.add_argument('--base_file', '-b', dest='base_file_path', type=str,
+                        help='File to use as base reference when running with update True')
+    argparser.add_argument('--out_file', '-o', type=str,
+                        help='File to use as base reference when running with update True')
+    args = argparser.parse_args()
+
+
+    # Common use cases:
+    #   Merge contents of a tools yaml file with another:
+    #   process_yaml.py --update --base_file base.yaml.lock --tools_yaml new.yaml.lock -o merge_updated.yaml.lock
 
 
 
-# Load updated/full file contents
-tools_file = open(args.tools_yaml)
-tools_yaml = yaml.load(tools_file)
+    # Load updated/full file contents
+    tools_file = open(args.tools_yaml)
+    tools_yaml = yaml.load(tools_file)
 
-if args.update:
-    base_file = open(args.base_file_path)
-    base_yaml = yaml.load(base_file)
-    parsed_dict = update_from_base(base_yaml, tools_yaml)
-else:
-    if args.lint:
-        lint_file(tools_yaml)
+    if args.update:
+        base_file = open(args.base_file_path)
+        base_yaml = yaml.load(base_file)
+        parsed_dict = update_from_base(base_yaml, tools_yaml)
+    elif args.revision_only:
+        base_file = open(args.base_file_path)
+        base_yaml = yaml.load(base_file)
+        parsed_dict = update_revision_from_base(base_yaml, tools_yaml)
     else:
-        if args.add_sections:
-            base_file = open(args.base_file_path)
-            base_yaml = yaml.load(base_file)
-            parsed_dict = add_sections(base_yaml, tools_yaml)
+        if args.lint:
+            lint_file(tools_yaml)
         else:
-            parsed_dict = get_latest_only(tools_yaml)
+            if args.add_sections:
+                base_file = open(args.base_file_path)
+                base_yaml = yaml.load(base_file)
+                parsed_dict = add_sections(base_yaml, tools_yaml)
+            else:
+                parsed_dict = get_latest_only(tools_yaml)
 
-if not args.lint:
-    with open(args.out_file, 'w') as outfile:
-        yaml.dump(parsed_dict, outfile, default_flow_style=False)
+    if not args.lint:
+        with open(args.out_file, 'w') as outfile:
+            yaml.dump(parsed_dict, outfile, default_flow_style=False)
