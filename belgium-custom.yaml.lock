@@ -38,7 +38,7 @@ tools:
 - name: data_manager_fetch_tx2gene
   owner: ieguinoa
   revisions:
-  - bacd91d8b05a
+  - c380b7da5b65
   tool_panel_section_label: None
 - name: data_manager_salmon_index_builder
   owner: ieguinoa
@@ -78,7 +78,7 @@ tools:
   owner: rnateam
   revisions:
   - eb35257d2e29
-  tool_panel_section_label: Metagenomics
+  tool_panel_section_label: Metagenomic Analysis
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: data_manager_sortmerna_database_downloader
   owner: rnateam
@@ -152,10 +152,27 @@ tools:
   revisions:
   - 1aaea8924858
   tool_panel_section_label: Genome editing
+- name: crispresso2
+  owner: ieguinoa
+  revisions:
+   - a378f3ee0137
+  tool_panel_section_label: Genome editing
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_humann2_database_downloader
   owner: iuc
   revisions:
   - ff9cf22838d4
   tool_shed_url: toolshed.g2.bx.psu.edu
   tool_panel_section_label: None
-
+- name: mimodd_snpeff
+  owner: wolma
+  revisions:
+  - b6da1066b2fd
+  tool_shed_url: toolshed.g2.bx.psu.edu
+  tool_panel_section_label: MiModD
+- name: lotus2
+  owner: earlhaminst
+  revisions:
+  - 7f33525b85d0
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
