@@ -2,6 +2,16 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: instrain_profile
+  owner: iuc
+  revisions:
+  - 1f3730540302
+  tool_panel_section_label: Metagenomic Analysis
+- name: instrain_compare
+  owner: iuc
+  revisions:
+  - dff92aac9f75
+  tool_panel_section_label: Metagenomic Analysis
 - name: rgcca
   owner: iuc
   revisions:
@@ -1632,6 +1642,7 @@ tools:
   revisions:
   - 05ee0a74faef
   - 288db50d1fb9
+  - 524d31add34a
   - 973a28be3b7f
   - d1c340a5664b
   - f97743d52b87
@@ -1815,6 +1826,7 @@ tools:
   - 31fa26c0692b
   - 35ac9de60bec
   - 51c2360aa807
+  - 5ae3496f9ca3
   - 9f7a227436d6
   - d5d68989caec
   - d63739222f68
@@ -3137,6 +3149,7 @@ tools:
   - 4272bd430a01
   - 49b819f88c2b
   - 5182e1a99313
+  - ba6f87115e13
   - c2656b729ee9
   - e1a9d6fd258d
   tool_panel_section_label: Annotation
@@ -6589,6 +6602,7 @@ tools:
   owner: iuc
   revisions:
   - 0ec813ad2910
+  - 3a656a4a43ed
   - 42126b414951
   - 42a174224817
   - 437e28791761

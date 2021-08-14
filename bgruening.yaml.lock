@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: mafft
+  owner: rnateam
+  revisions:
+  - bcfce5aac49c
+  tool_panel_section_label: Multiple Alignments
 - name: plotly_ml_performance_plots
   owner: bgruening
   revisions:
