@@ -20,6 +20,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: funannotate_clean
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: funannotate_sort
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: funannotate_predict
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: busco
     owner: iuc
     tool_panel_section_label: Annotation
@@ -3605,6 +3617,9 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: data_manager_humann_database_downloader
+    owner: iuc
+
+  - name: data_manager_funannotate
     owner: iuc
 
   - name: fastqe
