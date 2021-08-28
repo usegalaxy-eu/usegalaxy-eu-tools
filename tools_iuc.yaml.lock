@@ -23,6 +23,26 @@ tools:
   revisions:
   - 42a1a5750539
   tool_panel_section_label: Metagenomic Analysis
+- name: funannotate_clean
+  owner: iuc
+  revisions:
+  - b5ec3983deda
+  tool_panel_section_label: Annotation
+- name: funannotate_sort
+  owner: iuc
+  revisions:
+  - 998b719a94cb
+  tool_panel_section_label: Annotation
+- name: funannotate_predict
+  owner: iuc
+  revisions:
+  - 40b87aef5241
+  tool_panel_section_label: Annotation
+- name: repeatmodeler
+  owner: csbl
+  revisions:
+  - dda44fd49bcd
+  tool_panel_section_label: Annotation
 - name: busco
   owner: iuc
   revisions:
@@ -560,10 +580,16 @@ tools:
   - ea1833858055
   - efca385ce679
   tool_panel_section_label: Nanopore
+- name: artic_guppyplex
+  owner: iuc
+  revisions:
+  - 7a82006f7c05
+  tool_panel_section_label: Variant Calling
 - name: artic_minion
   owner: iuc
   revisions:
   - 376a706dda11
+  - 7a7d7f30ddfc
   - 94020e19b46c
   - a346730e5552
   - c411e2205442
@@ -1261,6 +1287,11 @@ tools:
   - 5bc2dacbe729
   - 7a2a604ae9c8
   tool_panel_section_label: Join, Subtract and Group
+- name: samtools_bam_to_cram
+  owner: iuc
+  revisions:
+  - 3d07b8a6dd8c
+  tool_panel_section_label: Convert Formats
 - name: crossmap_region
   owner: iuc
   revisions:
@@ -1821,6 +1852,7 @@ tools:
 - name: bellerophon
   owner: iuc
   revisions:
+  - 25ca5d73aedf
   - eca6296a091a
   tool_panel_section_label: Assembly
 - name: meryl
@@ -3097,6 +3129,7 @@ tools:
 - name: repeat_masker
   owner: bgruening
   revisions:
+  - 39b40a9a6296
   - 438f65cb1d14
   - 72aade318318
   - ade773848c3d
@@ -3157,6 +3190,7 @@ tools:
   - 5182e1a99313
   - ba6f87115e13
   - c2656b729ee9
+  - c6f7442355e9
   - e1a9d6fd258d
   tool_panel_section_label: Annotation
 - name: tbvcfreport
@@ -6603,6 +6637,7 @@ tools:
   - 0f20ed06ed6c
   - 3b75d5285aff
   - 6cd62b6d2b5c
+  - b74b9a7b3e3b
   tool_panel_section_label: Phylogenetics
 - name: pangolin
   owner: iuc
@@ -7221,6 +7256,7 @@ tools:
 - name: moabs
   owner: iuc
   revisions:
+  - 214874e24cd6
   - 26d7ec4af119
   - 8c8cc81b34cd
   tool_panel_section_label: Epigenetics
@@ -7630,6 +7666,10 @@ tools:
   revisions:
   - 60eb2512c5a0
   - 87febc68b45b
+- name: data_manager_funannotate
+  owner: iuc
+  revisions:
+  - ef7f9e2f32f2
 - name: fastqe
   owner: iuc
   revisions:
