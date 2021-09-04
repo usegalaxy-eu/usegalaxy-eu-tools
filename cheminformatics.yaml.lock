@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: align_it
+  owner: bgruening
+  revisions:
+  - 10c0df29e6d1
+  tool_panel_section_label: ChemicalToolBox
 - name: ctb_im_xcos
   owner: bgruening
   revisions:
@@ -799,6 +804,7 @@ tools:
   - 668c60aa4799
   - 73c2c9774c2d
   - 761762031eee
+  - 8f766d9652a2
   - 908880455b2d
   - ad35eaa204ea
   tool_panel_section_label: ChemicalToolBox
