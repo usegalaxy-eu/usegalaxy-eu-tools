@@ -291,6 +291,7 @@ tools:
   - 3e38c9b3214f
   - 4f7a5ccd2ae9
   - 6bb3cd018203
+  - a68aa6c1204a
   - b28e0cfa7ba1
   - b8348686a0b9
   - ce3c7f062223
@@ -400,6 +401,11 @@ tools:
   - b818b23df1e0
   - c971db6f0fe5
   tool_panel_section_label: RNA Analysis
+- name: deepvariant
+  owner: iuc
+  revisions:
+  - 7608209110d3
+  tool_panel_section_label: Variant Calling
 - name: get_hrun
   owner: iuc
   revisions:
@@ -1679,6 +1685,7 @@ tools:
   - 288db50d1fb9
   - 524d31add34a
   - 973a28be3b7f
+  - b8476e82ac20
   - d1c340a5664b
   - f58a10e2e46d
   - f97743d52b87
@@ -2481,6 +2488,7 @@ tools:
   revisions:
   - 0a563fd2f22e
   - 318b2a9d54dd
+  - 4074fc1940e2
   - 41929aa1e7f3
   - 44959aa06aeb
   - 5ec75f5dae3c
@@ -2505,6 +2513,7 @@ tools:
   - c23da6257d6a
   - e403d27e8f24
   - ec9cbd6b9a49
+  - eec9494fdafa
   tool_panel_section_label: Mapping
 - name: star_fusion
   owner: iuc
@@ -2724,6 +2733,7 @@ tools:
   revisions:
   - 171b827eadf2
   - 26d5493b20b6
+  - 48636f857c4b
   - 5b60313a6ce7
   - 606b7748965d
   - c9cfec002f71
@@ -2736,6 +2746,7 @@ tools:
   owner: iuc
   revisions:
   - 15f60c2e2d78
+  - 18a069ea4b96
   - 29472bde8854
   - 3abd51c4b151
   - 64094e19077d
@@ -2748,6 +2759,7 @@ tools:
   revisions:
   - 478f36effca1
   - 56162e446004
+  - 6c20d62180af
   - 6d6b72d14170
   - 893655fa55f9
   - 983552d5822d
@@ -2761,6 +2773,7 @@ tools:
   - 08326e2e82f1
   - 0f445c315a08
   - 13ab393ba794
+  - 2e21a7c28b38
   - 59fff1388bc2
   - 77fc547df6ff
   - 81a4697677e7
@@ -2772,6 +2785,7 @@ tools:
   revisions:
   - 03ca5ddc37a9
   - 1e8a2c87461a
+  - 34840e9c79b0
   - 34a018cbee9c
   - 3cdcd5753218
   - 62b05e565a45
@@ -2783,6 +2797,7 @@ tools:
   owner: iuc
   revisions:
   - 1007cdb58d91
+  - 17101429bf0d
   - 42c5172815f7
   - 42f93482524f
   - 6821f5ea01d8
@@ -2798,6 +2813,7 @@ tools:
   - 1563554bb3f0
   - 1d689e4e1caf
   - 2af5fd8210c5
+  - 3bff7c3cf63c
   - 48537273a30b
   - 55cf05b65ad5
   - bbbb39ad9a7e
@@ -3196,6 +3212,7 @@ tools:
   - 4272bd430a01
   - 49b819f88c2b
   - 5182e1a99313
+  - 809dfc93d593
   - ba6f87115e13
   - c2656b729ee9
   - c6f7442355e9
@@ -6628,6 +6645,21 @@ tools:
   - c2ef298da409
   - f9bf6a8d8547
   tool_panel_section_label: Annotation
+- name: homer_annotatepeaks
+  owner: iuc
+  revisions:
+  - adab852c8216
+  tool_panel_section_label: Annotation
+- name: homer_findmotifsgenome
+  owner: iuc
+  revisions:
+  - ec974e69e0b5
+  tool_panel_section_label: Annotation
+- name: homer_gtf_to_annotations
+  owner: iuc
+  revisions:
+  - 8ebb6520eef4
+  tool_panel_section_label: Annotation
 - name: biom_convert
   owner: iuc
   revisions:
@@ -7123,16 +7155,19 @@ tools:
   owner: iuc
   revisions:
   - 2d455a7e8a3d
+  - b834074a9aff
   - fd808de478b1
   tool_panel_section_label: Single-cell
 - name: scater_plot_tsne
   owner: iuc
   revisions:
+  - 2b09ca1c5e41
   - a30f4bfe8f01
   tool_panel_section_label: Single-cell
 - name: scater_filter
   owner: iuc
   revisions:
+  - 7a365ec81b52
   - b7ea9f09c02f
   - e6ca62ac65c6
   tool_panel_section_label: Single-cell
@@ -7147,6 +7182,7 @@ tools:
   revisions:
   - 2e41b35b5bdd
   - 4887c4c69847
+  - 81e5bdff4853
   tool_panel_section_label: Single-cell
 - name: scater_plot_exprs_freq
   owner: iuc
@@ -7158,6 +7194,7 @@ tools:
   owner: iuc
   revisions:
   - 46fc6751d746
+  - 9e5c0bb18d08
   - bea3359ba852
   tool_panel_section_label: Single-cell
 - name: scanpy_cluster_reduce_dimension
@@ -7751,4 +7788,14 @@ tools:
   owner: iuc
   revisions:
   - efa2be6db310
+  tool_panel_section_label: Annotation
+- name: hamronize_tool
+  owner: iuc
+  revisions:
+  - d2590ecc4189
+  tool_panel_section_label: Annotation
+- name: hamronize_summarize
+  owner: iuc
+  revisions:
+  - ef76d74a7171
   tool_panel_section_label: Annotation
