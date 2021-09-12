@@ -8,6 +8,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: fastq_info
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: instrain_compare
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -163,6 +167,20 @@ tools:
   - name: anndata_manipulate
     owner: iuc
     tool_panel_section_label: Single-cell
+
+
+  - name: music_inspect_eset
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: music_deconvolution
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: music_construct_eset
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
 
   - name: chromeister
     owner: iuc
@@ -806,7 +824,6 @@ tools:
 
   - name: fastqtofasta
     owner: devteam
-
     tool_panel_section_label: FASTA/FASTQ
 
   - name: fastq_to_fasta
