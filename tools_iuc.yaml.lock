@@ -543,11 +543,13 @@ tools:
   - a95960a63220
   - db25ec99c3ea
   - eb1f4ba66dc6
+  - fa11aa8103b2
   - fbf007713188
   tool_panel_section_label: Nanopore
 - name: medaka_consensus_pipeline
   owner: iuc
   revisions:
+  - 0e9e7fcdd543
   - 1ca4ce7241fd
   - 2c72b8c09a70
   - 35666d44fe7a
@@ -562,6 +564,7 @@ tools:
 - name: medaka_variant
   owner: iuc
   revisions:
+  - 0f5f4a208660
   - 19f3b583a9b3
   - 2308bc523659
   - 3cde72a6e37c
@@ -579,6 +582,7 @@ tools:
   - 1040a307be0c
   - 148f32860445
   - 336b3def9b2b
+  - 597407d61386
   - 5c959a2dde5f
   - 711d4deb7bdf
   - 7623e5888be9
@@ -1868,6 +1872,7 @@ tools:
   owner: iuc
   revisions:
   - 33b7d8481a76
+  - f8564b2d7f63
   tool_panel_section_label: Assembly
 - name: meryl
   owner: iuc
@@ -1892,6 +1897,7 @@ tools:
   - 02831bf9e95f
   - 7c2e9bc2123b
   - 8fef980d48b5
+  - d256a51a656b
   tool_panel_section_label: Assembly
 - name: bionano_scaffold
   owner: bgruening
@@ -2120,6 +2126,7 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
+  - 3d0c7bdf12f5
   - 484e86282f4b
   - 9da02be9c6cc
   - ddf5c37952ac
@@ -2347,6 +2354,7 @@ tools:
 - name: abyss
   owner: iuc
   revisions:
+  - 0e93176640ac
   - 2b89471cca20
   - 3ce74eab308b
   - f4fb67b97a63
@@ -2391,6 +2399,7 @@ tools:
   revisions:
   - 03fd468e158f
   - 0d30fed9628b
+  - 16e0eb91072f
   - 9e58ff014088
   - a8a278849c18
   tool_panel_section_label: Assembly
@@ -3439,6 +3448,7 @@ tools:
   revisions:
   - 189ae8d7e08e
   - 7f7a074326ac
+  - ca1fb032116d
   - d90d8d79bca9
   tool_panel_section_label: Variant Calling
 - name: lofreq_call
@@ -3505,6 +3515,7 @@ tools:
   - 09d6806c609e
   - 2b3e65a4252f
   - 2e497a770bca
+  - 5fab4f81391d
   - 9e8280e19338
   - bf8c1526871b
   tool_panel_section_label: Variant Calling
@@ -4609,6 +4620,7 @@ tools:
   - 8db56d2f8b72
   - 933220bbc2ae
   - b557acca0b56
+  - e654095ab143
   tool_panel_section_label: FASTA/FASTQ
 - name: multiqc
   owner: iuc
@@ -5135,6 +5147,7 @@ tools:
   - 01a241476407
   - 05c394313b1c
   - 2ecf5a570907
+  - 3ca2d2a9068c
   - ce02f513e598
   - e93c1a0678cd
   tool_panel_section_label: Assembly
@@ -5168,6 +5181,7 @@ tools:
   - 80f079961dc9
   - 884dc0264950
   - 9006e5836729
+  - b7829778729f
   - b8c00ce5dfa0
   - b8d633fbf5f5
   tool_panel_section_label: Assembly
@@ -5218,6 +5232,7 @@ tools:
   - 58124285e462
   - 94fe43e75ddc
   - b2860df42e16
+  - d8b1027d6ce0
   - ebe4463404b4
   tool_panel_section_label: Graph/Display Data
 - name: porechop
@@ -5252,6 +5267,11 @@ tools:
   - e005e659ae21
   - ef46a404db96
   tool_panel_section_label: Genome Diversity
+- name: sonneityping
+  owner: iuc
+  revisions:
+  - db4fe7172114
+  tool_panel_section_label: Genome editing
 - name: mothur_create_database
   owner: iuc
   revisions:
@@ -7439,17 +7459,20 @@ tools:
 - name: proteinortho
   owner: iuc
   revisions:
+  - 26abc7846e6f
   - 4850f0d15f01
   tool_panel_section_label: Proteomics
 - name: proteinortho_grab_proteins
   owner: iuc
   revisions:
+  - 85ffb2cc6b64
   - d348c3a151d9
   tool_panel_section_label: Proteomics
 - name: proteinortho_summary
   owner: iuc
   revisions:
   - 2e0e9c418a85
+  - c3f58c2eee1e
   tool_panel_section_label: Proteomics
 - name: ivar_consensus
   owner: iuc
@@ -7798,4 +7821,9 @@ tools:
   owner: iuc
   revisions:
   - ef76d74a7171
+  tool_panel_section_label: Annotation
+- name: orthofinder_onlygroups
+  owner: iuc
+  revisions:
+  - 0ff17c7a18cd
   tool_panel_section_label: Annotation
