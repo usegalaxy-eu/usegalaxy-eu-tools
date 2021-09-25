@@ -206,6 +206,7 @@ tools:
   - 00712416fdaa
   - 080eab96d846
   - 32e547223c9e
+  - '499059586799'
   - 69e2275406fd
   - a61350ab6563
   - ae1e5d9d8972
@@ -322,6 +323,7 @@ tools:
   owner: iuc
   revisions:
   - 206a71a69161
+  - 2c338211927c
   tool_panel_section_label: RNA Analysis
 - name: deg_annotate
   owner: iuc
@@ -669,6 +671,7 @@ tools:
   - 141f65f7c7c8
   - 24657d5edede
   - 3fd7458bc861
+  - 5a26589d95ad
   - 8b62f89924a7
   - fe3fe68b09a7
   tool_panel_section_label: RNA Analysis
@@ -891,6 +894,7 @@ tools:
   revisions:
   - 095162ba8e90
   - 17a77824c8e4
+  - 67af24676bd6
   - 75427ceb32d1
   - b36afbb04e1c
   tool_panel_section_label: RNA Analysis
@@ -1321,6 +1325,7 @@ tools:
   owner: iuc
   revisions:
   - 0a4ad829d87a
+  - a68cb16fa1a0
   - b226e0c805a5
   - f5792425ea50
   tool_panel_section_label: Convert Formats
@@ -1375,6 +1380,7 @@ tools:
   owner: devteam
   revisions:
   - 0232f19d300f
+  - 154d00cbbf2d
   - 4dea02886337
   - 69e0806b63a4
   - 6ea09f60dee9
@@ -1832,6 +1838,11 @@ tools:
   owner: iuc
   revisions:
   - 7346619ad005
+  tool_panel_section_label: Genome editing
+- name: amplican
+  owner: iuc
+  revisions:
+  - 71adaaace336
   tool_panel_section_label: Genome editing
 - name: vegan_diversity
   owner: iuc
@@ -2322,6 +2333,7 @@ tools:
 - name: hifiasm
   owner: bgruening
   revisions:
+  - 3f7be05a1597
   - 6505bd37670d
   - 9ef6920c3089
   - f3c89da3af16
@@ -2338,6 +2350,7 @@ tools:
   owner: iuc
   revisions:
   - 575b4d5bd444
+  - ab5b7f6b7198
   - ba7b0f11e470
   tool_panel_section_label: Assembly
 - name: novoplasty
@@ -2845,6 +2858,7 @@ tools:
   owner: iuc
   revisions:
   - 1ebd14235b92
+  - 258d696dbd7e
   - 62d212192002
   - 6e45b443ef1f
   - dd4df992d93d
@@ -3318,6 +3332,7 @@ tools:
   - a9098353ae22
   - dbe2b2204555
   - e02e9af2743f
+  - e88a7de55d6e
   - f1ccc8a6eb05
   tool_panel_section_label: Annotation
 - name: jcvi_gff_stats
@@ -4153,6 +4168,7 @@ tools:
   revisions:
   - 44a18a94d7a9
   - 583abf29fc8e
+  - 8da515fbc1bf
   - fa7ad9b89f4a
   tool_panel_section_label: SAM/BAM
 - name: samtools_calmd
@@ -4621,6 +4637,26 @@ tools:
   - 933220bbc2ae
   - b557acca0b56
   - e654095ab143
+  tool_panel_section_label: FASTA/FASTQ
+- name: umi_tools_dedup
+  owner: iuc
+  revisions:
+  - 4098ab380097
+  tool_panel_section_label: FASTA/FASTQ
+- name: umi_tools_extract
+  owner: iuc
+  revisions:
+  - 27ac32a22ad2
+  tool_panel_section_label: FASTA/FASTQ
+- name: umi_tools_group
+  owner: iuc
+  revisions:
+  - cf25b50eff0a
+  tool_panel_section_label: FASTA/FASTQ
+- name: umi_tools_whitelist
+  owner: iuc
+  revisions:
+  - 345bdf4546fd
   tool_panel_section_label: FASTA/FASTQ
 - name: multiqc
   owner: iuc
@@ -5140,6 +5176,7 @@ tools:
   owner: iuc
   revisions:
   - 0a66ef6dacb7
+  - b2dc51639ad5
   tool_panel_section_label: Assembly
 - name: metaspades
   owner: nml
@@ -6698,6 +6735,7 @@ tools:
   revisions:
   - 0c46b95d60c3
   - 0f20ed06ed6c
+  - 1e0234b87809
   - 3b75d5285aff
   - 6cd62b6d2b5c
   - b74b9a7b3e3b
@@ -6720,6 +6758,7 @@ tools:
   revisions:
   - 456e4dadb905
   - 74d1e42a87e0
+  - b3ff7225da03
   - d1dd7d1b07f6
   tool_panel_section_label: Phylogenetics
 - name: sarscov2summary
@@ -7106,6 +7145,7 @@ tools:
 - name: usher
   owner: iuc
   revisions:
+  - 335665e15630
   - 524cb8f7a69a
   tool_panel_section_label: Phylogenetics
 - name: usher_matutils
@@ -7227,6 +7267,7 @@ tools:
   - 6f2d2c7f77ee
   - 766be978777a
   - 77b91b9bdf52
+  - aaa5da8e73a9
   - ac8e59e87ce3
   - b2df381a6004
   - dc2de14881ba
@@ -7242,6 +7283,7 @@ tools:
   - 8b9610ab366a
   - a72e9faea895
   - a97abb8cd15b
+  - b409c2486353
   - e62673c32a5d
   - f87ed6503715
   tool_panel_section_label: Single-cell
@@ -7256,6 +7298,7 @@ tools:
   - 9d1997b08ed6
   - 9d33775ec67d
   - a755eaa1cc32
+  - c5d3684f7c4c
   - cc0deb593fc8
   - e4c99c83dfbf
   tool_panel_section_label: Single-cell
@@ -7269,6 +7312,7 @@ tools:
   - 8e0f141c8c66
   - a407e7f8bdc1
   - a9f14e2d1655
+  - ab55fe8030b6
   - d7ea9b5e6df1
   - ec32793ce1dd
   - ed64c90a9b93
@@ -7283,6 +7327,7 @@ tools:
   - 8599fd07d140
   - 9a169729c9f9
   - a8f865950ac4
+  - aa0c474463c2
   - cb18f2388815
   - dbbe1ea8ecb1
   - e4c0f5ee8e17
@@ -7298,6 +7343,7 @@ tools:
   - 94c8f42efc47
   - 9ca360dde8e3
   - a89ee42625ad
+  - bf2017df9837
   - c2ef03559dc6
   - f2f6c703da06
   tool_panel_section_label: Single-cell
@@ -7349,6 +7395,7 @@ tools:
   - 2b2bfeda00d0
   - 2bf45c7fbeea
   - 5ba5704a8105
+  - 75342b9ef628
   - 7587218b4253
   - 872249f5495a
   - 872c99389c69
@@ -7372,6 +7419,7 @@ tools:
   - 771cffc56c87
   - 7ab33ce63e4d
   - 92dbdc4d2722
+  - 95ddee768b61
   - b91f9fcd9fc7
   - c097b1f83439
   - d4355828b4d3
@@ -7385,6 +7433,7 @@ tools:
   - 35f433d0bd7f
   - 5221e0f4c8e8
   - 5db894671434
+  - 6492560fe1b4
   - 6caee0d165fe
   - 7f9cf152cf8f
   - 948f4bc1f030
@@ -7401,6 +7450,7 @@ tools:
 - name: chira_quantify
   owner: iuc
   revisions:
+  - 06ac35533793
   - 1bfa8c091530
   - 1fe9daabe09c
   - 2b150f2a012b
@@ -7436,6 +7486,7 @@ tools:
   - d129b3dfd2b8
   - d76ca71abfce
   - dea6bc47a47e
+  - e7ee3aadf1a5
   - e82eda6acb29
   tool_panel_section_label: RNA Analysis
 - name: spyboat
@@ -7769,6 +7820,7 @@ tools:
   - a92a632c4d9b
   - b89b0765695d
   - f5df500fcc3c
+  - ff8f55893e7d
   tool_panel_section_label: Metagenomic Analysis
 - name: merge_metaphlan_tables
   owner: iuc
@@ -7776,6 +7828,7 @@ tools:
   - 27258eb73f0c
   - 2e5ae05160e0
   - 3f05bf162005
+  - cd298ff669fd
   tool_panel_section_label: Metagenomic Analysis
 - name: extract_metaphlan_database
   owner: iuc
@@ -7783,11 +7836,13 @@ tools:
   - 1aaa9b943a83
   - 5b2f8b6a3609
   - b6ecdfac241f
+  - c11805a111ea
   tool_panel_section_label: Metagenomic Analysis
 - name: customize_metaphlan_database
   owner: iuc
   revisions:
   - 025b0113ee97
+  - 4212f20315e5
   - 487da152fb43
   - a6c3f4f439f7
   tool_panel_section_label: Metagenomic Analysis
@@ -7795,6 +7850,7 @@ tools:
   owner: iuc
   revisions:
   - 025b0113ee97
+  - 4212f20315e5
   - 487da152fb43
   - a6c3f4f439f7
   tool_panel_section_label: Metagenomic Analysis
