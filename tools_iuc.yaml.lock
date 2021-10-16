@@ -38,6 +38,16 @@ tools:
   revisions:
   - 40b87aef5241
   tool_panel_section_label: Annotation
+- name: funannotate_compare
+  owner: iuc
+  revisions:
+  - 857f7ac611e1
+  tool_panel_section_label: Annotation
+- name: funannotate_annotate
+  owner: iuc
+  revisions:
+  - a5baa4ff168d
+  tool_panel_section_label: Annotation
 - name: repeatmodeler
   owner: csbl
   revisions:
@@ -2402,6 +2412,11 @@ tools:
   - 5ece301faf6b
   - a81c5169e9fc
   tool_panel_section_label: Assembly
+- name: megahit
+  owner: iuc
+  revisions:
+  - 7518ee87b53d
+  tool_panel_section_label: Assembly
 - name: merqury
   owner: iuc
   revisions:
@@ -2578,6 +2593,11 @@ tools:
   - 64f11cf59c6e
   - 8d2a528a9513
   - c71dd035971e
+  tool_panel_section_label: Mapping
+- name: bwa_mem2
+  owner: iuc
+  revisions:
+  - 88bcfaea2fb6
   tool_panel_section_label: Mapping
 - name: megablast_xml_parser
   owner: devteam
@@ -7883,3 +7903,23 @@ tools:
   revisions:
   - 0ff17c7a18cd
   tool_panel_section_label: Annotation
+- name: tracy_basecall
+  owner: iuc
+  revisions:
+  - f2e0d83186c7
+  tool_panel_section_label: Sanger Sequencing
+- name: tracy_align
+  owner: iuc
+  revisions:
+  - 80e3f678b947
+  tool_panel_section_label: Sanger Sequencing
+- name: tracy_decompose
+  owner: iuc
+  revisions:
+  - 6ec40b104f9d
+  tool_panel_section_label: Sanger Sequencing
+- name: tracy_assemble
+  owner: iuc
+  revisions:
+  - 99d31ec6629b
+  tool_panel_section_label: Sanger Sequencing
