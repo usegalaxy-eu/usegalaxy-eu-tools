@@ -73,6 +73,7 @@ tools:
   - 57251c760cab
   - 59bb6d34fca6
   - 9e2df763086c
+  - e1b3b37aa69f
   tool_panel_section_label: Send Data
 - name: pycoqc
   owner: iuc
@@ -99,6 +100,7 @@ tools:
 - name: ont_fast5_api_fast5_subset
   owner: iuc
   revisions:
+  - 0defe443ea04
   - 33a0ff1bb7df
   - 3bdd8fa109b1
   tool_panel_section_label: Nanopore
@@ -107,10 +109,12 @@ tools:
   revisions:
   - 52da1e2c82d3
   - 7147b894702a
+  - 82c6009bc120
   tool_panel_section_label: Nanopore
 - name: ont_fast5_api_single_to_multi_fast5
   owner: iuc
   revisions:
+  - 435344af6dc9
   - ceec541f4955
   - ea77d69db382
   tool_panel_section_label: Nanopore
@@ -119,6 +123,7 @@ tools:
   revisions:
   - 1a37f742e7d7
   - 68fc6a9c05df
+  - f98c015cebd8
   tool_panel_section_label: Nanopore
 - name: deeptools_estimatereadfiltering
   owner: bgruening
@@ -985,6 +990,7 @@ tools:
   owner: iuc
   revisions:
   - 1b9406a1a769
+  - 7e616a1bdb07
   - 90928b255abb
   - bb6ec8e5387f
   - c21099566418
@@ -1006,6 +1012,7 @@ tools:
 - name: ggplot2_heatmap
   owner: iuc
   revisions:
+  - 391a4cc45fea
   - a4d83ba2a1bc
   - de002ba2b849
   - f44dc95928aa
@@ -1020,6 +1027,7 @@ tools:
   - a597d59df9ee
   - d8305f18060e
   - d85535076554
+  - dfd5d981b5a4
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap2
   owner: iuc
@@ -1039,11 +1047,13 @@ tools:
   - 9cec81e1b90e
   - a36551483a8f
   - a78aa83f6625
+  - e3a675da7fd0
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_histogram
   owner: iuc
   revisions:
   - 1f0242e49a58
+  - 398e5104f8a2
   - 497d700a5229
   - 536078949ae4
   - 63a595b451d1
@@ -1354,6 +1364,7 @@ tools:
   owner: iuc
   revisions:
   - 0a4ad829d87a
+  - 27202050e185
   - 405ed9ad53ab
   - a68cb16fa1a0
   - b226e0c805a5
@@ -2536,6 +2547,7 @@ tools:
   owner: iuc
   revisions:
   - a287431cdf4f
+  - c239e93d9f04
   - d8b6f0adaa79
   - f9b72a376ec9
   - fb4975b507c6
@@ -4734,6 +4746,7 @@ tools:
 - name: umi_tools_count
   owner: iuc
   revisions:
+  - 24013bf85a6f
   - 276b4111b253
   - 70cb5527defb
   - 8250ea3a1501
@@ -4746,21 +4759,25 @@ tools:
   owner: iuc
   revisions:
   - 4098ab380097
+  - aa9a4233c641
   tool_panel_section_label: FASTA/FASTQ
 - name: umi_tools_extract
   owner: iuc
   revisions:
   - 27ac32a22ad2
+  - 7accf7407811
   tool_panel_section_label: FASTA/FASTQ
 - name: umi_tools_group
   owner: iuc
   revisions:
+  - 1263189f6204
   - cf25b50eff0a
   tool_panel_section_label: FASTA/FASTQ
 - name: umi_tools_whitelist
   owner: iuc
   revisions:
   - 345bdf4546fd
+  - 81bebc3027fc
   tool_panel_section_label: FASTA/FASTQ
 - name: multiqc
   owner: iuc
@@ -5355,6 +5372,7 @@ tools:
   revisions:
   - 2dcd07f40204
   - 73a3846701e1
+  - 80d1250bd5fd
   - 8b6d0d85252b
   - 8dee0218ac7d
   - a7b889b90140
@@ -6827,6 +6845,7 @@ tools:
 - name: biom_convert
   owner: iuc
   revisions:
+  - 54ccb7e1f49a
   - 584008e574b2
   - bd46669113b9
   tool_panel_section_label: Convert Formats
@@ -8002,10 +8021,12 @@ tools:
   owner: iuc
   revisions:
   - d2590ecc4189
+  - ec82fac4eb4b
   tool_panel_section_label: Annotation
 - name: hamronize_summarize
   owner: iuc
   revisions:
+  - a84e3131ae6a
   - ef76d74a7171
   tool_panel_section_label: Annotation
 - name: orthofinder_onlygroups
