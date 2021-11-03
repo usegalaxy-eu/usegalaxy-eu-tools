@@ -723,6 +723,10 @@ tools:
   - name: dna_filtering
     owner: devteam
     tool_panel_section_label: Text Manipulation
+    
+  - name: query_tabular
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
 
   - name: collection_column_join
     owner: iuc
@@ -1956,11 +1960,11 @@ tools:
 
   - name: kraken2
     owner: iuc
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: kraken_taxonomy_report
     owner: iuc
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: ncbi_blast_plus
     owner: devteam
@@ -1968,27 +1972,27 @@ tools:
 
   - name: kraken2tax
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: kraken
     owner: devteam
-    tool_panel_section_label: NCBI Blast
-
+    tool_panel_section_label: Metagenomic Analysis
+    
   - name: kraken_report
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: taxonomy_krona_chart
     owner: crs4
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: kraken_filter
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: kraken_translate
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: bamleftalign
     owner: devteam
@@ -3755,3 +3759,11 @@ tools:
   - name: tracy_assemble
     owner: iuc
     tool_panel_section_label: Sanger Sequencing
+    
+  - name: bracken
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: data_manager_build_bracken_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
