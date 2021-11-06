@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: maaslin2
+  owner: iuc
+  revisions:
+  - c629e6de3c49
+  tool_panel_section_label: Metagenomic Analysis
 - name: instrain_profile
   owner: iuc
   revisions:
@@ -62,6 +67,7 @@ tools:
   revisions:
   - 0d243f458b53
   - 2dd755c1c6ff
+  - 46ae58b1d792
   - 602fb8e63aa7
   - cf13a1e03e5b
   tool_panel_section_label: Annotation
@@ -282,6 +288,11 @@ tools:
   - 1c65ddbaeefa
   - 8dc7708c3266
   tool_panel_section_label: Multiple Alignments
+- name: cd_hit
+  owner: iuc
+  revisions:
+  - 7807800a3d03
+  tool_panel_section_label: Multiple Alignments
 - name: anndata_inspect
   owner: iuc
   revisions:
@@ -312,6 +323,7 @@ tools:
   - 3e38c9b3214f
   - 4f7a5ccd2ae9
   - 6bb3cd018203
+  - 7ab85ac5f64b
   - a68aa6c1204a
   - b28e0cfa7ba1
   - b8348686a0b9
@@ -1459,6 +1471,7 @@ tools:
   - 288f97432497
   - 44e2cc14f75b
   - 4e5056fefd88
+  - de6cebe3c043
   tool_panel_section_label: FASTA/FASTQ
 - name: trimns
   owner: iuc
@@ -2836,6 +2849,7 @@ tools:
   - 606b7748965d
   - c9cfec002f71
   - ca0588b09438
+  - d5e8807a407d
   - d84caa5a98ad
   - db1f362cca3e
   - f7564c3f9dc0
@@ -4787,6 +4801,7 @@ tools:
   - 3d93dd18d9f8
   - 5e33b465d8d5
   - 75c93c70d094
+  - 9a913cdee30e
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
@@ -6880,6 +6895,7 @@ tools:
   - 7bb8726be37c
   - b6abccb1f25b
   - b7e297c2ede6
+  - debfccc4d65b
   - fe3e8506112c
   tool_panel_section_label: Phylogenetics
 - name: nextalign
