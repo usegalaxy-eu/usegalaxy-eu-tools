@@ -2,14 +2,21 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: maaslin2
+  owner: iuc
+  revisions:
+  - c629e6de3c49
+  tool_panel_section_label: Metagenomic Analysis
 - name: instrain_profile
   owner: iuc
   revisions:
   - 1f3730540302
+  - 4b0418b1f58b
   tool_panel_section_label: Metagenomic Analysis
 - name: instrain_compare
   owner: iuc
   revisions:
+  - 3b54b419b5cb
   - dff92aac9f75
   tool_panel_section_label: Metagenomic Analysis
 - name: rgcca
@@ -27,6 +34,7 @@ tools:
   owner: iuc
   revisions:
   - 6298bb90475b
+  - 922ff4f431b3
   - b5ec3983deda
   tool_panel_section_label: Annotation
 - name: funannotate_sort
@@ -62,6 +70,7 @@ tools:
   revisions:
   - 0d243f458b53
   - 2dd755c1c6ff
+  - 46ae58b1d792
   - 602fb8e63aa7
   - cf13a1e03e5b
   tool_panel_section_label: Annotation
@@ -282,6 +291,11 @@ tools:
   - 1c65ddbaeefa
   - 8dc7708c3266
   tool_panel_section_label: Multiple Alignments
+- name: cd_hit
+  owner: iuc
+  revisions:
+  - 7807800a3d03
+  tool_panel_section_label: Multiple Alignments
 - name: anndata_inspect
   owner: iuc
   revisions:
@@ -312,6 +326,7 @@ tools:
   - 3e38c9b3214f
   - 4f7a5ccd2ae9
   - 6bb3cd018203
+  - 7ab85ac5f64b
   - a68aa6c1204a
   - b28e0cfa7ba1
   - b8348686a0b9
@@ -343,6 +358,7 @@ tools:
 - name: tximport
   owner: iuc
   revisions:
+  - 1906cb429215
   - 206a71a69161
   - 2c338211927c
   tool_panel_section_label: RNA Analysis
@@ -1089,6 +1105,7 @@ tools:
   owner: iuc
   revisions:
   - 02b21260faf4
+  - 44c66e8d21e6
   - 7a5eaa19e92f
   - 7c9417381ad5
   tool_panel_section_label: Graph/Display Data
@@ -1365,6 +1382,7 @@ tools:
   revisions:
   - 0a4ad829d87a
   - 27202050e185
+  - 359e043a285c
   - 405ed9ad53ab
   - a68cb16fa1a0
   - b226e0c805a5
@@ -1459,6 +1477,7 @@ tools:
   - 288f97432497
   - 44e2cc14f75b
   - 4e5056fefd88
+  - de6cebe3c043
   tool_panel_section_label: FASTA/FASTQ
 - name: trimns
   owner: iuc
@@ -1955,6 +1974,7 @@ tools:
   - 02831bf9e95f
   - 7c2e9bc2123b
   - 8fef980d48b5
+  - bbe19ef04a74
   - d256a51a656b
   tool_panel_section_label: Assembly
 - name: bionano_scaffold
@@ -2402,6 +2422,7 @@ tools:
   - 575b4d5bd444
   - ab5b7f6b7198
   - ba7b0f11e470
+  - f77f7a7f3b83
   tool_panel_section_label: Assembly
 - name: novoplasty
   owner: iuc
@@ -2461,6 +2482,7 @@ tools:
 - name: merqury
   owner: iuc
   revisions:
+  - 39edec572bae
   - 9d79beb19ac3
   tool_panel_section_label: Assembly
 - name: rnaspades
@@ -2494,6 +2516,7 @@ tools:
   owner: iuc
   revisions:
   - 0834c823d4b9
+  - 342a1d1fed7b
   - 59db8ea8c845
   - 736d51130b41
   - 81df4950d65b
@@ -2546,6 +2569,7 @@ tools:
 - name: bioext_bealign
   owner: iuc
   revisions:
+  - 09dbbf5d3201
   - a287431cdf4f
   - c239e93d9f04
   - d8b6f0adaa79
@@ -2836,6 +2860,7 @@ tools:
   - 606b7748965d
   - c9cfec002f71
   - ca0588b09438
+  - d5e8807a407d
   - d84caa5a98ad
   - db1f362cca3e
   - f7564c3f9dc0
@@ -3690,6 +3715,11 @@ tools:
   - b11b3ac48bb9
   - b97694b21bc3
   tool_panel_section_label: Metagenomic Analysis
+- name: ragtag
+  owner: iuc
+  revisions:
+  - a04e64efa43a
+  tool_panel_section_label: Assembly
 - name: ncbi_blast_plus
   owner: devteam
   revisions:
@@ -3699,6 +3729,11 @@ tools:
   - c877294f8025
   - d375502056f1
   - e25d3acf6e68
+  tool_panel_section_label: NCBI Blast
+- name: bbtools_bbduk
+  owner: iuc
+  revisions:
+  - 204a131e47db
   tool_panel_section_label: NCBI Blast
 - name: kraken2tax
   owner: devteam
@@ -4787,6 +4822,7 @@ tools:
   - 3d93dd18d9f8
   - 5e33b465d8d5
   - 75c93c70d094
+  - 9a913cdee30e
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
@@ -6880,6 +6916,7 @@ tools:
   - 7bb8726be37c
   - b6abccb1f25b
   - b7e297c2ede6
+  - debfccc4d65b
   - fe3e8506112c
   tool_panel_section_label: Phylogenetics
 - name: nextalign
@@ -7363,6 +7400,7 @@ tools:
   owner: iuc
   revisions:
   - 2d455a7e8a3d
+  - 8f333f90d8d6
   - b834074a9aff
   - fd808de478b1
   tool_panel_section_label: Single-cell
@@ -7370,11 +7408,13 @@ tools:
   owner: iuc
   revisions:
   - 2b09ca1c5e41
+  - 99f912d5af9f
   - a30f4bfe8f01
   tool_panel_section_label: Single-cell
 - name: scater_filter
   owner: iuc
   revisions:
+  - 652923ce664f
   - 7a365ec81b52
   - b7ea9f09c02f
   - e6ca62ac65c6
@@ -7391,6 +7431,7 @@ tools:
   - 2e41b35b5bdd
   - 4887c4c69847
   - 81e5bdff4853
+  - ef4c80837bc5
   tool_panel_section_label: Single-cell
 - name: scater_plot_exprs_freq
   owner: iuc
@@ -7404,6 +7445,7 @@ tools:
   - 46fc6751d746
   - 9e5c0bb18d08
   - bea3359ba852
+  - c99ba278dfa9
   tool_panel_section_label: Single-cell
 - name: scanpy_cluster_reduce_dimension
   owner: iuc
@@ -8062,5 +8104,6 @@ tools:
 - name: data_manager_build_bracken_database
   owner: iuc
   revisions:
+  - 3c7d2c84cb09
   - fd5830f88314
   tool_panel_section_label: Metagenomic Analysis

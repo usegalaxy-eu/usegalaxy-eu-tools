@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: maaslin2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
   - name: instrain_profile
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -184,6 +188,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
+  - name: cd_hit
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+    
   - name: anndata_inspect
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -1966,8 +1974,16 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: ragtag
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: ncbi_blast_plus
     owner: devteam
+    tool_panel_section_label: NCBI Blast
+
+  - name: bbtools_bbduk
+    owner: iuc
     tool_panel_section_label: NCBI Blast
 
   - name: kraken2tax
