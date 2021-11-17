@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: malt_run
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: maaslin2
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -3700,6 +3704,9 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: data_manager_humann_database_downloader
+    owner: iuc
+
+  - name: data_manager_malt_index_builder
     owner: iuc
 
   - name: data_manager_funannotate
