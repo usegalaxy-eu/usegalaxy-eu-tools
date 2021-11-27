@@ -2228,17 +2228,36 @@ tools:
   - name: pileup_interval
     owner: devteam
     tool_panel_section_label: SAM/BAM
+
   - name: bamtools
     owner: devteam
     tool_panel_section_label: SAM/BAM
+
   - name: bamtools_split
     owner: devteam
     tool_panel_section_label: SAM/BAM
+
   - name: ngsutils_bam_filter
     owner: iuc
     tool_panel_section_label: SAM/BAM
 
   - name: bamtools_filter
+    owner: devteam
+    tool_panel_section_label: SAM/BAM
+
+  - name: bamtools_split_paired
+    owner: devteam
+    tool_panel_section_label: SAM/BAM
+
+  - name: bamtools_split_ref
+    owner: devteam
+    tool_panel_section_label: SAM/BAM
+
+  - name: bamtools_split_mapped
+    owner: devteam
+    tool_panel_section_label: SAM/BAM
+
+  - name: bamtools_split_tag
     owner: devteam
     tool_panel_section_label: SAM/BAM
 
