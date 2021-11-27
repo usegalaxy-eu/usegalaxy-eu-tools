@@ -1439,6 +1439,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: bbtools_bbmap
+    owner: iuc
+    tool_panel_section_label: Mapping
+
   - name: bioext_bealign
     owner: iuc
     tool_panel_section_label: Mapping
@@ -1683,6 +1687,10 @@ tools:
     tool_panel_section_label: Epigenetics
 
   - name: basil
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bbtools_callvariants
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -2269,6 +2277,10 @@ tools:
     owner: devteam
     tool_panel_section_label: SAM/BAM
 
+  - name: samtools_coverage
+    owner: devteam
+    tool_panel_section_label: SAM/BAM
+
   - name: samtools_bedcov
     owner: devteam
     tool_panel_section_label: SAM/BAM
@@ -2516,6 +2528,10 @@ tools:
   - name: iwtomics_plotwithscale
     owner: iuc
     tool_panel_section_label: Statistics
+
+  - name: bbtools_bbduk
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: umi_tools_count
     owner: iuc
