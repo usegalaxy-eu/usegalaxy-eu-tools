@@ -1,0 +1,46 @@
+name: Update Trusted Tools
+
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    # We'll run this weekly at 9.
+    - cron:  '12 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Perform linting
+        run: |
+            # Update the trusted tools.
+            make fix
+            make lint
+            make update_trusted
+
+      - name: Commit files
+        run: |
+          git config --local user.email "github-bot@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *.lock
+          git commit -m "Updated trusted tools ($(date -I))" || true
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
