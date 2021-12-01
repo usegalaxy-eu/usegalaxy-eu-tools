@@ -5,6 +5,7 @@ tools:
   owner: ecology
   revisions:
   - 07b081730994
+  - 1ebb70b59037
   - 8d8aec182fb1
   - c9dfe4e20a45
   tool_panel_section_label: Species abundance
@@ -13,6 +14,7 @@ tools:
   revisions:
   - 2cd0a5a321c2
   - 5bd7ddd7601f
+  - c67ece97d4b1
   - ddd5b2e74b8b
   tool_panel_section_label: Species abundance
 - name: pampa_glmsp
@@ -20,6 +22,7 @@ tools:
   revisions:
   - 0778efa9eb2e
   - 6c14021f678e
+  - 7a69e1c8ba46
   - c12897ba5f83
   tool_panel_section_label: Species abundance
 - name: pampa_glmcomm
@@ -27,6 +30,7 @@ tools:
   revisions:
   - 44b9069775ca
   - 8db02073b671
+  - b40fecef616b
   - f0dc3958e65d
   tool_panel_section_label: Species abundance
 - name: pampa_plotglm
@@ -34,6 +38,7 @@ tools:
   revisions:
   - 3ab852a7ff53
   - 5ddca052c314
+  - c448e026f122
   tool_panel_section_label: Species abundance
 - name: stoc_maketable
   owner: ecology
@@ -100,6 +105,36 @@ tools:
   revisions:
   - a79f5f0f17ad
   tool_panel_section_label: Species abundance
+- name: tool_anonymization
+  owner: ecology
+  revisions:
+  - 726a387cfdc2
+  tool_panel_section_label: Biodiversity data exploration
+- name: ecology_beta_diversity
+  owner: ecology
+  revisions:
+  - fb7b2cbd80bb
+  tool_panel_section_label: Biodiversity data exploration
+- name: ecology_homogeneity_normality
+  owner: ecology
+  revisions:
+  - 3df8937fd6fd
+  tool_panel_section_label: Biodiversity data exploration
+- name: ecology_link_between_var
+  owner: ecology
+  revisions:
+  - 8e8867bf491a
+  tool_panel_section_label: Biodiversity data exploration
+- name: ecology_presence_abs_abund
+  owner: ecology
+  revisions:
+  - 4ed07d2d442b
+  tool_panel_section_label: Biodiversity data exploration
+- name: ecology_stat_presence_abs
+  owner: ecology
+  revisions:
+  - 9a2e0195bb43
+  tool_panel_section_label: Biodiversity data exploration
 - name: sample_seqs
   owner: peterjc
   revisions:
@@ -124,6 +159,7 @@ tools:
   owner: iuc
   revisions:
   - 071084070619
+  - 3ddd99c7efee
   tool_panel_section_label: Join, Subtract and Group
 - name: numeric_clustering
   owner: bgruening
@@ -135,6 +171,7 @@ tools:
   revisions:
   - 0a8c6b61f0f4
   - ddf54b12c295
+  - f46f0e4f75c4
   - fb4ff3c42cd3
   tool_panel_section_label: Text Manipulation
 - name: column_maker
@@ -151,6 +188,7 @@ tools:
   owner: iuc
   revisions:
   - 02befcb391f5
+  - 654b3a274ed5
   tool_panel_section_label: Text Manipulation
 - name: split_file_on_column
   owner: bgruening
@@ -273,6 +311,7 @@ tools:
   owner: iuc
   revisions:
   - 238981ed43b7
+  - f7ad5e69aa60
   tool_panel_section_label: Text Manipulation
 - name: column_arrange_by_header
   owner: bgruening
@@ -389,7 +428,9 @@ tools:
   owner: iuc
   revisions:
   - 1b9406a1a769
+  - 7e616a1bdb07
   - 90928b255abb
+  - fcb6a19960c6
   tool_panel_section_label: Graph/Display Data
 - name: pygenometracks
   owner: iuc
@@ -407,7 +448,9 @@ tools:
 - name: ggplot2_heatmap
   owner: iuc
   revisions:
+  - 391a4cc45fea
   - a4d83ba2a1bc
+  - d3a9e32672ec
   - de002ba2b849
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_violin
@@ -415,6 +458,8 @@ tools:
   revisions:
   - 637cf21db396
   - d8305f18060e
+  - dfd5d981b5a4
+  - e44775efb2dc
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap2
   owner: iuc
@@ -424,13 +469,17 @@ tools:
 - name: ggplot2_point
   owner: iuc
   revisions:
+  - 1acf88921176
   - 87908c76ca8d
   - 9cec81e1b90e
   - a36551483a8f
+  - e3a675da7fd0
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_histogram
   owner: iuc
   revisions:
+  - 355a82227003
+  - 398e5104f8a2
   - 497d700a5229
   - 536078949ae4
   tool_panel_section_label: Graph/Display Data
@@ -472,11 +521,13 @@ tools:
   - 1a9d5a8fff12
   - a5665e1b06b0
   - d2afc87db26b
+  - f458724cc317
   tool_panel_section_label: Machine Learning
 - name: sklearn_sample_generator
   owner: bgruening
   revisions:
   - 0f460421b212
+  - 1fe020b2108f
   - 7068b5fcd623
   - 97b467e06354
   - 999e07f0a9fa
@@ -490,11 +541,13 @@ tools:
   - 586e68c83df2
   - a36a45cb96fa
   - e5a5ad882f1f
+  - f0d2e8a3c575
   tool_panel_section_label: Machine Learning
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
   - 0c74d3164ac8
+  - 3f25f37ee3db
   - 664666bd14ec
   - 913ee94945f3
   - 97dce66fe158
@@ -505,6 +558,7 @@ tools:
   revisions:
   - 09bfbef3dd90
   - 226524df8c6c
+  - 2a1afd3481ce
   - 7366e5108e9f
   - 86020dbc8ef7
   - cd4328a02798
@@ -512,6 +566,7 @@ tools:
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
+  - 309cc7c6af56
   - 34d31bd995e9
   - 39ae3c043096
   - 823ecc0bce45
@@ -525,12 +580,14 @@ tools:
   - 73e7f1c76ece
   - abb5a3f256e3
   - ad7e0b4291ee
+  - e13a7c05b3a4
   - e7f047a9dca9
   tool_panel_section_label: Machine Learning
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
   - 3ab7af14f1b5
+  - 407495139a09
   - 4ecc0ce9d0a2
   - 841a6cc5fc58
   - a98fdfcd9f5f
@@ -542,6 +599,7 @@ tools:
   - 1d20e0dce176
   - 5773e98921fc
   - 6d21b03e00a1
+  - a7c667ff83fe
   - ae0fafb53c1d
   - ec25331946b8
   tool_panel_section_label: Machine Learning
@@ -551,6 +609,7 @@ tools:
   - 1bef885255e0
   - 826c3e68e7a9
   - 9e43ee712723
+  - add3c3a7c2b4
   - b75cae00f980
   - eb9da067ab26
   tool_panel_section_label: Machine Learning
@@ -562,12 +621,14 @@ tools:
   - 9bf11bbeccc3
   - adc6137e7c73
   - c8547d3993c0
+  - daaa56720686
   tool_panel_section_label: Machine Learning
 - name: sklearn_regression_metrics
   owner: bgruening
   revisions:
   - 1e98dbb8d5bc
   - 40ee30b5e456
+  - 6000c1589f33
   - 70c5a9127f99
   - 7d98dfb04d27
   - 9c8ede554b7c
@@ -575,6 +636,7 @@ tools:
 - name: sklearn_discriminant_classifier
   owner: bgruening
   revisions:
+  - 1bd039aca44f
   - 237ae72d58a3
   - 2d032cff49eb
   - 420a4bf99244
@@ -589,12 +651,14 @@ tools:
   - 616a241c5b37
   - 913bf1c4c7bb
   - b628de0d101f
+  - c9969328b42f
   tool_panel_section_label: Machine Learning
 - name: sklearn_model_validation
   owner: bgruening
   revisions:
   - 0474777be433
   - 4b359039f09f
+  - 65f18ab91132
   - bfc7bdfcb423
   - cf9aa11b91c8
   - de360b57a5ab
@@ -606,6 +670,7 @@ tools:
   - 92e09b827300
   - a84e6ffd3735
   - b9ed7b774ba3
+  - e6893a4bcb7b
   - ecd247e1ea9c
   tool_panel_section_label: Statistics
 - name: regex_find_replace
@@ -628,6 +693,7 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
+  - 3d0c7bdf12f5
   - e7b2202befea
   tool_panel_section_label: FASTQ Quality Control
 - name: multiqc
@@ -636,6 +702,7 @@ tools:
   - 3d93dd18d9f8
   - 5e33b465d8d5
   - 75c93c70d094
+  - 9a913cdee30e
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
@@ -728,12 +795,14 @@ tools:
   revisions:
   - 21d2aa544835
   - 7e5a174bc201
+  - 8a35a3bc6752
   - cfb504394ae1
   - d033e1ccb386
   tool_panel_section_label: RAD-seq
 - name: stacks2_cstacks
   owner: iuc
   revisions:
+  - 0345dbaaa79b
   - c207119ba5f6
   - da351b9031de
   - f4aab9196d1e
@@ -745,6 +814,7 @@ tools:
   - 0b8c84a7fdb5
   - b7babdb3c219
   - cd034465d4a4
+  - d9bf483266a1
   - e58e2ecb6285
   tool_panel_section_label: RAD-seq
 - name: stacks2_gstacks
@@ -752,6 +822,7 @@ tools:
   revisions:
   - 1d839ead7ad3
   - 27359c6bf3e3
+  - 7370bb65bad4
   - d35cb34f2b85
   - eb784fa07f80
   tool_panel_section_label: RAD-seq
@@ -760,6 +831,7 @@ tools:
   revisions:
   - 38942a7e3801
   - 6fba323a242d
+  - 7b881f5f5ad5
   - 887cf585cafc
   - 9a44832748c5
   - b242deb58952
@@ -768,6 +840,7 @@ tools:
   owner: iuc
   revisions:
   - 9993234400f1
+  - 9a171f9a450b
   - bd5ff77e2036
   - ca7aa77c7f57
   - e897c74a48bb
@@ -775,6 +848,7 @@ tools:
 - name: stacks2_denovomap
   owner: iuc
   revisions:
+  - 405a212b32ab
   - 421c33b8bf17
   - ad5ab22ffe24
   - afdbc7fcce70
@@ -786,12 +860,14 @@ tools:
   - 319b10947ec1
   - 45385ba40a75
   - 4f65e343ecdf
+  - 5e10f396979e
   - 6dafad990086
   tool_panel_section_label: RAD-seq
 - name: stacks2_tsv2bam
   owner: iuc
   revisions:
   - 1b270fc77c81
+  - 69842dd5aa48
   - 8c2617661c49
   - a9c34a289493
   - bf0e43ab0416
@@ -803,6 +879,7 @@ tools:
   - 289b7d6b69a4
   - 2f1d464ebfd2
   - b75174403a65
+  - e345aadf914f
   tool_panel_section_label: RAD-seq
 - name: stacks2_kmerfilter
   owner: iuc
@@ -811,10 +888,12 @@ tools:
   - 38c9f9a680f0
   - 8a55d29c8fcf
   - b2e3553e1be2
+  - c9b77ced9a78
   tool_panel_section_label: RAD-seq
 - name: stacks2_shortreads
   owner: iuc
   revisions:
+  - 17d39bf0a63a
   - 1974fee35ca7
   - 43e3eeb2e0ec
   - ad7a60726fc3
@@ -916,11 +995,13 @@ tools:
 - name: xarray_coords_info
   owner: ecology
   revisions:
+  - 6015f30a7258
   - fea8a53f8099
   tool_panel_section_label: GIS Data Handling
 - name: xarray_netcdf2netcdf
   owner: ecology
   revisions:
+  - 1a91e551f3a9
   - b0780241f916
   tool_panel_section_label: GIS Data Handling
 - name: xarray_mapplot

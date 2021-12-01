@@ -16,8 +16,11 @@ tools:
   owner: iuc
   revisions:
   - 0a5c785ac6db
+  - 3e38c9b3214f
   - 4f7a5ccd2ae9
+  - 7ab85ac5f64b
   - 87ee588b3d45
+  - a68aa6c1204a
   - b28e0cfa7ba1
   - b8348686a0b9
   - ce3c7f062223
@@ -131,6 +134,7 @@ tools:
   - 69ebb7f46e45
   - 7068f48d0ef9
   - 751a694ec620
+  - 83c7d564b128
   - aad3885b3216
   - b723c120161a
   - c441583adae5
@@ -161,6 +165,7 @@ tools:
   owner: iuc
   revisions:
   - 02befcb391f5
+  - 654b3a274ed5
   - 6b865dde1baa
   tool_panel_section_label: Text Manipulation
 - name: add_value
@@ -292,6 +297,7 @@ tools:
   owner: iuc
   revisions:
   - 071084070619
+  - 3ddd99c7efee
   - 58228a4d58fe
   - 9c8536c7ed42
   - dfde09461b1e
@@ -595,6 +601,7 @@ tools:
   - 57e5d9382f36
   - 9dd5373f6a5a
   - d20e391eb22f
+  - e7242484929c
   - e8b209806a20
   tool_panel_section_label: Motif Tools
 - name: meme_fimo
@@ -603,6 +610,7 @@ tools:
   - 0c5239d1aa65
   - 40b8472e91ca
   - c1a9a297ba8b
+  - d7a6ea1e3b9d
   - fd522a964017
   tool_panel_section_label: Motif Tools
 - name: weblogo3
@@ -634,11 +642,6 @@ tools:
   owner: rnateam
   revisions:
   - d71e007323d4
-  tool_panel_section_label: Multiple Alignments
-- name: cdhit
-  owner: jjohnson
-  revisions:
-  - 28b7a43907f0
   tool_panel_section_label: Multiple Alignments
 - name: clustalw
   owner: devteam
@@ -1035,11 +1038,12 @@ tools:
   - 3d93dd18d9f8
   - 5e33b465d8d5
   - 75c93c70d094
+  - 9a913cdee30e
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
   - f7985e0479b9
-  tool_panel_section_label: FASTQ Quality Control
+  tool_panel_section_label: Quality Control
 - name: mira_assembler
   owner: peterjc
   revisions:
@@ -1055,6 +1059,8 @@ tools:
   revisions:
   - 03fd468e158f
   - 0d30fed9628b
+  - 1035adb112c0
+  - 16e0eb91072f
   - 9e58ff014088
   - a8a278849c18
   tool_panel_section_label: Assembly
@@ -1098,7 +1104,9 @@ tools:
   revisions:
   - 0a563fd2f22e
   - 318b2a9d54dd
+  - 4074fc1940e2
   - 41929aa1e7f3
+  - 44959aa06aeb
   - 5ec75f5dae3c
   - 7ed2edc1337f
   - 850f3679b9b4
@@ -1116,6 +1124,7 @@ tools:
   - 26371a1df031
   - 2ec097c8e843
   - 3fb01a8c902d
+  - 6c19daec423d
   - 6d4d39720545
   - a86e80d3c09c
   - d4b55e2beb12
@@ -1172,8 +1181,10 @@ tools:
   - 6a3a025714d3
   - 6f91b8ce6e07
   - 71bacea10eee
+  - 7ff33c2d525b
   - 89d26b11d452
   - a6fc9228e1a0
+  - d027d1f4984e
   - d983d19fbbab
   - de44f8eff84a
   - e5c8afac22a7
@@ -1187,11 +1198,13 @@ tools:
   owner: iuc
   revisions:
   - 1759d845181e
+  - 7db9d3ea71c9
   - 90d16db017d7
   - 9301937c9037
   - a37612abf7f9
   - af814359d244
   - c7bd0cc53524
+  - ce44c6f2ba38
   - de2c5e5a206c
   - ea04b737afa0
   tool_panel_section_label: RNA Analysis
@@ -1207,14 +1220,18 @@ tools:
   - 8aef9a17faae
   - c6334cb383ff
   - d0d4cef4f967
+  - ffd1300599a1
   tool_panel_section_label: RNA Analysis
 - name: trinity
   owner: iuc
   revisions:
   - 26d5493b20b6
+  - 3772d9a10f27
+  - 48636f857c4b
   - 5b60313a6ce7
   - 606b7748965d
   - c9cfec002f71
+  - d5e8807a407d
   - d84caa5a98ad
   - db1f362cca3e
   - f7564c3f9dc0
@@ -1253,6 +1270,7 @@ tools:
   owner: iuc
   revisions:
   - 1ebd14235b92
+  - 258d696dbd7e
   - 62d212192002
   - 6e45b443ef1f
   - dd4df992d93d
@@ -1449,8 +1467,10 @@ tools:
   owner: iuc
   revisions:
   - 29bdbc353f20
+  - 6da3972210ee
   - 95219305823a
   - a6ea26c1f225
+  - b4e6819b25ef
   - f7094efef903
   tool_panel_section_label: Epigenetics
 - name: metilene
@@ -1605,6 +1625,7 @@ tools:
   - 09d6806c609e
   - 2b3e65a4252f
   - 2e497a770bca
+  - 5fab4f81391d
   - 9e8280e19338
   - bf8c1526871b
   tool_panel_section_label: Variant Calling
@@ -1621,6 +1642,7 @@ tools:
   - 36dc3690a82c
   - 74aebe30fb52
   - 8f92c2b26e6d
+  - cfcf33df7fc0
   - de67e5082c48
   - e09ce114d240
   - e8adfc4c0a6b
@@ -2003,6 +2025,7 @@ tools:
   - 3296c3680d96
   - 4fa18320d29b
   - 5801eff9ac7e
+  - 912a8ff07fc9
   - a531317a3527
   - b03984136ce4
   - cb30a39055d0
@@ -2541,3 +2564,8 @@ tools:
   - 47e83073b7a1
   - d504d945a655
   tool_panel_section_label: RAD-seq
+- name: gecco
+  owner: althonos
+  revisions:
+  - 359232b58f6a
+  tool_panel_section_label: Annotation

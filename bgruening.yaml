@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: mafft
+    owner: rnateam
+    tool_panel_section_label: Multiple Alignments
+
   - name: plotly_ml_performance_plots
     owner: bgruening
     tool_panel_section_label: Graph/Display Data
@@ -176,6 +180,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Assembly
 
+  - name: tgsgapcloser
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
   - name: graphmap_overlap
     owner: bgruening
     tool_panel_section_label: Mapping
@@ -204,3 +212,22 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
+  - name: fastq_info
+    owner: bgruening
+    tool_panel_section_label: Quality Control
+
+  - name: trim_galore
+    owner: bgruening
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: music_inspect_eset
+    owner: bgruening
+    tool_panel_section_label: Single-cell
+
+#  - name: music_deconvolution
+#    owner: bgruening
+#    tool_panel_section_label: Single-cell
+
+  - name: music_construct_eset
+    owner: bgruening
+    tool_panel_section_label: Single-cell

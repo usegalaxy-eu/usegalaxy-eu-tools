@@ -102,12 +102,20 @@ tools:
   owner: galaxyp
   revisions:
   - 5667ff6f7a40
+  - 8375a0035d79
+  - a5e394b36d87
   - b79d4c961009
   - fd3dc69b78ff
+  tool_panel_section_label: Proteomics
+- name: diffacto
+  owner: galaxyp
+  revisions:
+  - 3cc7ce0822a1
   tool_panel_section_label: Proteomics
 - name: msstats
   owner: galaxyp
   revisions:
+  - 28434abe6c5c
   - 3e2606fa85bf
   - 52ac6fde9a5b
   - 593839e1f2c3
@@ -195,13 +203,17 @@ tools:
 - name: maxquant
   owner: galaxyp
   revisions:
+  - 0839f84def5e
   - 175e062b6a17
+  - 181bd6a5f6ce
   - 2133b0be850a
   - 37d669de2828
   - 666f3453a99d
   - 7f432d87c82c
   - 8bac3cc5c5de
+  - 97a7f34fcb6a
   - d72c96ad9a16
+  - e42225f8a659
   - ea0a1d50c83f
   - f522c08e900c
   tool_panel_section_label: Proteomics
@@ -219,10 +231,12 @@ tools:
   revisions:
   - 07ff622ec007
   - 1beff3ddce58
+  - 3ec27b4cee7c
   - 78fad25eff17
   - 7fdd9119cc4f
   - 864bd76db767
   - 943a34df6047
+  - a6ff76e057fd
   - d67a3c1bfd09
   - da885ca16cb2
   tool_panel_section_label: Proteomics
@@ -292,6 +306,7 @@ tools:
   owner: galaxyp
   revisions:
   - 0c4579390f73
+  - '105056844497'
   - 1d4a6fe69a40
   - 2aefa66e48e5
   - 4b5513e25902
@@ -312,6 +327,7 @@ tools:
   - 09b638ceee45
   - 2da46f180f35
   - 4a2ac25d1063
+  - 5279bc051339
   - 82f6c2f4332d
   - 9f7d1ec01767
   - b16b64ca7b7c
@@ -331,6 +347,7 @@ tools:
   - 8da3511c9467
   - 90d2e00e1304
   - a5d09f2daf71
+  - be5d1c3c51e5
   - d94770c22f13
   - e30d8b72415f
   - e521b5767819
@@ -352,6 +369,8 @@ tools:
   - b574b84afc4d
   - cbc7e53518ce
   - ece627528a78
+  - eddc2ae2db80
+  - f28ad96b76dc
   tool_panel_section_label: Proteomics
 - name: cardinal_mz_images
   owner: galaxyp
@@ -361,6 +380,7 @@ tools:
   - 27a4c660bbca
   - 2ba12c97f7cc
   - 4a05e47cd0ea
+  - 5629069fca8f
   - 56b3b7d5f2b5
   - 59e85306eae5
   - 5e6f8fb2df07
@@ -376,6 +396,7 @@ tools:
   - 0d4d4f16d455
   - 16556ca0196b
   - 19f68d9ae773
+  - 23d0394b5908
   - 3b7a35d50ebf
   - 5a35e3a8d013
   - 5f18275c250a
@@ -397,6 +418,7 @@ tools:
   - 5bf056c0354e
   - 87bb011a4ee8
   - 8c05a34f160a
+  - accf9fb6ea01
   - ca727a6dede6
   - e0669b1854b1
   - e86a8be551b9
@@ -417,6 +439,7 @@ tools:
   - 9b6b86e771c2
   - 9c03e7a617cd
   - d2596e1be091
+  - d333733dd571
   - ebb7de263d49
   - f17b01ec5c22
   - fdbf4de09a91
@@ -433,10 +456,12 @@ tools:
   - 7e18fcb92a6a
   - 93be1d20b5c3
   - a8ecb52264c4
+  - aad328eb6c0f
   - b41107d8fe89
   - bb1ac6b47a6c
   - c3eb5cd37ebe
   - e215f71d7983
+  - e988563cc6e5
   - fe5a1d487f32
   tool_panel_section_label: Proteomics
 - name: megahit_contig2fastg
@@ -540,6 +565,7 @@ tools:
   owner: galaxyp
   revisions:
   - 1320693cbf1e
+  - 8190f6083c0d
   - e34bdac5b157
   - f5c632894818
   tool_panel_section_label: Convert Formats
@@ -1967,4 +1993,56 @@ tools:
   owner: galaxyp
   revisions:
   - a475c1906e0b
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_mzmltomzlite
+  owner: galaxyp
+  revisions:
+  - 529b61ba3d64
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_peptidedb
+  owner: galaxyp
+  revisions:
+  - 1e5400393797
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_peptidespectrummatching
+  owner: galaxyp
+  revisions:
+  - a79a24eb9e76
+  - db6faafbf75b
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_psmstatistics
+  owner: galaxyp
+  revisions:
+  - b8590dea5e2d
+  - f831f7d721f8
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_proteininference
+  owner: galaxyp
+  revisions:
+  - 8e4fb95a319a
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_psmbasedquantification
+  owner: galaxyp
+  revisions:
+  - 65ce27f0fa01
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_joinquantpepionswithproteins
+  owner: galaxyp
+  revisions:
+  - f7e1c904ac2c
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_labeledproteinquantification
+  owner: galaxyp
+  revisions:
+  - 764e011f1b0e
+  tool_panel_section_label: Proteomics
+- name: proteomiqon_labelfreeproteinquantification
+  owner: galaxyp
+  revisions:
+  - 39fa1ddd587d
+  tool_panel_section_label: Proteomics
+- name: validate_fasta_database
+  owner: galaxyp
+  revisions:
+  - 9c246c2e24ad
   tool_panel_section_label: Proteomics

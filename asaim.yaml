@@ -29,13 +29,10 @@ tools:
 
   - name: 'multiqc'
     owner: 'iuc'
-    tool_panel_section_label: "FASTA/FASTQ"
+    tool_panel_section_label: Quality Control
 
     # clustering
-  - name: 'cdhit'
-    owner: 'bebatut'
-    tool_panel_section_label: 'Multiple Alignments'
-
+    
   - name: 'format_cd_hit_output'
     owner: 'bebatut'
     tool_panel_section_label: 'Multiple Alignments'

@@ -11,6 +11,7 @@ tools:
   - 69ebb7f46e45
   - 7068f48d0ef9
   - 751a694ec620
+  - 83c7d564b128
   - aad3885b3216
   - b723c120161a
   - c441583adae5
@@ -33,6 +34,7 @@ tools:
   owner: iuc
   revisions:
   - 02befcb391f5
+  - 654b3a274ed5
   - 6b865dde1baa
   tool_panel_section_label: FASTA/FASTQ
 - name: trim_galore
@@ -63,18 +65,13 @@ tools:
   - 3d93dd18d9f8
   - 5e33b465d8d5
   - 75c93c70d094
+  - 9a913cdee30e
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
   - e4574a4d09d8
   - f7985e0479b9
-  tool_panel_section_label: FASTA/FASTQ
-- name: cdhit
-  owner: bebatut
-  revisions:
-  - 54d811ad2b52
-  - 93f25d52cfa5
-  tool_panel_section_label: Multiple Alignments
+  tool_panel_section_label: Quality Control
 - name: format_cd_hit_output
   owner: bebatut
   revisions:
@@ -166,8 +163,10 @@ tools:
 - name: quast
   owner: iuc
   revisions:
+  - 342a1d1fed7b
   - 59db8ea8c845
   - 736d51130b41
+  - 7594365c546b
   - 81df4950d65b
   - ebb0dcdb621a
   - f30d03867854
