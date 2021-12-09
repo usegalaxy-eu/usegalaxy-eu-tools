@@ -462,7 +462,14 @@ tools:
   - name: fastq_combiner
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ'
-
+    
+  # FROGS
+  - name: frogs
+    owner: frogs
+    tool_panel_section_label: frogs
+    tool_panel_section_label: 'DNA Metabarcoding'
+    
+  # Obitools
   - name: obi_illumina_pairend
     owner: iuc
     tool_panel_section_label: 'DNA Metabarcoding'
@@ -502,6 +509,39 @@ tools:
   - name: obi_stat
     owner: iuc
     tool_panel_section_label: 'DNA Metabarcoding'
+    
+    # DADA2
+  - name: dada2_assigntaxonomyaddspecies
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_makesequencetable
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_plotcomplexity
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_mergepairs
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_removebimeradenovo
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_seqcounts
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_plotqualityprofile
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_filterandtrim
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_learnerrors
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+  - name: dada2_dada
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
 
   - name: bwa
     owner: devteam
