@@ -24,14 +24,21 @@ tools:
   - 3b54b419b5cb
   - dff92aac9f75
   tool_panel_section_label: Metagenomic Analysis
+- name: megan_sam2rma
+  owner: iuc
+  revisions:
+  - 4f0a8e401e2e
+  tool_panel_section_label: Metagenomic Analysis
 - name: megan_blast2rma
   owner: iuc
   revisions:
+  - d326b943f5e2
   - fa3c3a64c993
   tool_panel_section_label: Metagenomic Analysis
 - name: megan_blast2lca
   owner: iuc
   revisions:
+  - a80281b0172e
   - ad69d2a05c3c
   tool_panel_section_label: Metagenomic Analysis
 - name: rgcca
@@ -408,6 +415,7 @@ tools:
   - 37a47c4fd84d
   - 41f34e925bd5
   - 9fec5dd8fbb9
+  - be4646256624
   tool_panel_section_label: Single-cell
 - name: raceid_filtnormconf
   owner: iuc
@@ -417,6 +425,7 @@ tools:
   - 5d5b14dbd092
   - 7608d5faee41
   - 8dc8ff057b0f
+  - d45f092caf24
   - d55e29ac02e3
   tool_panel_section_label: Single-cell
 - name: raceid_clustering
@@ -426,6 +435,7 @@ tools:
   - 528a43b1cbcf
   - 7e014059a88d
   - a4b734cd253b
+  - c4f39bf4a068
   - ee0bbc160cb1
   tool_panel_section_label: Single-cell
 - name: raceid_trajectory
@@ -436,11 +446,13 @@ tools:
   - 72979cac22b2
   - 87de515af823
   - da7ff78fe296
+  - e93b008c637a
   - ff7cd3c7c1df
   tool_panel_section_label: Single-cell
 - name: raceid_inspecttrajectory
   owner: iuc
   revisions:
+  - 3478133d0f6f
   - 4164c0da0a5d
   - 5156383d3a5d
   - 69018f285aa3
@@ -500,6 +512,7 @@ tools:
 - name: vcfanno
   owner: iuc
   revisions:
+  - cdcaa40e5e45
   - fb20fa735dfe
   tool_panel_section_label: Variant Calling
 - name: snpfreqplot
@@ -727,6 +740,7 @@ tools:
 - name: plink
   owner: iuc
   revisions:
+  - 16d22eee0fe3
   - 57ac42ec1be3
   - 66b35562554d
   - f76d842e960f
@@ -2004,6 +2018,7 @@ tools:
   revisions:
   - 33b7d8481a76
   - 3edba9afc9bc
+  - f11b994b7eb2
   - f8564b2d7f63
   tool_panel_section_label: Assembly
 - name: meryl
@@ -2627,6 +2642,11 @@ tools:
   - 6015aa0303f2
   - cb4768eeca3b
   tool_panel_section_label: Assembly
+- name: bbtools_bbmap
+  owner: iuc
+  revisions:
+  - e0ca2ec4f5d9
+  tool_panel_section_label: Mapping
 - name: bioext_bealign
   owner: iuc
   revisions:
@@ -2819,6 +2839,7 @@ tools:
   - 9a616afdbda5
   - a416957ee305
   - a6fc9228e1a0
+  - cd9874cb9019
   - d027d1f4984e
   - d983d19fbbab
   - d9e5cadc7f0b
@@ -2835,6 +2856,7 @@ tools:
   - 6e53e565fc6a
   - 9bdff28ae1b1
   - d79ed3ec25fe
+  - df0c8d0a5992
   - fb9b9f0f2f06
   tool_panel_section_label: RNA Analysis
 - name: limma_voom
@@ -2851,6 +2873,7 @@ tools:
   - 97e06a4c7c75
   - bdebdea5f6a7
   - d5a940112511
+  - e827f9aae031
   tool_panel_section_label: RNA Analysis
 - name: salmon
   owner: bgruening
@@ -2897,6 +2920,7 @@ tools:
   owner: iuc
   revisions:
   - 1759d845181e
+  - 38b6d12edc68
   - 7db9d3ea71c9
   - 90d16db017d7
   - 9301937c9037
@@ -3034,6 +3058,7 @@ tools:
   revisions:
   - 1ebd14235b92
   - 258d696dbd7e
+  - 333a6e13b622
   - 62d212192002
   - 6e45b443ef1f
   - dd4df992d93d
@@ -3185,6 +3210,7 @@ tools:
 - name: ccat
   owner: devteam
   revisions:
+  - 1a6979fbd544
   - 201d8e7dfc43
   tool_panel_section_label: Peak Calling
 - name: bwameth
@@ -3212,6 +3238,11 @@ tools:
   revisions:
   - e6ef29001647
   tool_panel_section_label: Variant Calling
+- name: bbtools_callvariants
+  owner: iuc
+  revisions:
+  - b955346ef41e
+  tool_panel_section_label: Variant Calling
 - name: varscan_mpileup
   owner: iuc
   revisions:
@@ -3220,6 +3251,7 @@ tools:
   - 45288fb1f3f5
   - 7c5e867820cf
   - d7e6c347538d
+  - db94eadb92c1
   - e3f170cc4f95
   tool_panel_section_label: Variant Calling
 - name: varscan_somatic
@@ -3231,6 +3263,7 @@ tools:
   - 72b8ce355fae
   - a57606054bd7
   - b79bb8b09822
+  - cf8ffc79db67
   - d37adcc2ec03
   tool_panel_section_label: Variant Calling
 - name: varscan_copynumber
@@ -3239,6 +3272,7 @@ tools:
   - 0bc56f894766
   - 192bd5b78300
   - 8d8de66233ea
+  - 9f8dbbbc0267
   - a584f046e4a7
   - c24910ad5441
   - e814a042315f
@@ -3246,6 +3280,7 @@ tools:
 - name: freebayes
   owner: devteam
   revisions:
+  - 04fa42777df9
   - 156b60c1530f
   - 213a3d6b579a
   - 57def2d7c093
@@ -4893,6 +4928,11 @@ tools:
   - 25030f0d1154
   - 4bd560127b68
   tool_panel_section_label: Statistics
+- name: bbtools_bbduk
+  owner: iuc
+  revisions:
+  - 204a131e47db
+  tool_panel_section_label: FASTA/FASTQ
 - name: umi_tools_count
   owner: iuc
   revisions:
@@ -7021,6 +7061,7 @@ tools:
   - 0f20ed06ed6c
   - 1e0234b87809
   - 3b75d5285aff
+  - 51f5e7505c4b
   - 56b1a13d9680
   - 6cd62b6d2b5c
   - b74b9a7b3e3b
@@ -7048,6 +7089,7 @@ tools:
   revisions:
   - 456e4dadb905
   - 46b4fa689fd7
+  - 4771f8bc8fa4
   - 66f6db4aa19b
   - 74d1e42a87e0
   - b3ff7225da03
