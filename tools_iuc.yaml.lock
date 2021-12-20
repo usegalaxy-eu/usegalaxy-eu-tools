@@ -536,11 +536,13 @@ tools:
 - name: delly_cnv
   owner: iuc
   revisions:
+  - 56781a718729
   - d402af96808e
   tool_panel_section_label: Variant Calling
 - name: delly_classify
   owner: iuc
   revisions:
+  - d31211a43b19
   - d3bc6ec7881f
   tool_panel_section_label: Variant Calling
 - name: delly_lr
@@ -548,6 +550,7 @@ tools:
   revisions:
   - 629a0066003d
   - ceda4714f3a1
+  - d30785dbe6b7
   - d5124d5c8131
   tool_panel_section_label: Variant Calling
 - name: delly_call
@@ -555,12 +558,14 @@ tools:
   revisions:
   - 36772204dee5
   - 53d90d86fc83
+  - 6f383714149d
   - 9946bd542898
   tool_panel_section_label: Variant Calling
 - name: delly_merge
   owner: iuc
   revisions:
   - '148389992630'
+  - 1efb2b927957
   - 6331d804f983
   - 97c7441aed0d
   tool_panel_section_label: Variant Calling
@@ -570,6 +575,7 @@ tools:
   - 6184cfc70e28
   - 9919057a466c
   - a75e05f20a66
+  - d2590fe6793f
   tool_panel_section_label: Variant Calling
 - name: sansa_annotate
   owner: iuc
@@ -741,6 +747,7 @@ tools:
   owner: iuc
   revisions:
   - 16d22eee0fe3
+  - 272aca44b3dd
   - 57ac42ec1be3
   - 66b35562554d
   - f76d842e960f
@@ -2620,6 +2627,7 @@ tools:
   revisions:
   - 356afed970b4
   - 43af166bc01e
+  - 9ded6109434a
   - d40ed4eb0c0e
   - e59bee4565b3
   tool_panel_section_label: Assembly
@@ -2862,6 +2870,7 @@ tools:
   - 9bdff28ae1b1
   - d79ed3ec25fe
   - df0c8d0a5992
+  - f2843df56434
   - fb9b9f0f2f06
   tool_panel_section_label: RNA Analysis
 - name: limma_voom
@@ -2958,6 +2967,7 @@ tools:
   - 606b7748965d
   - c9cfec002f71
   - ca0588b09438
+  - d2bc35f3d1c5
   - d5e8807a407d
   - d84caa5a98ad
   - db1f362cca3e
@@ -2975,6 +2985,7 @@ tools:
   - 6f480aee5877
   - 9c545f1c1a4e
   - b34de8dc0f64
+  - bdede464821e
   tool_panel_section_label: RNA Analysis
 - name: trinity_align_and_estimate_abundance
   owner: iuc
@@ -2989,6 +3000,7 @@ tools:
   - a21e229da9a1
   - aed859a021c0
   - afd41a430a76
+  - c2b82a94493e
   tool_panel_section_label: RNA Analysis
 - name: trinity_abundance_estimates_to_matrix
   owner: iuc
@@ -3001,6 +3013,7 @@ tools:
   - 59fff1388bc2
   - 77fc547df6ff
   - 81a4697677e7
+  - bcc5f03f1900
   - cdde9062b49c
   - d6a479fd4281
   tool_panel_section_label: RNA Analysis
@@ -3016,6 +3029,7 @@ tools:
   - 8fed16891aaf
   - afa3a9786339
   - b1e9a0355166
+  - be3f26533209
   - beafdd47f8cf
   tool_panel_section_label: RNA Analysis
 - name: trinity_filter_low_expr_transcripts
@@ -3023,6 +3037,7 @@ tools:
   revisions:
   - 1007cdb58d91
   - 17101429bf0d
+  - 1fdb25a8384d
   - 42c5172815f7
   - 42f93482524f
   - 6821f5ea01d8
@@ -3043,6 +3058,7 @@ tools:
   - 55cf05b65ad5
   - ab87da55fe61
   - bbbb39ad9a7e
+  - eafea3083352
   - f3924bd07cba
   - fd588e138aa6
   tool_panel_section_label: RNA Analysis
@@ -3075,6 +3091,7 @@ tools:
   revisions:
   - 251393b72616
   - 278b189248cd
+  - 2872c633f07e
   - 4ca0e679f21e
   - 62adf13b86ea
   - 9fd8b69e6e68
@@ -4446,6 +4463,7 @@ tools:
   owner: iuc
   revisions:
   - 83b8e36e9cbe
+  - 8c440c3002bc
   - a312a0fdaf31
   - d0a568e1904b
   tool_panel_section_label: SAM/BAM
@@ -4454,6 +4472,7 @@ tools:
   revisions:
   - 740ce0a18f0d
   - 8890e2d4c068
+  - b40e2d865d52
   tool_panel_section_label: SAM/BAM
 - name: samtools_mpileup
   owner: devteam
@@ -4463,6 +4482,7 @@ tools:
   - 44a18a94d7a9
   - 583abf29fc8e
   - 8da515fbc1bf
+  - 9da0311ab1dd
   - fa7ad9b89f4a
   tool_panel_section_label: SAM/BAM
 - name: samtools_calmd
@@ -4524,6 +4544,7 @@ tools:
 - name: samtools_view
   owner: iuc
   revisions:
+  - 0dbf49c414ae
   - b01db2684fa5
   - b72793637686
   - bf328cec6a42
@@ -7098,6 +7119,7 @@ tools:
   - 83a69484cb87
   - b6abccb1f25b
   - b7e297c2ede6
+  - ca0d8cf80567
   - debfccc4d65b
   - fe3e8506112c
   tool_panel_section_label: Phylogenetics
@@ -7532,10 +7554,12 @@ tools:
   revisions:
   - 335665e15630
   - 524cb8f7a69a
+  - 8f6c7638eab2
   tool_panel_section_label: Phylogenetics
 - name: usher_matutils
   owner: iuc
   revisions:
+  - 52fd1d491417
   - 79e2ee4e6ebb
   tool_panel_section_label: Phylogenetics
 - name: hyphy_fel
@@ -7785,6 +7809,7 @@ tools:
   revisions:
   - 00187b27f5e5
   - 0208cadda55b
+  - 05996586c8b3
   - 2a57d2ef04c6
   - 2b2bfeda00d0
   - 2bf45c7fbeea
@@ -7811,6 +7836,7 @@ tools:
   - 6b83059e8f34
   - 6c398f64ad6a
   - 771cffc56c87
+  - 7925dd016f53
   - 7ab33ce63e4d
   - 92dbdc4d2722
   - 95ddee768b61
@@ -7831,6 +7857,7 @@ tools:
   - 6caee0d165fe
   - 7f9cf152cf8f
   - 948f4bc1f030
+  - 9930af9d17f8
   - 9ef3526640f8
   - a1dc6db337ca
   - b8cb089a8e59
@@ -7849,6 +7876,7 @@ tools:
   - 1fe9daabe09c
   - 2b150f2a012b
   - 35a20c16a49e
+  - 38d2b1f38992
   - 3d93761a6663
   - 55d273c0c574
   - 7fb3fc24be0e
@@ -7870,6 +7898,7 @@ tools:
   - 56b2d956a1a6
   - 5b4cd19272d5
   - 6977e9b7143d
+  - 73d2b7a8d94b
   - 7e316a1fe98e
   - 7ec1d063fecd
   - 89ab3b2973d8
