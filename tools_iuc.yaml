@@ -11,12 +11,16 @@ tools:
   - name: maaslin2
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
-    
+
   - name: instrain_profile
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
   - name: instrain_compare
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: megan_sam2rma
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -207,7 +211,7 @@ tools:
   - name: cd_hit
     owner: iuc
     tool_panel_section_label: Multiple Alignments
-    
+
   - name: anndata_inspect
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -751,7 +755,7 @@ tools:
   - name: dna_filtering
     owner: devteam
     tool_panel_section_label: Text Manipulation
-    
+
   - name: query_tabular
     owner: iuc
     tool_panel_section_label: Text Manipulation
@@ -1490,7 +1494,7 @@ tools:
   - name: bwa_mem2
     owner: iuc
     tool_panel_section_label: Mapping
-    
+
   - name: megablast_xml_parser
     owner: devteam
     tool_panel_section_label: Mapping
@@ -2021,7 +2025,7 @@ tools:
   - name: kraken
     owner: devteam
     tool_panel_section_label: Metagenomic Analysis
-    
+
   - name: kraken_report
     owner: devteam
     tool_panel_section_label: Metagenomic Analysis
@@ -2278,7 +2282,7 @@ tools:
     tool_panel_section_label: SAM/BAM
 
   - name: samtools_coverage
-    owner: devteam
+    owner: iuc
     tool_panel_section_label: SAM/BAM
 
   - name: samtools_bedcov
@@ -2840,7 +2844,7 @@ tools:
   - name: sonneityping
     owner: iuc
     tool_panel_section_label: Genome editing
-    
+
   - name: mothur_create_database
     owner: iuc
     tool_panel_section_label: Mothur
@@ -3353,6 +3357,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: homer_scanmotifgenomewide
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: homer_annotatepeaks
     owner: iuc
     tool_panel_section_label: Annotation
@@ -3823,27 +3831,27 @@ tools:
   - name: orthofinder_onlygroups
     owner: iuc
     tool_panel_section_label: Annotation
-  
+
   - name: tracy_basecall
     owner: iuc
     tool_panel_section_label: Sanger Sequencing
-    
+
   - name: tracy_align
     owner: iuc
     tool_panel_section_label: Sanger Sequencing
-    
+
   - name: tracy_decompose
     owner: iuc
     tool_panel_section_label: Sanger Sequencing
-    
+
   - name: tracy_assemble
     owner: iuc
     tool_panel_section_label: Sanger Sequencing
-    
+
   - name: bracken
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
-    
+
   - name: data_manager_build_bracken_database
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis

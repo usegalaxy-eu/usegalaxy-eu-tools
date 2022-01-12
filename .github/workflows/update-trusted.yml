@@ -28,9 +28,9 @@ jobs:
       - name: Perform linting
         run: |
             # Update the trusted tools.
-            make fix
-            make lint
-            make update_trusted
+            make fix -j $(nproc)
+            make lint -j $(nproc)
+            make update_trusted -j $(nproc)
 
       - name: Commit files
         run: |
