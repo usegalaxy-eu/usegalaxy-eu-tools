@@ -4,6 +4,14 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: cdo_operations
+    owner: climate
+    tool_panel_section_label: 'Climate Analysis'
+
+  - name: cdo_info
+    owner: climate
+    tool_panel_section_label: 'Climate Analysis'
+
   - name: psy_maps
     owner: climate
     tool_panel_section_label: 'Climate Analysis'
