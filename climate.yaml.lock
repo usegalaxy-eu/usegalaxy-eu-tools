@@ -2,6 +2,16 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: cdo_operations
+  owner: climate
+  revisions:
+  - d5355f6fa02b
+  tool_panel_section_label: Climate Analysis
+- name: cdo_info
+  owner: climate
+  revisions:
+  - 8e0ae5c594e7
+  tool_panel_section_label: Climate Analysis
 - name: psy_maps
   owner: climate
   revisions:
