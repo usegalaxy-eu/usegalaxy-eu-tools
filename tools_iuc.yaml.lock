@@ -366,6 +366,11 @@ tools:
   - 220ee3518f19
   - d3c07d270a50
   tool_panel_section_label: Collection Operations
+- name: genomic_super_signature
+  owner: iuc
+  revisions:
+  - d0cbe6cc1f04
+  tool_panel_section_label: RNA Analysis
 - name: rnaquast
   owner: iuc
   revisions:
@@ -617,6 +622,7 @@ tools:
   owner: iuc
   revisions:
   - 5ee777f9db23
+  - 81426b3cf18b
   - 874cc12ae316
   - d40d4bf05718
   tool_panel_section_label: Variant Calling
@@ -985,6 +991,7 @@ tools:
   - 828324f3292f
   - 82fcdf530f87
   - 8d8412d35247
+  - b72d84f6941d
   - bb9732cfcdbe
   - c4db6ec33fec
   tool_panel_section_label: RNA Analysis
@@ -2068,6 +2075,7 @@ tools:
   - 5d7c5ae1b69b
   - 8cc3862f8b8e
   - 96cacb31d571
+  - a7f16f24e9a1
   tool_panel_section_label: Assembly
 - name: jellyfish
   owner: iuc
@@ -2530,7 +2538,6 @@ tools:
   - 3ce74eab308b
   - 553bfe8bd0b5
   - 841084c5fc46
-  - 890b794c997d
   - f4fb67b97a63
   - fa5259cc561b
   tool_panel_section_label: Assembly
@@ -3831,6 +3838,7 @@ tools:
   - 2a17c789e0a5
   - 6f9c0884a3e7
   - 7d34178f2812
+  - 881d7645d1bf
   - 9ffcddf6f9c0
   - a1f0b3f4b781
   - ab1f60c26526
@@ -4151,6 +4159,7 @@ tools:
 - name: bcftools_merge
   owner: iuc
   revisions:
+  - 27026ed52654
   - 3e0e55c628b8
   - 9473302f4588
   - e03f2f3ac3a9
@@ -4209,11 +4218,13 @@ tools:
   owner: iuc
   revisions:
   - 0dbff46d5a1b
+  - a0c219ecb5e7
   - ce9396ddcb2b
   tool_panel_section_label: Variant Calling
 - name: bcftools_view
   owner: iuc
   revisions:
+  - 1262c96a9974
   - 1d1762860d7e
   - 98d5499ead46
   tool_panel_section_label: Variant Calling
@@ -4226,6 +4237,7 @@ tools:
 - name: bcftools_roh
   owner: iuc
   revisions:
+  - 427e353bf26f
   - b76adb2f1c51
   - d80872078a09
   tool_panel_section_label: Variant Calling
@@ -4234,17 +4246,20 @@ tools:
   revisions:
   - 9ef52d95114b
   - b3b3c060962e
+  - d68c43202172
   tool_panel_section_label: Variant Calling
 - name: bcftools_query
   owner: iuc
   revisions:
   - 3b1b51e1fcba
+  - 5fce85148ed1
   - c9c5718edc19
   tool_panel_section_label: Variant Calling
 - name: bcftools_isec
   owner: iuc
   revisions:
   - 02f349bdbf96
+  - 0d7d3de5ef5d
   - 9ece72700ca9
   tool_panel_section_label: Variant Calling
 - name: bcftools_gtcheck
@@ -4252,16 +4267,19 @@ tools:
   revisions:
   - 39810174657a
   - 672b6c02fbc7
+  - 9243f0e24906
   tool_panel_section_label: Variant Calling
 - name: bcftools_filter
   owner: iuc
   revisions:
   - 6ca7c55a27e8
+  - a892912c09d5
   - abafcb875ba6
   tool_panel_section_label: Variant Calling
 - name: bcftools_convert_to_vcf
   owner: iuc
   revisions:
+  - 7887b9d94c05
   - c14b33ab15d8
   - fec517907949
   tool_panel_section_label: Variant Calling
@@ -4270,12 +4288,14 @@ tools:
   revisions:
   - 7cea7c7bf203
   - b8e9da766b0f
+  - e968db9208a4
   tool_panel_section_label: Variant Calling
 - name: bcftools_annotate
   owner: iuc
   revisions:
   - 2436e3bef247
   - 403553ae19f6
+  - 8a885a1a92ea
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_color_chrs
   owner: iuc
@@ -7111,6 +7131,7 @@ tools:
   - 51f5e7505c4b
   - 56b1a13d9680
   - 6cd62b6d2b5c
+  - 7004ce07621a
   - b74b9a7b3e3b
   - d070e316da5d
   - d34df92e598f
@@ -7137,6 +7158,7 @@ tools:
 - name: nextalign
   owner: iuc
   revisions:
+  - 1021f52c9e11
   - 1c785a6b4d90
   - 456e4dadb905
   - 46b4fa689fd7
@@ -7939,6 +7961,7 @@ tools:
   - 5c743356df83
   - 80af973c5277
   - 97f70f7ed077
+  - cbd605a24336
   - e08b1dc0480c
   - f067504aa92a
   tool_panel_section_label: Imaging
@@ -8226,6 +8249,10 @@ tools:
   - 4033827c76b8
   - c3d043160f09
   tool_panel_section_label: Metagenomic Analysis
+- name: data_manager_genomic_super_signature_ravmodels
+  owner: iuc
+  revisions:
+  - b5bca6d58e4c
 - name: data_manager_interproscan
   owner: iuc
   revisions:
