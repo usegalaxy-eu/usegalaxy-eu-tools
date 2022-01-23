@@ -1407,10 +1407,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
-  - name: rnaspades
-    owner: iuc
-    tool_panel_section_label: Assembly
-
   - name: unicycler
     owner: iuc
     tool_panel_section_label: Assembly
@@ -2777,8 +2773,40 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: rnaspades
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: metaspades
     owner: nml
+    tool_panel_section_label: Assembly
+
+  - name: spades
+    owner: nml
+    tool_panel_section_label: Assembly
+
+  - name: spades_rnaviralspades
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: spades_plasmidspades
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: spades_metaviralspades
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: spades_metaplasmidspades
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: spades_coronaspades
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: spades_biosyntheticspades
+    owner: iuc
     tool_panel_section_label: Assembly
 
   - name: disco
@@ -2796,10 +2824,6 @@ tools:
   - name: gdcwebapp
     owner: iuc
     tool_panel_section_label: Get Data
-
-  - name: spades
-    owner: nml
-    tool_panel_section_label: Assembly
 
   - name: valet
     owner: iuc
