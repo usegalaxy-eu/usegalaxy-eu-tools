@@ -2589,16 +2589,6 @@ tools:
   - 39edec572bae
   - 9d79beb19ac3
   tool_panel_section_label: Assembly
-- name: rnaspades
-  owner: iuc
-  revisions:
-  - 03fd468e158f
-  - 0d30fed9628b
-  - 1035adb112c0
-  - 16e0eb91072f
-  - 9e58ff014088
-  - a8a278849c18
-  tool_panel_section_label: Assembly
 - name: unicycler
   owner: iuc
   revisions:
@@ -5561,6 +5551,17 @@ tools:
   - 734cd5f1c1b2
   - b2dc51639ad5
   tool_panel_section_label: Assembly
+- name: rnaspades
+  owner: iuc
+  revisions:
+  - 03fd468e158f
+  - 0d30fed9628b
+  - 1035adb112c0
+  - 16e0eb91072f
+  - 9e58ff014088
+  - a8a278849c18
+  - b66de1e9abfb
+  tool_panel_section_label: Assembly
 - name: metaspades
   owner: nml
   revisions:
@@ -5568,8 +5569,51 @@ tools:
   - 05c394313b1c
   - 2ecf5a570907
   - 3ca2d2a9068c
+  - a9b8c9e204ee
   - ce02f513e598
   - e93c1a0678cd
+  tool_panel_section_label: Assembly
+- name: spades
+  owner: nml
+  revisions:
+  - 24fffa4fee40
+  - 74f20c988994
+  - 80f079961dc9
+  - 884dc0264950
+  - 9006e5836729
+  - b7829778729f
+  - b8c00ce5dfa0
+  - b8d633fbf5f5
+  tool_panel_section_label: Assembly
+- name: spades_rnaviralspades
+  owner: iuc
+  revisions:
+  - 5df83f4bad67
+  tool_panel_section_label: Assembly
+- name: spades_plasmidspades
+  owner: iuc
+  revisions:
+  - eabeb1a74dac
+  tool_panel_section_label: Assembly
+- name: spades_metaviralspades
+  owner: iuc
+  revisions:
+  - 9346dcffaafc
+  tool_panel_section_label: Assembly
+- name: spades_metaplasmidspades
+  owner: iuc
+  revisions:
+  - 32ab23671cc1
+  tool_panel_section_label: Assembly
+- name: spades_coronaspades
+  owner: iuc
+  revisions:
+  - 7004279ff8b7
+  tool_panel_section_label: Assembly
+- name: spades_biosyntheticspades
+  owner: iuc
+  revisions:
+  - 42a39792aaae
   tool_panel_section_label: Assembly
 - name: disco
   owner: iuc
@@ -5594,17 +5638,6 @@ tools:
   revisions:
   - 7709b8ca3296
   tool_panel_section_label: Get Data
-- name: spades
-  owner: nml
-  revisions:
-  - 24fffa4fee40
-  - 80f079961dc9
-  - 884dc0264950
-  - 9006e5836729
-  - b7829778729f
-  - b8c00ce5dfa0
-  - b8d633fbf5f5
-  tool_panel_section_label: Assembly
 - name: valet
   owner: iuc
   revisions:
