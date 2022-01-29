@@ -2,6 +2,16 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: metabat2_jgi_summarize_bam_contig_depths
+  owner: iuc
+  revisions:
+  - d27a4ed006ee
+  tool_panel_section_label: Metagenomic Analysis
+- name: metabat2
+  owner: iuc
+  revisions:
+  - 76bc4efa1aeb
+  tool_panel_section_label: Metagenomic Analysis
 - name: malt_run
   owner: iuc
   revisions:
@@ -57,6 +67,7 @@ tools:
   revisions:
   - 0cd163d805e3
   - 2e1cf7d85dbc
+  - c762a1cd357e
   tool_panel_section_label: Annotation
 - name: funannotate_clean
   owner: iuc
@@ -618,6 +629,7 @@ tools:
   - 2975b29bcaa1
   - 5f756651a1bc
   - d262577e04b0
+  - e0734e88a104
   tool_panel_section_label: Variant Calling
 - name: bcftools_concat
   owner: iuc
@@ -847,6 +859,11 @@ tools:
   owner: iuc
   revisions:
   - caf213d51d6c
+  tool_panel_section_label: Get Data
+- name: ncbi_datasets
+  owner: iuc
+  revisions:
+  - 1a7773882d2c
   tool_panel_section_label: Get Data
 - name: dada2_filterandtrim
   owner: iuc
@@ -5562,6 +5579,7 @@ tools:
   - 9e58ff014088
   - a8a278849c18
   - b66de1e9abfb
+  - ef69617ecb42
   tool_panel_section_label: Assembly
 - name: metaspades
   owner: nml
@@ -5573,6 +5591,7 @@ tools:
   - a9b8c9e204ee
   - ce02f513e598
   - e93c1a0678cd
+  - f338e9942b27
   tool_panel_section_label: Assembly
 - name: spades
   owner: nml
@@ -5585,35 +5604,42 @@ tools:
   - b7829778729f
   - b8c00ce5dfa0
   - b8d633fbf5f5
+  - d2d1df21dfb9
   tool_panel_section_label: Assembly
 - name: spades_rnaviralspades
   owner: iuc
   revisions:
+  - 249f6a28c751
   - 5df83f4bad67
   tool_panel_section_label: Assembly
 - name: spades_plasmidspades
   owner: iuc
   revisions:
+  - e41dcb0e913b
   - eabeb1a74dac
   tool_panel_section_label: Assembly
 - name: spades_metaviralspades
   owner: iuc
   revisions:
   - 9346dcffaafc
+  - f1532cb33c75
   tool_panel_section_label: Assembly
 - name: spades_metaplasmidspades
   owner: iuc
   revisions:
   - 32ab23671cc1
+  - 8d4b90bf9caf
   tool_panel_section_label: Assembly
 - name: spades_coronaspades
   owner: iuc
   revisions:
   - 7004279ff8b7
+  - 808b3a0a6716
   tool_panel_section_label: Assembly
 - name: spades_biosyntheticspades
   owner: iuc
   revisions:
+  - 1bb12736175c
   - 42a39792aaae
   tool_panel_section_label: Assembly
 - name: disco
@@ -7171,6 +7197,7 @@ tools:
   - 3b75d5285aff
   - 51f5e7505c4b
   - 56b1a13d9680
+  - 64be7ff9b97b
   - 6cd62b6d2b5c
   - 7004ce07621a
   - b74b9a7b3e3b
@@ -7205,6 +7232,7 @@ tools:
   - 46b4fa689fd7
   - 4771f8bc8fa4
   - 66f6db4aa19b
+  - 6f6a2cb188cf
   - 74d1e42a87e0
   - b3ff7225da03
   - d1dd7d1b07f6
@@ -8030,6 +8058,11 @@ tools:
   - a670bdbf8869
   - c3f58c2eee1e
   tool_panel_section_label: Proteomics
+- name: read_it_and_keep
+  owner: iuc
+  revisions:
+  - 554aa2a63f04
+  tool_panel_section_label: Virology
 - name: ivar_consensus
   owner: iuc
   revisions:

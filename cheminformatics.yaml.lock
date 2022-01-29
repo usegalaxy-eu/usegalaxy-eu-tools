@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: tleap
+  owner: chemteam
+  revisions:
+  - 3de1359b86cc
+  tool_panel_section_label: ChemicalToolBox
 - name: align_it
   owner: bgruening
   revisions:
@@ -105,6 +110,7 @@ tools:
   - 45dc2555933c
   - 51023da731c0
   - 52e64e8cf203
+  - 608098b3668d
   - 84c85e65027c
   - '879662481176'
   - 9234f137c6e1
@@ -585,6 +591,7 @@ tools:
 - name: acpype_amber2gromacs
   owner: chemteam
   revisions:
+  - 5b4ae74b7f0b
   - 79c856227ff1
   tool_panel_section_label: ChemicalToolBox
 - name: mdanalysis_ramachandran_protein
@@ -903,6 +910,7 @@ tools:
 - name: ambertools_acpype
   owner: chemteam
   revisions:
+  - 095ad4d096d1
   - 0d640d752e8a
   - 2417677038b2
   - 27ee142314a9
@@ -927,6 +935,7 @@ tools:
   - 59a0424937cc
   - 5f3f7376a0e3
   - 8029dfe04b28
+  - 8a839e6a1e3e
   - c280abd461a6
   - c6e895c6bb75
   - ca57ded3ec32
@@ -950,6 +959,7 @@ tools:
   - a0099ea2ef8b
   - cf9f1f2688b5
   - dbfb86927de6
+  - ecc43bf27a49
   tool_panel_section_label: ChemicalToolBox
 - name: chembl
   owner: bgruening
@@ -1009,6 +1019,7 @@ tools:
   - 30120022aa5c
   - 5a97cb53a456
   - 6c6cecf51bd0
+  - 6d0677a148fe
   - 88658acb9337
   - b500cc25dd15
   - da2252f1ccab
@@ -1034,5 +1045,6 @@ tools:
 - name: acpype_amber2gromacs
   owner: chemteam
   revisions:
+  - 5b4ae74b7f0b
   - 79c856227ff1
   tool_panel_section_label: ChemicalToolBox
