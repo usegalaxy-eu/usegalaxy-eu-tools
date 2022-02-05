@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: compress_file
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
   - name: metabat2_jgi_summarize_bam_contig_depths
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
