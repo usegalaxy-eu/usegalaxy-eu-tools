@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: compress_file
+  owner: iuc
+  revisions:
+  - 09ea79f9f260
+  tool_panel_section_label: Convert Formats
 - name: metabat2_jgi_summarize_bam_contig_depths
   owner: iuc
   revisions:
@@ -2102,6 +2107,7 @@ tools:
 - name: bionano_scaffold
   owner: bgruening
   revisions:
+  - 5258e18bbe23
   - 5d7c5ae1b69b
   - 8cc3862f8b8e
   - 96cacb31d571
