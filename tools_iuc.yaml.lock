@@ -115,6 +115,11 @@ tools:
   - 602fb8e63aa7
   - cf13a1e03e5b
   tool_panel_section_label: Annotation
+- name: legsta
+  owner: iuc
+  revisions:
+  - b469f6d53d06
+  tool_panel_section_label: Annotation
 - name: ena_upload
   owner: iuc
   revisions:
@@ -123,6 +128,7 @@ tools:
   - 4aab5ae907b6
   - 57251c760cab
   - 59bb6d34fca6
+  - 6f6537780379
   - 9e2df763086c
   - e1b3b37aa69f
   tool_panel_section_label: Send Data
@@ -662,6 +668,7 @@ tools:
   - 81426b3cf18b
   - 874cc12ae316
   - d40d4bf05718
+  - fc47ffec447e
   tool_panel_section_label: Variant Calling
 - name: medaka_consensus
   owner: iuc
@@ -1627,6 +1634,7 @@ tools:
 - name: filtlong
   owner: iuc
   revisions:
+  - 41b2ad601cf0
   - 8880fb74ef56
   - a72af9de6bf5
   tool_panel_section_label: FASTA/FASTQ
@@ -2085,6 +2093,11 @@ tools:
   - b3c7199d8786
   - fae6527990af
   tool_panel_section_label: Metagenomic Analysis
+- name: links
+  owner: iuc
+  revisions:
+  - 7acd9ade2dd1
+  tool_panel_section_label: Assembly
 - name: bellerophon
   owner: iuc
   revisions:
@@ -3387,6 +3400,7 @@ tools:
   - 156b60c1530f
   - 213a3d6b579a
   - 57def2d7c093
+  - a7c9782130e8
   - da6e10dee68b
   - ef2c525bd8cd
   tool_panel_section_label: Variant Calling
@@ -4219,6 +4233,7 @@ tools:
   - c82130967bd2
   - d6dc477167f8
   - e522022137f6
+  - edc3d484b99a
   - f867422772d6
   tool_panel_section_label: Variant Calling
 - name: bcftools_merge
@@ -4226,6 +4241,7 @@ tools:
   revisions:
   - 27026ed52654
   - 3e0e55c628b8
+  - 798c063f8fc9
   - 9473302f4588
   - e03f2f3ac3a9
   tool_panel_section_label: Variant Calling
@@ -4242,11 +4258,13 @@ tools:
   - a531317a3527
   - b03984136ce4
   - cb30a39055d0
+  - d267bcfdc8fe
   tool_panel_section_label: Variant Calling
 - name: bcftools_norm
   owner: iuc
   revisions:
   - 19905c025d2a
+  - 481476814acc
   - 67e2bd1c4579
   - 76655fe2c70e
   - 93bdd3bf5743
@@ -4262,6 +4280,7 @@ tools:
   - 039ea3f1dea9
   - 33df4e68959b
   - 40388f544e5d
+  - 68216882a410
   - 7cbf3c66d4ad
   - 8899a6d50699
   - f10f5b4e7854
@@ -4272,6 +4291,7 @@ tools:
   owner: iuc
   revisions:
   - 48ac4d611e92
+  - 58341ad4fb42
   - 693d81b3e113
   - 77877eec9e8b
   - 96d2000977ab
@@ -4296,6 +4316,7 @@ tools:
 - name: bcftools_stats
   owner: iuc
   revisions:
+  - 80844da35ed5
   - b17394940c7a
   - c636e58df612
   tool_panel_section_label: Variant Calling
@@ -4325,12 +4346,14 @@ tools:
   revisions:
   - 02f349bdbf96
   - 0d7d3de5ef5d
+  - 4afd849c9d35
   - 9ece72700ca9
   tool_panel_section_label: Variant Calling
 - name: bcftools_gtcheck
   owner: iuc
   revisions:
   - 39810174657a
+  - 64778f8899cc
   - 672b6c02fbc7
   - 9243f0e24906
   tool_panel_section_label: Variant Calling
@@ -4340,10 +4363,12 @@ tools:
   - 6ca7c55a27e8
   - a892912c09d5
   - abafcb875ba6
+  - e4988fd4d503
   tool_panel_section_label: Variant Calling
 - name: bcftools_convert_to_vcf
   owner: iuc
   revisions:
+  - 41873b29860a
   - 7887b9d94c05
   - c14b33ab15d8
   - fec517907949
@@ -4351,6 +4376,7 @@ tools:
 - name: bcftools_convert_from_vcf
   owner: iuc
   revisions:
+  - 34585fd4bd3e
   - 7cea7c7bf203
   - b8e9da766b0f
   - e968db9208a4
@@ -4367,6 +4393,7 @@ tools:
   revisions:
   - 05928e15da21
   - 47ee1925fe9e
+  - 4e85a3a5dbd1
   - 71186bb66ca2
   - 71dfde92fd57
   - 87aa2e0a126e
@@ -4382,6 +4409,7 @@ tools:
   - 635532ff1ac9
   - 8408bffd5616
   - 86737d0f7fab
+  - 8d637025a905
   - b2d1b7dda2b7
   - bf1f4994f104
   tool_panel_section_label: Variant Calling
@@ -5631,6 +5659,7 @@ tools:
   - 9e58ff014088
   - a8a278849c18
   - b66de1e9abfb
+  - e122f9101584
   - ef69617ecb42
   tool_panel_section_label: Assembly
 - name: metaspades
@@ -5644,6 +5673,7 @@ tools:
   - ce02f513e598
   - e731ea24e48d
   - e93c1a0678cd
+  - eb7a370f6588
   - f338e9942b27
   tool_panel_section_label: Assembly
 - name: spades
@@ -5659,18 +5689,21 @@ tools:
   - b8c00ce5dfa0
   - b8d633fbf5f5
   - d2d1df21dfb9
+  - dd7ad84f3943
   tool_panel_section_label: Assembly
 - name: spades_rnaviralspades
   owner: iuc
   revisions:
   - 249f6a28c751
   - 5df83f4bad67
+  - b65a43f70b99
   - d159735a6a9f
   tool_panel_section_label: Assembly
 - name: spades_plasmidspades
   owner: iuc
   revisions:
   - 340bc17f49cf
+  - 85fb02c43042
   - e41dcb0e913b
   - eabeb1a74dac
   tool_panel_section_label: Assembly
@@ -5679,18 +5712,21 @@ tools:
   revisions:
   - 2a10645aeadd
   - 9346dcffaafc
+  - 9de69775f512
   - f1532cb33c75
   tool_panel_section_label: Assembly
 - name: spades_metaplasmidspades
   owner: iuc
   revisions:
   - 32ab23671cc1
+  - 6b5a5842531e
   - 8d4b90bf9caf
   - b8002c3f7141
   tool_panel_section_label: Assembly
 - name: spades_coronaspades
   owner: iuc
   revisions:
+  - 0e02cc942d97
   - 7004279ff8b7
   - 808b3a0a6716
   - d6e617c4e338
@@ -5701,6 +5737,7 @@ tools:
   - 1bb12736175c
   - 42a39792aaae
   - 7490b213baa9
+  - 904bf932cf78
   tool_panel_section_label: Assembly
 - name: disco
   owner: iuc
@@ -5780,6 +5817,7 @@ tools:
 - name: porechop
   owner: iuc
   revisions:
+  - 543cbeef3949
   - 5f76b20953e5
   - 93d623d9979c
   tool_panel_section_label: Nanopore
