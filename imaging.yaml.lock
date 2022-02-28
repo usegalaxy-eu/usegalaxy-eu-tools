@@ -1,6 +1,11 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: overlay_images
+  owner: imgteam
+  revisions:
+  - 589af0005df5
+  tool_panel_section_label: Imaging
 - name: color_deconvolution
   owner: imgteam
   revisions:
@@ -44,6 +49,7 @@ tools:
   owner: imgteam
   revisions:
   - 4e089a0983b1
+  - 9ccd642e7ae2
   - a71239f3543a
   - b0503eec7bd6
   tool_panel_section_label: Imaging
@@ -217,6 +223,7 @@ tools:
 - name: colocalization_viz
   owner: imgteam
   revisions:
+  - 0f8652663a03
   - 9ddb11b272ee
   - c73332d5c3bb
   - fc85eb253163
@@ -225,11 +232,13 @@ tools:
   owner: imgteam
   revisions:
   - 165a9330fc90
+  - b4fc6e09e576
   - bc324ec66719
   tool_panel_section_label: Imaging
 - name: overlay_segmentation_mask
   owner: imgteam
   revisions:
+  - 22e573b7dcb1
   - 63b2a10b1001
   - 8ad39f493587
   tool_panel_section_label: Imaging
