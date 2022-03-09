@@ -46,7 +46,9 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python scripts/update-tool.py tools_galaxyp.yaml
 	python scripts/update-tool.py single-cell-ebi-gxa.yaml
 	python scripts/update-tool.py genome-annotation.yaml
+	python scripts/update-tool.py galaxy-australia.yaml
 	python scripts/update-tool.py climate.yaml
+	python scripts/update-tool.py nml.yaml 
 
 update_all: $(UPDATED_YAMLS)
 

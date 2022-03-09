@@ -4,6 +4,18 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: compress_file
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: metabat2_jgi_summarize_bam_contig_depths
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: metabat2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: malt_run
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -69,6 +81,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: busco
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: legsta
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -1112,6 +1128,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: links
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: bellerophon
     owner: iuc
     tool_panel_section_label: Assembly
@@ -1591,6 +1611,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: trinity_gene_to_trans_map
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+    
   - name: trinotate
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -3653,6 +3677,10 @@ tools:
   - name: proteinortho_summary
     owner: iuc
     tool_panel_section_label: Proteomics
+
+  - name: read_it_and_keep
+    owner: iuc
+    tool_panel_section_label: Virology
 
   - name: ivar_consensus
     owner: iuc

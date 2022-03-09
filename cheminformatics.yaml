@@ -4,6 +4,9 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: tleap
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
 
   - name: align_it
     owner: bgruening
@@ -428,3 +431,17 @@ tools:
   - name: acpype_amber2gromacs
     owner: chemteam
     tool_panel_section_label: ChemicalToolBox
+
+  - name: gromacs_modify_topology
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: gromacs_extract_topology
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: gmx_get_builtin_file
+    owner: chemteam
+    tool_panel_section_label: ChemicalToolBox
+
+
