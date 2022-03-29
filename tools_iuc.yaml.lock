@@ -118,6 +118,7 @@ tools:
 - name: legsta
   owner: iuc
   revisions:
+  - 579f1cabfe79
   - b469f6d53d06
   tool_panel_section_label: Annotation
 - name: ena_upload
@@ -901,6 +902,7 @@ tools:
   revisions:
   - 1a7773882d2c
   - 37c98f8a2497
+  - c47a0a93ffd2
   - d19bb3e590b6
   tool_panel_section_label: Get Data
 - name: dada2_filterandtrim
@@ -1343,6 +1345,7 @@ tools:
   owner: iuc
   revisions:
   - 02befcb391f5
+  - 1ee282794de3
   - 654b3a274ed5
   - 6b865dde1baa
   tool_panel_section_label: Text Manipulation
@@ -1687,6 +1690,7 @@ tools:
   owner: iuc
   revisions:
   - 2ca1baabdae0
+  - e3ba567abdf5
   - f088370d2a3c
   tool_panel_section_label: Extract Features
 - name: extract_genomic_dna
@@ -1914,6 +1918,7 @@ tools:
   owner: iuc
   revisions:
   - 0080ad37f8a0
+  - 4bd5e5dbc6c5
   - 64e681a1cad5
   tool_panel_section_label: Evolution
 - name: meme_meme
@@ -2110,6 +2115,7 @@ tools:
 - name: raven
   owner: iuc
   revisions:
+  - 2b2a352488fa
   - 33b7d8481a76
   - 3edba9afc9bc
   - f11b994b7eb2
@@ -2453,6 +2459,7 @@ tools:
   - 35e38452bb3f
   - 9bbe5b7ffa12
   - c80bce242eec
+  - e39cc71d3ed6
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_paired_end_interlacer
   owner: devteam
@@ -2685,6 +2692,7 @@ tools:
   - 0834c823d4b9
   - 342a1d1fed7b
   - 59db8ea8c845
+  - 675488238c96
   - 736d51130b41
   - 7594365c546b
   - 81df4950d65b
@@ -2745,6 +2753,7 @@ tools:
   owner: iuc
   revisions:
   - 6d44c9f1a42b
+  - 81cbb6a4c1ca
   - e0ca2ec4f5d9
   tool_panel_section_label: Mapping
 - name: bioext_bealign
@@ -3464,16 +3473,19 @@ tools:
   owner: bgruening
   revisions:
   - 15ad71e21010
+  - cc51783dc93c
   tool_panel_section_label: Annotation
 - name: glimmer_knowledge_based
   owner: bgruening
   revisions:
+  - ce89c473666d
   - febc61f3c67d
   tool_panel_section_label: Annotation
 - name: glimmer_not_knowledge_based
   owner: bgruening
   revisions:
   - 2529762847c3
+  - 73c58e2debd0
   tool_panel_section_label: Annotation
 - name: mitos
   owner: iuc
@@ -3574,6 +3586,7 @@ tools:
   - 49b819f88c2b
   - 5182e1a99313
   - 809dfc93d593
+  - ac8250086ac3
   - ba6f87115e13
   - c2656b729ee9
   - c6f7442355e9
@@ -3583,6 +3596,7 @@ tools:
   owner: iuc
   revisions:
   - 02d81b994ef5
+  - 4934c0ac6197
   - adc0645b945c
   tool_panel_section_label: Annotation
 - name: tb_variant_filter
@@ -3916,6 +3930,7 @@ tools:
 - name: picard
   owner: devteam
   revisions:
+  - 1aac2a13842a
   - 1cd1cf786389
   - 2a17c789e0a5
   - 6f9c0884a3e7
@@ -3950,6 +3965,7 @@ tools:
 - name: kraken_taxonomy_report
   owner: iuc
   revisions:
+  - 27d65c78863c
   - 3f1a0d47ea8d
   - 528a1d91b066
   - b11b3ac48bb9
@@ -4393,6 +4409,7 @@ tools:
   owner: iuc
   revisions:
   - 2436e3bef247
+  - 2958e3b49ad4
   - 403553ae19f6
   - 8a885a1a92ea
   tool_panel_section_label: Variant Calling
@@ -4968,6 +4985,7 @@ tools:
 - name: stacks_sstacks
   owner: iuc
   revisions:
+  - 563af4497055
   - 95e37a28704b
   - e38d181d4e72
   - e880ddd2d8fa
@@ -4976,6 +4994,7 @@ tools:
   owner: iuc
   revisions:
   - 00f4a4e553ae
+  - 46f061f3cfeb
   - 5af94af9ec8f
   - dbe3901aace2
   tool_panel_section_label: RAD-seq
@@ -4983,12 +5002,14 @@ tools:
   owner: iuc
   revisions:
   - 2b1dd7ab69f7
+  - 9f9d39f582f3
   - b8827c571fbd
   - eb1e95f88e96
   tool_panel_section_label: RAD-seq
 - name: stacks_ustacks
   owner: iuc
   revisions:
+  - a4ec4f620a77
   - b6de94f2edc0
   - c2e3eca527c2
   - e5c97f09fe06
@@ -4997,6 +5018,7 @@ tools:
   owner: iuc
   revisions:
   - 0c741f364d18
+  - 6eaf0f9836c8
   - b08cd32d03ad
   - bc108981ca68
   - fea78fd36a05
@@ -5007,10 +5029,12 @@ tools:
   - 57910d476be9
   - 5d12647ff71f
   - 8fe258d72ff3
+  - be78e39d56b3
   tool_panel_section_label: RAD-seq
 - name: stacks_refmap
   owner: iuc
   revisions:
+  - 1ba1185929c1
   - 4ee074ca88fb
   - 7c42e6768c41
   - ba76bd1eef47
@@ -5019,12 +5043,14 @@ tools:
   owner: iuc
   revisions:
   - 5bd1418f4227
+  - be3df81c0353
   - dab92afa0c98
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks
   owner: iuc
   revisions:
   - 2360d8cf42f7
+  - 3e43e51b3c3b
   - 77f5db795774
   - 9d0ac63dcfcd
   tool_panel_section_label: RAD-seq
@@ -5032,6 +5058,7 @@ tools:
   owner: iuc
   revisions:
   - 0f16a6c30085
+  - 67cbd80b83f5
   - 7ebc7d229deb
   - ede5223bc7f1
   tool_panel_section_label: RAD-seq
@@ -5040,6 +5067,7 @@ tools:
   revisions:
   - 45db1ba16163
   - 47e83073b7a1
+  - 95286af4139b
   - d504d945a655
   tool_panel_section_label: RAD-seq
 - name: column_order_header_sort
@@ -7307,6 +7335,7 @@ tools:
   - 64be7ff9b97b
   - 6cd62b6d2b5c
   - 7004ce07621a
+  - 9e10ba792be2
   - b60593baff7d
   - b74b9a7b3e3b
   - d070e316da5d
@@ -7349,6 +7378,7 @@ tools:
   - b3ff7225da03
   - c318aef17dc0
   - d1dd7d1b07f6
+  - e5ed60c823a7
   tool_panel_section_label: Phylogenetics
 - name: sarscov2summary
   owner: iuc
@@ -8175,6 +8205,7 @@ tools:
 - name: read_it_and_keep
   owner: iuc
   revisions:
+  - 1563b58905f4
   - 554aa2a63f04
   tool_panel_section_label: Virology
 - name: ivar_consensus
@@ -8231,6 +8262,7 @@ tools:
   - 397e5f0eb3ef
   - 5d6ed46cc101
   - 8858fa037a15
+  - 9f978da6528a
   - c092052ed673
   - cb903c9dc33d
   - cf65217ad61c
