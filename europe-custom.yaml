@@ -177,14 +177,8 @@ tools:
   - name: column_arrange_by_header
     owner: bgruening
     tool_panel_section_label: Filter and Sort
-  - name: seq_filter_by_id
-    owner: peterjc
-    tool_panel_section_label: Filter and Sort
   - name: find_in_reference
     owner: jjohnson
-    tool_panel_section_label: Filter and Sort
-  - name: sample_seqs
-    owner: peterjc
     tool_panel_section_label: Filter and Sort
   - name: collection_column_join
     owner: iuc
@@ -264,9 +258,6 @@ tools:
   - name: t_test_two_samples
     owner: devteam
     tool_panel_section_label: Statistics
-  - name: seq_composition
-    owner: peterjc
-    tool_panel_section_label: Statistics
   - name: plot_from_lda
     owner: devteam
     tool_panel_section_label: Statistics
@@ -290,12 +281,6 @@ tools:
     tool_panel_section_label: Graph/Display Data
   - name: jbrowse
     owner: iuc
-    tool_panel_section_label: Graph/Display Data
-  - name: venn_list
-    owner: peterjc
-    tool_panel_section_label: Graph/Display Data
-  - name: mummer
-    owner: peterjc
     tool_panel_section_label: Graph/Display Data
   - name: karyotype_plot
     owner: guru-ananda
@@ -471,12 +456,6 @@ tools:
   - name: je_markdupes
     owner: gbcs-embl-heidelberg
     tool_panel_section_label: "FASTA/FASTQ"
-  - name: align_back_trans
-    owner: peterjc
-    tool_panel_section_label: "FASTA/FASTQ"
-  - name: seq_filter_by_mapping
-    owner: peterjc
-    tool_panel_section_label: "FASTA/FASTQ"
   - name: pear
     owner: iuc
     tool_panel_section_label: "FASTA/FASTQ"
@@ -592,10 +571,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Quality Control
 
-  - name: mira_assembler
-    owner: peterjc
-    tool_panel_section_label: 'Assembly'
-
   - name: spades
     owner: lionelguy
     tool_panel_section_label: 'Assembly'
@@ -603,7 +578,6 @@ tools:
   - name: rnaspades
     owner: iuc
     tool_panel_section_label: 'Assembly'
-
 
   - name: sopra
     owner: crs4
@@ -886,9 +860,6 @@ tools:
   - name: transtermhp
     owner: iuc
     tool_panel_section_label: Annotation
-  - name: blast2go
-    owner: peterjc
-    tool_panel_section_label: Annotation
   - name: hmmer3
     owner: iuc
     tool_panel_section_label: Annotation
@@ -910,9 +881,6 @@ tools:
   - name: snpeff
     owner: iuc
     tool_panel_section_label: "Variant Calling"
-  - name: tmhmm_and_signalp
-    owner: peterjc
-    tool_panel_section_label: Annotation
   - name: trna_prediction
     owner: bgruening
     tool_panel_section_label: Annotation
@@ -930,9 +898,6 @@ tools:
     tool_panel_section_label: Annotation
   - name: dgidb_annotator
     owner: devteam
-    tool_panel_section_label: Annotation
-  - name: tmhmm_and_signalp
-    owner: peterjc
     tool_panel_section_label: Annotation
   - name: dgidb_annotator
     owner: devteam
@@ -1027,9 +992,6 @@ tools:
   - name: kraken
     owner: devteam
     tool_panel_section_label: NCBI Blast
-  - name: blast_rbh
-    owner: peterjc
-    tool_panel_section_label: NCBI Blast
   - name: kraken_report
     owner: devteam
     tool_panel_section_label: NCBI Blast
@@ -1042,14 +1004,8 @@ tools:
   - name: kraken_translate
     owner: devteam
     tool_panel_section_label: NCBI Blast
-  - name: sample_seqs
-    owner: peterjc
-    tool_panel_section_label: NCBI Blast
   - name: diamond
     owner: bgruening
-    tool_panel_section_label: NCBI Blast
-  - name: blastxml_to_top_descr
-    owner: peterjc
     tool_panel_section_label: NCBI Blast
   - name: allele_counts
     owner: nick
