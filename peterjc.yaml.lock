@@ -1,0 +1,64 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+- name: tmhmm_and_signalp
+  owner: peterjc
+  revisions:
+  - e1996f0f4e85
+  tool_panel_section_label: Annotation
+- name: sample_seqs
+  owner: peterjc
+  revisions:
+  - 7c40a1fbc82e
+  tool_panel_section_label: Filter and Sort
+- name: seq_filter_by_id
+  owner: peterjc
+  revisions:
+  - 141612f8c3e3
+  tool_panel_section_label: Filter and Sort
+- name: seq_composition
+  owner: peterjc
+  revisions:
+  - 13be788233da
+  tool_panel_section_label: Statistics
+- name: venn_list
+  owner: peterjc
+  revisions:
+  - e13206029a72
+  tool_panel_section_label: Graph/Display Data
+- name: mummer
+  owner: peterjc
+  revisions:
+  - d9f3d4779507
+  tool_panel_section_label: Graph/Display Data
+- name: align_back_trans
+  owner: peterjc
+  revisions:
+  - 883842b81796
+  tool_panel_section_label: FASTA/FASTQ
+- name: seq_filter_by_mapping
+  owner: peterjc
+  revisions:
+  - f82868a026ea
+  tool_panel_section_label: FASTA/FASTQ
+- name: mira_assembler
+  owner: peterjc
+  revisions:
+  - 63ebe9726219
+  tool_panel_section_label: Assembly
+- name: blast2go
+  owner: peterjc
+  revisions:
+  - e23b621eb7bb
+  tool_panel_section_label: Annotation
+- name: blast_rbh
+  owner: peterjc
+  revisions:
+  - d8d9a9069586
+  tool_panel_section_label: NCBI Blast
+- name: blastxml_to_top_descr
+  owner: peterjc
+  revisions:
+  - fe1ed74793c9
+  tool_panel_section_label: NCBI Blast
