@@ -2,6 +2,56 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: binning_refiner
+  owner: iuc
+  revisions:
+  - f350d182f786
+  tool_panel_section_label: Metagenomic Analysis
+- name: phyloseq_from_dada2
+  owner: iuc
+  revisions:
+  - 46a99bd1f10e
+  tool_panel_section_label: Metagenomic Analysis
+- name: phyloseq_plot_ordination
+  owner: iuc
+  revisions:
+  - 11d43fa12aab
+  tool_panel_section_label: Metagenomic Analysis
+- name: phyloseq_plot_richness
+  owner: iuc
+  revisions:
+  - 92b82deaaed1
+  tool_panel_section_label: Metagenomic Analysis
+- name: concoct
+  owner: iuc
+  revisions:
+  - 031f84cb2fd3
+  tool_panel_section_label: Metagenomic Analysis
+- name: concoct_coverage_table
+  owner: iuc
+  revisions:
+  - 7e01297a3b4a
+  tool_panel_section_label: Metagenomic Analysis
+- name: concoct_cut_up_fasta
+  owner: iuc
+  revisions:
+  - b9d37d30731e
+  tool_panel_section_label: Metagenomic Analysis
+- name: concoct_extract_fasta_bins
+  owner: iuc
+  revisions:
+  - a04028a8181d
+  tool_panel_section_label: Metagenomic Analysis
+- name: concoct_merge_cut_up_clustering
+  owner: iuc
+  revisions:
+  - b546422c9128
+  tool_panel_section_label: Metagenomic Analysis
+- name: magicblast
+  owner: iuc
+  revisions:
+  - e6799e98c5fb
+  tool_panel_section_label: NCBI Blast
 - name: compress_file
   owner: iuc
   revisions:
@@ -55,6 +105,26 @@ tools:
   revisions:
   - a80281b0172e
   - ad69d2a05c3c
+  tool_panel_section_label: Metagenomic Analysis
+- name: megan_daa2info
+  owner: iuc
+  revisions:
+  - c90a645ff6e9
+  tool_panel_section_label: Metagenomic Analysis
+- name: megan_daa2rma
+  owner: iuc
+  revisions:
+  - 10360f9989ee
+  tool_panel_section_label: Metagenomic Analysis
+- name: megan_daa_meganizer
+  owner: iuc
+  revisions:
+  - bb2a8bd85c85
+  tool_panel_section_label: Metagenomic Analysis
+- name: megan_read_extractor
+  owner: iuc
+  revisions:
+  - a770f5e23615
   tool_panel_section_label: Metagenomic Analysis
 - name: rgcca
   owner: iuc
@@ -899,6 +969,7 @@ tools:
 - name: ega_download_client
   owner: iuc
   revisions:
+  - 1162bfd9f782
   - caf213d51d6c
   tool_panel_section_label: Get Data
 - name: ncbi_datasets
@@ -1179,6 +1250,7 @@ tools:
   owner: iuc
   revisions:
   - 4955e9bb96d1
+  - '566197475670'
   - 76380bf74511
   - ca7cb0eaad62
   - cb04f3235a4e
