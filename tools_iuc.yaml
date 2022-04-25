@@ -4,6 +4,46 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: binning_refiner
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: phyloseq_from_dada2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: phyloseq_plot_ordination
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: phyloseq_plot_richness
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: concoct
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: concoct_coverage_table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: concoct_cut_up_fasta
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: concoct_extract_fasta_bins
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: concoct_merge_cut_up_clustering
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: magicblast
+    owner: iuc
+    tool_panel_section_label: NCBI Blast
+
   - name: compress_file
     owner: iuc
     tool_panel_section_label: Convert Formats
@@ -41,6 +81,22 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: megan_blast2lca
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: megan_daa2info
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: megan_daa2rma
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: megan_daa_meganizer
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: megan_read_extractor
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
