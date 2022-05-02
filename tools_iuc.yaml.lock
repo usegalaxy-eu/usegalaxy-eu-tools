@@ -5,6 +5,7 @@ tools:
 - name: binning_refiner
   owner: iuc
   revisions:
+  - 1c8d0916f97f
   - f350d182f786
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_from_dada2
@@ -142,6 +143,7 @@ tools:
   revisions:
   - 0cd163d805e3
   - 2e1cf7d85dbc
+  - 98cafcbd2578
   - c55643c3d813
   - c762a1cd357e
   tool_panel_section_label: Annotation
@@ -2213,6 +2215,7 @@ tools:
   - 35ac9de60bec
   - 51c2360aa807
   - 5ae3496f9ca3
+  - 9cd178127b19
   - 9f7a227436d6
   - d5d68989caec
   - d63739222f68
@@ -2753,6 +2756,7 @@ tools:
   owner: iuc
   revisions:
   - 39edec572bae
+  - 589078edd230
   - 9d79beb19ac3
   tool_panel_section_label: Assembly
 - name: unicycler
@@ -3006,6 +3010,16 @@ tools:
   revisions:
   - 35ea4a8b1ea6
   - 44231ef8167a
+  tool_panel_section_label: Mapping
+- name: coverm_contig
+  owner: iuc
+  revisions:
+  - 6941d0d453ba
+  tool_panel_section_label: Mapping
+- name: coverm_genome
+  owner: iuc
+  revisions:
+  - 134e4e78e754
   tool_panel_section_label: Mapping
 - name: migmap
   owner: iuc
