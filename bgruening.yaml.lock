@@ -6,6 +6,7 @@ tools:
   owner: rnateam
   revisions:
   - bcfce5aac49c
+  - f0d493f8f84f
   - f1a5908ea2cb
   tool_panel_section_label: Multiple Alignments
 - name: plotly_ml_performance_plots
@@ -700,23 +701,32 @@ tools:
   owner: bgruening
   revisions:
   - 10bf0f89035f
+  - 4447ed460308
+  tool_panel_section_label: Single-cell
+- name: music_manipulate_eset
+  owner: bgruening
+  revisions:
+  - 22232092be53
   tool_panel_section_label: Single-cell
 - name: music_inspect_eset
   owner: bgruening
   revisions:
   - 2fed32b5aa02
   - 577435e5e6b2
+  - 7705cc75ac18
   - 817eb707bbf4
   - 8c64a2da3869
   tool_panel_section_label: Single-cell
 - name: music_deconvolution
   owner: bgruening
   revisions:
+  - 2ba99a52bd44
   - 56371b5a2da9
   tool_panel_section_label: Single-cell
 - name: music_construct_eset
   owner: bgruening
   revisions:
+  - 282819d09a4f
   - 2cfd0db49bbc
   - 7902cd31b9b5
   - 7ffaa0968da3
@@ -727,3 +737,8 @@ tools:
   revisions:
   - d67642a21a1d
   tool_panel_section_label: Variant Calling
+- name: itsx
+  owner: bgruening
+  revisions:
+  - 2cbd0d66aa08
+  tool_panel_section_label: Metagenomic Analysis
