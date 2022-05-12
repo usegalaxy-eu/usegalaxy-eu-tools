@@ -13,30 +13,27 @@ output_file = sys.argv[2]
 # Path to tools_iuc.yaml.lock 
 tools_iuc = yaml.safe_load(open(sys.argv[3]))
 
-# Path to usegalaxy-eu-tools directory
-eu_tools_dir = sys.argv[4]
+# Path to mapping file directory
+mapping_file = yaml.safe_load(open(sys.argv[4]))
 
-# Merge all yaml.lock files in usegalaxy-eu-tools to determine tool panel label
-tools_mix = []
-for tool_yaml in glob.glob(f"{eu_tools_dir}/*.yaml.lock"):
-    parsed_yaml = yaml.safe_load(open(tool_yaml))
-    if 'tools' in parsed_yaml:
-        for tool in parsed_yaml['tools']:
-            tools_mix.append(tool)
-
-
-# IUC and mix lookup
+# IUC and mapping lookup
 def tool_exists (name, topic):
     # Use tool panel name from tools_iuc.yaml.lock when tools are already installed
     for tool in tools_iuc['tools']:
         if tool['name'] == name:
             if 'tool_panel_section_label' in tool:
                 return tool['tool_panel_section_label']
-    for tool in tools_mix:
-        if tool['name'] == name:
-            if 'tool_panel_section_label' in tool:
-                return tool['tool_panel_section_label']
-    return topic.title()
+
+    # if tool is in mapping file, use panel section label from mapping
+    for section, tools in mapping_file['tool_mapping'].items():
+        if name in tools:
+            return section
+
+    # If section is mapping file, use renamed section from mapping file
+    if topic.title() in mapping_file['section_mapping']:
+        return mapping_file['section_mapping'][topic.title()]
+    else:
+        return topic.title()
 
 # Tool parsing
 def toolyamltodict (yamlfile, baseyaml, topic):

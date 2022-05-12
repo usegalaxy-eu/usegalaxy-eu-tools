@@ -29,7 +29,7 @@ jobs:
           path: usegalaxy-eu-tools
           ref: master
       - name: Run updater script
-        run: python scripts/gtn-tools-updater.py ${GITHUB_WORKSPACE}/training-material/ ${GITHUB_WORKSPACE}/GTN_tutorials_tools.yaml ${GITHUB_WORKSPACE}/usegalaxy-eu-tools
+        run: python scripts/gtn-tools-updater.py ${GITHUB_WORKSPACE}/training-material/ ${GITHUB_WORKSPACE}/GTN_tutorials_tools.yaml ${GITHUB_WORKSPACE}/tools_iuc.yaml.lock ${GITHUB_WORKSPACE}/section_mapping.yml
       - name: Show differences
         run: "git diff --stat"
       - name: Create Pull Request
