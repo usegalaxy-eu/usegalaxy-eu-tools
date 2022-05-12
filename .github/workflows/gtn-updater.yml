@@ -14,20 +14,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install dependencies
+        run: pip install ephemeris
       - name: Clone GTN repository
         uses: actions/checkout@v3
         with:
           repository: galaxyproject/training-material
           path: training-material
           ref: main
-      - name: Deleting previous GTN workflows
-        run: rm -r GTN
-      - name: Create new repository for GTN workflows
-        run: mkdir GTN
+      - name: Clone EU tools repository
+        uses: actions/checkout@v3
+        with:
+          repository: usegalaxy-eu/usegalaxy-eu-tools
+          path: usegalaxy-eu-tools
+          ref: master
       - name: Run updater script
-        run: python scripts/gtn-tools-updater.py ${GITHUB_WORKSPACE}/training-material/ ${GITHUB_WORKSPACE}/GTN_tutorials_tools.yaml ${GITHUB_WORKSPACE}/tools_iuc.yaml.lock
-      - name: Deleting GTN repository
-        run: rm -r training-material
+        run: python scripts/gtn-tools-updater.py ${GITHUB_WORKSPACE}/training-material/ ${GITHUB_WORKSPACE}/GTN_tutorials_tools.yaml ${GITHUB_WORKSPACE}/usegalaxy-eu-tools
       - name: Show differences
         run: "git diff --stat"
       - name: Create Pull Request
