@@ -71,6 +71,7 @@ tools:
 - name: malt_run
   owner: iuc
   revisions:
+  - 87a1202c03e8
   - d505990b8c89
   tool_panel_section_label: Metagenomic Analysis
 - name: maaslin2
@@ -1133,6 +1134,7 @@ tools:
   - 7a5cd7987b03
   - 828324f3292f
   - 82fcdf530f87
+  - 8c28affc7c48
   - 8d8412d35247
   - b72d84f6941d
   - bb9732cfcdbe
@@ -5839,6 +5841,7 @@ tools:
   - 80f079961dc9
   - 884dc0264950
   - 9006e5836729
+  - 9be710099b99
   - b7829778729f
   - b8c00ce5dfa0
   - b8d633fbf5f5
@@ -5883,6 +5886,7 @@ tools:
   - 0e02cc942d97
   - 7004279ff8b7
   - 808b3a0a6716
+  - ad8b536d1caa
   - d6e617c4e338
   tool_panel_section_label: Assembly
 - name: spades_biosyntheticspades
@@ -8170,6 +8174,7 @@ tools:
   revisions:
   - 03c13085aecc
   - bd99e8fbde97
+  - f1691de443a7
   - fe154a7af404
   tool_panel_section_label: Graph/Display Data
 - name: moabs
@@ -8769,3 +8774,8 @@ tools:
   revisions:
   - d7c48cf1bf50
   tool_panel_section_label: Assembly
+- name: parse_mito_blast
+  owner: iuc
+  revisions:
+  - f172b1f77d6c
+  tool_panel_section_label: Extract Features
