@@ -2696,6 +2696,7 @@ tools:
   owner: iuc
   revisions:
   - 575b4d5bd444
+  - 9a22227bb6d0
   - ab5b7f6b7198
   - ba7b0f11e470
   - f77f7a7f3b83
@@ -3551,6 +3552,15 @@ tools:
   - fa016f1eea1a
   - feb7e635c6af
   tool_panel_section_label: Variant Calling
+- name: ensembl_vep
+  owner: iuc
+  revisions:
+  - 7303183cdb87
+  tool_panel_section_label: Variant Calling
+- name: data_manager_vep_cache_downloader
+  owner: iuc
+  revisions:
+  - 1439dface5bf
 - name: vcf2pgsnp
   owner: devteam
   revisions:
@@ -8779,3 +8789,8 @@ tools:
   revisions:
   - f172b1f77d6c
   tool_panel_section_label: Extract Features
+- name: breseq
+  owner: iuc
+  revisions:
+  - 0d18a3ba2d1c
+  tool_panel_section_label: Variant Calling
