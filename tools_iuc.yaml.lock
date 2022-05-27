@@ -71,6 +71,7 @@ tools:
 - name: malt_run
   owner: iuc
   revisions:
+  - 87a1202c03e8
   - d505990b8c89
   tool_panel_section_label: Metagenomic Analysis
 - name: maaslin2
@@ -206,6 +207,7 @@ tools:
   - 59bb6d34fca6
   - 6f6537780379
   - 9e2df763086c
+  - d147d6455873
   - e1b3b37aa69f
   tool_panel_section_label: Send Data
 - name: pycoqc
@@ -379,6 +381,7 @@ tools:
   - 080eab96d846
   - 32e547223c9e
   - '499059586799'
+  - 55e35e9203cf
   - 69e2275406fd
   - a61350ab6563
   - ae1e5d9d8972
@@ -392,6 +395,7 @@ tools:
   - 016308443041
   - 32c5c85cbc12
   - 379014a57491
+  - 707023fa62fe
   - 8623710d083c
   - a9ab1b0a00dd
   - c0b037b12765
@@ -408,6 +412,7 @@ tools:
   - 43cb7b5a6fe7
   - 6db1b06e6bbb
   - 8db95f488f0f
+  - 9bd945a03d7b
   - a56baceb1900
   - b03c60f8528f
   - b85871dd69f9
@@ -447,6 +452,7 @@ tools:
   - 286a24ac079c
   - 383dcb0500f9
   - 39e945f0b2c1
+  - 688357ad5e61
   - 6a1a3dab235a
   - 70f5f1fee692
   - b2a6ce371781
@@ -455,6 +461,7 @@ tools:
 - name: modify_loom
   owner: iuc
   revisions:
+  - 05631436cdf1
   - 59be31ac9dc3
   - 7784821452ac
   - 81a28c2705b0
@@ -980,6 +987,7 @@ tools:
   revisions:
   - 1a7773882d2c
   - 37c98f8a2497
+  - 6c829a430475
   - c47a0a93ffd2
   - d19bb3e590b6
   tool_panel_section_label: Get Data
@@ -1126,6 +1134,7 @@ tools:
   - 7a5cd7987b03
   - 828324f3292f
   - 82fcdf530f87
+  - 8c28affc7c48
   - 8d8412d35247
   - b72d84f6941d
   - bb9732cfcdbe
@@ -2687,6 +2696,7 @@ tools:
   owner: iuc
   revisions:
   - 575b4d5bd444
+  - 9a22227bb6d0
   - ab5b7f6b7198
   - ba7b0f11e470
   - f77f7a7f3b83
@@ -3015,12 +3025,12 @@ tools:
   owner: iuc
   revisions:
   - 6941d0d453ba
-  tool_panel_section_label: Mapping
+  tool_panel_section_label: Metagenomic Analysis
 - name: coverm_genome
   owner: iuc
   revisions:
   - 134e4e78e754
-  tool_panel_section_label: Mapping
+  tool_panel_section_label: Metagenomic Analysis
 - name: migmap
   owner: iuc
   revisions:
@@ -3299,6 +3309,7 @@ tools:
   - 4ca0e679f21e
   - 62adf13b86ea
   - 9fd8b69e6e68
+  - b47c006d90c5
   - f1c406f9554c
   - f89c9b25feb4
   tool_panel_section_label: RNA Analysis
@@ -3514,6 +3525,7 @@ tools:
   - 156b60c1530f
   - 213a3d6b579a
   - 57def2d7c093
+  - a5937157062f
   - a7c9782130e8
   - da6e10dee68b
   - ef2c525bd8cd
@@ -3540,6 +3552,15 @@ tools:
   - fa016f1eea1a
   - feb7e635c6af
   tool_panel_section_label: Variant Calling
+- name: ensembl_vep
+  owner: iuc
+  revisions:
+  - 7303183cdb87
+  tool_panel_section_label: Variant Calling
+- name: data_manager_vep_cache_downloader
+  owner: iuc
+  revisions:
+  - 1439dface5bf
 - name: vcf2pgsnp
   owner: devteam
   revisions:
@@ -5830,6 +5851,7 @@ tools:
   - 80f079961dc9
   - 884dc0264950
   - 9006e5836729
+  - 9be710099b99
   - b7829778729f
   - b8c00ce5dfa0
   - b8d633fbf5f5
@@ -5874,6 +5896,7 @@ tools:
   - 0e02cc942d97
   - 7004279ff8b7
   - 808b3a0a6716
+  - ad8b536d1caa
   - d6e617c4e338
   tool_panel_section_label: Assembly
 - name: spades_biosyntheticspades
@@ -7456,6 +7479,7 @@ tools:
   owner: iuc
   revisions:
   - 0ec813ad2910
+  - 14ae456b8cc5
   - 2fa9d4f1b48f
   - 36912871ccdc
   - 3a43c3982401
@@ -7466,6 +7490,7 @@ tools:
   - 514a786baaa9
   - 5f8727ff21e7
   - 7bb8726be37c
+  - 81804a978fc0
   - 83a69484cb87
   - abf6dbe8c9d7
   - b6abccb1f25b
@@ -8159,6 +8184,7 @@ tools:
   revisions:
   - 03c13085aecc
   - bd99e8fbde97
+  - f1691de443a7
   - fe154a7af404
   tool_panel_section_label: Graph/Display Data
 - name: moabs
@@ -8758,3 +8784,13 @@ tools:
   revisions:
   - d7c48cf1bf50
   tool_panel_section_label: Assembly
+- name: parse_mito_blast
+  owner: iuc
+  revisions:
+  - f172b1f77d6c
+  tool_panel_section_label: Extract Features
+- name: breseq
+  owner: iuc
+  revisions:
+  - 0d18a3ba2d1c
+  tool_panel_section_label: Variant Calling
