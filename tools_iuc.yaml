@@ -948,6 +948,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Extract Features
 
+  - name: orfipy
+    owner: iuc
+    tool_panel_section_label: Extract Features
+    
   - name: extract_genomic_dna
     owner: iuc
     tool_panel_section_id: fetch_sequences___alignments
@@ -1599,6 +1603,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Mapping
 
+  - name: coverm_contig
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: coverm_genome
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: migmap
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -1805,6 +1817,13 @@ tools:
   - name: snippy
     owner: iuc
     tool_panel_section_label: Variant Calling
+
+  - name: ensembl_vep
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: data_manager_vep_cache_downloader 
+    owner: iuc
 
   - name: vcf2pgsnp
     owner: devteam
@@ -3982,3 +4001,11 @@ tools:
   - name: hypo
     owner: iuc
     tool_panel_section_label: Assembly
+    
+  - name: parse_mito_blast
+    owner: iuc
+    tool_panel_section_label: Extract Features
+
+  - name: breseq
+    owner: iuc
+    tool_panel_section_label: Variant Calling
