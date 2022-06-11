@@ -985,6 +985,7 @@ tools:
 - name: ncbi_datasets
   owner: iuc
   revisions:
+  - 0622d99c2619
   - 1a7773882d2c
   - 37c98f8a2497
   - 6c829a430475
@@ -1706,6 +1707,21 @@ tools:
   - b79f6002b176
   - cfea1d6354db
   tool_panel_section_label: Convert Formats
+- name: seqcomplexity
+  owner: iuc
+  revisions:
+  - f14a21f3d5b1
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_stats
+  owner: iuc
+  revisions:
+  - 191738d53912
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_fx2tab
+  owner: iuc
+  revisions:
+  - c1aa9a90b4c4
+  tool_panel_section_label: FASTA/FASTQ
 - name: cutadapt
   owner: lparsons
   revisions:
@@ -3757,6 +3773,7 @@ tools:
   owner: iuc
   revisions:
   - 07f6832bdd4d
+  - 43798b4caee0
   - 67c29afac85f
   - 783e8b70b047
   - 8b3e3657034e
@@ -4111,6 +4128,7 @@ tools:
 - name: ncbi_blast_plus
   owner: devteam
   revisions:
+  - 0e3cf9594bb7
   - 2889433c7ae1
   - 5edc472ec434
   - 7f3c448e119b
@@ -6000,6 +6018,7 @@ tools:
 - name: spaln
   owner: iuc
   revisions:
+  - 2e92e1929cb1
   - 32c11a4b5dbf
   - 37b5e1f0b544
   - 95ea8d97abb4
@@ -8795,6 +8814,7 @@ tools:
 - name: parse_mito_blast
   owner: iuc
   revisions:
+  - 3c9ad4adf8d2
   - f172b1f77d6c
   tool_panel_section_label: Extract Features
 - name: breseq
