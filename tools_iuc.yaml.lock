@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: barrnap
+  owner: iuc
+  revisions:
+  - 7355bbf5e05f
+  tool_panel_section_label: RNA Analysis
 - name: binning_refiner
   owner: iuc
   revisions:
