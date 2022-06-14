@@ -4,6 +4,11 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: barrnap
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: binning_refiner
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -267,6 +272,10 @@ tools:
   - name: anndata_manipulate
     owner: iuc
     tool_panel_section_label: Single-cell
+
+  - name: mcl
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
 
   - name: chromeister
     owner: iuc
@@ -908,6 +917,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: seqcomplexity
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqkit_stats
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqkit_fx2tab
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: cutadapt
     owner: lparsons
     tool_panel_section_label: FASTA/FASTQ
@@ -948,6 +969,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Extract Features
 
+  - name: orfipy
+    owner: iuc
+    tool_panel_section_label: Extract Features
+    
   - name: extract_genomic_dna
     owner: iuc
     tool_panel_section_id: fetch_sequences___alignments
@@ -1813,6 +1838,13 @@ tools:
   - name: snippy
     owner: iuc
     tool_panel_section_label: Variant Calling
+
+  - name: ensembl_vep
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: data_manager_vep_cache_downloader 
+    owner: iuc
 
   - name: vcf2pgsnp
     owner: devteam
@@ -3990,6 +4022,14 @@ tools:
   - name: hypo
     owner: iuc
     tool_panel_section_label: Assembly
+   
+  - name: parse_mito_blast
+    owner: iuc
+    tool_panel_section_label: Extract Features
+
+  - name: breseq
+    owner: iuc
+    tool_panel_section_label: Variant Calling
 
   - name: mcl
     owner: iuc

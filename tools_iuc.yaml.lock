@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: barrnap
+  owner: iuc
+  revisions:
+  - 7355bbf5e05f
+  tool_panel_section_label: RNA Analysis
 - name: binning_refiner
   owner: iuc
   revisions:
@@ -71,6 +76,7 @@ tools:
 - name: malt_run
   owner: iuc
   revisions:
+  - 87a1202c03e8
   - d505990b8c89
   tool_panel_section_label: Metagenomic Analysis
 - name: maaslin2
@@ -984,6 +990,7 @@ tools:
 - name: ncbi_datasets
   owner: iuc
   revisions:
+  - 0622d99c2619
   - 1a7773882d2c
   - 37c98f8a2497
   - 6c829a430475
@@ -1133,6 +1140,7 @@ tools:
   - 7a5cd7987b03
   - 828324f3292f
   - 82fcdf530f87
+  - 8c28affc7c48
   - 8d8412d35247
   - b72d84f6941d
   - bb9732cfcdbe
@@ -1704,6 +1712,21 @@ tools:
   - b79f6002b176
   - cfea1d6354db
   tool_panel_section_label: Convert Formats
+- name: seqcomplexity
+  owner: iuc
+  revisions:
+  - f14a21f3d5b1
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_stats
+  owner: iuc
+  revisions:
+  - 191738d53912
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_fx2tab
+  owner: iuc
+  revisions:
+  - c1aa9a90b4c4
+  tool_panel_section_label: FASTA/FASTQ
 - name: cutadapt
   owner: lparsons
   revisions:
@@ -1783,6 +1806,11 @@ tools:
   - 2ca1baabdae0
   - e3ba567abdf5
   - f088370d2a3c
+  tool_panel_section_label: Extract Features
+- name: orfipy
+  owner: iuc
+  revisions:
+  - c147914c9f02
   tool_panel_section_label: Extract Features
 - name: extract_genomic_dna
   owner: iuc
@@ -2218,6 +2246,7 @@ tools:
 - name: meryl
   owner: iuc
   revisions:
+  - 29dabd8db6f2
   - 31fa26c0692b
   - 35ac9de60bec
   - 51c2360aa807
@@ -2675,6 +2704,7 @@ tools:
   owner: bgruening
   revisions:
   - 045c7c3d8e59
+  - 366a11d316a7
   - 3f7be05a1597
   - 5bec28269d95
   - 6505bd37670d
@@ -2689,11 +2719,13 @@ tools:
   - 76d4cbefff85
   - 8ec117da1796
   - a315c25dc813
+  - e9bd16ba5ebd
   tool_panel_section_label: Assembly
 - name: salsa
   owner: iuc
   revisions:
   - 575b4d5bd444
+  - 9a22227bb6d0
   - ab5b7f6b7198
   - ba7b0f11e470
   - f77f7a7f3b83
@@ -3549,6 +3581,15 @@ tools:
   - fa016f1eea1a
   - feb7e635c6af
   tool_panel_section_label: Variant Calling
+- name: ensembl_vep
+  owner: iuc
+  revisions:
+  - 7303183cdb87
+  tool_panel_section_label: Variant Calling
+- name: data_manager_vep_cache_downloader
+  owner: iuc
+  revisions:
+  - 1439dface5bf
 - name: vcf2pgsnp
   owner: devteam
   revisions:
@@ -3737,6 +3778,7 @@ tools:
   owner: iuc
   revisions:
   - 07f6832bdd4d
+  - 43798b4caee0
   - 67c29afac85f
   - 783e8b70b047
   - 8b3e3657034e
@@ -4091,6 +4133,7 @@ tools:
 - name: ncbi_blast_plus
   owner: devteam
   revisions:
+  - 0e3cf9594bb7
   - 2889433c7ae1
   - 5edc472ec434
   - 7f3c448e119b
@@ -5839,6 +5882,7 @@ tools:
   - 80f079961dc9
   - 884dc0264950
   - 9006e5836729
+  - 9be710099b99
   - b7829778729f
   - b8c00ce5dfa0
   - b8d633fbf5f5
@@ -5883,6 +5927,7 @@ tools:
   - 0e02cc942d97
   - 7004279ff8b7
   - 808b3a0a6716
+  - ad8b536d1caa
   - d6e617c4e338
   tool_panel_section_label: Assembly
 - name: spades_biosyntheticspades
@@ -5978,6 +6023,7 @@ tools:
 - name: spaln
   owner: iuc
   revisions:
+  - 2e92e1929cb1
   - 32c11a4b5dbf
   - 37b5e1f0b544
   - 95ea8d97abb4
@@ -8170,6 +8216,7 @@ tools:
   revisions:
   - 03c13085aecc
   - bd99e8fbde97
+  - f1691de443a7
   - fe154a7af404
   tool_panel_section_label: Graph/Display Data
 - name: moabs
@@ -8769,3 +8816,14 @@ tools:
   revisions:
   - d7c48cf1bf50
   tool_panel_section_label: Assembly
+- name: parse_mito_blast
+  owner: iuc
+  revisions:
+  - 3c9ad4adf8d2
+  - f172b1f77d6c
+  tool_panel_section_label: Extract Features
+- name: breseq
+  owner: iuc
+  revisions:
+  - 0d18a3ba2d1c
+  tool_panel_section_label: Variant Calling
