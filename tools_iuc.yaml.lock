@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: barrnap
+  owner: iuc
+  revisions:
+  - 7355bbf5e05f
+  tool_panel_section_label: RNA Analysis
 - name: binning_refiner
   owner: iuc
   revisions:
@@ -981,10 +986,12 @@ tools:
   revisions:
   - 1162bfd9f782
   - caf213d51d6c
+  - e82175804eb1
   tool_panel_section_label: Get Data
 - name: ncbi_datasets
   owner: iuc
   revisions:
+  - 0622d99c2619
   - 1a7773882d2c
   - 37c98f8a2497
   - 6c829a430475
@@ -1195,6 +1202,7 @@ tools:
   revisions:
   - 4c172a4a4c9e
   - 645159bcee2d
+  - a3c4fe6f49ab
   - acd337269171
   - db1eeffba23e
   - edbb6c5028f5
@@ -1469,6 +1477,7 @@ tools:
   revisions:
   - 4ef88f9a195d
   - 6a638de7915c
+  - 8a0473eb465e
   - cfd50144a871
   tool_panel_section_label: Metagenomic Analysis
 - name: column_maker
@@ -1489,6 +1498,7 @@ tools:
   - 1e864693a1c0
   - 4ef9819dc7fb
   - bc9c66c1e9c9
+  - e3363e087468
   tool_panel_section_label: Text Manipulation
 - name: tables_arithmetic_operations
   owner: devteam
@@ -1501,23 +1511,27 @@ tools:
   revisions:
   - 0926c81f382c
   - 381cd27bf67a
+  - debffd27642d
   tool_panel_section_label: Text Manipulation
 - name: intersect
   owner: devteam
   revisions:
   - 33b3f3688db4
   - 5b3c6135a982
+  - 69c10b56f46d
   - 8ddabc73af92
   tool_panel_section_label: Text Manipulation
 - name: flanking_features
   owner: devteam
   revisions:
   - 8307665c4b6c
+  - 9f12b7e500f1
   - a09d13b108fd
   tool_panel_section_label: Text Manipulation
 - name: join
   owner: devteam
   revisions:
+  - 718d04143c31
   - a10f49d9218a
   - e56b47dce68a
   - ffbd1de29c28
@@ -1527,6 +1541,7 @@ tools:
   revisions:
   - 05696474ee89
   - 765ceb06c3e2
+  - a126ec6ea0e4
   - d5677eecbad4
   tool_panel_section_label: Text Manipulation
 - name: get_flanks
@@ -1540,6 +1555,7 @@ tools:
   owner: devteam
   revisions:
   - 0145969324c4
+  - 0427ca314f3d
   - 5bc2dacbe729
   - 7a2a604ae9c8
   tool_panel_section_label: Text Manipulation
@@ -1549,6 +1565,7 @@ tools:
   - 0a3e3133b09d
   - 1e6a9e97fa41
   - 2cedec3759e4
+  - 9c5ff4695c97
   tool_panel_section_label: Text Manipulation
 - name: subtract_query
   owner: devteam
@@ -1579,6 +1596,7 @@ tools:
   owner: devteam
   revisions:
   - 0145969324c4
+  - 0427ca314f3d
   - 5bc2dacbe729
   - 7a2a604ae9c8
   tool_panel_section_label: Join, Subtract and Group
@@ -1706,6 +1724,21 @@ tools:
   - b79f6002b176
   - cfea1d6354db
   tool_panel_section_label: Convert Formats
+- name: seqcomplexity
+  owner: iuc
+  revisions:
+  - f14a21f3d5b1
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_stats
+  owner: iuc
+  revisions:
+  - 191738d53912
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_fx2tab
+  owner: iuc
+  revisions:
+  - c1aa9a90b4c4
+  tool_panel_section_label: FASTA/FASTQ
 - name: cutadapt
   owner: lparsons
   revisions:
@@ -1804,12 +1837,14 @@ tools:
   owner: devteam
   revisions:
   - 35a89f8cc96e
+  - 73ca13a7ec5f
   - d491589307e7
   tool_panel_section_label: Operate on Genomic Intervals
 - name: complement
   owner: devteam
   revisions:
   - 38c8bb402872
+  - 8b6c6ec55c6e
   - d958d5a0d1e8
   tool_panel_section_label: Operate on Genomic Intervals
 - name: cluster
@@ -1817,6 +1852,7 @@ tools:
   revisions:
   - 05696474ee89
   - 765ceb06c3e2
+  - a126ec6ea0e4
   - d5677eecbad4
   tool_panel_section_label: Operate on Genomic Intervals
 - name: basecoverage
@@ -1825,6 +1861,7 @@ tools:
   - 0a3e3133b09d
   - 1e6a9e97fa41
   - 2cedec3759e4
+  - 9c5ff4695c97
   tool_panel_section_label: Operate on Genomic Intervals
 - name: annotation_profiler
   owner: devteam
@@ -3622,6 +3659,7 @@ tools:
   revisions:
   - 1f4933f5a323
   - 52742626480e
+  - f20804c311de
   tool_panel_section_label: Annotation
 - name: kofamscan
   owner: iuc
@@ -3632,6 +3670,7 @@ tools:
 - name: mitos2
   owner: iuc
   revisions:
+  - 624606f7c996
   - 79e259afea34
   - 80323066acd4
   tool_panel_section_label: Annotation
@@ -3757,6 +3796,7 @@ tools:
   owner: iuc
   revisions:
   - 07f6832bdd4d
+  - 43798b4caee0
   - 67c29afac85f
   - 783e8b70b047
   - 8b3e3657034e
@@ -3803,6 +3843,7 @@ tools:
   owner: iuc
   revisions:
   - 1f5641a52664
+  - 31812e7a1315
   - ded48b36f3b7
   tool_panel_section_label: Annotation
 - name: roary
@@ -4111,6 +4152,7 @@ tools:
 - name: ncbi_blast_plus
   owner: devteam
   revisions:
+  - 0e3cf9594bb7
   - 2889433c7ae1
   - 5edc472ec434
   - 7f3c448e119b
@@ -6000,6 +6042,7 @@ tools:
 - name: spaln
   owner: iuc
   revisions:
+  - 2e92e1929cb1
   - 32c11a4b5dbf
   - 37b5e1f0b544
   - 95ea8d97abb4
@@ -8365,6 +8408,11 @@ tools:
   - a670bdbf8869
   - c3f58c2eee1e
   tool_panel_section_label: Proteomics
+- name: prot_scriber
+  owner: iuc
+  revisions:
+  - 1e9a43cbf524
+  tool_panel_section_label: Proteomics
 - name: read_it_and_keep
   owner: iuc
   revisions:
@@ -8795,6 +8843,7 @@ tools:
 - name: parse_mito_blast
   owner: iuc
   revisions:
+  - 3c9ad4adf8d2
   - f172b1f77d6c
   tool_panel_section_label: Extract Features
 - name: breseq
@@ -8802,3 +8851,8 @@ tools:
   revisions:
   - 0d18a3ba2d1c
   tool_panel_section_label: Variant Calling
+- name: mcl
+  owner: iuc
+  revisions:
+  - 649b9cb20668
+  tool_panel_section_label: Machine Learning

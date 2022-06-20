@@ -4,6 +4,11 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+
+  - name: barrnap
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: binning_refiner
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -3769,6 +3774,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Proteomics
 
+  - name: prot_scriber
+    owner: iuc
+    tool_panel_section_label: Proteomics 
+
   - name: read_it_and_keep
     owner: iuc
     tool_panel_section_label: Virology
@@ -4013,7 +4022,7 @@ tools:
   - name: hypo
     owner: iuc
     tool_panel_section_label: Assembly
-    
+   
   - name: parse_mito_blast
     owner: iuc
     tool_panel_section_label: Extract Features
@@ -4021,3 +4030,7 @@ tools:
   - name: breseq
     owner: iuc
     tool_panel_section_label: Variant Calling
+
+  - name: mcl
+    owner: iuc
+    tool_panel_section_label: Machine Learning
