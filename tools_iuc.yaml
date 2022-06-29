@@ -381,6 +381,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: vcf2maf
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: vcfanno
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -2121,6 +2125,9 @@ tools:
   - name: kraken2
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+    
+  - name: data_manager_build_kraken2_database
+    owner: iuc
 
   - name: kraken_taxonomy_report
     owner: iuc
@@ -2403,6 +2410,10 @@ tools:
 
   - name: sam_merge
     owner: devteam
+    tool_panel_section_label: SAM/BAM
+
+  - name: samtools_ampliconclip
+    owner: iuc
     tool_panel_section_label: SAM/BAM
 
   - name: samtools_coverage
@@ -4034,3 +4045,19 @@ tools:
   - name: mcl
     owner: iuc
     tool_panel_section_label: Machine Learning
+    
+  - name: syndiva
+    owner: iuc
+    tool_panel_section_label: Proteomics
+    
+  - name: das_tool
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: fasta_to_contig2bin
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+ 
+  - name: recentrifuge
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis

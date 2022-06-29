@@ -6,6 +6,7 @@ tools:
   owner: iuc
   revisions:
   - 7355bbf5e05f
+  - fe48aa4ccd5e
   tool_panel_section_label: RNA Analysis
 - name: binning_refiner
   owner: iuc
@@ -393,11 +394,13 @@ tools:
   - b5c7ba11401d
   - cfc3f5a57dc6
   - e175d4067b00
+  - fb9e030ffae4
   tool_panel_section_label: Single-cell
 - name: anndata_export
   owner: iuc
   revisions:
   - 016308443041
+  - 0cb889db0910
   - 32c5c85cbc12
   - 379014a57491
   - 707023fa62fe
@@ -413,6 +416,7 @@ tools:
   revisions:
   - 0ef28c0963c8
   - 19592ec717ef
+  - 3d748954434b
   - 4000634ece52
   - 43cb7b5a6fe7
   - 6db1b06e6bbb
@@ -443,6 +447,7 @@ tools:
   - 0c0288a9d92c
   - 1c65ddbaeefa
   - 8dc7708c3266
+  - 97476dfde728
   tool_panel_section_label: Multiple Alignments
 - name: cd_hit
   owner: iuc
@@ -462,11 +467,13 @@ tools:
   - 70f5f1fee692
   - b2a6ce371781
   - b9fac48532eb
+  - ee98d611afc6
   tool_panel_section_label: Single-cell
 - name: modify_loom
   owner: iuc
   revisions:
   - 05631436cdf1
+  - 4b0adaa31c95
   - 59be31ac9dc3
   - 7784821452ac
   - 81a28c2705b0
@@ -853,12 +860,14 @@ tools:
 - name: vg_deconstruct
   owner: iuc
   revisions:
+  - 76d18b1e970b
   - a347dad1f305
   tool_panel_section_label: Variant Calling
 - name: vg_view
   owner: iuc
   revisions:
   - 95ec8f978762
+  - ee62774bb5bd
   tool_panel_section_label: Variant Calling
 - name: odgi_build
   owner: iuc
@@ -995,6 +1004,7 @@ tools:
   - 1a7773882d2c
   - 37c98f8a2497
   - 6c829a430475
+  - b2ae7186d41f
   - c47a0a93ffd2
   - d19bb3e590b6
   tool_panel_section_label: Get Data
@@ -1180,6 +1190,7 @@ tools:
   owner: iuc
   revisions:
   - 2af554112418
+  - 35d3618b124b
   - b6eeea872fd2
   - ca9e70c0fef8
   tool_panel_section_label: Nanopore
@@ -1189,6 +1200,7 @@ tools:
   - 25abc2c72ff9
   - 557cf45ff2c8
   - b833eff63b10
+  - c0fb573c1e8d
   - c43f4b80f5a9
   tool_panel_section_label: Nanopore
 - name: nanopolishcomp_eventaligncollapse
@@ -1747,6 +1759,7 @@ tools:
   - 44e2cc14f75b
   - 48f587c13075
   - 4e5056fefd88
+  - 5915ea1ec9b1
   - c053d4cad713
   - c5e2e5902201
   - de6cebe3c043
@@ -4148,6 +4161,7 @@ tools:
   owner: iuc
   revisions:
   - a04e64efa43a
+  - d110a4141898
   tool_panel_section_label: Assembly
 - name: ncbi_blast_plus
   owner: devteam
@@ -4791,6 +4805,7 @@ tools:
   owner: iuc
   revisions:
   - 83b8e36e9cbe
+  - 887e02a45734
   - 8c440c3002bc
   - a312a0fdaf31
   - d0a568e1904b
@@ -4856,6 +4871,7 @@ tools:
   - 145f6d74ff5e
   - 1cc79f49b8d5
   - 24c5d43cb545
+  - 3a0efe14891f
   - 47035d167365
   - 5a08c09b9311
   - 793ad847121d
@@ -8370,6 +8386,7 @@ tools:
   - 4626a83601d4
   - 639d2031d998
   - 76733d05d8ef
+  - 9c53c7da9cbe
   tool_panel_section_label: Imaging
 - name: idr_download_by_ids
   owner: iuc
@@ -8856,3 +8873,8 @@ tools:
   revisions:
   - 649b9cb20668
   tool_panel_section_label: Machine Learning
+- name: syndiva
+  owner: iuc
+  revisions:
+  - 0254731f047b
+  tool_panel_section_label: Proteomics
