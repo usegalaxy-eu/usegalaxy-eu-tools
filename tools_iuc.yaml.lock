@@ -33,26 +33,31 @@ tools:
   owner: iuc
   revisions:
   - 031f84cb2fd3
+  - 7a145c72d375
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct_coverage_table
   owner: iuc
   revisions:
+  - 052e6bc06ea3
   - 7e01297a3b4a
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct_cut_up_fasta
   owner: iuc
   revisions:
+  - 137ede2b48c0
   - b9d37d30731e
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct_extract_fasta_bins
   owner: iuc
   revisions:
+  - 92a2d9109528
   - a04028a8181d
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct_merge_cut_up_clustering
   owner: iuc
   revisions:
   - b546422c9128
+  - ce1a3ce0e807
   tool_panel_section_label: Metagenomic Analysis
 - name: magicblast
   owner: iuc
@@ -658,6 +663,11 @@ tools:
   - 2b62154e39c8
   - 630e2929a131
   tool_panel_section_label: Variant Calling
+- name: vcf2maf
+  owner: iuc
+  revisions:
+  - 2973994fecd6
+  tool_panel_section_label: Variant Calling
 - name: vcfanno
   owner: iuc
   revisions:
@@ -686,6 +696,7 @@ tools:
   owner: iuc
   revisions:
   - 56781a718729
+  - 8ad49c4272ea
   - d402af96808e
   tool_panel_section_label: Variant Calling
 - name: delly_classify
@@ -693,11 +704,13 @@ tools:
   revisions:
   - d31211a43b19
   - d3bc6ec7881f
+  - df4300f300e4
   tool_panel_section_label: Variant Calling
 - name: delly_lr
   owner: iuc
   revisions:
   - 629a0066003d
+  - 7bd397ff21a2
   - ceda4714f3a1
   - d30785dbe6b7
   - d5124d5c8131
@@ -709,6 +722,7 @@ tools:
   - 53d90d86fc83
   - 6f383714149d
   - 9946bd542898
+  - c34eab9d5134
   tool_panel_section_label: Variant Calling
 - name: delly_merge
   owner: iuc
@@ -716,12 +730,14 @@ tools:
   - '148389992630'
   - 1efb2b927957
   - 6331d804f983
+  - 6c44bbc0eaa5
   - 97c7441aed0d
   tool_panel_section_label: Variant Calling
 - name: delly_filter
   owner: iuc
   revisions:
   - 6184cfc70e28
+  - 74f9f312c713
   - 9919057a466c
   - a75e05f20a66
   - d2590fe6793f
@@ -779,6 +795,7 @@ tools:
   - 84dcccebad3d
   - a95960a63220
   - b2aae698b9d3
+  - d6cddc06aeae
   - db25ec99c3ea
   - eb1f4ba66dc6
   - fa11aa8103b2
@@ -797,6 +814,7 @@ tools:
   - a1b70f038b4a
   - a7228a7ea146
   - b35de691c42c
+  - cb34f00cc10f
   - d915879a88bc
   - ef94bace3a3c
   tool_panel_section_label: Nanopore
@@ -812,6 +830,7 @@ tools:
   - 43815fa60f3a
   - 9fb055604648
   - aabb4e1c0b7b
+  - cc36773a3681
   - d50c1d5b72ce
   - e86fcef8ed91
   - edf6d4003fad
@@ -821,6 +840,7 @@ tools:
   revisions:
   - 1040a307be0c
   - 148f32860445
+  - 1d62240feff3
   - 336b3def9b2b
   - 3fbefde449bc
   - 597407d61386
@@ -927,12 +947,14 @@ tools:
 - name: drep_dereplicate
   owner: iuc
   revisions:
+  - 368cb4bef9d8
   - 8dfcdbeaeed8
   - ef7cd2e7bc05
   tool_panel_section_label: Metagenomic Analysis
 - name: drep_compare
   owner: iuc
   revisions:
+  - 54aa421c2911
   - 7157accd23d0
   - ef1c257adcbd
   tool_panel_section_label: Metagenomic Analysis
@@ -2312,6 +2334,11 @@ tools:
   - 96cacb31d571
   - a7f16f24e9a1
   tool_panel_section_label: Assembly
+- name: yahs
+  owner: iuc
+  revisions:
+  - d87433f2a54d
+  tool_panel_section_label: Assembly
 - name: jellyfish
   owner: iuc
   revisions:
@@ -3613,6 +3640,7 @@ tools:
 - name: ensembl_vep
   owner: iuc
   revisions:
+  - 27fd1c1f00a8
   - 7303183cdb87
   tool_panel_section_label: Variant Calling
 - name: data_manager_vep_cache_downloader
@@ -4148,6 +4176,10 @@ tools:
   - d4bb87ca916d
   - e674066930b2
   tool_panel_section_label: Metagenomic Analysis
+- name: data_manager_build_kraken2_database
+  owner: iuc
+  revisions:
+  - 9002633b4737
 - name: kraken_taxonomy_report
   owner: iuc
   revisions:
@@ -4754,6 +4786,11 @@ tools:
   revisions:
   - 1977f1637890
   - a7a49d31c5cf
+  tool_panel_section_label: SAM/BAM
+- name: samtools_ampliconclip
+  owner: iuc
+  revisions:
+  - a941babb9268
   tool_panel_section_label: SAM/BAM
 - name: samtools_coverage
   owner: iuc
@@ -6071,6 +6108,7 @@ tools:
   - 1aae04680c4b
   - 38eedf3cc3c9
   - 44018dd6b447
+  - 4f2967b27e67
   - 9ab35a2245ce
   - b467a89be0c6
   - b5d8e5475247
@@ -8878,3 +8916,18 @@ tools:
   revisions:
   - 0254731f047b
   tool_panel_section_label: Proteomics
+- name: das_tool
+  owner: iuc
+  revisions:
+  - a8e434ebe961
+  tool_panel_section_label: Metagenomic Analysis
+- name: fasta_to_contig2bin
+  owner: iuc
+  revisions:
+  - 5033d753964b
+  tool_panel_section_label: Metagenomic Analysis
+- name: recentrifuge
+  owner: iuc
+  revisions:
+  - 09b7b0b2e2c2
+  tool_panel_section_label: Metagenomic Analysis
