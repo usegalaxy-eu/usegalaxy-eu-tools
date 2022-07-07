@@ -33,17 +33,20 @@ tools:
   owner: iuc
   revisions:
   - 031f84cb2fd3
+  - 3842ef1b2f34
   - 7a145c72d375
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct_coverage_table
   owner: iuc
   revisions:
   - 052e6bc06ea3
+  - 6302656ed45d
   - 7e01297a3b4a
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct_cut_up_fasta
   owner: iuc
   revisions:
+  - 0132036a530a
   - 137ede2b48c0
   - b9d37d30731e
   tool_panel_section_label: Metagenomic Analysis
@@ -52,10 +55,12 @@ tools:
   revisions:
   - 92a2d9109528
   - a04028a8181d
+  - bcd8d64f82b7
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct_merge_cut_up_clustering
   owner: iuc
   revisions:
+  - 21ccf9548e2c
   - b546422c9128
   - ce1a3ce0e807
   tool_panel_section_label: Metagenomic Analysis
@@ -656,6 +661,7 @@ tools:
   revisions:
   - 1d4f065fa0ef
   - 30fc9f2bcbe4
+  - b4b6b660293a
   tool_panel_section_label: Variant Calling
 - name: jasminesv
   owner: iuc
@@ -2339,6 +2345,11 @@ tools:
   revisions:
   - d87433f2a54d
   tool_panel_section_label: Assembly
+- name: smudgeplot
+  owner: galaxy-australia
+  revisions:
+  - 24e471d13fe9
+  tool_panel_section_label: Assembly
 - name: jellyfish
   owner: iuc
   revisions:
@@ -2490,6 +2501,7 @@ tools:
 - name: flash
   owner: iuc
   revisions:
+  - 01a4ebf1f237
   - 13e98e2709b8
   - a27654fc4270
   - dce033fd3c80
@@ -2939,6 +2951,7 @@ tools:
   revisions:
   - 6d44c9f1a42b
   - 81cbb6a4c1ca
+  - 858a65b52cf9
   - e0ca2ec4f5d9
   tool_panel_section_label: Mapping
 - name: bioext_bealign
@@ -2975,6 +2988,7 @@ tools:
   - a6d65b0c67af
   - a9d4f71dbfb0
   - cd659e8cc5fa
+  - f6877ad76b00
   tool_panel_section_label: Mapping
 - name: rgrnastar
   owner: iuc
@@ -3029,6 +3043,7 @@ tools:
   - a26ed87f444c
   - a86e80d3c09c
   - d4b55e2beb12
+  - f4af63aaf57a
   tool_panel_section_label: Mapping
 - name: bowtie_wrappers
   owner: devteam
@@ -4042,6 +4057,7 @@ tools:
   - 074d44697036
   - 31216d510164
   - 3b4b2121842f
+  - 4805fe3d8fda
   - 65432c3abf6c
   - dfadc322b065
   - e1461b5c52a0
@@ -4053,6 +4069,7 @@ tools:
   - 354b534eeab7
   - 426d707dfc47
   - 5d6a078d30b0
+  - 971e07ca4456
   - c27549b9aa1f
   - f4473557ffc7
   tool_panel_section_label: Variant Calling
@@ -4073,6 +4090,7 @@ tools:
   - 2953c43180c0
   - 435b157bed6d
   - 606542a18f82
+  - 791f73caa0c8
   - e0e2fd665102
   - e61c9ac190ad
   tool_panel_section_label: Variant Calling
@@ -8849,6 +8867,7 @@ tools:
 - name: hamronize_summarize
   owner: iuc
   revisions:
+  - 6e2731b13533
   - a84e3131ae6a
   - ef76d74a7171
   tool_panel_section_label: Annotation
@@ -8882,6 +8901,7 @@ tools:
 - name: bracken
   owner: iuc
   revisions:
+  - 19035a7b1106
   - b08ac10aed96
   tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_build_bracken_database
