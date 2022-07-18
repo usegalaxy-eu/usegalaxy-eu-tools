@@ -2,6 +2,31 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: adapter_removal
+  owner: iuc
+  revisions:
+  - 04d05400d3a6
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_fx2tab
+  owner: iuc
+  revisions:
+  - c1aa9a90b4c4
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_stats
+  owner: iuc
+  revisions:
+  - 191738d53912
+  tool_panel_section_label: FASTA/FASTQ
+- name: aldex2
+  owner: iuc
+  revisions:
+  - f4d0bd4b4d6d
+  tool_panel_section_label: Metagenomic Analysis
+- name: ancombc
+  owner: iuc
+  revisions:
+  - 939c59ab61cf
+  tool_panel_section_label: Metagenomic Analysis
 - name: barrnap
   owner: iuc
   revisions:
@@ -7644,6 +7669,7 @@ tools:
   - 437e28791761
   - 514a786baaa9
   - 5f8727ff21e7
+  - 77402759b866
   - 7bb8726be37c
   - 81804a978fc0
   - 83a69484cb87
