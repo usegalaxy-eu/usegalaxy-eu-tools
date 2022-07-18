@@ -5,6 +5,26 @@ install_tool_dependencies: false
 
 tools:
 
+  - name: adapter_removal
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqkit_fx2tab
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqkit_stats
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: aldex2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: ancombc
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: barrnap
     owner: iuc
     tool_panel_section_label: RNA Analysis
