@@ -1,11 +1,9 @@
 name: Update Trusted Tools
 
-on: workflow_dispatch
-  # schedule:
-  #   # * is a special character in YAML so you have to quote this string
-  #   # We'll run this weekly at 9.
-  #   - cron:  '12 9 * * 1'
-  # workflow_dispatch:
+on:
+  schedule:
+    - cron: "0 2 * * THU"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -29,10 +27,10 @@ jobs:
         with:
           repository: usegalaxy-eu/usegalaxy-eu-tools
           path: usegalaxy-eu-tools
-          ref: main
+          ref: master
       - name: Update tools_iuc.yaml from tools_iuc_eu.yaml
         run: |
-          python3 process_yaml.py --merge_yaml --base_file tools_iuc.yaml --tools_yaml /usegalaxy-eu-tools/tools_iuc.yaml --out_file tools_iuc.yaml
+          python3 process_yaml.py --merge_yaml --base_file tools_iuc.yaml --tools_yaml ${GITHUB_WORKSPACE}/usegalaxy-eu-tools/tools_iuc.yaml --out_file tools_iuc.yaml
       - name: Deleting usegalaxy-eu-tools repository
         run: rm -r usegalaxy-eu-tools
       - name: Perform linting
@@ -62,17 +60,3 @@ jobs:
       - name: Check output
         run: |
           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-
-      # - name: Commit and files
-      #   run: |
-      #     git config --local user.email "github-bot@github.com"
-      #     git config --local user.name "github-actions[bot]"
-      #     git add *.lock
-      #     git commit -m "Updated trusted tools ($(date -I))" || true
-      #     git push
-
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@git-actions-test
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${{ github.ref }}
