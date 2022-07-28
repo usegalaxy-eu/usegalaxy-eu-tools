@@ -56,7 +56,7 @@ jobs:
             automatic PR
           reviewers: ieguinoa
           branch: tools-update
-          base: git-actions-test
+          base: master
       - name: Check output
         run: |
           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
