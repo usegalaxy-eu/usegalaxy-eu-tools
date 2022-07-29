@@ -2885,6 +2885,7 @@ tools:
 - name: data_manager_salmon_index_builder
   owner: iuc
   revisions:
+  - 6437fc47878f
   - 57274fe5e01a
   tool_panel_section_label: Data Managers
 - name: data_manager_kallisto_index_builder
@@ -2916,6 +2917,7 @@ tools:
 - name: multiqc
   owner: iuc
   revisions:
+  - bf675f34b056
   - c19b16e5729c
   - 161f4383df15
   tool_panel_section_label: Quality Control
@@ -4384,6 +4386,11 @@ tools:
   revisions:
   - 8d3aff8ba8ad
   tool_panel_section_label: FASTQ Quality Control
+- name: raxml
+  owner: iuc
+  revisions:
+  - 14eb2acf30e3
+  tool_panel_section_label: Phylogenetics
 - name: pangolin
   owner: iuc
   revisions:
@@ -4401,4 +4408,63 @@ tools:
   revisions:
   - bd1416eea1f0
   tool_panel_section_label: Graph/Display Data
-
+- name: maker
+  owner: iuc
+  revisions:
+  - 3c1a01127868
+  tool_panel_section_label: Annotation
+- name: aegean_parseval
+  owner: iuc
+  revisions:
+  - 1b52f0c8ad7f
+  tool_panel_section_label: Annotation
+- name: data_manager_fetch_busco
+  owner: iuc
+  revisions:
+  - 15b97817550a
+  tool_panel_section_label: Data Managers
+- name: funannotate_clean
+  owner: iuc
+  revisions:
+  - a230ea445788
+  tool_panel_section_label: Annotation
+- name: funannotate_sort
+  owner: iuc
+  revisions:
+  - b3cf4684e9c7
+  tool_panel_section_label: Annotation
+- name: funannotate_predict
+  owner: iuc
+  revisions:
+  - 2bba2ff070d9
+  tool_panel_section_label: Annotation
+- name: funannotate_compare
+  owner: iuc
+  revisions:
+  - 563a19373357
+  tool_panel_section_label: Annotation
+- name: funannotate_annotate
+  owner: iuc
+  revisions:
+  - 14f588312c56
+  tool_panel_section_label: Annotation
+- name: orthofinder_onlygroups
+  owner: iuc
+  revisions:
+  - 0ff17c7a18cd
+  tool_panel_section_label: Annotation
+- name: suite_orthofinder
+  owner: iuc
+  revisions:
+  - ab50db13f007
+  tool_panel_section_label: Annotation
+- name: data_manager_funannotate
+  owner: iuc
+  revisions:
+  - ef7f9e2f32f2
+  tool_panel_section_label: Data Managers
+- name: ncbi_datasets
+  owner: iuc
+  revisions:
+  - 1a7773882d2c
+  tool_panel_section_label: Get Data
