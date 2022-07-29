@@ -1,6 +1,7 @@
 import yaml
 import sys
 import argparse
+import copy
 
 section_labels_list = [
    'Get Data', 'Send Data', 'Collection Operations', 'Expression Tools',
@@ -189,11 +190,14 @@ def update_from_base(base_dict, updated_dict):
 def update_revision_from_base(base_dict, updated_dict):
     """
     Takes a dict with a base list of tools and revisions and an updated one.
-    Prints a list with the tools and revisions from the base lists plus:
-        - the latest revision of the tools included in the base
+    Prints 3 lists with tools and revisions:
+        - a merged list of the base tools and the latest revision of those tools also included in the updated tool list
+        - a list of the latest revisions of the new tools in the updated tool list that are not present in the base tool list
+        - a list of the latest revisions of the base tool list available in the updated tool list
     """
-    updated_tools_list = []
-    # load base tools list in dict
+    updated_tool_list = []
+    new_tool_list = []
+    merged_tool_list = []
     tools_list = []
     tools_list_updates = []
 
@@ -203,33 +207,57 @@ def update_revision_from_base(base_dict, updated_dict):
 
     for updated_tool_entry in updated_dict['tools']:
         tools_list_updates.append({key_name: updated_tool_entry[key_name] for key_name in updated_tool_entry if key_name != 'revisions'})
-    #
-    for tool, rev in zip(tools_list, base_dict['tools']):
-        # print(i)
-        # print(j)
-        if tool in tools_list_updates:
-            tool_index = tools_list_updates.index(tool)
-            # print(updated_dict['tools'][i]['revisions'], rev['revisions'])
-            if updated_dict['tools'][tool_index]['revisions'][0] not in rev['revisions']:
-                # print(i)
-                rev['revisions'].insert(0, updated_dict['tools'][tool_index]['revisions'][0])
-        updated_tools_list.append(rev)
 
-    ret_dict = {
-        'install_repository_dependencies': True,
-        'install_resolver_dependencies': True,
-        'install_tool_dependencies': False,
-        'tools': updated_tools_list
-    }
-    return ret_dict
+    # iterate over the updated tools
+    for tool, rev  in zip(tools_list_updates, updated_dict['tools']):
+        # get only the latest revisions of the updated tools
+        latest_rev = rev['revisions'][0]
+        rev['revisions'] = [latest_rev]
 
+        # check if the updated tool is in the base tool list
+        if tool in tools_list:
+            base_tool_index = tools_list.index(tool)
+            base_tool = base_dict['tools'][base_tool_index]
+
+            # check if the latest revision of the tool exists in the revisions of the base tool
+            # and add this revision to the base tool revisions
+            if latest_rev not in base_tool['revisions']:
+                base_tool['revisions'].insert(0, latest_rev)
+                updated_tool_list.append(rev)
+            merged_tool_list.append(base_tool)
+        else:
+            # add all new tools and their latest revision to the list
+            merged_tool_list.append(rev)
+            new_tool_list.append(rev)
+
+    return [merged_tool_list, new_tool_list, updated_tool_list]
+
+
+def merge_yamls(yaml1, yaml2):
+    """
+    Takes a yaml file with a list of tools and merges them with another.
+    Outputs a merged yaml
+    """
+    updated_tools_yaml = copy.deepcopy(yaml1)
+
+    # unique_tools = [dict(y) for y in set(tuple(x.items())
+    #                                      for x in yaml1['tools'])]
+
+    # copy base and updated tools entries (except the revisions list of each)
+    for tool_entry in yaml2['tools']:
+        if tool_entry not in yaml1['tools']:
+            updated_tools_yaml['tools'].append(tool_entry)
+
+    return updated_tools_yaml
 
 
 if __name__ == '__main__':
 
     argparser = argparse.ArgumentParser(description='Arguments to parse.')
     argparser.add_argument('--update', action='store_true', help='Update from a base file')
-    argparser.add_argument('--revision_only', action='store_true', help='Only update revisions from a base file')
+    argparser.add_argument('--merge', action='store_true', help='Only update revisions from a base file')
+    argparser.add_argument('--merge_yaml', action='store_true',
+                           help='merge 2 yamls')
     argparser.add_argument('--add_sections', action='store_true', help='Add/update sections labels when possible using a base (reference) file')
     argparser.add_argument('--lint', action='store_true', help='Lint the section labels/ids')
     argparser.add_argument('--tools_yaml', '-y', dest='tools_yaml', type=str, required=True,
@@ -249,27 +277,53 @@ if __name__ == '__main__':
 
     # Load updated/full file contents
     tools_file = open(args.tools_yaml)
-    tools_yaml = yaml.load(tools_file)
+    tools_yaml = yaml.safe_load(tools_file)
 
     if args.update:
         base_file = open(args.base_file_path)
-        base_yaml = yaml.load(base_file)
+        base_yaml = yaml.safe_load(base_file)
         parsed_dict = update_from_base(base_yaml, tools_yaml)
-    elif args.revision_only:
+        
+    elif args.merge:
         base_file = open(args.base_file_path)
-        base_yaml = yaml.load(base_file)
-        parsed_dict = update_revision_from_base(base_yaml, tools_yaml)
+        base_yaml = yaml.safe_load(base_file)
+        parsed_list = update_revision_from_base(base_yaml, tools_yaml)
+
+        # store the merged, new and updated tool lists to a file with a prefix for each
+        prefix_list = ['merged_','new_','updated_']
+        ret_dict = {
+            'install_repository_dependencies': True,
+            'install_resolver_dependencies': True,
+            'install_tool_dependencies': False,
+            'tools': None
+        }
+        
+        for prefix, tool_list in zip(prefix_list, parsed_list):
+            ret_dict['tools'] = tool_list
+            with open(prefix+args.out_file, 'w') as outfile:
+                yaml.dump(ret_dict, outfile, default_flow_style=False)
+
+    elif args.merge_yaml:
+         
+        yaml1_path = open(args.base_file_path)
+        yaml1 = yaml.safe_load(yaml1_path)
+        updated_yaml = merge_yamls(yaml1, tools_yaml)
+
+        with open(args.out_file, 'w') as outfile:
+            yaml.dump(updated_yaml, outfile,
+                      default_flow_style=False, explicit_start=True)
+
     else:
         if args.lint:
             lint_file(tools_yaml)
         else:
             if args.add_sections:
                 base_file = open(args.base_file_path)
-                base_yaml = yaml.load(base_file)
+                base_yaml = yaml.safe_load(base_file)
                 parsed_dict = add_sections(base_yaml, tools_yaml)
             else:
                 parsed_dict = get_latest_only(tools_yaml)
 
-    if not args.lint:
-        with open(args.out_file, 'w') as outfile:
-            yaml.dump(parsed_dict, outfile, default_flow_style=False)
+    # if not args.lint and not args.merge:
+    #     with open(args.out_file, 'w') as outfile:
+    #         yaml.dump(parsed_dict, outfile, default_flow_style=False)

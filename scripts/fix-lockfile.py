@@ -1,22 +1,16 @@
 import yaml
 import os
-import glob
 import copy
 import argparse
-
-from bioblend import toolshed
-
-
-ts = toolshed.ToolShedInstance(url='https://toolshed.g2.bx.psu.edu')
 
 
 def update_file(fn, dry):
     with open(fn, 'r') as handle:
-        unlocked = yaml.load(handle)
+        unlocked = yaml.safe_load(handle)
     # If a lock file exists, load it from that file
     if os.path.exists(fn + '.lock'):
         with open(fn + '.lock', 'r') as handle:
-            locked = yaml.load(handle)
+            locked = yaml.safe_load(handle)
     else:
         # Otherwise just clone the "unlocked" list.
         locked = copy.deepcopy(unlocked)
@@ -49,9 +43,12 @@ def update_file(fn, dry):
         new_tool = {
             'name': tool['name'],
             'owner': tool['owner'],
-            'tool_panel_section_label': tool['tool_panel_section_label'],
-            'revisions': list(set(revisions)),  # Cast to list for yaml serialization
+            'revisions': sorted(list(set(revisions))),  # Cast to list for yaml serialization
         }
+        if tool.get('tool_panel_section_id'):
+            new_tool.update({'tool_panel_section_id': tool['tool_panel_section_id']})
+        if tool.get('tool_panel_section_label'):
+            new_tool.update({'tool_panel_section_label': tool['tool_panel_section_label']})
 
         clean_lockfile['tools'].append(new_tool)
 

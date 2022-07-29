@@ -12,7 +12,7 @@ ts = toolshed.ToolShedInstance(url='https://toolshed.g2.bx.psu.edu')
 
 def update_file(fn, owner=None, name=None, without=False):
     with open(fn + '.lock', 'r') as handle:
-        locked = yaml.load(handle)
+        locked = yaml.safe_load(handle)
 
     # Update any locked tools.
     for tool in locked['tools']:
@@ -52,6 +52,8 @@ def update_file(fn, owner=None, name=None, without=False):
         if latest_rev not in tool['revisions']:
             # TS doesn't support utf8 and we don't want to either.
             tool['revisions'].append(str(latest_rev))
+
+        tool['revisions'] = sorted(list(set( tool['revisions'] )))
 
     with open(fn + '.lock', 'w') as handle:
         yaml.dump(locked, handle, default_flow_style=False)

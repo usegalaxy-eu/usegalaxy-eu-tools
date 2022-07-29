@@ -1,0 +1,54 @@
+section_mapping:
+  Transcriptomics: RNA Analysis
+  Quality Control: FASTQ Quality Control
+  Computational-Chemistry: ChemicalToolBox
+  Variant-Analysis: Variant Calling
+  Metagenomics: Metagenomic Analysis
+  Genome-Annotation: Annotation
+  Ecology: Species abundance
+  Statistics: Machine Learning
+
+tool_mapping:  
+  Text Manipulation: 
+    - text_processing
+    - merge_cols
+    - join
+    - show_beginning
+    - column_maker
+    - intersect
+    - get_flanks
+    - unique
+    - regex_find_replace
+    - dna_filtering
+    - table_compute
+    - add_value
+    - regex_replace
+    - tabular_to_csv
+    - csv_to_tabular
+    - replace_column_by_key_value_file
+  Join, Subtract and Group:
+    - datamash_ops
+    - datamash_reverse
+    - collection_column_join
+    - datamash_transpose
+  Collection Operations:
+    - collapse_collections
+    - split_file_to_collection
+  Operate on Genomic Intervals:
+    - sharplabtool
+    - concat
+  FASTQ Quality Control:
+    - trim_galore
+    - fastqc
+    - cutadapt
+    - multiqc
+    - trimmomatic
+  SAM/BAM:
+    - bam_to_sam
+  Get Data:
+    - spocc_occ
+  mapping:
+    - bwa_mem
+    - bwa_wrappers
+  Filter and Sort:
+    - column_arrange_by_header
