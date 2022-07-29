@@ -204,7 +204,7 @@ def update_revision_from_base(base_dict, updated_dict):
     for updated_tool_entry in updated_dict['tools']:
         tools_list_updates.append({key_name: updated_tool_entry[key_name] for key_name in updated_tool_entry if key_name != 'revisions'})
     #
-    for tool, rev  in zip(tools_list, base_dict['tools']):
+    for tool, rev in zip(tools_list, base_dict['tools']):
         # print(i)
         # print(j)
         if tool in tools_list_updates:
