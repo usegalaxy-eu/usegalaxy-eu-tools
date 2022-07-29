@@ -17,6 +17,46 @@ tools:
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: checkm_taxonomy_wf
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_tree
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_lineage_wf
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_tree_qa
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_analyze
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_tetra
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_qa
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_taxon_set
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_plot
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_lineage_set
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: aldex2
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -3592,7 +3632,19 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
-  - name: nextclade
+  - name: freyja_variants
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: freyja_demix
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: freyja_boot
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: freyja_aggregate_plot
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
