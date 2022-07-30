@@ -17,6 +17,56 @@ tools:
   revisions:
   - 191738d53912
   tool_panel_section_label: FASTA/FASTQ
+- name: checkm_taxonomy_wf
+  owner: iuc
+  revisions:
+  - 91230b9141c1
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_tree
+  owner: iuc
+  revisions:
+  - 9b2790bca5b5
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_lineage_wf
+  owner: iuc
+  revisions:
+  - 760dc0c0e689
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_tree_qa
+  owner: iuc
+  revisions:
+  - dd51f61c2309
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_analyze
+  owner: iuc
+  revisions:
+  - 7ccea589e8b7
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_tetra
+  owner: iuc
+  revisions:
+  - 878d742dacf0
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_qa
+  owner: iuc
+  revisions:
+  - 5c0493cdced9
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_taxon_set
+  owner: iuc
+  revisions:
+  - e3f1c47246fd
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_plot
+  owner: iuc
+  revisions:
+  - 356839cd89d2
+  tool_panel_section_label: Metagenomic Analysis
+- name: checkm_lineage_set
+  owner: iuc
+  revisions:
+  - b39999cdbf21
+  tool_panel_section_label: Metagenomic Analysis
 - name: aldex2
   owner: iuc
   revisions:
@@ -32,6 +82,21 @@ tools:
   revisions:
   - 7355bbf5e05f
   - fe48aa4ccd5e
+  tool_panel_section_label: RNA Analysis
+- name: arriba_draw_fusions
+  owner: iuc
+  revisions:
+  - 2d4e3aff9dc7
+  tool_panel_section_label: RNA Analysis
+- name: arriba_get_filters
+  owner: iuc
+  revisions:
+  - 125d20cb23d7
+  tool_panel_section_label: RNA Analysis
+- name: arriba
+  owner: iuc
+  revisions:
+  - a24ca22b906e
   tool_panel_section_label: RNA Analysis
 - name: binning_refiner
   owner: iuc
@@ -103,11 +168,13 @@ tools:
 - name: metabat2_jgi_summarize_bam_contig_depths
   owner: iuc
   revisions:
+  - 1592150e38d2
   - d27a4ed006ee
   tool_panel_section_label: Metagenomic Analysis
 - name: metabat2
   owner: iuc
   revisions:
+  - 01f02c5ddff8
   - 76bc4efa1aeb
   tool_panel_section_label: Metagenomic Analysis
 - name: malt_run
@@ -276,6 +343,7 @@ tools:
   owner: iuc
   revisions:
   - 95e4757d8da7
+  - bb51c75a0157
   tool_panel_section_label: Nanopore
 - name: ont_fast5_api_fast5_subset
   owner: iuc
@@ -887,6 +955,11 @@ tools:
   - ea1833858055
   - efca385ce679
   tool_panel_section_label: Nanopore
+- name: clair3
+  owner: iuc
+  revisions:
+  - 44f6ec903688
+  tool_panel_section_label: Nanopore
 - name: artic_guppyplex
   owner: iuc
   revisions:
@@ -1439,6 +1512,7 @@ tools:
   - 427903d47026
   - 464b9305180e
   - 626658afe4cb
+  - 6595517c2dd8
   - 6e8d94597139
   - 9cd341095afd
   - be25c075ed54
@@ -1557,6 +1631,7 @@ tools:
   - 427903d47026
   - 464b9305180e
   - 626658afe4cb
+  - 6595517c2dd8
   - 6e8d94597139
   - 9cd341095afd
   - be25c075ed54
@@ -2374,6 +2449,7 @@ tools:
   revisions:
   - a3a92e30a727
   - d87433f2a54d
+  - fc925f53cae7
   tool_panel_section_label: Assembly
 - name: smudgeplot
   owner: galaxy-australia
@@ -3431,6 +3507,7 @@ tools:
   - 333a6e13b622
   - 62d212192002
   - 6e45b443ef1f
+  - cef79931dda5
   - dd4df992d93d
   - eba36e001f45
   tool_panel_section_label: RNA Analysis
@@ -6126,6 +6203,7 @@ tools:
   owner: iuc
   revisions:
   - 280386b252a5
+  - 45210df786b9
   tool_panel_section_label: Metagenomic Analysis
 - name: ncbi_acc_download
   owner: iuc
@@ -7667,24 +7745,25 @@ tools:
   - 75a14cc16d4d
   - b026dae67fba
   tool_panel_section_label: Convert Formats
-- name: nextclade
+- name: freyja_variants
   owner: iuc
   revisions:
-  - 0c46b95d60c3
-  - 0f20ed06ed6c
-  - 1e0234b87809
-  - 3b75d5285aff
-  - 51f5e7505c4b
-  - 56b1a13d9680
-  - 64be7ff9b97b
-  - 6cd62b6d2b5c
-  - 7004ce07621a
-  - 9e10ba792be2
-  - b60593baff7d
-  - b74b9a7b3e3b
-  - d070e316da5d
-  - d34df92e598f
-  - daddf188c13f
+  - 08c2d81e7942
+  tool_panel_section_label: Phylogenetics
+- name: freyja_demix
+  owner: iuc
+  revisions:
+  - fc6252e78d5b
+  tool_panel_section_label: Phylogenetics
+- name: freyja_boot
+  owner: iuc
+  revisions:
+  - dda5772507b2
+  tool_panel_section_label: Phylogenetics
+- name: freyja_aggregate_plot
+  owner: iuc
+  revisions:
+  - 0ceb9fb0f4ce
   tool_panel_section_label: Phylogenetics
 - name: pangolin
   owner: iuc
@@ -8666,6 +8745,26 @@ tools:
   owner: iuc
   revisions:
   - 20b4c59bec12
+  tool_panel_section_label: Virology
+- name: freyja_variants
+  owner: iuc
+  revisions:
+  - 08c2d81e7942
+  tool_panel_section_label: Virology
+- name: freyja_demix
+  owner: iuc
+  revisions:
+  - fc6252e78d5b
+  tool_panel_section_label: Virology
+- name: freyja_boot
+  owner: iuc
+  revisions:
+  - dda5772507b2
+  tool_panel_section_label: Virology
+- name: freyja_aggregate_plot
+  owner: iuc
+  revisions:
+  - 0ceb9fb0f4ce
   tool_panel_section_label: Virology
 - name: bayescan
   owner: iuc
