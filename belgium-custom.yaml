@@ -2,7 +2,6 @@
 install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
-
 tools:
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
@@ -24,7 +23,7 @@ tools:
   owner: ieguinoa
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
-- name:  data_manager_salmon_index_builder
+- name: data_manager_salmon_index_builder
   owner: ieguinoa
   tool_panel_section_label: None
   tool_shed_url: toolshed.g2.bx.psu.edu
@@ -34,12 +33,12 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: ribo_tools
   owner: rlegendre
-  tool_shed_url: toolshed.g2.bx.psu.edu
   tool_panel_section_label: RNA Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: riboseqr_wrapper
   owner: vimalkumarvelayudhan
-  tool_shed_url: toolshed.g2.bx.psu.edu
   tool_panel_section_label: RNA Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: htseq_count
   owner: lparsons
   tool_panel_section_label: RNA Analysis
@@ -91,7 +90,102 @@ tools:
   tool_panel_section_label: FASTA/FASTQ
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: suite_mageck
+  owner: iuc
+  tool_panel_section_label: Genome editing
+  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: metagenomeseq_normalization
-  owner: mvdbeek
+  owner: iuc
   tool_panel_section_label: Text Manipulation
   tool_shed_url: toolshed.g2.bx.psu.edu
+- name: salmon
+  owner: bgruening
+  tool_panel_section_label: RNA Analysis
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_sortmerna_database_downloader
+  owner: rnateam
+  tool_panel_section_label: None
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: data_manager_metaphlan2_database_downloader
+  owner: iuc
+  tool_panel_section_label: None
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: crispresso2
+  owner: ieguinoa
+  tool_panel_section_label: Genome editing
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_humann2_database_downloader
+  owner: iuc
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mimodd_snpeff
+  owner: wolma
+  tool_panel_section_label: MiModD
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: lotus2
+  owner: earlhaminst
+  tool_panel_section_label: Metagenomic Analysis
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mrbayes
+  owner: nml
+  tool_panel_section_label: Phylogenetics
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: mafft
+  owner: rnateam
+  tool_panel_section_label: Multiple Alignments
+- name: ucsb_phylogenetics
+  owner: ucsb-phylogenetics
+  tool_panel_section_label: Phylogenetics
+- name: braker
+  owner: genouest
+  tool_panel_section_label: Annotation
+- name: interproscan
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: prokka
+  owner: crs4
+  tool_panel_section_label: Annotation
+- name: data_manager_eggnog_mapper_abspath
+  owner: galaxyp
+  tool_panel_section_label: Data Managers
+- name: eggnog_mapper
+  owner: galaxyp
+  tool_panel_section_label: Proteomics
+- name: repeat_masker
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: augustus
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: augustus_training
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: glimmer_build_icm
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: glimmer_knowledge_based
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: glimmer_not_knowledge_based
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: glimmer_gbk_to_orf
+  owner: bgruening
+  tool_panel_section_label: Annotation
+- name: regex_replace
+  owner: kellrott
+  tool_panel_section_label: Text Manipulation
+- name: regex_find_replace
+  owner: galaxyp
+  tool_panel_section_label: Text Manipulation
+- name: ncbi_datasets
+  owner: iuc
+  tool_panel_section_label: Get Data
+- name: clipkit
+  owner: padge
+  tool_panel_section_label: Phylogenetics
+- name: trimal
+  owner: padge
+  tool_panel_section_label: Multiple Alignments
+- name: cdhit
+  owner: bebatut
+  tool_panel_section_label: Multiple Alignments
