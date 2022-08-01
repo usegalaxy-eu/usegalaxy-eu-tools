@@ -2,7 +2,12 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 
-tools:    
+tools:
+
+  - name: overlay_images
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
   - name: color_deconvolution
     owner: imgteam
     tool_panel_section_label: "Imaging"

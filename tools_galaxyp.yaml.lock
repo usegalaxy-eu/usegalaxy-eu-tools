@@ -7,28 +7,33 @@ tools:
   revisions:
   - 0202b8f3a516
   - 6278dd24a860
+  - 99297071f4b5
   tool_panel_section_label: Proteomics
 - name: encyclopedia_searchtolib
   owner: galaxyp
   revisions:
   - 36880dfd9fa7
   - 62a718b76f62
+  - fb192dd6658a
   tool_panel_section_label: Proteomics
 - name: encyclopedia_prosit_csv_to_library
   owner: galaxyp
   revisions:
   - 0e25453fbee7
+  - 2aad7301632d
   - 8a9cef108b0c
   tool_panel_section_label: Proteomics
 - name: encyclopedia_walnut
   owner: galaxyp
   revisions:
+  - 0d2e93e01e68
   - ce1a157a41bd
   - d6a4dfdad269
   tool_panel_section_label: Proteomics
 - name: encyclopedia_quantify
   owner: galaxyp
   revisions:
+  - 0fa397f4f40b
   - 1c5cbf8f79ce
   - 4081e4faa4ab
   tool_panel_section_label: Proteomics
@@ -36,6 +41,7 @@ tools:
   owner: galaxyp
   revisions:
   - 469da8c03202
+  - b2ae586dc13b
   - ca7a315fb902
   tool_panel_section_label: Proteomics
 - name: encyclopedia_encyclopedia
@@ -43,6 +49,12 @@ tools:
   revisions:
   - d0ea7589e95f
   - d263296cd73e
+  - eac99effe86f
+  tool_panel_section_label: Proteomics
+- name: feature_alignment
+  owner: galaxyp
+  revisions:
+  - 7ac5166f8bbc
   tool_panel_section_label: Proteomics
 - name: dialignr
   owner: galaxyp
@@ -141,6 +153,7 @@ tools:
   - 34758ab8aaa4
   - 4953dcd7dd39
   - 75b3b3d0adbf
+  - 7863f1abcdda
   - 917fd3ebc223
   - 9aaa46d45472
   tool_panel_section_label: Get Data
@@ -206,9 +219,11 @@ tools:
   - 0839f84def5e
   - 175e062b6a17
   - 181bd6a5f6ce
+  - 1f39c833f65f
   - 2133b0be850a
   - 37d669de2828
   - 666f3453a99d
+  - 74f5d355d156
   - 7f432d87c82c
   - 8bac3cc5c5de
   - 97a7f34fcb6a
@@ -302,11 +317,22 @@ tools:
   - e9300ef37403
   - eaaa73b043e6
   tool_panel_section_label: Proteomics
+- name: cardinal_single_ion_segmentation
+  owner: galaxyp
+  revisions:
+  - 4cb6c83d3777
+  tool_panel_section_label: Proteomics
+- name: cardinal_colocalization
+  owner: galaxyp
+  revisions:
+  - d3ca64dafdef
+  tool_panel_section_label: Proteomics
 - name: cardinal_filtering
   owner: galaxyp
   revisions:
   - 0c4579390f73
   - '105056844497'
+  - 1990986966c1
   - 1d4a6fe69a40
   - 2aefa66e48e5
   - 4b5513e25902
@@ -328,6 +354,7 @@ tools:
   - 2da46f180f35
   - 4a2ac25d1063
   - 5279bc051339
+  - 653ad2b367f2
   - 82f6c2f4332d
   - 9f7d1ec01767
   - b16b64ca7b7c
@@ -347,6 +374,7 @@ tools:
   - 8da3511c9467
   - 90d2e00e1304
   - a5d09f2daf71
+  - b6a4dd06cde0
   - be5d1c3c51e5
   - d94770c22f13
   - e30d8b72415f
@@ -365,6 +393,7 @@ tools:
   - 47fc5b518ffc
   - 585ef27873c9
   - 6f4c34f8d5ba
+  - 8337ff96a54b
   - b18329a8ac14
   - b574b84afc4d
   - cbc7e53518ce
@@ -388,6 +417,7 @@ tools:
   - 7828af552085
   - a69865da6f80
   - a95a82eb4d50
+  - c4df3005e04d
   - daf2ee9127fd
   tool_panel_section_label: Proteomics
 - name: cardinal_quality_report
@@ -407,6 +437,7 @@ tools:
   - f0d1f3e97303
   - f365bad862c9
   - f396c176f366
+  - fde8ba3a0766
   tool_panel_section_label: Proteomics
 - name: cardinal_preprocessing
   owner: galaxyp
@@ -416,6 +447,7 @@ tools:
   - 44a4b31fcbf3
   - 5abc3ab4792c
   - 5bf056c0354e
+  - 798da6bdff3d
   - 87bb011a4ee8
   - 8c05a34f160a
   - accf9fb6ea01
@@ -432,6 +464,7 @@ tools:
   - 043f9c91f686
   - 0b7e00e5b9d2
   - 10566783d718
+  - 12dde78d554b
   - 1693b2126f30
   - 3642ed221eb2
   - 58c4aef16eb0
@@ -448,6 +481,7 @@ tools:
   owner: galaxyp
   revisions:
   - 129cddd02600
+  - 2b1868ab3724
   - 392b2dfd261d
   - 48c07268f341
   - 525f201b86c1
@@ -475,8 +509,10 @@ tools:
   owner: galaxyp
   revisions:
   - 2aec8d30ff42
+  - 81a286e4c5a2
   - 9d5f039c637f
   - b711f5b6bd44
+  - fcb8bdd124f4
   tool_panel_section_label: Data Managers
 - name: eggnog_mapper
   owner: galaxyp
@@ -485,8 +521,13 @@ tools:
   - 3c7c9396daaa
   - 3cb37af59360
   - 4e4c6329f6cd
+  - 5a30ae278db0
+  - 63662ae295d6
+  - 96cac424c870
+  - 9d1fbff733cf
   - a37df6f6b869
   - a5a3bdd0954b
+  - bcb4895b8b55
   tool_panel_section_label: Proteomics
 - name: protein_properties
   owner: bgruening
@@ -573,6 +614,7 @@ tools:
   owner: galaxyp
   revisions:
   - 073a2965e3b2
+  - a6282baa8c6f
   tool_panel_section_label: Proteomics
 - name: metaquantome_db
   owner: galaxyp
@@ -639,6 +681,7 @@ tools:
   revisions:
   - 4ef88f9a195d
   - 6a638de7915c
+  - 8a0473eb465e
   - cfd50144a871
   tool_panel_section_label: Metagenomic Analysis
 - name: msms_extractor
@@ -673,6 +716,7 @@ tools:
   - 32d3818fc635
   - 528bcf03e561
   - 5b5a9f59e2c7
+  - 962599ac5406
   tool_panel_section_label: Proteomics
 - name: mt2mq
   owner: galaxyp
@@ -1998,6 +2042,7 @@ tools:
   owner: galaxyp
   revisions:
   - 529b61ba3d64
+  - acb8aba959ed
   tool_panel_section_label: Proteomics
 - name: proteomiqon_peptidedb
   owner: galaxyp
@@ -2019,11 +2064,13 @@ tools:
 - name: proteomiqon_proteininference
   owner: galaxyp
   revisions:
+  - 7729b9043b80
   - 8e4fb95a319a
   tool_panel_section_label: Proteomics
 - name: proteomiqon_psmbasedquantification
   owner: galaxyp
   revisions:
+  - 4abcc674fc0b
   - 65ce27f0fa01
   tool_panel_section_label: Proteomics
 - name: proteomiqon_joinquantpepionswithproteins
@@ -2045,4 +2092,10 @@ tools:
   owner: galaxyp
   revisions:
   - 9c246c2e24ad
+  tool_panel_section_label: Proteomics
+- name: metanovo
+  owner: galaxyp
+  revisions:
+  - 4a851c02f558
+  - 7a5ff5359b13
   tool_panel_section_label: Proteomics

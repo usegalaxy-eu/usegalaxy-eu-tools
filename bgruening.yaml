@@ -28,9 +28,17 @@ tools:
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
 
+  - name: glimmer_glimmer_to_gff
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
   - name: graphicsmagick_image_montage
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
+
+#  - name: run_jupyter_job
+#    owner: bgruening
+#    tool_panel_section_label: Machine Learning
 
   - name: sklearn_svm_classifier
     owner: bgruening
@@ -220,14 +228,41 @@ tools:
     owner: bgruening
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: gfastats
+    owner: bgruening
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: music_compare
+    owner: bgruening
+    tool_panel_section_label: Single-cell
+
+  - name: music_manipulate_eset
+    owner: bgruening
+    tool_panel_section_label: Single-cell
+
   - name: music_inspect_eset
     owner: bgruening
     tool_panel_section_label: Single-cell
 
-#  - name: music_deconvolution
-#    owner: bgruening
-#    tool_panel_section_label: Single-cell
+  - name: music_deconvolution
+    owner: bgruening
+    tool_panel_section_label: Single-cell
 
   - name: music_construct_eset
+    owner: bgruening
+    tool_panel_section_label: Single-cell
+
+  - name: pharmcat
+    owner: bgruening
+    tool_panel_section_label: Variant Calling
+
+  - name: itsx
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: antismash
+    owner: bgruening
+    tool_panel_section_label: Annotation
+  - name: 10x_bamtofastq
     owner: bgruening
     tool_panel_section_label: Single-cell

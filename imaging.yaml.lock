@@ -1,6 +1,12 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: overlay_images
+  owner: imgteam
+  revisions:
+  - 589af0005df5
+  - bf590a9733ed
+  tool_panel_section_label: Imaging
 - name: color_deconvolution
   owner: imgteam
   revisions:
@@ -27,6 +33,7 @@ tools:
 - name: 2d_auto_threshold
   owner: imgteam
   revisions:
+  - 0c777d708acc
   - 4853fc2b50bf
   - 81f0cbca04a7
   - d4da97f51700
@@ -36,33 +43,44 @@ tools:
   revisions:
   - 497dcd834bb3
   - a20c14eb5f98
+  - be2d3ce89c0f
   - c90b91f4a07b
   tool_panel_section_label: Imaging
 - name: landmark_registration
   owner: imgteam
   revisions:
+  - 4e089a0983b1
+  - 9ccd642e7ae2
   - a71239f3543a
+  - aee73493bf53
   - b0503eec7bd6
   tool_panel_section_label: Imaging
 - name: landmark_registration_ls
   owner: imgteam
   revisions:
   - 2f36165c49fb
+  - 69db8c7d4244
   tool_panel_section_label: Imaging
 - name: image_registration_affine
   owner: imgteam
   revisions:
+  - 77dc68af2b40
   - e34222a620d4
+  - fa769715b6b0
   tool_panel_section_label: Imaging
 - name: projective_transformation
   owner: imgteam
   revisions:
   - 17f5d0c3f8a3
+  - 1ffdb07020ee
+  - 37b079c98c38
   - 974cf4357707
+  - be9a815e2240
   tool_panel_section_label: Imaging
 - name: projective_transformation_points
   owner: imgteam
   revisions:
+  - 3a686b6aa7fc
   - a84822a0060c
   - aaac58d83043
   - ed8a71e13f7b
@@ -71,19 +89,25 @@ tools:
 - name: spot_detection_2d
   owner: imgteam
   revisions:
+  - 4645b356bf3b
+  - 859dd1c11ac0
+  - a9972c993bed
   - d78372040976
   tool_panel_section_label: Imaging
 - name: points_association_nn
   owner: imgteam
   revisions:
+  - 65210e69cf95
   - b30aa285ac0a
   - fd4293bee0dc
   tool_panel_section_label: Imaging
 - name: curve_fitting
   owner: imgteam
   revisions:
+  - 004c57179c61
   - 00feb1ecd040
   - c54cf4ce6baf
+  - e0af18405e37
   tool_panel_section_label: Imaging
 - name: imagecoordinates_flipaxis
   owner: imgteam
@@ -207,6 +231,7 @@ tools:
 - name: colocalization_viz
   owner: imgteam
   revisions:
+  - 0f8652663a03
   - 9ddb11b272ee
   - c73332d5c3bb
   - fc85eb253163
@@ -215,11 +240,13 @@ tools:
   owner: imgteam
   revisions:
   - 165a9330fc90
+  - b4fc6e09e576
   - bc324ec66719
   tool_panel_section_label: Imaging
 - name: overlay_segmentation_mask
   owner: imgteam
   revisions:
+  - 22e573b7dcb1
   - 63b2a10b1001
   - 8ad39f493587
   tool_panel_section_label: Imaging
