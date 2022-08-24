@@ -4,6 +4,10 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: srst2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
   - name: maaslin2
     owner: iuc
     tool_panel_section_label: Microbiom R Analysis
