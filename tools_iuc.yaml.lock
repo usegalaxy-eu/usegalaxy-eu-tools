@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: srst2
+  owner: iuc
+  revisions:
+  - f9a0855c792d
+  tool_panel_section_label: Metagenomic Analysis
 - name: adapter_removal
   owner: iuc
   revisions:
@@ -92,6 +97,11 @@ tools:
   revisions:
   - 7355bbf5e05f
   - fe48aa4ccd5e
+  tool_panel_section_label: RNA Analysis
+- name: circexplorer2
+  owner: iuc
+  revisions:
+  - 465d6578b4d0
   tool_panel_section_label: RNA Analysis
 - name: arriba_draw_fusions
   owner: iuc
@@ -224,10 +234,12 @@ tools:
   owner: iuc
   revisions:
   - 4f0a8e401e2e
+  - ef0443c0eaba
   tool_panel_section_label: Metagenomic Analysis
 - name: megan_blast2rma
   owner: iuc
   revisions:
+  - 45fd617493eb
   - d326b943f5e2
   - fa3c3a64c993
   tool_panel_section_label: Metagenomic Analysis
@@ -246,10 +258,12 @@ tools:
   owner: iuc
   revisions:
   - 10360f9989ee
+  - 8a9cad43dcde
   tool_panel_section_label: Metagenomic Analysis
 - name: megan_daa_meganizer
   owner: iuc
   revisions:
+  - 6ca88053665c
   - bb2a8bd85c85
   tool_panel_section_label: Metagenomic Analysis
 - name: megan_read_extractor
@@ -690,6 +704,7 @@ tools:
   - 41f34e925bd5
   - 9fec5dd8fbb9
   - be4646256624
+  - f3eb2291da05
   tool_panel_section_label: Single-cell
 - name: raceid_filtnormconf
   owner: iuc
@@ -699,6 +714,7 @@ tools:
   - 5d5b14dbd092
   - 7608d5faee41
   - 8dc8ff057b0f
+  - b83fbc90161e
   - c891d8b33ede
   - d45f092caf24
   - d55e29ac02e3
@@ -706,6 +722,7 @@ tools:
 - name: raceid_clustering
   owner: iuc
   revisions:
+  - 0bff0ee0683a
   - 4ea021bd7513
   - 528a43b1cbcf
   - 7e014059a88d
@@ -717,6 +734,7 @@ tools:
 - name: raceid_trajectory
   owner: iuc
   revisions:
+  - 2af7c5086a96
   - 3e5bb16abb55
   - 44b935f2271b
   - 72979cac22b2
@@ -734,6 +752,7 @@ tools:
   - 5156383d3a5d
   - 69018f285aa3
   - 86e2358cf273
+  - a6821f856a1e
   - c8434a623268
   - df8e4e54d367
   - e0e9b24d76aa
@@ -1051,6 +1070,7 @@ tools:
   - 3be27a9a7313
   - 53ce8be43212
   - f41a1e03538b
+  - fb0bb7174530
   - fd2d6e035c3f
   tool_panel_section_label: Variant Calling
 - name: plink
@@ -1156,6 +1176,7 @@ tools:
   owner: iuc
   revisions:
   - 0622d99c2619
+  - 18eed8fa7f23
   - 1a7773882d2c
   - 37c98f8a2497
   - 6c829a430475
@@ -3284,6 +3305,7 @@ tools:
   - 71bacea10eee
   - 7ff33c2d525b
   - 89d26b11d452
+  - 8fe98f7094de
   - 9a616afdbda5
   - a416957ee305
   - a6fc9228e1a0
@@ -4061,6 +4083,7 @@ tools:
   owner: iuc
   revisions:
   - 637ec5d5368c
+  - 96e6283e4745
   tool_panel_section_label: Annotation
 - name: snpsift_genesets
   owner: iuc
@@ -4300,6 +4323,7 @@ tools:
   - 9ffcddf6f9c0
   - a1f0b3f4b781
   - ab1f60c26526
+  - b502c227b5e6
   - b9fbec5ac6b2
   - f6ced08779c4
   tool_panel_section_label: Picard
@@ -6127,6 +6151,7 @@ tools:
   - 0d30fed9628b
   - 1035adb112c0
   - 16e0eb91072f
+  - 1d06c8b38e77
   - 378e55aeeb25
   - 53c2bc8c2ae3
   - 675ee1aa5952
@@ -6151,11 +6176,13 @@ tools:
   - e93c1a0678cd
   - eb7a370f6588
   - f338e9942b27
+  - fd128c111ab0
   tool_panel_section_label: Assembly
 - name: spades
   owner: nml
   revisions:
   - 24fffa4fee40
+  - 33368fec3b70
   - 74f20c988994
   - 7897763d14ec
   - 78ced22d09a2
@@ -6179,10 +6206,12 @@ tools:
   - b3490b036c5a
   - b65a43f70b99
   - d159735a6a9f
+  - d5fb354f745d
   tool_panel_section_label: Assembly
 - name: spades_plasmidspades
   owner: iuc
   revisions:
+  - 1708851f8804
   - 340bc17f49cf
   - 6aad515a5270
   - 75405f5e2cc5
@@ -6194,6 +6223,7 @@ tools:
   owner: iuc
   revisions:
   - 2a10645aeadd
+  - 328aa71f0f3c
   - 86f66ab58e14
   - 9346dcffaafc
   - 9de69775f512
@@ -6209,11 +6239,13 @@ tools:
   - 6b5a5842531e
   - 8d4b90bf9caf
   - b8002c3f7141
+  - e5a3b75a271f
   tool_panel_section_label: Assembly
 - name: spades_coronaspades
   owner: iuc
   revisions:
   - 0e02cc942d97
+  - 34305b013402
   - 7004279ff8b7
   - 808b3a0a6716
   - ad8b536d1caa
@@ -6224,6 +6256,7 @@ tools:
 - name: spades_biosyntheticspades
   owner: iuc
   revisions:
+  - 051fd2db8a27
   - 1bb12736175c
   - 1fc82fe7ebef
   - 42a39792aaae
@@ -9172,6 +9205,7 @@ tools:
   owner: iuc
   revisions:
   - 19035a7b1106
+  - 79450f7fd718
   - b08ac10aed96
   tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_build_bracken_database
@@ -9220,6 +9254,7 @@ tools:
   owner: iuc
   revisions:
   - 09b7b0b2e2c2
+  - fe733f05c2f8
   tool_panel_section_label: Metagenomic Analysis
 - name: b2btools_single_sequence
   owner: iuc
