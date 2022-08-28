@@ -5,7 +5,87 @@ install_tool_dependencies: false
 
 tools:
 
+  - name: srst2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: adapter_removal
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqkit_fx2tab
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqkit_stats
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: checkm_taxonomy_wf
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_tree
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_lineage_wf
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_tree_qa
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_analyze
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_tetra
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_qa
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_taxon_set
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_plot
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: checkm_lineage_set
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: aldex2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: ancombc
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: barrnap
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: circexplorer2
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: arriba_draw_fusions
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: arriba_get_filters
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: arriba
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -112,6 +192,10 @@ tools:
   - name: scoary
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+
+  - name: te_finder
+    owner: iuc
+    tool_panel_section_label: Annotation
 
   - name: interproscan
     owner: bgruening
@@ -465,6 +549,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Nanopore
 
+  - name: clair3
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: artic_guppyplex
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -792,10 +880,6 @@ tools:
   - name: maxbin2
     owner: mbernt
     tool_panel_section_label: Metagenomic Analysis
-
-  - name: column_maker
-    owner: devteam
-    tool_panel_section_label: Text Manipulation
 
   - name: coverage
     owner: devteam
@@ -1240,7 +1324,11 @@ tools:
   - name: yahs
     owner: iuc
     tool_panel_section_label: Assembly
-    
+
+  - name: smudgeplot
+    owner: galaxy-australia
+    tool_panel_section_label: Assembly
+
   - name: jellyfish
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2336,6 +2424,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: bcftools_cnv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_plugin_split_vep
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -3821,6 +3913,26 @@ tools:
     owner: iuc
     tool_panel_section_label: Virology
 
+  - name: snipit
+    owner: iuc
+    tool_panel_section_label: Virology
+
+  - name: freyja_variants
+    owner: iuc
+    tool_panel_section_label: Virology
+
+  - name: freyja_demix
+    owner: iuc
+    tool_panel_section_label: Virology
+
+  - name: freyja_boot
+    owner: iuc
+    tool_panel_section_label: Virology
+
+  - name: freyja_aggregate_plot
+    owner: iuc
+    tool_panel_section_label: Virology
+
   - name: bayescan
     owner: iuc
     tool_panel_section_label: RAD-seq
@@ -3955,6 +4067,12 @@ tools:
   - name: data_manager_funannotate
     owner: iuc
 
+  - name: data_manager_pangolin_data
+    owner: iuc
+
+  - name: data_manager_nextclade
+    owner: iuc
+
   - name: fastqe
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
@@ -4065,3 +4183,19 @@ tools:
   - name: recentrifuge
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+
+  - name: b2btools_single_sequence
+    owner: iuc
+    tool_panel_section_label: Extract Features
+
+  - name: cooc_mutbamscan
+    owner: iuc
+    tool_panel_section_label: Virology
+
+  - name: cooc_pubmut
+    owner: iuc
+    tool_panel_section_label: Virology
+
+  - name: cooc_tabmut
+    owner: iuc
+    tool_panel_section_label: Virology
