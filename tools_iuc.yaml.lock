@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: srst2
+  owner: iuc
+  revisions:
+  - f9a0855c792d
+  tool_panel_section_label: Metagenomic Analysis
 - name: adapter_removal
   owner: iuc
   revisions:
@@ -92,6 +97,11 @@ tools:
   revisions:
   - 7355bbf5e05f
   - fe48aa4ccd5e
+  tool_panel_section_label: RNA Analysis
+- name: circexplorer2
+  owner: iuc
+  revisions:
+  - 465d6578b4d0
   tool_panel_section_label: RNA Analysis
 - name: arriba_draw_fusions
   owner: iuc
