@@ -1,0 +1,29 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+- name: metadegalaxy_phyloseq_richness
+  owner: qfabrepo
+  revisions:
+  - e0225f3e8ef6
+  tool_panel_section_label: Metagenomic Analysis
+- name: metadegalaxy_phyloseq_net
+  owner: qfabrepo
+  revisions:
+  - 22abc415e142
+  tool_panel_section_label: Metagenomic Analysis
+- name: metadegalaxy_phyloseq_abundance_taxonomy
+  owner: qfabrepo
+  revisions:
+  - b2fafdd3533d
+  tool_panel_section_label: Metagenomic Analysis
+- name: metadegalaxy_phyloseq_abundance_factor
+  owner: qfabrepo
+  revisions:
+  - 3856a1590a11
+  tool_panel_section_label: Metagenomic Analysis
+- name: metadegalaxy_phyloseq_deseq2
+  owner: qfabrepo
+  revisions:
+  - 7e24242ffa65
+  tool_panel_section_label: Metagenomic Analysis
