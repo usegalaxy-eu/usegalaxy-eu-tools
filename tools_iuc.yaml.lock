@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: kraken_biom
+  owner: iuc
+  revisions:
+  - 3ff4712dc111
+  tool_panel_section_label: Metagenomic Analysis
 - name: srst2
   owner: iuc
   revisions:
@@ -777,6 +782,7 @@ tools:
   owner: iuc
   revisions:
   - 7608209110d3
+  - 98fe794d2ec0
   - b778a18bd878
   tool_panel_section_label: Variant Calling
 - name: get_hrun
