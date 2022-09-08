@@ -9,7 +9,7 @@ tools:
   - name: 'sra_tools'
     owner: 'iuc'
     tool_panel_section_label: 'Get Data'
-   
+
     # quality_control
   - name: 'fastqc'
     owner: 'devteam'
@@ -32,7 +32,7 @@ tools:
     tool_panel_section_label: Quality Control
 
     # clustering
-    
+
   - name: 'format_cd_hit_output'
     owner: 'bebatut'
     tool_panel_section_label: 'Multiple Alignments'
@@ -134,3 +134,9 @@ tools:
   - name: 'taxonomy_krona_chart'
     owner: 'crs4'
     tool_panel_section_label: 'Graph/Display Data'
+
+    # AMR
+    name: 'kleborate'
+    owner: 'dazeone'
+    tool_panel_section_label: 'Metagenomic Analysis'
+
