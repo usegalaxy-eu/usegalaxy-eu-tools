@@ -6,10 +6,12 @@ tools:
   owner: iuc
   revisions:
   - 3ff4712dc111
+  - 65eb9962d272
   tool_panel_section_label: Metagenomic Analysis
 - name: srst2
   owner: iuc
   revisions:
+  - 46c5d7a0393b
   - f9a0855c792d
   tool_panel_section_label: Metagenomic Analysis
 - name: adapter_removal
@@ -287,6 +289,11 @@ tools:
   revisions:
   - 42a1a5750539
   tool_panel_section_label: Metagenomic Analysis
+- name: isescan
+  owner: iuc
+  revisions:
+  - 19f42b3ea391
+  tool_panel_section_label: Annotation
 - name: te_finder
   owner: iuc
   revisions:
@@ -1050,12 +1057,14 @@ tools:
 - name: odgi_build
   owner: iuc
   revisions:
+  - 6584dfcc7165
   - 7fb3bb1e221e
   tool_panel_section_label: Variant Calling
 - name: odgi_viz
   owner: iuc
   revisions:
   - 536768de4748
+  - 911a3517b738
   tool_panel_section_label: Variant Calling
 - name: variant_analyzer
   owner: iuc
