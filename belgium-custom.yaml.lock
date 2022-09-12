@@ -2,18 +2,6 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- name: ribo_tools
-  owner: rlegendre
-  revisions:
-  - 01b945ba3697
-  tool_shed_url: toolshed.g2.bx.psu.edu
-  tool_panel_section_label: RNA Analysis
-- name: riboseqr_wrapper
-  owner: vimalkumarvelayudhan
-  revisions:
-  - 5a242f289347
-  tool_shed_url: toolshed.g2.bx.psu.edu
-  tool_panel_section_label: RNA Analysis
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
   revisions:
@@ -23,11 +11,13 @@ tools:
 - name: data_manager_bowtie2_index_builder
   owner: devteam
   revisions:
+  - 76672b83d42d
   - 83da94c0e4a6
   tool_panel_section_label: None
 - name: data_manager_hisat2_index_builder
   owner: iuc
   revisions:
+  - a04cebcd77f4
   - d210e1f185bd
   tool_panel_section_label: None
 - name: data_manager_fetch_gff
@@ -44,148 +34,157 @@ tools:
   owner: ieguinoa
   revisions:
   - 3888ec1918d0
+  - 9004217cddf4
   tool_panel_section_label: None
 - name: data_manager_star_index_builder
   owner: iuc
   revisions:
-  - d3879aceba04
   - 6ef6520f14fc
+  - c520a52b5174
+  - d3879aceba04
   tool_panel_section_label: None
-  tool_shed_url: toolshed.g2.bx.psu.edu
-- name: salmon
-  owner: bgruening
+- name: ribo_tools
+  owner: rlegendre
   revisions:
-  - 6b0ba6de1424
+  - 01b945ba3697
   tool_panel_section_label: RNA Analysis
-  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: riboseqr_wrapper
+  owner: vimalkumarvelayudhan
+  revisions:
+  - 5a242f289347
+  tool_panel_section_label: RNA Analysis
 - name: htseq_count
   owner: lparsons
-  revisions: 
+  revisions:
   - 7f5a8d427b39
+  - 916cb26bd9d3
   tool_panel_section_label: RNA Analysis
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: trimmomatic
   owner: pjbriggs
   revisions:
   - 51b771646466
+  - d94aff5ee623
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: rseqc
   owner: nilesh
   revisions:
+  - dbedfc5f5a3c
   - f242ee103277
   tool_panel_section_label: RNA Analysis
 - name: sortmerna
   owner: rnateam
   revisions:
   - eb35257d2e29
-  tool_panel_section_label: Metagenomic Analysis
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: data_manager_sortmerna_database_downloader
-  owner: rnateam
-  revisions:
-  - 7d2252852f96
-  tool_panel_section_label: None
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  tool_panel_section_label: Metagenomics
 - name: metaphlan2
   owner: iuc
   revisions:
   - 8c82c4d90cc6
+  - f60773e921fa
   tool_panel_section_label: Metagenomic Analysis
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: data_manager_metaphlan2_database_downloader
-  owner: iuc
-  revisions:
-  - 83f07f40b200
-  tool_panel_section_label: None
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: metaphlan2krona
   owner: iuc
   revisions:
+  - ebb74774457e
   - fdbd63e92b01
   tool_panel_section_label: Metagenomic Analysis
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: format_metaphlan2_output
   owner: bebatut
   revisions:
+  - 1e74cb2c8e67
   - 2bfa9b200600
   tool_panel_section_label: Metagenomic Analysis
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: group_humann2_uniref_abundances_to_go
   owner: bebatut
   revisions:
   - cad28d7b49d2
+  - fd2cf7c9d3ec
   tool_panel_section_label: Metagenomic Analysis
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: export2graphlan
   owner: iuc
   revisions:
   - b16989c1e3a7
   - ed1becc01910
   tool_panel_section_label: Graph/Display Data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: graphlan
   owner: iuc
   revisions:
   - a490b70e46fc
   tool_panel_section_label: Graph/Display Data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: graphlan_annotate
   owner: iuc
   revisions:
   - cf1df6b2220a
   tool_panel_section_label: Graph/Display Data
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: cutadapt
   owner: lparsons
   revisions:
   - 093678460093
+  - 5915ea1ec9b1
   tool_panel_section_label: FASTA/FASTQ
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: je_demultiplex
   owner: gbcs-embl-heidelberg
   revisions:
   - bd3cdf128bcb
   tool_panel_section_label: FASTA/FASTQ
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: suite_mageck
   owner: iuc
   revisions:
   - 1aaea8924858
   tool_panel_section_label: Genome editing
+- name: metagenomeseq_normalization
+  owner: iuc
+  revisions:
+  - d16f7cc26516
+  tool_panel_section_label: Text Manipulation
+- name: salmon
+  owner: bgruening
+  revisions:
+  - 49121db48873
+  - 6b0ba6de1424
+  tool_panel_section_label: RNA Analysis
+- name: data_manager_sortmerna_database_downloader
+  owner: rnateam
+  revisions:
+  - 7d2252852f96
+  tool_panel_section_label: None
+- name: data_manager_metaphlan2_database_downloader
+  owner: iuc
+  revisions:
+  - 83f07f40b200
+  tool_panel_section_label: None
 - name: crispresso2
   owner: ieguinoa
   revisions:
-   - a378f3ee0137
+  - a378f3ee0137
+  - eb5dbcfac76b
   tool_panel_section_label: Genome editing
-  tool_shed_url: toolshed.g2.bx.psu.edu
 - name: data_manager_humann2_database_downloader
   owner: iuc
   revisions:
   - ff9cf22838d4
-  tool_shed_url: toolshed.g2.bx.psu.edu
   tool_panel_section_label: None
 - name: mimodd_snpeff
   owner: wolma
   revisions:
   - b6da1066b2fd
-  tool_shed_url: toolshed.g2.bx.psu.edu
   tool_panel_section_label: MiModD
 - name: lotus2
   owner: earlhaminst
   revisions:
+  - 12599a8dd22f
   - 7f33525b85d0
   tool_panel_section_label: Metagenomic Analysis
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: mrbayes
   owner: nml
   revisions:
   - 905d00fb5243
   tool_panel_section_label: Phylogenetics
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: mafft
   owner: rnateam
   revisions:
   - bcfce5aac49c
+  - f0d493f8f84f
   tool_panel_section_label: Multiple Alignments
 - name: ucsb_phylogenetics
   owner: ucsb-phylogenetics
@@ -200,8 +199,9 @@ tools:
 - name: interproscan
   owner: bgruening
   revisions:
-  - c55643c3d813
   - 0cd163d805e3
+  - 98cafcbd2578
+  - c55643c3d813
   tool_panel_section_label: Annotation
 - name: prokka
   owner: crs4
@@ -212,31 +212,37 @@ tools:
   owner: galaxyp
   revisions:
   - 2aec8d30ff42
+  - 81a286e4c5a2
   tool_panel_section_label: Data Managers
 - name: eggnog_mapper
   owner: galaxyp
   revisions:
   - 2667d24b58a0
+  - 9d1fbff733cf
   tool_panel_section_label: Proteomics
 - name: repeat_masker
   owner: bgruening
   revisions:
   - 39b40a9a6296
+  - 3f987772e283
   tool_panel_section_label: Annotation
 - name: augustus
   owner: bgruening
   revisions:
   - 09855551d713
+  - 28433faa6e42
   tool_panel_section_label: Annotation
 - name: augustus_training
   owner: bgruening
   revisions:
   - 1fbb1135da16
+  - dc027fa56d55
   tool_panel_section_label: Annotation
 - name: glimmer_build_icm
   owner: bgruening
   revisions:
   - 15ad71e21010
+  - cc51783dc93c
   tool_panel_section_label: Annotation
 - name: glimmer_knowledge_based
   owner: bgruening
@@ -247,6 +253,7 @@ tools:
   owner: bgruening
   revisions:
   - 2529762847c3
+  - 73c58e2debd0
   tool_panel_section_label: Annotation
 - name: glimmer_gbk_to_orf
   owner: bgruening
@@ -261,25 +268,29 @@ tools:
 - name: regex_find_replace
   owner: galaxyp
   revisions:
+  - 399da6b5ec21
   - ae8c4b2488e7
   tool_panel_section_label: Text Manipulation
 - name: ncbi_datasets
   owner: iuc
   revisions:
+  - 18eed8fa7f23
   - 1a7773882d2c
   tool_panel_section_label: Get Data
 - name: clipkit
   owner: padge
   revisions:
   - 34f21474cdea
+  - '770695339600'
   tool_panel_section_label: Phylogenetics
 - name: trimal
   owner: padge
   revisions:
+  - 0d53577b962f
   - 98944ec4bfc7
   tool_panel_section_label: Multiple Alignments
-- name: 'cdhit'
-  owner: 'bebatut'
+- name: cdhit
+  owner: bebatut
   revisions:
   - 93f25d52cfa5
   tool_panel_section_label: Multiple Alignments
