@@ -114,6 +114,7 @@ tools:
   owner: iuc
   revisions:
   - 2d4e3aff9dc7
+  - 68ff8cd874db
   - cf18a5993aa2
   tool_panel_section_label: RNA Analysis
 - name: arriba_get_filters
@@ -121,12 +122,14 @@ tools:
   revisions:
   - 125d20cb23d7
   - 1fe9d667447c
+  - 47311adce34e
   tool_panel_section_label: RNA Analysis
 - name: arriba
   owner: iuc
   revisions:
   - 4f1efcc055d5
   - a24ca22b906e
+  - add230dddd52
   tool_panel_section_label: RNA Analysis
 - name: binning_refiner
   owner: iuc
@@ -950,6 +953,7 @@ tools:
   - 6b6c992d3a14
   - 81426b3cf18b
   - 874cc12ae316
+  - d144af39073a
   - d40d4bf05718
   - fc47ffec447e
   tool_panel_section_label: Variant Calling
@@ -1189,6 +1193,7 @@ tools:
   owner: iuc
   revisions:
   - 3fe0d1df3950
+  - 7bf891a13ace
   tool_panel_section_label: Metagenomic Analysis
 - name: graphembed
   owner: iuc
@@ -1457,6 +1462,7 @@ tools:
   - 326a3db8d9d1
   - 4ac4e7083b7e
   - 5cec5fb749f0
+  - 7dd841a32245
   - a1abfa420d9d
   - c171f2b7d76e
   - c237ba772225
@@ -1936,6 +1942,7 @@ tools:
 - name: seqcomplexity
   owner: iuc
   revisions:
+  - 054c3355458d
   - f14a21f3d5b1
   tool_panel_section_label: FASTA/FASTQ
 - name: seqkit_stats
@@ -2376,6 +2383,7 @@ tools:
 - name: clustalw
   owner: devteam
   revisions:
+  - 4daabc25df00
   - d6694932c5e0
   - d9c2b2fde6a3
   - f8aad74cc8c1
@@ -4684,6 +4692,7 @@ tools:
   - 95c6f3f4c77f
   - a87ae767b01d
   - c82130967bd2
+  - d3081540d175
   - d37e313a41be
   - d6dc477167f8
   - e522022137f6
@@ -4699,6 +4708,7 @@ tools:
   - 798c063f8fc9
   - 86296490704e
   - 9473302f4588
+  - b931e65638b8
   - e03f2f3ac3a9
   tool_panel_section_label: Variant Calling
 - name: bcftools_call
@@ -4707,6 +4717,7 @@ tools:
   - 01fd33bc2e75
   - 072f606e2e69
   - 0fba2c15b40d
+  - 21687e35f066
   - 22637b1a55bf
   - 3296c3680d96
   - 4fa18320d29b
@@ -4726,6 +4737,7 @@ tools:
   - 481476814acc
   - 48291658fdf6
   - 67e2bd1c4579
+  - 6deb4d549bc9
   - 76655fe2c70e
   - 93bdd3bf5743
   - a404f786a94c
@@ -4745,6 +4757,7 @@ tools:
   - 6c790a091c7c
   - 7cbf3c66d4ad
   - 8899a6d50699
+  - ae68ceb4cca3
   - f10f5b4e7854
   - fa67bc6d3b41
   - fdd127bd4a32
@@ -4760,6 +4773,7 @@ tools:
   - 77877eec9e8b
   - 96d2000977ab
   - a1c4d50c97e0
+  - b40213125e88
   - c0b17fc737d4
   - eb22990a2be9
   tool_panel_section_label: Variant Calling
@@ -4769,6 +4783,7 @@ tools:
   - 0dbff46d5a1b
   - 31ea13dfe5e6
   - 37757ffb4c5f
+  - 5660b21a0dbd
   - a0c219ecb5e7
   - ce9396ddcb2b
   - f506df85c652
@@ -4780,6 +4795,7 @@ tools:
   - 1d1762860d7e
   - 38d75661c235
   - 3ca3de4e5291
+  - 59fa8742285e
   - 98d5499ead46
   - e15e4acae7ef
   - e1a2389af238
@@ -4787,6 +4803,7 @@ tools:
 - name: bcftools_stats
   owner: iuc
   revisions:
+  - '388983871932'
   - 4d3ce9dc1525
   - 80844da35ed5
   - b17394940c7a
@@ -4796,6 +4813,7 @@ tools:
 - name: bcftools_roh
   owner: iuc
   revisions:
+  - 1ccf0e7fb4f6
   - 427e353bf26f
   - 6a636d58dfc2
   - 78cd8b69da4c
@@ -4806,6 +4824,7 @@ tools:
 - name: bcftools_reheader
   owner: iuc
   revisions:
+  - 4db0695a6fc7
   - 6993b945aefc
   - 79489d5685dd
   - 9ef52d95114b
@@ -4821,6 +4840,7 @@ tools:
   - 5fce85148ed1
   - 94c5f302f0ea
   - c9c5718edc19
+  - e53501abf992
   - f64e7ca2efd2
   tool_panel_section_label: Variant Calling
 - name: bcftools_isec
@@ -4833,10 +4853,12 @@ tools:
   - 81e4014fa809
   - 97d19c008d15
   - 9ece72700ca9
+  - d7d1663559e9
   tool_panel_section_label: Variant Calling
 - name: bcftools_gtcheck
   owner: iuc
   revisions:
+  - 26d97cdd5410
   - 39810174657a
   - 5a321fab1fe4
   - 64778f8899cc
@@ -4847,6 +4869,7 @@ tools:
 - name: bcftools_filter
   owner: iuc
   revisions:
+  - 277719af4dd7
   - 33bd9301568c
   - 6ca7c55a27e8
   - a892912c09d5
@@ -4858,6 +4881,7 @@ tools:
   owner: iuc
   revisions:
   - 41873b29860a
+  - 55c0e906c14c
   - 7887b9d94c05
   - c14b33ab15d8
   - de68c11034f6
@@ -4869,6 +4893,7 @@ tools:
   revisions:
   - 1137ce8efc1e
   - 34585fd4bd3e
+  - 348cd212dbad
   - 7cea7c7bf203
   - 9b29129fb491
   - b8e9da766b0f
@@ -4882,6 +4907,7 @@ tools:
   - 403553ae19f6
   - 8a2e296c07ef
   - 8a885a1a92ea
+  - b7ea370b8f5d
   - e075b1be5abb
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_color_chrs
@@ -4897,11 +4923,13 @@ tools:
   - 87aa2e0a126e
   - c39113e2ae34
   - ebcd8649c621
+  - f88f74d5b1e9
   tool_panel_section_label: Variant Calling
 - name: bcftools_cnv
   owner: iuc
   revisions:
   - 01d6b7d6365e
+  - 0238f68ad641
   - 13fe14c56f6d
   - 3a7084316a6e
   - 4891338c6c54
@@ -4918,10 +4946,12 @@ tools:
   revisions:
   - 3b6cd8086498
   - 70276425d001
+  - 91c5e4de195a
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_setgt
   owner: iuc
   revisions:
+  - 11af7fce71cf
   - 2c4941386820
   - 40daf124be88
   tool_panel_section_label: Variant Calling
