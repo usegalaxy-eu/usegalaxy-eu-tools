@@ -1,6 +1,11 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: cp_cellprofiler4
+  owner: bgruening
+  revisions:
+  - b333df978624
+  tool_panel_section_label: Imaging
 - name: overlay_images
   owner: imgteam
   revisions:
@@ -45,6 +50,11 @@ tools:
   - a20c14eb5f98
   - be2d3ce89c0f
   - c90b91f4a07b
+  tool_panel_section_label: Imaging
+- name: segmetrics
+  owner: imgteam
+  revisions:
+  - c496306c1cba
   tool_panel_section_label: Imaging
 - name: landmark_registration
   owner: imgteam
@@ -267,6 +277,7 @@ tools:
   owner: imgteam
   revisions:
   - b07f4839ca77
+  - f3360fbeda64
   tool_panel_section_label: Imaging
 - name: image_info
   owner: imgteam

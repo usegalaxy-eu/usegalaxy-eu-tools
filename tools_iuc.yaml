@@ -5,6 +5,10 @@ install_tool_dependencies: false
 
 tools:
 
+  - name: kraken_biom
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: srst2
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -192,6 +196,14 @@ tools:
   - name: scoary
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+
+  - name: bakta
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: isescan
+    owner: iuc
+    tool_panel_section_label: Annotation
 
   - name: te_finder
     owner: iuc
@@ -642,6 +654,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: cat_add_names
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: vapor
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -2431,6 +2447,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: bcftools_plugin_setgt
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: vcftools_merge
     owner: devteam
     tool_panel_section_label: Variant Calling
@@ -4199,3 +4219,15 @@ tools:
   - name: cooc_tabmut
     owner: iuc
     tool_panel_section_label: Virology
+
+  - name: ribowaltz_process
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: ribowaltz_plot
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: miniprot
+    owner: iuc
+    tool_panel_section_label: Annotation
