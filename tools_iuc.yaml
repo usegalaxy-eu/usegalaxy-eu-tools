@@ -197,6 +197,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: polypolish
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kleborate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: bakta
     owner: iuc
     tool_panel_section_label: Annotation
@@ -242,6 +250,22 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: legsta
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: miniprot
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: miniprot_index
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: red
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: integron_finder
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -1349,6 +1373,14 @@ tools:
     owner: galaxy-australia
     tool_panel_section_label: Assembly
 
+  - name: hapog
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: getorganelle
+    owner: iuc
+    tool_panel_section_label: Assembly
+    
   - name: jellyfish
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -4231,7 +4263,3 @@ tools:
   - name: ribowaltz_plot
     owner: iuc
     tool_panel_section_label: RNA Analysis
-
-  - name: miniprot
-    owner: iuc
-    tool_panel_section_label: Annotation
