@@ -16,7 +16,14 @@ with open('{}.lock'.format(fn)) as f:
 
 new_tools = [n for n in yml if n not in yml_lock]
 
-for tool in new_tools:  # check all new tools are in the tool shed
+for tool in new_tools[1:]:  # check all new tools are in the tool shed
+    print(tool)
     sys.stdout.write('Checking new tool {} is in the toolshed...\n'.format(tool))
-    search_hits = [hit['repository']['name'] for hit in ts.repositories.search_repositories(tool,page_size=600)['hits']]
+    total_hits = ts.repositories.search_repositories(tool)["total_results"]
+    print(total_hits)
+    search_hits = [hit['repository']['name'] for hit in ts.repositories.search_repositories(tool,page_size=380)['hits']]
+    print(search_hits)
+    #search_hits = iter(ts.repositories.search_repositories(tool)['hits'])
+    #for hit in search_hits:
+    #    print(hit)
     assert tool in search_hits, '{} not in toolshed.'.format(tool)
