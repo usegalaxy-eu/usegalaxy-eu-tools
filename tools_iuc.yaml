@@ -1990,6 +1990,9 @@ tools:
   - name: data_manager_vep_cache_downloader 
     owner: iuc
 
+  - name: data_manager_semibin
+    owner: iuc
+
   - name: vcf2pgsnp
     owner: devteam
     tool_panel_section_label: Phenotype Association
@@ -2265,6 +2268,30 @@ tools:
   - name: emboss_5
     owner: devteam
     tool_panel_section_label: EMBOSS
+
+  - name: semibin_generate_cannot_links
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_train
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_generate_sequence_features
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_bin
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_concatenate_fasta
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: kraken2
     owner: iuc
