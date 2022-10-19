@@ -197,6 +197,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: polypolish
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kleborate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: plasmidfinder
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: bakta
     owner: iuc
     tool_panel_section_label: Annotation
@@ -242,6 +254,22 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: legsta
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: miniprot
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: miniprot_index
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: red
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: integron_finder
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -1349,6 +1377,14 @@ tools:
     owner: galaxy-australia
     tool_panel_section_label: Assembly
 
+  - name: hapog
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: getorganelle
+    owner: iuc
+    tool_panel_section_label: Assembly
+    
   - name: jellyfish
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -1958,6 +1994,9 @@ tools:
   - name: data_manager_vep_cache_downloader 
     owner: iuc
 
+  - name: data_manager_semibin
+    owner: iuc
+
   - name: vcf2pgsnp
     owner: devteam
     tool_panel_section_label: Phenotype Association
@@ -2233,6 +2272,30 @@ tools:
   - name: emboss_5
     owner: devteam
     tool_panel_section_label: EMBOSS
+
+  - name: semibin_generate_cannot_links
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_train
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_generate_sequence_features
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_bin
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: semibin_concatenate_fasta
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: kraken2
     owner: iuc
@@ -3841,6 +3904,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: map_param_value
+    owner: iuc
+    tool_panel_section_label: Expression Tools
+
   - name: compose_text_param
     owner: iuc
     tool_panel_section_label: Expression Tools
@@ -4231,7 +4298,3 @@ tools:
   - name: ribowaltz_plot
     owner: iuc
     tool_panel_section_label: RNA Analysis
-
-  - name: miniprot
-    owner: iuc
-    tool_panel_section_label: Annotation

@@ -295,6 +295,21 @@ tools:
   revisions:
   - 42a1a5750539
   tool_panel_section_label: Metagenomic Analysis
+- name: polypolish
+  owner: iuc
+  revisions:
+  - aaa868913641
+  tool_panel_section_label: Metagenomic Analysis
+- name: kleborate
+  owner: iuc
+  revisions:
+  - '383036561810'
+  tool_panel_section_label: Metagenomic Analysis
+- name: plasmidfinder
+  owner: iuc
+  revisions:
+  - e23b96d79dc0
+  tool_panel_section_label: Annotation
 - name: bakta
   owner: iuc
   revisions:
@@ -368,6 +383,26 @@ tools:
   revisions:
   - 579f1cabfe79
   - b469f6d53d06
+  tool_panel_section_label: Annotation
+- name: miniprot
+  owner: iuc
+  revisions:
+  - ce04c239454b
+  tool_panel_section_label: Annotation
+- name: miniprot_index
+  owner: iuc
+  revisions:
+  - d6a874226260
+  tool_panel_section_label: Annotation
+- name: red
+  owner: iuc
+  revisions:
+  - 18a46265455b
+  tool_panel_section_label: Annotation
+- name: integron_finder
+  owner: iuc
+  revisions:
+  - 1ae00120dd24
   tool_panel_section_label: Annotation
 - name: ena_upload
   owner: iuc
@@ -837,6 +872,7 @@ tools:
   owner: iuc
   revisions:
   - 2973994fecd6
+  - e8510e04a86a
   tool_panel_section_label: Variant Calling
 - name: vcfanno
   owner: iuc
@@ -966,6 +1002,7 @@ tools:
   - 1c4402b9244d
   - 22f6a0e7424f
   - 5901bb391198
+  - 682d1e2c8be4
   - 84dcccebad3d
   - a95960a63220
   - b2aae698b9d3
@@ -985,6 +1022,7 @@ tools:
   - 551f8c9bc4cf
   - 6a87478ed985
   - 72b5e9dda577
+  - 79e9a869f40e
   - a1b70f038b4a
   - a7228a7ea146
   - b35de691c42c
@@ -1007,6 +1045,7 @@ tools:
   - cc36773a3681
   - d50c1d5b72ce
   - e86fcef8ed91
+  - ec699520444c
   - edf6d4003fad
   tool_panel_section_label: Nanopore
 - name: medaka_variant_pipeline
@@ -1377,6 +1416,11 @@ tools:
   - 67af24676bd6
   - 75427ceb32d1
   - b36afbb04e1c
+  tool_panel_section_label: RNA Analysis
+- name: cemitool
+  owner: iuc
+  revisions:
+  - 3f9ff31c88bb
   tool_panel_section_label: RNA Analysis
 - name: volcanoplot
   owner: iuc
@@ -1960,6 +2004,7 @@ tools:
   owner: lparsons
   revisions:
   - 02c5a84971c8
+  - 135b80fb1ac2
   - 288f97432497
   - 44e2cc14f75b
   - 48f587c13075
@@ -2533,6 +2578,16 @@ tools:
   owner: galaxy-australia
   revisions:
   - 24e471d13fe9
+  tool_panel_section_label: Assembly
+- name: hapog
+  owner: iuc
+  revisions:
+  - c61bc8bb5f1e
+  tool_panel_section_label: Assembly
+- name: getorganelle
+  owner: iuc
+  revisions:
+  - 8b330a577046
   tool_panel_section_label: Assembly
 - name: jellyfish
   owner: iuc
@@ -3856,6 +3911,10 @@ tools:
   owner: iuc
   revisions:
   - 1439dface5bf
+- name: data_manager_semibin
+  owner: iuc
+  revisions:
+  - 676915c44e1e
 - name: vcf2pgsnp
   owner: devteam
   revisions:
@@ -4382,6 +4441,36 @@ tools:
   - dba489bfcd62
   - dc492eb6a4fc
   tool_panel_section_label: EMBOSS
+- name: semibin_generate_cannot_links
+  owner: iuc
+  revisions:
+  - 078414a1226b
+  tool_panel_section_label: Metagenomic Analysis
+- name: semibin
+  owner: iuc
+  revisions:
+  - 7b382efabb98
+  tool_panel_section_label: Metagenomic Analysis
+- name: semibin_train
+  owner: iuc
+  revisions:
+  - 08cc1cd58f38
+  tool_panel_section_label: Metagenomic Analysis
+- name: semibin_generate_sequence_features
+  owner: iuc
+  revisions:
+  - 07bf5268724f
+  tool_panel_section_label: Metagenomic Analysis
+- name: semibin_bin
+  owner: iuc
+  revisions:
+  - 474701f91bcd
+  tool_panel_section_label: Metagenomic Analysis
+- name: semibin_concatenate_fasta
+  owner: iuc
+  revisions:
+  - dcc81bfe5f6a
+  tool_panel_section_label: Metagenomic Analysis
 - name: kraken2
   owner: iuc
   revisions:
@@ -4408,6 +4497,7 @@ tools:
   owner: iuc
   revisions:
   - a04e64efa43a
+  - b3c3217c0cbc
   - d110a4141898
   tool_panel_section_label: Assembly
 - name: ncbi_blast_plus
@@ -7957,6 +8047,7 @@ tools:
   - b6abccb1f25b
   - b7e297c2ede6
   - ca0d8cf80567
+  - ca337cce3888
   - debfccc4d65b
   - fe3e8506112c
   tool_panel_section_label: Phylogenetics
@@ -8649,6 +8740,11 @@ tools:
   revisions:
   - c24014d80001
   tool_panel_section_label: Convert Formats
+- name: map_param_value
+  owner: iuc
+  revisions:
+  - 43d7b3642a30
+  tool_panel_section_label: Expression Tools
 - name: compose_text_param
   owner: iuc
   revisions:
@@ -8800,6 +8896,7 @@ tools:
   - 4626a83601d4
   - 639d2031d998
   - 76733d05d8ef
+  - 8815bc7e9cef
   - 9c53c7da9cbe
   tool_panel_section_label: Imaging
 - name: idr_download_by_ids
@@ -9384,8 +9481,3 @@ tools:
   revisions:
   - 8e903cb3f919
   tool_panel_section_label: RNA Analysis
-- name: miniprot
-  owner: iuc
-  revisions:
-  - ce04c239454b
-  tool_panel_section_label: Annotation
