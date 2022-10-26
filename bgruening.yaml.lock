@@ -5,7 +5,9 @@ tools:
 - name: mafft
   owner: rnateam
   revisions:
+  - a65296ffb4a0
   - bcfce5aac49c
+  - f0d493f8f84f
   - f1a5908ea2cb
   tool_panel_section_label: Multiple Alignments
 - name: plotly_ml_performance_plots
@@ -45,6 +47,11 @@ tools:
   - e88f1111d9e7
   - eb09d7e6d727
   tool_panel_section_label: Convert Formats
+- name: glimmer_glimmer_to_gff
+  owner: bgruening
+  revisions:
+  - 891b330ffd94
+  tool_panel_section_label: Convert Formats
 - name: graphicsmagick_image_montage
   owner: bgruening
   revisions:
@@ -63,10 +70,12 @@ tools:
   - 295c383c3282
   - 2df8f5c30edc
   - 372582a7a34d
+  - 4ed102b922cb
   - 73d2ef652879
   - 7d7379dfef8b
   - 9295c5f34630
   - a5665e1b06b0
+  - b7c3e9a3b954
   - d2afc87db26b
   - da0a22cdcce7
   - e1b37bdc5fbd
@@ -76,10 +85,12 @@ tools:
 - name: sklearn_train_test_eval
   owner: bgruening
   revisions:
+  - 10e2498ef07b
   - 1b68acd5ac08
   - 20bb2a45f922
   - 2b8406e74f9e
   - 443471b0a27a
+  - 4d1637cac794
   - 68aaa903052a
   - a9e0b963b7bb
   - bde62c243b7e
@@ -92,8 +103,10 @@ tools:
 - name: model_prediction
   owner: bgruening
   revisions:
+  - 1552b8cb4a94
   - 1e088aa741eb
   - 22f9cbcf1582
+  - 29e4122c90de
   - 60c726f5cc5e
   - 65820fb7257b
   - 6efb9bc6bf32
@@ -109,12 +122,14 @@ tools:
   owner: bgruening
   revisions:
   - 000a3868885b
+  - 03533fa14e77
   - 0a7f2b9e1fcb
   - 0dc3027df8f4
   - 3814a92c1416
   - 4a5266c96889
   - 508ce0649bec
   - 62b85c8ad8fa
+  - 68eb154fa0c6
   - 77c04469e8b8
   - 7f6079deac6f
   - 9afec58b2bf9
@@ -130,7 +145,9 @@ tools:
   - 5b35833076f0
   - 5f39cff2a372
   - 65571555c486
+  - 772e0e89fc68
   - 818896cd2213
+  - 8611b3f52a38
   - 9b6faa256f15
   - c51571d0a0b1
   - e3b420d0b71a
@@ -147,9 +164,11 @@ tools:
   - 2b8d85927742
   - 2d8478144bb2
   - 64bbfa592868
+  - 8a794e6d3388
   - 94d91334c787
   - bedbda03c573
   - c3813c64d678
+  - de19ef9ff031
   - e474e701d58b
   tool_panel_section_label: Machine Learning
 - name: sklearn_sample_generator
@@ -170,6 +189,8 @@ tools:
   - b4ba9602a36e
   - db7eb7302fc9
   - df579b31311d
+  - e6f4d3d9058c
+  - eb41d87cb1de
   - ebf295f2faf6
   tool_panel_section_label: Machine Learning
 - name: sklearn_estimator_attributes
@@ -177,6 +198,7 @@ tools:
   revisions:
   - 07843f917990
   - 2ad4c2798be7
+  - 375bbd555f4a
   - 5ae00d2908f2
   - 74de84506e74
   - 7a64b9f39a46
@@ -188,6 +210,7 @@ tools:
   - bd27a211182a
   - c411ff569a26
   - c9ddd20d25d0
+  - d0352e8b4c10
   - f4a7c3aa1e10
   tool_panel_section_label: Machine Learning
 - name: sklearn_stacking_ensemble_models
@@ -198,11 +221,13 @@ tools:
   - 253b3aaf0d91
   - 2b679bb676be
   - 3dc6734056e6
+  - 59f53bbe6ba9
   - 6717e5cc4d05
   - a2e4a45c6083
   - ae4b593c99f8
   - b78007bf1cb8
   - b8378d4791b7
+  - b94babda32e4
   - d25127d5f4e0
   - fb424213e9dd
   - fcc5eaaec401
@@ -215,6 +240,7 @@ tools:
   - 1c4a241bef5c
   - 21d3e08b1a48
   - 25ab6b4e376e
+  - 301e07345c93
   - 3d5b2491c62b
   - 4368259ff821
   - 4af699d766e4
@@ -224,6 +250,7 @@ tools:
   - 907bb0418c9f
   - a36a45cb96fa
   - c1ca24a1509d
+  - c6ae57f774c6
   - e5a5ad882f1f
   - f0d2e8a3c575
   tool_panel_section_label: Machine Learning
@@ -245,6 +272,8 @@ tools:
   - 99038af8deda
   - 9c3e1d3235c8
   - 9ddacd0b8c8b
+  - aef56d0e7a61
+  - b1eda492f063
   - c33145a815ee
   tool_panel_section_label: Machine Learning
 - name: sklearn_pairwise_metrics
@@ -261,9 +290,11 @@ tools:
   - 86020dbc8ef7
   - 96452e7461f4
   - a61375e306c1
+  - b07416ec8d16
   - bc17040617c0
   - bd9481c0af38
   - cd4328a02798
+  - d2da602b05cb
   - e84c0db80565
   - f24deab884d0
   tool_panel_section_label: Machine Learning
@@ -271,9 +302,11 @@ tools:
   owner: bgruening
   revisions:
   - 23fb598a09d7
+  - 2c58b83c9bad
   - 309cc7c6af56
   - 34d31bd995e9
   - 39ae3c043096
+  - 4cc980df6265
   - 55c7d3e58eae
   - 699024d5c451
   - 823ecc0bce45
@@ -294,9 +327,11 @@ tools:
   - 27903ce9b4be
   - 2d7c60aa6c62
   - 37e193b3fdd7
+  - 4bbaf77573ef
   - 6edcaa8dbb9f
   - 73e7f1c76ece
   - 772db6f8bc24
+  - 7dd3fb35904f
   - 83938131dd46
   - 9d234733ccfd
   - 9ff214ce6ec2
@@ -317,7 +352,9 @@ tools:
   - 407495139a09
   - 47d4baa183b2
   - 4ecc0ce9d0a2
+  - 53616c8b0865
   - 841a6cc5fc58
+  - a07ab242b0b5
   - a98fdfcd9f5f
   - ab4249158912
   - af0523c606a7
@@ -336,6 +373,7 @@ tools:
   - 2bbbac61e48d
   - 4170e2bda73d
   - 41b109e70a7f
+  - 4483b84310ec
   - 5773e98921fc
   - 58322d3c7bd3
   - 6d21b03e00a1
@@ -343,6 +381,7 @@ tools:
   - a7c667ff83fe
   - ae0fafb53c1d
   - c2cd3219543a
+  - e918f33f7d4f
   - ec25331946b8
   - fe47a06943fb
   tool_panel_section_label: Machine Learning
@@ -351,11 +390,13 @@ tools:
   revisions:
   - 1b5cd2d16fb1
   - 1bef885255e0
+  - 484a98c44f00
   - 4952fe39b61d
   - 4fc54bac4254
   - 50b3e080cef0
   - 66df2aa6cd6b
   - 685046e0381a
+  - 80074b842ebd
   - 826c3e68e7a9
   - 9ac0b78c6b6d
   - 9e43ee712723
@@ -369,6 +410,7 @@ tools:
 - name: sklearn_clf_metrics
   owner: bgruening
   revisions:
+  - 0ee984c1cbd6
   - 3cd0dbc038ec
   - 40e31fb88836
   - 44f0ce9488fb
@@ -378,6 +420,7 @@ tools:
   - 68afcd163b3d
   - 9728636c1e41
   - 9bf11bbeccc3
+  - a7067bbf1e58
   - adc6137e7c73
   - ae69f6918abe
   - c8547d3993c0
@@ -397,10 +440,12 @@ tools:
   - 3703b5796442
   - 3badea963c3b
   - 40ee30b5e456
+  - 5c9fb40ae174
   - 6000c1589f33
   - 649017be1c60
   - 64c87ceb6766
   - 70c5a9127f99
+  - 7acb9b46c066
   - 7d98dfb04d27
   - 9c8ede554b7c
   - a152c1d23379
@@ -416,10 +461,12 @@ tools:
   - 2d032cff49eb
   - 3e2921875c58
   - 420a4bf99244
+  - 4335cec181ba
   - 5552eda109bd
   - 64b771b1471a
   - 75bcb7c19fcf
   - 7696d389675c
+  - 78a60f884ac9
   - 8e49f26b14d3
   - 95d0f81e46e8
   - 9bb505eafac9
@@ -429,6 +476,7 @@ tools:
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
+  - 2fc89dcd41c8
   - 3e4a7684d402
   - 40f4447733b2
   - 616a241c5b37
@@ -443,6 +491,7 @@ tools:
   - b628de0d101f
   - bf32512b1418
   - c9969328b42f
+  - dc4b5fd604a6
   - e3bc646e63b2
   - f12dc92b6699
   tool_panel_section_label: Machine Learning
@@ -454,6 +503,7 @@ tools:
   - 4b359039f09f
   - 56f6ebf69ddc
   - 5895fe0b8bde
+  - 5d5d9cc554f9
   - 60b8a683ba99
   - 65f18ab91132
   - 805194c3cdfb
@@ -461,6 +511,7 @@ tools:
   - 887e0aaa482e
   - 95b04e086576
   - a5aed87b2cc0
+  - be4f389a95d9
   - bfc7bdfcb423
   - cf9aa11b91c8
   - de360b57a5ab
@@ -470,9 +521,11 @@ tools:
   owner: bgruening
   revisions:
   - 044729657181
+  - 2e69c6de354e
   - 4a1cd790e323
   - 61fb99c55558
   - c2a7717d96ce
+  - c2e2aa55dd5c
   - c374098d4f5c
   - cf54bae8ad42
   - da9f0b8ca61c
@@ -486,10 +539,12 @@ tools:
   - 1c25f305db70
   - 49525d37843a
   - 5dc03d8e137e
+  - 5dd3f77a2257
   - 734c66aa945a
   - 8861ece0b66f
   - fb17e19b62a4
   - fc2e64a27e90
+  - fc70bf5c3b58
   - fe4e36598917
   tool_panel_section_label: Machine Learning
 - name: sklearn_train_test_split
@@ -500,7 +555,9 @@ tools:
   - 13b9ac5d277c
   - 145208b3579d
   - 3312fb686ffb
+  - 376dd641af44
   - 5a092779412e
+  - 6e25381dad5c
   - 910ebff96ddc
   - ce2fd1edbc6e
   - e8639f65c883
@@ -508,8 +565,10 @@ tools:
 - name: sklearn_lightgbm
   owner: bgruening
   revisions:
+  - 27f8bd20a936
   - 74f96ebc5554
   - 9b70bf3306e5
+  - a459c68692ca
   - aff86cee673c
   - c12485d058aa
   - c48ffc96fe79
@@ -519,6 +578,8 @@ tools:
   revisions:
   - 24c1cc2dd4a4
   - 2d7016b3ae92
+  - 3af626081467
+  - 435592ba3087
   - caf164dd0e18
   - e36ab18cbaca
   tool_panel_section_label: Machine Learning
@@ -532,7 +593,9 @@ tools:
   - 4a229a7ad638
   - 6b94d76a1397
   - 72c0d2747dc9
+  - 947c2eacccb8
   - c7655b5a94af
+  - c80db5d6fd8c
   - dd13740e8fdc
   - e88c782a127d
   - f96efab83b65
@@ -544,7 +607,9 @@ tools:
   - 470aed90aa41
   - 785dd890e27d
   - 8ddb3557710d
+  - b6ef6d0cb6b7
   - ccd6269fad60
+  - e1317b5502fa
   - ead8f1822587
   - f1b9a42d6809
   tool_panel_section_label: Machine Learning
@@ -557,6 +622,7 @@ tools:
   - 27c0b1a050df
   - 2a32d1d9c8da
   - 318484f56b6a
+  - 4efac966af2a
   - 648b81bca7c5
   - 92e09b827300
   - a2da4cebc584
@@ -566,6 +632,7 @@ tools:
   - e6893a4bcb7b
   - eb3091b4ee4b
   - ecd247e1ea9c
+  - f49aad8f79ea
   tool_panel_section_label: Statistics
 - name: nanopolish_variants
   owner: bgruening
@@ -608,11 +675,14 @@ tools:
 - name: racon
   owner: bgruening
   revisions:
+  - 39bed8de8017
   - 51fd3136069d
   - 7c847ec300b8
   - a199cd7ac344
   - aa39b19ca11e
   - cd06929b224b
+  - d865b62f501c
+  - e100a765370e
   tool_panel_section_label: Assembly
 - name: flye
   owner: bgruening
@@ -649,10 +719,12 @@ tools:
   owner: bgruening
   revisions:
   - 12764915e1c5
+  - 4f7e6612906b
   - 5b3c08710e47
   - 76251d1ccdcc
   - 9bf25dbe00ad
   - afec8c595124
+  - e94dc7945639
   tool_panel_section_label: Statistics
 - name: replace_column_by_key_value_file
   owner: bgruening
@@ -674,8 +746,10 @@ tools:
 - name: sklearn_to_categorical
   owner: bgruening
   revisions:
+  - 14180f9c831e
   - 59e8b4328c82
   - 612ca26c197d
+  - ec69cbe34b73
   - f93f0cdbaf18
   tool_panel_section_label: Machine Learning
 - name: fastq_info
@@ -688,22 +762,105 @@ tools:
   revisions:
   - cd7e644cae1d
   tool_panel_section_label: FASTA/FASTQ
+- name: gfastats
+  owner: bgruening
+  revisions:
+  - 2b8b4cacb83d
+  - 3fba9c77550a
+  - 5127a713de83
+  - 5799092ffdff
+  - 8ccbf07a5433
+  - ad1149b4f795
+  tool_panel_section_label: FASTA/FASTQ
+- name: music_compare
+  owner: bgruening
+  revisions:
+  - 10bf0f89035f
+  - 4447ed460308
+  tool_panel_section_label: Single-cell
+- name: music_manipulate_eset
+  owner: bgruening
+  revisions:
+  - 22232092be53
+  tool_panel_section_label: Single-cell
 - name: music_inspect_eset
   owner: bgruening
   revisions:
   - 2fed32b5aa02
   - 577435e5e6b2
+  - 7705cc75ac18
   - 817eb707bbf4
+  - 8c64a2da3869
+  tool_panel_section_label: Single-cell
+- name: music_deconvolution
+  owner: bgruening
+  revisions:
+  - 2ba99a52bd44
+  - 56371b5a2da9
   tool_panel_section_label: Single-cell
 - name: music_construct_eset
   owner: bgruening
   revisions:
+  - 282819d09a4f
   - 2cfd0db49bbc
   - 7902cd31b9b5
+  - 7ffaa0968da3
   - be91cb6f48e7
   tool_panel_section_label: Single-cell
 - name: pharmcat
   owner: bgruening
   revisions:
+  - 891283e0ee89
   - d67642a21a1d
   tool_panel_section_label: Variant Calling
+- name: itsx
+  owner: bgruening
+  revisions:
+  - 2cbd0d66aa08
+  tool_panel_section_label: Metagenomic Analysis
+- name: edta
+  owner: bgruening
+  revisions:
+  - f1a157358d4d
+  tool_panel_section_label: Annotation
+- name: antismash
+  owner: bgruening
+  revisions:
+  - bc88856eddab
+  - e78e25d3b4bd
+  tool_panel_section_label: Annotation
+- name: 10x_bamtofastq
+  owner: bgruening
+  revisions:
+  - f71fd828c126
+  tool_panel_section_label: Single-cell
+- name: netboxr
+  owner: bgruening
+  revisions:
+  - 785ed8621503
+  tool_panel_section_label: Annotation
+- name: combine_metaphlan2_humann2
+  owner: bebatut
+  revisions:
+  - fdfb35745104
+  tool_panel_section_label: Metagenomic Analysis
+- name: compare_humann2_output
+  owner: bebatut
+  revisions:
+  - eaa95ea1195c
+  tool_panel_section_label: Metagenomic Analysis
+- name: format_cd_hit_output
+  owner: bebatut
+  revisions:
+  - 64da677bcee2
+  tool_panel_section_label: Metagenomic Analysis
+- name: format_metaphlan2_output
+  owner: bebatut
+  revisions:
+  - 370b56f8a02d
+  tool_panel_section_label: Metagenomic Analysis
+- name: minipolish
+  owner: bgruening
+  revisions:
+  - 1f9f2edc8cf4
+  tool_panel_section_label: Assembly

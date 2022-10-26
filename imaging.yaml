@@ -2,31 +2,44 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 
-tools:    
+tools:
+
+  - name: cp_cellprofiler4
+    owner: bgruening
+    tool_panel_section_label: "Imaging"
+
+  - name: overlay_images
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
   - name: color_deconvolution
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: 2d_histogram_equalization
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: 2d_simple_filter
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: anisotropic_diffusion
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: 2d_auto_threshold
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: 2d_local_threshold
     owner: imgteam
     tool_panel_section_label: "Imaging"
-                
+    
+  - name: segmetrics
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
   - name: landmark_registration
     owner: imgteam
     tool_panel_section_label: "Imaging"
