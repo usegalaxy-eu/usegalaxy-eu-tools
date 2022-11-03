@@ -286,6 +286,7 @@ tools:
 - name: gmx_setup
   owner: chemteam
   revisions:
+  - 070e3ecc3fda
   - 1a5991ec7ce1
   - 1d4dd4f908d4
   - 2c349b027a01
@@ -324,6 +325,7 @@ tools:
   - 9660b2c5fdda
   - a71723f870f7
   - aeec3c2719da
+  - b46d4b4d995c
   - c1e98d48b8b4
   - d532b7e5f64b
   - dc98e5c8165a
@@ -353,6 +355,7 @@ tools:
   - ae87e7b2454c
   - b37a1d7bf6c2
   - bd858380ad7a
+  - c4fbab8e03c5
   - cdacad684da1
   - dc2400b6361d
   - e205c82e9959
@@ -382,6 +385,7 @@ tools:
   - 930a403f7389
   - 9389cd867cf2
   - 9987b0933704
+  - bc31d02be922
   - ced8ec975548
   - d1d0efda35c0
   - f24cd390b743
@@ -404,6 +408,7 @@ tools:
   - a97dcfc23b4b
   - b1061cc2653a
   - b7cebf442209
+  - c0c9a5024177
   - cdaed42b4223
   - d1f803b5943c
   - da8753545526
@@ -424,6 +429,7 @@ tools:
   - 0f2ced72d16f
   - 16fad30d566a
   - 240834a8b602
+  - 32052c6c3310
   - 4a303225d447
   - 6ac5f450ad31
   - 6dcfdac2dcae
@@ -451,6 +457,7 @@ tools:
   - b4a47b4ed264
   - c8d2c0162b6e
   - d2f955aea23a
+  - f26afd1b7104
   - fdf2cc80adb5
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_restraints
@@ -461,6 +468,7 @@ tools:
   - 42e4eda6eb5d
   - 455470c9d8e6
   - 4f371a6a30d4
+  - 509aa136d4e3
   - 54eadeb47ab9
   - 642ce5c16ae8
   - 9dde06738154
@@ -484,6 +492,7 @@ tools:
   - c102b3f42778
   - c119d1b9941b
   - d9eb276dfa32
+  - e3e536aa2633
   tool_panel_section_label: ChemicalToolBox
 - name: gmx_editconf
   owner: chemteam
@@ -495,6 +504,7 @@ tools:
   - 3b8a9d5ced85
   - 79cfd9ead848
   - 861b2487aaea
+  - 88076940fa94
   - 8be9cb12a4fa
   - b9e25ec471eb
   - bfb65cb551d8
@@ -505,6 +515,7 @@ tools:
   owner: chemteam
   revisions:
   - 26467f738ed4
+  - 9ad99037117b
   tool_panel_section_label: ChemicalToolBox
 - name: alchemical_analysis
   owner: chemteam
@@ -1077,6 +1088,7 @@ tools:
   revisions:
   - 018628703771
   - 28c34e9949ac
+  - 2b19cec3cca9
   - a5afe283962d
   - b01f3db44534
   - f360f62ac4c4
@@ -1100,8 +1112,19 @@ tools:
 - name: gmx_get_builtin_file
   owner: chemteam
   revisions:
+  - 124c21408519
   - 1f98845f4df4
   - 377fe4ce732d
   - 42dfec375136
   - a81256d23782
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_rmsd
+  owner: chemteam
+  revisions:
+  - e8e3636338c8
+  tool_panel_section_label: ChemicalToolBox
+- name: gmx_rmsf
+  owner: chemteam
+  revisions:
+  - f261fded9631
   tool_panel_section_label: ChemicalToolBox

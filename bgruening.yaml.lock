@@ -682,6 +682,7 @@ tools:
   - aa39b19ca11e
   - cd06929b224b
   - d865b62f501c
+  - e100a765370e
   tool_panel_section_label: Assembly
 - name: flye
   owner: bgruening
@@ -690,6 +691,7 @@ tools:
   - 276f5d8712d5
   - 3ee0ef312022
   - 8d4f03b5fe9d
+  - cb8dfd28c16f
   - cd256484eb1a
   - de24438c9988
   - e27815e82dd4
@@ -723,6 +725,7 @@ tools:
   - 76251d1ccdcc
   - 9bf25dbe00ad
   - afec8c595124
+  - e94dc7945639
   tool_panel_section_label: Statistics
 - name: replace_column_by_key_value_file
   owner: bgruening
@@ -816,6 +819,11 @@ tools:
   revisions:
   - 2cbd0d66aa08
   tool_panel_section_label: Metagenomic Analysis
+- name: edta
+  owner: bgruening
+  revisions:
+  - f1a157358d4d
+  tool_panel_section_label: Annotation
 - name: antismash
   owner: bgruening
   revisions:
@@ -832,3 +840,28 @@ tools:
   revisions:
   - 785ed8621503
   tool_panel_section_label: Annotation
+- name: combine_metaphlan2_humann2
+  owner: bebatut
+  revisions:
+  - fdfb35745104
+  tool_panel_section_label: Metagenomic Analysis
+- name: compare_humann2_output
+  owner: bebatut
+  revisions:
+  - eaa95ea1195c
+  tool_panel_section_label: Metagenomic Analysis
+- name: format_cd_hit_output
+  owner: bebatut
+  revisions:
+  - 64da677bcee2
+  tool_panel_section_label: Metagenomic Analysis
+- name: format_metaphlan2_output
+  owner: bebatut
+  revisions:
+  - 370b56f8a02d
+  tool_panel_section_label: Metagenomic Analysis
+- name: minipolish
+  owner: bgruening
+  revisions:
+  - 1f9f2edc8cf4
+  tool_panel_section_label: Assembly
