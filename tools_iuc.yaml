@@ -25,6 +25,10 @@ tools:
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: seqkit_locate
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: checkm_taxonomy_wf
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -773,10 +777,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Graph/Display Data
 
-  - name: nanopolishcomp_eventaligncollapse
-    owner: iuc
-    tool_panel_section_label: Nanopore
-
   - name: nanopolishcomp_freqmethcalculate
     owner: iuc
     tool_panel_section_label: Nanopore
@@ -1050,14 +1050,6 @@ tools:
     tool_panel_section_label: Convert Formats
 
   - name: seqcomplexity
-    owner: iuc
-    tool_panel_section_label: FASTA/FASTQ
-
-  - name: seqkit_stats
-    owner: iuc
-    tool_panel_section_label: FASTA/FASTQ
-
-  - name: seqkit_fx2tab
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
@@ -1454,10 +1446,6 @@ tools:
     tool_panel_section_label: FASTA/FASTQ
 
   - name: fastq_paired_end_interlacer
-    owner: devteam
-    tool_panel_section_label: FASTA/FASTQ
-
-  - name: fastq_paired_end_joiner
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
@@ -1875,6 +1863,7 @@ tools:
   - name: cummerbund_to_tabular
     owner: devteam
     tool_panel_section_label: RNA Analysis
+
   - name: cummerbund
     owner: devteam
     tool_panel_section_label: RNA Analysis
@@ -1882,16 +1871,16 @@ tools:
   - name: cuffmerge
     owner: devteam
     tool_panel_section_label: RNA Analysis
+
   - name: cuffquant
     owner: devteam
     tool_panel_section_label: RNA Analysis
+
   - name: cuffnorm
     owner: devteam
     tool_panel_section_label: RNA Analysis
+
   - name: cuffcompare
-    owner: devteam
-    tool_panel_section_label: RNA Analysis
-  - name: cufflinks
     owner: devteam
     tool_panel_section_label: RNA Analysis
 
@@ -1904,10 +1893,6 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: cufflinks
-    owner: devteam
-    tool_panel_section_label: RNA Analysis
-
-  - name: cuffcompare
     owner: devteam
     tool_panel_section_label: RNA Analysis
 
@@ -2256,10 +2241,6 @@ tools:
   - name: snpeff_sars_cov_2
     owner: iuc
     tool_panel_section_label: Variant Calling
-
-  - name: dgidb_annotator
-    owner: devteam
-    tool_panel_section_label: Annotation
 
   - name: dgidb_annotator
     owner: devteam
@@ -4136,10 +4117,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
-  - name: humann_unpack_pathways
-    owner: iuc
-    tool_panel_section_label: Metagenomic Analysis
-
   - name: data_manager_genomic_super_signature_ravmodels
     owner: iuc
 
@@ -4185,10 +4162,6 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: extract_metaphlan_database
-    owner: iuc
-    tool_panel_section_label: Metagenomic Analysis
-
-  - name: customize_metaphlan_database
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
