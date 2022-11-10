@@ -22,12 +22,19 @@ tools:
 - name: seqkit_fx2tab
   owner: iuc
   revisions:
+  - 4cf00d20acab
   - c1aa9a90b4c4
   tool_panel_section_label: FASTA/FASTQ
 - name: seqkit_stats
   owner: iuc
   revisions:
   - 191738d53912
+  - d85bac8b166a
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_locate
+  owner: iuc
+  revisions:
+  - 642d73815dd1
   tool_panel_section_label: FASTA/FASTQ
 - name: checkm_taxonomy_wf
   owner: iuc
@@ -196,6 +203,7 @@ tools:
 - name: magicblast
   owner: iuc
   revisions:
+  - 34ac212ef95e
   - aea6702a3cd5
   - e6799e98c5fb
   tool_panel_section_label: NCBI Blast
@@ -1400,6 +1408,7 @@ tools:
   - 06ed31cf52ed
   - 321bdd834266
   - 4c139a9415d7
+  - 56242ff81c84
   - 7319f83ae734
   - 764f076e9d52
   - 7a5cd7987b03
@@ -1434,12 +1443,6 @@ tools:
   - 83c573f2e73c
   - d1d39c72b755
   tool_panel_section_label: Graph/Display Data
-- name: nanopolishcomp_eventaligncollapse
-  owner: iuc
-  revisions:
-  - 6847a625db4d
-  - ad011fc670d6
-  tool_panel_section_label: Nanopore
 - name: nanopolishcomp_freqmethcalculate
   owner: iuc
   revisions:
@@ -1993,16 +1996,6 @@ tools:
   revisions:
   - 054c3355458d
   - f14a21f3d5b1
-  tool_panel_section_label: FASTA/FASTQ
-- name: seqkit_stats
-  owner: iuc
-  revisions:
-  - 191738d53912
-  tool_panel_section_label: FASTA/FASTQ
-- name: seqkit_fx2tab
-  owner: iuc
-  revisions:
-  - c1aa9a90b4c4
   tool_panel_section_label: FASTA/FASTQ
 - name: cutadapt
   owner: lparsons
@@ -2716,15 +2709,6 @@ tools:
   - ec6ddf449651
   - ef49268ee579
   tool_panel_section_label: FASTA/FASTQ
-- name: fastq_paired_end_joiner
-  owner: devteam
-  revisions:
-  - 09a2199cd356
-  - 2793d1d765b9
-  - 6a7f5da7c76d
-  - 822cc1e6274e
-  - c885369b207b
-  tool_panel_section_label: FASTA/FASTQ
 - name: fasta_compute_length
   owner: devteam
   revisions:
@@ -3233,6 +3217,7 @@ tools:
   owner: devteam
   revisions:
   - 017aba02828d
+  - 03e9b2fbc005
   - 09b2cdb7ace5
   - 17062a0decb7
   - 749c918495f7
@@ -3253,6 +3238,7 @@ tools:
   - 5ec75f5dae3c
   - 7ed2edc1337f
   - 850f3679b9b4
+  - 980d2a2e1180
   - b9e04854e2bb
   - bc685d13b637
   - c772497b2c32
@@ -3268,6 +3254,7 @@ tools:
   - 3a1253ee137b
   - 58b278def57e
   - 61cb2042581a
+  - 79b885ce78d7
   - a6fba3d92531
   - c23da6257d6a
   - e403d27e8f24
@@ -3651,6 +3638,7 @@ tools:
   - 333a6e13b622
   - 62d212192002
   - 6e45b443ef1f
+  - 914cfcba0ec8
   - cef79931dda5
   - dd4df992d93d
   - eba36e001f45
@@ -3719,13 +3707,6 @@ tools:
   - e66b9b5b8580
   - f648e5180e40
   tool_panel_section_label: RNA Analysis
-- name: cufflinks
-  owner: devteam
-  revisions:
-  - b01956f26c36
-  - d080005cffe1
-  - e04dbae2abe0
-  tool_panel_section_label: RNA Analysis
 - name: filter_transcripts_via_tracking
   owner: devteam
   revisions:
@@ -3743,13 +3724,6 @@ tools:
   - d080005cffe1
   - e04dbae2abe0
   tool_panel_section_label: RNA Analysis
-- name: cuffcompare
-  owner: devteam
-  revisions:
-  - 9a3f7a890da6
-  - e66b9b5b8580
-  - f648e5180e40
-  tool_panel_section_label: RNA Analysis
 - name: masigpro
   owner: iuc
   revisions:
@@ -3763,6 +3737,7 @@ tools:
   revisions:
   - 2dfbcb88d16a
   - 313414e9abcf
+  - 8e96d712a2bd
   - bf4ee2810759
   tool_panel_section_label: RNA Analysis
 - name: genrich
@@ -4409,12 +4384,6 @@ tools:
   revisions:
   - 2a3a00c1fa0a
   tool_panel_section_label: Variant Calling
-- name: dgidb_annotator
-  owner: devteam
-  revisions:
-  - 792f3cb0eff4
-  - c5bb987015c5
-  tool_panel_section_label: Annotation
 - name: dgidb_annotator
   owner: devteam
   revisions:
@@ -6524,6 +6493,7 @@ tools:
   owner: iuc
   revisions:
   - 067592b6b312
+  - 21e491ad532a
   - 58124285e462
   - 94fe43e75ddc
   - b2860df42e16
@@ -8095,6 +8065,7 @@ tools:
   - 14eb2acf30e3
   - 29ff6a849eac
   - 73a469f7dc96
+  - ea30d3089354
   tool_panel_section_label: Phylogenetics
 - name: phyml
   owner: iuc
@@ -9243,12 +9214,6 @@ tools:
   - 4033827c76b8
   - c3d043160f09
   tool_panel_section_label: Metagenomic Analysis
-- name: humann_unpack_pathways
-  owner: iuc
-  revisions:
-  - 4033827c76b8
-  - c3d043160f09
-  tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_genomic_super_signature_ravmodels
   owner: iuc
   revisions:
@@ -9330,15 +9295,6 @@ tools:
   - 97ad0d817a45
   - b6ecdfac241f
   - c11805a111ea
-  tool_panel_section_label: Metagenomic Analysis
-- name: customize_metaphlan_database
-  owner: iuc
-  revisions:
-  - 025b0113ee97
-  - 150ebe4d0fd9
-  - 4212f20315e5
-  - 487da152fb43
-  - a6c3f4f439f7
   tool_panel_section_label: Metagenomic Analysis
 - name: customize_metaphlan_database
   owner: iuc
@@ -9460,6 +9416,7 @@ tools:
   owner: iuc
   revisions:
   - 09b7b0b2e2c2
+  - 824497684a1f
   - fe733f05c2f8
   tool_panel_section_label: Metagenomic Analysis
 - name: b2btools_single_sequence
