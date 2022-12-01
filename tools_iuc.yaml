@@ -861,6 +861,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Get Data
 
+  - name: pysradb_search
+    owner: iuc
+    tool_panel_section_label: Get Data
+
   - name: table_compute
     owner: iuc
     tool_panel_section_label: Text Manipulation
@@ -1374,6 +1378,10 @@ tools:
     tool_panel_section_label: Assembly
 
   - name: getorganelle
+    owner: iuc
+    tool_panel_section_label: Assembly
+    
+  - name: necat
     owner: iuc
     tool_panel_section_label: Assembly
     
@@ -4270,4 +4278,12 @@ tools:
 
   - name: ribowaltz_plot
     owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: virhunter
+    owner: iuc
+    tool_panel_section_label: Machine Learning
+
+  - name: rseqc
+    owner: nilesh
     tool_panel_section_label: RNA Analysis
