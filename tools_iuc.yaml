@@ -2797,7 +2797,7 @@ tools:
   - name: diamond
     owner: bgruening
     tool_panel_section_label: NCBI Blast
-
+    
   - name: magicblast
     owner: iuc
     tool_panel_section_label: NCBI Blast
@@ -4461,6 +4461,9 @@ tools:
 # DATA MANAGERS
 
   - name: data_manager_build_kraken2_database
+    owner: iuc
+
+  - name: diamond_database_builder
     owner: iuc
 
   - name: data_manager_funannotate
