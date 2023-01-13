@@ -98,6 +98,14 @@ tools:
   - name: cb_div
     owner: ecology
     tool_panel_section_label: 'Biodiversity data exploration'
+    
+  - name: cb_dissim
+    owner: ecology
+    tool_panel_section_label: 'Biodiversity data exploration'
+  
+  - name: cb_ivr
+    owner: ecology
+    tool_panel_section_label: 'Biodiversity data exploration'
 
   - name: sample_seqs
     owner: peterjc
@@ -471,6 +479,27 @@ tools:
     owner: devteam
     tool_panel_section_label: 'FASTA/FASTQ'
 
+
+  - name: xarray_metadata_info
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: xarray_select
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: xarray_coords_info
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: xarray_netcdf2netcdf
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: xarray_mapplot
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
+
   - name: obi_illumina_pairend
     owner: iuc
     tool_panel_section_label: 'DNA Metabarcoding'
@@ -510,10 +539,6 @@ tools:
   - name: obi_stat
     owner: iuc
     tool_panel_section_label: 'DNA Metabarcoding'
-
-  - name: bwa
-    owner: devteam
-    tool_panel_section_label: 'RAD-seq'
 
   - name: stacks2_ustacks
     owner: iuc
@@ -742,3 +767,7 @@ tools:
   - name: srs_metadata
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
+
+  - name: obisindicators
+    owner: ecology
+    tool_panel_section_label: 'Biodiversity data exploration'
