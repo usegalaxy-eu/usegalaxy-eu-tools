@@ -326,6 +326,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Assembly
 
+  - name: biscot
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: colibread_lordec
     owner: iuc
     tool_panel_section_label: Assembly
@@ -1455,6 +1459,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Machine Learning
 
+  - name: decontaminator
+    owner: iuc
+    tool_panel_section_label: Machine Learning
+
 
 # MAPPING
 
@@ -1771,13 +1779,38 @@ tools:
 
   - name: data_manager_build_bracken_database
     owner: iuc
-    tool_panel_section_label: Metagenomic Analysis
+
+  - name: amrfinderplus_data_manager_build 
+    owner: iuc
+
+  - name: data_manager_bakta 
+    owner: iuc
 
   - name: drep_compare
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
   - name: drep_dereplicate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: dram_strainer
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: dram_distill
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: dram_annotate
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: dram_merge_annotations
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: dram_neighborhoods
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -3155,6 +3188,14 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: cherri_eval
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: cherri_train
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: chira_collapse
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -3284,6 +3325,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: migmap
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+  
+  - name: mirnature
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -4178,6 +4223,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: strelka_somatic
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: ucsc_fatovcf
     owner: iuc
     tool_panel_section_label: Variant Calling
 
