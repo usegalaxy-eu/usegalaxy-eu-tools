@@ -140,6 +140,18 @@ tools:
   revisions:
   - abc8da8c12ba
   tool_panel_section_label: Biodiversity data exploration
+- name: cb_dissim
+  owner: ecology
+  revisions:
+  - 7e6cc3da1189
+  - ffaa9a71b2d2
+  tool_panel_section_label: Biodiversity data exploration
+- name: cb_ivr
+  owner: ecology
+  revisions:
+  - 8c6142630659
+  - b67730406f1b
+  tool_panel_section_label: Biodiversity data exploration
 - name: sample_seqs
   owner: peterjc
   revisions:
@@ -806,6 +818,47 @@ tools:
   - 56389130cb63
   - f1dc2a761c30
   tool_panel_section_label: FASTA/FASTQ
+- name: xarray_metadata_info
+  owner: ecology
+  revisions:
+  - 00de53d18b99
+  - '663268794710'
+  - 7edbe5ae8b72
+  - 9bbaab36a5d4
+  - e8650cdf092f
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_select
+  owner: ecology
+  revisions:
+  - 123a9a629bef
+  - 225d0d275a24
+  - 6baac361495b
+  - b393815e4cb7
+  - bf595d613af4
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_coords_info
+  owner: ecology
+  revisions:
+  - 3e73f657a998
+  - 6015f30a7258
+  - 663e6f115a76
+  - fea8a53f8099
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_netcdf2netcdf
+  owner: ecology
+  revisions:
+  - 1a91e551f3a9
+  - b0780241f916
+  - c91c27b63fb2
+  - e87073edecd6
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_mapplot
+  owner: ecology
+  revisions:
+  - 506b6d6880ff
+  - d7479b6dfbe8
+  - dc05bf0af58f
+  tool_panel_section_label: GIS Data Handling
 - name: obi_illumina_pairend
   owner: iuc
   revisions:
@@ -866,14 +919,6 @@ tools:
   - 39320fee9d70
   - 723a93febe89
   tool_panel_section_label: DNA Metabarcoding
-- name: bwa
-  owner: devteam
-  revisions:
-  - 01ac0a5fedc3
-  - 3fe632431b68
-  - 64f11cf59c6e
-  - e188dc7a68e6
-  tool_panel_section_label: RAD-seq
 - name: stacks2_ustacks
   owner: iuc
   revisions:
@@ -1292,3 +1337,13 @@ tools:
   revisions:
   - 054b2522a933
   tool_panel_section_label: GIS Data Handling
+- name: obisindicators
+  owner: ecology
+  revisions:
+  - 1015a0070bac
+  tool_panel_section_label: Biodiversity data exploration
+- name: ab1_fastq_converter
+  owner: ecology
+  revisions:
+  - 307518fb51af
+  tool_panel_section_label: Convert Formats
