@@ -1,0 +1,650 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+
+  - name: qiime2__alignment__mafft
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__alignment__mafft_add
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__alignment__mask
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__composition__add_pseudocount
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__composition__ancom
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__composition__ancombc
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__composition__tabulate
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__cutadapt__demux_paired
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__cutadapt__demux_single
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__cutadapt__trim_paired
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__cutadapt__trim_single
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__dada2__denoise_ccs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__dada2__denoise_paired
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__dada2__denoise_pyro
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__dada2__denoise_single
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__deblur__denoise_16S
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__deblur__denoise_other
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__deblur__visualize_stats
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__demux__emp_paired
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__demux__emp_single
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__demux__filter_samples
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__demux__subsample_paired
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__demux__subsample_single
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__demux__summarize
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__adonis
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__alpha
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__alpha_correlation
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__alpha_group_significance
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__alpha_phylogenetic
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__alpha_rarefaction
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__beta
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__beta_correlation
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__beta_group_significance
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__beta_phylogenetic
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__beta_rarefaction
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__bioenv
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__core_metrics
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__core_metrics_phylogenetic
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__filter_distance_matrix
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__mantel
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__pcoa
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__pcoa_biplot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__procrustes_analysis
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__tsne
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity__umap
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__alpha_passthrough
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__beta_passthrough
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__beta_phylogenetic_meta_passthrough
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__beta_phylogenetic_passthrough
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__bray_curtis
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__faith_pd
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__jaccard
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__observed_features
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__pielou_evenness
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__shannon_entropy
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__unweighted_unifrac
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__diversity_lib__weighted_unifrac
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__emperor__biplot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__emperor__plot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__emperor__procrustes_plot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__blast
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__classify_consensus_blast
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__classify_consensus_vsearch
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__classify_hybrid_vsearch_sklearn
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__classify_sklearn
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__extract_reads
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__find_consensus_annotation
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__fit_classifier_naive_bayes
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__fit_classifier_sklearn
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_classifier__vsearch_global
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__core_features
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__filter_features
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__filter_features_conditionally
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__filter_samples
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__filter_seqs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__group
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__heatmap
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__merge
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__merge_seqs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__merge_taxa
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__presence_absence
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__rarefy
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__relative_frequency
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__rename_ids
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__subsample
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__summarize
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__tabulate_seqs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__feature_table__transpose
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__fragment_insertion__classify_otus_experimental
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__fragment_insertion__filter_features
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__fragment_insertion__sepp
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__assign_ids
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__correlation_clustering
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__dendrogram_heatmap
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__gradient_clustering
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__ilr_hierarchical
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__ilr_phylogenetic
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__ilr_phylogenetic_differential
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__gneiss__ilr_phylogenetic_ordination
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__anova
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__feature_volatility
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__first_differences
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__first_distances
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__linear_mixed_effects
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__maturity_index
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__nmit
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__pairwise_differences
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__pairwise_distances
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__plot_feature_volatility
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__longitudinal__volatility
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__metadata__distance_matrix
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__metadata__shuffle_groups
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__metadata__tabulate
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__align_to_tree_mafft_fasttree
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__align_to_tree_mafft_iqtree
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__align_to_tree_mafft_raxml
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__fasttree
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__filter_table
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__filter_tree
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__iqtree
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__iqtree_ultrafast_bootstrap
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__midpoint_root
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__raxml
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__raxml_rapid_bootstrap
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__phylogeny__robinson_foulds
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__quality_control__bowtie2_build
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__quality_control__evaluate_composition
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__quality_control__evaluate_seqs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__quality_control__evaluate_taxonomy
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__quality_control__exclude_seqs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__quality_control__filter_reads
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__quality_filter__q_score
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__classify_samples
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__classify_samples_from_dist
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__classify_samples_ncv
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__confusion_matrix
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__fit_classifier
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__fit_regressor
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__heatmap
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__metatable
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__predict_classification
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__predict_regression
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__regress_samples
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__regress_samples_ncv
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__scatterplot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__split_table
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__sample_classifier__summarize
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__taxa__barplot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__taxa__collapse
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__taxa__filter_seqs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__taxa__filter_table
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__cluster_features_closed_reference
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__cluster_features_de_novo
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__cluster_features_open_reference
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__dereplicate_sequences
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__fastq_stats
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__merge_pairs
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__uchime_denovo
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vsearch__uchime_ref
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2_core__tools__export
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2_core__tools__import
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
