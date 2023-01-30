@@ -354,6 +354,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Assembly
 
+  - name: hifiasm_meta
+    owner: galaxy-australia
+    tool_panel_section_label: Assembly
+
   - name: hypo
     owner: iuc
     tool_panel_section_label: Assembly
@@ -965,6 +969,10 @@ tools:
     owner: iuc
     tool_panel_section_label:  FASTA/FASTQ
 
+  - name: fasta_regex_finder
+    owner: mbernt
+    tool_panel_section_label:  FASTA/FASTQ
+
 
 # FILTER AND SORT
 
@@ -1544,6 +1552,18 @@ tools:
 
 
 # METAGENOMIC ANALYSIS
+
+  - name: krakentools_kreport2krona
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: krakentools_beta_diversity
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: krakentools_alpha_diversity
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: aldex2
     owner: iuc
@@ -3655,6 +3675,10 @@ tools:
 
 # SINGLE-CELL
 
+  - name: cite_seq_count
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
   - name: alevin
     owner: bgruening
     tool_panel_section_label: Single-cell
@@ -4461,6 +4485,9 @@ tools:
 # DATA MANAGERS
 
   - name: data_manager_build_kraken2_database
+    owner: iuc
+
+  - name: data_manager_diamond_database_builder
     owner: iuc
 
   - name: data_manager_funannotate
