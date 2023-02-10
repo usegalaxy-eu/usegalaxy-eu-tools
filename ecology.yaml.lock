@@ -135,6 +135,23 @@ tools:
   revisions:
   - 9a2e0195bb43
   tool_panel_section_label: Biodiversity data exploration
+- name: cb_div
+  owner: ecology
+  revisions:
+  - abc8da8c12ba
+  tool_panel_section_label: Biodiversity data exploration
+- name: cb_dissim
+  owner: ecology
+  revisions:
+  - 7e6cc3da1189
+  - ffaa9a71b2d2
+  tool_panel_section_label: Biodiversity data exploration
+- name: cb_ivr
+  owner: ecology
+  revisions:
+  - 8c6142630659
+  - b67730406f1b
+  tool_panel_section_label: Biodiversity data exploration
 - name: sample_seqs
   owner: peterjc
   revisions:
@@ -454,8 +471,11 @@ tools:
   owner: iuc
   revisions:
   - 1b9406a1a769
+  - 2bf238af068d
   - 7e616a1bdb07
+  - 7f2ef7216cf8
   - 90928b255abb
+  - b1268b7544d3
   - fcb6a19960c6
   tool_panel_section_label: Graph/Display Data
 - name: pygenometracks
@@ -476,15 +496,21 @@ tools:
 - name: ggplot2_heatmap
   owner: iuc
   revisions:
+  - 10515715c940
   - 391a4cc45fea
+  - 3d059e9c2fba
   - a4d83ba2a1bc
   - d3a9e32672ec
+  - da4c086cff5b
   - de002ba2b849
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_violin
   owner: iuc
   revisions:
+  - 0e7290688b50
   - 637cf21db396
+  - 9c52a8130729
+  - d6c41b454cc1
   - d8305f18060e
   - dfd5d981b5a4
   - e44775efb2dc
@@ -499,18 +525,24 @@ tools:
   owner: iuc
   revisions:
   - 1acf88921176
+  - 299307abd804
+  - 5fe1dc76176e
   - 87908c76ca8d
   - 9cec81e1b90e
   - a36551483a8f
+  - d0fc8b746d57
   - e3a675da7fd0
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_histogram
   owner: iuc
   revisions:
+  - 11869c5becd8
   - 355a82227003
   - 398e5104f8a2
   - 497d700a5229
   - 536078949ae4
+  - b0d96516e6a5
+  - fb50ab943396
   tool_panel_section_label: Graph/Display Data
 - name: tsne
   owner: iuc
@@ -765,6 +797,7 @@ tools:
   - 5e33b465d8d5
   - 75c93c70d094
   - 9a913cdee30e
+  - abfd8a6544d7
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
@@ -785,6 +818,47 @@ tools:
   - 56389130cb63
   - f1dc2a761c30
   tool_panel_section_label: FASTA/FASTQ
+- name: xarray_metadata_info
+  owner: ecology
+  revisions:
+  - 00de53d18b99
+  - '663268794710'
+  - 7edbe5ae8b72
+  - 9bbaab36a5d4
+  - e8650cdf092f
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_select
+  owner: ecology
+  revisions:
+  - 123a9a629bef
+  - 225d0d275a24
+  - 6baac361495b
+  - b393815e4cb7
+  - bf595d613af4
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_coords_info
+  owner: ecology
+  revisions:
+  - 3e73f657a998
+  - 6015f30a7258
+  - 663e6f115a76
+  - fea8a53f8099
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_netcdf2netcdf
+  owner: ecology
+  revisions:
+  - 1a91e551f3a9
+  - b0780241f916
+  - c91c27b63fb2
+  - e87073edecd6
+  tool_panel_section_label: GIS Data Handling
+- name: xarray_mapplot
+  owner: ecology
+  revisions:
+  - 506b6d6880ff
+  - d7479b6dfbe8
+  - dc05bf0af58f
+  tool_panel_section_label: GIS Data Handling
 - name: obi_illumina_pairend
   owner: iuc
   revisions:
@@ -845,14 +919,6 @@ tools:
   - 39320fee9d70
   - 723a93febe89
   tool_panel_section_label: DNA Metabarcoding
-- name: bwa
-  owner: devteam
-  revisions:
-  - 01ac0a5fedc3
-  - 3fe632431b68
-  - 64f11cf59c6e
-  - e188dc7a68e6
-  tool_panel_section_label: RAD-seq
 - name: stacks2_ustacks
   owner: iuc
   revisions:
@@ -1218,3 +1284,66 @@ tools:
   revisions:
   - eb19a5089b56
   tool_panel_section_label: Animal Detection on Acoustic Recordings
+- name: cb_dissim
+  owner: ecology
+  revisions:
+  - 7e6cc3da1189
+  - ffaa9a71b2d2
+  tool_panel_section_label: Compute indicators for turnover boulders fields
+- name: cb_ivr
+  owner: ecology
+  revisions:
+  - 8c6142630659
+  - b67730406f1b
+  tool_panel_section_label: Compute indicators for turnover boulders fields
+- name: champ_blocs
+  owner: ecology
+  revisions:
+  - 9e830eb2eaa0
+  - 9ed95b4a273c
+  tool_panel_section_label: Compute indicators for turnover boulders fields
+- name: srs_preprocess_s2
+  owner: ecology
+  revisions:
+  - 33a1e15f7252
+  tool_panel_section_label: Compute indicators for satellite remote sensing
+- name: srs_diversity_maps
+  owner: ecology
+  revisions:
+  - 9adccd3da70c
+  tool_panel_section_label: Compute indicators for satellite remote sensing
+- name: srs_global_indices
+  owner: ecology
+  revisions:
+  - 5cae678042ec
+  tool_panel_section_label: Compute indicators for satellite remote sensing
+- name: srs_process_data
+  owner: ecology
+  revisions:
+  - cf69ad260611
+  tool_panel_section_label: Compute indicators for satellite remote sensing
+- name: srs_spectral_indices
+  owner: ecology
+  revisions:
+  - a8dabbf47e15
+  tool_panel_section_label: Compute indicators for satellite remote sensing
+- name: srs_pca
+  owner: ecology
+  revisions:
+  - 0931c98270c9
+  tool_panel_section_label: Compute indicators for satellite remote sensing
+- name: srs_metadata
+  owner: ecology
+  revisions:
+  - 054b2522a933
+  tool_panel_section_label: GIS Data Handling
+- name: obisindicators
+  owner: ecology
+  revisions:
+  - 1015a0070bac
+  tool_panel_section_label: Biodiversity data exploration
+- name: ab1_fastq_converter
+  owner: ecology
+  revisions:
+  - 307518fb51af
+  tool_panel_section_label: Convert Formats

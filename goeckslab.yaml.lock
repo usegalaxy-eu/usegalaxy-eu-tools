@@ -1,0 +1,36 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+- name: gate_finder
+  owner: goeckslab
+  revisions:
+  - 6df8d6e42152
+  tool_panel_section_label: Imaging
+- name: vitessce_spatial
+  owner: goeckslab
+  revisions:
+  - 9f60ef2d586e
+  tool_panel_section_label: Imaging
+- name: mesmer
+  owner: goeckslab
+  revisions:
+  - 02abff468d60
+  - 187918c47051
+  - 53240d7c1fc5
+  tool_panel_section_label: Imaging
+- name: squidpy
+  owner: goeckslab
+  revisions:
+  - be0e7952e229
+  tool_panel_section_label: Imaging
+- name: rename_tiff_channels
+  owner: goeckslab
+  revisions:
+  - 09e240a12897
+  tool_panel_section_label: Imaging
+- name: cell_intensity_processing
+  owner: goeckslab
+  revisions:
+  - 7a77ed0e579a
+  tool_panel_section_label: Imaging

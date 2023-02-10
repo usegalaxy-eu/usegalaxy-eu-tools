@@ -4,9 +4,93 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-  - name: mafft
-    owner: rnateam
-    tool_panel_section_label: Multiple Alignments
+
+# "CONVERT FORMATS"
+
+  - name: glimmer_glimmer_to_gff
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
+  - name: graphicsmagick_image_convert
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
+  - name: graphicsmagick_image_montage
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
+# ANNOTATION
+
+  - name: antismash
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: cpat
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: edta
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: netboxr
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: pfamscan
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+# ASSEMBLY
+
+  - name: blobtoolkit
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: flye
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: instagraal
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: minipolish
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: mitohifi
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: racon
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: tgsgapcloser
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+
+# COLLECTION OPERATIONS
+
+  - name: split_file_to_collection
+    owner: bgruening
+    tool_panel_section_label: Collection Operations
+
+
+# FASTA/FASTQ
+
+  - name: gfastats
+    owner: bgruening
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: trim_galore
+    owner: bgruening
+    tool_panel_section_label: FASTA/FASTQ
+
+
+# GRAPH/DISPLAY DATA
 
   - name: plotly_ml_performance_plots
     owner: bgruening
@@ -16,41 +100,8 @@ tools:
     owner: bgruening
     tool_panel_section_label: Graph/Display Data
 
-  - name: pandas_rolling_window
-    owner: bgruening
-    tool_panel_section_label: Statistics
 
-  - name: split_file_to_collection
-    owner: bgruening
-    tool_panel_section_label: Collection Operations
-
-  - name: graphicsmagick_image_convert
-    owner: bgruening
-    tool_panel_section_label: "Convert Formats"
-
-  - name: glimmer_glimmer_to_gff
-    owner: bgruening
-    tool_panel_section_label: "Convert Formats"
-
-  - name: graphicsmagick_image_montage
-    owner: bgruening
-    tool_panel_section_label: "Convert Formats"
-
-#  - name: run_jupyter_job
-#    owner: bgruening
-#    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_svm_classifier
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_train_test_eval
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: model_prediction
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
+# MACHINE LEARNING
 
   - name: keras_batch_models
     owner: bgruening
@@ -64,7 +115,39 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: sklearn_sample_generator
+  - name: keras_train_and_eval
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: ml_visualization_ex
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: model_prediction
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+#  - name: run_jupyter_job
+#    owner: bgruening
+#    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_build_pipeline
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_clf_metrics
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_data_preprocess
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_discriminant_classifier
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_ensemble
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
@@ -72,19 +155,27 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: sklearn_stacking_ensemble_models
+  - name: sklearn_feature_selection
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: sklearn_searchcv
+  - name: sklearn_fitted_model_eval
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: sklearn_build_pipeline
+  - name: sklearn_generalized_linear
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: sklearn_pairwise_metrics
+  - name: sklearn_lightgbm
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_model_fit
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_model_validation
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
@@ -96,51 +187,7 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: sklearn_ensemble
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_feature_selection
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_data_preprocess
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-  
-  - name: sklearn_clf_metrics
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_regression_metrics
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_discriminant_classifier
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_generalized_linear
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_model_validation
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_fitted_model_eval
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_model_fit
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_train_test_split
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
-
-  - name: sklearn_lightgbm
+  - name: sklearn_pairwise_metrics
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
@@ -148,19 +195,83 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: ml_visualization_ex
+  - name: sklearn_regression_metrics
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: keras_train_and_eval
+  - name: sklearn_sample_generator
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-  - name: scipy_sparse
+  - name: sklearn_searchcv
     owner: bgruening
-    tool_panel_section_label: Statistics
+    tool_panel_section_label: Machine Learning
 
-  - name: nanopolish_variants
+  - name: sklearn_stacking_ensemble_models
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_svm_classifier
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_to_categorical
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_train_test_eval
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: sklearn_train_test_split
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+
+# MAPPING
+
+  - name: graphmap_align
+    owner: bgruening
+    tool_panel_section_label: Mapping
+
+  - name: graphmap_overlap
+    owner: bgruening
+    tool_panel_section_label: Mapping
+
+
+# METAGENOMIC ANALYSIS
+
+  - name: combine_metaphlan2_humann2
+    owner: bebatut
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: compare_humann2_output
+    owner: bebatut
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: format_cd_hit_output
+    owner: bebatut
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: format_metaphlan2_output
+    owner: bebatut
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: itsx
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
+
+# MULTIPLE ALIGNMENTS
+
+  - name: mafft
+    owner: rnateam
+    tool_panel_section_label: Multiple Alignments
+
+
+# NANOPORE
+
+  - name: nanopolish_eventalign
     owner: bgruening
     tool_panel_section_label: Nanopore
 
@@ -168,83 +279,40 @@ tools:
     owner: bgruening
     tool_panel_section_label: Nanopore
 
-  - name: nanopolish_eventalign
-    owner: bgruening
-    tool_panel_section_label: Nanopore
-
   - name: nanopolish_polya
     owner: bgruening
     tool_panel_section_label: Nanopore
-    
-  - name: racon
-    owner: bgruening
-    tool_panel_section_label: Assembly
 
-  - name: flye
+  - name: nanopolish_variants
     owner: bgruening
-    tool_panel_section_label: Assembly
+    tool_panel_section_label: Nanopore
 
-  - name: mitohifi
-    owner: bgruening
-    tool_panel_section_label: Assembly
 
-  - name: tgsgapcloser
-    owner: bgruening
-    tool_panel_section_label: Assembly
+# PEAK CALLING
 
-  - name: graphmap_overlap
-    owner: bgruening
-    tool_panel_section_label: Mapping
+  - name: dewseq
+    owner: rnateam
+    tool_panel_section_label: Peak Calling
 
-  - name: graphmap_align
-    owner: bgruening
-    tool_panel_section_label: Mapping
+  - name: htseq_clip
+    owner: rnateam
+    tool_panel_section_label: Peak Calling
 
-  - name: create_tool_recommendation_model
-    owner: bgruening
-    tool_panel_section_label: Statistics
 
-  - name: replace_column_by_key_value_file
-    owner: bgruening
-    tool_panel_section_label: Text Manipulation
-
-  - name: diff
-    owner: bgruening
-    tool_panel_section_label: Text Manipulation
-
-  - name: add_line_to_file
-    owner: bgruening
-    tool_panel_section_label: Text Manipulation
-
-  - name: sklearn_to_categorical
-    owner: bgruening
-    tool_panel_section_label: Machine Learning
+# QUALITY CONTROL
 
   - name: fastq_info
     owner: bgruening
     tool_panel_section_label: Quality Control
 
-  - name: trim_galore
-    owner: bgruening
-    tool_panel_section_label: FASTA/FASTQ
 
-  - name: gfastats
+# SINGLE-CELL
+
+  - name: 10x_bamtofastq
     owner: bgruening
-    tool_panel_section_label: FASTA/FASTQ
+    tool_panel_section_label: Single-cell
 
   - name: music_compare
-    owner: bgruening
-    tool_panel_section_label: Single-cell
-
-  - name: music_manipulate_eset
-    owner: bgruening
-    tool_panel_section_label: Single-cell
-
-  - name: music_inspect_eset
-    owner: bgruening
-    tool_panel_section_label: Single-cell
-
-  - name: music_deconvolution
     owner: bgruening
     tool_panel_section_label: Single-cell
 
@@ -252,17 +320,55 @@ tools:
     owner: bgruening
     tool_panel_section_label: Single-cell
 
+  - name: music_deconvolution
+    owner: bgruening
+    tool_panel_section_label: Single-cell
+
+  - name: music_inspect_eset
+    owner: bgruening
+    tool_panel_section_label: Single-cell
+
+  - name: music_manipulate_eset
+    owner: bgruening
+    tool_panel_section_label: Single-cell
+
+
+# STATISTICS
+
+  - name: bg_statistical_hypothesis_testing
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: create_tool_recommendation_model
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: pandas_rolling_window
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+  - name: scipy_sparse
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
+
+# TEXT MANIPULATION
+
+  - name: add_line_to_file
+    owner: bgruening
+    tool_panel_section_label: Text Manipulation
+
+  - name: diff
+    owner: bgruening
+    tool_panel_section_label: Text Manipulation
+
+  - name: replace_column_by_key_value_file
+    owner: bgruening
+    tool_panel_section_label: Text Manipulation
+
+
+# VARIANT CALLING
+
   - name: pharmcat
     owner: bgruening
     tool_panel_section_label: Variant Calling
-
-  - name: itsx
-    owner: bgruening
-    tool_panel_section_label: Metagenomic Analysis
-
-  - name: antismash
-    owner: bgruening
-    tool_panel_section_label: Annotation
-  - name: 10x_bamtofastq
-    owner: bgruening
-    tool_panel_section_label: Single-cell
