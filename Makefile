@@ -51,6 +51,7 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python scripts/update-tool.py nml.yaml
 	python scripts/update-tool.py peterjc.yaml
 	python scripts/update-tool.py goeckslab.yaml
+	python scripts/update-tool.py metabolomics.yaml
 
 update_all: $(UPDATED_YAMLS)
 
