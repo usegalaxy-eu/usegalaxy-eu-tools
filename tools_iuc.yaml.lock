@@ -426,6 +426,11 @@ tools:
   - 7075b7a5441b
   - e23b96d79dc0
   tool_panel_section_label: Annotation
+- name: pharokka
+  owner: iuc
+  revisions:
+  - 1d4fcd38d899
+  tool_panel_section_label: Annotation
 - name: prokka
   owner: crs4
   revisions:
@@ -480,6 +485,7 @@ tools:
   revisions:
   - 52bba1cd3823
   - 5a7cd6c39085
+  - 86d0ce0560a1
   tool_panel_section_label: Annotation
 - name: socru
   owner: iuc
@@ -1005,6 +1011,7 @@ tools:
   owner: iuc
   revisions:
   - 39495e107274
+  - 425e63adcc5d
   - a3a92e30a727
   - d87433f2a54d
   - fc925f53cae7
@@ -2240,6 +2247,7 @@ tools:
   owner: iuc
   revisions:
   - 4955e9bb96d1
+  - 53460afd5115
   - '566197475670'
   - 76380bf74511
   - ca7cb0eaad62
@@ -3168,6 +3176,7 @@ tools:
   - b9e04854e2bb
   - bc685d13b637
   - c772497b2c32
+  - c7c55b694974
   - d5659efd66aa
   - d82339e37e8e
   - e132e7d02a3e
@@ -3183,6 +3192,7 @@ tools:
   - 61cb2042581a
   - 79b885ce78d7
   - a6fba3d92531
+  - b8f5f6e87f5c
   - c23da6257d6a
   - e403d27e8f24
   - ec9cbd6b9a49
@@ -3213,10 +3223,12 @@ tools:
   revisions:
   - 773615269d71
   - bc508fe30940
+  - d80c0fc14504
   tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_beta_diversity
   owner: iuc
   revisions:
+  - 214ece7f1216
   - 4b32f3b4a851
   - fc2077c654fb
   tool_panel_section_label: Metagenomic Analysis
@@ -3224,6 +3236,7 @@ tools:
   owner: iuc
   revisions:
   - 8ac5d5c9a5e4
+  - dc7fd9e2d835
   - e400e5ef0e7c
   tool_panel_section_label: Metagenomic Analysis
 - name: aldex2
@@ -3355,28 +3368,33 @@ tools:
   revisions:
   - 13192095fd5a
   - 8dfc90f35aba
+  - acd9fe45eb81
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_bins
   owner: iuc
   revisions:
   - 0094893f5001
   - 18676df0cb3a
+  - 31853794ace2
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_contigs
   owner: iuc
   revisions:
   - 11a61934bfb3
+  - 7aebc0137f20
   - c6c77d840993
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_prepare
   owner: iuc
   revisions:
   - 8315b5cebb82
+  - a40bbd70b8b1
   - b6c5e7343617
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_summarise
   owner: iuc
   revisions:
+  - 388e6678fa98
   - 7f1aaa1932d8
   - db1360aae489
   tool_panel_section_label: Metagenomic Analysis
@@ -6706,6 +6724,41 @@ tools:
   - 034f76ead49a
   - 2bf47d57ebb5
   - 850e213bee26
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_add_descriptions
+  owner: iuc
+  revisions:
+  - 6034c3f3ecf0
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_hsp
+  owner: iuc
+  revisions:
+  - 6eafc1e01a8c
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_metagenome_pipeline
+  owner: iuc
+  revisions:
+  - 415cb5d91168
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_pathway_pipeline
+  owner: iuc
+  revisions:
+  - 6077821e8ae7
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_pipeline
+  owner: iuc
+  revisions:
+  - 540aedfc81c7
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_place_seqs
+  owner: iuc
+  revisions:
+  - 680fb3eb574c
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_shuffle_predictions
+  owner: iuc
+  revisions:
+  - 881f2faa5fe7
   tool_panel_section_label: Phylogenetics
 - name: raxml
   owner: iuc
