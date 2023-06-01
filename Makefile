@@ -17,15 +17,15 @@ fix: $(CORRECT_YAMLS) ## Fix any issues (missing hashes, missing lockfiles, etc.
 install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 
 %.lint: %
-	python scripts/fix-lockfile.py $<
+	python3 scripts/fix-lockfile.py $<
 	pykwalify -d $< -s .schema.yaml
-	python scripts/identify-unpinned.py $<
+	python3 scripts/identify-unpinned.py $<
 
 %.fix: %
 	@# Generates the lockfile or updates it if it is missing tools
-	python scripts/fix-lockfile.py $<
+	python3 scripts/fix-lockfile.py $<
 	@# --without says only add those hashes for those missing hashes (i.e. new tools)
-	python scripts/update-tool.py $< --without
+	python3 scripts/update-tool.py $< --without
 
 %.install: %
 	@echo "Installing any updated versions of $<"
@@ -36,31 +36,31 @@ pr_check:
 
 update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	@# Missing --without, so this updates all tools in the file.
-	python scripts/update-tool.py cheminformatics.yaml
-	python scripts/update-tool.py imaging.yaml
-	python scripts/update-tool.py tools_iuc.yaml
-	python scripts/update-tool.py earlhaminst.yaml
-	python scripts/update-tool.py rnateam.yaml
-	python scripts/update-tool.py bgruening.yaml
-	python scripts/update-tool.py ecology.yaml
-	python scripts/update-tool.py tools_galaxyp.yaml
-	python scripts/update-tool.py single-cell-ebi-gxa.yaml
-	python scripts/update-tool.py genome-annotation.yaml
-	python scripts/update-tool.py galaxy-australia.yaml
-	python scripts/update-tool.py climate.yaml
-	python scripts/update-tool.py nml.yaml
-	python scripts/update-tool.py peterjc.yaml
-	python scripts/update-tool.py goeckslab.yaml
+	python3 scripts/update-tool.py cheminformatics.yaml
+	python3 scripts/update-tool.py imaging.yaml
+	python3 scripts/update-tool.py tools_iuc.yaml
+	python3 scripts/update-tool.py earlhaminst.yaml
+	python3 scripts/update-tool.py rnateam.yaml
+	python3 scripts/update-tool.py bgruening.yaml
+	python3 scripts/update-tool.py ecology.yaml
+	python3 scripts/update-tool.py tools_galaxyp.yaml
+	python3 scripts/update-tool.py single-cell-ebi-gxa.yaml
+	python3 scripts/update-tool.py genome-annotation.yaml
+	python3 scripts/update-tool.py galaxy-australia.yaml
+	python3 scripts/update-tool.py climate.yaml
+	python3 scripts/update-tool.py nml.yaml
+	python3 scripts/update-tool.py peterjc.yaml
+	python3 scripts/update-tool.py goeckslab.yaml
 
 update_all: $(UPDATED_YAMLS)
 
 %.update: ## Update all of the tools
 	@# Missing --without, so this updates all tools in the file.
-	python scripts/update-tool.py $<
+	python3 scripts/update-tool.py $<
 
 %.update_trusted_iuc: %
 	@# Update any tools owned by IUC in any other yaml file
-	python scripts/update-tool.py --owner iuc $<
+	python3 scripts/update-tool.py --owner iuc $<
 
 
 .PHONY: pr_check lint update_trusted help

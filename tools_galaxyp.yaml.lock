@@ -117,6 +117,7 @@ tools:
   - 8375a0035d79
   - a5e394b36d87
   - b79d4c961009
+  - bd1535813cfe
   - fd3dc69b78ff
   tool_panel_section_label: Proteomics
 - name: diffacto
@@ -132,6 +133,7 @@ tools:
   - 52ac6fde9a5b
   - 593839e1f2c3
   - 8212e342e482
+  - b7034eff0db1
   tool_panel_section_label: Proteomics
 - name: uniprotxml_downloader
   owner: galaxyp
@@ -311,11 +313,13 @@ tools:
   owner: galaxyp
   revisions:
   - 0892a051eb17
+  - 60ee8c592b13
   - 71411ac28268
   tool_panel_section_label: Proteomics
 - name: maldi_quant_peak_detection
   owner: galaxyp
   revisions:
+  - 160538a890a6
   - 36d38d2cf88c
   - d286ff4600dd
   - e66f552a3c47
@@ -326,10 +330,12 @@ tools:
   owner: galaxyp
   revisions:
   - 4cb6c83d3777
+  - 53a2f4fa6cd2
   tool_panel_section_label: Proteomics
 - name: cardinal_colocalization
   owner: galaxyp
   revisions:
+  - 4257fc095049
   - d3ca64dafdef
   tool_panel_section_label: Proteomics
 - name: cardinal_filtering
@@ -349,6 +355,7 @@ tools:
   - b8c79e70516d
   - d2ccd8348018
   - e92efed83208
+  - f23d67e28cc8
   tool_panel_section_label: Proteomics
 - name: cardinal_segmentations
   owner: galaxyp
@@ -365,6 +372,7 @@ tools:
   - b16b64ca7b7c
   - b591450b3d1c
   - cc430977c8ff
+  - df2187f9013b
   - e56a955cd1c0
   - f4fcd7c81b5b
   tool_panel_section_label: Proteomics
@@ -380,6 +388,7 @@ tools:
   - 90d2e00e1304
   - a5d09f2daf71
   - b6a4dd06cde0
+  - bb6397b94018
   - be5d1c3c51e5
   - d94770c22f13
   - e30d8b72415f
@@ -389,6 +398,7 @@ tools:
 - name: cardinal_classification
   owner: galaxyp
   revisions:
+  - 0a18ac48ac53
   - 2308bd817e3e
   - 24c000517173
   - 277dc652246e
@@ -420,6 +430,7 @@ tools:
   - 5e6f8fb2df07
   - 773a24b240e1
   - 7828af552085
+  - 80600735685d
   - a69865da6f80
   - a95a82eb4d50
   - c4df3005e04d
@@ -436,6 +447,7 @@ tools:
   - 5a35e3a8d013
   - 5f18275c250a
   - 74b61bf5bc4b
+  - a7fb9b395ddf
   - bb9500286fe4
   - d4803c1e5e19
   - ecaebe7c7b54
@@ -452,6 +464,7 @@ tools:
   - 44a4b31fcbf3
   - 5abc3ab4792c
   - 5bf056c0354e
+  - 611d80c0e29d
   - 798da6bdff3d
   - 87bb011a4ee8
   - 8c05a34f160a
@@ -476,6 +489,7 @@ tools:
   - 64ea4507e0bd
   - 9b6b86e771c2
   - 9c03e7a617cd
+  - d2483487e077
   - d2596e1be091
   - d333733dd571
   - ebb7de263d49
@@ -498,10 +512,16 @@ tools:
   - aad328eb6c0f
   - b41107d8fe89
   - bb1ac6b47a6c
+  - bf06d196e23d
   - c3eb5cd37ebe
   - e215f71d7983
   - e988563cc6e5
   - fe5a1d487f32
+  tool_panel_section_label: Proteomics
+- name: qupath_roi_splitter
+  owner: galaxyp
+  revisions:
+  - b5e9cebb27e3
   tool_panel_section_label: Proteomics
 - name: megahit_contig2fastg
   owner: iuc
@@ -2272,11 +2292,28 @@ tools:
   owner: galaxyp
   revisions:
   - 5c2beb4eb41c
+  - b889e05ce77d
   - bae3a23461c9
   tool_panel_section_label: Proteomics
 - name: mqppep_anova
   owner: galaxyp
   revisions:
   - 2d9f216c1048
+  - 514afed1f40d
   - dda27b9273a8
+  tool_panel_section_label: Proteomics
+- name: pepquery2
+  owner: galaxyp
+  revisions:
+  - a07976bbc4d9
+  tool_panel_section_label: Proteomics
+- name: pepquery2_show_sets
+  owner: galaxyp
+  revisions:
+  - b9e1e95758e8
+  tool_panel_section_label: Proteomics
+- name: pepquery2_index
+  owner: galaxyp
+  revisions:
+  - 24681d6372f3
   tool_panel_section_label: Proteomics

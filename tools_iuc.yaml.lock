@@ -17,6 +17,7 @@ tools:
 - name: annotatemyids
   owner: iuc
   revisions:
+  - 133f36c29579
   - 1a125daea0d8
   - 1aae04680c4b
   - 38eedf3cc3c9
@@ -32,6 +33,7 @@ tools:
 - name: bakta
   owner: iuc
   revisions:
+  - 865ece5ca178
   - da5f1924bb2e
   - debdc1469b41
   tool_panel_section_label: Annotation
@@ -43,9 +45,11 @@ tools:
   - 41030a6c03b7
   - 46ae58b1d792
   - 602fb8e63aa7
+  - 94170eee0ad8
   - bb935709506a
   - cf13a1e03e5b
   - e4bd1e99bacf
+  - e824f5d958d0
   tool_panel_section_label: Annotation
 - name: dgidb_annotator
   owner: devteam
@@ -83,26 +87,41 @@ tools:
   owner: iuc
   revisions:
   - 14f588312c56
+  - 582fd74dc2a1
+  - 9f2455341fac
+  - 9feee7fc49a1
   tool_panel_section_label: Annotation
 - name: funannotate_clean
   owner: iuc
   revisions:
+  - 258198490c3c
+  - 30fb23d4c31c
+  - 73428a792541
   - a230ea445788
   tool_panel_section_label: Annotation
 - name: funannotate_compare
   owner: iuc
   revisions:
+  - 30f08d74024f
+  - 494f0bb4a993
   - 563a19373357
+  - a7ce2601500c
   tool_panel_section_label: Annotation
 - name: funannotate_predict
   owner: iuc
   revisions:
   - 2bba2ff070d9
+  - 51b6ee65ef7f
+  - 7abc5f6dd595
+  - f31125bb85ea
   tool_panel_section_label: Annotation
 - name: funannotate_sort
   owner: iuc
   revisions:
+  - 2b7d3bfd40d8
+  - 52af33194019
   - b3cf4684e9c7
+  - d3af38b9c7e1
   tool_panel_section_label: Annotation
 - name: glimmer_build_icm
   owner: bgruening
@@ -297,10 +316,17 @@ tools:
   - 35dc2f57d755
   - 38d10a69748a
   - adab852c8216
+  - dcd291aeb8a9
+  tool_panel_section_label: Annotation
+- name: homer_findmotifs
+  owner: iuc
+  revisions:
+  - 453ebddf5bb2
   tool_panel_section_label: Annotation
 - name: homer_findmotifsgenome
   owner: iuc
   revisions:
+  - 081139509124
   - 3126da33847c
   - a8f207b43f64
   - ec974e69e0b5
@@ -311,16 +337,19 @@ tools:
   - 396cf2c12173
   - 8ebb6520eef4
   - debfd2838aca
+  - df55927535ed
   tool_panel_section_label: Annotation
 - name: homer_scanmotifgenomewide
   owner: iuc
   revisions:
   - db456c398880
+  - f15794662a69
   tool_panel_section_label: Annotation
 - name: integron_finder
   owner: iuc
   revisions:
   - 1ae00120dd24
+  - 4768f7f8e93f
   tool_panel_section_label: Annotation
 - name: interproscan
   owner: bgruening
@@ -370,10 +399,12 @@ tools:
   owner: iuc
   revisions:
   - ce04c239454b
+  - d518cf04b55c
   tool_panel_section_label: Annotation
 - name: miniprot_index
   owner: iuc
   revisions:
+  - b7b6b8188999
   - d6a874226260
   tool_panel_section_label: Annotation
 - name: mitos
@@ -381,11 +412,13 @@ tools:
   revisions:
   - 1f4933f5a323
   - 52742626480e
+  - c7553ba39670
   - f20804c311de
   tool_panel_section_label: Annotation
 - name: mitos2
   owner: iuc
   revisions:
+  - 033755194fe9
   - 624606f7c996
   - 79e259afea34
   - 80323066acd4
@@ -412,7 +445,14 @@ tools:
 - name: plasmidfinder
   owner: iuc
   revisions:
+  - 7075b7a5441b
   - e23b96d79dc0
+  tool_panel_section_label: Annotation
+- name: pharokka
+  owner: iuc
+  revisions:
+  - 1d4fcd38d899
+  - f05c3732764a
   tool_panel_section_label: Annotation
 - name: prokka
   owner: crs4
@@ -439,6 +479,7 @@ tools:
   - 438f65cb1d14
   - 72aade318318
   - ade773848c3d
+  - ba6d2c32f797
   - bfc70c8cc5ca
   - d7540a923c7b
   tool_panel_section_label: Annotation
@@ -447,6 +488,8 @@ tools:
   revisions:
   - 1e10310ce195
   - 41bfbaf3c959
+  - 8661b2607b7e
+  - a9fb165808c8
   - dda44fd49bcd
   tool_panel_section_label: Annotation
 - name: roary
@@ -468,6 +511,7 @@ tools:
   revisions:
   - 52bba1cd3823
   - 5a7cd6c39085
+  - 86d0ce0560a1
   tool_panel_section_label: Annotation
 - name: socru
   owner: iuc
@@ -502,6 +546,7 @@ tools:
   - 037a11682176
   - 19793eecc9f0
   - 200c378d85f3
+  - 2c68b0c38785
   - 37213cf56392
   - 4272bd430a01
   - 45083d070fb8
@@ -549,6 +594,7 @@ tools:
   - 2b89471cca20
   - 3ce74eab308b
   - 553bfe8bd0b5
+  - 7547fcab5d19
   - 841084c5fc46
   - 8f1b150a2487
   - f4fb67b97a63
@@ -563,6 +609,8 @@ tools:
 - name: bionano_scaffold
   owner: bgruening
   revisions:
+  - 22286dab5aa1
+  - 3371c5bdc17a
   - 5258e18bbe23
   - 5d7c5ae1b69b
   - 8cc3862f8b8e
@@ -600,6 +648,8 @@ tools:
 - name: getorganelle
   owner: iuc
   revisions:
+  - 06bcf65179fb
+  - 611219887a48
   - 8b330a577046
   tool_panel_section_label: Assembly
 - name: hapog
@@ -616,13 +666,17 @@ tools:
   - 5bec28269d95
   - 5f625c63b8bc
   - 6505bd37670d
+  - 71740308d412
   - 9ef6920c3089
+  - da9d8bf98802
+  - ec9e21e9c71b
   - f3c89da3af16
   tool_panel_section_label: Assembly
 - name: hifiasm_meta
   owner: galaxy-australia
   revisions:
   - 15dbb444df71
+  - fa35f1106d3e
   tool_panel_section_label: Assembly
 - name: hypo
   owner: iuc
@@ -771,6 +825,7 @@ tools:
   - 342a1d1fed7b
   - 59db8ea8c845
   - 675488238c96
+  - 72472698a2df
   - 736d51130b41
   - 7594365c546b
   - 81df4950d65b
@@ -841,6 +896,8 @@ tools:
   owner: galaxy-australia
   revisions:
   - 24e471d13fe9
+  - 5a0ddb4dc3a4
+  - 5e0825476fb7
   tool_panel_section_label: Assembly
 - name: spades
   owner: nml
@@ -934,11 +991,13 @@ tools:
   - 189e837009c9
   - 505a9833ab5d
   - 6f4c8ad6ea01
+  - 8f631679571f
   - ced385aa976d
   tool_panel_section_label: Assembly
 - name: trycycler_consensus
   owner: iuc
   revisions:
+  - 19bdfd1e6fe3
   - 356afed970b4
   - 43af166bc01e
   - 9ded6109434a
@@ -950,6 +1009,7 @@ tools:
   revisions:
   - 4688ae3b49b5
   - 6dd935e4984b
+  - 80a17897564d
   - b23249f81bc4
   - ebd801e712bc
   tool_panel_section_label: Assembly
@@ -960,11 +1020,13 @@ tools:
   - 937ea677d437
   - b5e35a2ca4f3
   - b64696992ee9
+  - cb1e3db43020
   tool_panel_section_label: Assembly
 - name: trycycler_subsample
   owner: iuc
   revisions:
   - 05bd7504fdb2
+  - 2628f6790eda
   - 383bb5ad32e2
   - 6015aa0303f2
   - cb4768eeca3b
@@ -982,10 +1044,16 @@ tools:
   - d10bdad2fd17
   - e9c1cdb9f9dc
   tool_panel_section_label: Assembly
+- name: verkko
+  owner: iuc
+  revisions:
+  - b9a78a7ca2f3
+  tool_panel_section_label: Assembly
 - name: yahs
   owner: iuc
   revisions:
   - 39495e107274
+  - 425e63adcc5d
   - a3a92e30a727
   - d87433f2a54d
   - fc925f53cae7
@@ -997,8 +1065,10 @@ tools:
   - 0a5c785ac6db
   - 3e38c9b3214f
   - 4f7a5ccd2ae9
+  - 589e7e57fd6d
   - 6bb3cd018203
   - 7ab85ac5f64b
+  - a1a923cd89e8
   - a68aa6c1204a
   - b28e0cfa7ba1
   - b8348686a0b9
@@ -1045,6 +1115,7 @@ tools:
   - 33c99804a32f
   - 54ccb7e1f49a
   - 584008e574b2
+  - 72ed72122deb
   - bd46669113b9
   - e525f9ffb9ac
   tool_panel_section_label: Convert Formats
@@ -1146,6 +1217,7 @@ tools:
   owner: iuc
   revisions:
   - 1080e07a2233
+  - 7adddc6015c1
   - b79f6002b176
   - cfea1d6354db
   tool_panel_section_label: Convert Formats
@@ -1193,6 +1265,7 @@ tools:
   - 95219305823a
   - a6ea26c1f225
   - b4e6819b25ef
+  - d82648ad25a3
   - f7094efef903
   tool_panel_section_label: Epigenetics
 - name: moabs
@@ -1332,7 +1405,13 @@ tools:
   owner: iuc
   revisions:
   - 204a131e47db
+  - 425dab0e057b
   - a9c9d768b751
+  tool_panel_section_label: FASTA/FASTQ
+- name: bbtools_bbmerge
+  owner: iuc
+  revisions:
+  - fc029a9b4d07
   tool_panel_section_label: FASTA/FASTQ
 - name: cutadapt
   owner: lparsons
@@ -1344,6 +1423,7 @@ tools:
   - 48f587c13075
   - 4e5056fefd88
   - 5915ea1ec9b1
+  - 8c0175e03cee
   - c053d4cad713
   - c5e2e5902201
   - de6cebe3c043
@@ -1809,6 +1889,11 @@ tools:
   - 81bebc3027fc
   - 953b4821b183
   tool_panel_section_label: FASTA/FASTQ
+- name: fasta_regex_finder
+  owner: mbernt
+  revisions:
+  - 9a811adb714f
+  tool_panel_section_label: FASTA/FASTQ
 - name: gffcompare
   owner: iuc
   revisions:
@@ -1817,6 +1902,7 @@ tools:
   - 3c97c841a443
   - c80cdc2eac6d
   - f99d7825a501
+  - f99dd58de04f
   tool_panel_section_label: Filter and Sort
 - name: xpath
   owner: iuc
@@ -2089,6 +2175,7 @@ tools:
   - 9564758e8638
   - caf213d51d6c
   - e82175804eb1
+  - f9db47f68e5e
   tool_panel_section_label: Get Data
 - name: gdcwebapp
   owner: iuc
@@ -2130,6 +2217,7 @@ tools:
   owner: iuc
   revisions:
   - 1005ffbccd86
+  - b91e1e70f3a1
   - f63cf0adfd87
   tool_panel_section_label: Get Data
 - name: sra_tools
@@ -2138,6 +2226,7 @@ tools:
   - 1790dcf3c32d
   - 26b7446bb17e
   - 494b2ec08162
+  - 4df8de2d0e48
   - 5534eb46de20
   - 5e6237d58b0c
   - 653e89d73fc4
@@ -2181,6 +2270,7 @@ tools:
   - 740057a5126d
   - 7f13dc906cb9
   - a64dc31ab7f2
+  - c4bde687c846
   - df7356989ac1
   - e6cbe3190642
   - fd59d783248a
@@ -2209,6 +2299,7 @@ tools:
   owner: iuc
   revisions:
   - 4955e9bb96d1
+  - 53460afd5115
   - '566197475670'
   - 76380bf74511
   - ca7cb0eaad62
@@ -2249,6 +2340,7 @@ tools:
   - 1acf88921176
   - 1bff6682e780
   - 299307abd804
+  - 3b12bf9b4b87
   - 46f91106439b
   - 5fe1dc76176e
   - 87908c76ca8d
@@ -2356,10 +2448,13 @@ tools:
   owner: iuc
   revisions:
   - 0ea86f6bf2a1
+  - 14e7c35f3d00
   - 2074627b0f83
   - 2824d77cd8f8
   - 326a3db8d9d1
+  - 360df4999907
   - 4ac4e7083b7e
+  - 59fd173ac850
   - 5cec5fb749f0
   - 7dd841a32245
   - a1abfa420d9d
@@ -2845,6 +2940,7 @@ tools:
 - name: schicexplorer_schicadjustmatrix
   owner: iuc
   revisions:
+  - 2e773e00ceb0
   - 799a9fe1265c
   - fad89d56674a
   tool_panel_section_label: HiCExplorer
@@ -2853,29 +2949,34 @@ tools:
   revisions:
   - 36e26166034d
   - a532cbac217a
+  - baa3ae7ac42c
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicclustercompartments
   owner: iuc
   revisions:
   - 0bc84d7d94d4
   - 5426f006d7ed
+  - 54b6cef88a7f
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicclusterminhash
   owner: iuc
   revisions:
   - 1c2e79e9311a
+  - 3048283ee054
   - 68648299ffc4
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicclustersvl
   owner: iuc
   revisions:
   - 7cbd84a1f985
+  - e6ec3914a076
   - eeb26f378f34
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicconsensusmatrices
   owner: iuc
   revisions:
   - 18bdb745b787
+  - 33b1c99cc709
   - 49e3fe550e7e
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schiccorrectmatrices
@@ -2883,10 +2984,12 @@ tools:
   revisions:
   - 104bedd292cd
   - 16dda99bd733
+  - 295558e266d0
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schiccreatebulkmatrix
   owner: iuc
   revisions:
+  - acb3ed49109e
   - ec29352b062f
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicdemultiplex
@@ -2894,27 +2997,32 @@ tools:
   revisions:
   - 649c86cedcb4
   - e59d83af97a1
+  - f224fc9af1d3
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicinfo
   owner: iuc
   revisions:
   - 09f8be8a6e76
   - 35c211c5146d
+  - 41b415c410e3
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicmergematrixbins
   owner: iuc
   revisions:
   - 18ac7f83ae0e
+  - 47ef02546fe9
   - ecae4e42d40a
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicmergetoscool
   owner: iuc
   revisions:
   - 6ffcffed0225
+  - 70a13d0a950f
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicnormalize
   owner: iuc
   revisions:
+  - 66e96c3d3c5d
   - 6eda3d3b562d
   - 7c2387e72aac
   tool_panel_section_label: HiCExplorer
@@ -2922,6 +3030,7 @@ tools:
   owner: iuc
   revisions:
   - 2427c6d8cdd0
+  - 65f2f5d29947
   - 9da580a74230
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicplotconsensusmatrices
@@ -2929,11 +3038,13 @@ tools:
   revisions:
   - 1a1e085c352e
   - 259899fbb6ae
+  - 95b1216e1e70
   tool_panel_section_label: HiCExplorer
 - name: schicexplorer_schicqualitycontrol
   owner: iuc
   revisions:
   - 061a8c076eb1
+  - 4a841ab67e3b
   - 5f2eacae0bb8
   tool_panel_section_label: HiCExplorer
 - name: idr_download_by_ids
@@ -2952,6 +3063,7 @@ tools:
 - name: spyboat
   owner: iuc
   revisions:
+  - 07a85bc414ba
   - 4626a83601d4
   - 639d2031d998
   - 76733d05d8ef
@@ -2975,6 +3087,11 @@ tools:
   - 5bc2dacbe729
   - 7a2a604ae9c8
   tool_panel_section_label: Join, Subtract and Group
+- name: deepmicro
+  owner: iuc
+  revisions:
+  - 77cbfe3e1b0d
+  tool_panel_section_label: Machine Learning
 - name: mcl
   owner: iuc
   revisions:
@@ -2999,6 +3116,7 @@ tools:
   - 6d44c9f1a42b
   - 81cbb6a4c1ca
   - 858a65b52cf9
+  - 9ed6579f52f3
   - e0ca2ec4f5d9
   tool_panel_section_label: Mapping
 - name: bioext_bealign
@@ -3115,6 +3233,7 @@ tools:
   - 77b2770508f6
   - 8c6cd2650d1f
   - b3eab4b67562
+  - be1d967337e4
   - c0c2d0941de8
   - f54f5baedfdd
   tool_panel_section_label: Mapping
@@ -3123,9 +3242,11 @@ tools:
   revisions:
   - 0a563fd2f22e
   - 318b2a9d54dd
+  - 3ea5a2a63fa2
   - 4074fc1940e2
   - 41929aa1e7f3
   - 44959aa06aeb
+  - 4df95e2d7f61
   - 5ec75f5dae3c
   - 7ed2edc1337f
   - 850f3679b9b4
@@ -3133,6 +3254,7 @@ tools:
   - b9e04854e2bb
   - bc685d13b637
   - c772497b2c32
+  - c7c55b694974
   - d5659efd66aa
   - d82339e37e8e
   - e132e7d02a3e
@@ -3141,12 +3263,15 @@ tools:
   owner: iuc
   revisions:
   - 00fbfac99d39
+  - 13022c3d3076
   - 178bdbdb6d24
+  - 1cd2511a396e
   - 3a1253ee137b
   - 58b278def57e
   - 61cb2042581a
   - 79b885ce78d7
   - a6fba3d92531
+  - b8f5f6e87f5c
   - c23da6257d6a
   - e403d27e8f24
   - ec9cbd6b9a49
@@ -3175,17 +3300,41 @@ tools:
 - name: krakentools_kreport2krona
   owner: iuc
   revisions:
+  - 773615269d71
+  - 88d274322340
   - bc508fe30940
+  - d80c0fc14504
+  tool_panel_section_label: Metagenomic Analysis
+- name: krakentools_kreport2mpa
+  owner: iuc
+  revisions:
+  - 93203a7af11b
   tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_beta_diversity
   owner: iuc
   revisions:
+  - 214ece7f1216
+  - 4b32f3b4a851
+  - b33f117e9b67
   - fc2077c654fb
   tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_alpha_diversity
   owner: iuc
   revisions:
+  - 8ac5d5c9a5e4
+  - 9d0330e23bfd
+  - dc7fd9e2d835
   - e400e5ef0e7c
+  tool_panel_section_label: Metagenomic Analysis
+- name: krakentools_combine_kreports
+  owner: iuc
+  revisions:
+  - e0d3f5969458
+  tool_panel_section_label: Metagenomic Analysis
+- name: krakentools_extract_kraken_reads
+  owner: iuc
+  revisions:
+  - 519e0835abd7
   tool_panel_section_label: Metagenomic Analysis
 - name: aldex2
   owner: iuc
@@ -3309,6 +3458,7 @@ tools:
   revisions:
   - 19035a7b1106
   - 79450f7fd718
+  - 978ae4147c29
   - b08ac10aed96
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_add_names
@@ -3316,28 +3466,33 @@ tools:
   revisions:
   - 13192095fd5a
   - 8dfc90f35aba
+  - acd9fe45eb81
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_bins
   owner: iuc
   revisions:
   - 0094893f5001
   - 18676df0cb3a
+  - 31853794ace2
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_contigs
   owner: iuc
   revisions:
   - 11a61934bfb3
+  - 7aebc0137f20
   - c6c77d840993
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_prepare
   owner: iuc
   revisions:
   - 8315b5cebb82
+  - a40bbd70b8b1
   - b6c5e7343617
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_summarise
   owner: iuc
   revisions:
+  - 388e6678fa98
   - 7f1aaa1932d8
   - db1360aae489
   tool_panel_section_label: Metagenomic Analysis
@@ -3445,12 +3600,16 @@ tools:
 - name: coverm_contig
   owner: iuc
   revisions:
+  - 688a777e1b19
   - 6941d0d453ba
+  - f8cb3f0a19fa
   tool_panel_section_label: Metagenomic Analysis
 - name: coverm_genome
   owner: iuc
   revisions:
   - 134e4e78e754
+  - 5bf5792b0996
+  - a671907f96fe
   tool_panel_section_label: Metagenomic Analysis
 - name: customize_metaphlan_database
   owner: iuc
@@ -3458,9 +3617,12 @@ tools:
   - 025b0113ee97
   - 150ebe4d0fd9
   - 4212f20315e5
+  - 46fc97bb98f9
   - 487da152fb43
   - 892a0629e2ed
   - a6c3f4f439f7
+  - b18594e1a514
+  - f93a61ef06cf
   tool_panel_section_label: Metagenomic Analysis
 - name: dada2_assigntaxonomyaddspecies
   owner: iuc
@@ -3573,27 +3735,36 @@ tools:
   owner: iuc
   revisions:
   - 3c7d2c84cb09
+  - 5c8a23ccb14a
+  - c8136920948b
   - fd5830f88314
 - name: amrfinderplus_data_manager_build
   owner: iuc
   revisions:
+  - 592ef3959907
   - eea0c38a9afd
 - name: data_manager_bakta
   owner: iuc
   revisions:
   - a19189a128cb
+  - adfd6bf710bd
+  - bb463043c93e
 - name: drep_compare
   owner: iuc
   revisions:
   - 54aa421c2911
   - 7157accd23d0
+  - 965f73e77296
+  - d99788b71ce7
   - ef1c257adcbd
   tool_panel_section_label: Metagenomic Analysis
 - name: drep_dereplicate
   owner: iuc
   revisions:
+  - 1faea6e8c92b
   - 368cb4bef9d8
   - 8dfcdbeaeed8
+  - a0713a10c9f6
   - ef7cd2e7bc05
   tool_panel_section_label: Metagenomic Analysis
 - name: dram_strainer
@@ -3625,7 +3796,10 @@ tools:
   owner: iuc
   revisions:
   - 1aaa9b943a83
+  - 2e38deed28ee
   - 5b2f8b6a3609
+  - 5eccd3d336a3
+  - 6efa06ffbac8
   - 97ad0d817a45
   - b4c750fe0fe3
   - b6ecdfac241f
@@ -3651,8 +3825,11 @@ tools:
 - name: humann
   owner: iuc
   revisions:
+  - 037c0b25c041
+  - 2cd76b089570
   - 65c80ca30373
   - 6b7622dda516
+  - 95bf7479d53c
   tool_panel_section_label: Metagenomic Analysis
 - name: humann2
   owner: iuc
@@ -3756,74 +3933,110 @@ tools:
   owner: iuc
   revisions:
   - 10fdefbf5920
+  - 593e19128c58
+  - 5ae955d5bd2b
   - 67b835aace09
+  - fbc22270a6ff
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_barplot
   owner: iuc
   revisions:
+  - 0cd140dfdecf
   - 3f16956afb8a
   - 5240d62d864d
   - 79698158a59c
+  - 90a69c4a4aca
+  - d76a22ed5e5b
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_join_tables
   owner: iuc
   revisions:
+  - 6c3271894a95
+  - a060a76c3a13
   - cb7de6e163ca
   - cf7f80d59099
+  - fd7ebf31b030
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_reduce_table
   owner: iuc
   revisions:
   - 324c12894d59
+  - 7ebfd8d889b9
+  - b12ca05dce87
   - c2488dbc8e39
+  - d122106c317f
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_regroup_table
   owner: iuc
   revisions:
   - 26ce946f4da9
+  - 31c6d107e7a5
+  - 79706f10d680
+  - b7d324b18be1
   - c409a495841f
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_rename_table
   owner: iuc
   revisions:
+  - 172920f67a84
+  - 714d5a28cc5c
   - 71ea608ddfa3
   - d24841f5c3d2
+  - e217b0e10b36
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_renorm_table
   owner: iuc
   revisions:
+  - 12fb63b5f63f
   - 4137b492233e
+  - a4d7148ccee4
+  - d7e9a3c41657
   - e3391ccf21a0
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_rna_dna_norm
   owner: iuc
   revisions:
   - 1e55949cf16e
+  - 36b8a9ed5ecb
+  - 44a27841ca50
+  - 6795edeb923a
   - ec422794133f
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_split_stratified_table
   owner: iuc
   revisions:
+  - 64bc7acc22a9
+  - 6fcb8ac37a3e
   - 75bedfb2078b
+  - cf87759761eb
   - e2c71b852aba
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_split_table
   owner: iuc
   revisions:
+  - 44cacbe09bfc
   - 506d4a349aa1
+  - b31ed52f36f4
+  - cc6a10100a14
   - f00f2c835ac2
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_strain_profiler
   owner: iuc
   revisions:
   - 0ff86e44895c
+  - 18481a7c3676
+  - 4704c16a2931
   - 9540860a506f
+  - e1f89068ee3a
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_unpack_pathways
   owner: iuc
   revisions:
+  - 080ea153677c
   - 4033827c76b8
+  - 5e5a999ffaa9
   - c3d043160f09
+  - c82508e76ad1
   tool_panel_section_label: Metagenomic Analysis
 - name: instrain_compare
   owner: iuc
@@ -3911,7 +4124,9 @@ tools:
 - name: kleborate
   owner: iuc
   revisions:
+  - 374b2e9ade86
   - '383036561810'
+  - 959920e3e800
   tool_panel_section_label: Metagenomic Analysis
 - name: kraken
   owner: devteam
@@ -4071,12 +4286,15 @@ tools:
 - name: merge_metaphlan_tables
   owner: iuc
   revisions:
+  - 0270541aaf46
   - 27250f92a01a
   - 27258eb73f0c
   - 2e5ae05160e0
   - 3f05bf162005
+  - 4fd3b5d8706b
   - ab1a9a932182
   - cd298ff669fd
+  - e073891b2afc
   tool_panel_section_label: Metagenomic Analysis
 - name: metabat2
   owner: iuc
@@ -4102,10 +4320,13 @@ tools:
 - name: metaphlan
   owner: iuc
   revisions:
+  - 1a6cdf55390f
+  - 2131d7dca455
   - 6dee4abadccb
   - a16313517e55
   - a92a632c4d9b
   - b89b0765695d
+  - ec368db926f4
   - f5df500fcc3c
   - ff8f55893e7d
   tool_panel_section_label: Metagenomic Analysis
@@ -4134,6 +4355,7 @@ tools:
   owner: iuc
   revisions:
   - bda6012394f7
+  - ea270d0ad0e6
   tool_panel_section_label: Metagenomic Analysis
 - name: poisson2test
   owner: devteam
@@ -4160,32 +4382,38 @@ tools:
 - name: semibin
   owner: iuc
   revisions:
+  - 6b517dc161e4
   - 7b382efabb98
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_bin
   owner: iuc
   revisions:
   - 474701f91bcd
+  - 4d561bdc2c31
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_concatenate_fasta
   owner: iuc
   revisions:
   - dcc81bfe5f6a
+  - e6bc3455940e
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_generate_cannot_links
   owner: iuc
   revisions:
   - 078414a1226b
+  - 5ae13a156271
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_generate_sequence_features
   owner: iuc
   revisions:
   - 07bf5268724f
+  - 0ae1a2636de5
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_train
   owner: iuc
   revisions:
   - 08cc1cd58f38
+  - 43df7a4c33a2
   tool_panel_section_label: Metagenomic Analysis
 - name: srst2
   owner: iuc
@@ -5789,6 +6017,7 @@ tools:
   owner: iuc
   revisions:
   - 204a131e47db
+  - 425dab0e057b
   - a9c9d768b751
   tool_panel_section_label: NCBI Blast
 - name: diamond
@@ -5926,6 +6155,7 @@ tools:
 - name: nanoplot
   owner: iuc
   revisions:
+  - 0f1c34698076
   - 4c172a4a4c9e
   - 645159bcee2d
   - a3c4fe6f49ab
@@ -6118,6 +6348,7 @@ tools:
   - 5f2ca10db92a
   - 6a457678efcb
   - 81e66674859e
+  - '841557158611'
   - 8834daeb9892
   - a6619171428e
   - b89cac5156ec
@@ -6136,6 +6367,7 @@ tools:
   - 0cd45491b297
   - 2318841ec191
   - 68cd2d8e3840
+  - 91cf1290ba6f
   - a88848771d2d
   - ad5901c44e66
   - e6009f23582c
@@ -6156,6 +6388,7 @@ tools:
   - 1df765cc6bcb
   - 26ad9a6b1293
   - 31e1a5940620
+  - 35723f87964d
   - 373afb209788
   - 4515f2f64e13
   - 5b6b8b08f1a9
@@ -6206,6 +6439,7 @@ tools:
   - d09dd951d0c4
   - d6389faa75ff
   - d723b65a4291
+  - e908c4003bd8
   - e931e69b5a80
   - eb26b02af55a
   - f9a193154a55
@@ -6217,6 +6451,7 @@ tools:
   - 4d712e32039e
   - 5b63871000c9
   - 643be54bef90
+  - 6960dd62c983
   - 710fdaa85384
   - 7a86c37f66d1
   - 91679ca1480d
@@ -6232,6 +6467,7 @@ tools:
   - 3ea647006f17
   - 6569d04885e5
   - 6761212b7f1d
+  - beeeed9665ea
   - c1d24ff838c8
   - e98d40478b3e
   - f6e7b5955712
@@ -6263,6 +6499,7 @@ tools:
   - c16dd6b14657
   - c257fa0a98a7
   - c6355a5b0483
+  - cf51d3630757
   - d55ab4b13106
   - d71d20c0ac09
   - e7be036f1616
@@ -6299,6 +6536,7 @@ tools:
   - d968c5dddfeb
   - e15ef3031bf9
   - e961403fdba3
+  - ec783806a5c3
   - f40d481b7c8b
   - fc50c4bac0a3
   tool_panel_section_label: Phylogenetics
@@ -6308,6 +6546,7 @@ tools:
   - 099fc3ec12d2
   - 0f108ee932ea
   - 1278a55205e5
+  - 1b893cdead55
   - 271afda54a6d
   - '296409764676'
   - 3285fd1f4bde
@@ -6348,6 +6587,7 @@ tools:
   - 42efcb0955e6
   - 45d39a499816
   - 4755f52427c4
+  - 5b777002c2de
   - 5fcd1ece3a6e
   - 6223845127ea
   - 6283babe736e
@@ -6382,6 +6622,7 @@ tools:
   - 546f2f99b820
   - 5b380f4dbf1c
   - 5d8389d684bf
+  - 5fd8dc04d6af
   - 6433eab14244
   - 74b590fdc6a0
   - 7b3f9c78cf6d
@@ -6415,6 +6656,7 @@ tools:
   - 82665e97c156
   - 840b5fec0de9
   - 8f66e659530b
+  - 9d83d1ab0330
   - 9f566d869e2f
   - a61b2b6c7089
   - a8f760e7c322
@@ -6443,6 +6685,7 @@ tools:
   - 4d13ff4556da
   - 4e9485eb5e9d
   - 551616a65f8f
+  - 5eb9d7217640
   - 63f85ef1a3d5
   - 6a6300b42803
   - 6dd3c73bd80a
@@ -6471,6 +6714,7 @@ tools:
   - 232bd7cd4639
   - 24742f335426
   - 25782236e47e
+  - 2753a5c7597a
   - 365e33adf3a4
   - 36a50b938d70
   - 382b8cd86c0e
@@ -6521,6 +6765,7 @@ tools:
   - 86e10267b4cc
   - 87dd1c1c84d1
   - 92ef8f2da655
+  - a809f93e7e6d
   - a96a307afb40
   - ae7c42d49717
   - c102811766ef
@@ -6531,6 +6776,7 @@ tools:
   owner: iuc
   revisions:
   - 193dcaef2169
+  - 31e7f5a25db3
   - 4bf743518e41
   - 4e3212e05a8f
   - 50554f806e16
@@ -6546,6 +6792,7 @@ tools:
   - 11dd1a96ffe9
   - 11fc6218365d
   - 37887c2733a3
+  - 4e7f1a7d18be
   - 81b23515db14
   - bd90215b7d15
   - d7c01f81739b
@@ -6595,6 +6842,7 @@ tools:
 - name: pangolin
   owner: iuc
   revisions:
+  - 03ed9524dcd1
   - 0ec813ad2910
   - 14ae456b8cc5
   - 2fa9d4f1b48f
@@ -6625,6 +6873,41 @@ tools:
   - 034f76ead49a
   - 2bf47d57ebb5
   - 850e213bee26
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_add_descriptions
+  owner: iuc
+  revisions:
+  - 6034c3f3ecf0
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_hsp
+  owner: iuc
+  revisions:
+  - 6eafc1e01a8c
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_metagenome_pipeline
+  owner: iuc
+  revisions:
+  - 415cb5d91168
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_pathway_pipeline
+  owner: iuc
+  revisions:
+  - 6077821e8ae7
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_pipeline
+  owner: iuc
+  revisions:
+  - 540aedfc81c7
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_place_seqs
+  owner: iuc
+  revisions:
+  - 680fb3eb574c
+  tool_panel_section_label: Phylogenetics
+- name: picrust2_shuffle_predictions
+  owner: iuc
+  revisions:
+  - 881f2faa5fe7
   tool_panel_section_label: Phylogenetics
 - name: raxml
   owner: iuc
@@ -6676,6 +6959,7 @@ tools:
   - 1aac2a13842a
   - 1cd1cf786389
   - 2a17c789e0a5
+  - 585027e65f3b
   - 6f9c0884a3e7
   - 7d34178f2812
   - 881d7645d1bf
@@ -6750,6 +7034,7 @@ tools:
   owner: iuc
   revisions:
   - 0c741f364d18
+  - 38ecfb8d52c6
   - 6eaf0f9836c8
   - b08cd32d03ad
   - bc108981ca68
@@ -6758,6 +7043,7 @@ tools:
 - name: stacks_cstacks
   owner: iuc
   revisions:
+  - 40cde06ae34a
   - 5bd1418f4227
   - be3df81c0353
   - dab92afa0c98
@@ -6769,6 +7055,7 @@ tools:
   - 9f9d39f582f3
   - b8827c571fbd
   - eb1e95f88e96
+  - fdbcc560c691
   tool_panel_section_label: RAD-seq
 - name: stacks_genotypes
   owner: iuc
@@ -6776,6 +7063,7 @@ tools:
   - 00f4a4e553ae
   - 46f061f3cfeb
   - 5af94af9ec8f
+  - 62a4b8e5e139
   - dbe3901aace2
   tool_panel_section_label: RAD-seq
 - name: stacks_populations
@@ -6784,6 +7072,7 @@ tools:
   - 45db1ba16163
   - 47e83073b7a1
   - 95286af4139b
+  - d1fad35bdb4a
   - d504d945a655
   tool_panel_section_label: RAD-seq
 - name: stacks_procrad
@@ -6793,6 +7082,7 @@ tools:
   - 5d12647ff71f
   - 8fe258d72ff3
   - be78e39d56b3
+  - eded025438db
   tool_panel_section_label: RAD-seq
 - name: stacks_pstacks
   owner: iuc
@@ -6800,6 +7090,7 @@ tools:
   - 0f16a6c30085
   - 67cbd80b83f5
   - 7ebc7d229deb
+  - a9ff3d0184b8
   - ede5223bc7f1
   tool_panel_section_label: RAD-seq
 - name: stacks_refmap
@@ -6809,6 +7100,7 @@ tools:
   - 4ee074ca88fb
   - 7c42e6768c41
   - ba76bd1eef47
+  - d7a482f44e08
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks
   owner: iuc
@@ -6816,6 +7108,7 @@ tools:
   - 2360d8cf42f7
   - 3e43e51b3c3b
   - 77f5db795774
+  - 8479d9a67998
   - 9d0ac63dcfcd
   tool_panel_section_label: RAD-seq
 - name: stacks_sstacks
@@ -6823,12 +7116,14 @@ tools:
   revisions:
   - 563af4497055
   - 95e37a28704b
+  - 96de7538bf0c
   - e38d181d4e72
   - e880ddd2d8fa
   tool_panel_section_label: RAD-seq
 - name: stacks_ustacks
   owner: iuc
   revisions:
+  - 4cce81af50a8
   - a4ec4f620a77
   - b6de94f2edc0
   - c2e3eca527c2
@@ -6837,6 +7132,7 @@ tools:
 - name: arriba
   owner: iuc
   revisions:
+  - 3d61a698e5e1
   - 4f1efcc055d5
   - a24ca22b906e
   - add230dddd52
@@ -6846,6 +7142,7 @@ tools:
   owner: iuc
   revisions:
   - 2d4e3aff9dc7
+  - 31f8063eedea
   - 68ff8cd874db
   - 765e685641ce
   - cf18a5993aa2
@@ -6855,6 +7152,7 @@ tools:
   revisions:
   - 125d20cb23d7
   - 1fe9d667447c
+  - 32e542c2a773
   - 47311adce34e
   - acbda5dc6955
   tool_panel_section_label: RNA Analysis
@@ -6873,11 +7171,13 @@ tools:
   owner: iuc
   revisions:
   - 5dd6b8c4ee1e
+  - cef4148ac5f2
   tool_panel_section_label: RNA Analysis
 - name: cherri_train
   owner: iuc
   revisions:
   - 2f7daa5d2d82
+  - a30b9df1775a
   - ed0efb924438
   tool_panel_section_label: RNA Analysis
 - name: chira_collapse
@@ -7095,6 +7395,7 @@ tools:
   - 62adf13b86ea
   - 9fd8b69e6e68
   - b47c006d90c5
+  - df929f257179
   - f1c406f9554c
   - f89c9b25feb4
   tool_panel_section_label: RNA Analysis
@@ -7128,10 +7429,12 @@ tools:
   revisions:
   - 1759d845181e
   - 38b6d12edc68
+  - 6f66ae7c5f7a
   - 7db9d3ea71c9
   - 90d16db017d7
   - 9301937c9037
   - a37612abf7f9
+  - a56fbe2d6ba7
   - af814359d244
   - c7bd0cc53524
   - ce44c6f2ba38
@@ -7177,6 +7480,11 @@ tools:
   revisions:
   - d3ebbf39b1c5
   - de7795890bc5
+  tool_panel_section_label: RNA Analysis
+- name: isoformswitchanalyzer
+  owner: iuc
+  revisions:
+  - 02a77166b29a
   tool_panel_section_label: RNA Analysis
 - name: kallisto_pseudo
   owner: iuc
@@ -7274,11 +7582,13 @@ tools:
   owner: nilesh
   revisions:
   - 1421603cc95b
+  - 473382134e56
   - 5968573462fa
   tool_panel_section_label: RNA Analysis
 - name: ruvseq
   owner: iuc
   revisions:
+  - 3a083c78896e
   - 61dffb20b6f9
   - c24765926774
   - d1f7fa5bb3cb
@@ -7366,6 +7676,7 @@ tools:
   - 62d212192002
   - 6e45b443ef1f
   - 914cfcba0ec8
+  - ae618321f34a
   - cef79931dda5
   - dd4df992d93d
   - eba36e001f45
@@ -7402,6 +7713,7 @@ tools:
   - 48636f857c4b
   - 5b60313a6ce7
   - 606b7748965d
+  - 77cf519a812e
   - c9cfec002f71
   - ca0588b09438
   - d2bc35f3d1c5
@@ -7421,6 +7733,7 @@ tools:
   - 59fff1388bc2
   - 77fc547df6ff
   - 81a4697677e7
+  - a009c96c5c18
   - bcc5f03f1900
   - cdde9062b49c
   - d6a479fd4281
@@ -7433,6 +7746,7 @@ tools:
   - 56162e446004
   - 6c20d62180af
   - 6d6b72d14170
+  - 75f4e1859ed7
   - 893655fa55f9
   - 983552d5822d
   - a21e229da9a1
@@ -7448,6 +7762,7 @@ tools:
   - 34840e9c79b0
   - 34a018cbee9c
   - 3cdcd5753218
+  - 41db7569b4ba
   - 62b05e565a45
   - 8fed16891aaf
   - afa3a9786339
@@ -7466,6 +7781,7 @@ tools:
   - 6821f5ea01d8
   - 7bd8f4770cec
   - a5ec0e79a93a
+  - aa38fa8c5815
   - b10270739c1b
   - e406ac71165d
   - e659504d166c
@@ -7474,6 +7790,7 @@ tools:
   owner: iuc
   revisions:
   - 964b7efe2639
+  - ba460ccf0006
   tool_panel_section_label: RNA Analysis
 - name: trinity_run_de_analysis
   owner: iuc
@@ -7486,6 +7803,7 @@ tools:
   - 55cf05b65ad5
   - ab87da55fe61
   - bbbb39ad9a7e
+  - c63338cf419f
   - eafea3083352
   - f3924bd07cba
   - fd588e138aa6
@@ -7496,6 +7814,7 @@ tools:
   - 15f60c2e2d78
   - 18a069ea4b96
   - 29472bde8854
+  - 3064aa8755a0
   - 3abd51c4b151
   - 64094e19077d
   - 6723249ce1bd
@@ -7578,6 +7897,7 @@ tools:
   - 0a7b0989fa09
   - 71dd32fb0b0a
   - 9676127a1ed2
+  - 96c9315b0e29
   - e2c1b62e1db1
   tool_panel_section_label: SAM/BAM
 - name: bamtools_split_mapped
@@ -7753,6 +8073,7 @@ tools:
   - 8c440c3002bc
   - a312a0fdaf31
   - b5527cc104ab
+  - ce32171c6d44
   - d0a568e1904b
   tool_panel_section_label: SAM/BAM
 - name: samtools_merge
@@ -7890,6 +8211,12 @@ tools:
   - d147d6455873
   - e1b3b37aa69f
   tool_panel_section_label: Send Data
+- name: velocyto_cli
+  owner: iuc
+  revisions:
+  - 7d8cafa4d18c
+  - 883c33ef3372
+  tool_panel_section_label: Single-cell
 - name: cite_seq_count
   owner: iuc
   revisions:
@@ -8202,6 +8529,34 @@ tools:
   - 99f912d5af9f
   - a30f4bfe8f01
   tool_panel_section_label: Single-cell
+- name: sinto_barcode
+  owner: iuc
+  revisions:
+  - d1b34ac42b8f
+  tool_panel_section_label: Single-cell
+- name: sinto_fragments
+  owner: iuc
+  revisions:
+  - 29e6bfb2cf49
+  tool_panel_section_label: Single-cell
+- name: episcanpy_build_matrix
+  owner: iuc
+  revisions:
+  - 1bf008d6d54e
+  - 31a21ba2c5ea
+  tool_panel_section_label: Single-cell
+- name: episcanpy_preprocess
+  owner: iuc
+  revisions:
+  - 29f5f25b9935
+  - 8ba672d0d8aa
+  tool_panel_section_label: Single-cell
+- name: episcanpy_cluster_embed
+  owner: iuc
+  revisions:
+  - 7340d619d7f8
+  - f4713992f23a
+  tool_panel_section_label: Single-cell
 - name: best_regression_subsets
   owner: devteam
   revisions:
@@ -8512,6 +8867,7 @@ tools:
 - name: bbtools_callvariants
   owner: iuc
   revisions:
+  - 8eace8923202
   - b955346ef41e
   - d1912018a603
   tool_panel_section_label: Variant Calling
@@ -8833,11 +9189,77 @@ tools:
   owner: iuc
   revisions:
   - 553b27c30eb8
+  - f75bf16ac901
   tool_panel_section_label: Variant Calling
 - name: breseq
   owner: iuc
   revisions:
   - 0d18a3ba2d1c
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_access
+  owner: iuc
+  revisions:
+  - 22878d2aff05
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_antitarget
+  owner: iuc
+  revisions:
+  - 98086253a782
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_autobin
+  owner: iuc
+  revisions:
+  - fff49e30af46
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_batch
+  owner: iuc
+  revisions:
+  - e3bbe8171af9
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_call
+  owner: iuc
+  revisions:
+  - cc56d01a0b36
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_coverage
+  owner: iuc
+  revisions:
+  - 283ab3112eea
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_diagram
+  owner: iuc
+  revisions:
+  - 9d18753f47b4
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_fix
+  owner: iuc
+  revisions:
+  - f64acbe71392
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_heatmap
+  owner: iuc
+  revisions:
+  - ff6b3f5a7ffb
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_reference
+  owner: iuc
+  revisions:
+  - 83470ecad188
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_scatter
+  owner: iuc
+  revisions:
+  - ec9731970f8b
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_segment
+  owner: iuc
+  revisions:
+  - 9d9a8f230a2f
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_target
+  owner: iuc
+  revisions:
+  - 0350116f0c25
   tool_panel_section_label: Variant Calling
 - name: control_freec
   owner: iuc
@@ -8855,6 +9277,7 @@ tools:
   owner: iuc
   revisions:
   - 7608209110d3
+  - 918c8b94c8d8
   - 98fe794d2ec0
   - b778a18bd878
   tool_panel_section_label: Variant Calling
@@ -8915,6 +9338,7 @@ tools:
   - 27fd1c1f00a8
   - 7303183cdb87
   - b43df0ce6c87
+  - ff0a8cda0c0b
   tool_panel_section_label: Variant Calling
 - name: freebayes
   owner: devteam
@@ -9064,6 +9488,7 @@ tools:
   owner: iuc
   revisions:
   - 30079fa4e2fd
+  - b1ca9fce4749
   - e3862632706d
   - fb00426402b0
   tool_panel_section_label: Variant Calling
@@ -9521,6 +9946,7 @@ tools:
 - name: ivar_consensus
   owner: iuc
   revisions:
+  - 1069f6db0a0e
   - 2d9926ce62be
   - 3e4f434a69c6
   - 5e668dc9f379
@@ -9531,12 +9957,15 @@ tools:
   - d1459d85ff18
   - d6e72da3ec35
   - e319b5b65879
+  - e4ee04da1c19
+  - ede363a64152
   - f362150bef41
   tool_panel_section_label: Virology
 - name: ivar_filtervariants
   owner: iuc
   revisions:
   - 0135f1d487a0
+  - 096a5b0210cc
   - 2b95d5c04908
   - 2c47c138176e
   - 47a27906d750
@@ -9544,6 +9973,8 @@ tools:
   - 51afc8a64951
   - 72ddd32392cd
   - 7fe36019c073
+  - 8f8df367470d
+  - 9537184d421f
   - b93845a04cc8
   - c88553ec696e
   - f91cfb73d369
@@ -9562,24 +9993,29 @@ tools:
   - 28a6f1908fcc
   - 3d18f8c3c0f6
   - 43aac8d29685
+  - 6a1515bb0687
   - 75c279fa403a
   - 7f1cfa4c0e32
+  - 8c05afb547fa
   - 8d36959b000d
   - 94df24c6bc00
   - 9eaadf03e0df
   - bd2a7d1316b9
   - ee29337f905c
   - ee2beb764a7b
+  - f57ce5d5c997
   tool_panel_section_label: Virology
 - name: ivar_trim
   owner: iuc
   revisions:
+  - 28e4bcbc86e7
   - 364f4ffec275
   - 397e5f0eb3ef
   - 5671e1d3d5ee
   - 5d6ed46cc101
   - 8858fa037a15
   - 9f978da6528a
+  - a2b94388d00d
   - c092052ed673
   - cb903c9dc33d
   - cf65217ad61c
@@ -9591,15 +10027,18 @@ tools:
   owner: iuc
   revisions:
   - 12d66d0d05ac
+  - 230b05597996
   - 252dfb042563
   - 3888bbe7a9ca
   - 38b91a3190cd
+  - 3b6a16d82c1b
   - 49236b03e4fd
   - 584beffa972b
   - aa9de8f20668
   - aea7008fe1f1
   - c5c9f02b6167
   - e1a015876aa9
+  - ed28dd32141c
   - f95f403841ad
   tool_panel_section_label: Virology
 - name: read_it_and_keep
@@ -9618,9 +10057,11 @@ tools:
   owner: iuc
   revisions:
   - 9002633b4737
+  - ed1518ce2237
 - name: data_manager_diamond_database_builder
   owner: iuc
-  revisions: []
+  revisions:
+  - 4a08b7b76b78
 - name: data_manager_funannotate
   owner: iuc
   revisions:
@@ -9632,8 +10073,10 @@ tools:
 - name: data_manager_humann_database_downloader
   owner: iuc
   revisions:
+  - 19bbd19b74b3
   - 60eb2512c5a0
   - 87febc68b45b
+  - fea85c467896
 - name: data_manager_interproscan
   owner: iuc
   revisions:
@@ -9647,6 +10090,8 @@ tools:
 - name: data_manager_metaphlan_database_downloader
   owner: iuc
   revisions:
+  - 4ba60cb14cb0
+  - 5fe20c915fa6
   - 9c43baa60906
 - name: data_manager_nextclade
   owner: iuc
@@ -9669,21 +10114,28 @@ tools:
   owner: iuc
   revisions:
   - 1439dface5bf
+- name: data_manager_pharokka
+  owner: iuc
+  revisions:
+  - 97f310b8e308
 - name: deeptools_alignmentsieve
   owner: bgruening
   revisions:
   - 6531acf8209f
+  - d8c919d26d0e
   - e5a296ce8fbb
   tool_panel_section_label: deepTools
 - name: deeptools_bam_compare
   owner: bgruening
   revisions:
   - c89b665b45e4
+  - de72ba3ed6f2
   - e821645ef8fc
   tool_panel_section_label: deepTools
 - name: deeptools_bam_coverage
   owner: bgruening
   revisions:
+  - 12af64f93288
   - 4df95152a39e
   - bb1e4f63e0e6
   tool_panel_section_label: deepTools
@@ -9692,12 +10144,14 @@ tools:
   revisions:
   - 3f9dc453c0e8
   - 62eb6d63f582
+  - 7c1beb6d6eca
   tool_panel_section_label: deepTools
 - name: deeptools_bigwig_compare
   owner: bgruening
   revisions:
   - 26e7304d6737
   - 7989c6ddf634
+  - a67ac707496a
   tool_panel_section_label: deepTools
 - name: deeptools_compute_gc_bias
   owner: bgruening
@@ -9710,10 +10164,12 @@ tools:
   revisions:
   - 19bb3e6d9e31
   - 514fa53b5efb
+  - 9470f29702f8
   tool_panel_section_label: deepTools
 - name: deeptools_compute_matrix_operations
   owner: bgruening
   revisions:
+  - 7e6bcd2e5128
   - be95d48dd27f
   - ee3a1b0f45f1
   tool_panel_section_label: deepTools
@@ -9722,15 +10178,18 @@ tools:
   revisions:
   - 00a71ff7c06b
   - 2c37ce318bc3
+  - ca0616bb2cdf
   tool_panel_section_label: deepTools
 - name: deeptools_estimatereadfiltering
   owner: bgruening
   revisions:
   - 71082dac170c
+  - bd1f40ce9769
   tool_panel_section_label: deepTools
 - name: deeptools_multi_bam_summary
   owner: bgruening
   revisions:
+  - 004aea905d4d
   - 78f405266706
   - b4e53394fced
   tool_panel_section_label: deepTools
@@ -9739,12 +10198,14 @@ tools:
   revisions:
   - 3c9f0c486cca
   - 459cfa861f0b
+  - d580d6acd1df
   tool_panel_section_label: deepTools
 - name: deeptools_plot_correlation
   owner: bgruening
   revisions:
   - 32e451def88c
   - e44978659400
+  - fd408d755394
   tool_panel_section_label: deepTools
 - name: deeptools_plot_coverage
   owner: bgruening
@@ -9756,12 +10217,14 @@ tools:
   owner: bgruening
   revisions:
   - 88ce7fed1488
+  - b1779366c8e9
   - e65d16fb2724
   tool_panel_section_label: deepTools
 - name: deeptools_plot_fingerprint
   owner: bgruening
   revisions:
   - 2da482e408b8
+  - 793665fff0f8
   - ca8a7f0ea872
   tool_panel_section_label: deepTools
 - name: deeptools_plot_heatmap
@@ -9769,16 +10232,19 @@ tools:
   revisions:
   - 42cb23d80271
   - a4dfb122e52b
+  - ba6efa77fb79
   tool_panel_section_label: deepTools
 - name: deeptools_plot_pca
   owner: bgruening
   revisions:
   - 69264da0ce77
   - 7784523d9743
+  - c899e0ccff8c
   tool_panel_section_label: deepTools
 - name: deeptools_plot_profile
   owner: bgruening
   revisions:
+  - a2d70c4fd406
   - c361b12d207a
   - e9429e484e25
   tool_panel_section_label: deepTools

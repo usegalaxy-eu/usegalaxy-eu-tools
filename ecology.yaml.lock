@@ -138,12 +138,14 @@ tools:
 - name: cb_div
   owner: ecology
   revisions:
+  - 5b31641e6d30
   - abc8da8c12ba
   tool_panel_section_label: Biodiversity data exploration
 - name: cb_dissim
   owner: ecology
   revisions:
   - 7e6cc3da1189
+  - 8dc082da41c1
   - ffaa9a71b2d2
   tool_panel_section_label: Biodiversity data exploration
 - name: cb_ivr
@@ -151,6 +153,7 @@ tools:
   revisions:
   - 8c6142630659
   - b67730406f1b
+  - bcbad4f83dec
   tool_panel_section_label: Biodiversity data exploration
 - name: sample_seqs
   owner: peterjc
@@ -166,6 +169,7 @@ tools:
   owner: iuc
   revisions:
   - 419027d822d6
+  - 4c07ddedc198
   - 562f3c677828
   - 746e8e4bf929
   tool_panel_section_label: Join, Subtract and Group
@@ -174,12 +178,14 @@ tools:
   revisions:
   - 0f1724dd59d2
   - 17e3b698dd52
+  - b8a457820315
   - f198773344e4
   tool_panel_section_label: Join, Subtract and Group
 - name: datamash_transpose
   owner: iuc
   revisions:
   - 22c2a1ac7ae3
+  - 374cb875d38a
   - ac092723240d
   - ba0c40780ecf
   tool_panel_section_label: Join, Subtract and Group
@@ -482,9 +488,12 @@ tools:
   owner: iuc
   revisions:
   - 0ea86f6bf2a1
+  - 14e7c35f3d00
   - 2824d77cd8f8
   - 326a3db8d9d1
+  - 360df4999907
   - 4ac4e7083b7e
+  - 59fd173ac850
   - 5cec5fb749f0
   - 7dd841a32245
   - a1abfa420d9d
@@ -518,6 +527,7 @@ tools:
 - name: ggplot2_heatmap2
   owner: iuc
   revisions:
+  - 53460afd5115
   - '566197475670'
   - ca7cb0eaad62
   tool_panel_section_label: Graph/Display Data
@@ -526,6 +536,7 @@ tools:
   revisions:
   - 1acf88921176
   - 299307abd804
+  - 3b12bf9b4b87
   - 5fe1dc76176e
   - 87908c76ca8d
   - 9cec81e1b90e
@@ -771,6 +782,7 @@ tools:
   revisions:
   - 209b7c5ee9d7
   - 399da6b5ec21
+  - 503bcd6ebe4b
   - ae8c4b2488e7
   tool_panel_section_label: Text Manipulation
 - name: regex_replace
@@ -1067,6 +1079,7 @@ tools:
 - name: stacks_ustacks
   owner: iuc
   revisions:
+  - 4cce81af50a8
   - a4ec4f620a77
   - b6de94f2edc0
   - e5c97f09fe06
@@ -1074,6 +1087,7 @@ tools:
 - name: stacks_cstacks
   owner: iuc
   revisions:
+  - 40cde06ae34a
   - be3df81c0353
   - dab92afa0c98
   - ff1f282d731e
@@ -1083,6 +1097,7 @@ tools:
   revisions:
   - 563af4497055
   - 95e37a28704b
+  - 96de7538bf0c
   - e38d181d4e72
   tool_panel_section_label: RAD-seq
 - name: stacks_pstacks
@@ -1090,6 +1105,7 @@ tools:
   revisions:
   - 67cbd80b83f5
   - 7ebc7d229deb
+  - a9ff3d0184b8
   - ede5223bc7f1
   tool_panel_section_label: RAD-seq
 - name: stacks_genotypes
@@ -1098,12 +1114,14 @@ tools:
   - 00f4a4e553ae
   - 46f061f3cfeb
   - 5af94af9ec8f
+  - 62a4b8e5e139
   tool_panel_section_label: RAD-seq
 - name: stacks_populations
   owner: iuc
   revisions:
   - 45db1ba16163
   - 95286af4139b
+  - d1fad35bdb4a
   - d504d945a655
   tool_panel_section_label: RAD-seq
 - name: stacks_sstacks
@@ -1111,6 +1129,7 @@ tools:
   revisions:
   - 563af4497055
   - 95e37a28704b
+  - 96de7538bf0c
   - e38d181d4e72
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks
@@ -1118,6 +1137,7 @@ tools:
   revisions:
   - 2360d8cf42f7
   - 3e43e51b3c3b
+  - 8479d9a67998
   - 9d0ac63dcfcd
   tool_panel_section_label: RAD-seq
 - name: stacks_procrad
@@ -1126,6 +1146,7 @@ tools:
   - 57910d476be9
   - 8fe258d72ff3
   - be78e39d56b3
+  - eded025438db
   tool_panel_section_label: RAD-seq
 - name: stacks_refmap
   owner: iuc
@@ -1133,18 +1154,21 @@ tools:
   - 1ba1185929c1
   - 4ee074ca88fb
   - 7c42e6768c41
+  - d7a482f44e08
   tool_panel_section_label: RAD-seq
 - name: stacks_clonefilter
   owner: iuc
   revisions:
   - 3009a21724e7
   - 5d12a1115770
+  - 60d86dc1b19d
   - a0a51078cb61
   tool_panel_section_label: RAD-seq
 - name: stacks_assembleperead
   owner: iuc
   revisions:
   - 0c741f364d18
+  - 38ecfb8d52c6
   - 6eaf0f9836c8
   - b08cd32d03ad
   - bc108981ca68
@@ -1154,6 +1178,7 @@ tools:
   revisions:
   - 3c4c922a4fb0
   - 93b16407d6e9
+  - a0c52b82b9d3
   - a89b5f7813ad
   tool_panel_section_label: RAD-seq
 - name: xarray_metadata_info
@@ -1288,6 +1313,7 @@ tools:
   owner: ecology
   revisions:
   - 7e6cc3da1189
+  - 8dc082da41c1
   - ffaa9a71b2d2
   tool_panel_section_label: Compute indicators for turnover boulders fields
 - name: cb_ivr
@@ -1295,10 +1321,12 @@ tools:
   revisions:
   - 8c6142630659
   - b67730406f1b
+  - bcbad4f83dec
   tool_panel_section_label: Compute indicators for turnover boulders fields
 - name: champ_blocs
   owner: ecology
   revisions:
+  - 936f52182427
   - 9e830eb2eaa0
   - 9ed95b4a273c
   tool_panel_section_label: Compute indicators for turnover boulders fields
@@ -1326,11 +1354,13 @@ tools:
   owner: ecology
   revisions:
   - a8dabbf47e15
+  - b40aba3d9e5c
   tool_panel_section_label: Compute indicators for satellite remote sensing
 - name: srs_pca
   owner: ecology
   revisions:
   - 0931c98270c9
+  - 21e21363a8b4
   tool_panel_section_label: Compute indicators for satellite remote sensing
 - name: srs_metadata
   owner: ecology
@@ -1341,9 +1371,15 @@ tools:
   owner: ecology
   revisions:
   - 1015a0070bac
+  - 4e7c1fb5e894
   tool_panel_section_label: Biodiversity data exploration
 - name: ab1_fastq_converter
   owner: ecology
   revisions:
   - 307518fb51af
   tool_panel_section_label: Convert Formats
+- name: aligned_to_consensus
+  owner: ecology
+  revisions:
+  - 0ccbe1c20fc3
+  tool_panel_section_label: Assembly
