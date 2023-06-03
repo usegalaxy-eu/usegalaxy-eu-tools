@@ -1048,6 +1048,7 @@ tools:
   owner: iuc
   revisions:
   - b9a78a7ca2f3
+  - cf54dafa0403
   tool_panel_section_label: Assembly
 - name: yahs
   owner: iuc
@@ -1404,6 +1405,7 @@ tools:
 - name: bbtools_bbduk
   owner: iuc
   revisions:
+  - 159b04e36791
   - 204a131e47db
   - 425dab0e057b
   - a9c9d768b751
@@ -1411,6 +1413,7 @@ tools:
 - name: bbtools_bbmerge
   owner: iuc
   revisions:
+  - c05232655d00
   - fc029a9b4d07
   tool_panel_section_label: FASTA/FASTQ
 - name: cutadapt
@@ -3113,6 +3116,7 @@ tools:
 - name: bbtools_bbmap
   owner: iuc
   revisions:
+  - 517464809c33
   - 6d44c9f1a42b
   - 81cbb6a4c1ca
   - 858a65b52cf9
@@ -6016,6 +6020,7 @@ tools:
 - name: bbtools_bbduk
   owner: iuc
   revisions:
+  - 159b04e36791
   - 204a131e47db
   - 425dab0e057b
   - a9c9d768b751
@@ -7485,6 +7490,7 @@ tools:
   owner: iuc
   revisions:
   - 02a77166b29a
+  - b3f292d9f35d
   tool_panel_section_label: RNA Analysis
 - name: kallisto_pseudo
   owner: iuc
@@ -7495,11 +7501,13 @@ tools:
   - 5ae5c312d718
   - 63f76b9f4ba7
   - 87c11c05d238
+  - a157781cddd7
   tool_panel_section_label: RNA Analysis
 - name: kallisto_quant
   owner: iuc
   revisions:
   - 10c98fab6c5a
+  - 2568a3b975cb
   - 40985510cd98
   - 59a4c97b85d6
   - 60f888039fb2
@@ -7666,6 +7674,11 @@ tools:
   - 5a26589d95ad
   - 8b62f89924a7
   - fe3fe68b09a7
+  tool_panel_section_label: RNA Analysis
+- name: sleuth
+  owner: iuc
+  revisions:
+  - 5f1cb4c28d73
   tool_panel_section_label: RNA Analysis
 - name: stringtie
   owner: iuc
@@ -8021,6 +8034,7 @@ tools:
 - name: samtools_coverage
   owner: iuc
   revisions:
+  - 8a477224dfee
   - 90f2dd176d80
   - ae36fab06bc2
   tool_panel_section_label: SAM/BAM
@@ -8870,6 +8884,7 @@ tools:
   - 8eace8923202
   - b955346ef41e
   - d1912018a603
+  - ee407fae3ccd
   tool_panel_section_label: Variant Calling
 - name: bcftools
   owner: iuc
@@ -9503,6 +9518,11 @@ tools:
   - ca1fb032116d
   - d90d8d79bca9
   tool_panel_section_label: Variant Calling
+- name: smgu_frameshift_deletions_checks
+  owner: iuc
+  revisions:
+  - f079716f598c
+  tool_panel_section_label: Variant Calling
 - name: sniffles
   owner: iuc
   revisions:
@@ -10121,6 +10141,7 @@ tools:
 - name: deeptools_alignmentsieve
   owner: bgruening
   revisions:
+  - 2b1413e30889
   - 6531acf8209f
   - d8c919d26d0e
   - e5a296ce8fbb
@@ -10128,6 +10149,7 @@ tools:
 - name: deeptools_bam_compare
   owner: bgruening
   revisions:
+  - 29451af70c52
   - c89b665b45e4
   - de72ba3ed6f2
   - e821645ef8fc
@@ -10136,12 +10158,14 @@ tools:
   owner: bgruening
   revisions:
   - 12af64f93288
+  - 2d2cf5c1ea8a
   - 4df95152a39e
   - bb1e4f63e0e6
   tool_panel_section_label: deepTools
 - name: deeptools_bam_pe_fragmentsize
   owner: bgruening
   revisions:
+  - 195e98217334
   - 3f9dc453c0e8
   - 62eb6d63f582
   - 7c1beb6d6eca
@@ -10150,6 +10174,7 @@ tools:
   owner: bgruening
   revisions:
   - 26e7304d6737
+  - 3d211717a775
   - 7989c6ddf634
   - a67ac707496a
   tool_panel_section_label: deepTools
@@ -10158,6 +10183,7 @@ tools:
   revisions:
   - 2bc10a9ca58b
   - 56d5b797ce84
+  - 5be24eba848d
   tool_panel_section_label: deepTools
 - name: deeptools_compute_matrix
   owner: bgruening
@@ -10165,11 +10191,13 @@ tools:
   - 19bb3e6d9e31
   - 514fa53b5efb
   - 9470f29702f8
+  - d9a637e83828
   tool_panel_section_label: deepTools
 - name: deeptools_compute_matrix_operations
   owner: bgruening
   revisions:
   - 7e6bcd2e5128
+  - 7ef978dc1b8a
   - be95d48dd27f
   - ee3a1b0f45f1
   tool_panel_section_label: deepTools
@@ -10178,6 +10206,7 @@ tools:
   revisions:
   - 00a71ff7c06b
   - 2c37ce318bc3
+  - 5bffaa8354a1
   - ca0616bb2cdf
   tool_panel_section_label: deepTools
 - name: deeptools_estimatereadfiltering
@@ -10185,11 +10214,13 @@ tools:
   revisions:
   - 71082dac170c
   - bd1f40ce9769
+  - bddbd9538b08
   tool_panel_section_label: deepTools
 - name: deeptools_multi_bam_summary
   owner: bgruening
   revisions:
   - 004aea905d4d
+  - 1fcb7adc39b8
   - 78f405266706
   - b4e53394fced
   tool_panel_section_label: deepTools
@@ -10199,10 +10230,12 @@ tools:
   - 3c9f0c486cca
   - 459cfa861f0b
   - d580d6acd1df
+  - d9ce4897dbb2
   tool_panel_section_label: deepTools
 - name: deeptools_plot_correlation
   owner: bgruening
   revisions:
+  - 2c66e43f1c86
   - 32e451def88c
   - e44978659400
   - fd408d755394
@@ -10212,12 +10245,14 @@ tools:
   revisions:
   - 56bce3c82278
   - 7fda5607e777
+  - 9368fbc49c8b
   tool_panel_section_label: deepTools
 - name: deeptools_plot_enrichment
   owner: bgruening
   revisions:
   - 88ce7fed1488
   - b1779366c8e9
+  - c03c3384cd81
   - e65d16fb2724
   tool_panel_section_label: deepTools
 - name: deeptools_plot_fingerprint
@@ -10225,11 +10260,13 @@ tools:
   revisions:
   - 2da482e408b8
   - 793665fff0f8
+  - b88ebb3672a1
   - ca8a7f0ea872
   tool_panel_section_label: deepTools
 - name: deeptools_plot_heatmap
   owner: bgruening
   revisions:
+  - 25d830337d31
   - 42cb23d80271
   - a4dfb122e52b
   - ba6efa77fb79
@@ -10237,6 +10274,7 @@ tools:
 - name: deeptools_plot_pca
   owner: bgruening
   revisions:
+  - 00d869ea03a1
   - 69264da0ce77
   - 7784523d9743
   - c899e0ccff8c
@@ -10244,6 +10282,7 @@ tools:
 - name: deeptools_plot_profile
   owner: bgruening
   revisions:
+  - 10301d137111
   - a2d70c4fd406
   - c361b12d207a
   - e9429e484e25
