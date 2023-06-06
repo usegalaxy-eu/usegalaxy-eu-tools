@@ -46,7 +46,7 @@ We encourage you to submit your tool to one of the larger community repositories
 
 ### Updating an Existing Tool
 
-- Edit the .yaml.lock file to add the latest/specific changeset revision for the tool. You can use `python scripts/update-tool.py --owner <repo-owner> --name <repo-name> <file.yaml.lock>` in order to do this if you just want to add the latest revision.
+- Edit the .yaml.lock file to add the latest/specific changeset revision for the tool. You can use `python scripts/update-tool.py --owner <repo-owner> --name <repo-name> <file.yaml>` in order to do this if you just want to add the latest revision.
 - Open a pull request
 
 ### Requesting a New Tool
