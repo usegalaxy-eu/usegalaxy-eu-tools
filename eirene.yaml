@@ -1,0 +1,104 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+  - name: recetox_aplcms_generate_feature_table
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_aplcms_recover_weaker_signals
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_aplcms_correct_time
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_aplcms_compute_clusters
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_aplcms_remove_noise
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_aplcms_merge_known_table
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_aplcms_compute_template
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_aplcms_align_features
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: rmassbank
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: biotransformer
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: msmetaenhancer
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: riassigner
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: ramclustr
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: ramclustr_define_experiment
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: recetox_xmsannotator_advanced
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+
+  - name: matchms_convert
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_filtering
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_fingerprint_similarity
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_formatter
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_metadata_export
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_metadata_match
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_networking
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_similarity
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_spectral_similarity
+    owner: recetox
+    tool_panel_section_label: Metabolomics
+    
+  - name: matchms_split
+    owner: recetox
+    tool_panel_section_label: Metabolomics

@@ -1,0 +1,19 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+- name: astropy_fitsinfo
+  owner: astroteam
+  revisions:
+  - be9ce7d4ccbf
+  tool_panel_section_label: Astronomy
+- name: astropy_fits2csv
+  owner: astroteam
+  revisions:
+  - 01fbfdf7d10f
+  tool_panel_section_label: Astronomy
+- name: astropy_fits2bitmap
+  owner: astroteam
+  revisions:
+  - cf608e2b1436
+  tool_panel_section_label: Astronomy

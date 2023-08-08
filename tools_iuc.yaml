@@ -79,6 +79,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: multigsea
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: goseq
     owner: iuc
     tool_panel_section_label: Annotation
@@ -443,6 +447,10 @@ tools:
     tool_panel_section_label: Assembly
 
   - name: raven
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: rnaquast
     owner: iuc
     tool_panel_section_label: Assembly
 
@@ -1138,6 +1146,10 @@ tools:
 
 
 # GRAPH/DISPLAY DATA
+
+  - name: geneiobio
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
 
   - name: bandage
     owner: iuc
@@ -3464,7 +3476,15 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: sleuth
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: slamdunk
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: sleuth
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -3710,6 +3730,9 @@ tools:
     owner: iuc
     tool_panel_section_label: SAM/BAM
 
+  - name: mosdepth
+    owner: iuc
+    tool_panel_section_label: SAM/BAM
 
 # SANGER SEQUENCING
 
@@ -3738,6 +3761,10 @@ tools:
 
 
 # SINGLE-CELL
+
+  - name: velocyto_cli
+    owner: iuc
+    tool_panel_section_label: Single-cell
 
   - name: cite_seq_count
     owner: iuc
@@ -4173,6 +4200,58 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: cnvkit_access
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_antitarget
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_autobin
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_batch
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_call
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_coverage
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_diagram
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_fix
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_heatmap
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_reference
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_scatter
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_segment
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_target
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: control_freec
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -4290,6 +4369,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: seqwish
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: smgu_frameshift_deletions_checks
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -4688,6 +4771,10 @@ tools:
     tool_panel_section_label: deepTools
 
   - name: deeptools_plot_profile
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_bigwig_average
     owner: bgruening
     tool_panel_section_label: deepTools
 
