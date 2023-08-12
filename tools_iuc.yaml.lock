@@ -461,6 +461,7 @@ tools:
   owner: iuc
   revisions:
   - 1d4fcd38d899
+  - 2f40d2ccb0eb
   - f05c3732764a
   tool_panel_section_label: Annotation
 - name: prokka
@@ -729,6 +730,7 @@ tools:
 - name: merqury
   owner: iuc
   revisions:
+  - 09c589057ee8
   - 39edec572bae
   - 589078edd230
   - 9d79beb19ac3
@@ -1094,6 +1096,11 @@ tools:
   - dde39ba9c031
   - e19bebe96cd2
   - fe5b4cb8356c
+  tool_panel_section_label: BED
+- name: bedops_sortbed
+  owner: iuc
+  revisions:
+  - baeee32175e8
   tool_panel_section_label: BED
 - name: collection_element_identifiers
   owner: iuc
@@ -1473,6 +1480,7 @@ tools:
 - name: fasta_formatter
   owner: devteam
   revisions:
+  - 516b97a23d7e
   - 859422bcb689
   - 9457a20156db
   tool_panel_section_label: FASTA/FASTQ
@@ -1490,6 +1498,7 @@ tools:
   - 091ca73f5804
   - cc9a18dd41c9
   - ec0b5076173a
+  - f773e98b26cf
   - f81d4362b6c1
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_stats
@@ -1608,11 +1617,13 @@ tools:
   revisions:
   - 3987db70a4b0
   - 7cf5b1d072b5
+  - 867ab348287d
   - f95284aa2946
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_quality_converter
   owner: devteam
   revisions:
+  - 045f0e1043f7
   - 54053ea6c77e
   - 74db4cffab1f
   tool_panel_section_label: FASTA/FASTQ
@@ -1620,6 +1631,7 @@ tools:
   owner: devteam
   revisions:
   - 43a7370aa010
+  - 64e9a6afdd0c
   - 7b4468117008
   - ce9cd02d5b88
   - e41385662e5e
@@ -1637,6 +1649,7 @@ tools:
   revisions:
   - 02a5f43cd5d1
   - 186b8d913e6c
+  - 77b41c89d856
   - 8979c288aefb
   - ce309f4ff17f
   - e282bc27be9a
@@ -1698,6 +1711,7 @@ tools:
   owner: devteam
   revisions:
   - 09070cacefd8
+  - 529bccd5e4a1
   - 567d5b3c52b1
   - d5e9e83cd3d8
   - dd3737e40dce
@@ -1706,6 +1720,7 @@ tools:
   owner: devteam
   revisions:
   - 015dc921d814
+  - 0b7ec11b3c7c
   - 4bedca26c133
   - 8abdedf55101
   tool_panel_section_label: FASTA/FASTQ
@@ -1714,6 +1729,7 @@ tools:
   revisions:
   - 736b8f6ee456
   - 85263dc18cec
+  - 90858c306551
   - b8658f852bc7
   - bdf1ce174e39
   - cb1e251cac37
@@ -1721,6 +1737,7 @@ tools:
 - name: fastx_collapser
   owner: devteam
   revisions:
+  - 07497255281e
   - 421f0af4ee95
   - 7ce1891db6f5
   tool_panel_section_label: FASTA/FASTQ
@@ -1730,12 +1747,14 @@ tools:
   - 21796f46e0ba
   - 63d6e2daad48
   - ad116ae3f4d9
+  - b6b54ba71bd8
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
   - 59003d0543cd
   - 7306ec78632a
+  - cc0fd298cc17
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_renamer
   owner: devteam
@@ -1744,11 +1763,13 @@ tools:
   - 3599f5451ee2
   - b29d37ca9e41
   - d8a3d31554d7
+  - f984bb114520
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_reverse_complement
   owner: devteam
   revisions:
   - 0c2907307ba4
+  - 177f0621c266
   - 3f1017d3f785
   - 6027ef51ef91
   - e246088b6e34
@@ -1759,6 +1780,7 @@ tools:
   - 377ac2829eac
   - 547e8d00f11c
   - 61b4cedc8934
+  - 73194cdd4f57
   - b98f3fa516a3
   - bbb007a39ac2
   tool_panel_section_label: FASTA/FASTQ
@@ -3675,6 +3697,7 @@ tools:
   - 63f86089423e
   - 76d3d2b10738
   - 79212a309499
+  - 7c2100246a2f
   tool_panel_section_label: Metagenomic Analysis
 - name: dada2_dada
   owner: iuc
@@ -3684,6 +3707,7 @@ tools:
   - 2222f08c8316
   - 6b4ddc3b64bd
   - 84fd33a60b35
+  - 96336c6a2bb7
   - ce4aec98949d
   - f79565b12646
   tool_panel_section_label: Metagenomic Analysis
@@ -3694,6 +3718,7 @@ tools:
   - 34e55239e68b
   - 777f9846c56d
   - a9f4a217dcd6
+  - addaf9d22850
   - ca73bbac615a
   - cc41546adf56
   - f732237754fc
@@ -3704,6 +3729,7 @@ tools:
   - 04c15826a0b8
   - 0776d824d896
   - 39638e0aff59
+  - 75403243703a
   - 8c202e741d68
   - afdfa35a89d9
   - c48d42d65d2b
@@ -3713,6 +3739,7 @@ tools:
   owner: iuc
   revisions:
   - 1c9b3bcd4261
+  - 43c99742158b
   - 6e0946238688
   - 8470de786d47
   - 99c6929236fa
@@ -3726,6 +3753,7 @@ tools:
   - 0b884b080bb6
   - 1d75bd0595e2
   - 306a40d4bb8f
+  - 5c865a382933
   - 69900ffd3b8e
   - 805daed21ef3
   - 84743da21318
@@ -3737,6 +3765,7 @@ tools:
   - 1728e5ee871a
   - 498d57610fcd
   - 555ccac8a4c5
+  - 78faebd0879c
   - 806fe614ca46
   - 8daf4564ccda
   - ab2030f217a9
@@ -3748,6 +3777,7 @@ tools:
   - 2a90d2fd3336
   - 371afe17d247
   - 52a911972c02
+  - 7b8cb2b02978
   - a58e4a43f49c
   - d60df8727f59
   - f947b4bb5107
@@ -3760,6 +3790,7 @@ tools:
   - 1937c2b4da7a
   - 1bc3657cd694
   - 5b752525bd6f
+  - 7136e9ab70db
   - 7f3b59dee073
   - 7f8f0e9fcb37
   - b6dddf8c2e6f
@@ -3768,6 +3799,7 @@ tools:
   owner: iuc
   revisions:
   - 0a1224c4b781
+  - 19299bb1c6af
   - 4cc834cce4fb
   - 7d28da5e9e27
   - 9058d8943303
@@ -7798,6 +7830,7 @@ tools:
   - 5b60313a6ce7
   - 606b7748965d
   - 77cf519a812e
+  - 9fa24d5aac68
   - c9cfec002f71
   - ca0588b09438
   - d2bc35f3d1c5
@@ -7813,6 +7846,7 @@ tools:
   - 0f445c315a08
   - 13ab393ba794
   - 2e21a7c28b38
+  - 400691c87530
   - 442e3696c634
   - 59fff1388bc2
   - 77fc547df6ff
@@ -7836,6 +7870,7 @@ tools:
   - a21e229da9a1
   - aed859a021c0
   - afd41a430a76
+  - b2bbe9a7f1b8
   - c2b82a94493e
   tool_panel_section_label: RNA Analysis
 - name: trinity_contig_exn50_statistic
@@ -7848,6 +7883,7 @@ tools:
   - 3cdcd5753218
   - 41db7569b4ba
   - 62b05e565a45
+  - 870ac06dff8e
   - 8fed16891aaf
   - afa3a9786339
   - b1e9a0355166
@@ -7864,6 +7900,7 @@ tools:
   - 42f93482524f
   - 6821f5ea01d8
   - 7bd8f4770cec
+  - a35cba31d904
   - a5ec0e79a93a
   - aa38fa8c5815
   - b10270739c1b
@@ -7873,6 +7910,7 @@ tools:
 - name: trinity_gene_to_trans_map
   owner: iuc
   revisions:
+  - 7c7fbf13aadd
   - 964b7efe2639
   - ba460ccf0006
   tool_panel_section_label: RNA Analysis
@@ -7881,6 +7919,7 @@ tools:
   revisions:
   - 1563554bb3f0
   - 1d689e4e1caf
+  - 24e94d84adc9
   - 2af5fd8210c5
   - 3bff7c3cf63c
   - 48537273a30b
@@ -7900,12 +7939,18 @@ tools:
   - 29472bde8854
   - 3064aa8755a0
   - 3abd51c4b151
+  - 5c1fc038df6b
   - 64094e19077d
   - 6723249ce1bd
   - 6f480aee5877
   - 9c545f1c1a4e
   - b34de8dc0f64
   - bdede464821e
+  tool_panel_section_label: RNA Analysis
+- name: trinity_stats
+  owner: iuc
+  revisions:
+  - b2ce45417d9e
   tool_panel_section_label: RNA Analysis
 - name: trinotate
   owner: iuc
@@ -10053,6 +10098,11 @@ tools:
   - 08c2d81e7942
   - 1f467ed22412
   tool_panel_section_label: Virology
+- name: lineagespot
+  owner: iuc
+  revisions:
+  - 6ddf5a9ce4a5
+  tool_panel_section_label: Virology
 - name: ivar_consensus
   owner: iuc
   revisions:
@@ -10232,6 +10282,7 @@ tools:
 - name: data_manager_pharokka
   owner: iuc
   revisions:
+  - 50caca83e7c9
   - 97f310b8e308
 - name: deeptools_alignmentsieve
   owner: bgruening
