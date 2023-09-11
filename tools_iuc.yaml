@@ -79,6 +79,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: multigsea
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: goseq
     owner: iuc
     tool_panel_section_label: Annotation
@@ -446,6 +450,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: rnaquast
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: rnaspades
     owner: iuc
     tool_panel_section_label: Assembly
@@ -533,6 +541,9 @@ tools:
     owner: iuc
     tool_panel_section_label: BED
 
+  - name: bedops_sortbed
+    owner: iuc
+    tool_panel_section_label: BED
 
 # COLLECTION OPERATIONS
 
@@ -1138,6 +1149,10 @@ tools:
 
 
 # GRAPH/DISPLAY DATA
+
+  - name: geneiobio
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
 
   - name: bandage
     owner: iuc
@@ -3464,7 +3479,15 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: sleuth
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: slamdunk
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: sleuth
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -3513,6 +3536,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: trinity_super_transcripts
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: trinity_stats
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -3710,6 +3737,9 @@ tools:
     owner: iuc
     tool_panel_section_label: SAM/BAM
 
+  - name: mosdepth
+    owner: iuc
+    tool_panel_section_label: SAM/BAM
 
 # SANGER SEQUENCING
 
@@ -4349,6 +4379,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: smgu_frameshift_deletions_checks
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: sniffles
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -4592,6 +4626,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Virology
 
+  - name: lineagespot
+    owner: iuc
+    tool_panel_section_label: Virology
+
   - name: ivar_consensus
     owner: iuc
     tool_panel_section_label: Virology
@@ -4744,6 +4782,10 @@ tools:
     tool_panel_section_label: deepTools
 
   - name: deeptools_plot_profile
+    owner: bgruening
+    tool_panel_section_label: deepTools
+
+  - name: deeptools_bigwig_average
     owner: bgruening
     tool_panel_section_label: deepTools
 

@@ -51,6 +51,7 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python3 scripts/update-tool.py nml.yaml
 	python3 scripts/update-tool.py peterjc.yaml
 	python3 scripts/update-tool.py goeckslab.yaml
+	python3 scripts/update-tool.py eirene.yaml
 
 update_all: $(UPDATED_YAMLS)
 
