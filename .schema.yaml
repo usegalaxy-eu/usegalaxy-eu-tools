@@ -24,7 +24,7 @@ mapping:
                 "tool_panel_section_label":
                     type: str
                     enum: [
-                        'Get Data', 'Send Data', 'Collection Operations', 'Expression Tools',
+                        'Get Data', 'Send Data', 'Collection Operations', 'Expression Tools', 'Data and Metadata Management',
                         'Text Manipulation', 'Filter and Sort', 'Join, Subtract and Group',
                         'Convert Formats', 'FASTA/FASTQ', 'FASTQ Quality Control', 'SAM/BAM', 'BED',
                         'VCF/BCF', 'Nanopore', 'Operate on Genomic Intervals', 'Fetch Sequences / Alignments',
@@ -44,7 +44,7 @@ mapping:
                 "tool_panel_section_id":
                     type: str
                     enum: [
-                        "get_data", "send_data", "collection_operations", "expression_tools", "text_manipulation",
+                        "get_data", "send_data", "collection_operations", "expression_tools", "text_manipulation", "data_and_metadata_management",
                         "filter_and_sort", "join__subtract_and_group", "convert_formats", "fasta_fastq", "fastq_quality_control",
                         "sam_bam", "bed", "vcf_bcf", "nanopore", "operate_on_genomic_intervals", "fetch_sequences___alignments",
                         "annotation", "ontology", "assembly", "mapping", "variant_calling", "genome_editing", "rna_seq",
