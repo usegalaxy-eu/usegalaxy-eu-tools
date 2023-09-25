@@ -592,6 +592,7 @@ tools:
   - 14fa42b095c4
   - 1a9d5a8fff12
   - 4ed102b922cb
+  - 6d23883e0b94
   - a5665e1b06b0
   - b7c3e9a3b954
   - d2afc87db26b
@@ -607,6 +608,7 @@ tools:
   - 7c2e71e4acf3
   - 97b467e06354
   - 999e07f0a9fa
+  - ab9977548806
   - b4ba9602a36e
   - e6f4d3d9058c
   - eb41d87cb1de
@@ -621,6 +623,7 @@ tools:
   - 586e68c83df2
   - a36a45cb96fa
   - c6ae57f774c6
+  - d37a7f17e35d
   - e5a5ad882f1f
   - f0d2e8a3c575
   tool_panel_section_label: Machine Learning
@@ -632,6 +635,7 @@ tools:
   - 3f25f37ee3db
   - 664666bd14ec
   - 913ee94945f3
+  - 9160cb4069c2
   - 97dce66fe158
   - 9c3e1d3235c8
   - aef56d0e7a61
@@ -649,6 +653,7 @@ tools:
   - b07416ec8d16
   - cd4328a02798
   - d2da602b05cb
+  - e79200975daf
   tool_panel_section_label: Machine Learning
 - name: sklearn_nn_classifier
   owner: bgruening
@@ -658,6 +663,7 @@ tools:
   - 34d31bd995e9
   - 39ae3c043096
   - 4cc980df6265
+  - 4db563e8d453
   - 823ecc0bce45
   - cd02bf168d23
   - d33d37f32e54
@@ -673,12 +679,14 @@ tools:
   - 8eed73e8e04d
   - abb5a3f256e3
   - ad7e0b4291ee
+  - aeca97d9a214
   - e13a7c05b3a4
   - e7f047a9dca9
   tool_panel_section_label: Machine Learning
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
+  - 1682df52c084
   - 315f01a9d2c2
   - 3ab7af14f1b5
   - 407495139a09
@@ -694,6 +702,7 @@ tools:
   revisions:
   - 1d20e0dce176
   - 4483b84310ec
+  - 5276bdb49315
   - 5773e98921fc
   - 6d21b03e00a1
   - a7c667ff83fe
@@ -705,6 +714,7 @@ tools:
 - name: sklearn_data_preprocess
   owner: bgruening
   revisions:
+  - 045faa05e712
   - 1bef885255e0
   - 484a98c44f00
   - 80074b842ebd
@@ -727,6 +737,7 @@ tools:
   - adc6137e7c73
   - c8547d3993c0
   - daaa56720686
+  - e9821a426d75
   tool_panel_section_label: Machine Learning
 - name: sklearn_regression_metrics
   owner: bgruening
@@ -735,6 +746,7 @@ tools:
   - 40ee30b5e456
   - 5c9fb40ae174
   - 6000c1589f33
+  - 6db5c1dfb076
   - 70c5a9127f99
   - 7acb9b46c066
   - 7d98dfb04d27
@@ -753,10 +765,12 @@ tools:
   - 78a60f884ac9
   - 893285b150f8
   - e76f6dfea5c9
+  - fc48ce12454b
   tool_panel_section_label: Machine Learning
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
+  - 14f0ccc85505
   - 2fc89dcd41c8
   - 3e4a7684d402
   - 40f4447733b2
@@ -771,6 +785,7 @@ tools:
   owner: bgruening
   revisions:
   - 0474777be433
+  - 30f892a9b46d
   - 4b359039f09f
   - 5d5d9cc554f9
   - 65f18ab91132
@@ -787,6 +802,7 @@ tools:
   - 4efac966af2a
   - 6d1a9fae57eb
   - 92e09b827300
+  - 9f9cf31e3111
   - a84e6ffd3735
   - b9ed7b774ba3
   - e6893a4bcb7b
@@ -1401,3 +1417,13 @@ tools:
   revisions:
   - 0ccbe1c20fc3
   tool_panel_section_label: Assembly
+- name: makeeml
+  owner: ecology
+  revisions:
+  - 9cbac7a9b1a3
+  tool_panel_section_label: Data and Metadata Management
+- name: eml2eal
+  owner: ecology
+  revisions:
+  - 5c0290c4225a
+  tool_panel_section_label: Data and Metadata Management
