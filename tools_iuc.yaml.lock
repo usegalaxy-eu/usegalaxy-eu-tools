@@ -2222,6 +2222,7 @@ tools:
   revisions:
   - 1162bfd9f782
   - 6cb20e130473
+  - 7d87a9d58aa1
   - 8bbe09a52904
   - 9564758e8638
   - caf213d51d6c
@@ -8743,6 +8744,26 @@ tools:
   - 7340d619d7f8
   - f4713992f23a
   tool_panel_section_label: Single-cell
+- name: baredsc_1d
+  owner: iuc
+  revisions:
+  - 02b1fe7aed76
+  tool_panel_section_label: Single-cell
+- name: baredsc_2d
+  owner: iuc
+  revisions:
+  - c29e7bb492bf
+  tool_panel_section_label: Single-cell
+- name: baredsc_combine_1d
+  owner: iuc
+  revisions:
+  - c32347702e12
+  tool_panel_section_label: Single-cell
+- name: baredsc_combine_2d
+  owner: iuc
+  revisions:
+  - 239193b96d72
+  tool_panel_section_label: Single-cell
 - name: best_regression_subsets
   owner: devteam
   revisions:
@@ -9377,6 +9398,21 @@ tools:
   - e15e4acae7ef
   - e1a2389af238
   tool_panel_section_label: Variant Calling
+- name: beacon2_csv2xlsx
+  owner: iuc
+  revisions:
+  - ba4ed464f8b6
+  tool_panel_section_label: Variant Calling
+- name: beacon2_pxf2bff
+  owner: iuc
+  revisions:
+  - 30605b5fc43f
+  tool_panel_section_label: Variant Calling
+- name: beacon2_vcf2bff
+  owner: iuc
+  revisions:
+  - 0a757835a745
+  tool_panel_section_label: Variant Calling
 - name: beagle
   owner: iuc
   revisions:
@@ -9412,6 +9448,11 @@ tools:
   - 4653aeb60243
   - e3bbe8171af9
   tool_panel_section_label: Variant Calling
+- name: cnvkit_breaks
+  owner: iuc
+  revisions:
+  - ef9a50eb20ce
+  tool_panel_section_label: Variant Calling
 - name: cnvkit_call
   owner: iuc
   revisions:
@@ -9436,6 +9477,11 @@ tools:
   - dc0fb5f07231
   - f64acbe71392
   tool_panel_section_label: Variant Calling
+- name: cnvkit_genemetrics
+  owner: iuc
+  revisions:
+  - 2b53415d4f3c
+  tool_panel_section_label: Variant Calling
 - name: cnvkit_heatmap
   owner: iuc
   revisions:
@@ -9459,6 +9505,16 @@ tools:
   revisions:
   - 9d9a8f230a2f
   - c4a22d0fdba5
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_segmetrics
+  owner: iuc
+  revisions:
+  - d9cb65e1f756
+  tool_panel_section_label: Variant Calling
+- name: cnvkit_sex
+  owner: iuc
+  revisions:
+  - 3316bd294f6f
   tool_panel_section_label: Variant Calling
 - name: cnvkit_target
   owner: iuc
@@ -10127,11 +10183,13 @@ tools:
   revisions:
   - 373c1735d31f
   - 9f1660129403
+  - cd0484c5f9f1
   - d58a57db7a96
   tool_panel_section_label: Virology
 - name: cooc_pubmut
   owner: iuc
   revisions:
+  - 0349d8981030
   - d04ea6b052c5
   - f193fef5b19d
   tool_panel_section_label: Virology
@@ -10139,6 +10197,7 @@ tools:
   owner: iuc
   revisions:
   - 4be399803856
+  - 52bd683c6d3f
   - 579538ff939d
   - eeb5c054ecf8
   tool_panel_section_label: Virology
