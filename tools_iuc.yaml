@@ -11,6 +11,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: amrfinderplus
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: annotatemyids
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1269,6 +1273,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
+  - name: hicexplorer_chicexportdata
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_chicplotviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
@@ -1349,6 +1357,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
+  - name: hicexplorer_hicinterintratad
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicmergedomains
     owner: bgruening
     tool_panel_section_label: HiCExplorer
@@ -1394,6 +1406,14 @@ tools:
     tool_panel_section_label: HiCExplorer
 
   - name: hicexplorer_hicsummatrices
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hictadclassifier
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hictraintadclassifier
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
@@ -2893,6 +2913,10 @@ tools:
     tool_panel_section_label: Nanopore
 
   - name: flair_correct
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: m6anet
     owner: iuc
     tool_panel_section_label: Nanopore
 
@@ -4852,7 +4876,12 @@ tools:
     tool_panel_section_id: fetch_sequences___alignments
 
 
-# DIMET
+# METABOLOMICS
+  - name: mzmine_batch
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+# METABOLOMICS DIMET
 
   - name: dimet_abundance_plot
     owner: iuc
