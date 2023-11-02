@@ -11,6 +11,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: amrfinderplus
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: annotatemyids
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1147,6 +1151,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Get Data
 
+  - name: query_impc
+    owner: iuc
+    tool_panel_section_label: Get Data
+
 
 # GRAPH/DISPLAY DATA
 
@@ -1265,6 +1273,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
+  - name: hicexplorer_chicexportdata
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_chicplotviewpoint
     owner: bgruening
     tool_panel_section_label: HiCExplorer
@@ -1345,6 +1357,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
+  - name: hicexplorer_hicinterintratad
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
   - name: hicexplorer_hicmergedomains
     owner: bgruening
     tool_panel_section_label: HiCExplorer
@@ -1390,6 +1406,14 @@ tools:
     tool_panel_section_label: HiCExplorer
 
   - name: hicexplorer_hicsummatrices
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hictadclassifier
+    owner: bgruening
+    tool_panel_section_label: HiCExplorer
+
+  - name: hicexplorer_hictraintadclassifier
     owner: bgruening
     tool_panel_section_label: HiCExplorer
 
@@ -2106,6 +2130,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: mash_sketch
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mapseq
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -2885,6 +2913,10 @@ tools:
     tool_panel_section_label: Nanopore
 
   - name: flair_correct
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: m6anet
     owner: iuc
     tool_panel_section_label: Nanopore
 
@@ -3897,6 +3929,22 @@ tools:
     owner: iuc
     tool_panel_section_label: Single-cell
 
+  - name: baredsc_1d
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: baredsc_2d
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: baredsc_combine_1d
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: baredsc_combine_2d
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
 # STATISTICS
 
   - name: best_regression_subsets
@@ -4199,6 +4247,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: beacon2_csv2xlsx
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_pxf2bff
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_vcf2bff
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: beagle
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -4223,6 +4283,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: cnvkit_breaks
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: cnvkit_call
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -4239,6 +4303,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: cnvkit_genemetrics
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: cnvkit_heatmap
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -4252,6 +4320,14 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: cnvkit_segment
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_segmetrics
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnvkit_sex
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -4707,6 +4783,9 @@ tools:
   - name: data_manager_pharokka
     owner: iuc
 
+  - name: data_manager_mapseq
+    owner: iuc
+
 # DEEPTOOLS
 
   - name: deeptools_alignmentsieve
@@ -4795,3 +4874,47 @@ tools:
   - name: extract_genomic_dna
     owner: iuc
     tool_panel_section_id: fetch_sequences___alignments
+
+
+# METABOLOMICS
+  - name: mzmine_batch
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+# METABOLOMICS DIMET
+
+  - name: dimet_abundance_plot
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_differential_analysis
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_differential_multigroup_analysis
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_enrichment_plot
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_isotopologues_plot
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_metabologram
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_pca_analysis
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_pca_plot
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_timecourse_analysis
+    owner: iuc
+    tool_panel_section_label: Metabolomics

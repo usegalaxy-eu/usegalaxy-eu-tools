@@ -24,7 +24,7 @@ mapping:
                 "tool_panel_section_label":
                     type: str
                     enum: [
-                        'Get Data', 'Send Data', 'Collection Operations', 'Expression Tools',
+                        'Get Data', 'Send Data', 'Collection Operations', 'Expression Tools', 'Data and Metadata Management',
                         'Text Manipulation', 'Filter and Sort', 'Join, Subtract and Group',
                         'Convert Formats', 'FASTA/FASTQ', 'FASTQ Quality Control', 'SAM/BAM', 'BED',
                         'VCF/BCF', 'Nanopore', 'Operate on Genomic Intervals', 'Fetch Sequences / Alignments',
@@ -39,12 +39,12 @@ mapping:
                         'Regional Variation' , 'Genome Diversity' , 'Deprecated', 'Interactive tools', 'Apollo', 'Quality Control',
                         'Multiple Alignments', 'Climate Analysis', 'RNA Analysis', 'Data Managers', 'Extract Features', 'Other Tools',
                         'Species abundance', 'Biodiversity data exploration', 'Sanger Sequencing', 'Spatial Omics', 'Muon Spectroscopy',
-                        'Compute indicators for turnover boulders fields', 'QIIME 2', 'Astronomy'
+                        'Compute indicators for turnover boulders fields', 'QIIME 2', 'Astronomy', 'Ecoregionalization'
                     ]
                 "tool_panel_section_id":
                     type: str
                     enum: [
-                        "get_data", "send_data", "collection_operations", "expression_tools", "text_manipulation",
+                        "get_data", "send_data", "collection_operations", "expression_tools", "text_manipulation", "data_and_metadata_management",
                         "filter_and_sort", "join__subtract_and_group", "convert_formats", "fasta_fastq", "fastq_quality_control",
                         "sam_bam", "bed", "vcf_bcf", "nanopore", "operate_on_genomic_intervals", "fetch_sequences___alignments",
                         "annotation", "ontology", "assembly", "mapping", "variant_calling", "genome_editing", "rna_seq",
@@ -57,5 +57,6 @@ mapping:
                         "statistics", "graph_display_data", "evolution", "motif_tools", "test_tools", "gis_data_handling", "quality_control",
                         "animal_detection_on_acoustic_recordings", "regional_variation", "genome_diversity", 'apollo', 'imaging', 'virology',
                         "deprecated", "interactivetools", "multiple_alignments", "climate_analysis", "rna_analysis", "species_abundance", 
-                        "biodiversity_data_exploration", "sanger_sequencing", "spatial_omics", "muon_spectroscopy", "compute_indicators_for_turnover_boulders_fields", "astronomy"
+                        "biodiversity_data_exploration", "sanger_sequencing", "spatial_omics", "muon_spectroscopy", "compute_indicators_for_turnover_boulders_fields",
+                        "astronomy", "ecoregionalization"
                     ]
