@@ -5,6 +5,12 @@ install_tool_dependencies: false
 
 tools:
 
+# BioModels
+
+  - name: biomodels_biomd0000001066
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
 # "CONVERT FORMATS"
 
   - name: glimmer_glimmer_to_gff
