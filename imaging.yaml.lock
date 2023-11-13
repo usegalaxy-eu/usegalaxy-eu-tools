@@ -4,11 +4,14 @@ tools:
 - name: cp_cellprofiler4
   owner: bgruening
   revisions:
+  - 5a810dc963f4
   - b333df978624
+  - f0656d0f2a4d
   tool_panel_section_label: Imaging
 - name: overlay_images
   owner: imgteam
   revisions:
+  - 22ff7c705a83
   - 589af0005df5
   - b74693340624
   - bf590a9733ed
@@ -29,6 +32,7 @@ tools:
   revisions:
   - dba87c4b32d3
   - f264ae82f735
+  - f70b215d155c
   tool_panel_section_label: Imaging
 - name: anisotropic_diffusion
   owner: imgteam
@@ -40,6 +44,7 @@ tools:
   owner: imgteam
   revisions:
   - 0c777d708acc
+  - 3df9f0a4bf34
   - 4853fc2b50bf
   - 81f0cbca04a7
   - d4da97f51700
@@ -169,6 +174,7 @@ tools:
   revisions:
   - 3e4231ed875e
   - c4c76f1ebad2
+  - d09507d3fb0e
   - f3c05a734dd1
   tool_panel_section_label: Imaging
 - name: slice_image
@@ -214,11 +220,13 @@ tools:
 - name: mahotas_features
   owner: imgteam
   revisions:
+  - 0c76d029dbe3
   - 7f3d9a1a0447
   tool_panel_section_label: Imaging
 - name: 2d_feature_extraction
   owner: imgteam
   revisions:
+  - 0a53256b48c6
   - 5791a7f65275
   - 6fdb3542a406
   - 96909b9d1df1
@@ -278,6 +286,7 @@ tools:
 - name: visceral_evaluatesegmentation
   owner: imgteam
   revisions:
+  - 4d042d197ac3
   - 8c1a805c2fc5
   - d098aed00229
   tool_panel_section_label: Imaging
@@ -285,18 +294,21 @@ tools:
   owner: imgteam
   revisions:
   - 10eed33aa9b2
+  - 85edbb7a436b
   - b07f4839ca77
   - f3360fbeda64
   tool_panel_section_label: Imaging
 - name: image_info
   owner: imgteam
   revisions:
+  - 236ec78b2e53
   - 7b6d9412c7f8
   - 8c25d4ff0b51
   tool_panel_section_label: Imaging
 - name: imagej2_binary_to_edm
   owner: imgteam
   revisions:
+  - 182994b12622
   - 33f6b1f921e7
   - f62303e87275
   tool_panel_section_label: Imaging
@@ -305,22 +317,26 @@ tools:
   revisions:
   - 1bffabc15695
   - 2be338fc671e
+  - 3d5f59603e13
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_compose_raw_elastic
   owner: imgteam
   revisions:
   - 1bf7e70e67f9
+  - 4deffc9540a3
   - 8d357579e407
   tool_panel_section_label: Imaging
 - name: imagej2_analyze_particles_binary
   owner: imgteam
   revisions:
   - 1dd5396c734a
+  - ae4ae9c5c56c
   - aeb9bb864b8c
   tool_panel_section_label: Imaging
 - name: imagej2_skeletonize3d
   owner: imgteam
   revisions:
+  - 49b5288dcd8c
   - 768825d9034a
   - f6df6830d5ec
   tool_panel_section_label: Imaging
@@ -328,17 +344,20 @@ tools:
   owner: imgteam
   revisions:
   - 1a7c29d5fc11
+  - 666af1279007
   - dc3935a0165a
   tool_panel_section_label: Imaging
 - name: imagej2_noise
   owner: imgteam
   revisions:
   - 3f6599ec7d30
+  - 756e062741dc
   - 7a44772cc89f
   tool_panel_section_label: Imaging
 - name: imagej2_find_edges
   owner: imgteam
   revisions:
+  - 5023cbf98ca3
   - 8e608a6e44ac
   - c8dfbf4b899c
   tool_panel_section_label: Imaging
@@ -347,16 +366,19 @@ tools:
   revisions:
   - 7baf811ed973
   - c8bb47840c8d
+  - f3c9192bd0b9
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_compose_raw
   owner: imgteam
   revisions:
+  - 6c47d8a43207
   - 8c0ace7ae77c
   - 93b416f8e9e3
   tool_panel_section_label: Imaging
 - name: imagej2_enhance_contrast
   owner: imgteam
   revisions:
+  - 056e74fbbf6c
   - edfc597fb180
   - ef3de3e84817
   tool_panel_section_label: Imaging
@@ -364,11 +386,13 @@ tools:
   owner: imgteam
   revisions:
   - 29b39f5b0e69
+  - 6a07f71806bb
   - e2622ebb5ce4
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_align
   owner: imgteam
   revisions:
+  - 0a0d2dfd17e0
   - ab54024c0a88
   - e9243cad1d67
   tool_panel_section_label: Imaging
@@ -376,6 +400,7 @@ tools:
   owner: imgteam
   revisions:
   - 5b154339fd90
+  - aeae7e29d525
   - b143159845b4
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_raw_transform
@@ -383,11 +408,13 @@ tools:
   revisions:
   - 95b7592729e2
   - aa4a5a8c4cfd
+  - eabdcf6ad900
   tool_panel_section_label: Imaging
 - name: imagej2_smooth
   owner: imgteam
   revisions:
   - 53fb6f4afcc8
+  - 6d7dd2194b4c
   - dd20ee3092e3
   tool_panel_section_label: Imaging
 - name: imagej2_analyze_skeleton
@@ -395,22 +422,26 @@ tools:
   revisions:
   - 3272e0439968
   - bb84f130a4e1
+  - bdee06a1bcfa
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_compare_elastic
   owner: imgteam
   revisions:
   - 125641435c4b
+  - 42ba21dc9ea6
   - b95f87118c6f
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_compare_raw
   owner: imgteam
   revisions:
+  - 77411a986a70
   - 9349961e09ce
   - d17be9aef142
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_convert_to_raw
   owner: imgteam
   revisions:
+  - 0cdd96322600
   - 7f9840d3b7e7
   - 95fb6fa70c2f
   tool_panel_section_label: Imaging
@@ -419,10 +450,12 @@ tools:
   revisions:
   - 6e8be21a505c
   - baa308e2533a
+  - d3e8ef83f3bf
   tool_panel_section_label: Imaging
 - name: imagej2_sharpen
   owner: imgteam
   revisions:
+  - 49e29abe0fce
   - 4c43ba752312
   - a84f2cbf091b
   tool_panel_section_label: Imaging
@@ -431,17 +464,20 @@ tools:
   revisions:
   - 423400b3c47f
   - 6840ce593a91
+  - 7121957d0bbf
   tool_panel_section_label: Imaging
 - name: imagej2_adjust_threshold_binary
   owner: imgteam
   revisions:
   - 29a4d422f32a
+  - da29019170f1
   - f1ba33cd9edf
   tool_panel_section_label: Imaging
 - name: imagej2_math
   owner: imgteam
   revisions:
   - d48c999b3b96
+  - d7fbe9662213
   - dbacd5d06c27
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_elastic_transform
@@ -449,12 +485,14 @@ tools:
   revisions:
   - 301f24849032
   - 39b2bc251b2f
+  - 55bf135d6b0c
   tool_panel_section_label: Imaging
 - name: imagej2_bunwarpj_adapt_transform
   owner: imgteam
   revisions:
   - 5d633d30316e
   - 706af1d7028a
+  - fa64e8aed5a5
   tool_panel_section_label: Imaging
 - name: unzip
   owner: imgteam
@@ -470,6 +508,7 @@ tools:
   - a98608f3abc5
   - ba4fd9fbf924
   - e917a2424690
+  - eb6c08714244
   - fca368c99299
   tool_panel_section_label: Imaging
 - name: cp_common
@@ -478,6 +517,7 @@ tools:
   - 0b7db679fff8
   - 27396311a314
   - 3c3cd68d6d5a
+  - 6070780813d9
   - 670975e92458
   - 9c8ee01c0b22
   - e7273daa5ae2
@@ -486,12 +526,14 @@ tools:
   owner: bgruening
   revisions:
   - 4395ea2a01f4
+  - bad171ed1e96
   - e8f822eeb9fd
   tool_panel_section_label: Imaging
 - name: cp_tile
   owner: bgruening
   revisions:
   - 33bf7aa4e684
+  - 443638c10c61
   - 878bafb411dd
   tool_panel_section_label: Imaging
 - name: cp_track_objects
@@ -499,12 +541,14 @@ tools:
   revisions:
   - 1fd453cd757b
   - 644e5e32a83c
+  - 972d2c365739
   tool_panel_section_label: Imaging
 - name: cp_overlay_outlines
   owner: bgruening
   revisions:
   - 39006f6fd6bf
   - 91560258e972
+  - b44b081bcf37
   tool_panel_section_label: Imaging
 - name: cp_convert_objects_to_image
   owner: bgruening
@@ -515,12 +559,14 @@ tools:
   - cdf8e3c57dae
   - d9fa2e6fae97
   - df3ad3ba5c6f
+  - ef4aed1d34c4
   tool_panel_section_label: Imaging
 - name: cp_display_data_on_image
   owner: bgruening
   revisions:
   - 2484086dee41
   - 4e12ef887a2a
+  - 5d28ac336861
   - 6a7da2e5f696
   - 7c70e5268acd
   - c49a557b4e3e
@@ -532,6 +578,7 @@ tools:
   - 11f177b1a59e
   - 29188f9c4ca8
   - 3f9747bda8c4
+  - bace5a93a97c
   - e3243230788c
   - ee0007b3c2d2
   - f2ed92b011a9
@@ -544,12 +591,14 @@ tools:
   - c0759ca34e20
   - c956182d4e2c
   - d0178bdcd00e
+  - f24c370e5ea4
   - f8fa0f6718a3
   tool_panel_section_label: Imaging
 - name: cp_gray_to_color
   owner: bgruening
   revisions:
   - 31d195bedf6d
+  - 3245681b2f6d
   - ad271f78a87a
   - bbf1ef17c01b
   - c72f83dbc7b5
@@ -561,6 +610,7 @@ tools:
   revisions:
   - 52c01fb29b2a
   - 6bf947501352
+  - 87d4d92d7487
   - 993faa34333b
   - 99e493b2e951
   - b6eec6087271
@@ -571,6 +621,7 @@ tools:
   revisions:
   - 3a05117669cf
   - 54d7d3450800
+  - 667a513e67e4
   - b178453ea8d1
   - baa3e6d4d99d
   - ca1421f7e3ed
@@ -580,6 +631,7 @@ tools:
   owner: bgruening
   revisions:
   - 1062c9e44147
+  - 2564f461de62
   - 382413f8ec1d
   - 88dd3674c4d0
   - a1a961c46d4b
@@ -593,6 +645,7 @@ tools:
   - 534ed7b8ca34
   - 7a08edbc790e
   - 91e03287f285
+  - a32c3f810ade
   - c2d573d02afc
   - c75596eadae1
   tool_panel_section_label: Imaging
@@ -604,6 +657,7 @@ tools:
   - 2a404d72850f
   - 5499dc6f8ac1
   - 8536b1ae0254
+  - b64af54c5c09
   - e87d1fd2d673
   tool_panel_section_label: Imaging
 - name: cp_measure_image_quality
@@ -613,6 +667,7 @@ tools:
   - 26945c55ddff
   - 4dcd464c22ff
   - 6f4715b8540a
+  - d3890df07463
   - e8a42b438de3
   - e972e07c7845
   tool_panel_section_label: Imaging
@@ -625,6 +680,7 @@ tools:
   - 980aed9e8fd5
   - ae299f107121
   - b867e9317a06
+  - e52c75a28c4b
   tool_panel_section_label: Imaging
 - name: cp_measure_object_size_shape
   owner: bgruening
@@ -634,6 +690,7 @@ tools:
   - 66408bdb2674
   - 79e10d12d90a
   - acf3aa487283
+  - d85f11570109
   - eba2ec72f967
   tool_panel_section_label: Imaging
 - name: cp_measure_texture
@@ -645,12 +702,14 @@ tools:
   - 658a2a451aec
   - 80b200ae516b
   - 8f3f8c94626f
+  - b76841ee5560
   tool_panel_section_label: Imaging
 - name: cp_relate_objects
   owner: bgruening
   revisions:
   - 3a2cfcd7c38a
   - 3a3033222f61
+  - 48102a685037
   - 8083a87d2fdf
   - b6f13e783ac5
   - f3f45c42bc36
@@ -659,6 +718,7 @@ tools:
 - name: cp_save_images
   owner: bgruening
   revisions:
+  - 27edbb90ab2b
   - 33f4fa1413fb
   - 4ecf93628f97
   - 609911f19ab2
@@ -673,4 +733,5 @@ tools:
   - 6100a22bf4f2
   - 6d3851ac885f
   - c09dcda1143f
+  - ff1a86a87364
   tool_panel_section_label: Imaging
