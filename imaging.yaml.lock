@@ -20,12 +20,14 @@ tools:
   owner: imgteam
   revisions:
   - 0976b373a321
+  - 612aa1478fe1
   - 8aa6e767f737
   tool_panel_section_label: Imaging
 - name: 2d_histogram_equalization
   owner: imgteam
   revisions:
   - 70316d792fc9
+  - 77f7159d775a
   tool_panel_section_label: Imaging
 - name: 2d_simple_filter
   owner: imgteam
@@ -39,6 +41,7 @@ tools:
   revisions:
   - 17d3cfba9b5a
   - d13e26f576bc
+  - e6987afa0484
   tool_panel_section_label: Imaging
 - name: 2d_auto_threshold
   owner: imgteam
@@ -61,12 +64,14 @@ tools:
   owner: imgteam
   revisions:
   - 7989264b5780
+  - ac55e2f4d9e3
   - c496306c1cba
   tool_panel_section_label: Imaging
 - name: superdsm
   owner: imgteam
   revisions:
   - 1b0fc671187f
+  - 244f67290d28
   - 700ae37e5c69
   tool_panel_section_label: Imaging
 - name: rfove
@@ -77,6 +82,7 @@ tools:
 - name: landmark_registration
   owner: imgteam
   revisions:
+  - 02aa2873e67d
   - 12997d4c5b00
   - 4e089a0983b1
   - 9ccd642e7ae2
@@ -93,6 +99,7 @@ tools:
 - name: image_registration_affine
   owner: imgteam
   revisions:
+  - 5030651c2993
   - 77dc68af2b40
   - e34222a620d4
   - fa769715b6b0
@@ -105,11 +112,13 @@ tools:
   - 37b079c98c38
   - 974cf4357707
   - be9a815e2240
+  - f5744f0e5a81
   tool_panel_section_label: Imaging
 - name: projective_transformation_points
   owner: imgteam
   revisions:
   - 3a686b6aa7fc
+  - 65e95d0b8838
   - a84822a0060c
   - aaac58d83043
   - ed8a71e13f7b
@@ -118,6 +127,7 @@ tools:
 - name: spot_detection_2d
   owner: imgteam
   revisions:
+  - 14f9986800fa
   - 4645b356bf3b
   - 859dd1c11ac0
   - a9972c993bed
@@ -128,6 +138,7 @@ tools:
   revisions:
   - 65210e69cf95
   - b30aa285ac0a
+  - f3fad67af22c
   - fd4293bee0dc
   tool_panel_section_label: Imaging
 - name: curve_fitting
@@ -135,6 +146,7 @@ tools:
   revisions:
   - 004c57179c61
   - 00feb1ecd040
+  - 2dc244356765
   - c54cf4ce6baf
   - e0af18405e37
   tool_panel_section_label: Imaging
@@ -142,6 +154,7 @@ tools:
   owner: imgteam
   revisions:
   - 5a210baa2ff1
+  - 984b342d03a6
   - d0960e1b25a8
   - f8f1100d0701
   tool_panel_section_label: Imaging
@@ -154,6 +167,7 @@ tools:
 - name: 2d_filter_segmentation_by_features
   owner: imgteam
   revisions:
+  - 6ad1d3cfdea1
   - e576b73a2e2f
   tool_panel_section_label: Imaging
 - name: binary2labelimage
@@ -161,17 +175,20 @@ tools:
   revisions:
   - 6c92ac9ce868
   - 6e65fd971e13
+  - 9bb446db4a1e
   - b97a362ff321
   tool_panel_section_label: Imaging
 - name: binaryimage2points
   owner: imgteam
   revisions:
   - cb1eaebdb4c4
+  - f38f42d55813
   tool_panel_section_label: Imaging
 - name: mergeneighboursinlabelimage
   owner: imgteam
   revisions:
   - 07ac39c0e949
+  - 9cbddb13fb9e
   - c6a6ab7c9940
   tool_panel_section_label: Imaging
 - name: scale_image
@@ -187,26 +204,31 @@ tools:
   revisions:
   - 8856a7c85e4c
   - aacfbd7c4af6
+  - f312d414f234
   tool_panel_section_label: Imaging
 - name: split_labelmap
   owner: imgteam
   revisions:
   - 597b7ef44b05
+  - 9db1c22dbe17
   tool_panel_section_label: Imaging
 - name: concat_channels
   owner: imgteam
   revisions:
+  - 212627bfb759
   - 30517f733f7b
   - d42501109c05
   tool_panel_section_label: Imaging
 - name: points2binaryimage
   owner: imgteam
   revisions:
+  - 90385ec28b34
   - dd513c9f5230
   tool_panel_section_label: Imaging
 - name: points2labelimage
   owner: imgteam
   revisions:
+  - 30ca5d5d03ec
   - 9bd039f46843
   tool_panel_section_label: Imaging
 - name: labelimage2points
@@ -214,12 +236,14 @@ tools:
   revisions:
   - 07525a7d9ea0
   - 39e6d6a84257
+  - 3b7460735223
   tool_panel_section_label: Imaging
 - name: permutate_axis
   owner: imgteam
   revisions:
   - 0bbe34198e24
   - 5b82f2186244
+  - 7e7215e721af
   - 91e255c78eb5
   tool_panel_section_label: Imaging
 - name: mahotas_features
@@ -243,10 +267,12 @@ tools:
   - 5bf8eb50b280
   - 664232d2a3f7
   - 895a29ebd0c7
+  - b58447a2eed2
   tool_panel_section_label: Imaging
 - name: coordinates_of_roi
   owner: imgteam
   revisions:
+  - 00175f4a2bbb
   - 02a686fc1654
   - 0d30ffea8874
   - 24d9bd16c953
@@ -256,6 +282,7 @@ tools:
   owner: imgteam
   revisions:
   - 3f738d5d91bf
+  - 99433164b593
   - cb2d9de888a1
   - ec1ca4d62192
   - f46f64f9590d
@@ -285,6 +312,7 @@ tools:
 - name: wsi_extract_top_view
   owner: imgteam
   revisions:
+  - 3bd767eee603
   - a1d02d2e814a
   - cfe88c6041e9
   tool_panel_section_label: Imaging
