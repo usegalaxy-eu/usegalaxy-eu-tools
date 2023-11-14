@@ -37,6 +37,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: Install pyyaml
+        run: pip install PyYAML
       - name: Build API
         run:
           python scripts/api.py
