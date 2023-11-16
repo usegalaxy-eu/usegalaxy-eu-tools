@@ -58,3 +58,9 @@ We encourage you to submit your tool to one of the larger community repositories
 	- Run `make fix`
 	- Edit the .yaml.lock to correct the version number.
 - Open a pull request
+
+## Static API
+
+This repo deploys a static API with the correspondance between tools and `tool_panel_section_label`.
+Some tools are in multiple `tool_panel_section_label`.
+In this case, it the section is taken from [this](./api/disambiguous_tool_category.json) json file.
