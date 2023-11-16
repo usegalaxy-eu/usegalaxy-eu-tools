@@ -6,15 +6,15 @@ tools:
   - name: pampa_presabs
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-  
+
   - name: pampa_communitymetrics
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-  
+
   - name: pampa_glmsp
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-  
+
   - name: pampa_glmcomm
     owner: ecology
     tool_panel_section_label: 'Species abundance'
@@ -22,27 +22,27 @@ tools:
   - name: pampa_plotglm
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-  
+
   - name: stoc_maketable
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-    
+
   - name: stoc_filteringsp
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-    
+
   - name: stoc_mainglm
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-    
+
   - name: stoc_mainglm_group
     owner: ecology
     tool_panel_section_label: 'Species abundance'
- 
+
   - name: stoc_trend_indic
     owner: ecology
     tool_panel_section_label: 'Species abundance'
-    
+
   - name: regionalgam_ab_index
     owner: ecology
     tool_panel_section_label: 'Species abundance'
@@ -98,18 +98,18 @@ tools:
   - name: cb_div
     owner: ecology
     tool_panel_section_label: 'Biodiversity data exploration'
-    
+
   - name: cb_dissim
     owner: ecology
-    tool_panel_section_label: 'Biodiversity data exploration'
-  
+    tool_panel_section_label: 'Compute indicators for turnover boulders fields'
+
   - name: cb_ivr
     owner: ecology
-    tool_panel_section_label: 'Biodiversity data exploration'
+    tool_panel_section_label: 'Compute indicators for turnover boulders fields'
 
   - name: sample_seqs
     owner: peterjc
-    tool_panel_section_label: 'Filter and Sort'
+    tool_panel_section_label: 'NCBI Blast'
 
   - name: xmlstarlet
     owner: ecology
@@ -145,7 +145,7 @@ tools:
 
   - name: prinseq
     owner: iuc
-    tool_panel_section_label: 'Text Manipulation'
+    tool_panel_section_label: 'FASTA/FASTQ'
 
 
   - name: split_file_on_column
@@ -175,7 +175,7 @@ tools:
 
   - name: subtract
     owner: devteam
-    tool_panel_section_label: 'Text Manipulation'
+    tool_panel_section_label: 'Operate on Genomic Intervals'
 
   - name: subtract_query
     owner: devteam
@@ -211,7 +211,7 @@ tools:
 
   - name: cluster
     owner: devteam
-    tool_panel_section_label: 'Text Manipulation'
+    tool_panel_section_label: 'Operate on Genomic Intervals'
 
   - name: get_flanks
     owner: devteam
@@ -219,11 +219,11 @@ tools:
 
   - name: complement
     owner: devteam
-    tool_panel_section_label: 'Text Manipulation'
+    tool_panel_section_label: 'Operate on Genomic Intervals'
 
   - name: basecoverage
     owner: devteam
-    tool_panel_section_label: 'Text Manipulation'
+    tool_panel_section_label: 'Operate on Genomic Intervals'
 
   - name: dna_filtering
     owner: devteam
@@ -642,7 +642,7 @@ tools:
   - name: xarray_metadata_info
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
-    
+
   - name: xarray_select
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
@@ -725,43 +725,43 @@ tools:
   - name: vigiechiro_idvalid
     owner: ecology
     tool_panel_section_label: 'Animal Detection on Acoustic Recordings'
-    
+
   - name: cb_dissim
     owner: ecology
     tool_panel_section_label: 'Compute indicators for turnover boulders fields'
-  
+
   - name: cb_ivr
     owner: ecology
     tool_panel_section_label: 'Compute indicators for turnover boulders fields'
- 
+
   - name: champ_blocs
     owner: ecology
     tool_panel_section_label: 'Compute indicators for turnover boulders fields'
-    
+
   - name: srs_preprocess_s2
     owner: ecology
     tool_panel_section_label: 'Compute indicators for satellite remote sensing'
-    
+
   - name: srs_diversity_maps
     owner: ecology
     tool_panel_section_label: 'Compute indicators for satellite remote sensing'
-    
+
   - name: srs_global_indices
     owner: ecology
     tool_panel_section_label: 'Compute indicators for satellite remote sensing'
-    
+
   - name: srs_process_data
     owner: ecology
     tool_panel_section_label: 'Compute indicators for satellite remote sensing'
-    
+
   - name: srs_spectral_indices
     owner: ecology
     tool_panel_section_label: 'Compute indicators for satellite remote sensing'
-    
+
   - name: srs_pca
     owner: ecology
     tool_panel_section_label: 'Compute indicators for satellite remote sensing'
-    
+
   - name: srs_metadata
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
@@ -769,11 +769,11 @@ tools:
   - name: obisindicators
     owner: ecology
     tool_panel_section_label: 'Biodiversity data exploration'
-    
+
   - name: ab1_fastq_converter
     owner: ecology
     tool_panel_section_label: 'Convert Formats'
-    
+
   - name: aligned_to_consensus
     owner: ecology
     tool_panel_section_label: 'Assembly'
@@ -793,7 +793,7 @@ tools:
   - name: ecoregion_taxa_seeker
     owner: ecology
     tool_panel_section_label: 'Ecoregionalization'
-   
+
   - name: ecoregion_eco_map
     owner: ecology
     tool_panel_section_label: 'Ecoregionalization'
