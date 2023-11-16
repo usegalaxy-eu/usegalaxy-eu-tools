@@ -41,7 +41,7 @@ jobs:
         run: pip install PyYAML
       - name: Build API
         run:
-          python scripts/api.py
+          python scripts/api.py api/disambiguous_tool_category.json
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
