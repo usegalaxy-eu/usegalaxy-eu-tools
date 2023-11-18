@@ -118,7 +118,7 @@ tools:
 
   - name: 'interproscan5'
     owner: 'bgruening'
-    tool_panel_section_label: 'Metagenomic Analysis'
+    tool_panel_section_label: 'Annotation'
 
     # combination_taxo_func
   - name: 'combine_metaphlan2_humann2'
@@ -133,10 +133,10 @@ tools:
 
   - name: 'taxonomy_krona_chart'
     owner: 'crs4'
-    tool_panel_section_label: 'Graph/Display Data'
+    tool_panel_section_label: 'Metagenomic Analysis'
 
     # AMR
-    name: 'kleborate'
+  - name: 'kleborate'
     owner: 'iuc'
     tool_panel_section_label: 'Metagenomic Analysis'
 
