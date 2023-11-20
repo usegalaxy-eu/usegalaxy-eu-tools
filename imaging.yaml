@@ -35,15 +35,15 @@ tools:
   - name: 2d_local_threshold
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: segmetrics
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: superdsm
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: rfove
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -51,15 +51,15 @@ tools:
   - name: landmark_registration
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: landmark_registration_ls
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: image_registration_affine
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: projective_transformation
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -67,19 +67,19 @@ tools:
   - name: projective_transformation_points
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: spot_detection_2d
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: points_association_nn
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: curve_fitting
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: imagecoordinates_flipaxis
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -87,7 +87,7 @@ tools:
   - name: 2d_split_binaryimage_by_watershed
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: 2d_filter_segmentation_by_features
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -119,23 +119,23 @@ tools:
   - name: concat_channels
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: points2binaryimage
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: points2labelimage
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: labelimage2points
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: permutate_axis
     owner: imgteam
     tool_panel_section_label: "Imaging"
-  
+
   - name: mahotas_features
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -143,11 +143,11 @@ tools:
   - name: 2d_feature_extraction
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: count_objects
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: coordinates_of_roi
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -175,7 +175,7 @@ tools:
   - name: visceral_evaluatesegmentation
     owner: imgteam
     tool_panel_section_label: "Imaging"
-  
+
   - name: bfconvert
     owner: imgteam
     tool_panel_section_label: "Imaging"
@@ -291,99 +291,97 @@ tools:
   - name: imagej2_bunwarpj_adapt_transform
     owner: imgteam
     tool_panel_section_label: "Imaging"
-    
+
   - name: unzip
     owner: imgteam
     tool_panel_section_label: 'Collection Operations'
 
+  - name: bioformats2raw
+    owner: imgteam
+    tool_panel_section_label: "Imaging"
+
   - name: cp_cellprofiler
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_common
     owner: bgruening
-    tool_panel_section_label: "Imaging"    
+    tool_panel_section_label: "Imaging"
 
   - name: cp_color_to_gray
     owner: bgruening
-    tool_panel_section_label: "Imaging"    
+    tool_panel_section_label: "Imaging"
 
   - name: cp_tile
     owner: bgruening
-    tool_panel_section_label: "Imaging"    
+    tool_panel_section_label: "Imaging"
 
   - name: cp_track_objects
     owner: bgruening
-    tool_panel_section_label: "Imaging"    
+    tool_panel_section_label: "Imaging"
 
   - name: cp_overlay_outlines
     owner: bgruening
-    tool_panel_section_label: "Imaging"    
+    tool_panel_section_label: "Imaging"
 
   - name: cp_convert_objects_to_image
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_display_data_on_image
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_enhance_or_suppress_features
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_export_to_spreadsheet
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_gray_to_color
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_identify_primary_objects
     owner: bgruening
-    tool_panel_section_label: "Imaging"  
-    
+    tool_panel_section_label: "Imaging"
   - name: cp_mask_image
     owner: bgruening
-    tool_panel_section_label: "Imaging"      
-    
+    tool_panel_section_label: "Imaging"
   - name: cp_measure_granularity
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_measure_image_area_occupied
     owner: bgruening
-    tool_panel_section_label: "Imaging"  
-    
+    tool_panel_section_label: "Imaging"
   - name: cp_measure_image_intensity
     owner: bgruening
-    tool_panel_section_label: "Imaging"  
-    
+    tool_panel_section_label: "Imaging"
   - name: cp_measure_image_quality
     owner: bgruening
-    tool_panel_section_label: "Imaging"  
-    
+    tool_panel_section_label: "Imaging"
   - name: cp_measure_object_intensity
     owner: bgruening
-    tool_panel_section_label: "Imaging"  
-  
+    tool_panel_section_label: "Imaging"
   - name: cp_measure_object_size_shape
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_measure_texture
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_relate_objects
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_save_images
     owner: bgruening
     tool_panel_section_label: "Imaging"
-    
+
   - name: cp_image_math
     owner: bgruening
     tool_panel_section_label: "Imaging"

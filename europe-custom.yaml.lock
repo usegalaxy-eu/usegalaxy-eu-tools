@@ -111,7 +111,7 @@ tools:
   owner: crs4
   revisions:
   - 020b3087d0b7
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: text_processing
   owner: bgruening
   revisions:
@@ -177,7 +177,7 @@ tools:
   - 1ee282794de3
   - 654b3a274ed5
   - 6b865dde1baa
-  tool_panel_section_label: Text Manipulation
+  tool_panel_section_label: FASTA/FASTQ
 - name: add_value
   owner: devteam
   revisions:
@@ -242,7 +242,7 @@ tools:
   owner: devteam
   revisions:
   - 765ceb06c3e2
-  tool_panel_section_label: Text Manipulation
+  tool_panel_section_label: Operate on Genomic Intervals
 - name: get_flanks
   owner: devteam
   revisions:
@@ -252,17 +252,17 @@ tools:
   owner: devteam
   revisions:
   - e0a23ab32d7f
-  tool_panel_section_label: Text Manipulation
+  tool_panel_section_label: Operate on Genomic Intervals
 - name: subtract
   owner: devteam
   revisions:
   - 7a2a604ae9c8
-  tool_panel_section_label: Text Manipulation
+  tool_panel_section_label: Operate on Genomic Intervals
 - name: basecoverage
   owner: devteam
   revisions:
   - 0a3e3133b09d
-  tool_panel_section_label: Text Manipulation
+  tool_panel_section_label: Operate on Genomic Intervals
 - name: subtract_query
   owner: devteam
   revisions:
@@ -316,7 +316,7 @@ tools:
   owner: devteam
   revisions:
   - 7a2a604ae9c8
-  tool_panel_section_label: Join, Subtract and Group
+  tool_panel_section_label: Operate on Genomic Intervals
 - name: bam_to_scidx
   owner: iuc
   revisions:
@@ -554,7 +554,7 @@ tools:
   owner: devteam
   revisions:
   - e997b710e38a
-  tool_panel_section_label: Regional Variation
+  tool_panel_section_label: Graph/Display Data
 - name: delete_overlapping_indels
   owner: devteam
   revisions:
@@ -1509,7 +1509,7 @@ tools:
   owner: bgruening
   revisions:
   - ccc755bdf11d
-  tool_panel_section_label: Epigenetics
+  tool_panel_section_label: Peak Calling
 - name: bwameth
   owner: iuc
   revisions:
@@ -1521,7 +1521,7 @@ tools:
   - b4e6819b25ef
   - d82648ad25a3
   - f7094efef903
-  tool_panel_section_label: Epigenetics
+  tool_panel_section_label: Mapping
 - name: metilene
   owner: rnateam
   revisions:
@@ -1624,7 +1624,7 @@ tools:
   owner: hammock
   revisions:
   - 4db310b7e37c
-  tool_panel_section_label: Annotation
+  tool_panel_section_label: Multiple Alignments
 - name: segmentation_fold
   owner: yhoogstrate
   revisions:
@@ -1850,7 +1850,7 @@ tools:
   owner: sauria
   revisions:
   - 4a978cf8cf92
-  tool_panel_section_label: Test Tools
+  tool_panel_section_label: Epigenetics
 - name: translate_bed_sequences
   owner: jjohnson
   revisions:
@@ -1883,7 +1883,7 @@ tools:
   - 3f1a0d47ea8d
   - b11b3ac48bb9
   - b97694b21bc3
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: ncbi_blast_plus
   owner: devteam
   revisions:
@@ -1893,12 +1893,12 @@ tools:
   owner: devteam
   revisions:
   - f03c7ba8d8bc
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: kraken
   owner: devteam
   revisions:
   - b2392a9dfb01
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: blast_rbh
   owner: peterjc
   revisions:
@@ -1908,27 +1908,27 @@ tools:
   owner: devteam
   revisions:
   - 9ae975c30dde
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: taxonomy_krona_chart
   owner: crs4
   revisions:
   - 020b3087d0b7
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: kraken_filter
   owner: devteam
   revisions:
   - fe94f318048c
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: kraken_translate
   owner: devteam
   revisions:
   - b9971bca4b01
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Metagenomic Analysis
 - name: sample_seqs
   owner: peterjc
   revisions:
   - 02c13ef1a669
-  tool_panel_section_label: NCBI Blast
+  tool_panel_section_label: Filter and Sort
 - name: diamond
   owner: bgruening
   revisions:

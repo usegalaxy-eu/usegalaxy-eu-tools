@@ -78,7 +78,7 @@ tools:
 
   - name: taxonomy_krona_chart
     owner: crs4
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
 
   - name: text_processing
     owner: bgruening
@@ -110,7 +110,7 @@ tools:
     tool_panel_section_label: Get Data
   - name: prinseq
     owner: iuc
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: FASTA/FASTQ
   - name: add_value
     owner: devteam
     tool_panel_section_label: Text Manipulation
@@ -149,19 +149,19 @@ tools:
     tool_panel_section_label: Text Manipulation
   - name: cluster
     owner: devteam
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Operate on Genomic Intervals
   - name: get_flanks
     owner: devteam
     tool_panel_section_label: Text Manipulation
   - name: complement
     owner: devteam
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Operate on Genomic Intervals
   - name: subtract
     owner: devteam
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Operate on Genomic Intervals
   - name: basecoverage
     owner: devteam
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Operate on Genomic Intervals
   - name: subtract_query
     owner: devteam
     tool_panel_section_label: Text Manipulation
@@ -190,16 +190,16 @@ tools:
     owner: iuc
     tool_panel_section_label: Join, Subtract and Group
 
-  # - install_repository_dependencies: true
-  #   install_resolver_dependencies: true
-  #   install_tool_dependencies: false
-  #   name: datamash_wrapper
-  #   owner: agordon
-  #   tool_panel_section_label: Join, Subtract and Group
+    # - install_repository_dependencies: true
+    #   install_resolver_dependencies: true
+    #   install_tool_dependencies: false
+    #   name: datamash_wrapper
+    #   owner: agordon
+    #   tool_panel_section_label: Join, Subtract and Group
 
   - name: subtract
     owner: devteam
-    tool_panel_section_label: Join, Subtract and Group
+    tool_panel_section_label: Operate on Genomic Intervals
 
   - name: bam_to_scidx
     owner: iuc
@@ -323,7 +323,7 @@ tools:
     tool_panel_section_label: Regional Variation
   - name: draw_stacked_barplots
     owner: devteam
-    tool_panel_section_label: Regional Variation
+    tool_panel_section_label: Graph/Display Data
   - name: delete_overlapping_indels
     owner: devteam
     tool_panel_section_label: Regional Variation
@@ -819,10 +819,10 @@ tools:
     tool_panel_section_label: Peak Calling
   - name: pileometh
     owner: bgruening
-    tool_panel_section_label: Epigenetics
+    tool_panel_section_label: Peak Calling
   - name: bwameth
     owner: iuc
-    tool_panel_section_label: Epigenetics
+    tool_panel_section_label: Mapping
   - name: metilene
     owner: rnateam
     tool_panel_section_label: Epigenetics
@@ -876,7 +876,7 @@ tools:
     tool_panel_section_label: Annotation
   - name: hammock
     owner: hammock
-    tool_panel_section_label: Annotation
+    tool_panel_section_label: Multiple Alignments
   - name: segmentation_fold
     owner: yhoogstrate
     tool_panel_section_label: Annotation
@@ -999,7 +999,7 @@ tools:
     tool_panel_section_label: ChemicalToolBox
   - name: hifive
     owner: sauria
-    tool_panel_section_label: Test Tools
+    tool_panel_section_label: Epigenetics
   - name: translate_bed_sequences
     owner: jjohnson
     tool_panel_section_label: Operate on Genomic Intervals
@@ -1017,34 +1017,34 @@ tools:
     tool_panel_section_label: EMBOSS
   - name: kraken_taxonomy_report
     owner: iuc
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
   - name: ncbi_blast_plus
     owner: devteam
     tool_panel_section_label: NCBI Blast
   - name: kraken2tax
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
   - name: kraken
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
   - name: blast_rbh
     owner: peterjc
     tool_panel_section_label: NCBI Blast
   - name: kraken_report
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
   - name: taxonomy_krona_chart
     owner: crs4
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
   - name: kraken_filter
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
   - name: kraken_translate
     owner: devteam
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Metagenomic Analysis
   - name: sample_seqs
     owner: peterjc
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: Filter and Sort
   - name: diamond
     owner: bgruening
     tool_panel_section_label: NCBI Blast

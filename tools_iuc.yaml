@@ -186,7 +186,7 @@ tools:
   - name: homer_annotatepeaks
     owner: iuc
     tool_panel_section_label: Annotation
-    
+
   - name: homer_findmotifs
     owner: iuc
     tool_panel_section_label: Annotation
@@ -657,7 +657,7 @@ tools:
 
   - name: bwameth
     owner: iuc
-    tool_panel_section_label: Epigenetics
+    tool_panel_section_label: Mapping
 
   - name: moabs
     owner: iuc
@@ -758,7 +758,7 @@ tools:
   - name: bbtools_bbduk
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
-    
+
   - name: bbtools_bbmerge
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
@@ -993,23 +993,23 @@ tools:
 
   - name: umi_tools_dedup
     owner: iuc
-    tool_panel_section_label:  FASTA/FASTQ
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: umi_tools_extract
     owner: iuc
-    tool_panel_section_label:  FASTA/FASTQ
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: umi_tools_group
     owner: iuc
-    tool_panel_section_label:  FASTA/FASTQ
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: umi_tools_whitelist
     owner: iuc
-    tool_panel_section_label:  FASTA/FASTQ
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: fasta_regex_finder
     owner: mbernt
-    tool_panel_section_label:  FASTA/FASTQ
+    tool_panel_section_label: FASTA/FASTQ
 
 
 # FILTER AND SORT
@@ -1516,7 +1516,7 @@ tools:
 
   - name: subtract
     owner: devteam
-    tool_panel_section_label: Join, Subtract and Group
+    tool_panel_section_label: Operate on Genomic Intervals
 
 
 # MACHINE LEARNING
@@ -1878,10 +1878,10 @@ tools:
   - name: data_manager_build_bracken_database
     owner: iuc
 
-  - name: amrfinderplus_data_manager_build 
+  - name: amrfinderplus_data_manager_build
     owner: iuc
 
-  - name: data_manager_bakta 
+  - name: data_manager_bakta
     owner: iuc
 
   - name: drep_compare
@@ -2894,7 +2894,7 @@ tools:
 
   - name: bbtools_bbduk
     owner: iuc
-    tool_panel_section_label: NCBI Blast
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: diamond
     owner: bgruening
@@ -3465,7 +3465,7 @@ tools:
   - name: migmap
     owner: iuc
     tool_panel_section_label: RNA Analysis
-  
+
   - name: mirnature
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -3488,7 +3488,7 @@ tools:
 
   - name: rnaquast
     owner: iuc
-    tool_panel_section_label: RNA Analysis
+    tool_panel_section_label: Assembly
 
   - name: rseqc
     owner: nilesh
@@ -3611,7 +3611,7 @@ tools:
 
   - name: draw_stacked_barplots
     owner: devteam
-    tool_panel_section_label: Regional Variation
+    tool_panel_section_label: Graph/Display Data
 
   - name: featurecounter
     owner: devteam
@@ -3986,7 +3986,7 @@ tools:
     owner: iuc
     tool_panel_section_label: Statistics
 
-  ## IWtomic - Interval-Wise Testing for Omics Data
+    ## IWtomic - Interval-Wise Testing for Omics Data
 
   - name: iwtomics_loadandplot
     owner: iuc
@@ -4041,11 +4041,11 @@ tools:
 
   - name: basecoverage
     owner: devteam
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Operate on Genomic Intervals
 
   - name: cluster
     owner: devteam
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Operate on Genomic Intervals
 
   - name: column_maker
     owner: devteam
@@ -4109,7 +4109,7 @@ tools:
 
   - name: prinseq
     owner: iuc
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: FASTA/FASTQ
 
   - name: query_tabular
     owner: iuc
@@ -4125,7 +4125,7 @@ tools:
 
   - name: subtract
     owner: devteam
-    tool_panel_section_label: Text Manipulation
+    tool_panel_section_label: Operate on Genomic Intervals
 
   - name: subtract_query
     owner: devteam
@@ -4788,7 +4788,7 @@ tools:
   - name: data_manager_semibin
     owner: iuc
 
-  - name: data_manager_vep_cache_downloader 
+  - name: data_manager_vep_cache_downloader
     owner: iuc
 
   - name: data_manager_pharokka
