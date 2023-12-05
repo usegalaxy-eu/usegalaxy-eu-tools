@@ -119,9 +119,20 @@ tools:
   owner: recetox
   revisions:
   - 165f303aa2d1
+  - 4845979fbe02
   - b9cc12600553
   - c5ed6bfcd806
   - d4609fbf8ca3
+  tool_panel_section_label: Metabolomics
+- name: matchms_add_key
+  owner: recetox
+  revisions:
+  - 68fde0dc3d83
+  tool_panel_section_label: Metabolomics
+- name: matchms_remove_key
+  owner: recetox
+  revisions:
+  - ea891750acfc
   tool_panel_section_label: Metabolomics
 - name: matchms_filtering
   owner: recetox
@@ -131,12 +142,14 @@ tools:
   - 357df6c47d92
   - 36a53917818d
   - a177ac3c752c
+  - a4661ff81aa4
   tool_panel_section_label: Metabolomics
 - name: matchms_fingerprint_similarity
   owner: recetox
   revisions:
   - 79accd21387c
   - 84af792d3a78
+  - cbfd7c35e0a4
   - da9c5d40d1ba
   - df85b26201d1
   tool_panel_section_label: Metabolomics
@@ -148,12 +161,14 @@ tools:
   - 86a45ba3d3f2
   - ae45992f969e
   - afc881c21a62
+  - d888a64f7c2a
   tool_panel_section_label: Metabolomics
 - name: matchms_metadata_export
   owner: recetox
   revisions:
   - 73c902331bbc
   - 7504a8f93699
+  - 7a489b217930
   - 8ff29dee9f26
   - f04610d25411
   tool_panel_section_label: Metabolomics
@@ -164,10 +179,12 @@ tools:
   - 41cf8dd03e42
   - b5b360897004
   - be20e19c57e8
+  - f72cc5505da3
   tool_panel_section_label: Metabolomics
 - name: matchms_networking
   owner: recetox
   revisions:
+  - 2200e9b7a2b3
   - 7c9599ecc2d3
   - 8147d93d372d
   - 9982b85ff4e7
@@ -185,12 +202,14 @@ tools:
   - 3f96c93f8566
   - 50229f084c4e
   - 54b6775010e0
+  - 9782eb7a22b7
   - 9ff95a1a2705
   tool_panel_section_label: Metabolomics
 - name: matchms_split
   owner: recetox
   revisions:
   - 0cf68b536cd1
+  - 1dcd8b0bd608
   - 5bdb8e7841f4
   - 97be845e45c2
   - ffe46a9b1124
@@ -198,11 +217,13 @@ tools:
 - name: matchms_subsetting
   owner: recetox
   revisions:
+  - 1387786b6206
   - aa2e912f9dc2
   tool_panel_section_label: Metabolomics
 - name: matchms_metadata_merge
   owner: recetox
   revisions:
+  - 3a37748f6c95
   - caf007467c84
   tool_panel_section_label: Metabolomics
 - name: waveica
@@ -216,4 +237,9 @@ tools:
   owner: recetox
   revisions:
   - d5633eaf3552
+  tool_panel_section_label: ChemicalToolBox
+- name: rem_complex
+  owner: recetox
+  revisions:
+  - 1dc9f5a3163d
   tool_panel_section_label: ChemicalToolBox
