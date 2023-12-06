@@ -1,6 +1,11 @@
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: bia_download
+  owner: bgruening
+  revisions:
+  - 3085096f2b99
+  tool_panel_section_label: Imaging
 - name: cp_cellprofiler4
   owner: bgruening
   revisions:
