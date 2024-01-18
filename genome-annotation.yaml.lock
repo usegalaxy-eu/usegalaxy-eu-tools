@@ -12,6 +12,21 @@ tools:
   revisions:
   - 3f438bf5475d
   tool_panel_section_label: Annotation
+- name: apollo_fetch_jbrowse
+  owner: gga
+  revisions:
+  - d91f4bc313d3
+  tool_panel_section_label: Apollo
+- name: apollo_feat_from_gff3
+  owner: gga
+  revisions:
+  - 250745643de2
+  tool_panel_section_label: Apollo
+- name: apollo_export
+  owner: gga
+  revisions:
+  - f6e09a37bc8b
+  tool_panel_section_label: Apollo
 - name: apollo_iframe
   owner: gga
   revisions:
@@ -24,6 +39,16 @@ tools:
   - c6172b538caf
   - e1346ad005b3
   - f4e3f9480307
+  tool_panel_section_label: Apollo
+- name: apollo_create_or_update
+  owner: gga
+  revisions:
+  - 3d693b93991f
+  tool_panel_section_label: Apollo
+- name: apollo_delete_organism
+  owner: gga
+  revisions:
+  - 8f4c1d40e893
   tool_panel_section_label: Apollo
 - name: apollo_create_account
   owner: gga
@@ -50,6 +75,11 @@ tools:
   - b31da15420e2
   - bc2b80fc7e30
   - f515aa0b0437
+  tool_panel_section_label: Apollo
+- name: apollo_delete_features
+  owner: gga
+  revisions:
+  - f8d6315223d8
   tool_panel_section_label: Apollo
 - name: staramr
   owner: nml
