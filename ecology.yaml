@@ -706,6 +706,14 @@ tools:
     owner: ecology
     tool_panel_section_label: 'Get Data'
 
+  - name: argo_getdata
+    owner: ecology
+    tool_panel_section_label: 'Get Data'
+
+  - name: obis_data
+    owner: ecology
+    tool_panel_section_label: 'Get Data'    
+    
   - name: dwt_var_perfeature
     owner: devteam
     tool_panel_section_label: 'Statistics'
@@ -846,4 +854,8 @@ tools:
     owner: ecology
     tool_panel_section_label: 'Indicators from geometric mean'
 
-    
+# Interpolation
+
+  - name: interpolation_run_idw_interpolation
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
