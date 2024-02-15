@@ -892,6 +892,10 @@ tools:
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: seqprep
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: fastqc
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
@@ -4951,5 +4955,9 @@ tools:
     tool_panel_section_label: Metabolomics
 
   - name: dimet_timecourse_analysis
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: dimet_bivariate_analysis
     owner: iuc
     tool_panel_section_label: Metabolomics
