@@ -1,9 +1,11 @@
 name: Update Trusted Tools
 
 on:
+  workflow_dispatch:
+  push:
+  pull_request:
   schedule:
     - cron: "0 2 * * THU"
-  workflow_dispatch:
 
 jobs:
   build:
