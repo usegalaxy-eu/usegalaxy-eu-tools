@@ -44,6 +44,7 @@ tools:
   - 3f0aa1b3e816
   - 728dacaf08a9
   - 865ece5ca178
+  - 92eee5f31117
   - da5f1924bb2e
   - debdc1469b41
   tool_panel_section_label: Annotation
@@ -61,6 +62,11 @@ tools:
   - cf13a1e03e5b
   - e4bd1e99bacf
   - e824f5d958d0
+  tool_panel_section_label: Annotation
+- name: compleasm
+  owner: iuc
+  revisions:
+  - 07a74537acd5
   tool_panel_section_label: Annotation
 - name: dgidb_annotator
   owner: devteam
@@ -105,6 +111,7 @@ tools:
   - 9f2455341fac
   - 9feee7fc49a1
   - b6b5cd37f2a2
+  - d0336d67702b
   tool_panel_section_label: Annotation
 - name: funannotate_clean
   owner: iuc
@@ -123,6 +130,7 @@ tools:
   - 30f08d74024f
   - 494f0bb4a993
   - 563a19373357
+  - 57c6718cbfcc
   - 5a5ae61da69c
   - a7ce2601500c
   - b69c46064ec7
@@ -803,6 +811,7 @@ tools:
   - 39edec572bae
   - 589078edd230
   - 9d79beb19ac3
+  - d7edbc9c3a07
   - f8113c25bc6b
   tool_panel_section_label: Assembly
 - name: meryl
@@ -834,6 +843,7 @@ tools:
   - e93c1a0678cd
   - eb7a370f6588
   - f338e9942b27
+  - f369ef5f210b
   - fd128c111ab0
   tool_panel_section_label: Assembly
 - name: minia
@@ -876,12 +886,18 @@ tools:
   - 11e5408fd238
   - fe0dc27e6327
   tool_panel_section_label: Assembly
+- name: pretext_graph
+  owner: iuc
+  revisions:
+  - 75b4a2298714
+  tool_panel_section_label: Assembly
 - name: pretext_map
   owner: iuc
   revisions:
   - 02831bf9e95f
   - 2b16ba799da9
   - 511e5e3cd55e
+  - 79b48f02db49
   - 7c2e9bc2123b
   - 8fef980d48b5
   - bbe19ef04a74
@@ -947,6 +963,7 @@ tools:
   - 1035adb112c0
   - 16e0eb91072f
   - 1d06c8b38e77
+  - 28189050e437
   - 378e55aeeb25
   - 53c2bc8c2ae3
   - 675ee1aa5952
@@ -1004,6 +1021,7 @@ tools:
   - 9006e5836729
   - 9be710099b99
   - a789e163a670
+  - a90db5dbaaf3
   - b7829778729f
   - b8c00ce5dfa0
   - b8d633fbf5f5
@@ -1017,6 +1035,7 @@ tools:
   - 1bb12736175c
   - 1fc82fe7ebef
   - 42a39792aaae
+  - 604782a8a53a
   - 7490b213baa9
   - 904bf932cf78
   - d89ced9439f3
@@ -1028,6 +1047,7 @@ tools:
   - 34305b013402
   - 7004279ff8b7
   - 808b3a0a6716
+  - 9678993ca5bd
   - ad8b536d1caa
   - d6e617c4e338
   - fee85957cebe
@@ -1036,6 +1056,7 @@ tools:
 - name: spades_metaplasmidspades
   owner: iuc
   revisions:
+  - 037f9927c4ff
   - 21da31ed41a1
   - 32ab23671cc1
   - 4a01e0d2892c
@@ -1049,6 +1070,7 @@ tools:
   revisions:
   - 2a10645aeadd
   - 328aa71f0f3c
+  - 5b26685e5d3b
   - 86f66ab58e14
   - 9346dcffaafc
   - 9de69775f512
@@ -1062,6 +1084,7 @@ tools:
   - 340bc17f49cf
   - 6aad515a5270
   - 75405f5e2cc5
+  - 7bb235ff0746
   - 85fb02c43042
   - e41dcb0e913b
   - eabeb1a74dac
@@ -1076,6 +1099,7 @@ tools:
   - b65a43f70b99
   - d159735a6a9f
   - d5fb354f745d
+  - de1260f8a300
   tool_panel_section_label: Assembly
 - name: trycycler_cluster
   owner: iuc
@@ -1779,6 +1803,11 @@ tools:
   - 25c24379693a
   - 8050e091e99b
   - c64d534a763c
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqprep
+  owner: iuc
+  revisions:
+  - 8a0aa44e1e5b
   tool_panel_section_label: FASTA/FASTQ
 - name: fastqc
   owner: devteam
@@ -2611,6 +2640,7 @@ tools:
   - 02b21260faf4
   - 0a10fddd97d2
   - 44c66e8d21e6
+  - 6c571966cfb9
   - 7a5eaa19e92f
   - 7c9417381ad5
   tool_panel_section_label: Graph/Display Data
@@ -3473,6 +3503,11 @@ tools:
   - c0c2d0941de8
   - f54f5baedfdd
   tool_panel_section_label: Mapping
+- name: pbmm2
+  owner: iuc
+  revisions:
+  - f4ec47f1a8da
+  tool_panel_section_label: Mapping
 - name: rgrnastar
   owner: iuc
   revisions:
@@ -3488,6 +3523,7 @@ tools:
   - 7ed2edc1337f
   - 850f3679b9b4
   - 980d2a2e1180
+  - b0f2be869d6d
   - b9e04854e2bb
   - bc685d13b637
   - c772497b2c32
@@ -3504,6 +3540,7 @@ tools:
   - 178bdbdb6d24
   - 1cd2511a396e
   - 3a1253ee137b
+  - 42ce70172b72
   - 58b278def57e
   - 5ef7ec16b04f
   - 61cb2042581a
@@ -3731,6 +3768,7 @@ tools:
   owner: iuc
   revisions:
   - 13192095fd5a
+  - 21bf2f07f3f3
   - 8dfc90f35aba
   - acd9fe45eb81
   tool_panel_section_label: Metagenomic Analysis
@@ -3738,6 +3776,7 @@ tools:
   owner: iuc
   revisions:
   - 0094893f5001
+  - 0e63d03c8790
   - 18676df0cb3a
   - 31853794ace2
   tool_panel_section_label: Metagenomic Analysis
@@ -3747,10 +3786,12 @@ tools:
   - 11a61934bfb3
   - 7aebc0137f20
   - c6c77d840993
+  - f41dbb0b9ff8
   tool_panel_section_label: Metagenomic Analysis
 - name: cat_prepare
   owner: iuc
   revisions:
+  - 51906c8c692a
   - 8315b5cebb82
   - a40bbd70b8b1
   - b6c5e7343617
@@ -3760,6 +3801,7 @@ tools:
   revisions:
   - 388e6678fa98
   - 7f1aaa1932d8
+  - a8216def322b
   - db1360aae489
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_analyze
@@ -3901,6 +3943,7 @@ tools:
   - 4212f20315e5
   - 46fc97bb98f9
   - 487da152fb43
+  - 5ed774e1616e
   - 892a0629e2ed
   - a6c3f4f439f7
   - b18594e1a514
@@ -4116,6 +4159,7 @@ tools:
   - 2e38deed28ee
   - 5b2f8b6a3609
   - 5eccd3d336a3
+  - 6a1db3b02ea7
   - 6efa06ffbac8
   - 97ad0d817a45
   - b4c750fe0fe3
@@ -4638,6 +4682,7 @@ tools:
   - 2e5ae05160e0
   - 3f05bf162005
   - 4fd3b5d8706b
+  - 7f5d7b0e9884
   - ab1a9a932182
   - cd298ff669fd
   - e073891b2afc
@@ -4676,6 +4721,7 @@ tools:
   - b89b0765695d
   - ec368db926f4
   - f5df500fcc3c
+  - fd69c607b43f
   - ff8f55893e7d
   tool_panel_section_label: Metagenomic Analysis
 - name: nonpareil
@@ -10938,6 +10984,7 @@ tools:
   owner: iuc
   revisions:
   - 07164270ec13
+  - 1df18470e3d0
   - c9040bdb918c
   tool_panel_section_label: Metabolomics
 - name: dimet_differential_analysis
@@ -10945,28 +10992,33 @@ tools:
   revisions:
   - c46d33411495
   - dc199abf3db4
+  - e45e03a99d56
   tool_panel_section_label: Metabolomics
 - name: dimet_differential_multigroup_analysis
   owner: iuc
   revisions:
   - 6f36c9072433
+  - b581ea4908ae
   - e88cf5618b40
   tool_panel_section_label: Metabolomics
 - name: dimet_enrichment_plot
   owner: iuc
   revisions:
   - 254408bfc5c0
+  - 2de209fb390b
   - 79720105f8c0
   tool_panel_section_label: Metabolomics
 - name: dimet_isotopologues_plot
   owner: iuc
   revisions:
+  - 31b19ad28c81
   - 9f4451d9d542
   - a3349c105bd0
   tool_panel_section_label: Metabolomics
 - name: dimet_metabologram
   owner: iuc
   revisions:
+  - 7ff4f61789de
   - 8d8ae3697a65
   - a7d3e880e74c
   tool_panel_section_label: Metabolomics
@@ -10975,16 +11027,24 @@ tools:
   revisions:
   - 04d213632103
   - a01453baaf5e
+  - c0103ea608fc
   tool_panel_section_label: Metabolomics
 - name: dimet_pca_plot
   owner: iuc
   revisions:
+  - 23f87b8cc62b
   - 952808ffa842
   - a06d1febf79e
   tool_panel_section_label: Metabolomics
 - name: dimet_timecourse_analysis
   owner: iuc
   revisions:
+  - 40edef7d7f74
   - b97f326c055d
   - cb8c4ae59da9
+  tool_panel_section_label: Metabolomics
+- name: dimet_bivariate_analysis
+  owner: iuc
+  revisions:
+  - 89e637c99bed
   tool_panel_section_label: Metabolomics
