@@ -5,6 +5,12 @@ install_tool_dependencies: false
 
 tools:
 
+# BioModels
+
+  - name: biomodels_biomd0000001066
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
 # "CONVERT FORMATS"
 
   - name: glimmer_glimmer_to_gff
@@ -16,6 +22,14 @@ tools:
     tool_panel_section_label: "Convert Formats"
 
   - name: graphicsmagick_image_montage
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
+  - name: graphicsmagick_image_compare
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
+  - name: hictk
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
 
@@ -42,6 +56,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: pfamscan
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: tapscan
     owner: bgruening
     tool_panel_section_label: Annotation
 
@@ -101,6 +119,11 @@ tools:
     owner: bgruening
     tool_panel_section_label: FASTA/FASTQ
 
+# Get Data
+
+  - name: mavedb_importer
+    owner: bgruening
+    tool_panel_section_label: Get Data
 
 # GRAPH/DISPLAY DATA
 
@@ -267,7 +290,7 @@ tools:
 
   - name: format_cd_hit_output
     owner: bebatut
-    tool_panel_section_label: Metagenomic Analysis
+    tool_panel_section_label: Multiple Alignments
 
   - name: format_metaphlan2_output
     owner: bebatut

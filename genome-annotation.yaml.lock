@@ -2,48 +2,30 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: repeatexplorer_clustering
+  owner: gga
+  revisions:
+  - 6eec21828dd4
+  tool_panel_section_label: Annotation
 - name: aegean_canongff3
   owner: iuc
   revisions:
   - 3f438bf5475d
+  - c45c9dd066e2
   tool_panel_section_label: Annotation
 - name: apollo_fetch_jbrowse
   owner: gga
   revisions:
-  - 30ea2be4a236
-  - 331a3bde732e
-  - 41b74ee91497
-  - 654af4ba76bc
-  - 6905bb3ce9db
-  - b7c44671f012
   - d91f4bc313d3
-  - dca2fb399ee6
-  - fa5ae4bf7f65
   tool_panel_section_label: Apollo
 - name: apollo_feat_from_gff3
   owner: gga
   revisions:
-  - 12ebb583b8a3
-  - 18217f8862ef
-  - 1e37bbd4a73b
   - 250745643de2
-  - 5d1cf95ade8a
-  - 922dd0b252c8
-  - 9f9aa5a88972
-  - bb562d95b6cd
-  - d022c003c7a3
   tool_panel_section_label: Apollo
 - name: apollo_export
   owner: gga
   revisions:
-  - 0d4234488bd0
-  - 257230cd202f
-  - 56b9a26694c0
-  - ad02f02c75e3
-  - b503fe85f261
-  - b763acecfb57
-  - c3251541cf2b
-  - c3b5bc8b4080
   - f6e09a37bc8b
   tool_panel_section_label: Apollo
 - name: apollo_iframe
@@ -62,28 +44,12 @@ tools:
 - name: apollo_create_or_update
   owner: gga
   revisions:
-  - 1e28978d7136
   - 3d693b93991f
-  - 496444ad9291
-  - 4abaab60f9e1
-  - 63ad8934b189
-  - 7609529caafa
-  - 8edb79e6b141
-  - 9e7b8c7185ad
-  - d72192ec8e39
   tool_panel_section_label: Apollo
 - name: apollo_delete_organism
   owner: gga
   revisions:
-  - 3b4fe78bbe83
-  - 4bf326ca95cf
-  - 64c887661f4f
-  - 6ea838bf1f2f
   - 8f4c1d40e893
-  - b08ff873c9b2
-  - b67ea77f5fe6
-  - cdd6632b235a
-  - dd63c6e11a95
   tool_panel_section_label: Apollo
 - name: apollo_create_account
   owner: gga
@@ -114,14 +80,6 @@ tools:
 - name: apollo_delete_features
   owner: gga
   revisions:
-  - 02404029ae4c
-  - 1a19b27dd22d
-  - 21a8cad7dfa5
-  - 3f0f2af50989
-  - 5b371b11b1f5
-  - 6c42ea4ab169
-  - 90c7d1d29b15
-  - df0e4eb2dfa5
   - f8d6315223d8
   tool_panel_section_label: Apollo
 - name: staramr
@@ -129,6 +87,7 @@ tools:
   revisions:
   - 141afacabcfa
   - 2fd4d4c9c5c2
+  - 3b22de20bd4b
   - 4b9a8031ab74
   - 4d83eccf5f81
   - 5f43703968cf
@@ -143,6 +102,7 @@ tools:
   - 0d243f458b53
   - 1440ae06552f
   - 1e62c28ba91d
+  - 2a5b8b9936bf
   - 2dd755c1c6ff
   - 4048d82f0c88
   - 41030a6c03b7
@@ -204,6 +164,7 @@ tools:
 - name: aegean_locuspocus
   owner: iuc
   revisions:
+  - 1fdc517743e6
   - c4ac24510b55
   tool_panel_section_label: Annotation
 - name: snap_training
@@ -215,6 +176,7 @@ tools:
   owner: iuc
   revisions:
   - 1b52f0c8ad7f
+  - d6c074a93c51
   tool_panel_section_label: Annotation
 - name: progressivemauve
   owner: iuc
@@ -239,6 +201,7 @@ tools:
   owner: iuc
   revisions:
   - 1dd7adc21b6d
+  - 8dc7512c9dc9
   tool_panel_section_label: Annotation
 - name: gff_to_prot
   owner: iuc
@@ -281,8 +244,36 @@ tools:
   revisions:
   - 4a7f4b0cc0a3
   tool_panel_section_label: Annotation
+- name: helixer
+  owner: genouest
+  revisions:
+  - 7bc75dd0f782
+  - 7c1dc010a819
+  tool_panel_section_label: Annotation
 - name: manta
   owner: artbio
   revisions:
   - cb5691381acb
   tool_panel_section_label: Variant Calling
+- name: braker3
+  owner: genouest
+  revisions:
+  - 3452c806c478
+  - 3c0865d1172f
+  - 5460380cc057
+  - 96ad8f880755
+  - bbe51a1c2b6b
+  - bd103884a09c
+  tool_panel_section_label: Annotation
+- name: deepsig
+  owner: iuc
+  revisions:
+  - 8d9746627f77
+  tool_panel_section_label: Annotation
+- name: genenotebook_genenotebook_build
+  owner: gga
+  revisions:
+  - 12494257f0f0
+  - bd94e502872a
+  - dfb2bc3aedbd
+  tool_panel_section_label: Annotation

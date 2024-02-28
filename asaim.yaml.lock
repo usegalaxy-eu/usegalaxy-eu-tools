@@ -9,16 +9,20 @@ tools:
   - 494b2ec08162
   - 4df8de2d0e48
   - 653e89d73fc4
+  - 6591f049cf7e
   - 69ebb7f46e45
   - 6ea73833cf67
   - 7068f48d0ef9
+  - 734abc7ac21d
   - 751a694ec620
   - 83c7d564b128
   - aad3885b3216
   - b723c120161a
   - c441583adae5
   - e08a7ad4378b
+  - e407b9da183a
   - f5ea3ce9b9b0
+  - fb723c531be5
   tool_panel_section_label: Get Data
 - name: fastqc
   owner: devteam
@@ -159,6 +163,7 @@ tools:
   - 14ddfc8ffb93
   - 7518ee87b53d
   - 98242353faa4
+  - a96f3ad4e0d8
   - de387b2b2803
   tool_panel_section_label: Assembly
 - name: metaspades
@@ -189,6 +194,7 @@ tools:
 - name: data_manager_qiime_database_downloader
   owner: iuc
   revisions:
+  - c4dba88e85ef
   - cbe065fbd038
   - cc18f0f3514c
   tool_panel_section_label: Data Managers
@@ -211,7 +217,7 @@ tools:
   owner: bgruening
   revisions:
   - 82547f0d3a29
-  tool_panel_section_label: Metagenomic Analysis
+  tool_panel_section_label: Annotation
 - name: combine_metaphlan2_humann2
   owner: bebatut
   revisions:
@@ -220,13 +226,20 @@ tools:
 - name: export2graphlan
   owner: iuc
   revisions:
+  - 635c90a27692
   - b16989c1e3a7
   - ed1becc01910
   tool_panel_section_label: Graph/Display Data
+- name: taxonomy_krona_chart
+  owner: crs4
+  revisions:
+  - e9005d1f3cfd
+  tool_panel_section_label: Metagenomic Analysis
 - name: kleborate
   owner: iuc
   revisions:
   - 374b2e9ade86
   - '383036561810'
   - 959920e3e800
+  - a7c43271312c
   tool_panel_section_label: Metagenomic Analysis

@@ -7,43 +7,43 @@ tools:
   - name: cpt_fasta_remove_id
     owner: cpt
     tool_panel_section_label: FASTA/FASTQ
-    
+
   - name: cpt_get_orfs
     owner: cpt
     tool_panel_section_label: Annotation
-    
+
   - name: cpt_convert_mga
     owner: cpt
     tool_panel_section_label: Convert Formats
-    
+
   - name: cpt_gff_add_parents
     owner: cpt
     tool_panel_section_label: Annotation
-    
+
   - name: cpt_fix_aragorn
     owner: cpt
     tool_panel_section_label: Convert Formats
-    
+
   - name: cpt_fix_sixpack
     owner: cpt
     tool_panel_section_label: Annotation
-    
+
   - name: cpt_shinefind
     owner: cpt
     tool_panel_section_label: Annotation
-    
+
   - name: cpt_type_filter
     owner: cpt
     tool_panel_section_label: Annotation
-    
+
   - name: cpt_req_phage_start
     owner: cpt
     tool_panel_section_label: Annotation
-    
+
   - name: cpt_remove_annotations
     owner: cpt
     tool_panel_section_label: Annotation
-    
+
   - name: cpt_prep_for_apollo
     owner: cpt
     tool_panel_section_label: Annotation
@@ -52,18 +52,78 @@ tools:
     owner: cpt
     tool_panel_section_label: Annotation
 
-  - name: cpt_get_orfs
+  - name: cpt_intron_detection
     owner: cpt
     tool_panel_section_label: Annotation
 
-  - name: cpt_gff_add_parents
+  - name: cpt_gff_extract_seq
     owner: cpt
     tool_panel_section_label: Annotation
 
-  - name: cpt_req_phage_start
+  - name: cpt_lipory
     owner: cpt
     tool_panel_section_label: Annotation
 
-  - name: cpt_fix_sixpack
+  - name: cpt_intersect_adjacent
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_related_genomes_nuc
+    owner: cpt
+    tool_panel_section_label: Phylogenetics
+
+  - name: cpt_related_genomes_prot
+    owner: cpt
+    tool_panel_section_label: Phylogenetics
+
+  - name: cpt_xmfa_to_table
+    owner: cpt
+    tool_panel_section_label: Phylogenetics
+
+  - name: cpt_gbk_to_5col
+    owner: cpt
+    tool_panel_section_label: Convert Formats
+
+  - name: cpt_gff_to_gbk
+    owner: cpt
+    tool_panel_section_label: Convert Formats
+
+  - name: cpt_gbk_renumber
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_genome_editor
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_phageqc_annotations
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_annotation_table
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_linear_genome_plot
+    owner: cpt
+    tool_panel_section_label: Graph/Display Data
+
+  - name: cpt_gff_split
+    owner: cpt
+    tool_panel_section_label: Convert Formats
+
+  - name: cpt_gbk_to_gff
+    owner: cpt
+    tool_panel_section_label: Convert Formats
+
+  - name: cpt_gff_rebase
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_require_shine
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_fasta_translate
     owner: cpt
     tool_panel_section_label: Annotation

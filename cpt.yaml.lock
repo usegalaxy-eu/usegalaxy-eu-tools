@@ -10,12 +10,14 @@ tools:
 - name: cpt_get_orfs
   owner: cpt
   revisions:
+  - f56389d8abda
   - f97bc7f587a1
   tool_panel_section_label: Annotation
 - name: cpt_convert_mga
   owner: cpt
   revisions:
   - 1bf722ba06e3
+  - 2c83f55438c9
   tool_panel_section_label: Convert Formats
 - name: cpt_gff_add_parents
   owner: cpt
@@ -26,29 +28,34 @@ tools:
   owner: cpt
   revisions:
   - 733cb0807083
+  - 8da37080e35f
   - f0f0ab9db43f
   tool_panel_section_label: Convert Formats
 - name: cpt_fix_sixpack
   owner: cpt
   revisions:
   - 326429ea1d33
+  - e23a13d56fce
   - efa4dfc23549
   tool_panel_section_label: Annotation
 - name: cpt_shinefind
   owner: cpt
   revisions:
   - 6a5aac2a4c89
+  - 75f99d20c2a2
   tool_panel_section_label: Annotation
 - name: cpt_type_filter
   owner: cpt
   revisions:
   - 3df8d991938a
   - a77124b86382
+  - d40c9632250f
   tool_panel_section_label: Annotation
 - name: cpt_req_phage_start
   owner: cpt
   revisions:
   - 33b5403e0357
+  - 4962f275bcaa
   - cc3b78f2b4b2
   tool_panel_section_label: Annotation
 - name: cpt_remove_annotations
@@ -64,27 +71,105 @@ tools:
 - name: cpt_convert_glimmer
   owner: cpt
   revisions:
+  - 746e52d94b49
   - faff58a642fb
   tool_panel_section_label: Annotation
-- name: cpt_get_orfs
+- name: cpt_intron_detection
   owner: cpt
   revisions:
-  - f97bc7f587a1
+  - 0a98d5259ef0
   tool_panel_section_label: Annotation
-- name: cpt_gff_add_parents
+- name: cpt_gff_extract_seq
   owner: cpt
   revisions:
-  - d839cfd1c3a6
+  - 3d9f283ff09d
+  - ab40380424c9
   tool_panel_section_label: Annotation
-- name: cpt_req_phage_start
+- name: cpt_lipory
   owner: cpt
   revisions:
-  - 33b5403e0357
-  - cc3b78f2b4b2
+  - 2654bcd9b14d
+  - b79df4966ebb
   tool_panel_section_label: Annotation
-- name: cpt_fix_sixpack
+- name: cpt_intersect_adjacent
   owner: cpt
   revisions:
-  - 326429ea1d33
-  - efa4dfc23549
+  - 7e393668b4b9
+  tool_panel_section_label: Annotation
+- name: cpt_related_genomes_nuc
+  owner: cpt
+  revisions:
+  - 5a5fe0a6f78d
+  tool_panel_section_label: Phylogenetics
+- name: cpt_related_genomes_prot
+  owner: cpt
+  revisions:
+  - ebcc87a27f9c
+  tool_panel_section_label: Phylogenetics
+- name: cpt_xmfa_to_table
+  owner: cpt
+  revisions:
+  - 06d8e28d0bd7
+  tool_panel_section_label: Phylogenetics
+- name: cpt_gbk_to_5col
+  owner: cpt
+  revisions:
+  - 1bdd481d5c25
+  - 8f5f2142fc2b
+  tool_panel_section_label: Convert Formats
+- name: cpt_gff_to_gbk
+  owner: cpt
+  revisions:
+  - 03384dbb511d
+  - 35a6c466e270
+  tool_panel_section_label: Convert Formats
+- name: cpt_gbk_renumber
+  owner: cpt
+  revisions:
+  - 8cac332dbc77
+  tool_panel_section_label: Annotation
+- name: cpt_genome_editor
+  owner: cpt
+  revisions:
+  - 0e8079ac24f8
+  - 78ce8a1a8fd1
+  tool_panel_section_label: Annotation
+- name: cpt_phageqc_annotations
+  owner: cpt
+  revisions:
+  - c3140b08d703
+  tool_panel_section_label: Annotation
+- name: cpt_annotation_table
+  owner: cpt
+  revisions:
+  - 6998c2570145
+  - 83af8dfd079d
+  tool_panel_section_label: Annotation
+- name: cpt_linear_genome_plot
+  owner: cpt
+  revisions:
+  - e923c686ead9
+  tool_panel_section_label: Graph/Display Data
+- name: cpt_gff_split
+  owner: cpt
+  revisions:
+  - 4b60e0b6a150
+  - 8bd03ba8510a
+  tool_panel_section_label: Convert Formats
+- name: cpt_gbk_to_gff
+  owner: cpt
+  revisions:
+  - a921d6148d88
+  - bb6332a85aa6
+  tool_panel_section_label: Convert Formats
+- name: cpt_gff_rebase
+  owner: cpt
+  revisions:
+  - 4f4b413056f6
+  - d0b52c1d6b25
+  tool_panel_section_label: Annotation
+- name: cpt_require_shine
+  owner: cpt
+  revisions:
+  - a6dc48930318
   tool_panel_section_label: Annotation

@@ -4,10 +4,14 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: repeatexplorer_clustering
+    owner: gga
+    tool_panel_section_label: Annotation
+
   - name: aegean_canongff3
     owner: iuc
     tool_panel_section_label: Annotation
-    
+
   - name: apollo_fetch_jbrowse
     owner: gga
     tool_panel_section_label: Apollo
@@ -123,11 +127,23 @@ tools:
   - name: tbl2gff3
     owner: iuc
     tool_panel_section_label: Annotation
-    
+
+  - name: helixer
+    owner: genouest
+    tool_panel_section_label: Annotation
+
   - name: manta
     owner: artbio
     tool_panel_section_label: Variant Calling
 
   - name: braker3
     owner: genouest
-    tool_panel_section_id: Annotation
+    tool_panel_section_label: Annotation
+
+  - name: deepsig
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: genenotebook_genenotebook_build
+    owner: gga
+    tool_panel_section_label: Annotation
