@@ -120,6 +120,7 @@ tools:
   owner: recetox
   revisions:
   - 165f303aa2d1
+  - 1f063ff015b9
   - 4845979fbe02
   - 5d8553853fab
   - 72759b974615
@@ -136,6 +137,7 @@ tools:
   - 51da674b945d
   - 68fde0dc3d83
   - 8fb8ac6c37b0
+  - a14e7fe18387
   - d88b20d27caa
   tool_panel_section_label: Metabolomics
 - name: matchms_remove_key
@@ -145,6 +147,7 @@ tools:
   - 358a151ab81e
   - 51ac25987e83
   - 6b5867cab698
+  - 8a8a58be3929
   - ea891750acfc
   tool_panel_section_label: Metabolomics
 - name: matchms_filtering
@@ -152,6 +155,7 @@ tools:
   revisions:
   - 039e7ab31836
   - 13de8005adba
+  - 3370f5b08d19
   - 357df6c47d92
   - 36a53917818d
   - 6161895506ff
@@ -168,6 +172,7 @@ tools:
   - 5be32c7ce669
   - 79accd21387c
   - 84af792d3a78
+  - 99da744050b7
   - cbfd7c35e0a4
   - da9c5d40d1ba
   - df85b26201d1
@@ -182,6 +187,7 @@ tools:
   - 23d4bc72c505
   - 34439ffa6a60
   - 86a45ba3d3f2
+  - 9287136a396a
   - ae45992f969e
   - afc881c21a62
   - c55da3d77c95
@@ -193,6 +199,7 @@ tools:
   revisions:
   - 73c902331bbc
   - 7504a8f93699
+  - 786df5cf7dec
   - 7a489b217930
   - 82aaf2631875
   - 8ff29dee9f26
@@ -209,6 +216,7 @@ tools:
   - 41cf8dd03e42
   - 43d40415654c
   - 44441b0ee4dd
+  - 7d171a8c71dc
   - 91b4b0c9a384
   - b5b360897004
   - be20e19c57e8
@@ -220,6 +228,7 @@ tools:
   - 2200e9b7a2b3
   - 3b512cb31cb5
   - 3cd1cf3034d1
+  - 7985c63a880c
   - 7c9599ecc2d3
   - 8147d93d372d
   - 9982b85ff4e7
@@ -240,6 +249,7 @@ tools:
   - 44e7027714d7
   - 50229f084c4e
   - 54b6775010e0
+  - 67f65bcc94bf
   - 9782eb7a22b7
   - 9ff95a1a2705
   - c7cff4617473
@@ -255,6 +265,7 @@ tools:
   - 1dcd8b0bd608
   - 5bdb8e7841f4
   - 97be845e45c2
+  - 986ecfc55ed9
   - eba733715eaf
   - fc1bc38ede0b
   - ffe46a9b1124
@@ -264,6 +275,7 @@ tools:
   revisions:
   - 1387786b6206
   - 4ef214cf07c1
+  - 9231f7bee46d
   - a598091029ad
   - aa2e912f9dc2
   - d8525504d332
@@ -272,6 +284,7 @@ tools:
 - name: matchms_metadata_merge
   owner: recetox
   revisions:
+  - 0c9f977e8d75
   - 3a37748f6c95
   - 99ad7552fb10
   - ab784731b20e
@@ -300,4 +313,29 @@ tools:
   owner: recetox
   revisions:
   - e7eff0c9baa3
+  tool_panel_section_label: Metabolomics
+- name: qcxms_neutral_run
+  owner: recetox
+  revisions:
+  - 0d9d72ef658f
+  tool_panel_section_label: ChemicalToolBox
+- name: qcxms_production_run
+  owner: recetox
+  revisions:
+  - b566b27247f7
+  tool_panel_section_label: ChemicalToolBox
+- name: qcxms_getres
+  owner: recetox
+  revisions:
+  - ef51824f6d04
+  tool_panel_section_label: ChemicalToolBox
+- name: use_theoretical_mz_annotations
+  owner: recetox
+  revisions:
+  - e0cac9994a72
+  tool_panel_section_label: Metabolomics
+- name: assign_ri_from_comment
+  owner: recetox
+  revisions:
+  - 6975af39ba79
   tool_panel_section_label: Metabolomics

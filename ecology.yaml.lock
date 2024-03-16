@@ -498,6 +498,7 @@ tools:
   - 2824d77cd8f8
   - 326a3db8d9d1
   - 360df4999907
+  - 36b848d5f3ec
   - 4ac4e7083b7e
   - 59fd173ac850
   - 5cec5fb749f0
@@ -1598,7 +1599,18 @@ tools:
 - name: interpolation_run_idw_interpolation
   owner: ecology
   revisions:
+  - b4b9edf9ea27
   - d07fcc660f3c
+  tool_panel_section_label: GIS Data Handling
+- name: otb_band_math
+  owner: ecology
+  revisions:
+  - 0ed34e3202b9
+  tool_panel_section_label: GIS Data Handling
+- name: otb_mean_shift_smoothing
+  owner: ecology
+  revisions:
+  - 6c6e8b16dba6
   tool_panel_section_label: GIS Data Handling
 - name: iabiodiv_smartbiodiv_med_environ
   owner: ecology

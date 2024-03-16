@@ -56,6 +56,7 @@ tools:
   - 3df9f0a4bf34
   - 4853fc2b50bf
   - 81f0cbca04a7
+  - 8bccb36e055a
   - d4da97f51700
   tool_panel_section_label: Imaging
 - name: 2d_local_threshold
@@ -65,6 +66,11 @@ tools:
   - a20c14eb5f98
   - be2d3ce89c0f
   - c90b91f4a07b
+  tool_panel_section_label: Imaging
+- name: orientationpy
+  owner: imgteam
+  revisions:
+  - 214f548481eb
   tool_panel_section_label: Imaging
 - name: segmetrics
   owner: imgteam
@@ -89,6 +95,16 @@ tools:
   revisions:
   - d10a46ef77d3
   - ddff439fac16
+  tool_panel_section_label: Imaging
+- name: colorize_labels
+  owner: imgteam
+  revisions:
+  - 43c80f3c3b60
+  tool_panel_section_label: Imaging
+- name: label_to_binary
+  owner: imgteam
+  revisions:
+  - 5da15c3bafed
   tool_panel_section_label: Imaging
 - name: landmark_registration
   owner: imgteam
@@ -234,6 +250,7 @@ tools:
 - name: points2binaryimage
   owner: imgteam
   revisions:
+  - 2ad6350df85b
   - 90385ec28b34
   - dd513c9f5230
   tool_panel_section_label: Imaging
