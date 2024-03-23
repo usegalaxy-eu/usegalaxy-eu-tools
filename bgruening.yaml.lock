@@ -2,6 +2,16 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: biomodels_biomd0000001066
+  owner: bgruening
+  revisions:
+  - 48024c5a155f
+  tool_panel_section_label: Machine Learning
+- name: biomodels_biomd0000001076
+  owner: bgruening
+  revisions:
+  - e62e31ee42d9
+  tool_panel_section_label: Machine Learning
 - name: glimmer_glimmer_to_gff
   owner: bgruening
   revisions:
@@ -101,6 +111,7 @@ tools:
   revisions:
   - 1ce9b1d72ec3
   - 276f5d8712d5
+  - 291923e6f276
   - 3ee0ef312022
   - 8d4f03b5fe9d
   - cb8dfd28c16f
@@ -966,6 +977,7 @@ tools:
   - 6f28e90db932
   - a65296ffb4a0
   - bcfce5aac49c
+  - bf28a8cff401
   - f0d493f8f84f
   - f1a5908ea2cb
   tool_panel_section_label: Multiple Alignments
