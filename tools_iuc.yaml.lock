@@ -599,6 +599,10 @@ tools:
   revisions:
   - 57db282ca204
   - e1502e4f8725
+- name: data_manager_ncbi_fcs_gx_database_downloader
+  owner: iuc
+  revisions:
+  - 6be6e6198ac3
 - name: optitype
   owner: iuc
   revisions:
@@ -842,6 +846,7 @@ tools:
   - 611219887a48
   - 7348b69e5109
   - 8b330a577046
+  - ba88bc5a6446
   tool_panel_section_label: Assembly
 - name: hapog
   owner: iuc
@@ -951,6 +956,7 @@ tools:
   - 3ca2d2a9068c
   - 606b09cc9860
   - 6563e22a9fd0
+  - 99ecfdafc64f
   - a9b8c9e204ee
   - ce02f513e598
   - e731ea24e48d
@@ -998,6 +1004,7 @@ tools:
 - name: pairtools_dedup
   owner: iuc
   revisions:
+  - 5412142130ad
   - ae537f4d4b93
   tool_panel_section_label: Assembly
 - name: pairtools_parse
@@ -1005,21 +1012,25 @@ tools:
   revisions:
   - 26ed6ceeeec1
   - a98caf2d8309
+  - b0a1f128fa15
   tool_panel_section_label: Assembly
 - name: pairtools_split
   owner: iuc
   revisions:
   - 2c87e49a6407
+  - 53d73d58e105
   tool_panel_section_label: Assembly
 - name: pairtools_sort
   owner: iuc
   revisions:
+  - 8cffb8fc34f0
   - d392cfd963f4
   tool_panel_section_label: Assembly
 - name: pairtools_stats
   owner: iuc
   revisions:
   - 3c87fa1a3b50
+  - 81fc1418fbfb
   tool_panel_section_label: Assembly
 - name: pilon
   owner: iuc
@@ -1108,6 +1119,7 @@ tools:
   - 28189050e437
   - 378e55aeeb25
   - 53c2bc8c2ae3
+  - 5fc94b3a4704
   - 675ee1aa5952
   - 9e58ff014088
   - a8a278849c18
@@ -1168,6 +1180,7 @@ tools:
   - b8c00ce5dfa0
   - b8d633fbf5f5
   - d2d1df21dfb9
+  - d5887ace0dd4
   - dd7ad84f3943
   tool_panel_section_label: Assembly
 - name: spades_biosyntheticspades
@@ -1180,6 +1193,7 @@ tools:
   - 604782a8a53a
   - 7490b213baa9
   - 904bf932cf78
+  - c33a476f4001
   - d89ced9439f3
   tool_panel_section_label: Assembly
 - name: spades_coronaspades
@@ -1187,6 +1201,7 @@ tools:
   revisions:
   - 0e02cc942d97
   - 34305b013402
+  - 655fa188c3cc
   - 7004279ff8b7
   - 808b3a0a6716
   - 9678993ca5bd
@@ -1203,6 +1218,7 @@ tools:
   - 32ab23671cc1
   - 4a01e0d2892c
   - 6b5a5842531e
+  - 7e27faaad80e
   - 8d4b90bf9caf
   - b8002c3f7141
   - e5a3b75a271f
@@ -1213,6 +1229,7 @@ tools:
   - 2a10645aeadd
   - 328aa71f0f3c
   - 5b26685e5d3b
+  - 7922870efcca
   - 86f66ab58e14
   - 9346dcffaafc
   - 9de69775f512
@@ -1228,6 +1245,7 @@ tools:
   - 75405f5e2cc5
   - 7bb235ff0746
   - 85fb02c43042
+  - 8cc856b935ee
   - e41dcb0e913b
   - eabeb1a74dac
   tool_panel_section_label: Assembly
@@ -1237,6 +1255,7 @@ tools:
   - 249f6a28c751
   - 48cf45a53456
   - 5df83f4bad67
+  - 6357b127161e
   - b3490b036c5a
   - b65a43f70b99
   - d159735a6a9f
@@ -1747,6 +1766,7 @@ tools:
   - 8c0175e03cee
   - 944ae523bacb
   - 9845c649f41b
+  - b1c926deaa2d
   - c053d4cad713
   - c5e2e5902201
   - de6cebe3c043
@@ -2620,6 +2640,7 @@ tools:
   - e08a7ad4378b
   - e407b9da183a
   - f5ea3ce9b9b0
+  - f8054ea1c365
   - fb723c531be5
   tool_panel_section_label: Get Data
 - name: query_impc
@@ -3995,6 +4016,11 @@ tools:
   - 1b18b36bad5e
   - 1c8d0916f97f
   - f350d182f786
+  tool_panel_section_label: Metagenomic Analysis
+- name: metawrapmg_binning
+  owner: galaxy-australia
+  revisions:
+  - 2a8bc1d26d06
   tool_panel_section_label: Metagenomic Analysis
 - name: bio_hansel
   owner: iuc
@@ -10123,17 +10149,20 @@ tools:
 - name: beacon2_csv2xlsx
   owner: iuc
   revisions:
+  - 89cbbb7821b0
   - ba4ed464f8b6
   tool_panel_section_label: Variant Calling
 - name: beacon2_pxf2bff
   owner: iuc
   revisions:
+  - 23449c685168
   - 30605b5fc43f
   tool_panel_section_label: Variant Calling
 - name: beacon2_vcf2bff
   owner: iuc
   revisions:
   - 0a757835a745
+  - ef90043ba759
   tool_panel_section_label: Variant Calling
 - name: beagle
   owner: iuc
