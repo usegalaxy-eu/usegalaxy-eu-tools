@@ -206,10 +206,12 @@ tools:
   owner: bgruening
   revisions:
   - 0a8c6b61f0f4
+  - 12615d397df7
   - d698c222f354
   - ddf54b12c295
   - f46f0e4f75c4
   - fb4ff3c42cd3
+  - fbf99087e067
   tool_panel_section_label: Text Manipulation
 - name: column_maker
   owner: devteam
@@ -497,6 +499,7 @@ tools:
   - 2824d77cd8f8
   - 326a3db8d9d1
   - 360df4999907
+  - 36b848d5f3ec
   - 4ac4e7083b7e
   - 59fd173ac850
   - 5cec5fb749f0
@@ -532,6 +535,7 @@ tools:
 - name: ggplot2_heatmap2
   owner: iuc
   revisions:
+  - 374e9062d874
   - 53460afd5115
   - '566197475670'
   - ca7cb0eaad62
@@ -961,6 +965,7 @@ tools:
   owner: iuc
   revisions:
   - 83fbdf93d51e
+  - 8cb6bd511879
   - 94f412098ac8
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_ngsfilter
@@ -968,16 +973,19 @@ tools:
   revisions:
   - 3bf57dadf7cd
   - 76e69de726b2
+  - 91a1ed0b486f
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_annotate
   owner: iuc
   revisions:
   - 3021b9f5809f
+  - d50dc96e3ce9
   - f82cefbbcea5
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_grep
   owner: iuc
   revisions:
+  - 02bab5ff7c37
   - e9e49cf06b42
   - fe7ec8a3d35e
   tool_panel_section_label: DNA Metabarcoding
@@ -985,11 +993,13 @@ tools:
   owner: iuc
   revisions:
   - c0f7b58b4ce4
+  - d4bea99366f9
   - ec215ed98831
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_clean
   owner: iuc
   revisions:
+  - 08d873cdd5f6
   - 12baadec7809
   - 7d16de45c021
   tool_panel_section_label: DNA Metabarcoding
@@ -998,23 +1008,27 @@ tools:
   revisions:
   - 374fd9feb032
   - 4d705e3443a7
+  - e328ced6cf0a
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_sort
   owner: iuc
   revisions:
   - 12b9e285ca1c
+  - b6d9ea2fb41b
   - e614dcabd870
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_tab
   owner: iuc
   revisions:
   - 3299c7d5268f
+  - 4cf47c504672
   - 5f7003111e32
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_stat
   owner: iuc
   revisions:
   - 39320fee9d70
+  - 5f4544915893
   - 723a93febe89
   tool_panel_section_label: DNA Metabarcoding
 - name: stacks2_ustacks
@@ -1548,21 +1562,29 @@ tools:
   - 5c0290c4225a
   - bd8b3e7541d5
   tool_panel_section_label: Data and Metadata Management
+- name: ecoregion_geonearestneighbor
+  owner: ecology
+  revisions:
+  - 5cde56683579
+  tool_panel_section_label: Ecoregionalization
 - name: ecoregion_brt_analysis
   owner: ecology
   revisions:
   - f0d6938d0451
+  - f8962f1c832a
   - fc621f3f8226
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_taxa_seeker
   owner: ecology
   revisions:
+  - 788b118910a7
   - 9dc992f80c25
   - e3cd588fd14a
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_eco_map
   owner: ecology
   revisions:
+  - 374555fc30bd
   - 3d750279158b
   - b38b954b92b9
   tool_panel_section_label: Ecoregionalization
@@ -1570,11 +1592,13 @@ tools:
   owner: ecology
   revisions:
   - 0f6542d0986e
+  - 1b9522671e90
   - e94a25eed489
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_clara_cluster
   owner: ecology
   revisions:
+  - 24a81631a8b5
   - 32849c52aa54
   - edb8d19735a6
   tool_panel_section_label: Ecoregionalization
@@ -1596,10 +1620,25 @@ tools:
 - name: interpolation_run_idw_interpolation
   owner: ecology
   revisions:
+  - b4b9edf9ea27
   - d07fcc660f3c
+  tool_panel_section_label: GIS Data Handling
+- name: otb_band_math
+  owner: ecology
+  revisions:
+  - 0ed34e3202b9
+  - d266345e510d
+  tool_panel_section_label: GIS Data Handling
+- name: otb_mean_shift_smoothing
+  owner: ecology
+  revisions:
+  - 6c6e8b16dba6
+  - dd397752ad21
   tool_panel_section_label: GIS Data Handling
 - name: iabiodiv_smartbiodiv_med_environ
   owner: ecology
   revisions:
+  - b79faea33a8a
+  - ca00b2eabdf3
   - f82f266381be
   tool_panel_section_label: Get Data

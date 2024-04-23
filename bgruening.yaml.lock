@@ -5,8 +5,12 @@ tools:
 - name: biomodels_biomd0000001066
   owner: bgruening
   revisions:
-  - 1748c5d74df5
-  - 99ebf69e9b45
+  - 48024c5a155f
+  tool_panel_section_label: Machine Learning
+- name: biomodels_biomd0000001076
+  owner: bgruening
+  revisions:
+  - e62e31ee42d9
   tool_panel_section_label: Machine Learning
 - name: glimmer_glimmer_to_gff
   owner: bgruening
@@ -25,12 +29,14 @@ tools:
   - c01226f0d828
   - e88f1111d9e7
   - eb09d7e6d727
+  - f0de81b548eb
   - ff05b2c4263c
   tool_panel_section_label: Convert Formats
 - name: graphicsmagick_image_montage
   owner: bgruening
   revisions:
   - 190b3bcc00aa
+  - 31dfed0f0eed
   - 391a19477a12
   - 39881709807e
   - 4dada93ef525
@@ -41,6 +47,7 @@ tools:
 - name: graphicsmagick_image_compare
   owner: bgruening
   revisions:
+  - 2a5a0b61a84e
   - bb871fbe177f
   - fd0e8bda0154
   tool_panel_section_label: Convert Formats
@@ -88,6 +95,7 @@ tools:
   owner: bgruening
   revisions:
   - 196795831b6a
+  - c4f865bd101a
   tool_panel_section_label: Annotation
 - name: blobtoolkit
   owner: bgruening
@@ -106,6 +114,7 @@ tools:
   revisions:
   - 1ce9b1d72ec3
   - 276f5d8712d5
+  - 291923e6f276
   - 3ee0ef312022
   - 8d4f03b5fe9d
   - cb8dfd28c16f
@@ -199,6 +208,16 @@ tools:
   - 0800a1b66bbd
   - 389227fa1864
   tool_panel_section_label: Graph/Display Data
+- name: cellpose
+  owner: bgruening
+  revisions:
+  - 030bfe6065d9
+  tool_panel_section_label: Imaging
+- name: woundhealing_scratch_assay
+  owner: bgruening
+  revisions:
+  - 8948cc562b7c
+  tool_panel_section_label: Imaging
 - name: keras_batch_models
   owner: bgruening
   revisions:
@@ -918,10 +937,12 @@ tools:
   owner: bgruening
   revisions:
   - 190175f4e143
+  - 1c6c961851de
   tool_panel_section_label: Mapping
 - name: graphmap_overlap
   owner: bgruening
   revisions:
+  - 815251b32ccc
   - d0a712cf0518
   tool_panel_section_label: Mapping
 - name: combine_metaphlan2_humann2
@@ -959,6 +980,7 @@ tools:
   - 6f28e90db932
   - a65296ffb4a0
   - bcfce5aac49c
+  - bf28a8cff401
   - f0d493f8f84f
   - f1a5908ea2cb
   tool_panel_section_label: Multiple Alignments
