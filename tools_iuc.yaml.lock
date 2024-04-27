@@ -512,6 +512,7 @@ tools:
   revisions:
   - 23494763e39e
   - 24adf43898ec
+  - 2eb7932e91a3
   - 95c71179a054
   tool_panel_section_label: Annotation
 - name: krocus
@@ -1736,10 +1737,12 @@ tools:
   - 204a131e47db
   - 425dab0e057b
   - a9c9d768b751
+  - bf0cb5dd02f2
   tool_panel_section_label: FASTA/FASTQ
 - name: bbtools_bbmerge
   owner: iuc
   revisions:
+  - 5d8b93c0731f
   - 6d084528a6f1
   - 82ced0e47b9d
   - c05232655d00
@@ -1749,6 +1752,7 @@ tools:
   owner: iuc
   revisions:
   - 20aef74d20a1
+  - 654c9da47f74
   - e4fb34b79770
   - eaeb387d1244
   tool_panel_section_label: FASTA/FASTQ
@@ -3596,6 +3600,7 @@ tools:
   - 3171f7f52576
   - 517464809c33
   - 6d44c9f1a42b
+  - 7f19559b8b55
   - 81cbb6a4c1ca
   - 858a65b52cf9
   - 9ed6579f52f3
@@ -6766,6 +6771,7 @@ tools:
   - 204a131e47db
   - 425dab0e057b
   - a9c9d768b751
+  - bf0cb5dd02f2
   tool_panel_section_label: FASTA/FASTQ
 - name: diamond
   owner: bgruening
@@ -9829,6 +9835,7 @@ tools:
   - adec76ebc868
   - b955346ef41e
   - d1912018a603
+  - df9743790176
   - ee407fae3ccd
   - f36a69c3729a
   tool_panel_section_label: Variant Calling
@@ -10188,18 +10195,21 @@ tools:
 - name: cnvkit_access
   owner: iuc
   revisions:
+  - 1ab40b66c2ba
   - 22878d2aff05
   - 9f18bcf53f92
   tool_panel_section_label: Variant Calling
 - name: cnvkit_antitarget
   owner: iuc
   revisions:
+  - 666c18ea032c
   - 98086253a782
   - b52fa1df3bc4
   tool_panel_section_label: Variant Calling
 - name: cnvkit_autobin
   owner: iuc
   revisions:
+  - 8f45832093b3
   - 94e1d19c8190
   - fff49e30af46
   tool_panel_section_label: Variant Calling
@@ -10208,10 +10218,12 @@ tools:
   revisions:
   - 4653aeb60243
   - e3bbe8171af9
+  - ec07e22c41f8
   tool_panel_section_label: Variant Calling
 - name: cnvkit_breaks
   owner: iuc
   revisions:
+  - 5a2cb67ef742
   - ef9a50eb20ce
   tool_panel_section_label: Variant Calling
 - name: cnvkit_call
@@ -10219,22 +10231,26 @@ tools:
   revisions:
   - 0a5e2fc51dfb
   - cc56d01a0b36
+  - ef7efbffb3ec
   tool_panel_section_label: Variant Calling
 - name: cnvkit_coverage
   owner: iuc
   revisions:
   - 283ab3112eea
   - 5602cbf1153b
+  - 9f1a85d75122
   tool_panel_section_label: Variant Calling
 - name: cnvkit_diagram
   owner: iuc
   revisions:
   - 697c61206f5f
   - 9d18753f47b4
+  - cd407b016741
   tool_panel_section_label: Variant Calling
 - name: cnvkit_fix
   owner: iuc
   revisions:
+  - 09cf7e38022a
   - dc0fb5f07231
   - f64acbe71392
   tool_panel_section_label: Variant Calling
@@ -10242,10 +10258,12 @@ tools:
   owner: iuc
   revisions:
   - 2b53415d4f3c
+  - 6b60d733aa87
   tool_panel_section_label: Variant Calling
 - name: cnvkit_heatmap
   owner: iuc
   revisions:
+  - 65ed92f54fc3
   - d8c45afa221c
   - ff6b3f5a7ffb
   tool_panel_section_label: Variant Calling
@@ -10254,11 +10272,13 @@ tools:
   revisions:
   - 0c3db8ec44b0
   - 83470ecad188
+  - c6102e8e3deb
   tool_panel_section_label: Variant Calling
 - name: cnvkit_scatter
   owner: iuc
   revisions:
   - 3323a7867128
+  - 76f9a071da54
   - ec9731970f8b
   tool_panel_section_label: Variant Calling
 - name: cnvkit_segment
@@ -10266,22 +10286,26 @@ tools:
   revisions:
   - 9d9a8f230a2f
   - c4a22d0fdba5
+  - e1b32558547b
   tool_panel_section_label: Variant Calling
 - name: cnvkit_segmetrics
   owner: iuc
   revisions:
+  - b1fa5b9f7e4c
   - d9cb65e1f756
   tool_panel_section_label: Variant Calling
 - name: cnvkit_sex
   owner: iuc
   revisions:
   - 3316bd294f6f
+  - 7049a8fae746
   tool_panel_section_label: Variant Calling
 - name: cnvkit_target
   owner: iuc
   revisions:
   - 0350116f0c25
   - 876630eb0680
+  - d6dca50cf949
   tool_panel_section_label: Variant Calling
 - name: control_freec
   owner: iuc
@@ -11124,6 +11148,7 @@ tools:
   revisions:
   - 462e62be07e1
   - 80e18c0836e5
+  - eb5dcbebd242
   tool_panel_section_label: Virology
 - name: data_manager_build_kraken2_database
   owner: iuc
