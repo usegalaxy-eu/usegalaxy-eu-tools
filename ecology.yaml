@@ -859,8 +859,6 @@ tools:
     owner: ecology
     tool_panel_section_label: 'Indicators from geometric mean'
 
-# Interpolation
-
   - name: interpolation_run_idw_interpolation
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
@@ -870,6 +868,10 @@ tools:
     tool_panel_section_label: 'GIS Data Handling'
 
   - name: otb_mean_shift_smoothing
+    owner: ecology
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: generic_ogc_processes_wrapper
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
 
