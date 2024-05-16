@@ -11,6 +11,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: abritamr
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: amrfinderplus
     owner: iuc
     tool_panel_section_label: Annotation
@@ -24,6 +28,38 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: busco
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_allelecall
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_allelecallevaluator
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_createschema
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_downloadschema
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_extractcgmlst
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_joinprofiles
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_nsstats
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: chewbbaca_prepexternalschema
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -231,11 +267,19 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: krocus
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: legsta
     owner: iuc
     tool_panel_section_label: Annotation
 
   - name: lorikeet_spoligotype
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: mirmachine
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -266,6 +310,9 @@ tools:
   - name: data_manager_omamer
     owner: iuc
 
+  - name: data_manager_ncbi_fcs_gx_database_downloader 
+    owner: iuc
+
   - name: optitype
     owner: iuc
     tool_panel_section_label: Annotation
@@ -275,6 +322,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: plasmidfinder
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: prodigal
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -371,6 +422,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: fastk_fastk
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: genomescope
     owner: iuc
     tool_panel_section_label: Assembly
@@ -444,6 +499,26 @@ tools:
     tool_panel_section_label: Assembly
 
   - name: novoplasty
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: pairtools_dedup
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: pairtools_parse
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: pairtools_split
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: pairtools_sort
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: pairtools_stats
     owner: iuc
     tool_panel_section_label: Assembly
 
@@ -586,6 +661,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: bam2fastx
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
   - name: bax2bam
     owner: iuc
     tool_panel_section_label: Convert Formats
@@ -595,6 +674,26 @@ tools:
     tool_panel_section_label: Convert Formats
 
   - name: biom_convert
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: biom_add_metadata
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: biom_normalize_table
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: biom_subset_table
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: biom_summarize_table
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: biom_from_uc
     owner: iuc
     tool_panel_section_label: Convert Formats
 
@@ -655,6 +754,14 @@ tools:
     tool_panel_section_label: Convert Formats
 
   - name: samtools_bam_to_cram
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: tooldistillator
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: tooldistillator_summarize
     owner: iuc
     tool_panel_section_label: Convert Formats
 
@@ -730,6 +837,13 @@ tools:
     owner: iuc
     tool_panel_section_label: Evolution
 
+  - name: revoluzer_crex
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: revoluzer_distmat
+    owner: iuc
+    tool_panel_section_label: Evolution
 
 # EXPRESSION TOOLS
 
@@ -772,6 +886,10 @@ tools:
 # FASTA/FASTQ
 
   - name: adapter_removal
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: art
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
@@ -956,6 +1074,10 @@ tools:
     tool_panel_section_label: FASTA/FASTQ
 
   - name: flash
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: ncbi_fcs_gx
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
@@ -1767,8 +1889,16 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: bigscape
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: binning_refiner
     owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: metawrapmg_binning
+    owner: galaxy-australia
     tool_panel_section_label: Metagenomic Analysis
 
   - name: bio_hansel
@@ -1966,6 +2096,10 @@ tools:
 
   - name: gi2taxonomy
     owner: devteam
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: gtdbtk_classify_wf
+    owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
   - name: humann
@@ -2240,6 +2374,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: phyloseq_from_biom
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: phyloseq_from_dada2
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2336,7 +2474,23 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: virannot_blast2tsv
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: virannot_otu
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: virannot_rps2tsv
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: vsearch
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: qiime_extract_viz
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -3123,6 +3277,10 @@ tools:
 
 # PHYLOGENETICS
 
+  - name: hybpiper
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+    
   - name: hyphy_absrel
     owner: iuc
     tool_panel_section_label: Phylogenetics
@@ -4342,6 +4500,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: cnv_phenopacket
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: cnv_vcf2json
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: cnvkit_access
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -4742,6 +4908,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: virheat
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: vt_variant_tools
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -4863,6 +5033,10 @@ tools:
 
   - name: data_manager_mapseq
     owner: iuc
+
+  - name: data_manager_gtdbtk_database_installer
+    owner: iuc
+
 
 # DEEPTOOLS
 
@@ -4998,5 +5172,11 @@ tools:
     tool_panel_section_label: Metabolomics
 
   - name: dimet_bivariate_analysis
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+# METABOLOMICS TRACEGROOMER
+
+  - name: tracegroomer
     owner: iuc
     tool_panel_section_label: Metabolomics

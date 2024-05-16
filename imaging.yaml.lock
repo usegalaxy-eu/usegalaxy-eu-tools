@@ -16,9 +16,11 @@ tools:
 - name: overlay_images
   owner: imgteam
   revisions:
+  - 002f7bad3e82
   - 22ff7c705a83
   - 37662cbf44b8
   - 589af0005df5
+  - 8dc02c854048
   - b74693340624
   - bf590a9733ed
   tool_panel_section_label: Imaging
@@ -32,12 +34,16 @@ tools:
 - name: 2d_histogram_equalization
   owner: imgteam
   revisions:
+  - 3f3783846dc0
   - 70316d792fc9
   - 77f7159d775a
+  - b1c2c210813c
   tool_panel_section_label: Imaging
 - name: 2d_simple_filter
   owner: imgteam
   revisions:
+  - 6c4b22ef2b81
+  - d51310ab328a
   - dba87c4b32d3
   - f264ae82f735
   - f70b215d155c
@@ -45,7 +51,9 @@ tools:
 - name: anisotropic_diffusion
   owner: imgteam
   revisions:
+  - 097b803aeb5d
   - 17d3cfba9b5a
+  - 6ad5de2c5b7c
   - d13e26f576bc
   - e6987afa0484
   tool_panel_section_label: Imaging
@@ -55,8 +63,11 @@ tools:
   - 0c777d708acc
   - 3df9f0a4bf34
   - 4853fc2b50bf
+  - 699a5e9146b3
   - 81f0cbca04a7
+  - 8bccb36e055a
   - d4da97f51700
+  - e5c8e7e72373
   tool_panel_section_label: Imaging
 - name: 2d_local_threshold
   owner: imgteam
@@ -66,9 +77,17 @@ tools:
   - be2d3ce89c0f
   - c90b91f4a07b
   tool_panel_section_label: Imaging
+- name: orientationpy
+  owner: imgteam
+  revisions:
+  - 214f548481eb
+  - cc8fe984ec3e
+  - df211f6b5cf2
+  tool_panel_section_label: Imaging
 - name: segmetrics
   owner: imgteam
   revisions:
+  - 4512751bccca
   - 462f49860277
   - 7989264b5780
   - ac55e2f4d9e3
@@ -81,7 +100,9 @@ tools:
   - 1b0fc671187f
   - 244f67290d28
   - 700ae37e5c69
+  - 79ec3263686a
   - 7fd8dba15bd3
+  - 9b4830300f3a
   - dc5f72f6b1e9
   tool_panel_section_label: Imaging
 - name: rfove
@@ -89,6 +110,24 @@ tools:
   revisions:
   - d10a46ef77d3
   - ddff439fac16
+  - e438d87ef91a
+  tool_panel_section_label: Imaging
+- name: colorize_labels
+  owner: imgteam
+  revisions:
+  - 2d1de6e7b113
+  - 3aa2d054848a
+  - 43c80f3c3b60
+  tool_panel_section_label: Imaging
+- name: label_to_binary
+  owner: imgteam
+  revisions:
+  - 5da15c3bafed
+  tool_panel_section_label: Imaging
+- name: repeat_channels
+  owner: imgteam
+  revisions:
+  - 7cdb50fee601
   tool_panel_section_label: Imaging
 - name: landmark_registration
   owner: imgteam
@@ -120,7 +159,9 @@ tools:
   revisions:
   - 17f5d0c3f8a3
   - 1ffdb07020ee
+  - 2f504e075496
   - 37b079c98c38
+  - 6a8ae8cd7167
   - 974cf4357707
   - be9a815e2240
   - f5744f0e5a81
@@ -129,6 +170,7 @@ tools:
   owner: imgteam
   revisions:
   - 3a686b6aa7fc
+  - 499ad4d9aa13
   - 65e95d0b8838
   - a84822a0060c
   - aaac58d83043
@@ -179,6 +221,8 @@ tools:
   owner: imgteam
   revisions:
   - 6ad1d3cfdea1
+  - 8f76184ca03f
+  - 9d47aabda459
   - e576b73a2e2f
   tool_panel_section_label: Imaging
 - name: binary2labelimage
@@ -206,7 +250,9 @@ tools:
 - name: scale_image
   owner: imgteam
   revisions:
+  - 3179853faae9
   - 3e4231ed875e
+  - 85666e555698
   - c4c76f1ebad2
   - d09507d3fb0e
   - f3c05a734dd1
@@ -214,26 +260,33 @@ tools:
 - name: slice_image
   owner: imgteam
   revisions:
+  - 1faa7e3c94ff
   - 8856a7c85e4c
+  - a72590196440
   - aacfbd7c4af6
   - f312d414f234
   tool_panel_section_label: Imaging
 - name: split_labelmap
   owner: imgteam
   revisions:
+  - 0e7be7c35f15
   - 597b7ef44b05
+  - 7a2e2e3cf836
   - 9db1c22dbe17
   tool_panel_section_label: Imaging
 - name: concat_channels
   owner: imgteam
   revisions:
   - 212627bfb759
+  - 2592a29a785e
   - 30517f733f7b
+  - 4c43875c790c
   - d42501109c05
   tool_panel_section_label: Imaging
 - name: points2binaryimage
   owner: imgteam
   revisions:
+  - 2ad6350df85b
   - 90385ec28b34
   - dd513c9f5230
   tool_panel_section_label: Imaging
@@ -268,7 +321,9 @@ tools:
   owner: imgteam
   revisions:
   - 0a53256b48c6
+  - 2436a8807ad1
   - 5791a7f65275
+  - 5bc8cdc17fd0
   - 6fdb3542a406
   - 96909b9d1df1
   - f03b4da203d0
@@ -335,6 +390,13 @@ tools:
   - 8c1a805c2fc5
   - d098aed00229
   tool_panel_section_label: Imaging
+- name: voronoi_tesselation
+  owner: imgteam
+  revisions:
+  - 1944b0fccdbd
+  - 8b74843c136e
+  - e7fdea8385f0
+  tool_panel_section_label: Imaging
 - name: bfconvert
   owner: imgteam
   revisions:
@@ -342,6 +404,7 @@ tools:
   - 85edbb7a436b
   - b07f4839ca77
   - f3360fbeda64
+  - fcadded98e61
   tool_panel_section_label: Imaging
 - name: image_info
   owner: imgteam
@@ -547,8 +610,24 @@ tools:
 - name: bioformats2raw
   owner: imgteam
   revisions:
+  - 1b3e7d53cec6
   - 4b6c2135e547
+  - 94fe1169328c
   - b32f5368e279
+  tool_panel_section_label: Imaging
+- name: morphological_operations
+  owner: imgteam
+  revisions:
+  - 4e25befab102
+  - ad795d260ba8
+  - f10112b317a1
+  tool_panel_section_label: Imaging
+- name: image_math
+  owner: imgteam
+  revisions:
+  - 33b2ca53a566
+  - 48fa3ac55df2
+  - f8b7770cbca5
   tool_panel_section_label: Imaging
 - name: cp_cellprofiler
   owner: bgruening
