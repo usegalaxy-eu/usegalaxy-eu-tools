@@ -172,6 +172,7 @@ tools:
 - name: split_file_to_collection
   owner: bgruening
   revisions:
+  - 2dae863c8f42
   - 2ddc36385d7a
   - 6cbe2f30c2d7
   - 750c1684d47c
@@ -196,6 +197,11 @@ tools:
   revisions:
   - cd7e644cae1d
   tool_panel_section_label: FASTA/FASTQ
+- name: mgnify_seqprep
+  owner: bgruening
+  revisions:
+  - 76ea9d4604bc
+  tool_panel_section_label: FASTA/FASTQ
 - name: mavedb_importer
   owner: bgruening
   revisions:
@@ -219,6 +225,7 @@ tools:
   owner: bgruening
   revisions:
   - 030bfe6065d9
+  - eda6dfae9617
   tool_panel_section_label: Imaging
 - name: woundhealing_scratch_assay
   owner: bgruening
