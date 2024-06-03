@@ -3890,6 +3890,11 @@ tools:
   - 35ea4a8b1ea6
   - 44231ef8167a
   tool_panel_section_label: Mapping
+- name: cami_amber
+  owner: iuc
+  revisions:
+  - 6c71acde9d52
+  tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_kreport2krona
   owner: iuc
   revisions:
@@ -9198,6 +9203,11 @@ tools:
   - 91d89a597aac
   - efd53f6ceb16
   tool_panel_section_label: SAM/BAM
+- name: tasmanian_mismatch
+  owner: iuc
+  revisions:
+  - b15fbf90db53
+  tool_panel_section_label: SAM/BAM
 - name: tracy_align
   owner: iuc
   revisions:
@@ -9649,6 +9659,26 @@ tools:
   - 1d77986f9ddc
   - 239193b96d72
   - ae969fdb8442
+  tool_panel_section_label: Single-cell
+- name: snapatac2_preprocessing
+  owner: iuc
+  revisions:
+  - cec3e76eaf05
+  tool_panel_section_label: Single-cell
+- name: snapatac2_clustering
+  owner: iuc
+  revisions:
+  - 8f8bef61fd0b
+  tool_panel_section_label: Single-cell
+- name: snapatac2_plotting
+  owner: iuc
+  revisions:
+  - fecf9664c885
+  tool_panel_section_label: Single-cell
+- name: snapatac2_peaks_and_motif
+  owner: iuc
+  revisions:
+  - 588c811fdd48
   tool_panel_section_label: Single-cell
 - name: best_regression_subsets
   owner: devteam
@@ -10741,12 +10771,6 @@ tools:
   revisions:
   - 2a3a00c1fa0a
   tool_panel_section_label: Variant Calling
-- name: snpfreqplot
-  owner: iuc
-  revisions:
-  - 3d0adeee3f2b
-  - dc51db22310c
-  tool_panel_section_label: Variant Calling
 - name: snpsift
   owner: iuc
   revisions:
@@ -11279,13 +11303,18 @@ tools:
   - 92b9fd5f1f9f
   - 9f23fe0cb70b
   tool_panel_section_label: Virology
+- name: snpfreqplot
+  owner: iuc
+  revisions:
+  - 3d0adeee3f2b
+  - dc51db22310c
+  tool_panel_section_label: Virology
 - name: varvamp
   owner: iuc
   revisions:
   - 33fac436dd54
   - 462e62be07e1
   - 80e18c0836e5
-  - eb5dcbebd242
   tool_panel_section_label: Virology
 - name: data_manager_build_kraken2_database
   owner: iuc
