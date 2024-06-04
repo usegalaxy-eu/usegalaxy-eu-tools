@@ -1649,6 +1649,7 @@ tools:
   - 95219305823a
   - a6ea26c1f225
   - b4e6819b25ef
+  - cf1322aeb137
   - d82648ad25a3
   - f7094efef903
   tool_panel_section_label: Mapping
@@ -1787,6 +1788,7 @@ tools:
   revisions:
   - 45d4d26e01b5
   - c147914c9f02
+  - f5114c60dc95
   tool_panel_section_label: Extract Features
 - name: parse_mito_blast
   owner: iuc
@@ -2710,6 +2712,7 @@ tools:
   - 26b7446bb17e
   - 494b2ec08162
   - 4df8de2d0e48
+  - 516a54ddf218
   - 5534eb46de20
   - 5e6237d58b0c
   - 653e89d73fc4
@@ -3889,6 +3892,21 @@ tools:
   - 35ea4a8b1ea6
   - 44231ef8167a
   tool_panel_section_label: Mapping
+- name: cami_amber
+  owner: iuc
+  revisions:
+  - afc795d10918
+  tool_panel_section_label: Metagenomic Analysis
+- name: cami_amber_add
+  owner: iuc
+  revisions:
+  - b07cfe3b877e
+  tool_panel_section_label: Metagenomic Analysis
+- name: cami_amber_convert
+  owner: iuc
+  revisions:
+  - 8754ed6f0096
+  tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_kreport2krona
   owner: iuc
   revisions:
@@ -5075,6 +5093,11 @@ tools:
   revisions:
   - 4f0a8e401e2e
   - ef0443c0eaba
+  tool_panel_section_label: Metagenomic Analysis
+- name: metabuli
+  owner: iuc
+  revisions:
+  - b01d6b38f779
   tool_panel_section_label: Metagenomic Analysis
 - name: merge_metaphlan_tables
   owner: iuc
@@ -10717,6 +10740,7 @@ tools:
   owner: iuc
   revisions:
   - 029d90b0c4f6
+  - 99f43642d1ae
   - e8971ca74398
   - f079716f598c
   tool_panel_section_label: Variant Calling
@@ -11309,6 +11333,11 @@ tools:
   - 33fac436dd54
   - 462e62be07e1
   - 80e18c0836e5
+  tool_panel_section_label: Virology
+- name: virheat
+  owner: iuc
+  revisions:
+  - 927e55d1aa97
   tool_panel_section_label: Virology
 - name: data_manager_build_kraken2_database
   owner: iuc
