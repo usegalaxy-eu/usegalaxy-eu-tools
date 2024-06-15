@@ -58,6 +58,26 @@ tools:
   - a2e75bad2872
   - d36215791ad3
   tool_panel_section_label: Convert Formats
+- name: sambamba_flagstat
+  owner: bgruening
+  revisions:
+  - ce3927af5a8f
+  tool_panel_section_label: SAM/BAM
+- name: sambamba_markdup
+  owner: bgruening
+  revisions:
+  - 6c916a5a6afb
+  tool_panel_section_label: SAM/BAM
+- name: sambamba_merge
+  owner: bgruening
+  revisions:
+  - 480c9d4c8957
+  tool_panel_section_label: SAM/BAM
+- name: sambamba_sort
+  owner: bgruening
+  revisions:
+  - 87c1b543c4c4
+  tool_panel_section_label: SAM/BAM
 - name: antismash
   owner: bgruening
   revisions:
@@ -173,6 +193,11 @@ tools:
   owner: bgruening
   revisions:
   - 2668027a533b
+  tool_panel_section_label: Assembly
+- name: erga_ear
+  owner: bgruening
+  revisions:
+  - 8c99976de71e
   tool_panel_section_label: Assembly
 - name: split_file_to_collection
   owner: bgruening
