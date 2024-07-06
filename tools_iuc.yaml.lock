@@ -1632,12 +1632,14 @@ tools:
   revisions:
   - 65a69de1e294
   - 6e868bf6c38e
+  - a7387ce2a8ca
   tool_panel_section_label: Convert Formats
 - name: tooldistillator_summarize
   owner: iuc
   revisions:
   - 05c1bcba20c9
   - 6ff67d2860e1
+  - def7a82d23e1
   tool_panel_section_label: Convert Formats
 - name: ucsc_twobittofa
   owner: iuc
@@ -2114,6 +2116,7 @@ tools:
   revisions:
   - da336e3ead38
   - e462044ece67
+  - eee1a2f6abd8
   tool_panel_section_label: FASTA/FASTQ
 - name: fastqc
   owner: devteam
@@ -2415,6 +2418,11 @@ tools:
   owner: iuc
   revisions:
   - f85221724099
+  tool_panel_section_label: Filter and Sort
+- name: bigwig_outlier_bed
+  owner: iuc
+  revisions:
+  - ebcd48f183b3
   tool_panel_section_label: Filter and Sort
 - name: gemini_actionable_mutations
   owner: iuc
@@ -3048,6 +3056,7 @@ tools:
   - b53973719d7b
   - d6f5e51e97ec
   - ee745fbe9f14
+  - fb7068d30ec9
   - fb981b15ccef
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_chicdifferentialtest
@@ -3055,6 +3064,7 @@ tools:
   revisions:
   - 126abc4b03f1
   - 1e52af48d34e
+  - 57aeaf6b237d
   - 7ec5229e2a19
   - 8c5cecbfc3aa
   - 9180983da5c2
@@ -3066,6 +3076,7 @@ tools:
 - name: hicexplorer_chicexportdata
   owner: bgruening
   revisions:
+  - 163fd744e235
   - 23b8d6b8960c
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_chicplotviewpoint
@@ -3080,6 +3091,7 @@ tools:
   - ac7999229ac6
   - ae8bf5420df2
   - dbf82dd7bdb3
+  - f47ac4a0b337
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_chicqualitycontrol
   owner: bgruening
@@ -3089,6 +3101,7 @@ tools:
   - 44d6bef89faa
   - 692b686622b6
   - 7095bb186016
+  - a63e9713c39d
   - b892fa1fcaec
   - db4a82804126
   - fadd03fbc4f5
@@ -3101,6 +3114,7 @@ tools:
   - 2f279a01f3ff
   - 38fa8a72ece6
   - 3df84bb4486c
+  - 45a386d18509
   - 6001400eed99
   - 640e0e45518a
   - 6bc82c6d6620
@@ -3111,6 +3125,7 @@ tools:
   owner: bgruening
   revisions:
   - 0dabfd9a496b
+  - 40fee49bc6c3
   - 68c92dfd03d7
   - 6d76e532b669
   - 78b70d78a596
@@ -3132,6 +3147,7 @@ tools:
   - b285586b61a6
   - b9cdce1e57a1
   - bd11c6a972ef
+  - f963c251ac77
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicadjustmatrix
   owner: bgruening
@@ -3144,6 +3160,7 @@ tools:
   - aeacaf08bd52
   - cc52e4ded146
   - cd29c9a2ad55
+  - e06265d204f6
   - ea297a9c6f11
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicaggregatecontacts
@@ -3154,6 +3171,7 @@ tools:
   - 7066a1eda176
   - 8286e361f89c
   - a48457358aa8
+  - b05f662f9f35
   - ccd1d3013827
   - ce16a538ab46
   - e30485c5e93b
@@ -3168,6 +3186,7 @@ tools:
   - 2818b428a5c5
   - 3dafb9693b8c
   - 4b6a36c18e5e
+  - 8a11d70b6cd8
   - 9b02bf402560
   - b15d27c440fd
   - c72fa6cb8817
@@ -3186,6 +3205,7 @@ tools:
   - 921a2da49a0c
   - 9767c021cd58
   - 9edf8894a22d
+  - a4c13ddcc8ee
   - c657edbea349
   - ed2cca6b5de4
   tool_panel_section_label: HiCExplorer
@@ -3203,12 +3223,14 @@ tools:
   - b6c95ff7c3c3
   - c48c29d59359
   - cf39f061ad91
+  - e03780179ee5
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hiccompartmentspolarization
   owner: bgruening
   revisions:
   - 3a6a5381db36
   - 3afa7d456f61
+  - 4401ed529d2c
   - 536a6f0d260c
   - 7eaa4f72691f
   - 8d764e8acdf5
@@ -3221,6 +3243,7 @@ tools:
   owner: bgruening
   revisions:
   - 2a24ce221cd7
+  - 2ba6cee8e4db
   - 2f62a87d4017
   - 3b15581e7ca7
   - 3e598b8e72e7
@@ -3235,6 +3258,7 @@ tools:
   revisions:
   - 1e622e371512
   - 5443b2b1165f
+  - 62b720dceb56
   - 92fc291ceb1a
   - 9949f055db84
   - bc027a1c0952
@@ -3249,6 +3273,7 @@ tools:
   owner: bgruening
   revisions:
   - 1099d84fcc21
+  - 2786a931cad2
   - 2b4d6a8dab36
   - 340aa8042c7f
   - 364a38df1449
@@ -3272,10 +3297,12 @@ tools:
   - c3f9037423bd
   - ce8d154fc6b5
   - f16ab52334dd
+  - ffc33339cd3e
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicdifferentialtad
   owner: bgruening
   revisions:
+  - 5dfba24d7bdd
   - 608538d083a2
   - 77d8e0fd162a
   - c852ad97ba28
@@ -3290,6 +3317,7 @@ tools:
   - 8823a9d45ed0
   - 8ea7e91d13b3
   - 9369e9b11b8d
+  - 972dcccb5bbc
   - aa829050d061
   - ad852622d00a
   - fc0667d83f7c
@@ -3301,6 +3329,7 @@ tools:
   - 1d9b575fe97d
   - 5746d61f0a91
   - 6b7987d22eab
+  - 755df866ad0c
   - 78e22ca9f2ce
   - 78fb5e286609
   - aab371aa615e
@@ -3312,6 +3341,7 @@ tools:
 - name: hicexplorer_hichyperoptdetectloops
   owner: bgruening
   revisions:
+  - 409396ea5cf0
   - 7f7c6ead2d0d
   - 89fb1aab755b
   - dde6b320a34b
@@ -3321,6 +3351,7 @@ tools:
   revisions:
   - 172137e5fadb
   - 3a74a441b11f
+  - 51e40e9b6c3c
   - 615e9d59a682
   - 708e1b8eff5c
   - 782e3ae92bc6
@@ -3333,6 +3364,7 @@ tools:
   owner: bgruening
   revisions:
   - 55b013e59018
+  - c261b6b05ee3
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicmergedomains
   owner: bgruening
@@ -3340,6 +3372,7 @@ tools:
   - 6b9b4fd51308
   - 6f725a516914
   - b376ef118807
+  - b6b8c8672756
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicmergeloops
   owner: bgruening
@@ -3353,11 +3386,13 @@ tools:
   - 94b552c6830a
   - aeb4f3e6678d
   - baefc6a3f92a
+  - ed900cd4a0a9
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicmergematrixbins
   owner: bgruening
   revisions:
   - 03dd3c16ae4e
+  - 11fa44ee0603
   - 49c8055f6830
   - 4d511437b1e5
   - 90645548f8cc
@@ -3381,6 +3416,7 @@ tools:
   - b7cf65cb8019
   - b9d7410b6593
   - e24802b3bbad
+  - f34ab9882252
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicpca
   owner: bgruening
@@ -3392,6 +3428,7 @@ tools:
   - 77919cc3618e
   - b022c377239d
   - b4b8343dd681
+  - c3e5e2cf12b7
   - c435572f7cf1
   - c7f55f65b449
   - d5a86de86846
@@ -3406,6 +3443,7 @@ tools:
   - 5fb461d15c31
   - 8f4b98b0f9a9
   - a67cb12c785d
+  - dd9988943f53
   - ea5d67ec94ab
   - ebe2b2d82a32
   - f490a6409f3d
@@ -3414,6 +3452,7 @@ tools:
   owner: bgruening
   revisions:
   - 104bb2954821
+  - 11f39d7f6c64
   - 34dc1acfcc62
   - 6326cd29c1c3
   - 6abd5817e0cd
@@ -3428,6 +3467,7 @@ tools:
 - name: hicexplorer_hicplotmatrix
   owner: bgruening
   revisions:
+  - 12d51d7be66f
   - 40b33e101621
   - 4d2f071002b1
   - 5308ca68ef3d
@@ -3445,6 +3485,7 @@ tools:
   revisions:
   - 1923cc7e6bc2
   - 279fb179dae7
+  - 337705015ee8
   - 3a7752b8d2cb
   - 41e1d7a40b3b
   - 450605e43e25
@@ -3464,6 +3505,7 @@ tools:
   - 7cdc1a2de16e
   - 84d4b83f092a
   - 88208ca6cb90
+  - 8d203e74869b
   - b637a1e3cb14
   - d5c24ac2da6e
   - eec0210589b3
@@ -3480,10 +3522,12 @@ tools:
   - 9c5078f3926b
   - b599d3000966
   - b8755bb5bc56
+  - ea8fb5e899e8
   tool_panel_section_label: HiCExplorer
 - name: hicexplorer_hicsummatrices
   owner: bgruening
   revisions:
+  - 1d6af10874d5
   - 2a57fc28ef3a
   - 36dfa2825a59
   - 3ff8fa11be2b
@@ -3512,6 +3556,7 @@ tools:
   - 09ae55eb26fa
   - 0c13bd882a1a
   - 21b3ef2a6a80
+  - 27fe5cd1729c
   - 3f529510975e
   - 9667ab8e2085
   - ae9cc6dbfaca
@@ -3525,6 +3570,7 @@ tools:
   owner: bgruening
   revisions:
   - 0ecdd41d707c
+  - 11a3385e03b5
   - 1d201e8378b3
   - 362942f48dd2
   - 61754e6c156d
@@ -3859,6 +3905,7 @@ tools:
   owner: iuc
   revisions:
   - 55b7b257e12f
+  - e1d39a293b5a
   - f4ec47f1a8da
   tool_panel_section_label: Mapping
 - name: rgrnastar
@@ -9815,22 +9862,26 @@ tools:
 - name: snapatac2_preprocessing
   owner: iuc
   revisions:
+  - 48d9421bf176
   - cec3e76eaf05
   tool_panel_section_label: Single-cell
 - name: snapatac2_clustering
   owner: iuc
   revisions:
   - 8f8bef61fd0b
+  - 94ae400dde2f
   tool_panel_section_label: Single-cell
 - name: snapatac2_plotting
   owner: iuc
   revisions:
+  - c01f0a08ab43
   - fecf9664c885
   tool_panel_section_label: Single-cell
 - name: snapatac2_peaks_and_motif
   owner: iuc
   revisions:
   - 588c811fdd48
+  - f9647da40db3
   tool_panel_section_label: Single-cell
 - name: best_regression_subsets
   owner: devteam

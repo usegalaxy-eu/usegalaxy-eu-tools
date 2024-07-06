@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: zeiss_lmd_converter
+  owner: galaxyp
+  revisions:
+  - f17bc16fefcf
+  tool_panel_section_label: Proteomics
 - name: encyclopedia_library_to_blib
   owner: galaxyp
   revisions:
@@ -345,11 +350,13 @@ tools:
   revisions:
   - 4cb6c83d3777
   - 53a2f4fa6cd2
+  - db423b7bce78
   tool_panel_section_label: Proteomics
 - name: cardinal_colocalization
   owner: galaxyp
   revisions:
   - 4257fc095049
+  - 8ad8061e18c4
   - d3ca64dafdef
   tool_panel_section_label: Proteomics
 - name: cardinal_filtering
@@ -363,6 +370,7 @@ tools:
   - 4b5513e25902
   - 528fb09022be
   - 58376f5a6319
+  - 890845926d4b
   - a2988d8d4b77
   - a4475567dd22
   - a8157342d9a3
@@ -382,6 +390,7 @@ tools:
   - 5279bc051339
   - 653ad2b367f2
   - 82f6c2f4332d
+  - 91f0f5922011
   - 9f7d1ec01767
   - b16b64ca7b7c
   - b591450b3d1c
@@ -397,6 +406,7 @@ tools:
   - 28ba52c9548c
   - 350a84ea795c
   - 4fbffddde8cd
+  - 56da27be956a
   - 653e66bd9eed
   - 8da3511c9467
   - 90d2e00e1304
@@ -420,6 +430,7 @@ tools:
   - 3f4cb76b0c5f
   - 42f6e30b00f2
   - 47fc5b518ffc
+  - 4c177985028a
   - 585ef27873c9
   - 6f4c34f8d5ba
   - 8337ff96a54b
@@ -447,6 +458,7 @@ tools:
   - 80600735685d
   - a69865da6f80
   - a95a82eb4d50
+  - ae304a72db7b
   - c4df3005e04d
   - daf2ee9127fd
   tool_panel_section_label: Proteomics
@@ -463,6 +475,7 @@ tools:
   - 74b61bf5bc4b
   - a7fb9b395ddf
   - bb9500286fe4
+  - d426a9107a6c
   - d4803c1e5e19
   - ecaebe7c7b54
   - f0d1f3e97303
@@ -480,6 +493,7 @@ tools:
   - 5bf056c0354e
   - 611d80c0e29d
   - 798da6bdff3d
+  - 83aac7741200
   - 87bb011a4ee8
   - 8c05a34f160a
   - accf9fb6ea01
@@ -503,6 +517,7 @@ tools:
   - 64ea4507e0bd
   - 9b6b86e771c2
   - 9c03e7a617cd
+  - ba92b59cd529
   - d2483487e077
   - d2596e1be091
   - d333733dd571
@@ -523,6 +538,7 @@ tools:
   - 7e18fcb92a6a
   - 93be1d20b5c3
   - a8ecb52264c4
+  - a9a28e46d54a
   - aad328eb6c0f
   - b41107d8fe89
   - bb1ac6b47a6c
