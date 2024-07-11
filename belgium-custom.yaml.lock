@@ -13,12 +13,14 @@ tools:
   revisions:
   - 76672b83d42d
   - 83da94c0e4a6
+  - 9dd107db92c2
   tool_panel_section_label: None
 - name: data_manager_hisat2_index_builder
   owner: iuc
   revisions:
   - a04cebcd77f4
   - d210e1f185bd
+  - d74c740bdb25
   tool_panel_section_label: None
 - name: data_manager_fetch_gff
   owner: ieguinoa
@@ -42,6 +44,7 @@ tools:
   - 6ef6520f14fc
   - c520a52b5174
   - d3879aceba04
+  - d63c1442407f
   tool_panel_section_label: None
 - name: ribo_tools
   owner: rlegendre
@@ -56,6 +59,7 @@ tools:
 - name: htseq_count
   owner: lparsons
   revisions:
+  - 4418229c501e
   - 7f5a8d427b39
   - 916cb26bd9d3
   tool_panel_section_label: RNA Analysis
@@ -63,17 +67,20 @@ tools:
   owner: pjbriggs
   revisions:
   - 51b771646466
+  - b9aaed85cbd1
   - d94aff5ee623
   tool_panel_section_label: FASTA/FASTQ manipulation
 - name: rseqc
   owner: nilesh
   revisions:
+  - 27e16a30667a
   - dbedfc5f5a3c
   - f242ee103277
   tool_panel_section_label: RNA Analysis
 - name: sortmerna
   owner: rnateam
   revisions:
+  - 10b84b577117
   - eb35257d2e29
   tool_panel_section_label: Metagenomics
 - name: metaphlan2
@@ -93,6 +100,7 @@ tools:
   revisions:
   - 1e74cb2c8e67
   - 2bfa9b200600
+  - 2c87f56bd53a
   tool_panel_section_label: Metagenomic Analysis
 - name: group_humann2_uniref_abundances_to_go
   owner: bebatut
@@ -103,17 +111,20 @@ tools:
 - name: export2graphlan
   owner: iuc
   revisions:
+  - 635c90a27692
   - b16989c1e3a7
   - ed1becc01910
   tool_panel_section_label: Graph/Display Data
 - name: graphlan
   owner: iuc
   revisions:
+  - 6e8eb0c0d91f
   - a490b70e46fc
   tool_panel_section_label: Graph/Display Data
 - name: graphlan_annotate
   owner: iuc
   revisions:
+  - 97e3b735ed22
   - cf1df6b2220a
   tool_panel_section_label: Graph/Display Data
 - name: cutadapt
@@ -121,6 +132,7 @@ tools:
   revisions:
   - 093678460093
   - 5915ea1ec9b1
+  - aa784cb3810d
   tool_panel_section_label: FASTA/FASTQ
 - name: je_demultiplex
   owner: gbcs-embl-heidelberg
@@ -142,6 +154,7 @@ tools:
   revisions:
   - 49121db48873
   - 6b0ba6de1424
+  - f4d5237a84f6
   tool_panel_section_label: RNA Analysis
 - name: data_manager_sortmerna_database_downloader
   owner: rnateam
@@ -175,6 +188,7 @@ tools:
   - 12599a8dd22f
   - 28f284a679ce
   - 7f33525b85d0
+  - eb7baf1f72ca
   tool_panel_section_label: Metagenomic Analysis
 - name: mrbayes
   owner: nml
@@ -185,6 +199,7 @@ tools:
   owner: rnateam
   revisions:
   - bcfce5aac49c
+  - bf28a8cff401
   - f0d493f8f84f
   tool_panel_section_label: Multiple Alignments
 - name: ucsb_phylogenetics
@@ -195,12 +210,14 @@ tools:
 - name: braker
   owner: genouest
   revisions:
+  - ac13de106677
   - ca7c12566894
   tool_panel_section_label: Annotation
 - name: interproscan
   owner: bgruening
   revisions:
   - 0cd163d805e3
+  - 74810db257cc
   - 98cafcbd2578
   - c55643c3d813
   tool_panel_section_label: Annotation
@@ -220,12 +237,14 @@ tools:
   revisions:
   - 2667d24b58a0
   - 9d1fbff733cf
+  - d9c3016f7283
   tool_panel_section_label: Proteomics
 - name: repeat_masker
   owner: bgruening
   revisions:
   - 39b40a9a6296
   - 3f987772e283
+  - ba6d2c32f797
   tool_panel_section_label: Annotation
 - name: augustus
   owner: bgruening
@@ -270,6 +289,7 @@ tools:
   owner: galaxyp
   revisions:
   - 399da6b5ec21
+  - 503bcd6ebe4b
   - ae8c4b2488e7
   tool_panel_section_label: Text Manipulation
 - name: ncbi_datasets
@@ -277,6 +297,7 @@ tools:
   revisions:
   - 18eed8fa7f23
   - 1a7773882d2c
+  - a6a475ed58cb
   tool_panel_section_label: Get Data
 - name: clipkit
   owner: padge
@@ -288,6 +309,7 @@ tools:
   owner: padge
   revisions:
   - 0d53577b962f
+  - 4769baf47b8d
   - 98944ec4bfc7
   tool_panel_section_label: Multiple Alignments
 - name: cdhit
