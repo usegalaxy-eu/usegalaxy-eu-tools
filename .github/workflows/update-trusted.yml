@@ -1,23 +1,23 @@
 name: Update Trusted Tools
 
 on:
-  workflow_dispatch:
-  push:
-  pull_request:
   schedule:
-    - cron: "0 2 * * THU"
+  # Runs weekly, every Saturday at 02:00 UTC (alligned with off-peak hours)
+    - cron: "0 2 * * SAT"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.8]
+        python-version: [3.7, 3.8, 3.9, 3.10, 3.11] # test to see what Python versons are compatible
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Clone usegalaxy-eu-tools repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: usegalaxy-eu/usegalaxy-eu-tools
           path: usegalaxy-eu-tools
@@ -39,13 +39,13 @@ jobs:
         run: |
             # Update the trusted tools.
             make fix -j $(nproc)
-            # make lint -j $(nproc)
+            make lint -j $(nproc)
             make update_trusted -j $(nproc)
       - name: Show differences
         run: "git diff --stat"
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update Galaxy tools
@@ -56,7 +56,6 @@ jobs:
             Please verify if these changes are valid.
           labels: |
             automatic PR
-          reviewers: ieguinoa
           branch: tools-update
           base: master
       - name: Check output
