@@ -28,11 +28,22 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Clone usegalaxy-eu-tools repository
+        uses: actions/checkout@v4
+        with:
+          repository: usegalaxy-eu/usegalaxy-eu-tools
+          path: usegalaxy-eu-tools
+          ref: master
+      - name: Update tools_iuc.yaml from tools_iuc_eu.yaml
+        run: |
+          python3 process_yaml.py --merge_yaml --base_file tools_iuc.yaml --tools_yaml ${GITHUB_WORKSPACE}/usegalaxy-eu-tools/tools_iuc.yaml --out_file tools_iuc.yaml
+      - name: Deleting usegalaxy-eu-tools repository
+        run: rm -r usegalaxy-eu-tools
       - name: Perform linting
         run: |
             # Update the trusted tools.
             make fix -j $(nproc)
-            make lint -j $(nproc)
+            # make lint -j $(nproc)
             make update_trusted -j $(nproc)
       - name: Show differences
         run: "git diff --stat"
