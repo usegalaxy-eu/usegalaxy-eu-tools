@@ -1,6 +1,10 @@
 name: Update Trusted Tools
 
 on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
   schedule:
   # Runs weekly, every Saturday at 02:00 UTC (alligned with off-peak hours)
     - cron: "0 2 * * SAT"
