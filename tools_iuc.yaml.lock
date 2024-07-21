@@ -559,6 +559,11 @@ tools:
   - da22667725c7
   - f9c37d0b3002
   tool_panel_section_label: Annotation
+- name: microsatbed
+  owner: iuc
+  revisions:
+  - 2b970db61912
+  tool_panel_section_label: Annotation
 - name: mirmachine
   owner: iuc
   revisions:
@@ -900,6 +905,7 @@ tools:
   revisions:
   - 045c7c3d8e59
   - 0ee0c3089254
+  - 284a1cb82b61
   - 366a11d316a7
   - 3f7be05a1597
   - 41cea2aa2dce
@@ -1369,6 +1375,7 @@ tools:
   - 0a3a602cd1e3
   - 23300b42ca18
   - 2db911a4efc5
+  - 3e44ef016b45
   - 6e26c9afd301
   - 88c240872a65
   - 8f9f06995f98
@@ -1709,6 +1716,7 @@ tools:
   owner: iuc
   revisions:
   - 05ee0a74faef
+  - 111bd54f6bc4
   - 24d024316465
   - 288db50d1fb9
   - 524d31add34a
@@ -1872,6 +1880,7 @@ tools:
   - 48f587c13075
   - 4e5056fefd88
   - 5915ea1ec9b1
+  - 5eb7e84243f2
   - 64172f1c1202
   - 8c0175e03cee
   - 944ae523bacb
@@ -2284,6 +2293,11 @@ tools:
   - 6510652376b1
   - 7e30613be1c6
   tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_translate
+  owner: iuc
+  revisions:
+  - 6366952ddfd3
+  tool_panel_section_label: FASTA/FASTQ
 - name: seqkit_stats
   owner: iuc
   revisions:
@@ -2292,6 +2306,11 @@ tools:
   - 812705bcf39c
   - d85bac8b166a
   - fe1ae2ebf63d
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_sort
+  owner: iuc
+  revisions:
+  - 61eb4cfc7313
   tool_panel_section_label: FASTA/FASTQ
 - name: seqtk
   owner: iuc
@@ -2402,6 +2421,7 @@ tools:
 - name: rasusa
   owner: iuc
   revisions:
+  - add156116c63
   - c8f1cd6c1fbf
   tool_panel_section_label: FASTA/FASTQ
 - name: gffcompare
@@ -5245,6 +5265,11 @@ tools:
   - fd69c607b43f
   - ff8f55893e7d
   tool_panel_section_label: Metagenomic Analysis
+- name: mg_toolkit_original_metadata
+  owner: iuc
+  revisions:
+  - 2eef3b6f1c84
+  tool_panel_section_label: Metagenomic Analysis
 - name: nonpareil
   owner: iuc
   revisions:
@@ -7397,6 +7422,11 @@ tools:
   revisions:
   - 75962a01d8ab
   tool_panel_section_label: Peak Calling
+- name: diffbind
+  owner: bgruening
+  revisions:
+  - f907216064f6
+  tool_panel_section_label: Peak Calling
 - name: ctd_batch
   owner: devteam
   revisions:
@@ -8704,12 +8734,14 @@ tools:
   owner: iuc
   revisions:
   - 1672b9bea89b
+  - 72927fc9e9ed
   - d696cf0a9622
   - e020be4f281b
   tool_panel_section_label: RNA Analysis
 - name: qualimap_rnaseq
   owner: iuc
   revisions:
+  - 35e00077ba61
   - 43a1c3e1a4d0
   - 613e6446ea5d
   - ce0da6c9f49e
@@ -9149,6 +9181,7 @@ tools:
   owner: iuc
   revisions:
   - 19ece8afbaab
+  - 30a201c9c310
   - 4a89c6f84425
   - ac607906f10a
   - e7fd6754d093
@@ -9157,6 +9190,7 @@ tools:
   owner: iuc
   revisions:
   - 16beb83e370c
+  - 17b35d23731f
   - adfe9fda2c5f
   - e38af83df163
   tool_panel_section_label: SAM/BAM
@@ -9863,11 +9897,13 @@ tools:
   owner: iuc
   revisions:
   - 48d9421bf176
+  - 4ecdea4cbea1
   - cec3e76eaf05
   tool_panel_section_label: Single-cell
 - name: snapatac2_clustering
   owner: iuc
   revisions:
+  - 509baa4a2da0
   - 8f8bef61fd0b
   - 94ae400dde2f
   tool_panel_section_label: Single-cell
@@ -9875,12 +9911,14 @@ tools:
   owner: iuc
   revisions:
   - c01f0a08ab43
+  - fbf62973e556
   - fecf9664c885
   tool_panel_section_label: Single-cell
 - name: snapatac2_peaks_and_motif
   owner: iuc
   revisions:
   - 588c811fdd48
+  - b9013e0e2b00
   - f9647da40db3
   tool_panel_section_label: Single-cell
 - name: best_regression_subsets
@@ -10224,6 +10262,7 @@ tools:
   - 403553ae19f6
   - 8a2e296c07ef
   - 8a885a1a92ea
+  - 95815a0bb307
   - b7ea370b8f5d
   - e075b1be5abb
   tool_panel_section_label: Variant Calling
@@ -10233,6 +10272,7 @@ tools:
   - 01fd33bc2e75
   - 072f606e2e69
   - 0fba2c15b40d
+  - 1001172b5089
   - 21687e35f066
   - 22637b1a55bf
   - 3296c3680d96
@@ -10252,6 +10292,7 @@ tools:
   - 01d6b7d6365e
   - 0238f68ad641
   - 13fe14c56f6d
+  - 143796b504eb
   - 3a7084316a6e
   - 4891338c6c54
   - 635532ff1ac9
@@ -10272,6 +10313,7 @@ tools:
   - 6b6c992d3a14
   - 81426b3cf18b
   - 874cc12ae316
+  - abd489215f73
   - d144af39073a
   - d40d4bf05718
   - fc47ffec447e
@@ -10279,6 +10321,7 @@ tools:
 - name: bcftools_consensus
   owner: iuc
   revisions:
+  - 1171446da5db
   - 147de996e34f
   - 1829900b5dcd
   - 2363ef414c9b
@@ -10304,6 +10347,7 @@ tools:
   - 9b29129fb491
   - b8e9da766b0f
   - cacc9970727a
+  - d58d2e8c7a57
   - e968db9208a4
   tool_panel_section_label: Variant Calling
 - name: bcftools_convert_to_vcf
@@ -10312,6 +10356,7 @@ tools:
   - 41873b29860a
   - 4935320a59a8
   - 55c0e906c14c
+  - 7291189e98b4
   - 7887b9d94c05
   - c14b33ab15d8
   - de68c11034f6
@@ -10330,6 +10375,7 @@ tools:
   - 7cbf3c66d4ad
   - 8899a6d50699
   - ae68ceb4cca3
+  - e6f4badbe6f3
   - f01b2c9506b9
   - f10f5b4e7854
   - fa67bc6d3b41
@@ -10340,6 +10386,7 @@ tools:
   revisions:
   - 277719af4dd7
   - 33bd9301568c
+  - 5d6653c989cb
   - 656a916779fe
   - 6ca7c55a27e8
   - a892912c09d5
@@ -10356,6 +10403,7 @@ tools:
   - 5a321fab1fe4
   - 64778f8899cc
   - 672b6c02fbc7
+  - 91c1e57d5c7f
   - 9243f0e24906
   - a29a2f40b665
   tool_panel_section_label: Variant Calling
@@ -10364,6 +10412,7 @@ tools:
   revisions:
   - 02f349bdbf96
   - 0d7d3de5ef5d
+  - 15da1ddcfeff
   - 4afd849c9d35
   - 5f27e814a119
   - 63aabc920911
@@ -10382,6 +10431,7 @@ tools:
   - 86296490704e
   - 9473302f4588
   - af163c712539
+  - b84fda8ebef0
   - b931e65638b8
   - e03f2f3ac3a9
   tool_panel_section_label: Variant Calling
@@ -10392,6 +10442,7 @@ tools:
   - 0dbff46d5a1b
   - 31ea13dfe5e6
   - 37757ffb4c5f
+  - 56556e1267de
   - 5660b21a0dbd
   - a0c219ecb5e7
   - ce9396ddcb2b
@@ -10402,6 +10453,7 @@ tools:
   revisions:
   - 021693fdadaa
   - 19905c025d2a
+  - 1ca7418e46ee
   - 481476814acc
   - 48291658fdf6
   - 67e2bd1c4579
@@ -10429,6 +10481,7 @@ tools:
   - 87aa2e0a126e
   - c39113e2ae34
   - ebcd8649c621
+  - ee85030e893d
   - f88f74d5b1e9
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_frameshifts
@@ -10436,6 +10489,7 @@ tools:
   revisions:
   - 03e6fb76e969
   - 0505a687ac58
+  - 2e303fcd3b0c
   - 399b40b2bcab
   - 48ac4d611e92
   - 58341ad4fb42
@@ -10454,6 +10508,7 @@ tools:
   - 262bba5b90ef
   - 2c4941386820
   - 40daf124be88
+  - 681bdf1e22ff
   tool_panel_section_label: Variant Calling
 - name: bcftools_plugin_split_vep
   owner: iuc
@@ -10461,6 +10516,7 @@ tools:
   - 3b6cd8086498
   - 70276425d001
   - 91c5e4de195a
+  - b317ccd39088
   - d55feecb6dc1
   tool_panel_section_label: Variant Calling
 - name: bcftools_query
@@ -10474,10 +10530,12 @@ tools:
   - c9c5718edc19
   - e53501abf992
   - f64e7ca2efd2
+  - fdec14f69010
   tool_panel_section_label: Variant Calling
 - name: bcftools_reheader
   owner: iuc
   revisions:
+  - 3b7b1fe7b937
   - 4db0695a6fc7
   - 6993b945aefc
   - 79489d5685dd
@@ -10490,6 +10548,7 @@ tools:
 - name: bcftools_roh
   owner: iuc
   revisions:
+  - 1a989b4110da
   - 1ccf0e7fb4f6
   - 427e353bf26f
   - 6a636d58dfc2
@@ -10507,6 +10566,7 @@ tools:
   - 80844da35ed5
   - a2f8dc22d7c0
   - b17394940c7a
+  - bf8325a07ce7
   - c636e58df612
   - e8af591435d1
   tool_panel_section_label: Variant Calling
@@ -10520,6 +10580,7 @@ tools:
   - 59fa8742285e
   - 98d5499ead46
   - abc3ced31cd1
+  - c2ab91a0d506
   - e15e4acae7ef
   - e1a2389af238
   tool_panel_section_label: Variant Calling
@@ -11545,6 +11606,7 @@ tools:
   owner: iuc
   revisions:
   - 13851aefa67a
+  - 1e34d2e3d285
   - 539b008cfe1c
   - 9002633b4737
   - e4b4837f06f5

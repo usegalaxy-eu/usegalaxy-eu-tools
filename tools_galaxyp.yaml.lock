@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: fragpipe
+  owner: galaxyp
+  revisions:
+  - ef46866326ef
+  tool_panel_section_label: Proteomics
 - name: zeiss_lmd_converter
   owner: galaxyp
   revisions:
@@ -307,6 +312,7 @@ tools:
 - name: morpheus
   owner: galaxyp
   revisions:
+  - 8295d959ca28
   - e0104a9f20f0
   tool_panel_section_label: Proteomics
 - name: msgfplus
@@ -554,6 +560,7 @@ tools:
   - 064b53fd3131
   - 24ccdcfbabac
   - 7bee859bbd11
+  - 9f136ebf73ac
   - b5e9cebb27e3
   tool_panel_section_label: Proteomics
 - name: megahit_contig2fastg
@@ -2513,4 +2520,19 @@ tools:
   revisions:
   - 6d93529d19d4
   - 867f17ede7f3
+  tool_panel_section_label: Proteomics
+- name: openms_openmsinfo
+  owner: galaxyp
+  revisions:
+  - 5da903bcd4f1
+  tool_panel_section_label: Proteomics
+- name: openms_jsonexporter
+  owner: galaxyp
+  revisions:
+  - f483ffdc7014
+  tool_panel_section_label: Proteomics
+- name: openms_sageadapter
+  owner: galaxyp
+  revisions:
+  - 3ebae1b284b9
   tool_panel_section_label: Proteomics
