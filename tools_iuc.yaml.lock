@@ -134,6 +134,7 @@ tools:
   - 07a74537acd5
   - 47f9f4d13d2c
   - 79413aecc398
+  - 8f20a5b9b282
   - cfec9601b25d
   tool_panel_section_label: Annotation
 - name: dgidb_annotator
@@ -563,6 +564,7 @@ tools:
   owner: iuc
   revisions:
   - 2b970db61912
+  - dddd7ef63469
   tool_panel_section_label: Annotation
 - name: mirmachine
   owner: iuc
@@ -3758,6 +3760,7 @@ tools:
 - name: deepmicro
   owner: iuc
   revisions:
+  - 2d20b3a1babd
   - 77cbfe3e1b0d
   - c58c1a99578b
   tool_panel_section_label: Machine Learning
@@ -9900,6 +9903,7 @@ tools:
   - 48d9421bf176
   - 4ecdea4cbea1
   - cec3e76eaf05
+  - fef8f61cb34c
   tool_panel_section_label: Single-cell
 - name: snapatac2_clustering
   owner: iuc
@@ -9907,10 +9911,12 @@ tools:
   - 509baa4a2da0
   - 8f8bef61fd0b
   - 94ae400dde2f
+  - afb90d3485df
   tool_panel_section_label: Single-cell
 - name: snapatac2_plotting
   owner: iuc
   revisions:
+  - 370d45e0d1a8
   - c01f0a08ab43
   - fbf62973e556
   - fecf9664c885
@@ -9919,8 +9925,14 @@ tools:
   owner: iuc
   revisions:
   - 588c811fdd48
+  - 88192fe25375
   - b9013e0e2b00
   - f9647da40db3
+  tool_panel_section_label: Single-cell
+- name: infercnv
+  owner: iuc
+  revisions:
+  - be7c0c692879
   tool_panel_section_label: Single-cell
 - name: best_regression_subsets
   owner: devteam
@@ -10603,6 +10615,66 @@ tools:
   - 0a757835a745
   - ef90043ba759
   tool_panel_section_label: Variant Calling
+- name: beacon2_analyses
+  owner: iuc
+  revisions:
+  - 5fcaabf17d8d
+  tool_panel_section_label: Variant Calling
+- name: beacon2_biosamples
+  owner: iuc
+  revisions:
+  - 7cea4f9c4d8f
+  tool_panel_section_label: Variant Calling
+- name: beacon2_bracket
+  owner: iuc
+  revisions:
+  - 2e60de9f5046
+  tool_panel_section_label: Variant Calling
+- name: beacon2_cnv
+  owner: iuc
+  revisions:
+  - 25424cc216f9
+  tool_panel_section_label: Variant Calling
+- name: beacon2_cohorts
+  owner: iuc
+  revisions:
+  - 8fc2c603a61f
+  tool_panel_section_label: Variant Calling
+- name: beacon2_datasets
+  owner: iuc
+  revisions:
+  - a38d4a52dbff
+  tool_panel_section_label: Variant Calling
+- name: beacon2_gene
+  owner: iuc
+  revisions:
+  - 8e949a739eaa
+  tool_panel_section_label: Variant Calling
+- name: beacon2_import
+  owner: iuc
+  revisions:
+  - 0f85ad162439
+  tool_panel_section_label: Variant Calling
+- name: beacon2_individuals
+  owner: iuc
+  revisions:
+  - b648eb72552c
+  tool_panel_section_label: Variant Calling
+- name: beacon2_range
+  owner: iuc
+  revisions:
+  - 2a9895689973
+  tool_panel_section_label: Variant Calling
+- name: beacon2_runs
+  owner: iuc
+  revisions:
+  - 34814a1b0a3f
+  tool_panel_section_label: Variant Calling
+- name: beacon2_sequence
+  owner: iuc
+  revisions:
+  - ad5a4a77ca9d
+  tool_panel_section_label: Variant Calling
 - name: beagle
   owner: iuc
   revisions:
@@ -10622,6 +10694,7 @@ tools:
 - name: cnv_vcf2json
   owner: iuc
   revisions:
+  - 7d2d2e3b9891
   - c8caf812d33b
   tool_panel_section_label: Variant Calling
 - name: cnvkit_access
