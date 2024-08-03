@@ -883,6 +883,7 @@ tools:
   revisions:
   - 01210c4e9144
   - 3169a38c2656
+  - 460fad600dce
   - b2f674562a18
   tool_panel_section_label: Assembly
 - name: getorganelle
@@ -1189,6 +1190,7 @@ tools:
   owner: iuc
   revisions:
   - 575b4d5bd444
+  - 58a870ef434c
   - 9a22227bb6d0
   - ab5b7f6b7198
   - ba7b0f11e470
@@ -1384,6 +1386,7 @@ tools:
   - 9e3e80cc4ad4
   - c4eac0c7e542
   - d10bdad2fd17
+  - e022dff952df
   - e9c1cdb9f9dc
   tool_panel_section_label: Assembly
 - name: verkko
@@ -1400,6 +1403,7 @@ tools:
   - a3a92e30a727
   - d87433f2a54d
   - fc925f53cae7
+  - ff4031bfaa22
   tool_panel_section_label: Assembly
 - name: bedtools
   owner: iuc
@@ -1649,6 +1653,11 @@ tools:
   - 05c1bcba20c9
   - 6ff67d2860e1
   - def7a82d23e1
+  tool_panel_section_label: Convert Formats
+- name: ucsc_maftoaxt
+  owner: iuc
+  revisions:
+  - 3a4256d4f079
   tool_panel_section_label: Convert Formats
 - name: ucsc_twobittofa
   owner: iuc
@@ -4048,6 +4057,7 @@ tools:
   owner: iuc
   revisions:
   - 073c867c5244
+  - 4960abe31b4d
   - e0d3f5969458
   tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_extract_kraken_reads
@@ -4248,6 +4258,7 @@ tools:
 - name: bracken
   owner: iuc
   revisions:
+  - 0c7b6eb7e752
   - 19035a7b1106
   - 1d4bd12f01cf
   - 79450f7fd718
@@ -4439,6 +4450,7 @@ tools:
   - 5ed774e1616e
   - 892a0629e2ed
   - a6c3f4f439f7
+  - a755466eb47c
   - b18594e1a514
   - f93a61ef06cf
   tool_panel_section_label: Metagenomic Analysis
@@ -4668,6 +4680,7 @@ tools:
   revisions:
   - 1aaa9b943a83
   - 2e38deed28ee
+  - 4b6ac1f0042b
   - 5b2f8b6a3609
   - 5eccd3d336a3
   - 6a1db3b02ea7
@@ -5220,6 +5233,7 @@ tools:
   owner: iuc
   revisions:
   - 0270541aaf46
+  - 05ad7d35ce92
   - 27250f92a01a
   - 27258eb73f0c
   - 2e5ae05160e0
@@ -5263,16 +5277,23 @@ tools:
   - 6dee4abadccb
   - a16313517e55
   - a92a632c4d9b
+  - b6897977d13e
   - b89b0765695d
   - ec368db926f4
   - f5df500fcc3c
   - fd69c607b43f
   - ff8f55893e7d
   tool_panel_section_label: Metagenomic Analysis
+- name: mg_toolkit_bulk_download
+  owner: iuc
+  revisions:
+  - a5eeaeba30d9
+  tool_panel_section_label: Metagenomic Analysis
 - name: mg_toolkit_original_metadata
   owner: iuc
   revisions:
   - 2eef3b6f1c84
+  - b613e5dd5e83
   tool_panel_section_label: Metagenomic Analysis
 - name: nonpareil
   owner: iuc
@@ -5334,6 +5355,7 @@ tools:
   - 76bf12b928f4
   - 824497684a1f
   - b5407cc2bf51
+  - d4fbfd31696c
   - fe733f05c2f8
   tool_panel_section_label: Metagenomic Analysis
 - name: scoary
@@ -7158,6 +7180,7 @@ tools:
   revisions:
   - 44f6ec903688
   - 63e02ef6e153
+  - c8ba8286e7c0
   tool_panel_section_label: Nanopore
 - name: flair_collapse
   owner: iuc
@@ -9680,6 +9703,7 @@ tools:
   - 35bc2eb568ed
   - 3e4e1cf73d98
   - 4d8f983cd751
+  - 64ff3ef24fae
   - 6acb08931836
   - 6f2d2c7f77ee
   - 6f83f8fd381f
@@ -9705,6 +9729,7 @@ tools:
   - a03ff8633507
   - a72e9faea895
   - a97abb8cd15b
+  - aa0059118fb9
   - b409c2486353
   - d636ce5cde16
   - e62673c32a5d
@@ -9725,6 +9750,7 @@ tools:
   - 9d33775ec67d
   - a755eaa1cc32
   - c5d3684f7c4c
+  - ca086f24422f
   - cc0deb593fc8
   - e4c99c83dfbf
   - f54f0f0598ad
@@ -9747,6 +9773,7 @@ tools:
   - d844935c906c
   - ec32793ce1dd
   - ed64c90a9b93
+  - f3ad813a58a3
   tool_panel_section_label: Single-cell
 - name: scanpy_plot
   owner: iuc
@@ -9755,6 +9782,7 @@ tools:
   - 4bfb75bb7c8e
   - 6adf98e782f3
   - 6f5349dd5c49
+  - 70fa84e99463
   - 7647e5cd1b8b
   - 8599fd07d140
   - 95777145cb92
@@ -9784,6 +9812,7 @@ tools:
   - c2ef03559dc6
   - c65fce500915
   - d18e7a6e5cd4
+  - e66884b1c1a5
   - f2f6c703da06
   tool_panel_section_label: Single-cell
 - name: scater_create_qcmetric_ready_sce
@@ -11722,6 +11751,7 @@ tools:
   - 5fe20c915fa6
   - 9c43baa60906
   - a88f077f1994
+  - d8dc037e3c13
 - name: data_manager_nextclade
   owner: iuc
   revisions:
