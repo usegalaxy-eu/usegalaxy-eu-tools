@@ -399,6 +399,7 @@ tools:
   - 425c0494ec2d
   - 6480c6d5fa36
   - b77023c41c76
+  - bf32ae95a06f
   - dbbedb14b44c
   - e424fa636281
   tool_panel_section_label: Metabolomics
@@ -447,6 +448,11 @@ tools:
   revisions:
   - e0cac9994a72
   tool_panel_section_label: Metabolomics
+- name: rename_annotated_feature
+  owner: recetox
+  revisions:
+  - 268fcec93d9c
+  tool_panel_section_label: Metabolomics
 - name: assign_ri_from_comment
   owner: recetox
   revisions:
@@ -473,4 +479,14 @@ tools:
   owner: workflow4metabolomics
   revisions:
   - 51015f22fcb7
+  tool_panel_section_label: Metabolomics
+- name: spec2vec_similarity
+  owner: recetox
+  revisions:
+  - 721a4e666191
+  tool_panel_section_label: Metabolomics
+- name: spec2vec_training
+  owner: recetox
+  revisions:
+  - 9d917de87cca
   tool_panel_section_label: Metabolomics

@@ -2141,6 +2141,7 @@ tools:
 - name: fastqc
   owner: devteam
   revisions:
+  - 2c64fded1286
   - 3d0c7bdf12f5
   - 484e86282f4b
   - 5ec9f6bceaee
@@ -9974,6 +9975,11 @@ tools:
   revisions:
   - 9bc0c48a027f
   tool_panel_section_label: Statistics
+- name: clustering_from_distmat
+  owner: iuc
+  revisions:
+  - 8192b416f945
+  tool_panel_section_label: Statistics
 - name: correlation
   owner: devteam
   revisions:
@@ -11982,6 +11988,7 @@ tools:
   - 1df18470e3d0
   - 279ce0d93d53
   - '422207876644'
+  - 4b4dead87318
   - 5e379358c023
   - c9040bdb918c
   - db1e58e44a5c
@@ -11996,6 +12003,7 @@ tools:
   - dc199abf3db4
   - e45e03a99d56
   - f8247afcd994
+  - fff032d6115a
   tool_panel_section_label: Metabolomics
 - name: dimet_differential_multigroup_analysis
   owner: iuc
@@ -12004,6 +12012,7 @@ tools:
   - 6f36c9072433
   - 7897a5cadcf5
   - b581ea4908ae
+  - c4bcde2c17d0
   - daefbae2aacf
   - e88cf5618b40
   - efe13e94f70d
@@ -12015,6 +12024,7 @@ tools:
   - 2de209fb390b
   - 5c12e5d57e53
   - 79720105f8c0
+  - 916bfd9924ff
   - b520764e0d98
   - be19aa1df5af
   - c6879530205c
@@ -12024,6 +12034,7 @@ tools:
   revisions:
   - 16c64719226c
   - 31b19ad28c81
+  - 41a4d8c9d6a2
   - 89ca62980a2e
   - 9f4451d9d542
   - a3349c105bd0
@@ -12033,6 +12044,7 @@ tools:
 - name: dimet_metabologram
   owner: iuc
   revisions:
+  - 06f8d9ba09cd
   - 7ff4f61789de
   - 82fb756e71cf
   - 82fbf955bb0f
@@ -12049,6 +12061,7 @@ tools:
   - 06b6d0c16833
   - 0b7d9818713b
   - 3b9226db8ab6
+  - 626016c1acdf
   - a01453baaf5e
   - c0103ea608fc
   tool_panel_section_label: Metabolomics
@@ -12061,12 +12074,14 @@ tools:
   - 9c7f9f79a93a
   - a06d1febf79e
   - b6faa1142f83
+  - c112e7f989bf
   - ff64373cebc2
   tool_panel_section_label: Metabolomics
 - name: dimet_timecourse_analysis
   owner: iuc
   revisions:
   - 40edef7d7f74
+  - b1a9eddf73d9
   - b856fcb1346e
   - b97f326c055d
   - c2f9c63b8b47
@@ -12082,6 +12097,7 @@ tools:
   - ed01c0809ae8
   - f070b08ff139
   - f2ce3a338418
+  - fe3500a01254
   tool_panel_section_label: Metabolomics
 - name: tracegroomer
   owner: iuc
