@@ -63,10 +63,20 @@ tools:
   - name: cpt_lipory
     owner: cpt
     tool_panel_section_label: Annotation
+    
+  - name: cpt_intersect_adjacent
+    owner: cpt
+    tool_panel_section_label: Annotation
+## deprecated tool, replaced by cpt_intersect_adj
 
   - name: cpt_related_genomes_nuc
     owner: cpt
     tool_panel_section_label: Phylogenetics
+
+  - name: cpt_related_genomes_prot
+    owner: cpt
+    tool_panel_section_label: Phylogenetics
+## deprecated tool, replaced by cpt_protein_blast_grouping
 
   - name: cpt_xmfa_to_table
     owner: cpt
@@ -132,14 +142,3 @@ tools:
     owner: cpt
     tool_panel_section_label: Annotation
 
-  - name: phageterm
-    owner: mmonot
-    tool_panel_section_label: Annotation
-
-  - name: phagetermvirome
-    owner: bioit_sciensano
-    tool_panel_section_label: Annotation
-    
-  - name: defense_finder
-    owner: rplanel
-    tool_panel_section_label: Annotation
