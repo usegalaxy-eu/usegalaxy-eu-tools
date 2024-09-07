@@ -53,6 +53,7 @@ tools:
   - 865ece5ca178
   - 92eee5f31117
   - ba6990f72184
+  - d77802fe76f7
   - da5f1924bb2e
   - debdc1469b41
   tool_panel_section_label: Annotation
@@ -1481,6 +1482,7 @@ tools:
   - 27673f5b5343
   - 359e043a285c
   - 405ed9ad53ab
+  - 767943cd85bf
   - 7ecb45126cd2
   - a68cb16fa1a0
   - b226e0c805a5
@@ -1538,12 +1540,14 @@ tools:
   - 158b5b2a164a
   - 5051467dc96a
   - 60ca8d013263
+  - 6ee334657360
   - e13f565068d6
   - e5340c09200a
   tool_panel_section_label: Convert Formats
 - name: crossmap_bed
   owner: iuc
   revisions:
+  - 50b7875a49d0
   - 91efc13d3ec1
   - cdbdce00f5f6
   - e6c68525e9ee
@@ -1556,6 +1560,7 @@ tools:
   - 09c6a9e067f9
   - 42b239a32349
   - 4d97434ea0fb
+  - 75a08e10cc76
   - 88d180fb6d67
   - e80720e27001
   tool_panel_section_label: Convert Formats
@@ -1563,6 +1568,7 @@ tools:
   owner: iuc
   revisions:
   - 8635b6b8a8f2
+  - a50ef4d58c90
   - eb66d7a04bf8
   tool_panel_section_label: Convert Formats
 - name: crossmap_vcf
@@ -1574,6 +1580,7 @@ tools:
   - 97979c3d179f
   - 9d61d74f03a4
   - b21851ddcc79
+  - d4965adac10c
   tool_panel_section_label: Convert Formats
 - name: crossmap_wig
   owner: iuc
@@ -1583,6 +1590,7 @@ tools:
   - 5f893ed3c5ed
   - e72c320c17c1
   - e8d84292e510
+  - f7229c8445da
   tool_panel_section_label: Convert Formats
 - name: genebed_maf_to_fasta
   owner: iuc
@@ -2290,6 +2298,7 @@ tools:
   - 2f804526f5fd
   - 581e52f03c5d
   - b4c6f054210a
+  - f69501361cec
   tool_panel_section_label: FASTA/FASTQ
 - name: rcorrector
   owner: iuc
@@ -3828,6 +3837,7 @@ tools:
   revisions:
   - 09dbbf5d3201
   - 396cc0c65700
+  - 4ad7321205c9
   - 8a7462c0ac14
   - a07a2d9ddd42
   - a287431cdf4f
@@ -4390,10 +4400,12 @@ tools:
   revisions:
   - 5ee29434330f
   - 7ccea589e8b7
+  - bcb8dc01f296
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_lineage_set
   owner: iuc
   revisions:
+  - 3693acdbf0d6
   - 640400ad260d
   - b39999cdbf21
   tool_panel_section_label: Metagenomic Analysis
@@ -4401,29 +4413,34 @@ tools:
   owner: iuc
   revisions:
   - 760dc0c0e689
+  - 8345d273ba82
   - f0107b9f2dc3
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_plot
   owner: iuc
   revisions:
   - 356839cd89d2
+  - 9916308301da
   - b24e4f6c8b4d
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_qa
   owner: iuc
   revisions:
+  - 5466420816b9
   - 5c0493cdced9
   - 8236b90ce44c
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_taxon_set
   owner: iuc
   revisions:
+  - 407e50329077
   - 600b129adb72
   - e3f1c47246fd
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_taxonomy_wf
   owner: iuc
   revisions:
+  - 19e4e2d98ebb
   - 2e995a9aa00e
   - 91230b9141c1
   tool_panel_section_label: Metagenomic Analysis
@@ -4432,16 +4449,19 @@ tools:
   revisions:
   - 878d742dacf0
   - bb3b50fa4956
+  - d0d9e52a46b8
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_tree
   owner: iuc
   revisions:
   - 6d1c282e2ce2
   - 9b2790bca5b5
+  - ce3fd529a6ec
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_tree_qa
   owner: iuc
   revisions:
+  - 36ea6d5441c3
   - b9a38ce53252
   - dd51f61c2309
   tool_panel_section_label: Metagenomic Analysis
@@ -8322,6 +8342,7 @@ tools:
   - df99138d2776
   - e4574a4d09d8
   - f7985e0479b9
+  - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
 - name: bayescan
   owner: iuc
@@ -8722,6 +8743,7 @@ tools:
   - 6e53e565fc6a
   - 9bdff28ae1b1
   - a8305cf0c951
+  - ae2aad0a6d50
   - d79ed3ec25fe
   - df0c8d0a5992
   - f2843df56434
@@ -11109,6 +11131,7 @@ tools:
   - 27fd1c1f00a8
   - 7303183cdb87
   - b43df0ce6c87
+  - e43f513583ee
   - fdbd97ff825e
   - ff0a8cda0c0b
   tool_panel_section_label: Variant Calling
@@ -11978,6 +12001,7 @@ tools:
   revisions:
   - 10232d2b5062
   - 2814c058a087
+  - e7b39a7e0024
 - name: deeptools_alignmentsieve
   owner: bgruening
   revisions:
@@ -12289,5 +12313,6 @@ tools:
   owner: iuc
   revisions:
   - 3cb0128a59a6
+  - 5147f08d67c9
   - ea6ea4029c47
   tool_panel_section_label: Metabolomics
