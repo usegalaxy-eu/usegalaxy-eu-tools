@@ -2156,6 +2156,7 @@ tools:
 - name: falco
   owner: iuc
   revisions:
+  - babbcf02d35c
   - da336e3ead38
   - e462044ece67
   - eee1a2f6abd8
@@ -9030,6 +9031,41 @@ tools:
   - c0fd285eb553
   - c4db6ec33fec
   - fab6ff46e019
+  tool_panel_section_label: RNA Analysis
+- name: seurat_preprocessing
+  owner: iuc
+  revisions:
+  - c3170652bd98
+  tool_panel_section_label: RNA Analysis
+- name: seurat_integrate
+  owner: iuc
+  revisions:
+  - 4341b8ff2a46
+  tool_panel_section_label: RNA Analysis
+- name: seurat_reduce_dimension
+  owner: iuc
+  revisions:
+  - e49429e8d6dd
+  tool_panel_section_label: RNA Analysis
+- name: seurat_create
+  owner: iuc
+  revisions:
+  - d0c26c9430f2
+  tool_panel_section_label: RNA Analysis
+- name: seurat_plot
+  owner: iuc
+  revisions:
+  - 2622dd85416f
+  tool_panel_section_label: RNA Analysis
+- name: seurat_data
+  owner: iuc
+  revisions:
+  - 50c5abeb08ba
+  tool_panel_section_label: RNA Analysis
+- name: seurat_clustering
+  owner: iuc
+  revisions:
+  - 94f1b9c7286f
   tool_panel_section_label: RNA Analysis
 - name: sleuth
   owner: iuc
