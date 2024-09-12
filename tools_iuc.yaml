@@ -279,6 +279,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: microsatbed
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: mirmachine
     owner: iuc
     tool_panel_section_label: Annotation
@@ -657,10 +661,14 @@ tools:
 
 # CONVERT FORMATS
 
+  - name: bbgbigwig
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+    
   - name: bam_to_scidx
     owner: iuc
     tool_panel_section_label: Convert Formats
-
+    
   - name: bam2fastx
     owner: iuc
     tool_panel_section_label: Convert Formats
@@ -762,6 +770,10 @@ tools:
     tool_panel_section_label: Convert Formats
 
   - name: tooldistillator_summarize
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_maftoaxt
     owner: iuc
     tool_panel_section_label: Convert Formats
 
@@ -1105,7 +1117,15 @@ tools:
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: seqkit_translate
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: seqkit_stats
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqkit_sort
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
@@ -1184,6 +1204,9 @@ tools:
     owner: iuc
     tool_panel_section_label: Filter and Sort
 
+  - name: bigwig_outlier_bed
+    owner: iuc
+    tool_panel_section_label: Filter and Sort
 
 # GEMINI
 
@@ -1797,6 +1820,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: name2taxid
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: gtdb_to_taxdump
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: biobox_add_taxid
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: krakentools_kreport2krona
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2390,6 +2425,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: mg_toolkit_bulk_download
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mg_toolkit_original_metadata
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: nonpareil
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2514,6 +2557,9 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: taxpasta
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
 
 # MOTHUR
 
@@ -3267,6 +3313,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Peak Calling
 
+  - name: diffbind
+    owner: bgruening
+    tool_panel_section_label: Peak Calling
+
 
 # PHENOTYPE ASSOCIATION
 
@@ -3441,6 +3491,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: pacu_map
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: pacu_snp
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
 
 # PICARD
 
@@ -3545,6 +3603,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: barrnap
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: brew3r_r
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -3745,6 +3807,34 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: seurat
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_preprocessing
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_integrate
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_reduce_dimension
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_create
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_plot
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_data
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_clustering
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -4206,6 +4296,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Single-cell
 
+  - name: infercnv
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
 # STATISTICS
 
   - name: best_regression_subsets
@@ -4214,6 +4308,10 @@ tools:
 
   - name: canonical_correlation_analysis
     owner: devteam
+    tool_panel_section_label: Statistics
+
+  - name: clustering_from_distmat
+    owner: iuc
     tool_panel_section_label: Statistics
 
   - name: correlation
@@ -4517,6 +4615,54 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: beacon2_vcf2bff
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_analyses
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_biosamples
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_bracket
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_cnv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_cohorts
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_datasets
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_gene
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_import
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_individuals
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_range
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_runs
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: beacon2_sequence
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -4933,6 +5079,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: vt_variant_tools
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+    
+  - name: hgvsparser
     owner: iuc
     tool_panel_section_label: Variant Calling
 

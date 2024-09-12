@@ -21,6 +21,7 @@ tools:
   owner: bgruening
   revisions:
   - 04bfb8ee7e23
+  - 3ae9331790a6
   - 4e9a3745dce4
   - 5376a7767fb3
   - 57e2503e6039
@@ -39,6 +40,7 @@ tools:
   - 31dfed0f0eed
   - 391a19477a12
   - 39881709807e
+  - 3e81299dfce3
   - 4dada93ef525
   - 7e2ee5f43778
   - 8dbc700cb940
@@ -49,15 +51,42 @@ tools:
   revisions:
   - 2a5a0b61a84e
   - bb871fbe177f
+  - cfe1d6e23237
   - fd0e8bda0154
   tool_panel_section_label: Convert Formats
 - name: hictk
   owner: bgruening
   revisions:
   - 2da980d606cb
+  - 6ea4b941a15b
   - a2e75bad2872
   - d36215791ad3
   tool_panel_section_label: Convert Formats
+- name: uniprot_rest_interface
+  owner: bgruening
+  revisions:
+  - 95fb5712344f
+  tool_panel_section_label: Convert Formats
+- name: sambamba_flagstat
+  owner: bgruening
+  revisions:
+  - ce3927af5a8f
+  tool_panel_section_label: SAM/BAM
+- name: sambamba_markdup
+  owner: bgruening
+  revisions:
+  - 6c916a5a6afb
+  tool_panel_section_label: SAM/BAM
+- name: sambamba_merge
+  owner: bgruening
+  revisions:
+  - 480c9d4c8957
+  tool_panel_section_label: SAM/BAM
+- name: sambamba_sort
+  owner: bgruening
+  revisions:
+  - 87c1b543c4c4
+  tool_panel_section_label: SAM/BAM
 - name: antismash
   owner: bgruening
   revisions:
@@ -69,12 +98,15 @@ tools:
   revisions:
   - 6d8444408ff1
   - a6318f87f2cd
+  - abba05ead5d7
   - e009d8260be2
+  - e7449b2c14bf
   tool_panel_section_label: Annotation
 - name: cpat
   owner: bgruening
   revisions:
   - 1ac12c0cc7a0
+  - 7ccc6234b54e
   - 8e9e228c54c4
   tool_panel_section_label: Annotation
 - name: edta
@@ -104,6 +136,7 @@ tools:
   - 53dd00a4ab68
   - 7d9ee8cd14b8
   - 840822c1e84a
+  - 8c2167481e72
   tool_panel_section_label: Assembly
 - name: canu
   owner: bgruening
@@ -116,6 +149,7 @@ tools:
   - 1ce9b1d72ec3
   - 276f5d8712d5
   - 291923e6f276
+  - 3e4f8642c77e
   - 3ee0ef312022
   - 8d4f03b5fe9d
   - cb8dfd28c16f
@@ -169,6 +203,18 @@ tools:
   revisions:
   - 86fa46d3ce2e
   tool_panel_section_label: Assembly
+- name: wtdbg
+  owner: bgruening
+  revisions:
+  - 2668027a533b
+  tool_panel_section_label: Assembly
+- name: erga_ear
+  owner: bgruening
+  revisions:
+  - 8c99976de71e
+  - a34826ae0a73
+  - b61022e1b807
+  tool_panel_section_label: Assembly
 - name: split_file_to_collection
   owner: bgruening
   revisions:
@@ -207,6 +253,18 @@ tools:
   revisions:
   - c82b0ff7ed3d
   tool_panel_section_label: Get Data
+- name: jbrowse2
+  owner: fubar
+  revisions:
+  - 4aec47f872b3
+  - 56f9a6e0fe80
+  - 878c27dfea9d
+  - b1260bca5fdc
+  - b55199c56abd
+  - c017111e976a
+  - c4b77883c0a7
+  - dc3fe98e7b37
+  tool_panel_section_label: Graph/Display Data
 - name: plotly_ml_performance_plots
   owner: bgruening
   revisions:
@@ -214,6 +272,7 @@ tools:
   - 4fac53da862f
   - 62e3a4e8c54c
   - 85da91bbdbfb
+  - f234e2e59d76
   tool_panel_section_label: Graph/Display Data
 - name: plotly_regression_performance_plots
   owner: bgruening
@@ -225,7 +284,14 @@ tools:
   owner: bgruening
   revisions:
   - 030bfe6065d9
+  - 9186100e75b5
   - eda6dfae9617
+  tool_panel_section_label: Imaging
+- name: bioimage_inference
+  owner: bgruening
+  revisions:
+  - b0f2d3b4a278
+  - caea9ee1ffac
   tool_panel_section_label: Imaging
 - name: woundhealing_scratch_assay
   owner: bgruening
@@ -952,6 +1018,18 @@ tools:
   revisions:
   - 02fa7b2245e6
   tool_panel_section_label: Machine Learning
+- name: flexynesis
+  owner: bgruening
+  revisions:
+  - bd808d1c4e0c
+  tool_panel_section_label: Machine Learning
+- name: chatgpt_openai_api
+  owner: bgruening
+  revisions:
+  - 08c658e9aa9e
+  - 7770a4bd42e2
+  - dab494dce303
+  tool_panel_section_label: Machine Learning
 - name: graphmap_align
   owner: bgruening
   revisions:
@@ -993,10 +1071,16 @@ tools:
   revisions:
   - 2cbd0d66aa08
   tool_panel_section_label: Metagenomic Analysis
+- name: tiara
+  owner: bgruening
+  revisions:
+  - 3f33a8ac8891
+  tool_panel_section_label: Metagenomic Analysis
 - name: mafft
   owner: rnateam
   revisions:
   - 6f28e90db932
+  - 8e649f27aa0d
   - a65296ffb4a0
   - bcfce5aac49c
   - bf28a8cff401

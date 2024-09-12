@@ -17,14 +17,22 @@ tools:
     owner: goeckslab
     tool_panel_section_label: Spatial Omics
 
-  - name: squidpy
+  - name: squidpy_scatter
     owner: goeckslab
     tool_panel_section_label: Imaging
-
+  
+  - name: squidpy_spatial
+    owner: goeckslab
+    tool_panel_section_label: Imaging
+    
   - name: rename_tiff_channels
     owner: goeckslab
     tool_panel_section_label: Imaging
 
   - name: cell_intensity_processing
+    owner: goeckslab
+    tool_panel_section_label: Imaging
+
+  - name: scimap_anndata_to_csv
     owner: goeckslab
     tool_panel_section_label: Imaging

@@ -36,8 +36,10 @@ tools:
   revisions:
   - 20429f4c1b95
   - 215925e588c4
+  - 33b590aa07c1
   - 4ad83aed5c3c
   - 7bbb7bf6304f
+  - ddcf35a868b8
   tool_panel_section_label: RNA Analysis
 - name: rbpbench
   owner: rnateam
@@ -75,6 +77,7 @@ tools:
 - name: locarna_multiple
   owner: rnateam
   revisions:
+  - 6e20ad2c8752
   - 7554c0df9139
   - 94b0468f0db8
   tool_panel_section_label: RNA Analysis
@@ -187,3 +190,8 @@ tools:
   revisions:
   - 940b1d632f4d
   tool_panel_section_label: Peak Calling
+- name: infer_rnaformer
+  owner: rnateam
+  revisions:
+  - 02b0ecc34d9a
+  tool_panel_section_label: RNA Analysis
