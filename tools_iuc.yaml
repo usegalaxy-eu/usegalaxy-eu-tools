@@ -314,8 +314,14 @@ tools:
   - name: data_manager_omamer
     owner: iuc
 
+  - name: data_manager_humann2_database_downloader
+    owner: iuc
+
   - name: data_manager_ncbi_fcs_gx_database_downloader
     owner: iuc
+
+  - name: data_manager_picard_index_builder
+    owner: devteam
 
   - name: optitype
     owner: iuc
@@ -785,6 +791,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: ucsc_nettoaxt
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_netfilter
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
 # EMBOSS
 
   - name: emboss_5
@@ -919,6 +933,10 @@ tools:
 
   - name: cutadapt
     owner: lparsons
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: fasta_clipping_histogram
+    owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
   - name: fasta_compute_length
@@ -3810,6 +3828,34 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: seurat_preprocessing
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_integrate
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_reduce_dimension
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_create
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_plot
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_data
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_clustering
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: sleuth
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -4104,6 +4150,10 @@ tools:
 
 # SINGLE-CELL
 
+  - name: cosg
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
   - name: sceasy_convert
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -4221,6 +4271,14 @@ tools:
     tool_panel_section_label: Single-cell
 
   - name: sinto_fragments
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: spapros_selection
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: spapros_evaluation
     owner: iuc
     tool_panel_section_label: Single-cell
 

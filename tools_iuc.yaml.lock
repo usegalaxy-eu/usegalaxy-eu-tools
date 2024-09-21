@@ -639,7 +639,6 @@ tools:
   owner: iuc
   revisions:
   - 57db282ca204
-  - e1502e4f8725
   - f8d72275878e
 - name: data_manager_ncbi_fcs_gx_database_downloader
   owner: iuc
@@ -7941,7 +7940,6 @@ tools:
   revisions:
   - 02f0dfb10421
   - 1d9d3c6bc246
-  - 4072360120e4
   - 6d29207a32c5
   - 6fede7bd6c8f
   - 70aa4bada58d
@@ -9034,6 +9032,41 @@ tools:
   - c4db6ec33fec
   - fab6ff46e019
   tool_panel_section_label: RNA Analysis
+- name: seurat_preprocessing
+  owner: iuc
+  revisions:
+  - c3170652bd98
+  tool_panel_section_label: RNA Analysis
+- name: seurat_integrate
+  owner: iuc
+  revisions:
+  - 4341b8ff2a46
+  tool_panel_section_label: RNA Analysis
+- name: seurat_reduce_dimension
+  owner: iuc
+  revisions:
+  - e49429e8d6dd
+  tool_panel_section_label: RNA Analysis
+- name: seurat_create
+  owner: iuc
+  revisions:
+  - d0c26c9430f2
+  tool_panel_section_label: RNA Analysis
+- name: seurat_plot
+  owner: iuc
+  revisions:
+  - 2622dd85416f
+  tool_panel_section_label: RNA Analysis
+- name: seurat_data
+  owner: iuc
+  revisions:
+  - 50c5abeb08ba
+  tool_panel_section_label: RNA Analysis
+- name: seurat_clustering
+  owner: iuc
+  revisions:
+  - 94f1b9c7286f
+  tool_panel_section_label: RNA Analysis
 - name: sleuth
   owner: iuc
   revisions:
@@ -9564,7 +9597,6 @@ tools:
   revisions:
   - 6c2c1836728b
   - a430da4f04cd
-  - a577ea614bed
   - cab3f8d35989
   - d54a4df48867
   - e613c1ad4c4c
@@ -11968,7 +12000,6 @@ tools:
   - 539b008cfe1c
   - 9002633b4737
   - e4b4837f06f5
-  - ed1518ce2237
 - name: data_manager_diamond_database_builder
   owner: iuc
   revisions:
@@ -12001,13 +12032,7 @@ tools:
 - name: data_manager_metaphlan_database_downloader
   owner: iuc
   revisions:
-  - 0cb27ea69dc1
   - 2c61c30a57e7
-  - 4ba60cb14cb0
-  - 5fe20c915fa6
-  - 9c43baa60906
-  - a88f077f1994
-  - d8dc037e3c13
 - name: data_manager_nextclade
   owner: iuc
   revisions:
@@ -12041,7 +12066,6 @@ tools:
 - name: data_manager_gtdbtk_database_installer
   owner: iuc
   revisions:
-  - 10232d2b5062
   - 2814c058a087
   - df84aaed4769
   - e7b39a7e0024
