@@ -1,0 +1,30 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+  - name: checkv_build_database
+    owner: ufz
+    tool_panel_section_label: Metagenomic Analysis
+  - name: checkv_end_to_end
+    owner: ufz
+    tool_panel_section_label: Data Managers
+  - name: genomad_end_to_end
+    owner: ufz
+    tool_panel_section_label: Metagenomic Analysis
+  - name: genomad_build_database
+    owner: ufz
+    tool_panel_section_label: Data Managers
+  - name: vibrant
+    owner: ufz
+    tool_panel_section_label: Metagenomic Analysis
+  - name: vibrant_build_database
+    owner: ufz
+    tool_panel_section_label: Data Managers
+  - name: virsorter
+    owner: ufz
+    tool_panel_section_label: Metagenomic Analysis
+  - name: virsorter_build_database
+    owner: ufz
+    tool_panel_section_label: Data Managers
