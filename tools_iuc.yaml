@@ -23,6 +23,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: argnorm
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: bakta
     owner: iuc
     tool_panel_section_label: Annotation
@@ -64,6 +68,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: compleasm
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: evidencemodeler
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -311,11 +319,20 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: data_manager_dada2
+    owner: iuc
+
   - name: data_manager_omamer
+    owner: iuc
+
+  - name: data_manager_humann2_database_downloader
     owner: iuc
 
   - name: data_manager_ncbi_fcs_gx_database_downloader
     owner: iuc
+
+  - name: data_manager_picard_index_builder
+    owner: devteam
 
   - name: optitype
     owner: iuc
@@ -773,11 +790,31 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: ucsc_axtchain
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_maftoaxt
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
   - name: ucsc_twobittofa
     owner: iuc
     tool_panel_section_label: Convert Formats
 
   - name: ucsc_wigtobigwig
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_nettoaxt
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_netfilter
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_chainnet
     owner: iuc
     tool_panel_section_label: Convert Formats
 
@@ -915,6 +952,10 @@ tools:
 
   - name: cutadapt
     owner: lparsons
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: fasta_clipping_histogram
+    owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
   - name: fasta_compute_length
@@ -1816,6 +1857,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: name2taxid
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: gtdb_to_taxdump
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: biobox_add_taxid
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: krakentools_kreport2krona
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2406,6 +2459,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: metaphlan
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mg_toolkit_bulk_download
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -3471,6 +3528,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: pacu_map
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: pacu_snp
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
 
 # PICARD
 
@@ -3782,6 +3847,34 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: seurat_preprocessing
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_integrate
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_reduce_dimension
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_create
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_plot
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_data
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: seurat_clustering
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: sleuth
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -4076,6 +4169,10 @@ tools:
 
 # SINGLE-CELL
 
+  - name: cosg
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
   - name: sceasy_convert
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -4196,6 +4293,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Single-cell
 
+  - name: spapros_selection
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: spapros_evaluation
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
   - name: episcanpy_build_matrix
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -4252,6 +4357,10 @@ tools:
 
   - name: canonical_correlation_analysis
     owner: devteam
+    tool_panel_section_label: Statistics
+
+  - name: clustering_from_distmat
+    owner: iuc
     tool_panel_section_label: Statistics
 
   - name: correlation

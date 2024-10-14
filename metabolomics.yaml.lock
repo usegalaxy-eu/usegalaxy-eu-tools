@@ -6,6 +6,7 @@ tools:
   owner: lecorguille
   revisions:
   - 11ab2081bd4a
+  - 6de175c1f6ef
   - 86a20118e743
   tool_panel_section_label: Metabolomics
 - name: genform
@@ -18,6 +19,7 @@ tools:
   revisions:
   - 15646e937936
   - 3bd53dcfa438
+  - 6550698fe60f
   - b02d1992a43a
   tool_panel_section_label: Metabolomics
 - name: xcms_plot_chromatogram
@@ -25,17 +27,20 @@ tools:
   revisions:
   - 024974037c4e
   - 271c9d5f0d10
+  - c8bef8f6a1cb
   tool_panel_section_label: Metabolomics
 - name: xcms_merge
   owner: lecorguille
   revisions:
   - 47f9b1fd5ce6
   - 5bd125a3f3b0
+  - 6d475a389abc
   - a301f001835c
   tool_panel_section_label: Metabolomics
 - name: xcms_group
   owner: lecorguille
   revisions:
+  - 71572faf938e
   - 9e45e1c404a4
   - d45a786cbc40
   - fe4002ac5193
@@ -43,6 +48,7 @@ tools:
 - name: xcms_refine
   owner: workflow4metabolomics
   revisions:
+  - 090b33a9981c
   - eb115eb8f25c
   tool_panel_section_label: Metabolomics
 - name: xcms_retcor
@@ -51,6 +57,7 @@ tools:
   - 4bfef820569b
   - 7faadba7c625
   - aa252eec9229
+  - d2b82d89f848
   tool_panel_section_label: Metabolomics
 - name: xcms_fillpeaks
   owner: lecorguille
@@ -58,11 +65,13 @@ tools:
   - 26d77e9ceb49
   - 3bc94c3abb28
   - de0d85537ee3
+  - ec9aebabc1d2
   tool_panel_section_label: Metabolomics
 - name: camera_annotate
   owner: lecorguille
   revisions:
   - 1c30ff90f3ae
+  - 3d63a762954a
   - 73d82de36369
   tool_panel_section_label: Metabolomics
 - name: xcms_summary
@@ -70,6 +79,7 @@ tools:
   revisions:
   - 018a9771de28
   - 27e7da5f6848
+  - 444e3ed135e3
   - acc0a4a366c1
   tool_panel_section_label: Metabolomics
 - name: camera_combinexsannos
@@ -81,47 +91,56 @@ tools:
 - name: mspurity_flagremove
   owner: computational-metabolomics
   revisions:
+  - 816bac69e03e
   - 8dcfbb7f917a
   tool_panel_section_label: Metabolomics
 - name: mspurity_puritya
   owner: computational-metabolomics
   revisions:
   - 3d6356bcf998
+  - 416460f611cc
   tool_panel_section_label: Metabolomics
 - name: mspurity_frag4feature
   owner: computational-metabolomics
   revisions:
+  - 31f64ff8320d
   - 61ebae7e09f5
   tool_panel_section_label: Metabolomics
 - name: mspurity_filterfragspectra
   owner: computational-metabolomics
   revisions:
+  - 0a0f22586cad
   - 1e6b7c4d99cd
   tool_panel_section_label: Metabolomics
 - name: mspurity_averagefragspectra
   owner: computational-metabolomics
   revisions:
+  - 406ae6769162
   - 4207233ead9c
   tool_panel_section_label: Metabolomics
 - name: mspurity_createdatabase
   owner: computational-metabolomics
   revisions:
   - 600a866a510c
+  - fa84bfaab681
   tool_panel_section_label: Metabolomics
 - name: mspurity_createmsp
   owner: computational-metabolomics
   revisions:
   - d1d73007a255
+  - f98b4bb0fa58
   tool_panel_section_label: Metabolomics
 - name: mspurity_dimspredictpuritysingle
   owner: computational-metabolomics
   revisions:
   - 3959cddb01a6
+  - b563d5fe4fc0
   tool_panel_section_label: Metabolomics
 - name: mspurity_purityx
   owner: computational-metabolomics
   revisions:
   - 0f646a3e0a3f
+  - d84cc9960035
   tool_panel_section_label: Metabolomics
 - name: dimspy_process_scans
   owner: computational-metabolomics
@@ -187,6 +206,7 @@ tools:
   owner: yguitton
   revisions:
   - 2066efbafd7c
+  - 93508ea69eb5
   - c75532b75ba1
   tool_panel_section_label: Metabolomics
 - name: nmr_preprocessing
@@ -194,6 +214,7 @@ tools:
   revisions:
   - 5b06800f3449
   - 68e2d63bece0
+  - 6e837e9352a2
   tool_panel_section_label: Metabolomics
 - name: nmr_alignment
   owner: marie-tremblay-metatoul
@@ -211,11 +232,13 @@ tools:
   owner: melpetera
   revisions:
   - 016780b192a6
+  - 23314e1192d4
   - 73892ef177e3
   tool_panel_section_label: Metabolomics
 - name: normalization
   owner: marie-tremblay-metatoul
   revisions:
+  - 221cbd549c40
   - 3d00a98974b7
   - f9554d5bb47e
   tool_panel_section_label: Metabolomics
@@ -256,6 +279,7 @@ tools:
   owner: jfrancoismartin
   revisions:
   - 1422de181204
+  - a3147e3d66e2
   tool_panel_section_label: Metabolomics
 - name: asca
   owner: marie-tremblay-metatoul
@@ -271,6 +295,7 @@ tools:
 - name: corr_table
   owner: melpetera
   revisions:
+  - 2173ad5e7750
   - b22c453e4cf4
   tool_panel_section_label: Metabolomics
 - name: heatmap
@@ -281,6 +306,7 @@ tools:
 - name: hmdb_ms_search
   owner: fgiacomoni
   revisions:
+  - 29195cb5d378
   - 505956db90c5
   - 63ba1cb240b7
   tool_panel_section_label: Metabolomics
@@ -314,11 +340,13 @@ tools:
 - name: mspurity_spectralmatching
   owner: computational-metabolomics
   revisions:
+  - 01cbb99bca13
   - 4db043151468
   tool_panel_section_label: Metabolomics
 - name: metfrag
   owner: computational-metabolomics
   revisions:
+  - f151ee133612
   - fd5c0b39569a
   tool_panel_section_label: Metabolomics
 - name: metfrag_vis
@@ -329,6 +357,7 @@ tools:
 - name: sirius_csifingerid
   owner: computational-metabolomics
   revisions:
+  - 8dac4cef0a22
   - 9e6bf7278257
   tool_panel_section_label: Metabolomics
 - name: nmr_annotation
@@ -339,6 +368,7 @@ tools:
 - name: xcms_export_samplemetadata
   owner: lecorguille
   revisions:
+  - 4ea32e46b2d6
   - f39cd33a73a6
   tool_panel_section_label: Metabolomics
 - name: generic_filter
@@ -346,11 +376,13 @@ tools:
   revisions:
   - 12cf1eed21f4
   - b1fa45bd2b44
+  - cfd7c4aa5c26
   tool_panel_section_label: Metabolomics
 - name: tablemerge
   owner: melpetera
   revisions:
   - 902ab790fb7b
+  - e44c5246247a
   tool_panel_section_label: Metabolomics
 - name: checkformat
   owner: ethevenot
@@ -362,11 +394,13 @@ tools:
   owner: melpetera
   revisions:
   - bdee2c2c484b
+  - ec75de7f1e08
   tool_panel_section_label: Metabolomics
 - name: idchoice
   owner: melpetera
   revisions:
   - b7a6a88f518a
+  - bb19b1d15732
   tool_panel_section_label: Metabolomics
 - name: w4mclassfilter
   owner: eschen42
@@ -398,10 +432,12 @@ tools:
   revisions:
   - 6153e8ada1ee
   - 9ec469ff191a
+  - ab6c14374bc0
   tool_panel_section_label: Convert Formats
 - name: thermo_raw_file_converter
   owner: galaxyp
   revisions:
+  - 19e45916daf9
   - 77a18a61aeed
   tool_panel_section_label: Convert Formats
 - name: msms_extractor

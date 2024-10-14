@@ -207,6 +207,7 @@ tools:
   revisions:
   - 0a8c6b61f0f4
   - 12615d397df7
+  - 86755160afbf
   - d698c222f354
   - ddf54b12c295
   - f46f0e4f75c4
@@ -223,6 +224,7 @@ tools:
   - 6595517c2dd8
   - 6e8d94597139
   - 9cd341095afd
+  - aff5135563c6
   tool_panel_section_label: Text Manipulation
 - name: prinseq
   owner: iuc
@@ -449,6 +451,11 @@ tools:
   revisions:
   - 24e01abf9e34
   tool_panel_section_label: Statistics
+- name: divand_full_analysis
+  owner: ecology
+  revisions:
+  - 484930fdc002
+  tool_panel_section_label: Climate Analysis
 - name: venn_list
   owner: peterjc
   revisions:
@@ -488,6 +495,7 @@ tools:
   - 7e616a1bdb07
   - 7f2ef7216cf8
   - 90928b255abb
+  - ae344ccf9d62
   - b1268b7544d3
   - fcb6a19960c6
   tool_panel_section_label: Graph/Display Data
@@ -514,6 +522,7 @@ tools:
   owner: iuc
   revisions:
   - 10515715c940
+  - 1a72f938213e
   - 391a4cc45fea
   - 3d059e9c2fba
   - a4d83ba2a1bc
@@ -525,6 +534,7 @@ tools:
   owner: iuc
   revisions:
   - 0e7290688b50
+  - 17b666467c32
   - 637cf21db396
   - 9c52a8130729
   - d6c41b454cc1
@@ -536,6 +546,7 @@ tools:
   owner: iuc
   revisions:
   - 374e9062d874
+  - 51c6ccaace7e
   - 53460afd5115
   - '566197475670'
   - ca7cb0eaad62
@@ -546,6 +557,7 @@ tools:
   - 1acf88921176
   - 299307abd804
   - 3b12bf9b4b87
+  - 5298e06f14f9
   - 5fe1dc76176e
   - 87908c76ca8d
   - 9cec81e1b90e
@@ -561,6 +573,7 @@ tools:
   - 398e5104f8a2
   - 497d700a5229
   - 536078949ae4
+  - 6fc8bab811da
   - b0d96516e6a5
   - fb50ab943396
   tool_panel_section_label: Graph/Display Data
@@ -884,10 +897,12 @@ tools:
   revisions:
   - 47e5dbc3e790
   - 71e5fa25b8a2
+  - e9f8633db0a2
   tool_panel_section_label: FASTA/FASTQ
 - name: fastqc
   owner: devteam
   revisions:
+  - 2c64fded1286
   - 3d0c7bdf12f5
   - 5ec9f6bceaee
   - e7b2202befea
@@ -904,6 +919,7 @@ tools:
   - bf675f34b056
   - c19b16e5729c
   - f7985e0479b9
+  - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
 - name: mothur_sffinfo
   owner: iuc
@@ -919,6 +935,7 @@ tools:
   owner: devteam
   revisions:
   - 56389130cb63
+  - 9115b978ce10
   - f1dc2a761c30
   tool_panel_section_label: FASTA/FASTQ
 - name: xarray_metadata_info
@@ -1387,6 +1404,7 @@ tools:
   owner: ecology
   revisions:
   - 055a934a380f
+  - 28c8f085d1b4
   tool_panel_section_label: Get Data
 - name: obis_data
   owner: ecology
@@ -1500,6 +1518,8 @@ tools:
   owner: ecology
   revisions:
   - 3b0fa963ae3e
+  - 5faa25ba905e
+  - 67b2cd9c2954
   - d4f168043757
   - debfa8a223c0
   tool_panel_section_label: Data and Metadata Management
@@ -1507,24 +1527,32 @@ tools:
   owner: ecology
   revisions:
   - 32707c9f5261
+  - 672e25c2c8c8
   - 6de4b4f70b7b
   - 8631291a1527
+  - c223db6625c1
   tool_panel_section_label: Data and Metadata Management
 - name: raster_template
   owner: ecology
   revisions:
   - 06e29cdc08bf
+  - 36150f04b524
+  - 9eaf84bf856f
   - b34c5a70b706
   tool_panel_section_label: Data and Metadata Management
 - name: vector_template
   owner: ecology
   revisions:
   - 330f15f2ad3f
+  - 40eb35199537
   - 559744b4c50c
+  - c65dd54f9807
   tool_panel_section_label: Data and Metadata Management
 - name: entities_template
   owner: ecology
   revisions:
+  - 1b11e38718af
+  - 299db57196ac
   - 5bfceb4ef59b
   - 8de58d879d6e
   tool_panel_section_label: Data and Metadata Management
@@ -1534,19 +1562,35 @@ tools:
   - 0fe3b8bd9d8b
   - 4f5816b57c13
   - a5f887cfcf94
+  - d53b708cb348
+  - ea302cc18332
   tool_panel_section_label: Data and Metadata Management
 - name: taxo_cov_template
   owner: ecology
   revisions:
   - 0cfc9b6da2ac
+  - 20224597fa2c
   - 2af7401f13e0
+  - 4f2d8a7c97fa
   - 9507334a3303
   - a45fa46f8010
+  tool_panel_section_label: Data and Metadata Management
+- name: annotations_template
+  owner: ecology
+  revisions:
+  - dbba9bedd4bd
+  tool_panel_section_label: Data and Metadata Management
+- name: eml_validate
+  owner: ecology
+  revisions:
+  - ad96b20423cf
   tool_panel_section_label: Data and Metadata Management
 - name: makeeml
   owner: ecology
   revisions:
   - 34dcb86a9351
+  - 49f38336f28f
+  - 4cf24a95c4ff
   - 59349973537f
   - 642e31c435c9
   - 8a697f446051
@@ -1561,16 +1605,21 @@ tools:
   - 3d14d6a4ef7c
   - 409d9329d2be
   - 5c0290c4225a
+  - 6fc2341a92cb
   - bd8b3e7541d5
+  - c1d2c0922362
   tool_panel_section_label: Data and Metadata Management
 - name: ecoregion_geonearestneighbor
   owner: ecology
   revisions:
+  - 36637718c51d
   - 5cde56683579
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_brt_analysis
   owner: ecology
   revisions:
+  - 2129484beb61
+  - a56c413f3a98
   - f0d6938d0451
   - f8962f1c832a
   - fc621f3f8226
@@ -1578,6 +1627,7 @@ tools:
 - name: ecoregion_taxa_seeker
   owner: ecology
   revisions:
+  - 18c4cd785a74
   - 788b118910a7
   - 9dc992f80c25
   - e3cd588fd14a
@@ -1588,10 +1638,12 @@ tools:
   - 374555fc30bd
   - 3d750279158b
   - b38b954b92b9
+  - c6b1bf7b0ac6
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_cluster_estimate
   owner: ecology
   revisions:
+  - 001d7d101915
   - 0f6542d0986e
   - 1b9522671e90
   - e94a25eed489
@@ -1601,6 +1653,7 @@ tools:
   revisions:
   - 24a81631a8b5
   - 32849c52aa54
+  - 844b5bf84164
   - edb8d19735a6
   tool_panel_section_label: Ecoregionalization
 - name: map_shp
@@ -1644,6 +1697,7 @@ tools:
 - name: hirondelle_crim
   owner: ecology
   revisions:
+  - 52baddd15640
   - afede0916f0a
   tool_panel_section_label: GIS Data Handling
 - name: aquainfra_importer
@@ -1672,4 +1726,5 @@ tools:
   owner: ecology
   revisions:
   - 12870a79d56b
+  - 9d689f8c9ce4
   tool_panel_section_label: Annotation
