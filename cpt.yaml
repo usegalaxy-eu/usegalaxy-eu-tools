@@ -132,7 +132,7 @@ tools:
     
   - name: cpt_protein_blast_grouping
     owner: cpt
-    tool_panel_section_label: Annotation
+    tool_panel_section_label: Phylogenetics
 
   - name: cpt_prophage_relatedness
     owner: cpt
@@ -142,3 +142,10 @@ tools:
     owner: cpt
     tool_panel_section_label: Annotation
 
+  - name: phageterm
+    owner: mmonot
+    tool_panel_section_label: Assembly
+  
+  - name: phagetermvirome
+    owner: bioit_sciensano
+    tool_panel_section_label: Metagenomic Analysis
