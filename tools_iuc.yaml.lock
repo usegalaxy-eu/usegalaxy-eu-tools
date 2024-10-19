@@ -17,6 +17,7 @@ tools:
 - name: abritamr
   owner: iuc
   revisions:
+  - 468fd92deaaa
   - 5aaffb8d8161
   - e909d3bc4687
   tool_panel_section_label: Annotation
@@ -1698,11 +1699,13 @@ tools:
   - 6e868bf6c38e
   - 8d6686664021
   - a7387ce2a8ca
+  - ea93df4b3df2
   tool_panel_section_label: Convert Formats
 - name: tooldistillator_summarize
   owner: iuc
   revisions:
   - 05c1bcba20c9
+  - 24eec94e6dfc
   - 6ff67d2860e1
   - def7a82d23e1
   - f3233d395549
@@ -1817,6 +1820,7 @@ tools:
   - b8476e82ac20
   - d1c340a5664b
   - f58a10e2e46d
+  - f87ac61981f0
   - f97743d52b87
   tool_panel_section_label: Evolution
 - name: mutate_snp_codon
@@ -2069,6 +2073,7 @@ tools:
   - c59d48774d03
   - d60c3f704da0
   - dbf9c561ef29
+  - dbfc505896e9
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_combiner
   owner: devteam
@@ -2445,6 +2450,7 @@ tools:
   - 3da72230c066
   - 4b494533146a
   - 58c8ece95b53
+  - a019807f4e67
   - a09586d5149a
   - bc7d99f46a5d
   - ecf1c30da3a2
@@ -4177,6 +4183,11 @@ tools:
   revisions:
   - 99ef57d30bfc
   tool_panel_section_label: Metagenomic Analysis
+- name: profile2cami
+  owner: iuc
+  revisions:
+  - 6bc0c090133f
+  tool_panel_section_label: Metagenomic Analysis
 - name: gtdb_to_taxdump
   owner: iuc
   revisions:
@@ -4838,6 +4849,11 @@ tools:
   - baceff842902
   - bb463043c93e
   - d74850cf4e42
+- name: decontam
+  owner: iuc
+  revisions:
+  - 6621beb8bf3e
+  tool_panel_section_label: Metagenomic Analysis
 - name: drep_compare
   owner: iuc
   revisions:
@@ -5417,6 +5433,7 @@ tools:
 - name: mapseq
   owner: iuc
   revisions:
+  - 30e275ed0442
   - a09139ba9c06
   - f1d1dafc836d
   tool_panel_section_label: Metagenomic Analysis
@@ -10068,6 +10085,7 @@ tools:
   - 6f83f8fd381f
   - 766be978777a
   - 77b91b9bdf52
+  - 8983e7a04ba7
   - aaa5da8e73a9
   - ac8e59e87ce3
   - b2df381a6004
@@ -10084,6 +10102,7 @@ tools:
   - 2d02d9702d3a
   - 3c86f71498bc
   - 5511647110ff
+  - 64388be6d510
   - 6a76b60e05f5
   - 6ea5a05a260a
   - 713a0c65b1fe
@@ -10121,6 +10140,7 @@ tools:
   - ca086f24422f
   - cc0deb593fc8
   - d1cd8c147809
+  - d86cb2ce311b
   - e4c99c83dfbf
   - f54f0f0598ad
   tool_panel_section_label: Single-cell
@@ -10129,6 +10149,7 @@ tools:
   revisions:
   - 146ae5d70b47
   - 3bcd5445cd7a
+  - 4bda4412b8c2
   - 51d945eab1e1
   - 5342ce58cd1e
   - 55f2212bb675
@@ -10157,6 +10178,7 @@ tools:
   - 397d2c97af05
   - 40812a65a78b
   - 4bfb75bb7c8e
+  - 62acdd96d4a0
   - 6adf98e782f3
   - 6f5349dd5c49
   - 70fa84e99463
@@ -10183,6 +10205,7 @@ tools:
   - 7a6701edcc92
   - 80d4e2cac903
   - 94c8f42efc47
+  - 974bb00b2f43
   - 9ca360dde8e3
   - 9fb627495ec2
   - a39040ae0a38
@@ -11405,6 +11428,7 @@ tools:
   - 04fa42777df9
   - 156b60c1530f
   - 213a3d6b579a
+  - 3e954e7125bf
   - 57def2d7c093
   - a5937157062f
   - a7c9782130e8
@@ -12202,6 +12226,7 @@ tools:
   - 1e34d2e3d285
   - 539b008cfe1c
   - 9002633b4737
+  - 90b4d4f0a3a4
   - e4b4837f06f5
 - name: data_manager_diamond_database_builder
   owner: iuc
