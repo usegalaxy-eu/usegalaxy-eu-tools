@@ -53,6 +53,8 @@ update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
 	python3 scripts/update-tool.py goeckslab.yaml
 	python3 scripts/update-tool.py eirene.yaml
 	python3 scripts/update-tool.py lldelisle.yaml
+	python3 scripts/update-tool.py tools_q2d2.yaml
+	python3 scripts/update-tool.py ufz.yaml
 
 update_all: $(UPDATED_YAMLS)
 

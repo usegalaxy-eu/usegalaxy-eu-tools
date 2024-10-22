@@ -37,6 +37,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
 
+  - name: uniprot_rest_interface
+    owner: bgruening
+    tool_panel_section_label: Convert Formats
+
 # SAM/BAM
 
   - name: sambamba_flagstat
@@ -184,6 +188,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Imaging
 
+  - name: bioimage_inference
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
   - name: woundhealing_scratch_assay
     owner: bgruening
     tool_panel_section_label: Imaging
@@ -322,6 +330,17 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
+  - name: flexynesis
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: chatgpt_openai_api
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: black_forest_labs_flux
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
 
 # MAPPING
 
@@ -355,7 +374,14 @@ tools:
   - name: itsx
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
-    
+
+  - name: motus
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: data_manager_motus
+    owner: bgruening
+ 
   - name: tiara
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis

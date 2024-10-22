@@ -8,15 +8,19 @@ tools:
   - 32b66fb6a6a0
   - 6ba3526237e0
   - 702a849c1e0e
+  - b3413f335327
+  - b341cfd4baf8
   - e7305ba0dd38
   - ebca18e223bf
   tool_panel_section_label: Metabolomics
 - name: recetox_aplcms_recover_weaker_signals
   owner: recetox
   revisions:
+  - 24278c6b6d1c
   - 99d118321d5f
   - a9bb2ccc53de
   - c3d4b82c7e5d
+  - d7f5878a98c3
   - e0536ff73f36
   - e2cb970d99dd
   tool_panel_section_label: Metabolomics
@@ -26,6 +30,8 @@ tools:
   - 02c772a49998
   - 1574b8a29e6f
   - 474d2bcb22e4
+  - 51332c2520c7
+  - 9064aecc78a7
   - bd1956f4c2aa
   - d69ec1171d71
   tool_panel_section_label: Metabolomics
@@ -34,9 +40,11 @@ tools:
   revisions:
   - 149b9cc7499b
   - 15aae2bfa67d
+  - 18ec7635bac6
   - 550667ce03f1
   - 60a09c4fa7a0
   - b9b19a74ac01
+  - f3a18e020cdd
   tool_panel_section_label: Metabolomics
 - name: recetox_aplcms_remove_noise
   owner: recetox
@@ -46,22 +54,28 @@ tools:
   - 8fb5e458831f
   - b5a1f35abd8a
   - d90187b0f247
+  - ea0758b41473
+  - ffbabefbd2e2
   tool_panel_section_label: Metabolomics
 - name: recetox_aplcms_merge_known_table
   owner: recetox
   revisions:
   - 04892b463957
+  - 17a48d0a80f4
   - 396a3b1eafd0
   - 8ecb609cc265
+  - cf061712a184
   - dd7bbc2b99d1
   - fb95cb4a6b9b
   tool_panel_section_label: Metabolomics
 - name: recetox_aplcms_compute_template
   owner: recetox
   revisions:
+  - 134be5abb208
   - 481d769e2f7a
   - 4963811b6dec
   - 51e37adf988f
+  - dfebc82ba1f0
   - e2dc815e1b2c
   - f8c4db95eec3
   tool_panel_section_label: Metabolomics
@@ -71,7 +85,9 @@ tools:
   - 1a01ffa85adc
   - 2b6bfa234d8b
   - 2d13fcae8b84
+  - 79ad928a0dae
   - 7b42ee54d757
+  - c53a97599181
   - d5c638b72ce4
   tool_panel_section_label: Metabolomics
 - name: rmassbank
@@ -85,6 +101,7 @@ tools:
   owner: recetox
   revisions:
   - 0b86600b715e
+  - 6cd2a9e6ac49
   - 90dc951da294
   - e5fcba090b10
   tool_panel_section_label: Metabolomics
@@ -391,6 +408,7 @@ tools:
   - 425c0494ec2d
   - 6480c6d5fa36
   - b77023c41c76
+  - bf32ae95a06f
   - dbbedb14b44c
   - e424fa636281
   tool_panel_section_label: Metabolomics
@@ -417,6 +435,7 @@ tools:
   owner: recetox
   revisions:
   - 0d9d72ef658f
+  - 33b7a99b6de3
   - 6c118de4b735
   - 8f465c0c3b6c
   - c1f752721827
@@ -424,6 +443,7 @@ tools:
 - name: qcxms_production_run
   owner: recetox
   revisions:
+  - 356f7916ac07
   - b566b27247f7
   - e97bfe7ac906
   tool_panel_section_label: ChemicalToolBox
@@ -431,13 +451,20 @@ tools:
   owner: recetox
   revisions:
   - 53dce0e49af7
+  - 89b026d67e9f
   - af8839475b43
   - ef51824f6d04
   tool_panel_section_label: ChemicalToolBox
 - name: use_theoretical_mz_annotations
   owner: recetox
   revisions:
+  - b3d41b1fcb18
   - e0cac9994a72
+  tool_panel_section_label: Metabolomics
+- name: rename_annotated_feature
+  owner: recetox
+  revisions:
+  - 268fcec93d9c
   tool_panel_section_label: Metabolomics
 - name: assign_ri_from_comment
   owner: recetox
@@ -465,4 +492,100 @@ tools:
   owner: workflow4metabolomics
   revisions:
   - 51015f22fcb7
+  tool_panel_section_label: Metabolomics
+- name: spec2vec_similarity
+  owner: recetox
+  revisions:
+  - 721a4e666191
+  tool_panel_section_label: Metabolomics
+- name: spec2vec_training
+  owner: recetox
+  revisions:
+  - 9d917de87cca
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_snplot
+  owner: recetox
+  revisions:
+  - 434fa3233e96
+  - 7579b0cda787
+  - ccd9b0c1aee6
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_histnoise
+  owner: recetox
+  revisions:
+  - 12b63108d645
+  - 5d99cb9755da
+  - e93401e2ad89
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_kmdnoise
+  owner: recetox
+  revisions:
+  - 39a642fc9638
+  - 99d021734000
+  - a9fba8378048
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_isofiltr
+  owner: recetox
+  revisions:
+  - e4ddc3bc7e15
+  - e7ef7718505d
+  - ef0388b42f7a
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_mfassign
+  owner: recetox
+  revisions:
+  - 9cbbfd54d7c4
+  - d2bad53dd220
+  - d5745e78fcfe
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_mfassigncho
+  owner: recetox
+  revisions:
+  - b92c9388240a
+  - b96a462d9c3f
+  - db058392cb2e
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_recal
+  owner: recetox
+  revisions:
+  - 13ef8b748af9
+  - 3ea8ed561c5a
+  - a3113a7c1767
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_recallist
+  owner: recetox
+  revisions:
+  - 1104682fb7cc
+  - 7e5ccc8b6f6e
+  - ddb9d330ecc0
+  tool_panel_section_label: Metabolomics
+- name: mfassignr_findrecalseries
+  owner: recetox
+  revisions:
+  - ad4176b336dc
+  tool_panel_section_label: Metabolomics
+- name: rcx_tk
+  owner: recetox
+  revisions:
+  - 54401f9d1a30
+  tool_panel_section_label: Metabolomics
+- name: target_screen
+  owner: recetox
+  revisions:
+  - d4c2d5bc0524
+  tool_panel_section_label: Metabolomics
+- name: ms2deepscore_config_generator
+  owner: recetox
+  revisions:
+  - 7e4ac334fc33
+  tool_panel_section_label: Metabolomics
+- name: ms2deepscore_similarity
+  owner: recetox
+  revisions:
+  - 58c95171a0d3
+  tool_panel_section_label: Metabolomics
+- name: ms2deepscore_training
+  owner: recetox
+  revisions:
+  - 0a0529822d91
   tool_panel_section_label: Metabolomics

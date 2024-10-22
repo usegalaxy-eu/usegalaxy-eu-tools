@@ -63,10 +63,11 @@ tools:
   - name: cpt_lipory
     owner: cpt
     tool_panel_section_label: Annotation
-
+    
   - name: cpt_intersect_adjacent
     owner: cpt
     tool_panel_section_label: Annotation
+## deprecated tool, replaced by cpt_intersect_adj
 
   - name: cpt_related_genomes_nuc
     owner: cpt
@@ -75,6 +76,7 @@ tools:
   - name: cpt_related_genomes_prot
     owner: cpt
     tool_panel_section_label: Phylogenetics
+## deprecated tool, replaced by cpt_protein_blast_grouping
 
   - name: cpt_xmfa_to_table
     owner: cpt
@@ -127,3 +129,16 @@ tools:
   - name: cpt_fasta_translate
     owner: cpt
     tool_panel_section_label: Annotation
+    
+  - name: cpt_protein_blast_grouping
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_prophage_relatedness
+    owner: cpt
+    tool_panel_section_label: Annotation
+
+  - name: cpt_intersect_adj
+    owner: cpt
+    tool_panel_section_label: Annotation
+
