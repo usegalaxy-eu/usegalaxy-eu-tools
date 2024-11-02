@@ -60,6 +60,7 @@ tools:
   - 2da980d606cb
   - 6ea4b941a15b
   - a2e75bad2872
+  - af0d9df0641e
   - d36215791ad3
   tool_panel_section_label: Convert Formats
 - name: uniprot_rest_interface
@@ -1041,6 +1042,11 @@ tools:
   - 7770a4bd42e2
   - dab494dce303
   tool_panel_section_label: Machine Learning
+- name: black_forest_labs_flux
+  owner: bgruening
+  revisions:
+  - 3e22bda128be
+  tool_panel_section_label: Machine Learning
 - name: graphmap_align
   owner: bgruening
   revisions:
@@ -1175,12 +1181,14 @@ tools:
   revisions:
   - 10bf0f89035f
   - 4447ed460308
+  - 7009462b958f
   tool_panel_section_label: Single-cell
 - name: music_construct_eset
   owner: bgruening
   revisions:
   - 282819d09a4f
   - 2cfd0db49bbc
+  - 7022ce682d2f
   - 7902cd31b9b5
   - 7ffaa0968da3
   - be91cb6f48e7
@@ -1190,6 +1198,7 @@ tools:
   revisions:
   - 2ba99a52bd44
   - 56371b5a2da9
+  - e7b79fd6b595
   tool_panel_section_label: Single-cell
 - name: music_inspect_eset
   owner: bgruening
@@ -1199,10 +1208,12 @@ tools:
   - 7705cc75ac18
   - 817eb707bbf4
   - 8c64a2da3869
+  - 94c0b3baf8fd
   tool_panel_section_label: Single-cell
 - name: music_manipulate_eset
   owner: bgruening
   revisions:
+  - 192355cd1641
   - 22232092be53
   tool_panel_section_label: Single-cell
 - name: bg_statistical_hypothesis_testing
