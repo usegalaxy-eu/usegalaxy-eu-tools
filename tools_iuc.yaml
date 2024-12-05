@@ -167,6 +167,13 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: groot
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: data_manager_groot_database_downloader
+    owner: iuc
+
   - name: gubbins
     owner: iuc
     tool_panel_section_label: Annotation
@@ -681,11 +688,11 @@ tools:
   - name: bbgbigwig
     owner: iuc
     tool_panel_section_label: Convert Formats
-    
+
   - name: bam_to_scidx
     owner: iuc
     tool_panel_section_label: Convert Formats
-    
+
   - name: bam2fastx
     owner: iuc
     tool_panel_section_label: Convert Formats
@@ -851,6 +858,10 @@ tools:
     tool_panel_section_label: Evolution
 
   - name: iqtree
+    owner: iuc
+    tool_panel_section_label: Evolution
+
+  - name: quicktree
     owner: iuc
     tool_panel_section_label: Evolution
 
@@ -1356,6 +1367,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Get Data
 
+  - name: fastq_dl
+    owner: iuc
+    tool_panel_section_label: Get Data
+
   - name: gdcwebapp
     owner: iuc
     tool_panel_section_label: Get Data
@@ -1848,11 +1863,11 @@ tools:
   - name: cami_amber
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
-  
+
   - name: cami_amber_add
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
-  
+
   - name: cami_amber_convert
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -3198,6 +3213,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
+  - name: trimal
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
   - name: sina
     owner: iuc
     tool_panel_section_label: Multiple Alignments
@@ -3952,6 +3971,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: tximport
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: sfold
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -5138,7 +5161,7 @@ tools:
   - name: vt_variant_tools
     owner: iuc
     tool_panel_section_label: Variant Calling
-    
+
   - name: hgvsparser
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -5219,6 +5242,10 @@ tools:
     tool_panel_section_label: Virology
 
   - name: virheat
+    owner: iuc
+    tool_panel_section_label: Virology
+
+  - name: irma
     owner: iuc
     tool_panel_section_label: Virology
 
