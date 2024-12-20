@@ -1,0 +1,68 @@
+name: Sync Galaxy Tools
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs weekly, every Saturday at 02:00 UTC
+    - cron: "0 3 * * SAT"
+
+jobs:
+  sync-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.8'
+
+      - name: Install Ephemeris
+        run: |
+          python -m pip install --upgrade pip
+          pip install ephemeris
+
+      - name: Fetch Galaxy tools list
+        run: |
+          get-tool-list -g "https://usegalaxy.be" -o galaxy_tools.yaml
+          echo "Galaxy tools list fetched successfully."
+
+      - name: Compare and update YAML file
+        run: |
+          if ! diff -q galaxy_tools.yaml tools.yaml > /dev/null; then
+            cp galaxy_tools.yaml tools.yaml
+            echo "tools.yaml updated."
+          else
+            echo "No changes in tools.yaml."
+          fi
+
+      - name: Commit and push changes
+        if: success() && files.exists('tools.yaml')
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add tools.yaml
+          git commit -m "Update tools.yaml with the latest tools list from useGalaxy.be"
+          git push origin HEAD
+
+      - name: Create Pull Request
+        if: success()
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: Update Galaxy tools
+          title: "Automatic update of tools.yaml"
+          body: |
+            This pull request updates `tools.yaml` with the latest tools from useGalaxy.be.
+          labels: |
+            auto-update
+          branch: tools-sync
+          base: master
+
+      - name: Output PR Number
+        if: steps.cpr.outputs.pull-request-number
+        run: |
+          echo "Pull Request Number: ${{ steps.cpr.outputs.pull-request-number }}"
