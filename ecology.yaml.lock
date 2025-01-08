@@ -455,6 +455,17 @@ tools:
   owner: ecology
   revisions:
   - 484930fdc002
+  - 77787acbd793
+  tool_panel_section_label: Climate Analysis
+- name: landcover_subindicator
+  owner: ecology
+  revisions:
+  - 828c02027180
+  tool_panel_section_label: Climate Analysis
+- name: harmonize_insitu_to_netcdf
+  owner: ecology
+  revisions:
+  - 15260949227d
   tool_panel_section_label: Climate Analysis
 - name: venn_list
   owner: peterjc
@@ -546,6 +557,7 @@ tools:
   owner: iuc
   revisions:
   - 374e9062d874
+  - 48b42ee61bc5
   - 51c6ccaace7e
   - 53460afd5115
   - '566197475670'
@@ -1405,11 +1417,20 @@ tools:
   revisions:
   - 055a934a380f
   - 28c8f085d1b4
+  - f3c64a15ee7e
   tool_panel_section_label: Get Data
 - name: obis_data
   owner: ecology
   revisions:
   - 1fcd81d65467
+  - 5bae75c49f2e
+  tool_panel_section_label: Get Data
+- name: copernicusmarine
+  owner: ecology
+  revisions:
+  - 4de886e6300d
+  - 4edd010161e9
+  - c07f11d8e49a
   tool_panel_section_label: Get Data
 - name: dwt_var_perfeature
   owner: devteam
@@ -1503,6 +1524,7 @@ tools:
   - 1015a0070bac
   - 393957ecc97d
   - 4e7c1fb5e894
+  - dc187fe78055
   tool_panel_section_label: Biodiversity data exploration
 - name: ab1_fastq_converter
   owner: ecology
@@ -1609,16 +1631,23 @@ tools:
   - bd8b3e7541d5
   - c1d2c0922362
   tool_panel_section_label: Data and Metadata Management
+- name: data_paper_from_eml
+  owner: ecology
+  revisions:
+  - cfe884e53600
+  tool_panel_section_label: Data and Metadata Management
 - name: ecoregion_geonearestneighbor
   owner: ecology
   revisions:
   - 36637718c51d
   - 5cde56683579
+  - ace69a8ec1c3
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_brt_analysis
   owner: ecology
   revisions:
   - 2129484beb61
+  - 3cc4b8bbce00
   - a56c413f3a98
   - f0d6938d0451
   - f8962f1c832a
@@ -1628,6 +1657,7 @@ tools:
   owner: ecology
   revisions:
   - 18c4cd785a74
+  - 2152f424e7a2
   - 788b118910a7
   - 9dc992f80c25
   - e3cd588fd14a
@@ -1637,6 +1667,7 @@ tools:
   revisions:
   - 374555fc30bd
   - 3d750279158b
+  - 45784ebada45
   - b38b954b92b9
   - c6b1bf7b0ac6
   tool_panel_section_label: Ecoregionalization
@@ -1646,6 +1677,7 @@ tools:
   - 001d7d101915
   - 0f6542d0986e
   - 1b9522671e90
+  - cf7aefee9977
   - e94a25eed489
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_clara_cluster
@@ -1653,6 +1685,7 @@ tools:
   revisions:
   - 24a81631a8b5
   - 32849c52aa54
+  - 74e966baa5fd
   - 844b5bf84164
   - edb8d19735a6
   tool_panel_section_label: Ecoregionalization
@@ -1705,6 +1738,12 @@ tools:
   revisions:
   - cc18c3bf2666
   tool_panel_section_label: Get Data
+- name: aquainfra_ogc_api_processes
+  owner: ecology
+  revisions:
+  - 0077885b6f1d
+  - 1ff618d89af4
+  tool_panel_section_label: GIS Data Handling
 - name: iabiodiv_smartbiodiv_med_environ
   owner: ecology
   revisions:

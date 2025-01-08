@@ -1,9 +1,74 @@
+
 ---
 install_repository_dependencies: false
 install_resolver_dependencies: false
 install_tool_dependencies: false
 
 tools:
+
+  - name: qiime2__vizard__lineplot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vizard__heatmap
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vizard__scatterplot_2d
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__vizard__boxplot
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__collate_stats
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__wilcoxon_srt
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__plot_rainclouds
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__wilcoxon_srt_facet
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__facet_across
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__facet_within
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__prep_alpha_distribution
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__mann_whitney_u_facet
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__stats__alpha_group_significance
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__rescript__get_bv_brc_genome_features
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__rescript__get_bv_brc_genomes
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2__rescript__get_bv_brc_metadata
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
 
   - name: qiime2__alignment__mafft
     owner: q2d2
@@ -650,5 +715,9 @@ tools:
     tool_panel_section_label: QIIME 2
 
   - name: qiime2_core__tools__import
+    owner: q2d2
+    tool_panel_section_label: QIIME 2
+
+  - name: qiime2_core__tools__import_fastq
     owner: q2d2
     tool_panel_section_label: QIIME 2
