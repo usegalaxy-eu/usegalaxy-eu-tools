@@ -353,6 +353,7 @@ tools:
 - name: groot
   owner: iuc
   revisions:
+  - 4d5cf5a423d5
   - c15e34e39e09
   tool_panel_section_label: Annotation
 - name: data_manager_groot_database_downloader
@@ -932,10 +933,21 @@ tools:
 - name: fastk_fastk
   owner: iuc
   revisions:
+  - 34245579d255
   - 8049cb5537b7
   - 87f4b4dced3e
   - 9f8c786bd424
   - ff827f983bbb
+  tool_panel_section_label: Assembly
+- name: fastk_logex
+  owner: iuc
+  revisions:
+  - 73ddd200456a
+  tool_panel_section_label: Assembly
+- name: fastk_histex
+  owner: iuc
+  revisions:
+  - b897c5daf0ce
   tool_panel_section_label: Assembly
 - name: genomescope
   owner: iuc
@@ -5769,11 +5781,17 @@ tools:
   - 45210df786b9
   - cef64c36c89e
   tool_panel_section_label: Metagenomic Analysis
+- name: phyloseq_add_rank_names
+  owner: iuc
+  revisions:
+  - e51700388188
+  tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_from_biom
   owner: iuc
   revisions:
   - 1feea247d08a
   - b6a38f6222af
+  - b8a4de1a4e19
   - c0101c72b8af
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_from_dada2
@@ -5783,6 +5801,7 @@ tools:
   - 46a99bd1f10e
   - 87064cb77a52
   - b85ba18a8f36
+  - bda00cb136ee
   - d1c93a32cb25
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_plot_bar
@@ -5790,6 +5809,7 @@ tools:
   revisions:
   - 4ab2dbd11b21
   - ad81e112f4d9
+  - d0fa6a43c838
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_plot_ordination
   owner: iuc
@@ -5799,6 +5819,7 @@ tools:
   - 92e77800ef2c
   - c35e0075c7a2
   - dfe800a3faaf
+  - f9543efabd85
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_plot_richness
   owner: iuc
@@ -5807,6 +5828,7 @@ tools:
   - 1ff178d1757e
   - '817853857084'
   - 92b82deaaed1
+  - a20bc31f2821
   - fb7c4bbe8994
   tool_panel_section_label: Metagenomic Analysis
 - name: plasflow
@@ -10158,6 +10180,7 @@ tools:
   - 379014a57491
   - 707023fa62fe
   - 7a6655aa6eb2
+  - 83609ef746e9
   - 8623710d083c
   - a9ab1b0a00dd
   - c0b037b12765
@@ -10172,6 +10195,7 @@ tools:
   revisions:
   - 00712416fdaa
   - 080eab96d846
+  - 13cf83ced60c
   - 32e547223c9e
   - '499059586799'
   - 55e35e9203cf
@@ -10194,6 +10218,7 @@ tools:
   - 0bf7fddf90c7
   - 14c576ea6148
   - 286a24ac079c
+  - 33c0081e16c6
   - 383dcb0500f9
   - 39e945f0b2c1
   - 688357ad5e61
@@ -10220,6 +10245,7 @@ tools:
   - b03c60f8528f
   - b85871dd69f9
   - c4209ea387d4
+  - d1e49c3c0aa2
   - d4af736e7b83
   - ed4996a16f7f
   tool_panel_section_label: Single-cell
@@ -10246,6 +10272,7 @@ tools:
   - 7784821452ac
   - 81a28c2705b0
   - 9210c3553cdd
+  - a7b951572609
   - c8e4d0b9ae8c
   - db575b4c8b22
   - e98619de2776
@@ -10353,6 +10380,7 @@ tools:
   - 2d02d9702d3a
   - 3c86f71498bc
   - 5511647110ff
+  - 5b3c1679d29b
   - 64388be6d510
   - 6a76b60e05f5
   - 6ea5a05a260a
