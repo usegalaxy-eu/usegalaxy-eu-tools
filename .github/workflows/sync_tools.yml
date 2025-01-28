@@ -40,23 +40,22 @@ jobs:
           fi
 
       - name: Show differences
-        run: git diff --stat
+        run: "git diff --stat"
 
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update tools.yaml with the latest tools list from useGalaxy.be"
+          commit-message: "Update tools.yaml with the latest tools list (installed through admin panel) from useGalaxy.be"
           title: "Automatic update of tools.yaml"
           body: |
             This pull request updates `tools.yaml` with the latest tools from useGalaxy.be.
             Please review the changes before merging.
           labels: |
             auto-update
-          branch: tools-update
+          branch: tools-sync-update
           base: master
-          branch-suffix: timestamp
 
       - name: Checkout master
         run: git checkout master
