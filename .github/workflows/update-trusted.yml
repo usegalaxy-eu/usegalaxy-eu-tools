@@ -32,6 +32,7 @@ jobs:
             echo "is_fork=true" >> $GITHUB_ENV
           else
             echo "is_fork=false" >> $GITHUB_ENV
+          fi
 
       - name: Install dependencies
         run: |
