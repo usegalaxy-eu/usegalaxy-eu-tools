@@ -1,6 +1,9 @@
 name: Sync Galaxy Tools
 
 on:
+  pull_request:
+      branches:
+        - master
   workflow_dispatch:
   schedule:
     # Runs weekly, every Saturday at 03:00 UTC
