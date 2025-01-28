@@ -54,10 +54,10 @@ jobs:
             Please review the changes before merging.
           labels: |
             auto-update
-          branch: tools-sync
+          branch: tools-update
           base: master
+          branch-suffix: timestamp
 
-      - name: Output PR Number
-        if: steps.cpr.outputs.pull-request-number
-        run: |
-          echo "Pull Request Number: ${{ steps.cpr.outputs.pull-request-number }}"
+      - name: Checkout master
+        run: git checkout master
+
