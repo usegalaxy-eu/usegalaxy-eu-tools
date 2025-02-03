@@ -977,10 +977,6 @@ tools:
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
-  - name: bbtools_bbduk
-    owner: iuc
-    tool_panel_section_label: FASTA/FASTQ
-
   - name: bbtools_bbmerge
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
@@ -1269,6 +1265,9 @@ tools:
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: bbtools_bbnorm
+    owner: iuc
+    tool_panel_section_id: FASTA/FASTQ
 
 # FILTER AND SORT
 
@@ -3624,6 +3623,9 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: ete_treeviewer
+    owner: iuc
+    tool_panel_section_id: Phylogenetics
 
 # PICARD
 
