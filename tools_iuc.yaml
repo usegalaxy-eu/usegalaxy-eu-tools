@@ -435,6 +435,22 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: staramr
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ppanggolin_all
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ppanggolin_msa
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hicexplorer_hicbuildmatrixmicroc
+    owner: iuc
+    tool_panel_section_label: Annotation
+
 # ASSEMBLY
   - name: abyss
     owner: iuc
@@ -928,6 +944,8 @@ tools:
   - name: revoluzer_distmat
     owner: iuc
     tool_panel_section_label: Evolution
+  
+
 
 # EXPRESSION TOOLS
 
@@ -3272,7 +3290,7 @@ tools:
   - name: sina
     owner: iuc
     tool_panel_section_label: Multiple Alignments
-
+  
 
 # NCBI BLAST
 
@@ -3655,7 +3673,6 @@ tools:
   - name: syndiva
     owner: iuc
     tool_panel_section_label: Proteomics
-
 
 # QUALITY CONTROL
 
@@ -4442,14 +4459,15 @@ tools:
   - name: infercnv
     owner: iuc
     tool_panel_section_label: Single-cell
+   
+  - name: spacexr_cside
+    owner: iuc
+    tool_panel_section_label: Single-cell
 
   - name: spacexr_rctd
     owner: iuc
     tool_panel_section_label: Single-cell
-  
-  - name: spacexr_cside
-    owner: iuc
-    tool_panel_section_label: Single-cell
+
 # STATISTICS
 
   - name: best_regression_subsets
@@ -5401,6 +5419,9 @@ tools:
 
   - name: data_manager_gtdbtk_database_installer
     owner: iuc
+  
+  - name: data_manager_build_staramr
+    owner: iuc
 
 
 # DEEPTOOLS
@@ -5545,3 +5566,20 @@ tools:
   - name: tracegroomer
     owner: iuc
     tool_panel_section_label: Metabolomics
+  
+  - name: gem_extract_exchange
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: gem_flux_distribution
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+  
+  - name: gem_escher_visualization
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+  
+  - name: gem_check_memote
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
