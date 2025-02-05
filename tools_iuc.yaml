@@ -422,6 +422,22 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: staramr
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ppanggolin_all
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ppanggolin_msa
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hicexplorer_hicbuildmatrixmicroc
+    owner: iuc
+    tool_panel_section_label: Annotation
+
 # ASSEMBLY
   - name: abyss
     owner: iuc
@@ -893,6 +909,8 @@ tools:
   - name: revoluzer_distmat
     owner: iuc
     tool_panel_section_label: Evolution
+  
+
 
 # EXPRESSION TOOLS
 
@@ -2614,6 +2632,16 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: fairy_sketch
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+   
+  - name: fairy_cov
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+
+
 # MOTHUR
 
   - name: mothur_align_check
@@ -3213,6 +3241,15 @@ tools:
   - name: sina
     owner: iuc
     tool_panel_section_label: Multiple Alignments
+  
+  - name: emboss_needle
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+   - name: emboss_needleall
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+  
 
 
 # NCBI BLAST
@@ -3556,6 +3593,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: ete_treeviewer
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
 
 # PICARD
 
@@ -3585,7 +3626,6 @@ tools:
   - name: syndiva
     owner: iuc
     tool_panel_section_label: Proteomics
-
 
 # QUALITY CONTROL
 
@@ -4368,7 +4408,17 @@ tools:
   - name: infercnv
     owner: iuc
     tool_panel_section_label: Single-cell
+   
+  - name: spacexr_cside
+    owner: iuc
+    tool_panel_section_label: Single-cell
 
+  - name: spacexr_rctd
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+
+  
 # STATISTICS
 
   - name: best_regression_subsets
@@ -5155,6 +5205,39 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+   - name: cnvkit_export_seg
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+
+  - name: cnvkit_export_vcf
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+
+  - name: cnvkit_export_nexus_ogt
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+  
+  - name: cnvkit_export_cdt
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+
+  - name: cnvkit_export_bed
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+
+  - name: cnvkit_export_nexus_basic
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+
+  - name: cnvkit_export_jtv
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+
+  - name: cnvkit_theta
+    owner: iuc
+    tool_panel_section_label: Variant Calling 
+
+
 
 # VIROLOGY
 
@@ -5288,7 +5371,14 @@ tools:
 
   - name: data_manager_gtdbtk_database_installer
     owner: iuc
+  
+  - name: data_manager_build_staramr
+    owner: iuc
 
+
+
+
+  
 
 # DEEPTOOLS
 
@@ -5432,3 +5522,20 @@ tools:
   - name: tracegroomer
     owner: iuc
     tool_panel_section_label: Metabolomics
+  
+  - name: gem_extract_exchange
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
+  - name: gem_flux_distribution
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+  
+  - name: gem_escher_visualization
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+  
+  - name: gem_check_memote
+    owner: iuc
+    tool_panel_section_label: Metabolomics
+
