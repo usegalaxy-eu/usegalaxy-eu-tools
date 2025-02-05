@@ -462,6 +462,11 @@ tools:
   revisions:
   - 828c02027180
   tool_panel_section_label: Climate Analysis
+- name: harmonize_insitu_to_netcdf
+  owner: ecology
+  revisions:
+  - 15260949227d
+  tool_panel_section_label: Climate Analysis
 - name: venn_list
   owner: peterjc
   revisions:
@@ -921,6 +926,7 @@ tools:
   - 5e33b465d8d5
   - 75c93c70d094
   - 9a913cdee30e
+  - a7e081ceb76a
   - abfd8a6544d7
   - b2f1f75d49c4
   - bf675f34b056
@@ -1535,6 +1541,7 @@ tools:
   owner: ecology
   revisions:
   - 3b0fa963ae3e
+  - 404b7ff29b30
   - 5faa25ba905e
   - 67b2cd9c2954
   - d4f168043757
@@ -1547,6 +1554,7 @@ tools:
   - 672e25c2c8c8
   - 6de4b4f70b7b
   - 8631291a1527
+  - 8abb7c57a4b9
   - c223db6625c1
   tool_panel_section_label: Data and Metadata Management
 - name: raster_template
@@ -1556,6 +1564,7 @@ tools:
   - 36150f04b524
   - 9eaf84bf856f
   - b34c5a70b706
+  - eeadb27fe7b3
   tool_panel_section_label: Data and Metadata Management
 - name: vector_template
   owner: ecology
@@ -1563,6 +1572,7 @@ tools:
   - 330f15f2ad3f
   - 40eb35199537
   - 559744b4c50c
+  - 67fbd4f439ed
   - c65dd54f9807
   tool_panel_section_label: Data and Metadata Management
 - name: entities_template
@@ -1572,12 +1582,14 @@ tools:
   - 299db57196ac
   - 5bfceb4ef59b
   - 8de58d879d6e
+  - e24cfd8328c3
   tool_panel_section_label: Data and Metadata Management
 - name: geo_cov_template
   owner: ecology
   revisions:
   - 0fe3b8bd9d8b
   - 4f5816b57c13
+  - 5c2ade73e411
   - a5f887cfcf94
   - d53b708cb348
   - ea302cc18332
@@ -1587,6 +1599,7 @@ tools:
   revisions:
   - 0cfc9b6da2ac
   - 20224597fa2c
+  - 293d3c8eba5c
   - 2af7401f13e0
   - 4f2d8a7c97fa
   - 9507334a3303
@@ -1595,11 +1608,13 @@ tools:
 - name: annotations_template
   owner: ecology
   revisions:
+  - 79f2ca0bfa9a
   - dbba9bedd4bd
   tool_panel_section_label: Data and Metadata Management
 - name: eml_validate
   owner: ecology
   revisions:
+  - a652b7bc6322
   - ad96b20423cf
   tool_panel_section_label: Data and Metadata Management
 - name: makeeml
@@ -1613,6 +1628,7 @@ tools:
   - 8a697f446051
   - 9cbac7a9b1a3
   - 9d56f6480194
+  - d6aa2a899877
   tool_panel_section_label: Data and Metadata Management
 - name: eml2eal
   owner: ecology
@@ -1621,6 +1637,7 @@ tools:
   - 248b03f124dd
   - 3d14d6a4ef7c
   - 409d9329d2be
+  - 57b8600443f5
   - 5c0290c4225a
   - 6fc2341a92cb
   - bd8b3e7541d5
