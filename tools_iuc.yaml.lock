@@ -2020,6 +2020,7 @@ tools:
   - 9845c649f41b
   - b1c926deaa2d
   - c053d4cad713
+  - c0b2c2e39c9c
   - c5e2e5902201
   - de6cebe3c043
   - fe74900d6dc7
@@ -2094,6 +2095,7 @@ tools:
 - name: fastp
   owner: iuc
   revisions:
+  - 10678d49d39e
   - 1d8fe9bc4cb0
   - 3e2551a37201
   - 415fd81b85d3
@@ -2443,6 +2445,7 @@ tools:
 - name: seqkit_fx2tab
   owner: iuc
   revisions:
+  - 13e101f5bb5d
   - 1dc73570fd5a
   - 2e60cd811bd2
   - 4cf00d20acab
@@ -2453,6 +2456,7 @@ tools:
 - name: seqkit_locate
   owner: iuc
   revisions:
+  - 54e818ea7c4d
   - 5fb2dc40c4de
   - 642d73815dd1
   - 6510652376b1
@@ -2464,12 +2468,14 @@ tools:
   revisions:
   - 1936d097808a
   - 6366952ddfd3
+  - f917a77055f5
   tool_panel_section_label: FASTA/FASTQ
 - name: seqkit_stats
   owner: iuc
   revisions:
   - 191738d53912
   - 54a954ee64d4
+  - 70b975dca7b4
   - 795cd16de38f
   - 812705bcf39c
   - d85bac8b166a
@@ -2479,6 +2485,7 @@ tools:
   owner: iuc
   revisions:
   - 29ef2c5ec205
+  - 3dc878f71e4d
   - 61eb4cfc7313
   tool_panel_section_label: FASTA/FASTQ
 - name: seqtk
@@ -3141,6 +3148,7 @@ tools:
   revisions:
   - 6f134426c2b0
   - cdb9e89e2970
+  - d0b9dd19e919
   tool_panel_section_label: Graph/Display Data
 - name: intervene
   owner: iuc
@@ -4198,6 +4206,7 @@ tools:
   - 3f4d6399997b
   - 53c0b7a1a0c3
   - 5cc34c3f440d
+  - 66367287b4e6
   - 6b1e195506a3
   - 6f50f36e4481
   - 77b2770508f6
@@ -4211,6 +4220,7 @@ tools:
 - name: pbmm2
   owner: iuc
   revisions:
+  - 4436bcb33d39
   - 55b7b257e12f
   - 7100ed4a31a2
   - e1d39a293b5a
@@ -4287,6 +4297,7 @@ tools:
 - name: cami_amber
   owner: iuc
   revisions:
+  - 319b8aac032d
   - 9ed513717fc4
   - afc795d10918
   - e30bc6da7a36
@@ -4298,11 +4309,13 @@ tools:
   - 04f8949026bf
   - 2e6ddf48a213
   - 433fb72344cb
+  - 741babee7bb3
   - b07cfe3b877e
   tool_panel_section_label: Metagenomic Analysis
 - name: cami_amber_convert
   owner: iuc
   revisions:
+  - 40d5ea45b73f
   - 848594e0be6a
   - 8754ed6f0096
   - 8f0e53330d8e
@@ -4323,6 +4336,7 @@ tools:
   owner: iuc
   revisions:
   - 1e10251b9615
+  - 2e0af1e2d487
   - 8d0b2def5e65
   - d368e312aebd
   tool_panel_section_label: Metagenomic Analysis
@@ -5749,6 +5763,7 @@ tools:
   revisions:
   - 1feea247d08a
   - 599a3fb9a953
+  - 847f433f202b
   - b6a38f6222af
   - b8a4de1a4e19
   - c0101c72b8af
@@ -5756,6 +5771,7 @@ tools:
 - name: phyloseq_from_dada2
   owner: iuc
   revisions:
+  - 0b9d4ec77c4f
   - 40ebae5bbe51
   - 46a99bd1f10e
   - 87064cb77a52
@@ -5770,6 +5786,7 @@ tools:
   - 11d43fa12aab
   - 5007bc8a3d90
   - 92e77800ef2c
+  - bbd9d1022144
   - c35e0075c7a2
   - dfe800a3faaf
   - eab0b21652c4
@@ -5784,6 +5801,7 @@ tools:
   - '817853857084'
   - 92b82deaaed1
   - a20bc31f2821
+  - d6cbeb48294d
   - fb7c4bbe8994
   tool_panel_section_label: Metagenomic Analysis
 - name: plasflow
@@ -7541,6 +7559,7 @@ tools:
   revisions:
   - 2ab1e0e1c32e
   - 502018997bae
+  - 5c7e6ef78006
   - abe34706eddf
   - b3acbb3a6af0
   - e8fdceffea4c
@@ -7549,6 +7568,7 @@ tools:
 - name: mummer_dnadiff
   owner: iuc
   revisions:
+  - 29662f643859
   - 315c678562d2
   - 4122b2fb7964
   - 5561a1193611
@@ -7564,12 +7584,14 @@ tools:
   - 48823c9635a4
   - 48badcd29c5d
   - 57f042937ba7
+  - b7bc272143fb
   - bcd65de9725b
   - fc143c06a842
   tool_panel_section_label: Multiple Alignments
 - name: mummer_mummerplot
   owner: iuc
   revisions:
+  - 029a793f39b6
   - 0c37cb9102d0
   - 4fc0cb2ac8ae
   - c0cedc12fcc5
@@ -7580,6 +7602,7 @@ tools:
 - name: mummer_nucmer
   owner: iuc
   revisions:
+  - 27fff8d3793e
   - 5b0b49b5421c
   - 636b049e6141
   - 7cd7a55a678d
@@ -7590,6 +7613,7 @@ tools:
 - name: mummer_show_coords
   owner: iuc
   revisions:
+  - 4c89814871e8
   - 959c1f8dae95
   - b4124df98b26
   - b8e2c2f95d26
@@ -7628,6 +7652,7 @@ tools:
   owner: bgruening
   revisions:
   - 1e3323a44643
+  - 60f307965815
   - e8ac2b53f262
   tool_panel_section_label: NCBI Blast
 - name: magicblast
@@ -7776,6 +7801,7 @@ tools:
   owner: iuc
   revisions:
   - 0f1c34698076
+  - 2a9afed42353
   - 4c172a4a4c9e
   - 645159bcee2d
   - 7b379e98b9a9
@@ -8868,6 +8894,7 @@ tools:
   owner: iuc
   revisions:
   - 3f9ff31c88bb
+  - 51a3b375b7b8
   - 9d93999d9028
   tool_panel_section_label: RNA Analysis
 - name: cherri_eval
