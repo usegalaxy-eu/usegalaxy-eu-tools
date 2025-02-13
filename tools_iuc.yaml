@@ -4480,13 +4480,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Single-cell
 
-  #- name: cluster_analyze_embed_muon
-  #  owner: iuc
-  #  tool_panel_section_label: Single-cell
+  - name: cluster_analyze_embed_muon
+    owner: iuc
+    tool_panel_section_label: Single-cell
 
   - name: plot_muon
     owner: iuc
     tool_panel_section_label: Single-cell
+
+- name: anndata2ri
+    owner: iuc
+    tool_panel_section_label: Single-cell
+  
     
 # STATISTICS
 
