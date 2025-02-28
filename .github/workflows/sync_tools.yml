@@ -1,0 +1,60 @@
+name: Sync Galaxy Tools
+
+on:
+  pull_request:
+      branches:
+        - master
+  workflow_dispatch:
+  schedule:
+    # Runs weekly, every Saturday at 03:00 UTC
+    - cron: "0 3 * * SAT"
+
+jobs:
+  sync-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.8'
+
+      - name: Install Ephemeris
+        run: |
+          python -m pip install --upgrade pip
+          pip install ephemeris
+
+      - name: Fetch Galaxy tools list
+        run: |
+          get-tool-list -g "https://usegalaxy.be" -o current_galaxy_tools.yaml
+          echo "Current Galaxy tool list fetched successfully."
+
+      - name: Show differences
+        run: "git diff --stat"
+
+      - name: Merge and compare tool lists
+        run: |
+          python compare_tools.py --current current_galaxy_tools.yaml --tools_iuc tools_iuc.yaml --belgium_custom belgium-custom.yaml --gtn_tutorials GTN_tutorials_tools.yaml
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update current_galaxy_tools.yaml with the latest tools list (installed through admin panel) from useGalaxy.be"
+          title: "Automatic update of current_galaxy_tools.yaml"
+          body: |
+            This pull request updates `current_galaxy_tools.yaml` with the latest tools from useGalaxy.be.
+            Please review the changes before merging.
+          labels: |
+            auto-update
+          branch: tools-sync-update
+          base: master
+
+      - name: Checkout master
+        run: git checkout master
