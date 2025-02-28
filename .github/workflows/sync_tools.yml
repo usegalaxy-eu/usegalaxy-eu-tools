@@ -34,15 +34,6 @@ jobs:
           get-tool-list -g "https://usegalaxy.be" -o current_galaxy_tools.yaml
           echo "Current Galaxy tool list fetched successfully."
 
-      - name: Compare and update YAML file
-        run: |
-          if ! diff -q current_galaxy_tools.yaml tools.yaml > /dev/null; then
-            cp current_galaxy_tools.yaml tools.yaml
-            echo "tools.yaml updated."
-          else
-            echo "No changes in tools.yaml."
-          fi
-
       - name: Show differences
         run: "git diff --stat"
 
@@ -55,10 +46,10 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update tools.yaml with the latest tools list (installed through admin panel) from useGalaxy.be"
-          title: "Automatic update of tools.yaml"
+          commit-message: "Update current_galaxy_tools.yaml with the latest tools list (installed through admin panel) from useGalaxy.be"
+          title: "Automatic update of current_galaxy_tools.yaml"
           body: |
-            This pull request updates `tools.yaml` with the latest tools from useGalaxy.be.
+            This pull request updates `current_galaxy_tools.yaml` with the latest tools from useGalaxy.be.
             Please review the changes before merging.
           labels: |
             auto-update
