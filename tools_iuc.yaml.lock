@@ -238,6 +238,7 @@ tools:
   - 1691af4a0d17
   - 258198490c3c
   - 30fb23d4c31c
+  - 5c09ad60911c
   - 73428a792541
   - 8e1ace8f77c6
   - 989f7c061f35
@@ -276,6 +277,7 @@ tools:
   - 52af33194019
   - 54961e026fe4
   - b3cf4684e9c7
+  - cb84060ad1aa
   - d3af38b9c7e1
   - d77fdcca400e
   - fed64e676186
@@ -1019,6 +1021,7 @@ tools:
   - 1fcb1a2950cb
   - 3e5642ac5620
   - b897c5daf0ce
+  - e1954bd8bde9
   tool_panel_section_label: Assembly
 - name: genomescope
   owner: iuc
@@ -1139,6 +1142,41 @@ tools:
   - d63739222f68
   - eadfd71dde37
   tool_panel_section_label: Assembly
+- name: meryl_count_kmers
+  owner: iuc
+  revisions:
+  - bb6774c6aeaf
+  tool_panel_section_label: Assembly
+- name: meryl_filter_kmers
+  owner: iuc
+  revisions:
+  - fa43288f637c
+  tool_panel_section_label: Assembly
+- name: meryl_histogram_kmers
+  owner: iuc
+  revisions:
+  - 9a0227fa7521
+  tool_panel_section_label: Assembly
+- name: meryl_groups_kmers
+  owner: iuc
+  revisions:
+  - c4758f3bf36e
+  tool_panel_section_label: Assembly
+- name: meryl_trio_mode
+  owner: iuc
+  revisions:
+  - 47e9001da01b
+  tool_panel_section_label: Assembly
+- name: meryl_print
+  owner: iuc
+  revisions:
+  - 4ffdd07cc5b6
+  tool_panel_section_label: Assembly
+- name: meryl_arithmetic_kmers
+  owner: iuc
+  revisions:
+  - 8d594609538e
+  tool_panel_section_label: Assembly
 - name: metaspades
   owner: nml
   revisions:
@@ -1148,6 +1186,7 @@ tools:
   - 3ca2d2a9068c
   - 606b09cc9860
   - 6563e22a9fd0
+  - 9638ba70882c
   - 99ecfdafc64f
   - a9b8c9e204ee
   - ce02f513e598
@@ -1333,6 +1372,7 @@ tools:
   - 28189050e437
   - 378e55aeeb25
   - 53c2bc8c2ae3
+  - 59be68ba26c2
   - 5fc94b3a4704
   - 675ee1aa5952
   - 9e58ff014088
@@ -1382,6 +1422,7 @@ tools:
   revisions:
   - 24fffa4fee40
   - 33368fec3b70
+  - 65d1598a9256
   - 74f20c988994
   - 7897763d14ec
   - 78ced22d09a2
@@ -1408,6 +1449,7 @@ tools:
   - 604782a8a53a
   - 7490b213baa9
   - 904bf932cf78
+  - a5d68876c44e
   - c33a476f4001
   - d89ced9439f3
   tool_panel_section_label: Assembly
@@ -1416,6 +1458,7 @@ tools:
   revisions:
   - 0e02cc942d97
   - 34305b013402
+  - 4ae660dd1fb6
   - 655fa188c3cc
   - 7004279ff8b7
   - 808b3a0a6716
@@ -1436,6 +1479,7 @@ tools:
   - 7e27faaad80e
   - 8d4b90bf9caf
   - b8002c3f7141
+  - c8097e741b13
   - e5a3b75a271f
   tool_panel_section_label: Assembly
 - name: spades_metaviralspades
@@ -1449,6 +1493,7 @@ tools:
   - 9346dcffaafc
   - 9de69775f512
   - e060c3987513
+  - ea83ac535a1f
   - f1532cb33c75
   tool_panel_section_label: Assembly
 - name: spades_plasmidspades
@@ -1456,6 +1501,7 @@ tools:
   revisions:
   - 1708851f8804
   - 340bc17f49cf
+  - 5be72b7648fa
   - 6aad515a5270
   - 75405f5e2cc5
   - 7bb235ff0746
@@ -1475,6 +1521,7 @@ tools:
   - b65a43f70b99
   - d159735a6a9f
   - d5fb354f745d
+  - dc5d1a54054b
   - de1260f8a300
   tool_panel_section_label: Assembly
 - name: trycycler_cluster
@@ -2009,11 +2056,13 @@ tools:
 - name: revoluzer_crex
   owner: iuc
   revisions:
+  - b64c033f5b02
   - e0b7c98f29bb
   tool_panel_section_label: Evolution
 - name: revoluzer_distmat
   owner: iuc
   revisions:
+  - 25ae2b16194e
   - af7528402a97
   tool_panel_section_label: Evolution
 - name: calculate_numeric_param
@@ -2086,6 +2135,7 @@ tools:
   - 6d084528a6f1
   - 82ced0e47b9d
   - c05232655d00
+  - c9e516d65a3d
   - cab19c0452c4
   - fc029a9b4d07
   tool_panel_section_label: FASTA/FASTQ
@@ -2094,6 +2144,7 @@ tools:
   revisions:
   - 0ddf147d1897
   - 20aef74d20a1
+  - 51947de90615
   - 654c9da47f74
   - 7ad0f4bfa923
   - cbc75076778f
@@ -2731,6 +2782,7 @@ tools:
   owner: iuc
   revisions:
   - 5f047a0d4c2e
+  - 8b18f42bda13
   - e607b61a68ad
   tool_panel_section_label: FASTA/FASTQ
 - name: gffcompare
@@ -4207,6 +4259,7 @@ tools:
   - 8015d7ab8357
   - 81cbb6a4c1ca
   - 858a65b52cf9
+  - 95e9d34c4cad
   - 9ed6579f52f3
   - b394de3cf6e8
   - e0ca2ec4f5d9
@@ -7852,6 +7905,7 @@ tools:
   - 204a131e47db
   - 425dab0e057b
   - 55e500606bbe
+  - 6ffff37d3daf
   - 7beb76ffbc0f
   - a9c9d768b751
   - bf0cb5dd02f2
@@ -10479,6 +10533,11 @@ tools:
   - cfe1e6c28d95
   - f0de368eabca
   tool_panel_section_label: Single-cell
+- name: drug2cell
+  owner: iuc
+  revisions:
+  - b0ea90bddf66
+  tool_panel_section_label: Single-cell
 - name: modify_loom
   owner: iuc
   revisions:
@@ -11256,6 +11315,7 @@ tools:
   - 66b138a2e74c
   - 7e041c120b96
   - 8eace8923202
+  - a033aa9a822e
   - adec76ebc868
   - b4279a293312
   - b955346ef41e
@@ -12921,6 +12981,7 @@ tools:
   owner: iuc
   revisions:
   - 0cadd0a04412
+  - 5459ec34767a
 - name: data_manager_genomic_super_signature_ravmodels
   owner: iuc
   revisions:
