@@ -698,6 +698,11 @@ tools:
   - 31812e7a1315
   - ded48b36f3b7
   tool_panel_section_label: Annotation
+- name: mmseqs2_taxonomy_assignment
+  owner: iuc
+  revisions:
+  - 9e47b28bff57
+  tool_panel_section_label: Annotation
 - name: omark
   owner: iuc
   revisions:
@@ -1073,6 +1078,7 @@ tools:
   - 41cea2aa2dce
   - 5161f204ba63
   - 5bec28269d95
+  - 5d365d5cbe9d
   - 5f625c63b8bc
   - 60024a528cbd
   - 6505bd37670d
@@ -2041,6 +2047,7 @@ tools:
   revisions:
   - 1e89a460d1bd
   - 5c2ac7f640ab
+  - ab50e1a75a77
   tool_panel_section_label: Evolution
 - name: mutate_snp_codon
   owner: devteam
@@ -2600,6 +2607,7 @@ tools:
 - name: ncbi_fcs_gx
   owner: iuc
   revisions:
+  - 2559b7ce2114
   - 32d058f3462a
   - 3cdb96f2855d
   - 49f8eae39606
@@ -4353,6 +4361,7 @@ tools:
   owner: devteam
   revisions:
   - 01ac0a5fedc3
+  - 1dfc975b48d5
   - 2477830927ec
   - 3fe632431b68
   - 4a196b9c72c2
@@ -4368,6 +4377,7 @@ tools:
   - b4a22d90cce9
   - bfaa0d22c2e4
   - d3e88507ee64
+  - d459a463cb73
   tool_panel_section_label: Mapping
 - name: hisat2
   owner: iuc
@@ -6153,10 +6163,12 @@ tools:
   - 6b517dc161e4
   - 7b382efabb98
   - 99ff9221182c
+  - b5a7583b8db0
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_bin
   owner: iuc
   revisions:
+  - 2d1940ae33c2
   - 474701f91bcd
   - 4d561bdc2c31
   - dbf5571a8140
@@ -6166,6 +6178,7 @@ tools:
   revisions:
   - 298542e0e136
   - dcc81bfe5f6a
+  - e0aae2cd891e
   - e6bc3455940e
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_generate_cannot_links
@@ -6173,11 +6186,13 @@ tools:
   revisions:
   - 078414a1226b
   - 5ae13a156271
+  - 68d2cd0be567
   - a6f004bc73bf
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_generate_sequence_features
   owner: iuc
   revisions:
+  - 0608cf7dc528
   - 07bf5268724f
   - 0ae1a2636de5
   - ff4e487f4f7e
@@ -6186,6 +6201,7 @@ tools:
   owner: iuc
   revisions:
   - 08cc1cd58f38
+  - 2344bc30a326
   - 43df7a4c33a2
   - 8b77643cf479
   tool_panel_section_label: Metagenomic Analysis
@@ -7875,6 +7891,11 @@ tools:
   revisions:
   - a3a6b0b31f2d
   tool_panel_section_label: Multiple Alignments
+- name: mmseqs2_easy_linclust_clustering
+  owner: iuc
+  revisions:
+  - e6c5f120f010
+  tool_panel_section_label: Multiple Alignments
 - name: msaboot
   owner: iuc
   revisions:
@@ -8013,6 +8034,7 @@ tools:
   - d375502056f1
   - d999e774072a
   - e25d3acf6e68
+  - fc35ffc8c548
   tool_panel_section_label: NCBI Blast
 - name: clair3
   owner: iuc
@@ -10536,6 +10558,7 @@ tools:
   - cfaf5a405371
   - e0395cca2c57
   - e1c3c2f2a834
+  - f843b9afd94e
   - fcb7370e827f
   tool_panel_section_label: Single-cell
 - name: anndata_import
@@ -10549,6 +10572,7 @@ tools:
   - 55e35e9203cf
   - 69e2275406fd
   - 6f143dfe902a
+  - 923dcc644832
   - 93dd15e13e6a
   - a61350ab6563
   - ae1e5d9d8972
@@ -10573,6 +10597,7 @@ tools:
   - 6a1a3dab235a
   - 6f0d0c784f09
   - 70f5f1fee692
+  - afe044e6bc93
   - b2a6ce371781
   - b9fac48532eb
   - ee98d611afc6
@@ -10592,6 +10617,7 @@ tools:
   - a56baceb1900
   - b03c60f8528f
   - b85871dd69f9
+  - be1fdce914c6
   - c4209ea387d4
   - d1e49c3c0aa2
   - d4af736e7b83
@@ -10626,6 +10652,7 @@ tools:
   - 81a28c2705b0
   - 9210c3553cdd
   - a7b951572609
+  - c822c5c1feef
   - c8e4d0b9ae8c
   - db575b4c8b22
   - e98619de2776
@@ -10717,6 +10744,7 @@ tools:
   - 766be978777a
   - 77b91b9bdf52
   - 8983e7a04ba7
+  - a84a73471be7
   - aaa5da8e73a9
   - ac8e59e87ce3
   - b2df381a6004
@@ -10733,6 +10761,7 @@ tools:
   - 2d02d9702d3a
   - 3c86f71498bc
   - 5511647110ff
+  - 5813f9920877
   - 5b3c1679d29b
   - 64388be6d510
   - 6a76b60e05f5
@@ -10757,6 +10786,7 @@ tools:
   - 08192eebb47d
   - 18262103fa61
   - 3081ff5c84a3
+  - 3b5ef3b00cdd
   - 4338bf96809e
   - 5c3ebe2adc77
   - 5d2e17328afe
@@ -10781,6 +10811,7 @@ tools:
   revisions:
   - 146ae5d70b47
   - 3bcd5445cd7a
+  - 4766556db52c
   - 4bda4412b8c2
   - 51d945eab1e1
   - 5342ce58cd1e
@@ -10810,6 +10841,7 @@ tools:
   - 397d2c97af05
   - 40812a65a78b
   - 4bfb75bb7c8e
+  - 5a5468c0d26f
   - 62acdd96d4a0
   - 6adf98e782f3
   - 6f5349dd5c49
@@ -10831,6 +10863,7 @@ tools:
   revisions:
   - 00305dc2dd6f
   - 215733a383f2
+  - 458d4ab0f894
   - 458e8f43a775
   - 524aa62a6066
   - 73ab2ac53d06
@@ -13137,6 +13170,10 @@ tools:
   revisions:
   - 0b367fda55da
   - 3658cf4b6fd2
+- name: data_manager_mmseqs2_database
+  owner: iuc
+  revisions:
+  - 561c4b181bfa
 - name: deeptools_alignmentsieve
   owner: bgruening
   revisions:
