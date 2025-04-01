@@ -63,6 +63,7 @@ tools:
   - a2e75bad2872
   - af0d9df0641e
   - d36215791ad3
+  - d6b28a54592a
   tool_panel_section_label: Convert Formats
 - name: uniprot_rest_interface
   owner: bgruening
@@ -73,20 +74,24 @@ tools:
   owner: bgruening
   revisions:
   - ce3927af5a8f
+  - cfd6e76541ff
   tool_panel_section_label: SAM/BAM
 - name: sambamba_markdup
   owner: bgruening
   revisions:
   - 6c916a5a6afb
+  - a348429b6fec
   tool_panel_section_label: SAM/BAM
 - name: sambamba_merge
   owner: bgruening
   revisions:
   - 480c9d4c8957
+  - 66a7ee77d7e3
   tool_panel_section_label: SAM/BAM
 - name: sambamba_sort
   owner: bgruening
   revisions:
+  - 6aa99e436263
   - 87c1b543c4c4
   tool_panel_section_label: SAM/BAM
 - name: antismash
@@ -150,6 +155,7 @@ tools:
 - name: flye
   owner: bgruening
   revisions:
+  - 13e27b9094e8
   - 1ce9b1d72ec3
   - 1f0769f0b56b
   - 276f5d8712d5
@@ -236,14 +242,17 @@ tools:
 - name: gfastats
   owner: bgruening
   revisions:
+  - 0393c0415171
   - 2b8b4cacb83d
   - 3ef480892a9f
   - 3fba9c77550a
+  - 50b6ec4074f4
   - 5127a713de83
   - 5799092ffdff
   - 690c2caa367e
   - 6ec1b853c8fd
   - 764f2516d837
+  - 7729cd89aaf7
   - 8ccbf07a5433
   - ad1149b4f795
   - f4a3eff8ab85
@@ -252,6 +261,7 @@ tools:
   owner: bgruening
   revisions:
   - cd7e644cae1d
+  - eefb644655a5
   tool_panel_section_label: FASTA/FASTQ
 - name: mgnify_seqprep
   owner: bgruening
@@ -301,17 +311,21 @@ tools:
   owner: bgruening
   revisions:
   - 54c2d8ebf0cf
+  - b98bcfdec481
   tool_panel_section_label: Graph/Display Data
 - name: cellpose
   owner: bgruening
   revisions:
   - 030bfe6065d9
+  - 32153c43126c
+  - 5251ce4c4a11
   - 9186100e75b5
   - eda6dfae9617
   tool_panel_section_label: Imaging
 - name: bioimage_inference
   owner: bgruening
   revisions:
+  - 000f171afabb
   - 9b8fc55cb9eb
   - b0f2d3b4a278
   - caea9ee1ffac
@@ -1036,6 +1050,14 @@ tools:
   - e10ffa9e0b90
   - e8639f65c883
   tool_panel_section_label: Machine Learning
+- name: tabpfn
+  owner: bgruening
+  revisions:
+  - 33d53eb476fd
+  - 49b4ee0d0965
+  - c081e5e1d7ce
+  - e7b4afedc471
+  tool_panel_section_label: Machine Learning
 - name: whisper
   owner: bgruening
   revisions:
@@ -1110,15 +1132,22 @@ tools:
   owner: bgruening
   revisions:
   - 0370fe3cf518
+  - c153e8dd94ad
 - name: tiara
   owner: bgruening
   revisions:
   - 3f33a8ac8891
   - 66058890173e
   tool_panel_section_label: Metagenomic Analysis
+- name: qiime2_dbotu_q2
+  owner: bgruening
+  revisions:
+  - f0454b7881f4
+  tool_panel_section_label: Metagenomic Analysis
 - name: mafft
   owner: rnateam
   revisions:
+  - 1233363389c1
   - 6f28e90db932
   - 8e649f27aa0d
   - a65296ffb4a0
