@@ -1,7 +1,10 @@
 # check all revisions in the lockfile if they are installable
-# remove if not and the next installable version is installed
+# remove if not and the next installable version is added
 #
-# backgroud vor each version there can be only one revision installed
+# the script only updates the lock file and does not install
+# or uninstall any tools from a Galaxy instance
+#
+# backgroud for each version there can be only one revision installed
 # (multiple revisions with the same version happen eg if the version
 # is not bumbed)
 #
