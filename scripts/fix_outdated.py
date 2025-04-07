@@ -38,6 +38,7 @@ from typing import (
     Tuple,
 )
 
+import bioblend
 from bioblend import galaxy, toolshed
 from galaxy.tool_util.loader_directory import load_tool_sources_from_path
 
@@ -57,16 +58,16 @@ def clone(toolshed_url: str, name: str, owner: str, repo_path: str) -> None:
     else:
         cmd = ["hg", "pull", "-u"]
         proc = subprocess.run(cmd, cwd = repo_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    assert proc.returncode == 0, f"failed {' '.join(cmd)}"
+    assert proc.returncode == 0, f"failed {' '.join(cmd)} in {repo_path}"
 
 def get_all_revisions(toolshed_url: str, name: str, owner: str) -> List[str]:
     repo_path = f"/tmp/repos/{os.path.basename(toolshed_url)}-{owner}-{name}"
     clone(toolshed_url, name, owner, repo_path)
     cmd = ["hg", "update", "tip"]
     proc = subprocess.run(cmd, cwd=repo_path, capture_output=True, text=True)
-    assert proc.returncode == 0, f"failed {' '.join(cmd)}"
+    assert proc.returncode == 0, f"failed {' '.join(cmd)} in {repo_path}"
     cmd = ["hg", "log", "--template", "{node|short}\n"]
-    assert proc.returncode == 0, f"failed {' '.join(cmd)}"
+    assert proc.returncode == 0, f"failed {' '.join(cmd)} in {repo_path}"
     result = subprocess.run(cmd, cwd=repo_path, capture_output=True, text=True)
     return list(reversed(result.stdout.splitlines()))
 
@@ -85,6 +86,7 @@ def get_all_versions(
         versions[r] = set()
         for _, tool in load_tool_sources_from_path(repo_path):
             versions[r].add((tool.parse_id(), tool.parse_version()))
+        assert len(versions[r]) > 0
 
     return versions
 
@@ -111,12 +113,21 @@ def fix_uninstallable(lockfile_name: str, toolshed_url: str, galaxy_url: Optiona
         owner = locked_tool["owner"]
 
         # get ordered_installable_revisions from oldest to newest
-        ordered_installable_revisions = (
-            ts.repositories.get_ordered_installable_revisions(name, owner)
-        )
+        try:
+            ordered_installable_revisions = (
+                ts.repositories.get_ordered_installable_revisions(name, owner)
+            )
+        except bioblend.ConnectionError:
+            logger.warning(f"Could not determine intstallable revisions for {name} {owner}")
+            continue
+
         if len(set(locked_tool["revisions"]) - set(ordered_installable_revisions)):
             all_revisions = get_all_revisions(toolshed_url, name, owner)
-            all_versions = get_all_versions(toolshed_url, name, owner, all_revisions)
+            try:
+                all_versions = get_all_versions(toolshed_url, name, owner, all_revisions)
+            except:
+                logger.warning(f"Could not determine versions for {name} {owner}")
+                continue
 
         to_remove = []
         to_append = []
@@ -131,7 +142,10 @@ def fix_uninstallable(lockfile_name: str, toolshed_url: str, galaxy_url: Optiona
                     nxt = all_revisions[i]
                     break
 
-            assert nxt, f"Could not determine next revision for {cur} {name} {owner}"
+            if not nxt:
+                logger.warning(f"Could not determine next revision for {cur} {name} {owner}")
+                continue
+
             if all_versions[cur] != all_versions[nxt]:
                 logger.warning(f"{name},{owner} {cur} {nxt} have unequal versions")
                 continue
@@ -173,6 +187,8 @@ if __name__ == "__main__":
     logging.getLogger('urllib3').setLevel(logging.WARNING)
     logging.getLogger('bioblend').setLevel(logging.WARNING)
     logging.getLogger('PIL.Image').setLevel(logging.WARNING)
+    # otherwise tool loading errors (of there are other xml files that can't be parsed?) are reported
+    logging.getLogger('galaxy.tool_util.loader_directory').disabled = True
     handler = logging.StreamHandler()
     logger.addHandler(handler)
     formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
