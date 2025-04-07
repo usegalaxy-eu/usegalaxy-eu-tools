@@ -56,7 +56,7 @@ def clone(toolshed_url: str, name: str, owner: str, repo_path: str) -> None:
     assert proc.returncode == 0, f"failed {' '.join(cmd)}"
 
 def get_all_revisions(toolshed_url: str, name: str, owner: str) -> List[str]:
-    repo_path = f"/tmp/repos/toolshed-{owner}-{name}"
+    repo_path = f"/tmp/repos/{os.path.basename(toolshed_url)}-{owner}-{name}"
     clone(toolshed_url, name, owner, repo_path)
     cmd = ["hg", "update", "tip"]
     proc = subprocess.run(cmd, cwd=repo_path, capture_output=True, text=True)
@@ -70,13 +70,13 @@ def get_all_revisions(toolshed_url: str, name: str, owner: str) -> List[str]:
 def get_all_versions(
     toolshed_url: str, name: str, owner: str, revisions: List[str]
 ) -> Dict[str, Set[Tuple[str, str]]]:
-    repo_path = f"/tmp/repos/toolshed-{owner}-{name}"
+    repo_path = f"/tmp/repos/{os.path.basename(toolshed_url)}-{owner}-{name}"
     clone(toolshed_url, name, owner, repo_path)
 
     versions: Dict[str, Set[Tuple[str, str]]] = {}
     for r in revisions:
         cmd = ["hg", "update", r]
-        subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(cmd, cwd=repo_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         versions[r] = set()
         for _, tool in load_tool_sources_from_path(repo_path):
@@ -106,14 +106,19 @@ def fix_uninstallable(lockfile_name: str, toolshed_url: str, galaxy_url: Optiona
         name = locked_tool["name"]
         owner = locked_tool["owner"]
 
+        # if name != "omero_metadata_import":
+        #     continue
+
         # get ordered_installable_revisions from oldest to newest
         ordered_installable_revisions = (
             ts.repositories.get_ordered_installable_revisions(name, owner)
         )
-
+        # print(f"{ordered_installable_revisions=}")
         if len(set(locked_tool["revisions"]) - set(ordered_installable_revisions)):
             all_revisions = get_all_revisions(toolshed_url, name, owner)
             all_versions = get_all_versions(toolshed_url, name, owner, all_revisions)
+            # print(f"{all_revisions=}")
+            # print(f"{all_versions=}")
 
         to_remove = []
         to_append = []
@@ -129,7 +134,9 @@ def fix_uninstallable(lockfile_name: str, toolshed_url: str, galaxy_url: Optiona
                     break
 
             assert nxt, f"Could not determine next revision for {cur} {name} {owner}"
-            assert all_versions[cur] == all_versions[nxt], f"{name},{onwer} {cur} {next} have unequal versions"
+            if all_versions[cur] != all_versions[nxt]:
+                print(f"{name},{owner} {cur} {nxt} have unequal versions")
+                continue
 
             print(f"remove {cur} in favor of {nxt} {name} {owner}")
             to_remove.append(cur)
