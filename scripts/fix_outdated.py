@@ -143,7 +143,7 @@ def get_next(
 
 
 def fix_uninstallable(
-    lockfile_name: str, toolshed_url: str, galaxy_url: Optional[str] = None
+    lockfile_name: str, toolshed_url: str, galaxy_url: Optional[str] = None, add:bool = False
 ) -> None:
     ts = toolshed.ToolShedInstance(url=toolshed_url)
     installed_tools: Dict[Tuple[str, str], Set[str]] = {}
@@ -202,12 +202,15 @@ def fix_uninstallable(
                 )
                 continue
             if all_versions[cur] != all_versions[nxt]:
-                logger.warning(f"{name},{owner} {cur} {nxt} have unequal versions {all_versions[cur]} {all_versions[nxt]}")
+                logger.warning(f"{name},{owner} {cur} {nxt} have unequal versions")
                 continue
 
             if nxt not in locked_tool["revisions"]:
-                logger.info(f"{name},{owner} Adding {nxt} which was absent so far")
-                to_append.append(nxt)
+                if add:
+                    logger.info(f"{name},{owner} remove {cur} in favor of {nxt} ")
+                    logger.info(f"{name},{owner} Adding {nxt} which was absent so far")
+                    to_append.append(nxt)
+                    to_remove.append(cur)
             elif galaxy_url:
                 assert (name, owner) in installed_tools
                 if cur in installed_tools[(name, owner)]:
@@ -215,8 +218,9 @@ def fix_uninstallable(
                         f"{name},{owner} {cur} still installed on {galaxy_url}"
                     )
                     continue
-            logger.info(f"{name},{owner} remove {cur} in favor of {nxt} ")
-            to_remove.append(cur)
+            else:
+                logger.info(f"{name},{owner} remove {cur} in favor of {nxt} ")
+                to_remove.append(cur)
 
         for r in to_remove:
             locked_tool["revisions"].remove(r)
@@ -237,7 +241,10 @@ if __name__ == "__main__":
         help="Toolshed to test against",
     )
     parser.add_argument(
-        "--galaxy_url", default=None, required=False, help="Galaxy instance to check"
+        "--galaxy_url", default=None, required=False, help="Galaxy instance to check. If given it is checked if the not-installable revision is still installed."
+    )
+    parser.add_argument(
+        "--add", default=False, action="store_true", help="Add new intstallable revisions if missing, default is not to add it and also keep the uninstallable one"
     )
     args = parser.parse_args()
 
@@ -254,4 +261,4 @@ if __name__ == "__main__":
     )
     handler.setFormatter(formatter)
 
-    fix_uninstallable(args.lockfile.name, args.toolshed, args.galaxy_url)
+    fix_uninstallable(args.lockfile.name, args.toolshed, args.galaxy_url, args.add)
