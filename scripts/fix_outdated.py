@@ -57,8 +57,11 @@ def clone(toolshed_url: str, name: str, owner: str, repo_path: str) -> None:
         proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
         cmd = ["hg", "pull", "-u"]
-        proc = subprocess.run(cmd, cwd = repo_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        proc = subprocess.run(
+            cmd, cwd=repo_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        )
     assert proc.returncode == 0, f"failed {' '.join(cmd)} in {repo_path}"
+
 
 def get_all_revisions(toolshed_url: str, name: str, owner: str) -> List[str]:
     repo_path = f"/tmp/repos/{os.path.basename(toolshed_url)}-{owner}-{name}"
@@ -75,34 +78,57 @@ def get_all_revisions(toolshed_url: str, name: str, owner: str) -> List[str]:
 def get_all_versions(
     toolshed_url: str, name: str, owner: str, revisions: List[str]
 ) -> Dict[str, Set[Tuple[str, str]]]:
+    def silent_load_exception_handler(path, exc_info):
+        pass
+
     repo_path = f"/tmp/repos/{os.path.basename(toolshed_url)}-{owner}-{name}"
     clone(toolshed_url, name, owner, repo_path)
 
     versions: Dict[str, Set[Tuple[str, str]]] = {}
     for r in revisions:
         cmd = ["hg", "update", r]
-        subprocess.run(cmd, cwd=repo_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(
+            cmd, cwd=repo_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        )
 
         versions[r] = set()
-        for _, tool in load_tool_sources_from_path(repo_path):
+        for _, tool in load_tool_sources_from_path(
+            repo_path,
+            recursive=True,
+            load_exception_handler=silent_load_exception_handler,
+        ):
             versions[r].add((tool.parse_id(), tool.parse_version()))
         assert len(versions[r]) > 0
 
     return versions
 
 
-def fix_uninstallable(lockfile_name: str, toolshed_url: str, galaxy_url: Optional[str] = None) -> None:
+def get_next(
+    cur: str, all_revisions: List[str], ordered_installable_revisions: List[str]
+) -> Optional[str]:
+    start = all_revisions.index(cur) + 1
+    nxt = None
+    for i in range(start, len(all_revisions)):
+        if all_revisions[i] in ordered_installable_revisions:
+            nxt = all_revisions[i]
+            break
+    return nxt
+
+
+def fix_uninstallable(
+    lockfile_name: str, toolshed_url: str, galaxy_url: Optional[str] = None
+) -> None:
     ts = toolshed.ToolShedInstance(url=toolshed_url)
-    installed_tools = {}
+    installed_tools: Dict[Tuple[str, str], Set[str]] = {}
     if galaxy_url:
         gi = galaxy.GalaxyInstance(url=galaxy_url, key=None)
         for t in gi.toolshed.get_repositories():
-            if (t['name'], t['owner']) not in installed_tools:
-                installed_tools[(t['name'], t['owner'])] = set()
+            if (t["name"], t["owner"]) not in installed_tools:
+                installed_tools[(t["name"], t["owner"])] = set()
             # TODO? could also check for 'status': 'Installed'
-            if t['deleted'] or t['uninstalled']:
+            if t["deleted"] or t["uninstalled"]:
                 continue
-            installed_tools[(t['name'], t['owner'])].add(t['changeset_revision'])
+            installed_tools[(t["name"], t["owner"])].add(t["changeset_revision"])
 
     with open(lockfile_name) as f:
         lockfile = yaml.safe_load(f)
@@ -118,34 +144,42 @@ def fix_uninstallable(lockfile_name: str, toolshed_url: str, galaxy_url: Optiona
                 ts.repositories.get_ordered_installable_revisions(name, owner)
             )
         except bioblend.ConnectionError:
-            logger.warning(f"Could not determine intstallable revisions for {name} {owner}")
+            logger.warning(
+                f"Could not determine intstallable revisions for {name} {owner}"
+            )
             continue
 
         if len(set(locked_tool["revisions"]) - set(ordered_installable_revisions)):
             all_revisions = get_all_revisions(toolshed_url, name, owner)
             try:
-                all_versions = get_all_versions(toolshed_url, name, owner, all_revisions)
-            except:
+                all_versions = get_all_versions(
+                    toolshed_url, name, owner, all_revisions
+                )
+            except Exception:
                 logger.warning(f"Could not determine versions for {name} {owner}")
                 continue
+        else:
+            continue
 
         to_remove = []
         to_append = []
         for cur in locked_tool["revisions"]:
+            assert (
+                cur in all_revisions
+            ), f"{cur} is not a valid revision of {name} {owner}"
+            nxt = get_next(cur, all_revisions, ordered_installable_revisions)
             if cur in ordered_installable_revisions:
+                if nxt and all_versions[cur] == all_versions[nxt]:
+                    logger.warning(
+                        f"{name},{owner} installable revisions {cur} {nxt} have equal versions"
+                    )
                 continue
-            assert cur in all_revisions, f"{cur} is not a valid revision of {name} {owner}"
-            start = all_revisions.index(cur)
-            nxt = None
-            for i in range(start, len(all_revisions)):
-                if all_revisions[i] in ordered_installable_revisions:
-                    nxt = all_revisions[i]
-                    break
 
             if not nxt:
-                logger.warning(f"Could not determine next revision for {cur} {name} {owner}")
+                logger.warning(
+                    f"Could not determine next revision for {cur} {name} {owner}"
+                )
                 continue
-
             if all_versions[cur] != all_versions[nxt]:
                 logger.warning(f"{name},{owner} {cur} {nxt} have unequal versions")
                 continue
@@ -156,7 +190,9 @@ def fix_uninstallable(lockfile_name: str, toolshed_url: str, galaxy_url: Optiona
             elif galaxy_url:
                 assert (name, owner) in installed_tools
                 if cur in installed_tools[(name, owner)]:
-                    logger.warning(f"{name},{owner} {cur} still installed on {galaxy_url}")
+                    logger.warning(
+                        f"{name},{owner} {cur} still installed on {galaxy_url}"
+                    )
                     continue
             logger.info(f"remove {cur} in favor of {nxt} {name} {owner}")
             to_remove.append(cur)
@@ -179,19 +215,22 @@ if __name__ == "__main__":
         default="https://toolshed.g2.bx.psu.edu",
         help="Toolshed to test against",
     )
-    parser.add_argument('--galaxy_url', default=None, required=False, help="Galaxy instance to check")
+    parser.add_argument(
+        "--galaxy_url", default=None, required=False, help="Galaxy instance to check"
+    )
     args = parser.parse_args()
 
-
     logger.setLevel(logging.DEBUG)
-    logging.getLogger('urllib3').setLevel(logging.WARNING)
-    logging.getLogger('bioblend').setLevel(logging.WARNING)
-    logging.getLogger('PIL.Image').setLevel(logging.WARNING)
-    # otherwise tool loading errors (of there are other xml files that can't be parsed?) are reported
-    logging.getLogger('galaxy.tool_util.loader_directory').disabled = True
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
+    logging.getLogger("bioblend").setLevel(logging.WARNING)
+    logging.getLogger("PIL.Image").setLevel(logging.WARNING)
+    # otherwise tool loading errors (of there are other xml files that can't be parsed?) are still reported
+    logging.getLogger("galaxy.util").disabled = True
     handler = logging.StreamHandler()
     logger.addHandler(handler)
-    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
     handler.setFormatter(formatter)
 
     fix_uninstallable(args.lockfile.name, args.toolshed, args.galaxy_url)
