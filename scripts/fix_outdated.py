@@ -24,6 +24,31 @@
 # - if cur and nxt are in the lock file cur is removed
 #   - if a Galaxy URL is given it is checked that cur is not installed
 # - if only cur in in the list then cur is removed and nxt is added
+# 
+# there are several possible WARNING messages that require manual checks
+# 
+# NAME,REPO CURRENT NEXT have unequal versions
+# - the currently considered revision is not removed because
+#   not-bumping is not the cause for being not-intstallable,
+#   i.e. the currently considered revision is not intstallable
+#   and the next installable revision has a different version
+#
+# NAME,REPO CURRENT still installed on GALAXY_URL
+# - the currently considered revision is not removed becaus
+#   it is still installed on the given Galaxy instance
+# 
+# NAME,REPO Adjacent installable revisions CURRENT NEXT have equal versions
+# - the currently considered revision is installable and
+#   has the same version as the next installable revision
+#   i.e. maybe it should not be installable?
+#
+# NAME,REPO Could not determine next revision for CURRENT
+# - CURRENT is not installable and no installable revision
+#   has been found in the TS (that has been added after CURRENT)
+#
+# NAME,REPO Could not determine versions for CURRENT
+# - The versions for revision CURRENT could not be determined.
+#   This means that the tool repo did not contain a parsable tool.
 
 import argparse
 import logging
@@ -98,7 +123,9 @@ def get_all_versions(
             load_exception_handler=silent_load_exception_handler,
         ):
             versions[r].add((tool.parse_id(), tool.parse_version()))
-        assert len(versions[r]) > 0
+
+        if len(versions[r]) == 0:
+            logger.warning(f"{name},{owner} Could not determine versions for {r}")
 
     return versions
 
@@ -145,19 +172,13 @@ def fix_uninstallable(
             )
         except bioblend.ConnectionError:
             logger.warning(
-                f"Could not determine intstallable revisions for {name} {owner}"
+                f"{name},{owner} Could not determine intstallable revisions for "
             )
             continue
 
         if len(set(locked_tool["revisions"]) - set(ordered_installable_revisions)):
             all_revisions = get_all_revisions(toolshed_url, name, owner)
-            try:
-                all_versions = get_all_versions(
-                    toolshed_url, name, owner, all_revisions
-                )
-            except Exception:
-                logger.warning(f"Could not determine versions for {name} {owner}")
-                continue
+            all_versions = get_all_versions(toolshed_url, name, owner, all_revisions)
         else:
             continue
 
@@ -171,21 +192,21 @@ def fix_uninstallable(
             if cur in ordered_installable_revisions:
                 if nxt and all_versions[cur] == all_versions[nxt]:
                     logger.warning(
-                        f"{name},{owner} installable revisions {cur} {nxt} have equal versions"
+                        f"{name},{owner} Adjacent installable revisions {cur} {nxt} have equal versions"
                     )
                 continue
 
             if not nxt:
                 logger.warning(
-                    f"Could not determine next revision for {cur} {name} {owner}"
+                    f"{name},{owner} Could not determine next revision for {cur}"
                 )
                 continue
             if all_versions[cur] != all_versions[nxt]:
-                logger.warning(f"{name},{owner} {cur} {nxt} have unequal versions")
+                logger.warning(f"{name},{owner} {cur} {nxt} have unequal versions {all_versions[cur]} {all_versions[nxt]}")
                 continue
 
             if nxt not in locked_tool["revisions"]:
-                logger.info(f"adding {nxt} which was absent so far {name} {owner}")
+                logger.info(f"{name},{owner} Adding {nxt} which was absent so far")
                 to_append.append(nxt)
             elif galaxy_url:
                 assert (name, owner) in installed_tools
@@ -194,7 +215,7 @@ def fix_uninstallable(
                         f"{name},{owner} {cur} still installed on {galaxy_url}"
                     )
                     continue
-            logger.info(f"remove {cur} in favor of {nxt} {name} {owner}")
+            logger.info(f"{name},{owner} remove {cur} in favor of {nxt} ")
             to_remove.append(cur)
 
         for r in to_remove:
