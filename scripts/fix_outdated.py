@@ -24,8 +24,11 @@
 # - if cur and nxt are in the lock file cur is removed
 #   - if a Galaxy URL is given it is checked that cur is not installed
 # - if only cur in in the list then cur is removed and nxt is added
+#
+# The tool logs INFO messages for each removed / added revision
 # 
-# there are several possible WARNING messages that require manual checks
+# In addition there are several possible WARNING messages that
+# require manual checks
 # 
 # NAME,REPO CURRENT NEXT have unequal versions
 # - the currently considered revision is not removed because
@@ -34,7 +37,7 @@
 #   and the next installable revision has a different version
 #
 # NAME,REPO CURRENT still installed on GALAXY_URL
-# - the currently considered revision is not removed becaus
+# - the currently considered revision is not removed because
 #   it is still installed on the given Galaxy instance
 # 
 # NAME,REPO Adjacent installable revisions CURRENT NEXT have equal versions
