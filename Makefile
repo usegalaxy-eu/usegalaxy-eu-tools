@@ -24,6 +24,10 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 %.fix: %
 	@# Generates the lockfile or updates it if it is missing tools
 	python3 scripts/fix-lockfile.py $<
+
+	@# remove revisions that have been uninstalled on EU
+	python3 scripts/fix_not_installed.py --galaxy_url https://usegalaxy.eu $<
+
 	@# --without says only add those hashes for those missing hashes (i.e. new tools)
 	python3 scripts/update-tool.py $< --without
 
