@@ -1,9 +1,12 @@
 # check all revisions in the lockfile if they are still installed
 # at a given Galaxy instance and remove them from the lock file if not
+# 
+# if a tool is not installed anymore or ha nos installed revisions
+# it is kept with an empty list of revisions
 #
 # The tool logs INFO messages for each removed revision
 # and prints WARNING messages for tools that are not installed
-# anymore
+# anymore or that have no mopre installed revisions
 
 import argparse
 import logging
@@ -41,6 +44,7 @@ def fix_not_installed(lockfile_name: str, galaxy_url: str) -> None:
         owner = locked_tool["owner"]
         if (name, owner) not in installed_tools:
             logger.warning(f"{name},{owner} not installed anymore")
+            locked_tool["revisions"] = []
             continue
 
         to_remove = []
@@ -51,6 +55,9 @@ def fix_not_installed(lockfile_name: str, galaxy_url: str) -> None:
 
         for r in to_remove:
             locked_tool["revisions"].remove(r)
+
+        if len(locked_tool["revisions"]) == 0:
+            logger.warning(f"{name},{owner} has no more installed revisions")
         locked_tool["revisions"] = sorted(list(set(map(str, locked_tool["revisions"]))))
 
     with open(lockfile_name, "w") as handle:
