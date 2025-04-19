@@ -703,6 +703,7 @@ tools:
 - name: mmseqs2_taxonomy_assignment
   owner: iuc
   revisions:
+  - 876d26806584
   - 9e47b28bff57
   tool_panel_section_label: Annotation
 - name: omark
@@ -952,6 +953,7 @@ tools:
   owner: iuc
   revisions:
   - 6fdee3720de7
+  - 7bf2567907f0
   - a83148dac159
   tool_panel_section_label: Annotation
 - name: ppanggolin_msa
@@ -959,6 +961,7 @@ tools:
   revisions:
   - 76170454dc91
   - d305623d5f41
+  - e72c64b04680
   tool_panel_section_label: Annotation
 - name: hicexplorer_hicbuildmatrixmicroc
   owner: iuc
@@ -1677,6 +1680,7 @@ tools:
 - name: bedops_sortbed
   owner: iuc
   revisions:
+  - 3f847205cf8f
   - baeee32175e8
   tool_panel_section_label: BED
 - name: collection_element_identifiers
@@ -5352,6 +5356,7 @@ tools:
 - name: drep_compare
   owner: iuc
   revisions:
+  - 0a3caad1554a
   - 2c6f204ae1b9
   - 54aa421c2911
   - 7157accd23d0
@@ -5368,6 +5373,7 @@ tools:
   - 1faea6e8c92b
   - 368cb4bef9d8
   - 76b57044069d
+  - 81ada02ffe46
   - 8dfcdbeaeed8
   - a0713a10c9f6
   - a248ec535518
@@ -6367,6 +6373,7 @@ tools:
 - name: fairy_cov
   owner: iuc
   revisions:
+  - 4e40c6d7bc4a
   - 8a9a425f5c60
   - d94e49509dac
   - f2fd2d1b96e3
@@ -6377,6 +6384,7 @@ tools:
   - 008b08870cc0
   - 17d174efa4be
   - a8806f3d45bb
+  - ea5e58243c34
   tool_panel_section_label: Metagenomic Analysis
 - name: binette
   owner: iuc
@@ -6385,6 +6393,11 @@ tools:
   - 6641160f2053
   - 70b492856e17
   - 7834132949bc
+  tool_panel_section_label: Metagenomic Analysis
+- name: kmer2stats
+  owner: iuc
+  revisions:
+  - 6150c3b0a1eb
   tool_panel_section_label: Metagenomic Analysis
 - name: mothur_align_check
   owner: iuc
@@ -7939,6 +7952,7 @@ tools:
 - name: mmseqs2_easy_linclust_clustering
   owner: iuc
   revisions:
+  - b174c3405549
   - e6c5f120f010
   tool_panel_section_label: Multiple Alignments
 - name: msaboot
@@ -13224,6 +13238,7 @@ tools:
 - name: data_manager_mmseqs2_database
   owner: iuc
   revisions:
+  - 35885ec2e59b
   - 561c4b181bfa
 - name: deeptools_alignmentsieve
   owner: bgruening
