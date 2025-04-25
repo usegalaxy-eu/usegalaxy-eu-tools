@@ -18,6 +18,7 @@ tools:
   - 734abc7ac21d
   - 751a694ec620
   - 83c7d564b128
+  - 8848455c0270
   - aad3885b3216
   - b723c120161a
   - ba931a59dd59
@@ -74,16 +75,20 @@ tools:
   revisions:
   - 161f4383df15
   - 1c2db0054039
+  - 31c42a2c02d3
   - 3d93dd18d9f8
   - 5e33b465d8d5
   - 75c93c70d094
   - 9a913cdee30e
+  - a7e081ceb76a
   - abfd8a6544d7
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
+  - d2aaac19f42f
   - e4574a4d09d8
   - f7985e0479b9
+  - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
 - name: format_cd_hit_output
   owner: bebatut
@@ -160,7 +165,9 @@ tools:
   revisions:
   - 280386b252a5
   - 45210df786b9
+  - 9016f67b716f
   - cef64c36c89e
+  - ed85107b3cfd
   tool_panel_section_label: Metagenomic Analysis
 - name: megahit
   owner: iuc
@@ -170,6 +177,7 @@ tools:
   - 7518ee87b53d
   - 98242353faa4
   - a96f3ad4e0d8
+  - ab208c87d973
   - de387b2b2803
   tool_panel_section_label: Assembly
 - name: metaspades
@@ -189,8 +197,14 @@ tools:
   - 7594365c546b
   - 81df4950d65b
   - 875d0f36d66f
+  - a3b35edea53a
   - ebb0dcdb621a
   - f30d03867854
+  tool_panel_section_label: Assembly
+- name: refseq_masher
+  owner: nml
+  revisions:
+  - 1ec42f033bb4
   tool_panel_section_label: Assembly
 - name: valet
   owner: iuc

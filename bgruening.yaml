@@ -33,9 +33,39 @@ tools:
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
 
+  - name: ffmpeg_converter
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
   - name: hictk
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
+
+  - name: markitdown
+    owner: bgruening
+    tool_panel_section_label: "Convert Formats"
+
+  - name: uniprot_rest_interface
+    owner: bgruening
+    tool_panel_section_label: Convert Formats
+
+# SAM/BAM
+
+  - name: sambamba_flagstat
+    owner: bgruening
+    tool_panel_section_label: SAM/BAM
+
+  - name: sambamba_markdup
+    owner: bgruening
+    tool_panel_section_label: SAM/BAM
+
+  - name: sambamba_merge
+    owner: bgruening
+    tool_panel_section_label: SAM/BAM
+
+  - name: sambamba_sort
+    owner: bgruening
+    tool_panel_section_label: SAM/BAM
 
 # ANNOTATION
 
@@ -101,10 +131,22 @@ tools:
     owner: bgruening
     tool_panel_section_label: Assembly
 
+  - name: reago
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
   - name: tgsgapcloser
     owner: bgruening
     tool_panel_section_label: Assembly
 
+  - name: wtdbg
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: erga_ear
+    owner: bgruening
+    tool_panel_section_label: Assembly
+  
 
 # COLLECTION OPERATIONS
 
@@ -123,6 +165,11 @@ tools:
     owner: bgruening
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: mgnify_seqprep
+    owner: bgruening
+    tool_panel_section_label: FASTA/FASTQ
+
+
 # Get Data
 
   - name: mavedb_importer
@@ -130,6 +177,10 @@ tools:
     tool_panel_section_label: Get Data
 
 # GRAPH/DISPLAY DATA
+
+  - name: jbrowse2
+    owner: fubar
+    tool_panel_section_label: Graph/Display Data
 
   - name: plotly_ml_performance_plots
     owner: bgruening
@@ -139,9 +190,17 @@ tools:
     owner: bgruening
     tool_panel_section_label: Graph/Display Data
 
+  - name: wordcloud
+    owner: bgruening
+    tool_panel_section_label: Graph/Display Data
+
 # IMAGING
 
   - name: cellpose
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: bioimage_inference
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -279,6 +338,29 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
+  - name: tabpfn
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: whisper
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: flexynesis
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: flexynesis_cbioportal_import
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+    
+  - name: chatgpt_openai_api
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: black_forest_labs_flux
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
 
 # MAPPING
 
@@ -310,6 +392,21 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: itsx
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: motus
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: data_manager_motus
+    owner: bgruening
+ 
+  - name: tiara
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_dbotu_q2
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
 

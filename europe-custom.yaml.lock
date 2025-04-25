@@ -17,6 +17,7 @@ tools:
   revisions:
   - 07e8b80f278c
   - 0a5c785ac6db
+  - 2892111d91f8
   - 3e38c9b3214f
   - 4f7a5ccd2ae9
   - 589e7e57fd6d
@@ -145,6 +146,7 @@ tools:
   - 734abc7ac21d
   - 751a694ec620
   - 83c7d564b128
+  - 8848455c0270
   - aad3885b3216
   - b723c120161a
   - ba931a59dd59
@@ -399,6 +401,7 @@ tools:
   owner: iuc
   revisions:
   - 5cc8e93ee98f
+  - 80414c33a59a
   - 8dd8e89c0603
   - c8467246b57e
   - e1f5bdd8279c
@@ -617,6 +620,7 @@ tools:
   - 19237efe98d1
   - 3f0dd362b755
   - 57e5d9382f36
+  - 7ce0fe11b411
   - 9dd5373f6a5a
   - d20e391eb22f
   - e7242484929c
@@ -625,6 +629,7 @@ tools:
 - name: meme_fimo
   owner: iuc
   revisions:
+  - 01f5d04846c4
   - 0c5239d1aa65
   - 40b8472e91ca
   - c1a9a297ba8b
@@ -702,6 +707,7 @@ tools:
 - name: khmer_filter_abundance
   owner: iuc
   revisions:
+  - 29a4d6e2ae9c
   - 8c6433857aa8
   - 97f65399e30d
   - a4970dfc331c
@@ -711,6 +717,7 @@ tools:
 - name: khmer_filter_below_abundance_cutoff
   owner: iuc
   revisions:
+  - 00f7064c564b
   - 19607c740d19
   - 569001af897d
   - b469ab47b490
@@ -720,6 +727,7 @@ tools:
 - name: khmer_extract_partitions
   owner: iuc
   revisions:
+  - 1061711538c6
   - 2c763fb18010
   - 518ba4a77274
   - 7d8138b4a593
@@ -734,11 +742,13 @@ tools:
   - a02efb62565b
   - c0caca5af183
   - e0de12ae3fc2
+  - e699e2747356
   tool_panel_section_label: Metagenomic Analysis
 - name: khmer_count_median
   owner: iuc
   revisions:
   - 06d1d91c67e5
+  - 570505540a7b
   - 5efc5f21d0c1
   - 77410799e8e9
   - 7aa811aa3b93
@@ -749,6 +759,7 @@ tools:
   revisions:
   - 5a0fa29951ae
   - 766ec3dad7ff
+  - 8388fe31d604
   - b7429b53be2a
   - c393687bd857
   - e562293ee5ec
@@ -756,6 +767,7 @@ tools:
 - name: khmer_normalize_by_median
   owner: iuc
   revisions:
+  - 4d23ab83ea29
   - 557cc16931f4
   - b1fe2ef3d244
   - bfd859f04a89
@@ -768,6 +780,7 @@ tools:
   - 09c6a051c5fd
   - 385a965c6f87
   - 55109291a355
+  - 65b382bf9b7c
   - 792d520ba676
   - c018a72b523e
   tool_panel_section_label: Metagenomic Analysis
@@ -816,6 +829,7 @@ tools:
   revisions:
   - 3905ccd5c631
   - 6756c87dc2d4
+  - 9108bd9450cb
   - edaa8572219d
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_paired_end_interlacer
@@ -876,10 +890,12 @@ tools:
 - name: pear
   owner: iuc
   revisions:
+  - 037f0acc7830
   - 240f611a46f3
   - 2f804526f5fd
   - 581e52f03c5d
   - b4c6f054210a
+  - f69501361cec
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_artifacts_filter
   owner: devteam
@@ -1067,15 +1083,19 @@ tools:
   revisions:
   - 161f4383df15
   - 1c2db0054039
+  - 31c42a2c02d3
   - 3d93dd18d9f8
   - 5e33b465d8d5
   - 75c93c70d094
   - 9a913cdee30e
+  - a7e081ceb76a
   - abfd8a6544d7
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
+  - d2aaac19f42f
   - f7985e0479b9
+  - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
 - name: mira_assembler
   owner: peterjc
@@ -1090,6 +1110,7 @@ tools:
 - name: rnaspades
   owner: iuc
   revisions:
+  - 001aa495b39a
   - 03fd468e158f
   - 0d30fed9628b
   - 1035adb112c0
@@ -1098,6 +1119,7 @@ tools:
   - 28189050e437
   - 378e55aeeb25
   - 53c2bc8c2ae3
+  - 59be68ba26c2
   - 5fc94b3a4704
   - 675ee1aa5952
   - 9e58ff014088
@@ -1147,10 +1169,12 @@ tools:
   - 0a563fd2f22e
   - 318b2a9d54dd
   - 3ea5a2a63fa2
+  - 4014de1b6daf
   - 4074fc1940e2
   - 41929aa1e7f3
   - 44959aa06aeb
   - 4df95e2d7f61
+  - 53255f6eecfc
   - 5ec75f5dae3c
   - 79de45b5069b
   - 7ed2edc1337f
@@ -1250,7 +1274,9 @@ tools:
   owner: iuc
   revisions:
   - 1759d845181e
+  - 1b851f87fbe0
   - 38b6d12edc68
+  - 5dbff3a5845a
   - 6f66ae7c5f7a
   - 7db9d3ea71c9
   - 90d16db017d7
@@ -1348,6 +1374,7 @@ tools:
   - 2872c633f07e
   - 4ca0e679f21e
   - 62adf13b86ea
+  - 74ec758e63a4
   - 9a7c5b6d8f1e
   - 9fd8b69e6e68
   - b47c006d90c5
@@ -1502,11 +1529,6 @@ tools:
   - 6d4babad010f
   - 86e2413cf3f8
   - bfe57d6e0c4c
-  tool_panel_section_label: Peak Calling
-- name: diffbind
-  owner: bgruening
-  revisions:
-  - 69138bfd8644
   tool_panel_section_label: Peak Calling
 - name: piranha
   owner: rnateam
@@ -1718,9 +1740,12 @@ tools:
   - 36dc3690a82c
   - 5b80f544c67f
   - 5c7b70713fb5
+  - 6322be79bd8e
   - 74aebe30fb52
   - 8f92c2b26e6d
   - 9473cd297a76
+  - c7275bd8b4d6
+  - ca2b512e8d7c
   - cfcf33df7fc0
   - de67e5082c48
   - e09ce114d240
@@ -2102,6 +2127,7 @@ tools:
   revisions:
   - 01fd33bc2e75
   - 072f606e2e69
+  - 07396b423218
   - 0fba2c15b40d
   - 1001172b5089
   - 21687e35f066
@@ -2112,6 +2138,7 @@ tools:
   - 912a8ff07fc9
   - a531317a3527
   - b03984136ce4
+  - bf06b66ab5c2
   - c37b684e7f4e
   - cb30a39055d0
   - d267bcfdc8fe
@@ -2710,6 +2737,8 @@ tools:
   owner: artbio
   revisions:
   - 55cf9d9defd1
+  - 5b1b635232ed
+  - 5b2cc63d7a21
   tool_panel_section_label: Text Manipulation
 - name: gsc_scran_normalize
   owner: artbio

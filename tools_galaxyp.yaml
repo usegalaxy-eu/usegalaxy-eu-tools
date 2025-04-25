@@ -4,6 +4,14 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: fragpipe
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: zeiss_lmd_converter
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
   - name: encyclopedia_library_to_blib
     owner: galaxyp
     tool_panel_section_label: Proteomics
@@ -1070,5 +1078,17 @@ tools:
     tool_panel_section_label: Proteomics
 
   - name: calisp
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: openms_openmsinfo
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: openms_jsonexporter
+    owner: galaxyp
+    tool_panel_section_label: Proteomics
+
+  - name: openms_sageadapter
     owner: galaxyp
     tool_panel_section_label: Proteomics

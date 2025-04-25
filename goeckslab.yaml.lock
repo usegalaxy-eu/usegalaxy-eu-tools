@@ -5,6 +5,7 @@ tools:
 - name: gate_finder
   owner: goeckslab
   revisions:
+  - 5f4a4dd06bc9
   - 6df8d6e42152
   - 764f6363e2a9
   - 80102785f5ff
@@ -13,6 +14,7 @@ tools:
 - name: vitessce_spatial
   owner: goeckslab
   revisions:
+  - 068da7f7cd83
   - 4bf852448b5d
   - 4f43e11fb3c9
   - 7cc457aa78b1
@@ -27,14 +29,17 @@ tools:
   - 53240d7c1fc5
   - c60b810d570d
   tool_panel_section_label: Spatial Omics
-- name: squidpy
+- name: squidpy_scatter
   owner: goeckslab
   revisions:
-  - 11ea000ad53f
-  - 4a058bd23a12
-  - bad34051dc8a
-  - be0e7952e229
-  - d30ef0613122
+  - 6fe0d4f464f4
+  - b84c324b58bd
+  tool_panel_section_label: Imaging
+- name: squidpy_spatial
+  owner: goeckslab
+  revisions:
+  - 2a5036c29889
+  - 5b17a47d1ade
   tool_panel_section_label: Imaging
 - name: rename_tiff_channels
   owner: goeckslab
@@ -51,4 +56,10 @@ tools:
   - 676f78636667
   - 7a77ed0e579a
   - 7f93f472a242
+  tool_panel_section_label: Imaging
+- name: scimap_anndata_to_csv
+  owner: goeckslab
+  revisions:
+  - 09c099c99888
+  - 302ddf03402f
   tool_panel_section_label: Imaging

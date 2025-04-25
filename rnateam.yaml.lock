@@ -34,7 +34,6 @@ tools:
 - name: graphprot_predict_profile
   owner: rnateam
   revisions:
-  - 20429f4c1b95
   - 215925e588c4
   - 33b590aa07c1
   - 4ad83aed5c3c
@@ -77,6 +76,7 @@ tools:
 - name: locarna_multiple
   owner: rnateam
   revisions:
+  - 6e20ad2c8752
   - 7554c0df9139
   - 94b0468f0db8
   tool_panel_section_label: RNA Analysis
@@ -88,6 +88,8 @@ tools:
 - name: infernal
   owner: bgruening
   revisions:
+  - 1d74ed49cf41
+  - 3711f654044e
   - 477d829d3250
   - c9e29ac5d099
   tool_panel_section_label: RNA Analysis
@@ -107,10 +109,25 @@ tools:
   revisions:
   - 0addbdbc1344
   tool_panel_section_label: RNA Analysis
+- name: mirdeep2
+  owner: rnateam
+  revisions:
+  - 6a17e1229b9f
+  tool_panel_section_label: RNA Analysis
+- name: mirdeep2_mapper
+  owner: rnateam
+  revisions:
+  - dbbe92348c7a
+  tool_panel_section_label: RNA Analysis
 - name: nastiseq
   owner: rnateam
   revisions:
   - 0a0bba8e1823
+  tool_panel_section_label: RNA Analysis
+- name: rnacode
+  owner: rnateam
+  revisions:
+  - d49b9759e294
   tool_panel_section_label: RNA Analysis
 - name: pipmir
   owner: rnateam
@@ -189,3 +206,9 @@ tools:
   revisions:
   - 940b1d632f4d
   tool_panel_section_label: Peak Calling
+- name: infer_rnaformer
+  owner: rnateam
+  revisions:
+  - 02b0ecc34d9a
+  - 6c310acd2f87
+  tool_panel_section_label: RNA Analysis
