@@ -1046,6 +1046,7 @@ tools:
   owner: iuc
   revisions:
   - 73ddd200456a
+  - 9b1aebbaec34
   - ec82f2b95e89
   - fb6b6d5e6bd5
   tool_panel_section_label: Assembly
@@ -2057,6 +2058,7 @@ tools:
   - 05ee0a74faef
   - 0878b7fd5260
   - 111bd54f6bc4
+  - 18a61a9c1601
   - 24d024316465
   - 288db50d1fb9
   - 524d31add34a
@@ -4609,27 +4611,32 @@ tools:
 - name: kaiju_addtaxonnames
   owner: iuc
   revisions:
+  - 1832b854f0ae
   - 92763a040deb
   tool_panel_section_label: Metagenomic Analysis
 - name: kaiju_kaiju2table
   owner: iuc
   revisions:
   - e7d2c4ed18a5
+  - eedcb4cc9e5a
   tool_panel_section_label: Metagenomic Analysis
 - name: kaiju_kaiju2krona
   owner: iuc
   revisions:
+  - 360618c7e37d
   - b5092138ab0d
   tool_panel_section_label: Metagenomic Analysis
 - name: kaiju_mergeoutputs
   owner: iuc
   revisions:
+  - 01585d091036
   - cdc8a98ed4fc
   tool_panel_section_label: Metagenomic Analysis
 - name: kaiju_kaiju
   owner: iuc
   revisions:
   - 403401167d98
+  - c020a41566fd
   tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_kaiju
   owner: iuc
@@ -4639,6 +4646,7 @@ tools:
   owner: iuc
   revisions:
   - 08c3d450e57b
+  - 954448bad930
   - 99ef57d30bfc
   - b83613ee99ad
   tool_panel_section_label: Metagenomic Analysis
@@ -4647,6 +4655,7 @@ tools:
   revisions:
   - 6bc0c090133f
   - 7f5f34f9889a
+  - bd9817864a28
   - d38b9fdf04e0
   tool_panel_section_label: Metagenomic Analysis
 - name: gtdb_to_taxdump
@@ -5429,6 +5438,7 @@ tools:
   - c2f471480624
   - d99788b71ce7
   - ef1c257adcbd
+  - f0334664a47b
   - ffeabd4e2c1b
   tool_panel_section_label: Metagenomic Analysis
 - name: drep_dereplicate
@@ -5445,6 +5455,7 @@ tools:
   - cafcc13990ee
   - d730086e1432
   - ef7cd2e7bc05
+  - f54e7b3da33c
   tool_panel_section_label: Metagenomic Analysis
 - name: dram_strainer
   owner: iuc
@@ -5525,6 +5536,7 @@ tools:
 - name: gtdbtk_classify_wf
   owner: iuc
   revisions:
+  - 30a4bdf88e14
   - 4d9445dff47b
   - 65d52c693b8e
   - a68b985913ab
@@ -5640,6 +5652,11 @@ tools:
   - 3115a530686e
   - 7f208f1eb64f
   - cad93abecac9
+  tool_panel_section_label: Metagenomic Analysis
+- name: combine_metaphlan2_humann2
+  owner: bebatut
+  revisions:
+  - 662a334004b4
   tool_panel_section_label: Metagenomic Analysis
 - name: humann_associate
   owner: iuc
@@ -9687,6 +9704,7 @@ tools:
   revisions:
   - 1759d845181e
   - 1b851f87fbe0
+  - 30f6985f0ac7
   - 38b6d12edc68
   - 5dbff3a5845a
   - 6f66ae7c5f7a
@@ -11223,6 +11241,11 @@ tools:
   revisions:
   - ac675f28acfc
   tool_panel_section_label: Single-cell
+- name: bellavista_prepare
+  owner: iuc
+  revisions:
+  - 3a5a4f10cef3
+  tool_panel_section_label: Single-cell
 - name: best_regression_subsets
   owner: devteam
   revisions:
@@ -12390,6 +12413,7 @@ tools:
   - a5937157062f
   - a7c9782130e8
   - da6e10dee68b
+  - e698621cca1f
   - ef2c525bd8cd
   tool_panel_section_label: Variant Calling
 - name: gatk4_mutect2
