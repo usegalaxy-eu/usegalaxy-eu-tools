@@ -208,14 +208,6 @@ tools:
     owner: bgruening
     tool_panel_section_label: Imaging
 
-  - name: vpt_extract
-    owner: bgruening
-    tool_panel_section_label: Imaging
-    
-  - name: vpt_segment
-    owner: bgruening
-    tool_panel_section_label: Imaging
-    
 # MACHINE LEARNING
 
   - name: keras_batch_models
@@ -488,7 +480,14 @@ tools:
   - name: music_manipulate_eset
     owner: bgruening
     tool_panel_section_label: Single-cell
-
+    
+  - name: vpt_extract
+    owner: bgruening
+    tool_panel_section_label: Imaging
+    
+  - name: vpt_segment
+    owner: bgruening
+    tool_panel_section_label: Imaging
 
 # STATISTICS
 
