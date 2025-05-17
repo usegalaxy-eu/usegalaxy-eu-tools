@@ -175,6 +175,7 @@ tools:
   - 291923e6f276
   - 3e4f8642c77e
   - 3ee0ef312022
+  - 643e0ff70be5
   - 8d4f03b5fe9d
   - cb8dfd28c16f
   - cd11366d92cf
@@ -1086,11 +1087,13 @@ tools:
   owner: bgruening
   revisions:
   - 0bef7ea84b7f
+  - 2134c3079055
   - bd808d1c4e0c
   tool_panel_section_label: Machine Learning
 - name: flexynesis_cbioportal_import
   owner: bgruening
   revisions:
+  - 0e9e3e083350
   - 9c949eca5d72
   tool_panel_section_label: Machine Learning
 - name: chatgpt_openai_api
@@ -1168,6 +1171,11 @@ tools:
   owner: bgruening
   revisions:
   - f0454b7881f4
+  tool_panel_section_label: Metagenomic Analysis
+- name: vrhyme
+  owner: bgruening
+  revisions:
+  - 0fccc65dcb0b
   tool_panel_section_label: Metagenomic Analysis
 - name: mafft
   owner: rnateam
@@ -1287,6 +1295,16 @@ tools:
   - 192355cd1641
   - 22232092be53
   - b5185a4f5209
+  tool_panel_section_label: Single-cell
+- name: vpt_extract
+  owner: bgruening
+  revisions:
+  - 34b32e87356f
+  tool_panel_section_label: Single-cell
+- name: vpt_segment
+  owner: bgruening
+  revisions:
+  - 5bd5f26279fd
   tool_panel_section_label: Single-cell
 - name: bg_statistical_hypothesis_testing
   owner: bgruening
