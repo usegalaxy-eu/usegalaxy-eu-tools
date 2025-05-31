@@ -12,6 +12,11 @@ tools:
   revisions:
   - e62e31ee42d9
   tool_panel_section_label: Machine Learning
+- name: cleanlab
+  owner: bgruening
+  revisions:
+  - 462b5bc27acd
+  tool_panel_section_label: Machine Learning
 - name: glimmer_glimmer_to_gff
   owner: bgruening
   revisions:
@@ -1073,6 +1078,7 @@ tools:
 - name: tabpfn
   owner: bgruening
   revisions:
+  - 1d77df05cbfc
   - 33d53eb476fd
   - 49b4ee0d0965
   - c081e5e1d7ce
@@ -1161,6 +1167,24 @@ tools:
   revisions:
   - 0370fe3cf518
   - c153e8dd94ad
+- name: sylph_query
+  owner: bgruening
+  revisions:
+  - d2a4c2cb8779
+  tool_panel_section_label: Metagenomic Analysis
+- name: sylph_profile
+  owner: bgruening
+  revisions:
+  - 6c1ac7640090
+  tool_panel_section_label: Metagenomic Analysis
+- name: data_manager_sylph_database
+  owner: bgruening
+  revisions:
+  - 130224fe2d18
+- name: data_manager_sylph_tax_database
+  owner: bgruening
+  revisions:
+  - 7862ca465c6b
 - name: tiara
   owner: bgruening
   revisions:
@@ -1300,11 +1324,13 @@ tools:
   owner: bgruening
   revisions:
   - 34b32e87356f
+  - 7d42c9b75718
   tool_panel_section_label: Single-cell
 - name: vpt_segment
   owner: bgruening
   revisions:
   - 5bd5f26279fd
+  - ed28a1feba82
   tool_panel_section_label: Single-cell
 - name: bg_statistical_hypothesis_testing
   owner: bgruening
