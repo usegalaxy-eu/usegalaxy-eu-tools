@@ -208,6 +208,7 @@ tools:
   - 0a8c6b61f0f4
   - 12615d397df7
   - 3dc70b59608c
+  - 6073bb457ec0
   - 86755160afbf
   - d698c222f354
   - ddf54b12c295
@@ -455,6 +456,7 @@ tools:
 - name: divand_full_analysis
   owner: ecology
   revisions:
+  - 231179dea9dd
   - 484930fdc002
   - 77787acbd793
   tool_panel_section_label: Climate Analysis
@@ -467,6 +469,17 @@ tools:
   owner: ecology
   revisions:
   - 15260949227d
+  - f10c3f6ee575
+  tool_panel_section_label: Climate Analysis
+- name: tool_odv
+  owner: ecology
+  revisions:
+  - 894b4a8a9a7b
+  tool_panel_section_label: Climate Analysis
+- name: bgc_canyon_b
+  owner: ecology
+  revisions:
+  - a9b8e70922a9
   tool_panel_section_label: Climate Analysis
 - name: venn_list
   owner: peterjc
@@ -504,6 +517,7 @@ tools:
   owner: iuc
   revisions:
   - 1b9406a1a769
+  - 1df3b30325dd
   - 2bf238af068d
   - 7e616a1bdb07
   - 7f2ef7216cf8
@@ -535,6 +549,7 @@ tools:
   owner: iuc
   revisions:
   - 10515715c940
+  - 15cebddc6dba
   - 1a72f938213e
   - 391a4cc45fea
   - 3d059e9c2fba
@@ -549,6 +564,7 @@ tools:
   - 0e7290688b50
   - 17b666467c32
   - 637cf21db396
+  - 63d211052ffb
   - 9c52a8130729
   - d6c41b454cc1
   - d8305f18060e
@@ -578,6 +594,7 @@ tools:
   - a36551483a8f
   - d0fc8b746d57
   - e3a675da7fd0
+  - f87634b12749
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_histogram
   owner: iuc
@@ -587,6 +604,7 @@ tools:
   - 398e5104f8a2
   - 497d700a5229
   - 536078949ae4
+  - 6b9816a913de
   - 6fc8bab811da
   - b0d96516e6a5
   - fb50ab943396
@@ -1422,6 +1440,7 @@ tools:
   revisions:
   - 055a934a380f
   - 28c8f085d1b4
+  - 4b84de936c51
   - f3c64a15ee7e
   tool_panel_section_label: Get Data
 - name: obis_data
@@ -1435,6 +1454,7 @@ tools:
   revisions:
   - 4de886e6300d
   - 4edd010161e9
+  - 87ae77f2bd5a
   - c07f11d8e49a
   tool_panel_section_label: Get Data
 - name: dwt_var_perfeature
@@ -1655,7 +1675,9 @@ tools:
 - name: ecoregion_geonearestneighbor
   owner: ecology
   revisions:
+  - 1d225ca5fac0
   - 36637718c51d
+  - 4ed3e4f04b79
   - 5cde56683579
   - ace69a8ec1c3
   tool_panel_section_label: Ecoregionalization
@@ -1664,7 +1686,9 @@ tools:
   revisions:
   - 2129484beb61
   - 3cc4b8bbce00
+  - 694738eda0dc
   - a56c413f3a98
+  - aba980404954
   - f0d6938d0451
   - f8962f1c832a
   - fc621f3f8226
@@ -1672,8 +1696,10 @@ tools:
 - name: ecoregion_taxa_seeker
   owner: ecology
   revisions:
+  - 14bad9452425
   - 18c4cd785a74
   - 2152f424e7a2
+  - 68d98dbd8bfc
   - 788b118910a7
   - 9dc992f80c25
   - e3cd588fd14a
@@ -1684,15 +1710,19 @@ tools:
   - 374555fc30bd
   - 3d750279158b
   - 45784ebada45
+  - 57c618532ac1
   - b38b954b92b9
+  - c2856067ee72
   - c6b1bf7b0ac6
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_cluster_estimate
   owner: ecology
   revisions:
   - 001d7d101915
+  - 0578979cfd83
   - 0f6542d0986e
   - 1b9522671e90
+  - 6c5404468d8c
   - cf7aefee9977
   - e94a25eed489
   tool_panel_section_label: Ecoregionalization
@@ -1703,7 +1733,15 @@ tools:
   - 32849c52aa54
   - 74e966baa5fd
   - 844b5bf84164
+  - c1d03f1a2e80
+  - cc9ea890823c
   - edb8d19735a6
+  tool_panel_section_label: Ecoregionalization
+- name: claraguess
+  owner: ecology
+  revisions:
+  - adeb719a267f
+  - f11879f7b554
   tool_panel_section_label: Ecoregionalization
 - name: map_shp
   owner: ecology
@@ -1759,7 +1797,10 @@ tools:
   revisions:
   - 0077885b6f1d
   - 1ff618d89af4
+  - 5acff8859db2
   - af00a67d3649
+  - d413a6b6cebf
+  - eb41894de107
   tool_panel_section_label: GIS Data Handling
 - name: iabiodiv_smartbiodiv_med_environ
   owner: ecology
@@ -1767,6 +1808,12 @@ tools:
   - b79faea33a8a
   - ca00b2eabdf3
   - f82f266381be
+  tool_panel_section_label: Get Data
+- name: wormsmeasurements
+  owner: ecology
+  revisions:
+  - 23b963a1284e
+  - 6f75ab89587a
   tool_panel_section_label: Get Data
 - name: sdmpredictors_list_layers
   owner: ecology
@@ -1784,3 +1831,24 @@ tools:
   - 12870a79d56b
   - 9d689f8c9ce4
   tool_panel_section_label: Annotation
+- name: crsconverter
+  owner: ecology
+  revisions:
+  - 41679a2d27e1
+  - 5da4708809a0
+  tool_panel_section_label: Phylodiversity
+- name: phylogenetic_occupancy_matcher
+  owner: ecology
+  revisions:
+  - e260f1a598da
+  tool_panel_section_label: Phylodiversity
+- name: phylo_index
+  owner: ecology
+  revisions:
+  - 1d73a4af71f5
+  tool_panel_section_label: Phylodiversity
+- name: estimate_endem
+  owner: ecology
+  revisions:
+  - b8f366e925e7
+  tool_panel_section_label: Phylodiversity
