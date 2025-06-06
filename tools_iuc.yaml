@@ -39,6 +39,9 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: data_manager_fetch_busco_options
+    owner: iuc
+
   - name: chewbbaca_allelecall
     owner: iuc
     tool_panel_section_label: Annotation
@@ -279,6 +282,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: icescreen
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: integron_finder
     owner: iuc
     tool_panel_section_label: Annotation
@@ -375,6 +382,10 @@ tools:
 
   - name: orthofinder_onlygroups
     owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: panaroo
+    owner: galaxy-australia
     tool_panel_section_label: Annotation
 
   - name: plasmidfinder
@@ -717,6 +728,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: syri
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: trycycler_cluster
     owner: iuc
     tool_panel_section_label: Assembly
@@ -847,6 +862,10 @@ tools:
   - name: genebed_maf_to_fasta
     owner: iuc
     tool_panel_section_label: Convert Formats
+
+  - name: geopandas_table2geojson
+    owner: iuc
+    tool_panel_section_label: "Convert Formats"
 
   - name: gfa_to_fa
     owner: iuc
@@ -1001,7 +1020,7 @@ tools:
   - name: revoluzer_distmat
     owner: iuc
     tool_panel_section_label: Evolution
-  
+
 
 
 # EXPRESSION TOOLS
@@ -1497,6 +1516,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Get Data
 
+  - name: openalex_explorer
+    owner: iuc
+    tool_panel_section_label: Get Data
+
   - name: sra_tools
     owner: iuc
     tool_panel_section_label: Get Data
@@ -1978,6 +2001,29 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: kaiju_addtaxonnames
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kaiju_kaiju2table
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kaiju_kaiju2krona
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kaiju_mergeoutputs
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kaiju_kaiju
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: data_manager_kaiju
+    owner: iuc
+
   - name: name2taxid
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2031,6 +2077,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: ampvis2_core
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: ampvis2_export_otu
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -2388,6 +2438,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: combine_metaphlan2_humann2
+    owner: bebatut
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: humann_associate
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2640,6 +2694,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: phyloseq_tax_glom
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: plasflow
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2757,6 +2815,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: binette
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kmer2stats
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -3320,7 +3382,7 @@ tools:
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
-  - name: mmseqs2_easy_linclust_clustering 
+  - name: mmseqs2_easy_linclust_clustering
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
@@ -3363,7 +3425,7 @@ tools:
   - name: sina
     owner: iuc
     tool_panel_section_label: Multiple Alignments
-  
+
 
 # NCBI BLAST
 
@@ -4536,7 +4598,7 @@ tools:
   - name: infercnv
     owner: iuc
     tool_panel_section_label: Single-cell
-   
+
   - name: spacexr_cside
     owner: iuc
     tool_panel_section_label: Single-cell
@@ -4564,8 +4626,11 @@ tools:
   - name: anndata2ri
     owner: iuc
     tool_panel_section_label: Single-cell
-  
-    
+
+  - name: bellavista_prepare
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
 # STATISTICS
 
   - name: best_regression_subsets
@@ -5520,7 +5585,7 @@ tools:
 
   - name: data_manager_gtdbtk_database_installer
     owner: iuc
-  
+
   - name: data_manager_build_staramr
     owner: iuc
 
@@ -5670,7 +5735,7 @@ tools:
   - name: tracegroomer
     owner: iuc
     tool_panel_section_label: Metabolomics
-  
+
   - name: gem_extract_exchange
     owner: iuc
     tool_panel_section_label: Metabolomics
@@ -5678,11 +5743,11 @@ tools:
   - name: gem_flux_distribution
     owner: iuc
     tool_panel_section_label: Metabolomics
-  
+
   - name: gem_escher_visualization
     owner: iuc
     tool_panel_section_label: Metabolomics
-  
+
   - name: gem_check_memote
     owner: iuc
     tool_panel_section_label: Metabolomics

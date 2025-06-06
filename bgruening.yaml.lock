@@ -12,6 +12,11 @@ tools:
   revisions:
   - e62e31ee42d9
   tool_panel_section_label: Machine Learning
+- name: cleanlab
+  owner: bgruening
+  revisions:
+  - 462b5bc27acd
+  tool_panel_section_label: Machine Learning
 - name: glimmer_glimmer_to_gff
   owner: bgruening
   revisions:
@@ -27,6 +32,7 @@ tools:
   - 5376a7767fb3
   - 57e2503e6039
   - 627e8b38f24f
+  - 8f46605c84ec
   - 99217847314a
   - c01226f0d828
   - e88f1111d9e7
@@ -43,6 +49,7 @@ tools:
   - 39881709807e
   - 3e81299dfce3
   - 4dada93ef525
+  - 601575b847c0
   - 7e2ee5f43778
   - 8dbc700cb940
   - a0f01c777820
@@ -51,9 +58,15 @@ tools:
   owner: bgruening
   revisions:
   - 2a5a0b61a84e
+  - 76acb1175c57
   - bb871fbe177f
   - cfe1d6e23237
   - fd0e8bda0154
+  tool_panel_section_label: Convert Formats
+- name: ffmpeg_converter
+  owner: bgruening
+  revisions:
+  - 288f703056b0
   tool_panel_section_label: Convert Formats
 - name: hictk
   owner: bgruening
@@ -64,6 +77,11 @@ tools:
   - af0d9df0641e
   - d36215791ad3
   - d6b28a54592a
+  tool_panel_section_label: Convert Formats
+- name: markitdown
+  owner: bgruening
+  revisions:
+  - 5ad32046903b
   tool_panel_section_label: Convert Formats
 - name: uniprot_rest_interface
   owner: bgruening
@@ -162,6 +180,7 @@ tools:
   - 291923e6f276
   - 3e4f8642c77e
   - 3ee0ef312022
+  - 643e0ff70be5
   - 8d4f03b5fe9d
   - cb8dfd28c16f
   - cd11366d92cf
@@ -184,6 +203,7 @@ tools:
   owner: bgruening
   revisions:
   - 99ddbf037d98
+  - bfab6f5b449d
   - f6065bc6e428
   tool_panel_section_label: Assembly
 - name: nextdenovo
@@ -249,6 +269,7 @@ tools:
   - 50b6ec4074f4
   - 5127a713de83
   - 5799092ffdff
+  - 59150c883ed5
   - 690c2caa367e
   - 6ec1b853c8fd
   - 764f2516d837
@@ -260,6 +281,7 @@ tools:
 - name: trim_galore
   owner: bgruening
   revisions:
+  - b94789823aad
   - cd7e644cae1d
   - eefb644655a5
   tool_panel_section_label: FASTA/FASTQ
@@ -326,13 +348,16 @@ tools:
   owner: bgruening
   revisions:
   - 000f171afabb
+  - 4fd6e8b051e9
   - 9b8fc55cb9eb
   - b0f2d3b4a278
   - caea9ee1ffac
+  - d5233b9d32bb
   tool_panel_section_label: Imaging
 - name: woundhealing_scratch_assay
   owner: bgruening
   revisions:
+  - 6b341a048c2e
   - 8948cc562b7c
   tool_panel_section_label: Imaging
 - name: keras_batch_models
@@ -1053,6 +1078,7 @@ tools:
 - name: tabpfn
   owner: bgruening
   revisions:
+  - 1d77df05cbfc
   - 33d53eb476fd
   - 49b4ee0d0965
   - c081e5e1d7ce
@@ -1066,7 +1092,15 @@ tools:
 - name: flexynesis
   owner: bgruening
   revisions:
+  - 0bef7ea84b7f
+  - 2134c3079055
   - bd808d1c4e0c
+  tool_panel_section_label: Machine Learning
+- name: flexynesis_cbioportal_import
+  owner: bgruening
+  revisions:
+  - 0e9e3e083350
+  - 9c949eca5d72
   tool_panel_section_label: Machine Learning
 - name: chatgpt_openai_api
   owner: bgruening
@@ -1133,6 +1167,24 @@ tools:
   revisions:
   - 0370fe3cf518
   - c153e8dd94ad
+- name: sylph_query
+  owner: bgruening
+  revisions:
+  - d2a4c2cb8779
+  tool_panel_section_label: Metagenomic Analysis
+- name: sylph_profile
+  owner: bgruening
+  revisions:
+  - 6c1ac7640090
+  tool_panel_section_label: Metagenomic Analysis
+- name: data_manager_sylph_database
+  owner: bgruening
+  revisions:
+  - 130224fe2d18
+- name: data_manager_sylph_tax_database
+  owner: bgruening
+  revisions:
+  - 7862ca465c6b
 - name: tiara
   owner: bgruening
   revisions:
@@ -1143,6 +1195,11 @@ tools:
   owner: bgruening
   revisions:
   - f0454b7881f4
+  tool_panel_section_label: Metagenomic Analysis
+- name: vrhyme
+  owner: bgruening
+  revisions:
+  - 0fccc65dcb0b
   tool_panel_section_label: Metagenomic Analysis
 - name: mafft
   owner: rnateam
@@ -1263,6 +1320,18 @@ tools:
   - 22232092be53
   - b5185a4f5209
   tool_panel_section_label: Single-cell
+- name: vpt_extract
+  owner: bgruening
+  revisions:
+  - 34b32e87356f
+  - 7d42c9b75718
+  tool_panel_section_label: Single-cell
+- name: vpt_segment
+  owner: bgruening
+  revisions:
+  - 5bd5f26279fd
+  - ed28a1feba82
+  tool_panel_section_label: Single-cell
 - name: bg_statistical_hypothesis_testing
   owner: bgruening
   revisions:
@@ -1322,6 +1391,7 @@ tools:
   - 10ef1bf99074
   - 156d0908e232
   - 95a9dc82fc9a
+  - be2d899bf34a
   tool_panel_section_label: Text Manipulation
 - name: replace_column_by_key_value_file
   owner: bgruening
