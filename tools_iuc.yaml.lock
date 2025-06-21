@@ -658,6 +658,7 @@ tools:
   owner: iuc
   revisions:
   - 85010d0eaa6c
+  - b0d80d456120
   - ef6ed729b69a
   - f2e87c81497d
   tool_panel_section_label: Annotation
@@ -1937,6 +1938,7 @@ tools:
   - 18dbde5680c0
   - 3d07b8a6dd8c
   - 7d3cd2087698
+  - 85a38dffb93d
   - b9ea85dfaf45
   - c2eda9a95b01
   tool_panel_section_label: Convert Formats
@@ -2360,6 +2362,7 @@ tools:
   - d60c3f704da0
   - dbf9c561ef29
   - dbfc505896e9
+  - e25816738ef3
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_combiner
   owner: devteam
@@ -5116,17 +5119,20 @@ tools:
   - 5ee29434330f
   - 7ccea589e8b7
   - bcb8dc01f296
+  - f23a0598b4bc
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_lineage_set
   owner: iuc
   revisions:
   - 3693acdbf0d6
   - 640400ad260d
+  - a32ee0bb028b
   - b39999cdbf21
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_lineage_wf
   owner: iuc
   revisions:
+  - '482705438671'
   - 760dc0c0e689
   - 8345d273ba82
   - f0107b9f2dc3
@@ -5134,6 +5140,7 @@ tools:
 - name: checkm_plot
   owner: iuc
   revisions:
+  - 0ac2ba0b0d81
   - 356839cd89d2
   - 9916308301da
   - b24e4f6c8b4d
@@ -5144,10 +5151,12 @@ tools:
   - 5466420816b9
   - 5c0493cdced9
   - 8236b90ce44c
+  - 82caa8ed507c
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_taxon_set
   owner: iuc
   revisions:
+  - 03c18e927a7e
   - 407e50329077
   - 600b129adb72
   - e3f1c47246fd
@@ -5155,6 +5164,7 @@ tools:
 - name: checkm_taxonomy_wf
   owner: iuc
   revisions:
+  - 0ea86ba426e1
   - 19e4e2d98ebb
   - 2e995a9aa00e
   - 91230b9141c1
@@ -5162,6 +5172,7 @@ tools:
 - name: checkm_tetra
   owner: iuc
   revisions:
+  - 46bc08145439
   - 878d742dacf0
   - bb3b50fa4956
   - d0d9e52a46b8
@@ -5169,6 +5180,7 @@ tools:
 - name: checkm_tree
   owner: iuc
   revisions:
+  - 626ab1058170
   - 6d1c282e2ce2
   - 9b2790bca5b5
   - ce3fd529a6ec
@@ -5177,6 +5189,7 @@ tools:
   owner: iuc
   revisions:
   - 36ea6d5441c3
+  - a99ca4bb4d1d
   - b9a38ce53252
   - dd51f61c2309
   tool_panel_section_label: Metagenomic Analysis
@@ -9249,6 +9262,7 @@ tools:
   owner: iuc
   revisions:
   - 10112d9127af
+  - 16888c5c9ed5
   - 26abc7846e6f
   - 4850f0d15f01
   - 54fb02338510
@@ -9269,6 +9283,7 @@ tools:
   - 4ab23324f633
   - 6eec1c6410fe
   - 85ffb2cc6b64
+  - a83f63833669
   - a87f7278b4ee
   - b183a90fe278
   - d348c3a151d9
@@ -9282,6 +9297,7 @@ tools:
   - 2bb8251d132c
   - 2e0e9c418a85
   - 387d3633cade
+  - 8e27ee06aea4
   - 9b67a50799e9
   - a670bdbf8869
   - c3f58c2eee1e
@@ -9678,6 +9694,7 @@ tools:
   owner: iuc
   revisions:
   - b42373cddb77
+  - e81fbbea6e8f
   - e98d4ab5b5bc
   tool_panel_section_label: RNA Analysis
 - name: deseq2
@@ -10303,6 +10320,7 @@ tools:
   revisions:
   - 04866f817daa
   - 4d343c1f606b
+  - 8eb649e67987
   - 970e6333f07e
   - befc9dad4ca8
   - c1a1bea37098
@@ -10314,6 +10332,7 @@ tools:
   - 108db6635177
   - 1dfd95ee241e
   - 4fe8a75334c8
+  - 62e4d6cdbaa7
   - 993b19f20c76
   - bd735cae4ce6
   - cb20f99fd45b
@@ -10434,6 +10453,7 @@ tools:
   - 5f3ea90dc6ae
   - 6a8febad1f6c
   - a941babb9268
+  - f597cb9b33bf
   tool_panel_section_label: SAM/BAM
 - name: samtools_bedcov
   owner: devteam
@@ -10441,6 +10461,7 @@ tools:
   - 12749212f61b
   - 46c6639921f1
   - 6856f8a01905
+  - 762f63d4e25d
   - 9149ad20699a
   - c04bee391baa
   tool_panel_section_label: SAM/BAM
@@ -10451,6 +10472,7 @@ tools:
   - 1ebb4ecdc1ef
   - 26b4f9f98aca
   - 33208952b99d
+  - 3d5853a84711
   - 3d873744df7e
   - 92ec40abcdcf
   - c147e3a10573
@@ -10464,6 +10486,7 @@ tools:
   - 90f2dd176d80
   - ae36fab06bc2
   - c4ff13d2aab3
+  - ddbd49b892e5
   - f4f7f632815d
   tool_panel_section_label: SAM/BAM
 - name: samtools_depth
@@ -10472,6 +10495,7 @@ tools:
   - 2ee8dc1aeda9
   - 44de678a44c4
   - 56faa6a57e50
+  - '772919943459'
   - 971dc85e9441
   tool_panel_section_label: SAM/BAM
 - name: samtools_fastx
@@ -10479,6 +10503,7 @@ tools:
   revisions:
   - 66e23b11feae
   - 720217c23995
+  - 9038311ed624
   - a8d69aee190e
   - b3d99709fe1a
   - b906586a6596
@@ -10489,6 +10514,7 @@ tools:
   - 41e36c99a008
   - 595ae1ba934a
   - bc0cc7bfbfe9
+  - c05afbeaf42d
   - d2df79922531
   - e5ece8fa99de
   tool_panel_section_label: SAM/BAM
@@ -10500,6 +10526,7 @@ tools:
   - 4e404acfafa6
   - cc61ade70eb8
   - db17d5321bad
+  - fbc6c28a5b14
   - fe34990e5ce7
   - fefd89ab563c
   tool_panel_section_label: SAM/BAM
@@ -10512,11 +10539,13 @@ tools:
   - 811fc2d75ad4
   - 87398ae795c7
   - 88b8c2916784
+  - c9d9f721a568
   - fa5d3e61e429
   tool_panel_section_label: SAM/BAM
 - name: samtools_markdup
   owner: iuc
   revisions:
+  - 229ba92a3b55
   - 40fa6c240105
   - 83b8e36e9cbe
   - 887e02a45734
@@ -10534,6 +10563,7 @@ tools:
   - 65a38e8c8e2a
   - 740ce0a18f0d
   - 8890e2d4c068
+  - a7617eb92baf
   - b40e2d865d52
   - cae2794d2deb
   tool_panel_section_label: SAM/BAM
@@ -10542,6 +10572,7 @@ tools:
   revisions:
   - 111f83918fe6
   - 329deb17a9f7
+  - 32f6fffbc3e9
   - 44a18a94d7a9
   - 583abf29fc8e
   - 8da515fbc1bf
@@ -10561,6 +10592,7 @@ tools:
   owner: devteam
   revisions:
   - 020e144b5f78
+  - 2d7f0d455ad4
   - 30388d878f81
   - 85e38b31e8b3
   - bb8cfc6f6e0c
@@ -10582,11 +10614,13 @@ tools:
   - a4a10c7924d1
   - b5c88b7b153e
   - b8beef827165
+  - fea1a167b822
   tool_panel_section_label: SAM/BAM
 - name: samtools_sort
   owner: devteam
   revisions:
   - 6c2c1836728b
+  - 9ede25e390ff
   - a430da4f04cd
   - cab3f8d35989
   - d54a4df48867
@@ -10617,6 +10651,7 @@ tools:
   - 793ad847121d
   - 8cfc17e27132
   - 95a7ddf617e7
+  - e221fe58c2f5
   - e28839a4b932
   - fed4aa48ba09
   tool_panel_section_label: SAM/BAM
@@ -10626,6 +10661,7 @@ tools:
   - 0dbf49c414ae
   - 2dce91e11ca7
   - 32dc5f781059
+  - 48bbbcb692ce
   - 5826298f6a73
   - 6be888be75f9
   - b01db2684fa5
