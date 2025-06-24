@@ -151,7 +151,7 @@ tools:
   - name: erga_ear
     owner: bgruening
     tool_panel_section_label: Assembly
-  
+
 
 # COLLECTION OPERATIONS
 
@@ -374,7 +374,15 @@ tools:
   - name: flexynesis_cbioportal_import
     owner: bgruening
     tool_panel_section_label: Machine Learning
-    
+
+  - name: flexynesis_plot
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: flexynesis_utils
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
   - name: chatgpt_openai_api
     owner: bgruening
     tool_panel_section_label: Machine Learning
@@ -436,7 +444,7 @@ tools:
 
   - name: data_manager_sylph_tax_database
     owner: bgruening
- 
+
   - name: tiara
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
@@ -444,7 +452,7 @@ tools:
   - name: qiime2_dbotu_q2
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
-    
+
   - name: vrhyme
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
@@ -518,11 +526,11 @@ tools:
   - name: music_manipulate_eset
     owner: bgruening
     tool_panel_section_label: Single-cell
-    
+
   - name: vpt_extract
     owner: bgruening
     tool_panel_section_label: Single-cell
-    
+
   - name: vpt_segment
     owner: bgruening
     tool_panel_section_label: Single-cell
