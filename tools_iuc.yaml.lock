@@ -182,12 +182,14 @@ tools:
 - name: deeparg_predict
   owner: iuc
   revisions:
+  - 07801d7ee81f
   - 3953324f6d31
   tool_panel_section_label: Annotation
 - name: deeparg_short_reads
   owner: iuc
   revisions:
   - 558018b49a4c
+  - 854b7c026a7e
   tool_panel_section_label: Annotation
 - name: data_manager_funannotate_options
   owner: iuc
@@ -1289,12 +1291,14 @@ tools:
   - 5412142130ad
   - 55a53b5e308d
   - 56bb29747b4d
+  - 914533f3507e
   - ae537f4d4b93
   - c162f3c43442
   tool_panel_section_label: Assembly
 - name: pairtools_parse
   owner: iuc
   revisions:
+  - 2131d908a798
   - 26ed6ceeeec1
   - 44cb74c154bc
   - 678f10bb377e
@@ -1312,6 +1316,7 @@ tools:
   - 53d73d58e105
   - a7035be049e4
   - c46d1454f3a1
+  - f4b5f58b89bf
   tool_panel_section_label: Assembly
 - name: pairtools_sort
   owner: iuc
@@ -1321,11 +1326,13 @@ tools:
   - 8cffb8fc34f0
   - 8ed44487c834
   - d392cfd963f4
+  - f695bf165247
   - fdd073110081
   tool_panel_section_label: Assembly
 - name: pairtools_stats
   owner: iuc
   revisions:
+  - 3191d425e302
   - 3c87fa1a3b50
   - 6cbca5661205
   - 7f71687c8146
@@ -1344,12 +1351,14 @@ tools:
   revisions:
   - 408ece2e4647
   - 75b4a2298714
+  - 936a1edffce8
   - eca7d3a0c5f2
   tool_panel_section_label: Assembly
 - name: pretext_map
   owner: iuc
   revisions:
   - 02831bf9e95f
+  - 0346286a3b0a
   - 2b16ba799da9
   - 511e5e3cd55e
   - 79b48f02db49
@@ -1982,6 +1991,7 @@ tools:
   - 356dc923f8d3
   - 3c6f9e8a4c17
   - 4a81db403bd9
+  - 6e1aa95afa75
   - 8067dfa00ed2
   - d025a40bbff1
   - e9bbe2f71784
@@ -2349,6 +2359,7 @@ tools:
   - 10678d49d39e
   - 1d8fe9bc4cb0
   - 25c59c0ceb55
+  - 281054a26e41
   - 3432a0e49b86
   - 3e2551a37201
   - 415fd81b85d3
@@ -2363,6 +2374,11 @@ tools:
   - dbf9c561ef29
   - dbfc505896e9
   - e25816738ef3
+  tool_panel_section_label: FASTA/FASTQ
+- name: fastplong
+  owner: iuc
+  revisions:
+  - 1d34936d4497
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_combiner
   owner: devteam
@@ -3537,6 +3553,7 @@ tools:
   - 6c571966cfb9
   - 7a5eaa19e92f
   - 7c9417381ad5
+  - 9ec9c22767c8
   tool_panel_section_label: Graph/Display Data
 - name: pygenometracks
   owner: iuc
@@ -8191,6 +8208,11 @@ tools:
   - 56d7dc39eec8
   - fd62f1b940f6
   tool_panel_section_label: Multiple Alignments
+- name: tesseract
+  owner: iuc
+  revisions:
+  - 49dbf2f5b0e2
+  tool_panel_section_label: Imaging
 - name: bbtools_bbduk
   owner: iuc
   revisions:
@@ -9332,6 +9354,11 @@ tools:
   - f7985e0479b9
   - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
+- name: sequali
+  owner: iuc
+  revisions:
+  - abea23542a6b
+  tool_panel_section_label: Quality Control
 - name: bayescan
   owner: iuc
   revisions:
@@ -10453,11 +10480,13 @@ tools:
   - 5f3ea90dc6ae
   - 6a8febad1f6c
   - a941babb9268
+  - f20b704ba069
   - f597cb9b33bf
   tool_panel_section_label: SAM/BAM
 - name: samtools_bedcov
   owner: devteam
   revisions:
+  - 09652022e285
   - 12749212f61b
   - 46c6639921f1
   - 6856f8a01905
@@ -10470,6 +10499,7 @@ tools:
   revisions:
   - 06dc50b7b711
   - 1ebb4ecdc1ef
+  - 22c2ab33cec9
   - 26b4f9f98aca
   - 33208952b99d
   - 3d5853a84711
@@ -10523,6 +10553,7 @@ tools:
   revisions:
   - 13c4ad597626
   - 22970df7a40e
+  - 3ed3e1146308
   - 4e404acfafa6
   - cc61ade70eb8
   - db17d5321bad
@@ -10534,6 +10565,7 @@ tools:
   owner: devteam
   revisions:
   - 04d5581db1f5
+  - 5c25c98e2a88
   - 7a6034296ae9
   - 7def34e6cf4d
   - 811fc2d75ad4
@@ -10575,6 +10607,7 @@ tools:
   - 32f6fffbc3e9
   - 44a18a94d7a9
   - 583abf29fc8e
+  - 7df230bec125
   - 8da515fbc1bf
   - 9da0311ab1dd
   - b61f5d6a7f25
@@ -10592,6 +10625,7 @@ tools:
   owner: devteam
   revisions:
   - 020e144b5f78
+  - 2899e5b8c52a
   - 2d7f0d455ad4
   - 30388d878f81
   - 85e38b31e8b3
@@ -10612,6 +10646,7 @@ tools:
   - 344fc91e1bfd
   - 68ba55e96489
   - a4a10c7924d1
+  - adc4ed59d82b
   - b5c88b7b153e
   - b8beef827165
   - fea1a167b822
@@ -10625,6 +10660,7 @@ tools:
   - cab3f8d35989
   - d54a4df48867
   - e613c1ad4c4c
+  - f2f2650aeade
   - f56bdb93ae58
   tool_panel_section_label: SAM/BAM
 - name: samtools_split
@@ -10643,6 +10679,7 @@ tools:
   revisions:
   - 145f6d74ff5e
   - 1cc79f49b8d5
+  - 1ed8ed887035
   - 24c5d43cb545
   - 3a0efe14891f
   - 47035d167365
@@ -10692,6 +10729,7 @@ tools:
 - name: tasmanian_mismatch
   owner: iuc
   revisions:
+  - 98f2b5dfdaa9
   - b15fbf90db53
   tool_panel_section_label: SAM/BAM
 - name: tracy_align
@@ -11637,6 +11675,7 @@ tools:
   - 5ceeb5a5d70f
   - 76d6358f71b7
   - 7a82006f7c05
+  - c23737f9714f
   tool_panel_section_label: Variant Calling
 - name: artic_minion
   owner: iuc
@@ -11645,6 +11684,7 @@ tools:
   - 376a706dda11
   - 468b90c41cde
   - 6f52ebc01098
+  - 7021ed347f7e
   - 7a7d7f30ddfc
   - 93cfe7df7f8a
   - 94020e19b46c
@@ -12775,6 +12815,7 @@ tools:
   revisions:
   - 3c19c84fbce2
   - 78df8fc2b3ab
+  - 98c227b9be71
   - a40dd4fd3096
   - d9965e143053
   tool_panel_section_label: Variant Calling
