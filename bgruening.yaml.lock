@@ -370,6 +370,7 @@ tools:
 - name: json2yolosegment
   owner: bgruening
   revisions:
+  - 8cc1936ab69b
   - fa068d13e781
   tool_panel_section_label: Imaging
 - name: yolo_predict
@@ -1111,11 +1112,17 @@ tools:
   revisions:
   - 02fa7b2245e6
   tool_panel_section_label: Machine Learning
+- name: whisperx
+  owner: bgruening
+  revisions:
+  - 01b0fcc50e74
+  tool_panel_section_label: Machine Learning
 - name: flexynesis
   owner: bgruening
   revisions:
   - 0bef7ea84b7f
   - 2134c3079055
+  - 9450286c42ab
   - bd808d1c4e0c
   - d89227ba1de6
   tool_panel_section_label: Machine Learning
@@ -1124,16 +1131,19 @@ tools:
   revisions:
   - 0e9e3e083350
   - 2b414a6c35af
+  - 3f7481deaff1
   - 9c949eca5d72
   tool_panel_section_label: Machine Learning
 - name: flexynesis_plot
   owner: bgruening
   revisions:
+  - 07f018886d40
   - 273b0c36d8a2
   tool_panel_section_label: Machine Learning
 - name: flexynesis_utils
   owner: bgruening
   revisions:
+  - 35f41ee7ca20
   - 963b22bdf237
   tool_panel_section_label: Machine Learning
 - name: chatgpt_openai_api

@@ -200,6 +200,7 @@ tools:
   revisions:
   - 4a72de3780aa
   - 50f4ff01d845
+  - c5511a9b1442
 - name: data_manager_fetch_plasmidfinder
   owner: iuc
   revisions:
@@ -911,6 +912,7 @@ tools:
   - 49b819f88c2b
   - 5182e1a99313
   - 51dd22484644
+  - 60a1dad331ec
   - 809dfc93d593
   - 8cb134b8c1a5
   - ac8250086ac3
@@ -1736,6 +1738,11 @@ tools:
   - b19e21af9c52
   - bf793b71559a
   tool_panel_section_label: Collection Operations
+- name: diffdock
+  owner: iuc
+  revisions:
+  - bfba870d3537
+  tool_panel_section_label: ChemicalToolBox
 - name: bbgbigwig
   owner: iuc
   revisions:
@@ -1892,6 +1899,7 @@ tools:
   owner: iuc
   revisions:
   - 7bc130112fa3
+  - fb5081261c10
   tool_panel_section_label: Convert Formats
 - name: gfa_to_fa
   owner: iuc
@@ -1977,6 +1985,7 @@ tools:
   owner: iuc
   revisions:
   - 05afdd33dac7
+  - 7e353b95f0b6
   - ac3bae00a350
   tool_panel_section_label: Convert Formats
 - name: ucsc_maftoaxt
@@ -2013,17 +2022,20 @@ tools:
   owner: iuc
   revisions:
   - 128ec4c44111
+  - 5c3fa42d003f
   - 728e3b913fbe
   tool_panel_section_label: Convert Formats
 - name: ucsc_chainnet
   owner: iuc
   revisions:
   - 3a213e01bc7f
+  - 5b65a92be96c
   tool_panel_section_label: Convert Formats
 - name: ucsc_chainantirepeat
   owner: iuc
   revisions:
   - 91674d4623a8
+  - 9f2d2c96a189
   tool_panel_section_label: Convert Formats
 - name: emboss_5
   owner: devteam
@@ -2844,6 +2856,7 @@ tools:
 - name: ucsc_fasplit
   owner: iuc
   revisions:
+  - 1add611a6018
   - 71f649c23021
   - bf04bd405d5b
   - d3f58a0dc09d
@@ -3613,6 +3626,11 @@ tools:
   - 23657fcaaa5c
   - 319fa5a9fc1b
   - ecb437f1d298
+  tool_panel_section_label: Graph/Display Data
+- name: graphlan
+  owner: iuc
+  revisions:
+  - 6e8eb0c0d91f
   tool_panel_section_label: Graph/Display Data
 - name: hicexplorer_chicaggregatestatistic
   owner: bgruening
@@ -6362,6 +6380,7 @@ tools:
 - name: scoary
   owner: iuc
   revisions:
+  - 295b25fe8e25
   - 42a1a5750539
   - 77d50ec2bcf2
   tool_panel_section_label: Metagenomic Analysis
@@ -6549,6 +6568,7 @@ tools:
 - name: binette
   owner: iuc
   revisions:
+  - 15dba9749732
   - 1d97ddbc3464
   - 6641160f2053
   - 70b492856e17
