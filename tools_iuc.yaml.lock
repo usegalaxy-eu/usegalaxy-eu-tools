@@ -168,6 +168,15 @@ tools:
   - 8f20a5b9b282
   - cfec9601b25d
   tool_panel_section_label: Annotation
+- name: coreprofiler_allele_calling
+  owner: iuc
+  revisions:
+  - 8b8c1c9c0413
+  tool_panel_section_label: Annotation
+- name: data_manager_build_coreprofiler
+  owner: iuc
+  revisions:
+  - c3553950db1b
 - name: evidencemodeler
   owner: iuc
   revisions:
@@ -1298,6 +1307,7 @@ tools:
   - 5412142130ad
   - 55a53b5e308d
   - 56bb29747b4d
+  - 608ea80cccba
   - 914533f3507e
   - ae537f4d4b93
   - c162f3c43442
@@ -1309,6 +1319,7 @@ tools:
   - 26ed6ceeeec1
   - 44cb74c154bc
   - 678f10bb377e
+  - 729197476fc1
   - 963d674e438d
   - a98caf2d8309
   - b0a1f128fa15
@@ -1318,6 +1329,7 @@ tools:
   owner: iuc
   revisions:
   - 060f0fed864e
+  - 0fb51c6f2e37
   - 2c87e49a6407
   - 39df08e91cdf
   - 53d73d58e105
@@ -1332,6 +1344,7 @@ tools:
   - 5fd78abb0d81
   - 8cffb8fc34f0
   - 8ed44487c834
+  - c1c1d894dd3a
   - d392cfd963f4
   - f695bf165247
   - fdd073110081
@@ -1346,6 +1359,7 @@ tools:
   - 81fc1418fbfb
   - ade829d2ae3a
   - c20a07c9237b
+  - cfeb5205eacc
   tool_panel_section_label: Assembly
 - name: pilon
   owner: iuc
@@ -2142,6 +2156,11 @@ tools:
   - 5c2ac7f640ab
   - ab50e1a75a77
   tool_panel_section_label: Evolution
+- name: map_damage
+  owner: iuc
+  revisions:
+  - 0287e2f82b64
+  tool_panel_section_label: Evolution
 - name: mutate_snp_codon
   owner: devteam
   revisions:
@@ -2162,6 +2181,7 @@ tools:
 - name: tn93
   owner: iuc
   revisions:
+  - 00a8c36fc98c
   - 2fd21f5b16bc
   - 9d793e88e15f
   - b38f620a3628
@@ -2170,12 +2190,14 @@ tools:
   owner: iuc
   revisions:
   - 112d80c9ccca
+  - 476189b83931
   - af03f3398f03
   - eb6f0ec5b95e
   tool_panel_section_label: Evolution
 - name: tn93_filter
   owner: iuc
   revisions:
+  - 017db1b776d9
   - 1aa73004ba9b
   - ba95715078c9
   - cf50aeb956f2
@@ -2184,6 +2206,7 @@ tools:
   owner: iuc
   revisions:
   - 1d2ec0b0a0a7
+  - 4e68161336da
   - 84849140a3bc
   - c176164dc8a5
   tool_panel_section_label: Evolution
@@ -2973,6 +2996,7 @@ tools:
   - 31d5c8c3adde
   - 3c5e024a18cf
   - 3c97c841a443
+  - a3e78550e42e
   - c80cdc2eac6d
   - f99d7825a501
   - f99dd58de04f
@@ -3297,6 +3321,7 @@ tools:
   owner: iuc
   revisions:
   - 0622d99c2619
+  - 0f3b3813b6ae
   - 18eed8fa7f23
   - 198c75abbf55
   - 1a7773882d2c
@@ -4550,6 +4575,7 @@ tools:
 - name: kma
   owner: iuc
   revisions:
+  - 0e8330535ea0
   - 2595c27071c2
   - 95ab864b281a
   - 98099e4da1fd
@@ -10780,6 +10806,7 @@ tools:
   - 5cd5d0947354
   - 69f93450c57d
   - 91d89a597aac
+  - b1a8d09e5a82
   - efd53f6ceb16
   tool_panel_section_label: SAM/BAM
 - name: tasmanian_mismatch
@@ -11464,6 +11491,11 @@ tools:
   revisions:
   - 6c29c7e347e8
   - 7a15159140d1
+  tool_panel_section_label: Statistics
+- name: fastspar
+  owner: iuc
+  revisions:
+  - e9231fb122e9
   tool_panel_section_label: Statistics
 - name: generate_pc_lda_matrix
   owner: devteam
@@ -13232,6 +13264,7 @@ tools:
   revisions:
   - 0ceb9fb0f4ce
   - 1f89eeba299a
+  - 3d9253661554
   - 54acd5139cab
   - 640c0b8cc8bf
   - 948903a8555d
@@ -13240,6 +13273,7 @@ tools:
   owner: iuc
   revisions:
   - 16331f8cff98
+  - 2d1bfff73837
   - 95e88f407e86
   - a09398bc953a
   - cd5d77d118f2
@@ -13252,6 +13286,7 @@ tools:
   - c0a0e79d7196
   - c5f2ce99da69
   - e7a2086a0f03
+  - e9f497a660d6
   - fc6252e78d5b
   tool_panel_section_label: Virology
 - name: freyja_variants
@@ -13262,6 +13297,7 @@ tools:
   - 11c062caec10
   - 1f467ed22412
   - d17f930148a5
+  - eccec0876e54
   tool_panel_section_label: Virology
 - name: lineagespot
   owner: iuc
@@ -13470,6 +13506,7 @@ tools:
   revisions:
   - 19bbd19b74b3
   - 60eb2512c5a0
+  - 81aa3846c4ea
   - 87febc68b45b
   - fea85c467896
 - name: data_manager_interproscan
