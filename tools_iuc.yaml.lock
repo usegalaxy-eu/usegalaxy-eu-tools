@@ -2098,6 +2098,7 @@ tools:
   - 95219305823a
   - a6ea26c1f225
   - b4e6819b25ef
+  - b6b87635cf29
   - cf1322aeb137
   - d82648ad25a3
   - f7094efef903
@@ -2334,6 +2335,11 @@ tools:
   - c5e2e5902201
   - de6cebe3c043
   - fe74900d6dc7
+  tool_panel_section_label: FASTA/FASTQ
+- name: cialign
+  owner: iuc
+  revisions:
+  - 3c5bdab3c7b7
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_clipping_histogram
   owner: devteam
@@ -3333,6 +3339,7 @@ tools:
   - 6c829a430475
   - 75acf92c8fd5
   - 7b925f7c50b2
+  - 95be88b49f4e
   - a3395b1d871b
   - a6a475ed58cb
   - b2ae7186d41f
@@ -4642,6 +4649,7 @@ tools:
   - 53c0b7a1a0c3
   - 5cc34c3f440d
   - 66367287b4e6
+  - 6945cd53bd2d
   - 6b1e195506a3
   - 6f50f36e4481
   - 77b2770508f6
@@ -4830,6 +4838,7 @@ tools:
   owner: iuc
   revisions:
   - 02bbace216f2
+  - 05e78a90e02d
   - 2deaada69b14
   - 773615269d71
   - 88d274322340
@@ -4842,6 +4851,7 @@ tools:
   - 93203a7af11b
   - bb96a1e6583d
   - d33cf727ed94
+  - fd7d3bfb0fa8
   tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_beta_diversity
   owner: iuc
@@ -4849,6 +4859,7 @@ tools:
   - 214ece7f1216
   - 4505d7643673
   - 4b32f3b4a851
+  - 5fa703b1f68a
   - b33f117e9b67
   - c254d75b8b67
   - fc2077c654fb
@@ -4856,6 +4867,7 @@ tools:
 - name: krakentools_alpha_diversity
   owner: iuc
   revisions:
+  - 7337f9722ad7
   - 78b69342c280
   - 8ac5d5c9a5e4
   - 9d0330e23bfd
@@ -4869,11 +4881,13 @@ tools:
   - 073c867c5244
   - 3d2cffa2c4ab
   - 4960abe31b4d
+  - 59fa9d9f4e34
   - e0d3f5969458
   tool_panel_section_label: Metagenomic Analysis
 - name: krakentools_extract_kraken_reads
   owner: iuc
   revisions:
+  - 3b1963f729cb
   - 4bf1e2701504
   - 519e0835abd7
   - f329328da134
@@ -5313,6 +5327,7 @@ tools:
   owner: iuc
   revisions:
   - 15f6ef1d7c96
+  - 5910c5106cdc
   tool_panel_section_label: Metagenomic Analysis
 - name: concoct
   owner: iuc
@@ -6335,6 +6350,11 @@ tools:
   - 2eef3b6f1c84
   - b613e5dd5e83
   tool_panel_section_label: Metagenomic Analysis
+- name: micro_decon
+  owner: iuc
+  revisions:
+  - bd267e082f86
+  tool_panel_section_label: Metagenomic Analysis
 - name: nonpareil
   owner: iuc
   revisions:
@@ -6422,6 +6442,36 @@ tools:
   owner: iuc
   revisions:
   - a9c63fac301a
+  tool_panel_section_label: Metagenomic Analysis
+- name: pimento_are_there_primers
+  owner: iuc
+  revisions:
+  - 7a97ac708fee
+  tool_panel_section_label: Metagenomic Analysis
+- name: pimento_auto
+  owner: iuc
+  revisions:
+  - f41d29b1a43e
+  tool_panel_section_label: Metagenomic Analysis
+- name: pimento_choose_primer_cutoff
+  owner: iuc
+  revisions:
+  - 16d91d782bf8
+  tool_panel_section_label: Metagenomic Analysis
+- name: pimento_find_cutoffs
+  owner: iuc
+  revisions:
+  - eba53f3623c9
+  tool_panel_section_label: Metagenomic Analysis
+- name: pimento_gen_bcv
+  owner: iuc
+  revisions:
+  - 790332d37eb1
+  tool_panel_section_label: Metagenomic Analysis
+- name: pimento_std
+  owner: iuc
+  revisions:
+  - 1ddab994fcee
   tool_panel_section_label: Metagenomic Analysis
 - name: plasflow
   owner: iuc
@@ -6594,6 +6644,7 @@ tools:
 - name: virannot_blast2tsv
   owner: iuc
   revisions:
+  - 5c53a5baaf72
   - 77c3ef9b0ed7
   - 88ebde55bef8
   - bb29ae8708b5
@@ -6607,6 +6658,7 @@ tools:
   - 6838c2fd1228
   - 735a21808348
   - adcf06db3030
+  - b98e11966036
   - c9dac9b2e01c
   tool_panel_section_label: Metagenomic Analysis
 - name: virannot_rps2tsv
@@ -6614,6 +6666,7 @@ tools:
   revisions:
   - 84d20d9c292d
   - 998724a43694
+  - aac02a3a395c
   - bbaa89f070f4
   - d1fd5579469d
   - fd7104249a3c
@@ -8351,6 +8404,7 @@ tools:
   - 1e3323a44643
   - 20d92dc4c6cb
   - 60f307965815
+  - 8b8a3f793f0f
   - e8ac2b53f262
   tool_panel_section_label: NCBI Blast
 - name: magicblast
@@ -10905,6 +10959,11 @@ tools:
   - e1b3b37aa69f
   - ea5e944f447d
   tool_panel_section_label: Send Data
+- name: ena_webin_cli
+  owner: iuc
+  revisions:
+  - c9f87770ba8f
+  tool_panel_section_label: Send Data
 - name: cosg
   owner: iuc
   revisions:
@@ -12680,6 +12739,7 @@ tools:
   owner: devteam
   revisions:
   - 04fa42777df9
+  - 0d8581534009
   - 156b60c1530f
   - 1e1291983bc7
   - 213a3d6b579a
@@ -13357,6 +13417,7 @@ tools:
   - 1069f6db0a0e
   - 17f911830a8c
   - 196d126cd016
+  - 1c5448133894
   - 253935875d96
   - 2d9926ce62be
   - 3a72fede57ce
@@ -13380,6 +13441,7 @@ tools:
   - 0135f1d487a0
   - 096a5b0210cc
   - 0d2639b4f40a
+  - 161e04f498db
   - 1ef5b6e3e09d
   - 2b95d5c04908
   - 2c47c138176e
@@ -13424,6 +13486,7 @@ tools:
   - 9f4805c61d29
   - a1c2aecd7a0d
   - bd2a7d1316b9
+  - dec59e6af429
   - ee29337f905c
   - ee2beb764a7b
   - f57ce5d5c997
@@ -13437,6 +13500,7 @@ tools:
   - 397e5f0eb3ef
   - 5671e1d3d5ee
   - 5d6ed46cc101
+  - 6606a8c97889
   - 7bd020da0ce5
   - 86a20ae274fc
   - 8858fa037a15
@@ -13466,6 +13530,7 @@ tools:
   - 41c7ba073a9b
   - 49236b03e4fd
   - 584beffa972b
+  - 5e5dfc9e71e2
   - aa9de8f20668
   - abbc8041e8ec
   - aea7008fe1f1
