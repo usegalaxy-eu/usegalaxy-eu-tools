@@ -4,7 +4,80 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-  # ANNOTATION
+# AGENT BASED MODELLING
+  - name: pcdl_get_anndata
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_cell_attribute
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_cell_attribute_list
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_cell_df
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_celltype_list
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_conc_attribute
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_conc_df
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_substrate_list
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_unit_dict
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_get_version
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_make_cell_vtk
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_make_conc_vtk
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_make_gif
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_make_graph_gml
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_make_movie
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_plot_contour
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_plot_scatter
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+  - name: pcdl_plot_timeseries
+    owner: iuc
+    tool_panel_section_label: Agent-based Modelling
+
+# ANNOTATION
   - name: abricate
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1097,7 +1170,7 @@ tools:
   - name: cutadapt
     owner: lparsons
     tool_panel_section_label: FASTA/FASTQ
-  
+
   - name: cialign
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
@@ -2266,7 +2339,7 @@ tools:
   - name: checkm2
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
-    
+
   - name: comebin
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
