@@ -4,7 +4,7 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
-  # ANNOTATION
+# ANNOTATION
   - name: abricate
     owner: iuc
     tool_panel_section_label: Annotation
@@ -38,6 +38,12 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: data_manager_fetch_busco_options
+    owner: iuc
+
+  - name: data_manager_bwa_mem2_index_builder 
+    owner: iuc
+
+  - name: bwa_mem_index_builder_data_manager 
     owner: iuc
 
   - name: chewbbaca_allelecall
@@ -75,6 +81,13 @@ tools:
   - name: compleasm
     owner: iuc
     tool_panel_section_label: Annotation
+
+  - name: coreprofiler_allele_calling
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: data_manager_build_coreprofiler
+    owner: iuc
 
   - name: evidencemodeler
     owner: iuc
@@ -478,6 +491,14 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: ppanggolin_msa
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ppanggolin_projection
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ppanggolin_rarefaction
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -989,6 +1010,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Evolution
 
+  - name: map_damage
+    owner: iuc
+    tool_panel_section_label: Evolution
+
   - name: mutate_snp_codon
     owner: devteam
     tool_panel_section_label: Evolution
@@ -1085,6 +1110,10 @@ tools:
 
   - name: cutadapt
     owner: lparsons
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: cialign
+    owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
   - name: fasta_clipping_histogram
@@ -1885,6 +1914,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Imaging
 
+  - name: pdfimages
+    owner: iuc
+    tool_panel_section_label: Imaging
+
 
 # JOIN, SUBTRACT AND GROUP
 
@@ -2245,6 +2278,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: checkm2
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: comebin
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -2678,6 +2715,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: micro_decon
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: nonpareil
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -2707,6 +2748,30 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: phyloseq_tax_glom
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: pimento_are_there_primers
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: pimento_auto
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: pimento_choose_primer_cutoff
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: pimento_find_cutoffs
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: pimento_gen_bcv
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: pimento_std
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -2831,6 +2896,14 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: kmer2stats
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: metasbt_index
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: metasbt_profile
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -3363,6 +3436,10 @@ tools:
     owner: devteam
     tool_panel_section_label: Motif Tools
 
+  - name: meme_streme
+    owner: iuc
+    tool_panel_section_label: Motif Tools
+
 
 # MULTIPLE ALIGNMENTS
 
@@ -3507,6 +3584,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Nanopore
 
+  - name: nanocomp
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
+  - name: chopper
+    owner: iuc
+    tool_panel_section_label: Nanopore
+
   - name: nanoplot
     owner: iuc
     tool_panel_section_label: Nanopore
@@ -3569,6 +3654,80 @@ tools:
   - name: concat
     owner: devteam
     tool_panel_section_label: Operate on Genomic Intervals
+
+
+# OTHER TOOLS
+  - name: pcdl_get_anndata
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_cell_attribute
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_cell_attribute_list
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_cell_df
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_celltype_list
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_conc_attribute
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_conc_df
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_substrate_list
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_unit_dict
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_get_version
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_make_cell_vtk
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_make_conc_vtk
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_make_gif
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_make_graph_gml
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_make_movie
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_plot_contour
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_plot_scatter
+    owner: iuc
+    tool_panel_section_label: Other Tools
+
+  - name: pcdl_plot_timeseries
+    owner: iuc
+    tool_panel_section_label: Other Tools
 
 
 # PEAK CALLING
@@ -4435,6 +4594,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Send Data
 
+  - name: ena_webin_cli
+    owner: iuc
+    tool_panel_section_label: Send Data
+
 
 # SINGLE-CELL
 
@@ -4680,6 +4843,10 @@ tools:
     owner: devteam
     tool_panel_section_label: Statistics
 
+  - name: fastspar
+    owner: iuc
+    tool_panel_section_label: Statistics
+
   - name: generate_pc_lda_matrix
     owner: devteam
     tool_panel_section_label: Statistics
@@ -4758,6 +4925,10 @@ tools:
     tool_panel_section_label: Text Manipulation
 
   - name: column_remove_by_header
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
+  - name: dos2unix
     owner: iuc
     tool_panel_section_label: Text Manipulation
 
