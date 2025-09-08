@@ -43,7 +43,7 @@ tools:
   - name: data_manager_bwa_mem2_index_builder 
     owner: iuc
 
-  - name: bwa_mem_index_builder_data_manager 
+  - name: data_manager_bwa_mem_index_builder 
     owner: iuc
 
   - name: chewbbaca_allelecall
@@ -466,6 +466,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: tb_profiler_collate
+    owner: iuc
+    tool_panel_section_label: Annotation
+  
   - name: te_finder
     owner: iuc
     tool_panel_section_label: Annotation
