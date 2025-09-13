@@ -94,6 +94,10 @@ tools:
   owner: iuc
   revisions:
   - 4e3bbaa0b70f
+- name: data_manager_bwa_mem2_index_builder
+  owner: iuc
+  revisions:
+  - a89d803c8b29
 - name: chewbbaca_allelecall
   owner: iuc
   revisions:
@@ -893,6 +897,7 @@ tools:
   owner: iuc
   revisions:
   - 59d308975e63
+  - 6d5c8a6ceea0
   - 6edfb4b6db85
   - 9e8cf8dd6955
   - d0a2e0a9c853
@@ -944,6 +949,11 @@ tools:
   - 9793bc5d741b
   - adc0645b945c
   tool_panel_section_label: Annotation
+- name: tb_profiler_collate
+  owner: iuc
+  revisions:
+  - 9fae5576604a
+  tool_panel_section_label: Annotation
 - name: te_finder
   owner: iuc
   revisions:
@@ -976,6 +986,7 @@ tools:
   owner: iuc
   revisions:
   - 59d308975e63
+  - 6d5c8a6ceea0
   - 6edfb4b6db85
   - 9e8cf8dd6955
   - d0a2e0a9c853
@@ -2465,6 +2476,7 @@ tools:
   - 1d34936d4497
   - 23f75f8716cf
   - 8d31d5da8662
+  - e047516c73de
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_combiner
   owner: devteam
@@ -6248,6 +6260,7 @@ tools:
 - name: mash
   owner: iuc
   revisions:
+  - 0f9b62370529
   - 7f7d8b0c8517
   - 86dec4abcea8
   - f8e51626fc56
@@ -6258,6 +6271,7 @@ tools:
   - 43f9ca23c132
   - 68084b06ae83
   - 77289957d47b
+  - c73c3dfe1af8
   tool_panel_section_label: Metagenomic Analysis
 - name: mapseq
   owner: iuc
@@ -6539,6 +6553,7 @@ tools:
   - aaa868913641
   - bd2a15dbcea1
   - f355085dd2aa
+  - fd25e549f512
   tool_panel_section_label: Metagenomic Analysis
 - name: recentrifuge
   owner: iuc
@@ -12885,6 +12900,7 @@ tools:
   - 543f208417cb
   - 7303183cdb87
   - 7572cb1cdd96
+  - 8a0e8bc3af5f
   - b43df0ce6c87
   - b8c112397c5e
   - c47ecf0e932d
@@ -13263,6 +13279,7 @@ tools:
   - 4f3c5e634679
   - c192a2c7ef00
   - cdcaa40e5e45
+  - ecc7758d828f
   - fb20fa735dfe
   tool_panel_section_label: Variant Calling
 - name: vcfannotate
