@@ -75,6 +75,10 @@ def main():
     print(f"Skipped {skipped_count} already-installed revisions")
     print(f"Kept {len(filtered_tools)} tools with new revisions")
 
+    if not filtered_tools:
+        print("No new tools to install after filtering. Exiting.")
+        sys.exit(0)
+
     output_data = input_data.copy()
     output_data["tools"] = filtered_tools
 
