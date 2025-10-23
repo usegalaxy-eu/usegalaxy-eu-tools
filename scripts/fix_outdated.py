@@ -1,8 +1,9 @@
 import argparse
 import logging
-import yaml
+import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+import yaml
 from bioblend import toolshed
 
 logging.basicConfig(
@@ -24,6 +25,7 @@ def get_tool_versions(ts, name, owner, revision):
                     versions.add((tool["id"], tool["version"]))
     except Exception as e:
         logger.warning(f"{name},{owner}: failed to fetch {revision} ({e})")
+        sys.exit(1)
     return versions
 
 
@@ -40,7 +42,7 @@ def fetch_versions_parallel(ts, name, owner, revisions, max_workers=10):
                 version_cache[rev] = future.result()
             except Exception as e:
                 logger.warning(f"{name},{owner}: error fetching {rev} ({e})")
-                version_cache[rev] = set()
+                sys.exit(1)
     return version_cache
 
 
@@ -99,7 +101,7 @@ def fix_uninstallable(lockfile_name, toolshed_url):
                 logger.warning(
                     f"{name},{owner}: no matching installable revision for {cur}"
                 )
-                continue
+                sys.exit(1)
 
             logger.info(
                 f"{name},{owner}: removing {cur} {'in favor of ' + nxt if nxt in revisions else 'with no installable alternative found'}"
