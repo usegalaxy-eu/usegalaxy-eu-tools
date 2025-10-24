@@ -1,6 +1,7 @@
 import argparse
 import logging
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import yaml
@@ -12,12 +13,43 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def retry_with_backoff(func, *args, **kwargs):
+    MAX_RETRIES = 5
+    backoff = 2
+    last_exception = None
+
+    for attempt in range(MAX_RETRIES):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            last_exception = e
+            error_msg = str(e)
+            if any(
+                code in error_msg
+                for code in ["502", "503", "504", "timed out", "timeout", "Connection"]
+            ):
+                if attempt < MAX_RETRIES - 1:
+                    logger.warning(
+                        f"Attempt {attempt + 1}/{MAX_RETRIES} failed: {error_msg}. Retrying in {backoff}s..."
+                    )
+                    time.sleep(backoff)
+                    backoff = min(backoff * 2, 60)
+                else:
+                    logger.error(f"All {MAX_RETRIES} attempts failed")
+            else:
+                raise
+
+    if last_exception:
+        raise last_exception
+    raise Exception("Retry failed with no exception captured")
+
+
 def get_tool_versions(ts, name, owner, revision):
     versions = set()
 
     try:
-        repo_metadata = ts.repositories.get_repository_revision_install_info(
-            name, owner, revision
+        repo_metadata = retry_with_backoff(
+            ts.repositories.get_repository_revision_install_info, name, owner, revision
         )
         if isinstance(repo_metadata, list) and len(repo_metadata) > 1:
             for tool in repo_metadata[1].get("valid_tools", []):
@@ -65,7 +97,9 @@ def fix_uninstallable(lockfile_name, toolshed_url):
         name, owner = tool.get("name"), tool.get("owner")
         revisions = tool.get("revisions", [])
         try:
-            installable = ts.repositories.get_ordered_installable_revisions(name, owner)
+            installable = retry_with_backoff(
+                ts.repositories.get_ordered_installable_revisions, name, owner
+            )
         except Exception as e:
             logger.warning(f"{name},{owner}: could not get installable revisions ({e})")
             continue
