@@ -137,14 +137,14 @@ def fix_uninstallable(lockfile_name, toolshed_url):
                 )
                 sys.exit(1)
 
-            logger.info(
-                f"{name},{owner}: removing {cur} {'in favor of ' + nxt if nxt in revisions else 'with no installable alternative found'}"
-            )
+            logger.info(f"{name},{owner}: removing {cur} in favor of {nxt}")
+            if nxt not in revisions:
+                revisions.append(nxt)
             to_remove.append(cur)
 
         if to_remove:
             changed += 1
-            tool["revisions"] = sorted(set(r for r in revisions if r not in to_remove))
+            tool["revisions"] = sorted(set(revisions) - set(to_remove))
 
     logger.info(
         f"Completed: {total} tools processed, {skipped} skipped, {changed} changed"
