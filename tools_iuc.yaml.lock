@@ -912,6 +912,7 @@ tools:
   - 6edfb4b6db85
   - 9e8cf8dd6955
   - d0a2e0a9c853
+  - eaa563bd535a
   tool_panel_section_label: Annotation
 - name: data_manager_build_staramr
   owner: iuc
@@ -1002,6 +1003,7 @@ tools:
   - 6edfb4b6db85
   - 9e8cf8dd6955
   - d0a2e0a9c853
+  - eaa563bd535a
   tool_panel_section_label: Annotation
 - name: ppanggolin_all
   owner: iuc
@@ -2055,6 +2057,7 @@ tools:
   - 66617be450bd
   - 6e868bf6c38e
   - 8d6686664021
+  - a5ef8d31c40e
   - a7387ce2a8ca
   - bbdc53e9b559
   - c6b5c2975e51
@@ -2070,6 +2073,7 @@ tools:
   - 30a8447539e4
   - 3d0223265277
   - 6ff67d2860e1
+  - a4506449c300
   - bbbcee71e70e
   - def7a82d23e1
   - f3233d395549
@@ -2393,6 +2397,7 @@ tools:
   - 64172f1c1202
   - 80766b36005d
   - 8c0175e03cee
+  - 8e264b67a8c0
   - 944ae523bacb
   - 9845c649f41b
   - b1c926deaa2d
@@ -6343,6 +6348,16 @@ tools:
   - 9de5319ad2db
   - c73c3dfe1af8
   tool_panel_section_label: Metagenomic Analysis
+- name: mash_paste
+  owner: iuc
+  revisions:
+  - e0c0fda064eb
+  tool_panel_section_label: Metagenomic Analysis
+- name: mash_dist
+  owner: iuc
+  revisions:
+  - c932095af671
+  tool_panel_section_label: Metagenomic Analysis
 - name: mapseq
   owner: iuc
   revisions:
@@ -6654,6 +6669,7 @@ tools:
   - 6b517dc161e4
   - 7b382efabb98
   - 99ff9221182c
+  - afee33334a63
   - b5a7583b8db0
   - bcb50c148f4b
   - fdb13ee4be38
@@ -6666,6 +6682,7 @@ tools:
   - 4d561bdc2c31
   - 552cfc6ed475
   - 8317c7dc6407
+  - 8428eb03a349
   - dbf5571a8140
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_concatenate_fasta
@@ -6673,6 +6690,7 @@ tools:
   revisions:
   - 298542e0e136
   - 2c7ed948eeed
+  - a72b974c98a2
   - c72b50829c03
   - dcc81bfe5f6a
   - e0aae2cd891e
@@ -6687,6 +6705,7 @@ tools:
   - 68d2cd0be567
   - a490494875c7
   - a6f004bc73bf
+  - fd17362def4f
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_generate_sequence_features
   owner: iuc
@@ -6695,6 +6714,7 @@ tools:
   - 07bf5268724f
   - 0ae1a2636de5
   - 40ffba87bbcf
+  - 517069eeb0d5
   - 8ba0c2edf3f3
   - ff4e487f4f7e
   tool_panel_section_label: Metagenomic Analysis
@@ -6705,6 +6725,7 @@ tools:
   - 14046254799c
   - 191a3a14a7f1
   - 2344bc30a326
+  - 3215ab8a94de
   - 43df7a4c33a2
   - 8b77643cf479
   tool_panel_section_label: Metagenomic Analysis
@@ -8531,6 +8552,7 @@ tools:
   owner: iuc
   revisions:
   - 49dbf2f5b0e2
+  - 56de4ac77c41
   - d39f16771b62
   tool_panel_section_label: Imaging
 - name: bbtools_bbduk
@@ -8629,6 +8651,7 @@ tools:
   - eb1f4ba66dc6
   - fa11aa8103b2
   - fbf007713188
+  - fc1f197b33ec
   tool_panel_section_label: Nanopore
 - name: medaka_consensus_pipeline
   owner: iuc
@@ -8646,6 +8669,7 @@ tools:
   - b35de691c42c
   - cb34f00cc10f
   - d915879a88bc
+  - d9b6a4615626
   - ef94bace3a3c
   - fc8804320156
   tool_panel_section_label: Nanopore
@@ -8653,6 +8677,7 @@ tools:
   owner: iuc
   revisions:
   - 0f5f4a208660
+  - 16fc9856b20a
   - 19f3b583a9b3
   - 222669c4afb6
   - 2308bc523659
@@ -9003,6 +9028,7 @@ tools:
   owner: iuc
   revisions:
   - 14d48fd8f343
+  - cd8c5aebb404
   tool_panel_section_label: Phenotype Association
 - name: hybpiper
   owner: iuc
@@ -9564,6 +9590,7 @@ tools:
   - abf6dbe8c9d7
   - b6abccb1f25b
   - b7e297c2ede6
+  - c092a2f58013
   - ca0d8cf80567
   - ca337cce3888
   - debfccc4d65b
@@ -9809,6 +9836,11 @@ tools:
   revisions:
   - 52c07e141113
   - abea23542a6b
+  tool_panel_section_label: Quality Control
+- name: fileidentification
+  owner: iuc
+  revisions:
+  - 639d81cf8ac8
   tool_panel_section_label: Quality Control
 - name: bayescan
   owner: iuc
@@ -10452,6 +10484,7 @@ tools:
   - 15cd64d7c58b
   - 1b22d8a18acc
   - 2c0ca397d302
+  - 30d90b851d3c
   - 49121db48873
   - 4de6e2e40c7a
   - 5a60f347f566
@@ -10470,6 +10503,7 @@ tools:
   revisions:
   - 178ebdfe5a7e
   - 43658f594542
+  - 71ce24befa24
   - 85b3dc9b6830
   - 88c07fc4024c
   - 992c077f6e41
@@ -11272,6 +11306,7 @@ tools:
   revisions:
   - 04b494623f8e
   - 0a5258e41227
+  - '528052085629'
   - 53d74155bb52
   - 908a8d400fa2
   - 917f8e439160
