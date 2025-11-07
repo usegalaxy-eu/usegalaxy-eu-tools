@@ -122,14 +122,11 @@ def fix_uninstallable(lockfile_name, toolshed_url):
                     to_remove.append(cur)
                 continue
 
-            nxt = next(
-                (
-                    cand
-                    for cand in installable
-                    if version_cache.get(cand) == cur_versions
-                ),
-                None,
-            )
+            nxt = None
+            for cand in reversed(installable):
+                if version_cache.get(cand) == cur_versions:
+                    nxt = cand
+                    break
 
             if not nxt:
                 logger.warning(
