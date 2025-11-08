@@ -1432,6 +1432,7 @@ tools:
 - name: pretext_graph
   owner: iuc
   revisions:
+  - 36ce83a739f2
   - 408ece2e4647
   - 75b4a2298714
   - 936a1edffce8
@@ -1447,6 +1448,7 @@ tools:
   - 79b48f02db49
   - 7c2e9bc2123b
   - 8fef980d48b5
+  - 9c942221e135
   - bbe19ef04a74
   - c6cec5ab35c1
   - d256a51a656b
@@ -2057,6 +2059,7 @@ tools:
   - 66617be450bd
   - 6e868bf6c38e
   - 8d6686664021
+  - 9f1c8dc0253e
   - a5ef8d31c40e
   - a7387ce2a8ca
   - bbdc53e9b559
@@ -2077,6 +2080,7 @@ tools:
   - bbbcee71e70e
   - def7a82d23e1
   - f3233d395549
+  - f4f71128f097
   tool_panel_section_label: Convert Formats
 - name: ucsc_axtchain
   owner: iuc
@@ -3420,6 +3424,7 @@ tools:
 - name: iedb_api
   owner: iuc
   revisions:
+  - 1911ec100221
   - 6cf84410cb2e
   - 7ed6dda64a81
   - a09849898387
@@ -3728,6 +3733,7 @@ tools:
   revisions:
   - 02b21260faf4
   - 0a10fddd97d2
+  - 0cc7a80463b9
   - 26f2fe7e53a1
   - 326098bc19cc
   - 44c66e8d21e6
@@ -5298,6 +5304,7 @@ tools:
   revisions:
   - 2a8bc1d26d06
   - 6f7211f93b06
+  - cbd58ca70eac
   tool_panel_section_label: Metagenomic Analysis
 - name: bio_hansel
   owner: iuc
@@ -5713,6 +5720,7 @@ tools:
 - name: data_manager_build_bracken_database
   owner: iuc
   revisions:
+  - 174a754bd3b6
   - 3c7d2c84cb09
   - 5c8a23ccb14a
   - 84cc0dc92b0c
@@ -6872,6 +6880,7 @@ tools:
   revisions:
   - 15dba9749732
   - 1d97ddbc3464
+  - 37ab2cfedac4
   - 6641160f2053
   - 70b492856e17
   - 7834132949bc
@@ -8552,6 +8561,7 @@ tools:
   owner: iuc
   revisions:
   - 49dbf2f5b0e2
+  - 521bcbb5aa16
   - 56de4ac77c41
   - d39f16771b62
   tool_panel_section_label: Imaging
@@ -9030,6 +9040,26 @@ tools:
   - 14d48fd8f343
   - cd8c5aebb404
   tool_panel_section_label: Phenotype Association
+- name: fastreer_dist2tree
+  owner: iuc
+  revisions:
+  - a21e02af4488
+  tool_panel_section_label: Phylogenetics
+- name: fastreer_fasta2dist
+  owner: iuc
+  revisions:
+  - 7888cf34fa73
+  tool_panel_section_label: Phylogenetics
+- name: fastreer_vcf2dist
+  owner: iuc
+  revisions:
+  - a0fbb6b9a194
+  tool_panel_section_label: Phylogenetics
+- name: fastreer_vcf2tree
+  owner: iuc
+  revisions:
+  - 5ea9b32aaef6
+  tool_panel_section_label: Phylogenetics
 - name: hybpiper
   owner: iuc
   revisions:
@@ -13915,6 +13945,7 @@ tools:
   owner: iuc
   revisions:
   - 201eff2131d6
+  - 54871a78828e
 - name: data_manager_clair3_models
   owner: iuc
   revisions:
