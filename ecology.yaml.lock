@@ -172,6 +172,7 @@ tools:
   - 419027d822d6
   - 4c07ddedc198
   - 562f3c677828
+  - 61e2aa6bb55d
   - 746e8e4bf929
   tool_panel_section_label: Join, Subtract and Group
 - name: datamash_reverse
@@ -179,6 +180,7 @@ tools:
   revisions:
   - 0f1724dd59d2
   - 17e3b698dd52
+  - 9c42f7dabad8
   - b8a457820315
   - f198773344e4
   tool_panel_section_label: Join, Subtract and Group
@@ -187,6 +189,7 @@ tools:
   revisions:
   - 22c2a1ac7ae3
   - 374cb875d38a
+  - a2667f8d23de
   - a513e3fbb4c5
   - ac092723240d
   - ba0c40780ecf
@@ -210,6 +213,7 @@ tools:
   - 3dc70b59608c
   - 6073bb457ec0
   - 86755160afbf
+  - c41d78ae5fee
   - d698c222f354
   - ddf54b12c295
   - f46f0e4f75c4
@@ -469,12 +473,31 @@ tools:
   owner: ecology
   revisions:
   - 15260949227d
+  - 208f69b31088
+  - 7536ba055525
   - f10c3f6ee575
   tool_panel_section_label: Climate Analysis
 - name: tool_odv
   owner: ecology
   revisions:
+  - 197286c1fcce
   - 894b4a8a9a7b
+  - bdc969c006fe
+  - e47dfd67f2b5
+  tool_panel_section_label: Climate Analysis
+- name: tool_odv_history
+  owner: ecology
+  revisions:
+  - 6c6ce67252bc
+  - 72b1d470b3b8
+  - d626252fad72
+  tool_panel_section_label: Climate Analysis
+- name: tool_biogeochemical_calibration
+  owner: ecology
+  revisions:
+  - 7b7555bbde84
+  - e10d47d0f447
+  - e30dd07f0593
   tool_panel_section_label: Climate Analysis
 - name: bgc_canyon_b
   owner: ecology
@@ -539,6 +562,7 @@ tools:
   - 59fd173ac850
   - 5cec5fb749f0
   - 7dd841a32245
+  - 86d0ebe09628
   - a1abfa420d9d
   - c171f2b7d76e
   - c237ba772225
@@ -953,6 +977,7 @@ tools:
   - bf675f34b056
   - c19b16e5729c
   - d2aaac19f42f
+  - e4dd4c0622f6
   - f7985e0479b9
   - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
@@ -1020,6 +1045,7 @@ tools:
   - 83fbdf93d51e
   - 8cb6bd511879
   - 94f412098ac8
+  - a829941376bd
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_ngsfilter
   owner: iuc
@@ -1680,6 +1706,7 @@ tools:
   - 4ed3e4f04b79
   - 5cde56683579
   - ace69a8ec1c3
+  - e5fc90e44599
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_brt_analysis
   owner: ecology
@@ -1689,6 +1716,7 @@ tools:
   - 694738eda0dc
   - a56c413f3a98
   - aba980404954
+  - dcc059f387b6
   - f0d6938d0451
   - f8962f1c832a
   - fc621f3f8226
@@ -1702,6 +1730,7 @@ tools:
   - 68d98dbd8bfc
   - 788b118910a7
   - 9dc992f80c25
+  - cec1f7495897
   - e3cd588fd14a
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_eco_map
@@ -1711,6 +1740,7 @@ tools:
   - 3d750279158b
   - 45784ebada45
   - 57c618532ac1
+  - 876a70f08281
   - b38b954b92b9
   - c2856067ee72
   - c6b1bf7b0ac6
@@ -1723,6 +1753,7 @@ tools:
   - 0f6542d0986e
   - 1b9522671e90
   - 6c5404468d8c
+  - 8307fa98be22
   - cf7aefee9977
   - e94a25eed489
   tool_panel_section_label: Ecoregionalization
@@ -1733,6 +1764,7 @@ tools:
   - 32849c52aa54
   - 74e966baa5fd
   - 844b5bf84164
+  - 893b2b010d4a
   - c1d03f1a2e80
   - cc9ea890823c
   - edb8d19735a6
@@ -1740,8 +1772,14 @@ tools:
 - name: claraguess
   owner: ecology
   revisions:
+  - 8ac53593cef6
   - adeb719a267f
   - f11879f7b554
+  tool_panel_section_label: Ecoregionalization
+- name: indicspecies
+  owner: ecology
+  revisions:
+  - 3f4138f610d1
   tool_panel_section_label: Ecoregionalization
 - name: map_shp
   owner: ecology
@@ -1792,16 +1830,30 @@ tools:
   revisions:
   - cc18c3bf2666
   tool_panel_section_label: Get Data
+- name: nfdi4earth_os4a
+  owner: ecology
+  revisions:
+  - 456b293eae3b
+  tool_panel_section_label: Get Data
 - name: aquainfra_ogc_api_processes
   owner: ecology
   revisions:
   - 0077885b6f1d
   - 1ff618d89af4
+  - 345dcb57726f
+  - 3a6fe90f58f9
   - 5acff8859db2
+  - 78768c06b60f
   - af00a67d3649
   - d413a6b6cebf
   - eb41894de107
+  - f708bf8ccfa7
   tool_panel_section_label: GIS Data Handling
+- name: xarray_import_data
+  owner: ecology
+  revisions:
+  - f1b185fc409a
+  tool_panel_section_label: Get Data
 - name: iabiodiv_smartbiodiv_med_environ
   owner: ecology
   revisions:
@@ -1850,5 +1902,6 @@ tools:
 - name: estimate_endem
   owner: ecology
   revisions:
+  - 7a952542e639
   - b8f366e925e7
   tool_panel_section_label: Phylodiversity

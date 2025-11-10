@@ -2,11 +2,18 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: iedb_netmhcpan
+  owner: galaxyp
+  revisions:
+  - 88e44dab2988
+  tool_panel_section_label: Proteomics
 - name: fragpipe
   owner: galaxyp
   revisions:
   - 048390db1932
   - 2e667f0ec33c
+  - 3f947afe3f71
+  - da1531027506
   - da9ebef968bd
   - e969a182e3cb
   - ef46866326ef
@@ -29,6 +36,7 @@ tools:
   - 4d3da69301ae
   - 9fa3dbf06f17
   - ae4dc0c041f9
+  - be5a0b2d8bd7
   - bf0728e000cd
   - ff8c9e0e8a7b
   tool_panel_section_label: Proteomics
@@ -360,6 +368,11 @@ tools:
   - e66f552a3c47
   - e9300ef37403
   - eaaa73b043e6
+  tool_panel_section_label: Proteomics
+- name: cardinal_group_comparison
+  owner: galaxyp
+  revisions:
+  - 2dd074491cd6
   tool_panel_section_label: Proteomics
 - name: cardinal_single_ion_segmentation
   owner: galaxyp
@@ -764,6 +777,7 @@ tools:
 - name: maxbin2
   owner: mbernt
   revisions:
+  - 0917b2d6010d
   - 28a0b1446d2b
   - 2bc40bfbcfb4
   - 4ef88f9a195d

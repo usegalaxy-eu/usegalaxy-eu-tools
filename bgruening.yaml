@@ -102,6 +102,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Annotation
 
+  - name: sortmerna
+    owner: rnateam
+    tool_panel_section_label: Annotation
+
 # ASSEMBLY
 
   - name: blobtoolkit
@@ -151,7 +155,7 @@ tools:
   - name: erga_ear
     owner: bgruening
     tool_panel_section_label: Assembly
-  
+
 
 # COLLECTION OPERATIONS
 
@@ -181,6 +185,29 @@ tools:
     owner: bgruening
     tool_panel_section_label: Get Data
 
+    
+# GIS
+  - name: 3dtrees_segmentanytree
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+    
+  - name: 3dtrees_detailview
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+    
+  - name: 3dtrees_standardization
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_tile_merge
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_overviews
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+    
+    
 # GRAPH/DISPLAY DATA
 
   - name: jbrowse2
@@ -210,6 +237,26 @@ tools:
     tool_panel_section_label: Imaging
 
   - name: woundhealing_scratch_assay
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: doclayoutyolo
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: json2yolosegment
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: yolo_predict
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: yolo_training
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: imagemagick_image_montage
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -351,6 +398,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
+  - name: whisperx
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
   - name: flexynesis
     owner: bgruening
     tool_panel_section_label: Machine Learning
@@ -358,8 +409,20 @@ tools:
   - name: flexynesis_cbioportal_import
     owner: bgruening
     tool_panel_section_label: Machine Learning
-    
+
+  - name: flexynesis_plot
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: flexynesis_utils
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
   - name: chatgpt_openai_api
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: llm_hub
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
@@ -377,6 +440,9 @@ tools:
     owner: bgruening
     tool_panel_section_label: Mapping
 
+  - name: parabricks_fq2bam
+    owner: bgruening
+    tool_panel_section_label: Mapping
 
 # METAGENOMIC ANALYSIS
 
@@ -420,7 +486,7 @@ tools:
 
   - name: data_manager_sylph_tax_database
     owner: bgruening
- 
+
   - name: tiara
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
@@ -428,7 +494,7 @@ tools:
   - name: qiime2_dbotu_q2
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
-    
+
   - name: vrhyme
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
@@ -502,11 +568,11 @@ tools:
   - name: music_manipulate_eset
     owner: bgruening
     tool_panel_section_label: Single-cell
-    
+
   - name: vpt_extract
     owner: bgruening
     tool_panel_section_label: Single-cell
-    
+
   - name: vpt_segment
     owner: bgruening
     tool_panel_section_label: Single-cell

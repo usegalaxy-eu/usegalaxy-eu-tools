@@ -27,6 +27,7 @@ tools:
   owner: bgruening
   revisions:
   - 04bfb8ee7e23
+  - 0ecf92b5a7c5
   - 3ae9331790a6
   - 4e9a3745dce4
   - 5376a7767fb3
@@ -53,10 +54,12 @@ tools:
   - 7e2ee5f43778
   - 8dbc700cb940
   - a0f01c777820
+  - ab55af10f1ff
   tool_panel_section_label: Convert Formats
 - name: graphicsmagick_image_compare
   owner: bgruening
   revisions:
+  - 19cd03398db8
   - 2a5a0b61a84e
   - 76acb1175c57
   - bb871fbe177f
@@ -82,10 +85,12 @@ tools:
   owner: bgruening
   revisions:
   - 5ad32046903b
+  - f6fa7e70120f
   tool_panel_section_label: Convert Formats
 - name: uniprot_rest_interface
   owner: bgruening
   revisions:
+  - 60f7e2a6b9c7
   - 95fb5712344f
   tool_panel_section_label: Convert Formats
 - name: sambamba_flagstat
@@ -156,6 +161,11 @@ tools:
   - 196795831b6a
   - c4f865bd101a
   tool_panel_section_label: Annotation
+- name: sortmerna
+  owner: rnateam
+  revisions:
+  - 10b84b577117
+  tool_panel_section_label: Annotation
 - name: blobtoolkit
   owner: bgruening
   revisions:
@@ -169,6 +179,7 @@ tools:
   owner: bgruening
   revisions:
   - 86f150c8019d
+  - e05f5ee0ffb9
   tool_panel_section_label: Assembly
 - name: flye
   owner: bgruening
@@ -198,6 +209,7 @@ tools:
   owner: bgruening
   revisions:
   - 1f9f2edc8cf4
+  - bdfd7cef3438
   tool_panel_section_label: Assembly
 - name: mitohifi
   owner: bgruening
@@ -295,6 +307,31 @@ tools:
   revisions:
   - c82b0ff7ed3d
   tool_panel_section_label: Get Data
+- name: 3dtrees_segmentanytree
+  owner: bgruening
+  revisions:
+  - 6f80b2dfb7d4
+  tool_panel_section_label: GIS Data Handling
+- name: 3dtrees_detailview
+  owner: bgruening
+  revisions:
+  - 51bb974cfbb2
+  tool_panel_section_label: GIS Data Handling
+- name: 3dtrees_standardization
+  owner: bgruening
+  revisions:
+  - 9d787305af35
+  tool_panel_section_label: GIS Data Handling
+- name: 3dtrees_tile_merge
+  owner: bgruening
+  revisions:
+  - e960e26984ee
+  tool_panel_section_label: GIS Data Handling
+- name: 3dtrees_overviews
+  owner: bgruening
+  revisions:
+  - b27ef2fb8e84
+  tool_panel_section_label: GIS Data Handling
 - name: jbrowse2
   owner: fubar
   revisions:
@@ -305,6 +342,7 @@ tools:
   - 56f9a6e0fe80
   - 69c6ea16c148
   - 878c27dfea9d
+  - 93fdd696c281
   - af482048ca1a
   - b1260bca5fdc
   - b55199c56abd
@@ -312,6 +350,7 @@ tools:
   - c4b77883c0a7
   - cec274db51c0
   - dc3fe98e7b37
+  - e237edee9a53
   - ed3a21033188
   tool_panel_section_label: Graph/Display Data
 - name: plotly_ml_performance_plots
@@ -333,6 +372,9 @@ tools:
   owner: bgruening
   revisions:
   - 54c2d8ebf0cf
+  - 57e3de4b3b0d
+  - 6055ffae8903
+  - 7b583659453b
   - b98bcfdec481
   tool_panel_section_label: Graph/Display Data
 - name: cellpose
@@ -359,6 +401,41 @@ tools:
   revisions:
   - 6b341a048c2e
   - 8948cc562b7c
+  tool_panel_section_label: Imaging
+- name: doclayoutyolo
+  owner: bgruening
+  revisions:
+  - 28b4dc80d58b
+  tool_panel_section_label: Imaging
+- name: json2yolosegment
+  owner: bgruening
+  revisions:
+  - 2e6ca212a1af
+  - 7db48c618bbe
+  - 8cc1936ab69b
+  - ce7a96be8cb6
+  - fa068d13e781
+  tool_panel_section_label: Imaging
+- name: yolo_predict
+  owner: bgruening
+  revisions:
+  - 983ce2a25b48
+  - af3eed1f1abe
+  - d77c67cfe2ca
+  - e708a1191202
+  tool_panel_section_label: Imaging
+- name: yolo_training
+  owner: bgruening
+  revisions:
+  - 92d5c5e5c734
+  - ad05e90d024b
+  - ece3536c5e0e
+  - ffee3c7c90eb
+  tool_panel_section_label: Imaging
+- name: imagemagick_image_montage
+  owner: bgruening
+  revisions:
+  - 65703c06c1f6
   tool_panel_section_label: Imaging
 - name: keras_batch_models
   owner: bgruening
@@ -1089,18 +1166,47 @@ tools:
   revisions:
   - 02fa7b2245e6
   tool_panel_section_label: Machine Learning
+- name: whisperx
+  owner: bgruening
+  revisions:
+  - 01b0fcc50e74
+  tool_panel_section_label: Machine Learning
 - name: flexynesis
   owner: bgruening
   revisions:
   - 0bef7ea84b7f
   - 2134c3079055
+  - 9450286c42ab
+  - 9c91d13827ef
   - bd808d1c4e0c
+  - d89227ba1de6
+  - e0a67265f3ed
   tool_panel_section_label: Machine Learning
 - name: flexynesis_cbioportal_import
   owner: bgruening
   revisions:
   - 0e9e3e083350
+  - 2b414a6c35af
+  - 3f7481deaff1
+  - 461b8e2d79d5
+  - 693011647a67
   - 9c949eca5d72
+  tool_panel_section_label: Machine Learning
+- name: flexynesis_plot
+  owner: bgruening
+  revisions:
+  - 07f018886d40
+  - 07f595f34f29
+  - 273b0c36d8a2
+  - a9d1fe48e1e6
+  tool_panel_section_label: Machine Learning
+- name: flexynesis_utils
+  owner: bgruening
+  revisions:
+  - 35f41ee7ca20
+  - 963b22bdf237
+  - c348c91a487d
+  - f73ce81f7795
   tool_panel_section_label: Machine Learning
 - name: chatgpt_openai_api
   owner: bgruening
@@ -1108,6 +1214,12 @@ tools:
   - 08c658e9aa9e
   - 7770a4bd42e2
   - dab494dce303
+  tool_panel_section_label: Machine Learning
+- name: llm_hub
+  owner: bgruening
+  revisions:
+  - 1aba57a5a716
+  - 28e902e3d8d6
   tool_panel_section_label: Machine Learning
 - name: black_forest_labs_flux
   owner: bgruening
@@ -1127,6 +1239,12 @@ tools:
   revisions:
   - 815251b32ccc
   - d0a712cf0518
+  tool_panel_section_label: Mapping
+- name: parabricks_fq2bam
+  owner: bgruening
+  revisions:
+  - 88f29982dad3
+  - 9e83243823d9
   tool_panel_section_label: Mapping
 - name: combine_metaphlan2_humann2
   owner: bebatut
@@ -1204,6 +1322,7 @@ tools:
 - name: mafft
   owner: rnateam
   revisions:
+  - 0a507f4bd19a
   - 1233363389c1
   - 6f28e90db932
   - 8e649f27aa0d
@@ -1325,11 +1444,15 @@ tools:
   revisions:
   - 34b32e87356f
   - 7d42c9b75718
+  - 9b5e8695f027
+  - f0d9060ba4d6
   tool_panel_section_label: Single-cell
 - name: vpt_segment
   owner: bgruening
   revisions:
+  - 0811613196a2
   - 5bd5f26279fd
+  - a88a1e78702e
   - ed28a1feba82
   tool_panel_section_label: Single-cell
 - name: bg_statistical_hypothesis_testing
