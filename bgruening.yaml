@@ -187,11 +187,23 @@ tools:
 
     
 # GIS
+  - name: 3dtrees_segmentanytree
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+    
+  - name: 3dtrees_detailview
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+    
   - name: 3dtrees_standardization
     owner: bgruening
     tool_panel_section_label: 'GIS Data Handling'
 
   - name: 3dtrees_tile_merge
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_overviews
     owner: bgruening
     tool_panel_section_label: 'GIS Data Handling'
     
@@ -241,6 +253,10 @@ tools:
     tool_panel_section_label: Imaging
 
   - name: yolo_training
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: imagemagick_image_montage
     owner: bgruening
     tool_panel_section_label: Imaging
 
