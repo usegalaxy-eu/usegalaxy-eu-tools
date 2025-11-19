@@ -14,7 +14,14 @@ help:
 
 lint: $(LINTED_YAMLS) ## Lint the yaml files
 fix: $(CORRECT_YAMLS) ## Fix any issues (missing hashes, missing lockfiles, etc.)
-install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
+install: KEEP_CACHE=1
+install: installed.cache $(INSTALL_YAMLS)
+	@echo "Installation complete"
+	@$(MAKE) clean_cache
+
+installed.cache:
+	@echo "Fetching installed tools list from $(GALAXY_SERVER)"
+	@get-tool-list -g $(GALAXY_SERVER) -a $(GALAXY_API_KEY) -o installed.cache --get_data_managers --get_all_tools || (rm -f installed.cache && exit 1)
 
 %.lint: %
 	python3 scripts/fix-lockfile.py $<
@@ -27,9 +34,12 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 	@# --without says only add those hashes for those missing hashes (i.e. new tools)
 	python3 scripts/update-tool.py $< --without
 
-%.install: %
+%.install: % installed.cache
 	@echo "Installing any updated versions of $<"
-	@-shed-tools install --install_resolver_dependencies --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
+	@python3 scripts/filter-installed.py $< installed.cache filtered_$$(basename $<)
+	@-shed-tools install --toolsfile filtered_$$(basename $<) --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
+	@rm -f filtered_$$(basename $<)
+	@if [ -z "$(KEEP_CACHE)" ]; then $(MAKE) clean_cache; fi
 
 pr_check:
 	for changed_yaml in `git diff remotes/origin/master --name-only | grep .yaml$$`; do python scripts/pr-check.py $${changed_yaml} && pykwalify -d $${changed_yaml} -s .schema.yaml ; done
@@ -66,5 +76,8 @@ update_all: $(UPDATED_YAMLS)
 	@# Update any tools owned by IUC in any other yaml file
 	python3 scripts/update-tool.py --owner iuc $<
 
+clean_cache:
+	@rm -rf installed.cache
+	@echo "Cache cleaned"
 
-.PHONY: pr_check lint update_trusted help
+.PHONY: pr_check lint update_trusted help clean_cache
