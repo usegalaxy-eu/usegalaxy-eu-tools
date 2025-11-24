@@ -2,7 +2,9 @@ import argparse
 import logging
 import sys
 import time
+from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from collections import defaultdict
 
 import yaml
 from bioblend import toolshed
@@ -16,13 +18,11 @@ logger = logging.getLogger(__name__)
 def retry_with_backoff(func, *args, **kwargs):
     MAX_RETRIES = 5
     backoff = 2
-    last_exception = None
 
     for attempt in range(MAX_RETRIES):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            last_exception = e
             error_msg = str(e)
             if any(
                 code in error_msg
@@ -34,14 +34,9 @@ def retry_with_backoff(func, *args, **kwargs):
                     )
                     time.sleep(backoff)
                     backoff = min(backoff * 2, 60)
-                else:
-                    logger.error(f"All {MAX_RETRIES} attempts failed")
-            else:
-                raise
-
-    if last_exception:
-        raise last_exception
-    raise Exception("Retry failed with no exception captured")
+                    continue
+            raise e
+    raise Exception("Retry failed after max attempts")
 
 
 def get_tool_versions(ts, name, owner, revision):
@@ -80,12 +75,28 @@ def fetch_versions_parallel(ts, name, owner, revisions, max_workers=10):
 
 def fix_uninstallable(lockfile_name, toolshed_url):
     ts = toolshed.ToolShedInstance(url=toolshed_url)
-    with open(lockfile_name) as f:
+    lockfile_path = Path(lockfile_name)
+    with open(lockfile_path) as f:
         lockfile = yaml.safe_load(f) or {}
     locked_tools = lockfile.get("tools", [])
     total = len(locked_tools)
 
-    logger.info(f"Processing {total} tools from {lockfile_name}...")
+    uninstallable_file = lockfile_path.with_name(
+        lockfile_path.name.replace(".yaml.lock", ".uninstallable_revisions.yaml")
+    )
+
+    removed_map = defaultdict(set)
+    try:
+        with open(uninstallable_file) as f:
+            uninstallable_data = yaml.safe_load(f) or {}
+            for t in uninstallable_data.get("tools", []):
+                removed_map[(t["name"], t["owner"])] = set(
+                    t.get("removed_revisions", [])
+                )
+    except FileNotFoundError:
+        pass
+
+    logger.info(f"Processing {total} tools from {lockfile_path.name}...")
     changed, skipped = 0, 0
 
     for i, tool in enumerate(locked_tools):
@@ -95,38 +106,40 @@ def fix_uninstallable(lockfile_name, toolshed_url):
             )
 
         name, owner = tool.get("name"), tool.get("owner")
-        revisions = tool.get("revisions", [])
+        current_revisions = set(tool.get("revisions", []))
         try:
-            installable = retry_with_backoff(
+            installable_list = retry_with_backoff(
                 ts.repositories.get_ordered_installable_revisions, name, owner
             )
         except Exception as e:
             logger.warning(f"{name},{owner}: could not get installable revisions ({e})")
             continue
 
-        uninstallable = set(revisions) - set(installable)
+        uninstallable = current_revisions - set(installable_list)
         if not uninstallable:
             skipped += 1
             continue
 
-        all_revs = list(uninstallable) + list(installable)
+        all_revs = list(uninstallable) + installable_list
         version_cache = fetch_versions_parallel(ts, name, owner, all_revs)
 
-        to_remove = []
-        for cur in uninstallable:
-            cur_versions = version_cache.get(cur, set())
-            if not cur_versions:
-                if installable:
-                    nxt = installable[0]
-                    logger.info(f"{name},{owner}: unverifiable {cur}, keeping {nxt}")
-                    to_remove.append(cur)
-                continue
+        installable_signatures = {}
+        for rev in installable_list:
+            sig = frozenset(version_cache.get(rev, []))
+            if sig:
+                installable_signatures[sig] = rev
+        to_remove = set()
 
-            nxt = None
-            for cand in reversed(installable):
-                if version_cache.get(cand) == cur_versions:
-                    nxt = cand
-                    break
+        for cur in uninstallable:
+            cur_sig = frozenset(version_cache.get(cur, []))
+            if not cur_sig:
+                if installable_list:
+                    nxt = installable_list[-1]
+                    logger.info(f"{name},{owner}: unverifiable {cur}, keeping {nxt}")
+                    to_remove.add(cur)
+                    continue
+
+            nxt = installable_signatures.get(cur_sig)
 
             if not nxt:
                 logger.warning(
@@ -135,30 +148,38 @@ def fix_uninstallable(lockfile_name, toolshed_url):
                 sys.exit(1)
 
             logger.info(f"{name},{owner}: removing {cur} in favor of {nxt}")
-            if nxt not in revisions:
-                revisions.append(nxt)
-            to_remove.append(cur)
+            if nxt not in current_revisions:
+                tool["revisions"].append(nxt)
+            to_remove.add(cur)
 
         if to_remove:
             changed += 1
-            tool["revisions"] = sorted(set(revisions) - set(to_remove))
+            tool["revisions"] = sorted(set(tool["revisions"]) - to_remove)
+            removed_map[(name, owner)].update(to_remove)
 
     logger.info(
         f"Completed: {total} tools processed, {skipped} skipped, {changed} changed"
     )
 
-    with open(lockfile_name, "w") as f:
+    with open(lockfile_path, "w") as f:
         yaml.dump(lockfile, f, sort_keys=False, default_flow_style=False)
+
+    uninstallable_output = {
+        "tools": [
+            {"name": n, "owner": o, "removed_revisions": sorted(revs)}
+            for (n, o), revs in removed_map.items()
+        ]
+    }
+    with open(uninstallable_file, "w") as f:
+        yaml.dump(uninstallable_output, f, sort_keys=False, default_flow_style=False)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "lockfile", type=argparse.FileType("r"), help="Tool.yaml.lock file"
-    )
+    parser.add_argument("lockfile", help="Tool.yaml.lock file path")
     parser.add_argument(
         "--toolshed", default="https://toolshed.g2.bx.psu.edu", help="Toolshed base URL"
     )
     args = parser.parse_args()
 
-    fix_uninstallable(args.lockfile.name, args.toolshed)
+    fix_uninstallable(args.lockfile, args.toolshed)
