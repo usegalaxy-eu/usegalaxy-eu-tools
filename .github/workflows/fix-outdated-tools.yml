@@ -53,7 +53,10 @@ jobs:
         if: always()
         with:
           name: ${{ matrix.lockfile }}
-          path: ${{ matrix.lockfile }}
+          path: |
+            ${{ matrix.lockfile }}
+            *.uninstallable_revisions.yaml
+          if-no-files-found: ignore
 
   create-pr:
     needs: fix-outdated
