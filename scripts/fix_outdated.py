@@ -164,14 +164,17 @@ def fix_uninstallable(lockfile_name, toolshed_url):
     with open(lockfile_path, "w") as f:
         yaml.dump(lockfile, f, sort_keys=False, default_flow_style=False)
 
-    uninstallable_output = {
-        "tools": [
-            {"name": n, "owner": o, "removed_revisions": sorted(revs)}
-            for (n, o), revs in removed_map.items()
-        ]
-    }
-    with open(uninstallable_file, "w") as f:
-        yaml.dump(uninstallable_output, f, sort_keys=False, default_flow_style=False)
+    if removed_map:
+        uninstallable_output = {
+            "tools": [
+                {"name": n, "owner": o, "removed_revisions": sorted(revs)}
+                for (n, o), revs in removed_map.items()
+            ]
+        }
+        with open(uninstallable_file, "w") as f:
+            yaml.dump(
+                uninstallable_output, f, sort_keys=False, default_flow_style=False
+            )
 
 
 if __name__ == "__main__":
