@@ -2,6 +2,8 @@ name: Fix Outdated Tools
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 9 1 * *'
 
 jobs:
   get-lockfiles:
