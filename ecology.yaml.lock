@@ -952,6 +952,7 @@ tools:
 - name: fastq_groomer
   owner: devteam
   revisions:
+  - 10d4df6a9d94
   - 47e5dbc3e790
   - 71e5fa25b8a2
   - e9f8633db0a2
@@ -1847,6 +1848,7 @@ tools:
   - 3a6fe90f58f9
   - 5acff8859db2
   - 65b149d71d53
+  - 6b0a7e4e1460
   - 78768c06b60f
   - af00a67d3649
   - d413a6b6cebf
@@ -1856,12 +1858,14 @@ tools:
 - name: cmems_download_ic_bc
   owner: ecology
   revisions:
+  - 035bd57dcab4
   - 970c8ce618fe
   tool_panel_section_label: GIS Data Handling
 - name: ccds_download_era5_af
   owner: ecology
   revisions:
   - 49e08dbd94c5
+  - 4f3c56dc4c60
   tool_panel_section_label: GIS Data Handling
 - name: xarray_import_data
   owner: ecology
@@ -1919,3 +1923,8 @@ tools:
   - 7a952542e639
   - b8f366e925e7
   tool_panel_section_label: Phylodiversity
+- name: wildlife_megadetector_huggingface
+  owner: ecology
+  revisions:
+  - ee88182dacd5
+  tool_panel_section_label: Computer vision
