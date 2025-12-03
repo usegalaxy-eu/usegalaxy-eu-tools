@@ -81,18 +81,16 @@ def fix_uninstallable(lockfile_name, toolshed_url):
     locked_tools = lockfile.get("tools", [])
     total = len(locked_tools)
 
-    uninstallable_file = lockfile_path.with_name(
-        lockfile_path.name.replace(".yaml.lock", ".uninstallable_revisions.yaml")
+    not_installable_file = lockfile_path.with_name(
+        lockfile_path.name.replace(".yaml.lock", ".not-installable-revisions.yaml")
     )
 
     removed_map = defaultdict(set)
     try:
-        with open(uninstallable_file) as f:
-            uninstallable_data = yaml.safe_load(f) or {}
-            for t in uninstallable_data.get("tools", []):
-                removed_map[(t["name"], t["owner"])] = set(
-                    t.get("removed_revisions", [])
-                )
+        with open(not_installable_file) as f:
+            not_installable_data = yaml.safe_load(f) or {}
+            for t in not_installable_data.get("tools", []):
+                removed_map[(t["name"], t["owner"])] = set(t.get("revisions", []))
     except FileNotFoundError:
         pass
 
@@ -165,15 +163,15 @@ def fix_uninstallable(lockfile_name, toolshed_url):
         yaml.dump(lockfile, f, sort_keys=False, default_flow_style=False)
 
     if removed_map:
-        uninstallable_output = {
+        not_installable_output = {
             "tools": [
-                {"name": n, "owner": o, "removed_revisions": sorted(revs)}
+                {"name": n, "owner": o, "revisions": sorted(revs)}
                 for (n, o), revs in removed_map.items()
             ]
         }
-        with open(uninstallable_file, "w") as f:
+        with open(not_installable_file, "w") as f:
             yaml.dump(
-                uninstallable_output, f, sort_keys=False, default_flow_style=False
+                not_installable_output, f, sort_keys=False, default_flow_style=False
             )
 
 
