@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: pvactools
+  owner: galaxyp
+  revisions:
+  - e967ba68bc42
+  tool_panel_section_label: Proteomics
 - name: iedb_netmhcpan
   owner: galaxyp
   revisions:
