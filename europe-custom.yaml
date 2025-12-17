@@ -14,31 +14,31 @@ tools:
 
   - name: bedtools
     owner: iuc
-    tool_panel_section_label: 'BED'
+    tool_panel_section_label: "BED"
 
   - name: pizzly
     owner: iuc
-    tool_panel_section_label: 'RNA Analysis'
+    tool_panel_section_label: "RNA Analysis"
 
   - name: mlocarna
     owner: rnateam
-    tool_panel_section_label: 'RNA Analysis'
+    tool_panel_section_label: "RNA Analysis"
 
   - name: rcas
     owner: rnateam
-    tool_panel_section_label: 'RNA Analysis'
+    tool_panel_section_label: "RNA Analysis"
 
   - name: paralyzer
     owner: rnateam
-    tool_panel_section_label: 'RNA Analysis'
+    tool_panel_section_label: "RNA Analysis"
 
   - name: ebi_search_rest_results
     owner: iuc
-    tool_panel_section_label: 'Get Data'
+    tool_panel_section_label: "Get Data"
 
   - name: ebi_metagenomics_run_downloader
     owner: iuc
-    tool_panel_section_label: 'Get Data'
+    tool_panel_section_label: "Get Data"
 
   - name: transformation
     owner: ethevenot
@@ -227,16 +227,16 @@ tools:
     tool_panel_section_label: Convert Formats
   - name: tabular_to_fasta
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_to_tabular
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastqtofasta
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_to_fasta
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: length_and_gc_content
     owner: iuc
     tool_panel_section_label: Extract Features
@@ -437,79 +437,79 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
   - name: fasta_merge_files_and_filter_unique_sequences
     owner: galaxyp
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: lighter
     owner: bgruening
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: sickle
     owner: iuc
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_paired_end_interlacer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_paired_end_joiner
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_compute_length
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastq_join
     owner: lparsons
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: splitfasta
     owner: rnateam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_clip
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_demultiplex
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_demultiplex_illu
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: je_markdupes
     owner: gbcs-embl-heidelberg
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: align_back_trans
     owner: peterjc
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: seq_filter_by_mapping
     owner: peterjc
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: pear
     owner: iuc
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_artifacts_filter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_barcode_splitter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_clipper
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_nucleotides_distribution
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_filter_by_length
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_concatenate_by_species
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastx_collapser
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_nucleotide_changer
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fasta_formatter
     owner: devteam
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: trim_galore
     owner: bgruening
-    tool_panel_section_label: 'FASTA/FASTQ'
+    tool_panel_section_label: "FASTA/FASTQ"
   - name: fastqc
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
@@ -603,6 +603,7 @@ tools:
   - name: rnaspades
     owner: iuc
     tool_panel_section_label: 'Assembly'
+
 
   - name: sopra
     owner: crs4
@@ -827,10 +828,10 @@ tools:
     tool_panel_section_label: Epigenetics
   - name: varscan_version_2
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: freebayes
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcf2pgsnp
     owner: devteam
     tool_panel_section_label: Phenotype Association
@@ -869,7 +870,7 @@ tools:
     tool_panel_section_label: Annotation
   - name: snpsift_genesets
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: miranda
     owner: tgac
     tool_panel_section_label: Annotation
@@ -899,16 +900,16 @@ tools:
     tool_panel_section_label: Annotation
   - name: snpsift_dbnsfp
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: snpsift
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: snpsift_dbnsfp_generic
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: snpeff
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: tmhmm_and_signalp
     owner: peterjc
     tool_panel_section_label: Annotation
@@ -1052,112 +1053,112 @@ tools:
     tool_panel_section_label: NCBI Blast
   - name: allele_counts
     owner: nick
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: naive_variant_caller
     owner: blankenberg
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: bamleftalign
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfcheck
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfaddinfo
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcf2tsv
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfleftalign
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfcombine
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfprimers
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfsort
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfhethom
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfrandomsample
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfbedintersect
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfgenotypes
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcffixup
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcffilter
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfgeno2haplo
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfallelicprimitives
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfbreakcreatemulti
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfvcfintersect
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfannotate
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfcommonsamples
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfflatten
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfdistance
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfannotategenotypes
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcfselectsamples
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: bcftools_call
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcftools_merge
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcftools_isec
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vt_variant_tools
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: bcftools
     owner: iuc
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcftools_compare
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcftools_annotate
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcftools_slice
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: vcftools_subset
     owner: devteam
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: exomedepth
     owner: crs4
-    tool_panel_section_label: 'Variant Calling'
+    tool_panel_section_label: "Variant Calling"
   - name: deeptools_plot_fingerprint
     owner: bgruening
     tool_panel_section_label: deepTools
