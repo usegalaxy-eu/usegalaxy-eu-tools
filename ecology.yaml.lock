@@ -174,6 +174,7 @@ tools:
   - 562f3c677828
   - 61e2aa6bb55d
   - 746e8e4bf929
+  - d642efa5cbd7
   tool_panel_section_label: Join, Subtract and Group
 - name: datamash_reverse
   owner: iuc
@@ -603,6 +604,7 @@ tools:
   - 51c6ccaace7e
   - 53460afd5115
   - '566197475670'
+  - 6a097d09fca3
   - ca7cb0eaad62
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_point
@@ -951,6 +953,7 @@ tools:
 - name: fastq_groomer
   owner: devteam
   revisions:
+  - 10d4df6a9d94
   - 47e5dbc3e790
   - 71e5fa25b8a2
   - e9f8633db0a2
@@ -1045,6 +1048,7 @@ tools:
   - 83fbdf93d51e
   - 8cb6bd511879
   - 94f412098ac8
+  - a829941376bd
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_ngsfilter
   owner: iuc
@@ -1080,6 +1084,7 @@ tools:
   - 08d873cdd5f6
   - 12baadec7809
   - 7d16de45c021
+  - 816cbd8f4e6e
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_convert
   owner: iuc
@@ -1833,6 +1838,8 @@ tools:
   owner: ecology
   revisions:
   - 456b293eae3b
+  - 461a451e792a
+  - f59d94a539cb
   tool_panel_section_label: Get Data
 - name: aquainfra_ogc_api_processes
   owner: ecology
@@ -1842,11 +1849,26 @@ tools:
   - 345dcb57726f
   - 3a6fe90f58f9
   - 5acff8859db2
+  - 65b149d71d53
+  - 6b0a7e4e1460
   - 78768c06b60f
   - af00a67d3649
   - d413a6b6cebf
   - eb41894de107
   - f708bf8ccfa7
+  tool_panel_section_label: GIS Data Handling
+- name: cmems_download_ic_bc
+  owner: ecology
+  revisions:
+  - 035bd57dcab4
+  - 970c8ce618fe
+  tool_panel_section_label: GIS Data Handling
+- name: ccds_download_era5_af
+  owner: ecology
+  revisions:
+  - 49e08dbd94c5
+  - 4f3c56dc4c60
+  - d0e94d4679cb
   tool_panel_section_label: GIS Data Handling
 - name: xarray_import_data
   owner: ecology
@@ -1904,3 +1926,8 @@ tools:
   - 7a952542e639
   - b8f366e925e7
   tool_panel_section_label: Phylodiversity
+- name: wildlife_megadetector_huggingface
+  owner: ecology
+  revisions:
+  - ee88182dacd5
+  tool_panel_section_label: Computer vision
