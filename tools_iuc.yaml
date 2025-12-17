@@ -1180,6 +1180,10 @@ tools:
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: fastq_groupmerge
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: fastq_manipulation
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
@@ -2086,6 +2090,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: kegg_pathways_completeness
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: data_manager_kaiju
     owner: iuc
 
@@ -2230,6 +2238,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: bio_hansel
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: bmtagger
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -2664,6 +2676,14 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: mash_sketch
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mash_paste
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mash_dist
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -3817,6 +3837,22 @@ tools:
 
 # PHYLOGENETICS
 
+  - name: fastreer_dist2tree
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: fastreer_fasta2dist
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: fastreer_vcf2dist
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: fastreer_vcf2tree
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: hybpiper
     owner: iuc
     tool_panel_section_label: Phylogenetics
@@ -4024,6 +4060,9 @@ tools:
     owner: iuc
     tool_panel_section_label: Quality Control
 
+  - name: fileidentification
+    owner: iuc
+    tool_panel_section_label: Quality Control
 
 # RAD-SEQ
 
@@ -4517,6 +4556,10 @@ tools:
     tool_panel_section_label: SAM/BAM
 
   - name: samtools_coverage
+    owner: iuc
+    tool_panel_section_label: SAM/BAM
+
+  - name: samtools_consensus
     owner: iuc
     tool_panel_section_label: SAM/BAM
 
