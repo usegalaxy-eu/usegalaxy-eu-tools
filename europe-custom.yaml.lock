@@ -12,11 +12,6 @@ tools:
   revisions:
   - 7a15159140d1
   tool_panel_section_label: Statistics
-- name: gwas_quality_control_plink
-  owner: rayane_elm
-  revisions:
-  - 24b821ead589
-  tool_panel_section_label: Phenotype Association
 - name: bedtools
   owner: iuc
   revisions:
@@ -1261,6 +1256,7 @@ tools:
   owner: iuc
   revisions:
   - 0696db066a5b
+  - 2275d0688bca
   - 6a3a025714d3
   - 6f91b8ce6e07
   - 71bacea10eee
@@ -1630,6 +1626,11 @@ tools:
   owner: devteam
   revisions:
   - 4a32700dcaa2
+  tool_panel_section_label: Phenotype Association
+- name: gwas_quality_control_plink
+  owner: rayane_elm
+  revisions:
+  - 24b821ead589
   tool_panel_section_label: Phenotype Association
 - name: goseq
   owner: iuc
