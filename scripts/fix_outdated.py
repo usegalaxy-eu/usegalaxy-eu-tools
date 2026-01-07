@@ -15,8 +15,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+MAX_RETRIES = 5
+
 def retry_with_backoff(func, *args, **kwargs):
-    MAX_RETRIES = 5
     backoff = 2
 
     for attempt in range(MAX_RETRIES):
