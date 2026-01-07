@@ -15,12 +15,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-MAX_RETRIES = 5
-
 def retry_with_backoff(func, *args, **kwargs):
     backoff = 2
+    max_retries = 5
 
-    for attempt in range(MAX_RETRIES):
+    for attempt in range(max_retries):
         try:
             return func(*args, **kwargs)
         except Exception as e:
@@ -29,9 +28,9 @@ def retry_with_backoff(func, *args, **kwargs):
                 code in error_msg
                 for code in ["502", "503", "504", "timed out", "timeout", "Connection"]
             ):
-                if attempt < MAX_RETRIES - 1:
+                if attempt < max_retries - 1:
                     logger.warning(
-                        f"Attempt {attempt + 1}/{MAX_RETRIES} failed: {error_msg}. Retrying in {backoff}s..."
+                        f"Attempt {attempt + 1}/{max_retries} failed: {error_msg}. Retrying in {backoff}s..."
                     )
                     time.sleep(backoff)
                     backoff = min(backoff * 2, 60)
