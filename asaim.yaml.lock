@@ -23,24 +23,22 @@ tools:
   - b723c120161a
   - ba931a59dd59
   - c441583adae5
-  - de0f7e0a3896
   - e08a7ad4378b
   - e407b9da183a
   - f5ea3ce9b9b0
   - f8054ea1c365
-  - fb723c531be5
   tool_panel_section_label: Get Data
 - name: fastqc
   owner: devteam
   revisions:
-  - 0b201de108b9
   - 28d39af2dd06
-  - 3a458e268066
+  - 2d094334f61e
   - 3fdc1a74d866
   - 484e86282f4b
-  - 9337dd1fbc66
+  - a00a6402d09a
   - d2cf2c0c8a11
   - e28c965eeed4
+  - f2e8552cf1d0
   tool_panel_section_label: FASTA/FASTQ
 - name: prinseq
   owner: iuc
@@ -55,25 +53,24 @@ tools:
   revisions:
   - 11962ce40855
   - 1bf4789584dc
-  - 2c1f0fe810f7
+  - 1bfc7254232e
   - 8352713cf939
   - 949f01671246
   - eb546ac2aab2
-  - f1e71aeaa923
+  - f11ff7be8c78
   tool_panel_section_label: FASTA/FASTQ
 - name: trimmomatic
   owner: pjbriggs
   revisions:
   - 14d05f2d511d
   - 2bd7cdbb6228
-  - 415a165d92bb
+  - 53af7b5b1b56
   - a60283899c6d
   - f8a9a5eaca8a
   tool_panel_section_label: FASTA/FASTQ
 - name: multiqc
   owner: iuc
   revisions:
-  - 161f4383df15
   - 1c2db0054039
   - 26ee5e11ecbe
   - 31c42a2c02d3
@@ -86,10 +83,10 @@ tools:
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
+  - c1a4b5f3b432
   - d2aaac19f42f
   - e4574a4d09d8
   - e4dd4c0622f6
-  - f7985e0479b9
   - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
 - name: format_cd_hit_output
@@ -100,7 +97,7 @@ tools:
 - name: sortmerna
   owner: rnateam
   revisions:
-  - 185effcdfb68
+  - 1eafcc450052
   - 59252ca85c74
   - 65c38d020fea
   - b482293b2987
@@ -108,7 +105,7 @@ tools:
 - name: data_manager_sortmerna_database_downloader
   owner: rnateam
   revisions:
-  - 30bb49887172
+  - 7d2252852f96
   tool_panel_section_label: Data Managers
 - name: ncbi_blast_plus
   owner: devteam
@@ -136,15 +133,15 @@ tools:
 - name: bwa
   owner: devteam
   revisions:
-  - 48f306c57611
+  - dfd8b7f78c37
   tool_panel_section_label: Mapping
 - name: bowtie2
   owner: devteam
   revisions:
   - 019c2a81547a
-  - 42bb952b4e3c
-  - 8ccbdbe9a695
-  - 96d2e31a3938
+  - 4f92dccc808a
+  - 66f992977578
+  - a54de7e658f7
   - a9d4f71dbfb0
   - c1ec08cb34f9
   - ceb6467e276c
@@ -166,7 +163,6 @@ tools:
   owner: iuc
   revisions:
   - 280386b252a5
-  - 45210df786b9
   - 9016f67b716f
   - cef64c36c89e
   - ed85107b3cfd
@@ -185,7 +181,7 @@ tools:
 - name: metaspades
   owner: nml
   revisions:
-  - 01a241476407
+  - 2ecf5a570907
   tool_panel_section_label: Assembly
 - name: quast
   owner: iuc
@@ -202,7 +198,6 @@ tools:
   - 875d0f36d66f
   - a3b35edea53a
   - ebb0dcdb621a
-  - f30d03867854
   tool_panel_section_label: Assembly
 - name: refseq_masher
   owner: nml
@@ -218,7 +213,6 @@ tools:
   owner: iuc
   revisions:
   - c4dba88e85ef
-  - cbe065fbd038
   - cc18f0f3514c
   - ed86a8f378c8
   tool_panel_section_label: Data Managers
@@ -240,7 +234,7 @@ tools:
 - name: interproscan5
   owner: bgruening
   revisions:
-  - 82547f0d3a29
+  - e32f2ea6a139
   tool_panel_section_label: Annotation
 - name: combine_metaphlan2_humann2
   owner: bebatut
@@ -251,7 +245,6 @@ tools:
   owner: iuc
   revisions:
   - 635c90a27692
-  - b16989c1e3a7
   - ed1becc01910
   tool_panel_section_label: Graph/Display Data
 - name: taxonomy_krona_chart

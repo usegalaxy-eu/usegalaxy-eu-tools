@@ -1,0 +1,324 @@
+tools:
+- name: bia_download
+  owner: bgruening
+  revisions:
+  - 7d6c91adc1fd
+  - f7daa2948340
+- name: overlay_images
+  owner: imgteam
+  revisions:
+  - 66fe62b96281
+- name: color_deconvolution
+  owner: imgteam
+  revisions:
+  - 5bd113d38acc
+- name: 2d_simple_filter
+  owner: imgteam
+  revisions:
+  - 1b7e67168732
+- name: ridge_filter
+  owner: imgteam
+  revisions:
+  - 33e3d7e8283f
+- name: 2d_auto_threshold
+  owner: imgteam
+  revisions:
+  - 4853fc2b50bf
+- name: 2d_local_threshold
+  owner: imgteam
+  revisions:
+  - c90b91f4a07b
+- name: superdsm
+  owner: imgteam
+  revisions:
+  - 79ec3263686a
+  - dc5f72f6b1e9
+- name: rfove
+  owner: imgteam
+  revisions:
+  - e438d87ef91a
+- name: landmark_registration
+  owner: imgteam
+  revisions:
+  - 02aa2873e67d
+  - a71239f3543a
+- name: projective_transformation
+  owner: imgteam
+  revisions:
+  - 17f5d0c3f8a3
+- name: spot_detection_2d
+  owner: imgteam
+  revisions:
+  - 859dd1c11ac0
+- name: imagecoordinates_flipaxis
+  owner: imgteam
+  revisions:
+  - 5a210baa2ff1
+  - d0960e1b25a8
+- name: 2d_split_binaryimage_by_watershed
+  owner: imgteam
+  revisions:
+  - 5e21d7342593
+- name: binary2labelimage
+  owner: imgteam
+  revisions:
+  - 6c92ac9ce868
+- name: split_labelmap
+  owner: imgteam
+  revisions:
+  - 9db1c22dbe17
+- name: permutate_axis
+  owner: imgteam
+  revisions:
+  - 5b82f2186244
+  - 7e7215e721af
+- name: mahotas_features
+  owner: imgteam
+  revisions:
+  - 0c76d029dbe3
+- name: 2d_feature_extraction
+  owner: imgteam
+  revisions:
+  - 5bc8cdc17fd0
+  - 6fdb3542a406
+- name: count_objects
+  owner: imgteam
+  revisions:
+  - 895a29ebd0c7
+- name: coordinates_of_roi
+  owner: imgteam
+  revisions:
+  - 0d30ffea8874
+  - 24d9bd16c953
+- name: detection_viz
+  owner: imgteam
+  revisions:
+  - f46f64f9590d
+- name: colocalization_viz
+  owner: imgteam
+  revisions:
+  - fc85eb253163
+- name: overlay_segmentation_mask
+  owner: imgteam
+  revisions:
+  - 63b2a10b1001
+- name: visceral_evaluatesegmentation
+  owner: imgteam
+  revisions:
+  - 8c1a805c2fc5
+- name: imagej2_bunwarpj_compare_elastic_raw
+  owner: imgteam
+  revisions:
+  - 1bffabc15695
+- name: imagej2_bunwarpj_compose_raw_elastic
+  owner: imgteam
+  revisions:
+  - 1bf7e70e67f9
+- name: imagej2_analyze_particles_binary
+  owner: imgteam
+  revisions:
+  - aeb9bb864b8c
+- name: imagej2_create_image
+  owner: imgteam
+  revisions:
+  - dc3935a0165a
+- name: imagej2_noise
+  owner: imgteam
+  revisions:
+  - 3f6599ec7d30
+- name: imagej2_bunwarpj_compose_raw
+  owner: imgteam
+  revisions:
+  - 93b416f8e9e3
+- name: imagej2_bunwarpj_align
+  owner: imgteam
+  revisions:
+  - ab54024c0a88
+- name: imagej2_smooth
+  owner: imgteam
+  revisions:
+  - dd20ee3092e3
+- name: imagej2_analyze_skeleton
+  owner: imgteam
+  revisions:
+  - bb84f130a4e1
+- name: imagej2_bunwarpj_compare_elastic
+  owner: imgteam
+  revisions:
+  - b95f87118c6f
+- name: imagej2_bunwarpj_compare_raw
+  owner: imgteam
+  revisions:
+  - d17be9aef142
+- name: imagej2_bunwarpj_convert_to_raw
+  owner: imgteam
+  revisions:
+  - 95fb6fa70c2f
+- name: imagej2_make_binary
+  owner: imgteam
+  revisions:
+  - baa308e2533a
+- name: imagej2_sharpen
+  owner: imgteam
+  revisions:
+  - a84f2cbf091b
+- name: imagej2_bunwarpj_compose_elastic
+  owner: imgteam
+  revisions:
+  - 6840ce593a91
+- name: imagej2_adjust_threshold_binary
+  owner: imgteam
+  revisions:
+  - f1ba33cd9edf
+- name: imagej2_bunwarpj_adapt_transform
+  owner: imgteam
+  revisions:
+  - 706af1d7028a
+- name: unzip
+  owner: imgteam
+  revisions:
+  - 28d6129b2901
+- name: bioformats2raw
+  owner: imgteam
+  revisions:
+  - 94fe1169328c
+- name: morphological_operations
+  owner: imgteam
+  revisions:
+  - f10112b317a1
+- name: cp_cellprofiler
+  owner: bgruening
+  revisions:
+  - 0b8f8406ee16
+  - 78a16d8c8d5e
+  - a98608f3abc5
+  - ba4fd9fbf924
+  - fca368c99299
+- name: cp_common
+  owner: bgruening
+  revisions:
+  - 0b7db679fff8
+  - 27396311a314
+  - 3c3cd68d6d5a
+  - 9c8ee01c0b22
+- name: cp_tile
+  owner: bgruening
+  revisions:
+  - 878bafb411dd
+- name: cp_convert_objects_to_image
+  owner: bgruening
+  revisions:
+  - 1221c018f7be
+  - 2690da374874
+  - 7ec682d4e4cc
+  - d9fa2e6fae97
+- name: cp_display_data_on_image
+  owner: bgruening
+  revisions:
+  - 4e12ef887a2a
+  - 7c70e5268acd
+  - c49a557b4e3e
+  - e46efde93815
+- name: cp_enhance_or_suppress_features
+  owner: bgruening
+  revisions:
+  - 29188f9c4ca8
+  - 3f9747bda8c4
+  - e3243230788c
+  - ee0007b3c2d2
+- name: cp_export_to_spreadsheet
+  owner: bgruening
+  revisions:
+  - 10257d6d545b
+  - 72a7f23f3a79
+  - c0759ca34e20
+  - c956182d4e2c
+- name: cp_gray_to_color
+  owner: bgruening
+  revisions:
+  - bbf1ef17c01b
+  - c72f83dbc7b5
+  - d37580e3f4d0
+  - e5870c434f28
+- name: cp_identify_primary_objects
+  owner: bgruening
+  revisions:
+  - 52c01fb29b2a
+  - 6bf947501352
+  - 99e493b2e951
+  - d9bf32d13dfd
+- name: cp_mask_image
+  owner: bgruening
+  revisions:
+  - 54d7d3450800
+  - baa3e6d4d99d
+  - ca1421f7e3ed
+  - d1a3ebcacb7a
+- name: cp_measure_granularity
+  owner: bgruening
+  revisions:
+  - 1062c9e44147
+  - 382413f8ec1d
+  - 88dd3674c4d0
+  - e336ff1955a0
+- name: cp_measure_image_area_occupied
+  owner: bgruening
+  revisions:
+  - 534ed7b8ca34
+  - 7a08edbc790e
+  - c2d573d02afc
+  - c75596eadae1
+- name: cp_measure_image_intensity
+  owner: bgruening
+  revisions:
+  - 20525bc7f6f4
+  - 2681008d726f
+  - 2a404d72850f
+  - e87d1fd2d673
+- name: cp_measure_image_quality
+  owner: bgruening
+  revisions:
+  - 08a2cf887a44
+  - 26945c55ddff
+  - 4dcd464c22ff
+  - e8a42b438de3
+- name: cp_measure_object_intensity
+  owner: bgruening
+  revisions:
+  - 1373b765c8f9
+  - 4962d252b2dd
+  - ae299f107121
+  - b867e9317a06
+- name: cp_measure_object_size_shape
+  owner: bgruening
+  revisions:
+  - 5c9549983af8
+  - 5ef26243a4a5
+  - 66408bdb2674
+  - eba2ec72f967
+- name: cp_measure_texture
+  owner: bgruening
+  revisions:
+  - 0f751bb492de
+  - 51acaef34e47
+  - 658a2a451aec
+  - 8f3f8c94626f
+- name: cp_relate_objects
+  owner: bgruening
+  revisions:
+  - 3a2cfcd7c38a
+  - b6f13e783ac5
+  - f3f45c42bc36
+  - f9969a97f034
+- name: cp_save_images
+  owner: bgruening
+  revisions:
+  - 609911f19ab2
+  - 6e0f244acd32
+  - 84c3bd433b96
+  - a45d360ae9d9
+- name: cp_image_math
+  owner: bgruening
+  revisions:
+  - 2005f8058036
+  - 6d3851ac885f

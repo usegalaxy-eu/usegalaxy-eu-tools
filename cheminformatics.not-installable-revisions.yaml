@@ -1,0 +1,496 @@
+tools:
+- name: mmpbsa_mmgbsa
+  owner: chemteam
+  revisions:
+  - 12caa50c0d5f
+  - 45dc2555933c
+  - 51023da731c0
+  - cf2be7b90ea5
+- name: rxdock_sort_filter
+  owner: bgruening
+  revisions:
+  - 475cde209992
+- name: rxdock_rbcavity
+  owner: bgruening
+  revisions:
+  - e99f861ba68a
+- name: rdock_sort_filter
+  owner: bgruening
+  revisions:
+  - 13f16cd0500f
+  - 784a9f7f079e
+  - a6ec6c55267e
+  - c88da0252e85
+- name: rdock_rbdock
+  owner: bgruening
+  revisions:
+  - 07fa39ed62c7
+  - 309fd04bcfd2
+  - a428230b38f6
+  - bad150d12198
+- name: rdock_rbcavity
+  owner: bgruening
+  revisions:
+  - 06f376dc117a
+  - 2f218be61685
+  - 5f73eb32ddbf
+  - 82193638d0c5
+  - d52d6ee95cf2
+  - df7ba4536f77
+- name: openbabel_structure_distance_finder
+  owner: bgruening
+  revisions:
+  - 2c5c7da26e08
+  - 49242402887b
+  - 4c9d6b47045c
+  - c066b5accacf
+- name: sucos_max_score
+  owner: bgruening
+  revisions:
+  - 55ac04db36aa
+- name: sucos_clustering
+  owner: bgruening
+  revisions:
+  - 12725d4b90f3
+  - 334ad24525db
+  - 58d18838e244
+  - bd12f4b4c3a8
+- name: sucos_docking_scoring
+  owner: bgruening
+  revisions:
+  - 2e67eea82ff7
+  - 8161c08627bf
+  - a3c1e2eea7d3
+- name: padel
+  owner: bgruening
+  revisions:
+  - 30c673b5b061
+- name: md_converter
+  owner: chemteam
+  revisions:
+  - b61cbdf78765
+- name: gmx_setup
+  owner: chemteam
+  revisions:
+  - 1a5991ec7ce1
+  - 1d4dd4f908d4
+  - 5463ee41fe6b
+  - 8ad46f918541
+  - 92a2fedec6c9
+  - a66c193fafdb
+  - acc9922f3eab
+  - c7bcae9fe040
+  - ccdf0b30a422
+  - ea2287ee360b
+- name: gmx_em
+  owner: chemteam
+  revisions:
+  - 1b46398cc8ca
+  - 476cdf677b03
+  - 59c662ca4211
+  - 6b79ed3d924d
+  - 6d9a9ab96195
+  - 91fc33483094
+  - 9660b2c5fdda
+  - a71723f870f7
+  - aeec3c2719da
+- name: gmx_solvate
+  owner: chemteam
+  revisions:
+  - 2dfcf594c838
+  - 3c77d66e7fe5
+  - 589652e8eb31
+  - 598e0078040b
+  - 645139abefae
+  - 696c5419ea84
+  - 77aaf9a68166
+  - 97b2c06ae168
+  - 9a1e472aa515
+  - bd858380ad7a
+- name: gmx_md
+  owner: chemteam
+  revisions:
+  - d97433b7d482
+- name: gmx_merge_topology_files
+  owner: chemteam
+  revisions:
+  - 04abdf96978b
+  - 06ea4e040d45
+  - 17c12d5cb336
+  - 19d4b07e7ca7
+  - 33ed3c26b8c2
+  - 3c56532ba462
+  - 3cf3b3b305ea
+  - 439bf0e21ca1
+  - 534ff13ea227
+  - 930a403f7389
+  - 9389cd867cf2
+  - ced8ec975548
+- name: gmx_sim
+  owner: chemteam
+  revisions:
+  - 171ce1253b19
+  - 4c4f1761d31f
+  - 5642f48f5698
+  - 633f27174e8f
+  - a97dcfc23b4b
+  - b1061cc2653a
+  - b7cebf442209
+  - ef8e6d99fc15
+- name: gmx_fep
+  owner: chemteam
+  revisions:
+  - 19d1d4c30402
+  - 453311042f29
+- name: gmx_trj
+  owner: chemteam
+  revisions:
+  - 16fad30d566a
+  - 72459c3ea5f6
+  - 95fa9dfbc4bb
+  - aefa274e0126
+  - b4705476229d
+  - bb0053c4e4f2
+  - e9cc595562b8
+- name: gmx_energy
+  owner: chemteam
+  revisions:
+  - 58c3e6711e94
+  - 593c63b5aff8
+  - 6dbf73a62977
+  - 97872d87ba80
+  - b3ce2a978520
+  - b4a47b4ed264
+- name: gmx_restraints
+  owner: chemteam
+  revisions:
+  - 14a7bf3e03df
+  - 25b8272872c8
+  - 455470c9d8e6
+  - 4f371a6a30d4
+  - 54eadeb47ab9
+  - f79f4671eaf2
+  - f9dd1349d76d
+- name: gmx_makendx
+  owner: chemteam
+  revisions:
+  - 01a435922dd5
+  - 5f9f51642a24
+  - 9acc0fc74373
+  - a72a739de916
+  - abe615727ccd
+  - bff4c37097b5
+  - c102b3f42778
+- name: gmx_editconf
+  owner: chemteam
+  revisions:
+  - 067c643b0cc0
+  - 206b219f4847
+  - 861b2487aaea
+  - 8be9cb12a4fa
+  - b9e25ec471eb
+  - d06c503b33bd
+  - e69ce1e7fb6a
+- name: gmx_check
+  owner: chemteam
+  revisions:
+  - 26467f738ed4
+- name: alchemical_analysis
+  owner: chemteam
+  revisions:
+  - 5f136e371f44
+- name: ctb_rdkit_descriptors
+  owner: bgruening
+  revisions:
+  - 414edd9ea77d
+  - 617d4555d8d3
+  - 6674260c1459
+  - a1c53f0533b0
+- name: packmol
+  owner: chemteam
+  revisions:
+  - 0b8a0ce446f5
+- name: mdanalysis_angle
+  owner: chemteam
+  revisions:
+  - 62ce73c9d737
+  - a0d210b9d287
+  - e3fee32a78e8
+  - e7d0075052c9
+  - fc7293c6cb6a
+- name: mdanalysis_rdf
+  owner: chemteam
+  revisions:
+  - 1a220575ad7a
+  - 36babbdd7818
+  - 4510baed86ee
+  - 9bb57bd1fdc8
+  - b63a8bdb4b90
+- name: mdanalysis_dihedral
+  owner: chemteam
+  revisions:
+  - 47dd4e854598
+  - aaa130695a2b
+  - d8178fe9aaff
+  - f55dd7c08112
+  - f95d4348ed7c
+- name: mdanalysis_distance
+  owner: chemteam
+  revisions:
+  - 312f912de69d
+  - 8a1a8e2fbad4
+  - c33b972fe040
+  - d540ea77b909
+  - ffd6f8d159e1
+- name: mdanalysis_ramachandran_plot
+  owner: chemteam
+  revisions:
+  - 70a2d548e62c
+  - af9f01ca6a5c
+  - b348dfa55e0a
+  - ce0728b92289
+- name: mdanalysis_hbonds
+  owner: chemteam
+  revisions:
+  - 4c36f5ad2799
+  - 5c38e38dbc35
+  - d23ef0663267
+  - dfda5e713926
+- name: mdanalysis_cosine_analysis
+  owner: chemteam
+  revisions:
+  - a842da7ef42b
+  - d18e7db42633
+  - d60c274980f7
+  - e39bc1f90d8f
+- name: mdanalysis_endtoend
+  owner: chemteam
+  revisions:
+  - 78aa3659fcd1
+  - ce9dc91ff87f
+- name: acpype_amber2gromacs
+  owner: chemteam
+  revisions:
+  - 79c856227ff1
+- name: mdanalysis_ramachandran_protein
+  owner: chemteam
+  revisions:
+  - 0f270722aca6
+  - 631b2a62d500
+- name: bio3d_rmsf
+  owner: chemteam
+  revisions:
+  - e838317708a6
+- name: bio3d_rmsd
+  owner: chemteam
+  revisions:
+  - 75fd897bd85d
+- name: bio3d_pca
+  owner: chemteam
+  revisions:
+  - f56fb2762abb
+- name: bio3d_pca_visualize
+  owner: chemteam
+  revisions:
+  - 65bfd1b90b96
+- name: bio3d_dccm
+  owner: chemteam
+  revisions:
+  - 386b4f4b6a85
+- name: fastpca
+  owner: chemteam
+  revisions:
+  - 6f2029791c94
+  - d9f8cc3258f9
+  - dd195f7a791c
+- name: biomd_extract_clusters
+  owner: chemteam
+  revisions:
+  - ad49025ba90d
+- name: biomd_rmsd_clustering
+  owner: chemteam
+  revisions:
+  - ee1f38eb220e
+- name: prepare_ligands_for_docking
+  owner: bgruening
+  revisions:
+  - 2ba07316c7e0
+  - 5486f7a2b0cb
+  - a5f4b80e6769
+  - de4c80d17527
+- name: openbabel_remsmall
+  owner: bgruening
+  revisions:
+  - ac9567d307a2
+  - aebc671bae78
+  - c8d8caa9a54d
+  - d7f0ca1f2669
+  - e94b2920d4e4
+- name: openbabel_obgrep
+  owner: bgruening
+  revisions:
+  - 14712e15f196
+  - 2912ebf12ef2
+  - 78640d0127ce
+  - 99517f9b780d
+- name: openbabel_change_title
+  owner: bgruening
+  revisions:
+  - 01ab890bf0ad
+  - 2cd8aee0d830
+  - 3ecaa9634126
+  - 9c15e92bed39
+  - eed751918a20
+- name: openbabel_genprop
+  owner: bgruening
+  revisions:
+  - 417845394cdf
+  - a26f96c1f061
+  - a72ae2711a97
+  - aafffb37d168
+- name: openbabel_remions
+  owner: bgruening
+  revisions:
+  - 04da8dc033e1
+  - 4e3b2049a4d3
+  - 76bbd52058ab
+- name: openbabel_svg_depiction
+  owner: bgruening
+  revisions:
+  - 3ec5e9a716ac
+  - 672b3365ddbc
+  - a66827fc370d
+  - d3b48303045b
+- name: openbabel_spectrophore_search
+  owner: bgruening
+  revisions:
+  - 63a121e6f224
+  - 9ce9f996b941
+  - afd14e10a318
+  - f93f3e01abe8
+- name: openbabel_remove_protonation_state
+  owner: bgruening
+  revisions:
+  - 00263ca6ffb8
+  - 0bf5331f62ef
+  - b578d0c101cd
+  - e376ba0fcde0
+- name: openbabel_compound_convert
+  owner: bgruening
+  revisions:
+  - 1400d1977e7b
+  - 1c66bf08f687
+  - a072cb207571
+  - a9df9aae60bb
+- name: openbabel_subsearch
+  owner: bgruening
+  revisions:
+  - 171c94786a56
+  - 202e3a64859b
+  - ab2b9d87b067
+  - bd678d7db2ae
+- name: openbabel_filter
+  owner: bgruening
+  revisions:
+  - 0e382252d23d
+  - 8ee975c49a3d
+  - da03b00048b1
+  - df4dc55197dd
+  - ff2dd4b7d918
+- name: openbabel_addh
+  owner: bgruening
+  revisions:
+  - 0691e5e97cd5
+  - 6e4b7e0c61a6
+  - d2e6d682bcd0
+  - f697d9601273
+- name: openbabel_remduplicates
+  owner: bgruening
+  revisions:
+  - 12aca74f07d7
+  - 39895aff0dd7
+  - 50ca8845e7f5
+  - 65254472e5b4
+  - b2569e22b40c
+- name: autodock_vina_prepare_box
+  owner: bgruening
+  revisions:
+  - 4f7c5cad3377
+  - 761762031eee
+- name: mordred
+  owner: bgruening
+  revisions:
+  - ea68b86303e2
+- name: ambertools_acpype
+  owner: chemteam
+  revisions:
+  - 0d640d752e8a
+  - 2417677038b2
+  - 7e0b829bbc22
+  - a0c154146234
+  - c6afbb28f547
+- name: ambertools_antechamber
+  owner: chemteam
+  revisions:
+  - 4fff93efc0f9
+  - 8029dfe04b28
+  - c280abd461a6
+  - ca57ded3ec32
+  - d3cdf6fe972a
+  - e4de81eea04c
+- name: ambertools_parmchk2
+  owner: chemteam
+  revisions:
+  - 0c0104b3d5da
+  - 3549852f413f
+  - 6aa2b60f3195
+  - 79f570a89e3d
+  - 7c9bfca84241
+  - dbfb86927de6
+- name: chembl
+  owner: bgruening
+  revisions:
+  - 6f8458d1cf46
+  - 915e9be38994
+- name: sdf_to_tab
+  owner: bgruening
+  revisions:
+  - 06828e0cc8a7
+  - 351fbd750a6d
+  - 55553120df69
+- name: enumerate_charges
+  owner: bgruening
+  revisions:
+  - 0f3e5c69251e
+  - 36360fa103d6
+  - bbbf5fb356dd
+- name: parmconv
+  owner: chemteam
+  revisions:
+  - 30120022aa5c
+  - 5a97cb53a456
+  - da2252f1ccab
+- name: apoc
+  owner: earlhaminst
+  revisions:
+  - 451f90534945
+  - da07fb6a7c62
+- name: smina
+  owner: earlhaminst
+  revisions:
+  - 214e001014f7
+  - 3c170cc50eeb
+  - 7c0bb0c48a27
+- name: gmx_rg
+  owner: chemteam
+  revisions:
+  - 018628703771
+  - 28c34e9949ac
+  - a5afe283962d
+  - b01f3db44534
+- name: gmx_get_builtin_file
+  owner: chemteam
+  revisions:
+  - 1f98845f4df4
+  - 377fe4ce732d
+  - 42dfec375136
