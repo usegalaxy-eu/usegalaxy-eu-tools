@@ -1,0 +1,353 @@
+tools:
+- name: dropletutils_read_10x
+  owner: ebi-gxa
+  revisions:
+  - d62a9aa0411e
+  - f25f42dc256a
+- name: dropletutils_empty_drops
+  owner: ebi-gxa
+  revisions:
+  - 00b41600e1c1
+  - da189ce4016b
+- name: retrieve_scxa
+  owner: ebi-gxa
+  revisions:
+  - cc21614b6693
+- name: anndata_ops
+  owner: ebi-gxa
+  revisions:
+  - 004cd2ccf7fc
+  - '265348777440'
+  - 35422e51b804
+  - 98f37271c17c
+  - c09d61ede252
+  - e4bb4666449e
+  - f0a29f4b9be9
+- name: scanpy_compute_graph
+  owner: ebi-gxa
+  revisions:
+  - 087a7edb0995
+  - 1dc0ea7a7e62
+  - 53e6944bd162
+  - 6b2673e1f4c6
+  - aada17e5da75
+  - c7a904e3e09b
+  - c938bef2ca98
+- name: scanpy_filter_cells
+  owner: ebi-gxa
+  revisions:
+  - 26a98de26847
+  - 3dcc1629e420
+  - 598f6161a665
+  - df56c78c5a8e
+  - e05cafd4e2b2
+- name: scanpy_filter_genes
+  owner: ebi-gxa
+  revisions:
+  - 083418c42b90
+  - 228a51c5bc35
+  - 303c559f4e1f
+  - c678f671e151
+  - da2808112bb4
+- name: scanpy_find_cluster
+  owner: ebi-gxa
+  revisions:
+  - 1e820072e8f1
+  - 455846afcc73
+  - 5a62843a2b9f
+  - 62d23f5d38f9
+  - b531acda966c
+  - e232ea3fff07
+  - e4006a341f74
+- name: scanpy_find_markers
+  owner: ebi-gxa
+  revisions:
+  - 0d63195a9b9f
+  - 9fe7e2da8fe6
+  - a6a896082cd7
+  - af5e4efa9e66
+  - bfdca1eb4548
+  - c18f446dcfbf
+  - f00adc96e0bf
+- name: scanpy_find_variable_genes
+  owner: ebi-gxa
+  revisions:
+  - 144c405d3ca4
+  - 1c59a010bb44
+  - 321f1b073cbc
+  - 5663eb6b965c
+  - '710530217502'
+  - 84711701573e
+  - d88a29e2eba6
+- name: scanpy_normalise_data
+  owner: ebi-gxa
+  revisions:
+  - 18ce7b88ff5d
+  - 28ab1cdd0cf5
+  - 7852b823ad45
+  - 978bd87a87c2
+  - a97c37e0309a
+  - f7322b68cc90
+- name: scanpy_parameter_iterator
+  owner: ebi-gxa
+  revisions:
+  - 1a30a61effea
+  - 25e0b1fd2d05
+  - 328e7846309d
+  - 40feaaed47cf
+  - 4bb2ca8e2bd3
+  - 7c4d44c14ceb
+  - 81069608d570
+  - 93680e2ff8f4
+  - 99301e5feddc
+  - 9dbd170bec14
+  - a8c73996ac50
+  - ae4debc68f4a
+  - bdd0e28e16bc
+  - c6d3a3609a8a
+  - ce09dd900257
+  - d4c9061c8fef
+  - d574549f9dee
+  - ec800d531617
+  - f0dd61087af3
+- name: scanpy_plot_embed
+  owner: ebi-gxa
+  revisions:
+  - 210026a1a50a
+  - 278dfcba81fd
+  - 68e82882a8f9
+  - 7c601934578b
+  - f8b5478a9fdf
+- name: scanpy_plot_trajectory
+  owner: ebi-gxa
+  revisions:
+  - 0cb36b79741e
+  - 2d00acd70129
+  - 2fe4b4cba312
+  - 8e2fc37c3e0c
+  - e8e54d565c92
+  - eb10fa649a7e
+- name: scanpy_read_10x
+  owner: ebi-gxa
+  revisions:
+  - 1b84ae7595ed
+  - 247e401d454f
+  - 3ffd959f55f4
+  - 72cf1c8f5870
+  - b021ae78ccb4
+  - ce87cc7d65ea
+  - cf55e0e462da
+- name: scanpy_regress_variable
+  owner: ebi-gxa
+  revisions:
+  - 1ad1d9713563
+  - 63e18d37228d
+  - 6acb47a58ac7
+  - 866ea2391985
+  - 99c7380fae41
+  - b8f8890d95e4
+- name: scanpy_run_diffmap
+  owner: ebi-gxa
+  revisions:
+  - 0580285b842e
+  - 6586bfb21f41
+  - 713e94af9d6c
+  - 900b3c31fd3a
+  - a05d2553484e
+  - c869331377bf
+- name: scanpy_run_dpt
+  owner: ebi-gxa
+  revisions:
+  - 0e264c40fd06
+  - 730d098a9f23
+  - c5a313b4337c
+  - e82f42730fa1
+  - ea6bea16d0e2
+  - eb764ec05bb9
+- name: scanpy_run_fdg
+  owner: ebi-gxa
+  revisions:
+  - 14866357fbec
+  - 2ab5f5682507
+  - 425f2e046231
+  - 4c38558f0e7c
+  - 885681d258b4
+  - a82c905e2c26
+- name: scanpy_run_paga
+  owner: ebi-gxa
+  revisions:
+  - 0488639e0e8a
+  - a12f0d1b0fac
+  - a9e541954c1c
+  - eba43c4d86b9
+  - f6148c49ff8b
+  - fdaf18739b31
+- name: scanpy_run_pca
+  owner: ebi-gxa
+  revisions:
+  - 2dd53b944e78
+  - 4a54b92af339
+  - 8b4dae3748d3
+  - da13741428bf
+  - f7ce9ed8a4f3
+  - fe900f147809
+- name: scanpy_run_tsne
+  owner: ebi-gxa
+  revisions:
+  - 2c6340dad187
+  - 3589dfaef3f6
+  - 5d92e38da1ea
+  - 9d2b6c6f9e07
+  - b946c0c60d4c
+  - d525452f8f2f
+  - e61ba8b05578
+- name: scanpy_run_umap
+  owner: ebi-gxa
+  revisions:
+  - 01750c193a83
+  - 135e8cacb57e
+  - 3a7b97ddf3ff
+  - 676e2964920a
+  - a5731f913326
+  - b282c349bd67
+  - c111d7d04f0b
+- name: scanpy_scale_data
+  owner: ebi-gxa
+  revisions:
+  - 1bb1d4419c48
+  - 29a69127061f
+  - 33d809001520
+  - 3a0d4bebabc5
+  - 4c73b070cbff
+  - 796cd21bb304
+  - 87a02d83b6f5
+- name: scanpy_integrate_combat
+  owner: ebi-gxa
+  revisions:
+  - 0752a5c8a9da
+  - 27c74c83eae5
+  - 7322e7583847
+- name: scanpy_integrate_harmony
+  owner: ebi-gxa
+  revisions:
+  - 14076b38c3bb
+  - 3f61bf17ca50
+  - 739f68e3cbca
+- name: scanpy_integrate_mnn
+  owner: ebi-gxa
+  revisions:
+  - 1504334ef569
+  - b202e078a83f
+  - dc7fa97154f1
+- name: scanpy_integrate_bbknn
+  owner: ebi-gxa
+  revisions:
+  - 032d52b00b7c
+  - 26805c747e15
+  - 89eef46fce58
+- name: scanpy_multiplet_scrublet
+  owner: ebi-gxa
+  revisions:
+  - 2f9517a24c73
+- name: monocle3_create
+  owner: ebi-gxa
+  revisions:
+  - 46a523dc303f
+  - 5a4b2fcd04d1
+- name: monocle3_diffexp
+  owner: ebi-gxa
+  revisions:
+  - a7d4f80d1265
+  - d333006ef72a
+- name: monocle3_learngraph
+  owner: ebi-gxa
+  revisions:
+  - 17e74fba97fd
+  - 6b6b5a6d4021
+  - 8ec85828b6e6
+- name: monocle3_ordercells
+  owner: ebi-gxa
+  revisions:
+  - 762c57e35238
+  - a14bd9053e2b
+  - f58c4eb5446d
+- name: monocle3_partition
+  owner: ebi-gxa
+  revisions:
+  - 60cedaee808d
+  - 92ca41fbc123
+  - b253a59cbb98
+- name: monocle3_plotcells
+  owner: ebi-gxa
+  revisions:
+  - ad64e2d368d6
+- name: monocle3_preprocess
+  owner: ebi-gxa
+  revisions:
+  - 0276a57983e8
+  - 181ef11cba9d
+  - 273d11a83e42
+- name: monocle3_reducedim
+  owner: ebi-gxa
+  revisions:
+  - 82cc10768c74
+  - 89aea3f27ed2
+  - 98f4918eee70
+- name: monocle3_topmarkers
+  owner: ebi-gxa
+  revisions:
+  - bc2df96ef963
+- name: scmap_preprocess_sce
+  owner: ebi-gxa
+  revisions:
+  - b1bc3cb14097
+- name: scmap_index_cell
+  owner: ebi-gxa
+  revisions:
+  - d9f79a39b39d
+  - dd2a84734b87
+- name: scmap_index_cluster
+  owner: ebi-gxa
+  revisions:
+  - 314f21a351ea
+  - 63f1a27dce34
+- name: scmap_scmap_cell
+  owner: ebi-gxa
+  revisions:
+  - 2b85cec412c3
+  - 65b719530dd5
+  - f8921da94342
+- name: scmap_scmap_cluster
+  owner: ebi-gxa
+  revisions:
+  - 037b0e7a7606
+  - 0a1dabbae5fa
+  - 97922339644a
+- name: scmap_select_features
+  owner: ebi-gxa
+  revisions:
+  - 3e22b96ba4fb
+  - 91f29745bda6
+  - d0d9c3dfd609
+- name: scmap_get_std_output
+  owner: ebi-gxa
+  revisions:
+  - 601a933714f1
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - fb4ff3c42cd3
+- name: umi_tools_count
+  owner: iuc
+  revisions:
+  - 276b4111b253
+  - 437d5c72f2e3
+  - 933220bbc2ae
+- name: decoupler_pseudobulk
+  owner: ebi-gxa
+  revisions:
+  - 130e25d3ce92
+  - 4fa5f370599f
+  - 893ff9213a34
+  - ef054892d47f
+  - f321c60167d4
