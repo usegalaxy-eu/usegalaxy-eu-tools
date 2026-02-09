@@ -57,7 +57,7 @@ jobs:
           name: ${{ matrix.lockfile }}
           path: |
             ${{ matrix.lockfile }}
-            *.not-installable-revisions.yaml
+            not-installable-revisions/*.not-installable-revisions.yaml
           if-no-files-found: ignore
 
   create-pr:
