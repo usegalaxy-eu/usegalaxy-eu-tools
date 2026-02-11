@@ -399,6 +399,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: pirate
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: panaroo
     owner: galaxy-australia
     tool_panel_section_label: Annotation
@@ -2627,6 +2631,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: kneaddata
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: kraken
     owner: devteam
     tool_panel_section_label: Metagenomic Analysis
@@ -2956,6 +2964,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: metasbt_profile
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+    
+  - name: mgnify_genome_search
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -3686,10 +3698,6 @@ tools:
 
 
 # OPERATE ON GENOMIC INTERVALS
-
-  - name: annotation_profiler
-    owner: devteam
-    tool_panel_section_label: Operate on Genomic Intervals
 
   - name: basecoverage
     owner: devteam

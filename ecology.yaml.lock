@@ -4,40 +4,30 @@ tools:
 - name: pampa_presabs
   owner: ecology
   revisions:
-  - 07b081730994
   - 1ebb70b59037
-  - 8d8aec182fb1
-  - c9dfe4e20a45
+  - f1bfdeb5ebfe
   tool_panel_section_label: Species abundance
 - name: pampa_communitymetrics
   owner: ecology
   revisions:
-  - 2cd0a5a321c2
-  - 5bd7ddd7601f
+  - 5873ac1a5a44
   - c67ece97d4b1
-  - ddd5b2e74b8b
   tool_panel_section_label: Species abundance
 - name: pampa_glmsp
   owner: ecology
   revisions:
-  - 0778efa9eb2e
-  - 6c14021f678e
   - 7a69e1c8ba46
-  - c12897ba5f83
+  - e972fe2bffee
   tool_panel_section_label: Species abundance
 - name: pampa_glmcomm
   owner: ecology
   revisions:
-  - 44b9069775ca
-  - 8db02073b671
+  - 97967fbcf6da
   - b40fecef616b
-  - f0dc3958e65d
   tool_panel_section_label: Species abundance
 - name: pampa_plotglm
   owner: ecology
   revisions:
-  - 3ab852a7ff53
-  - 5ddca052c314
   - c448e026f122
   tool_panel_section_label: Species abundance
 - name: stoc_maketable
@@ -61,8 +51,8 @@ tools:
 - name: stoc_mainglm_group
   owner: ecology
   revisions:
-  - 06a11044e089
   - 8f953c35c787
+  - e3e173ae01b0
   tool_panel_section_label: Species abundance
 - name: stoc_trend_indic
   owner: ecology
@@ -139,20 +129,15 @@ tools:
   owner: ecology
   revisions:
   - 5b31641e6d30
-  - abc8da8c12ba
   tool_panel_section_label: Biodiversity data exploration
 - name: cb_dissim
   owner: ecology
   revisions:
-  - 7e6cc3da1189
   - 8dc082da41c1
-  - ffaa9a71b2d2
   tool_panel_section_label: Compute indicators for turnover boulders fields
 - name: cb_ivr
   owner: ecology
   revisions:
-  - 8c6142630659
-  - b67730406f1b
   - bcbad4f83dec
   tool_panel_section_label: Compute indicators for turnover boulders fields
 - name: sample_seqs
@@ -172,7 +157,6 @@ tools:
   - 419027d822d6
   - 4c07ddedc198
   - 562f3c677828
-  - 61e2aa6bb55d
   - 746e8e4bf929
   - d642efa5cbd7
   tool_panel_section_label: Join, Subtract and Group
@@ -198,7 +182,6 @@ tools:
 - name: collection_column_join
   owner: iuc
   revisions:
-  - 071084070619
   - 3ddd99c7efee
   tool_panel_section_label: Join, Subtract and Group
 - name: numeric_clustering
@@ -214,12 +197,12 @@ tools:
   - 3dc70b59608c
   - 6073bb457ec0
   - 86755160afbf
+  - 9ff72e942410
   - ab83aa685821
   - c41d78ae5fee
   - d698c222f354
   - ddf54b12c295
   - f46f0e4f75c4
-  - fb4ff3c42cd3
   - fbf99087e067
   tool_panel_section_label: Text Manipulation
 - name: column_maker
@@ -227,7 +210,6 @@ tools:
   revisions:
   - 02026300aa45
   - 13b6f0007d9e
-  - 427903d47026
   - 464b9305180e
   - 6595517c2dd8
   - 6e8d94597139
@@ -258,31 +240,26 @@ tools:
 - name: coverage
   owner: devteam
   revisions:
-  - 4ef9819dc7fb
   - e3363e087468
   tool_panel_section_label: Text Manipulation
 - name: merge
   owner: devteam
   revisions:
-  - 381cd27bf67a
   - debffd27642d
   tool_panel_section_label: Text Manipulation
 - name: intersect
   owner: devteam
   revisions:
-  - 33b3f3688db4
   - 69c10b56f46d
   tool_panel_section_label: Text Manipulation
 - name: join
   owner: devteam
   revisions:
   - 718d04143c31
-  - a10f49d9218a
   tool_panel_section_label: Text Manipulation
 - name: subtract
   owner: devteam
   revisions:
-  - 0145969324c4
   - 0427ca314f3d
   tool_panel_section_label: Operate on Genomic Intervals
 - name: subtract_query
@@ -325,12 +302,10 @@ tools:
   owner: devteam
   revisions:
   - 9f12b7e500f1
-  - a09d13b108fd
   tool_panel_section_label: Text Manipulation
 - name: cluster
   owner: devteam
   revisions:
-  - 05696474ee89
   - a126ec6ea0e4
   tool_panel_section_label: Operate on Genomic Intervals
 - name: get_flanks
@@ -341,13 +316,11 @@ tools:
 - name: complement
   owner: devteam
   revisions:
-  - 38c8bb402872
   - 8b6c6ec55c6e
   tool_panel_section_label: Operate on Genomic Intervals
 - name: basecoverage
   owner: devteam
   revisions:
-  - 2cedec3759e4
   - 9c5ff4695c97
   tool_panel_section_label: Operate on Genomic Intervals
 - name: dna_filtering
@@ -374,7 +347,6 @@ tools:
 - name: gff3_rebase
   owner: iuc
   revisions:
-  - 238981ed43b7
   - f7ad5e69aa60
   tool_panel_section_label: Text Manipulation
 - name: column_arrange_by_header
@@ -463,8 +435,6 @@ tools:
   owner: ecology
   revisions:
   - 231179dea9dd
-  - 484930fdc002
-  - 77787acbd793
   tool_panel_section_label: Climate Analysis
 - name: landcover_subindicator
   owner: ecology
@@ -541,12 +511,10 @@ tools:
 - name: ggplot2_pca
   owner: iuc
   revisions:
-  - 1b9406a1a769
   - 1df3b30325dd
   - 2bf238af068d
   - 7e616a1bdb07
   - 7f2ef7216cf8
-  - 90928b255abb
   - ae344ccf9d62
   - b1268b7544d3
   - fcb6a19960c6
@@ -561,14 +529,12 @@ tools:
   - 360df4999907
   - 36b848d5f3ec
   - 4ac4e7083b7e
-  - 59fd173ac850
   - 5cec5fb749f0
   - 7dd841a32245
   - 86d0ebe09628
   - a1abfa420d9d
   - c171f2b7d76e
   - c237ba772225
-  - eca03db4f612
   - feab9265552d
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_heatmap
@@ -579,21 +545,17 @@ tools:
   - 1a72f938213e
   - 391a4cc45fea
   - 3d059e9c2fba
-  - a4d83ba2a1bc
   - d3a9e32672ec
   - da4c086cff5b
-  - de002ba2b849
   tool_panel_section_label: Graph/Display Data
 - name: ggplot2_violin
   owner: iuc
   revisions:
   - 0e7290688b50
   - 17b666467c32
-  - 637cf21db396
   - 63d211052ffb
   - 9c52a8130729
   - d6c41b454cc1
-  - d8305f18060e
   - dfd5d981b5a4
   - e44775efb2dc
   tool_panel_section_label: Graph/Display Data
@@ -613,12 +575,9 @@ tools:
   revisions:
   - 1acf88921176
   - 299307abd804
-  - 3b12bf9b4b87
   - 5298e06f14f9
   - 5fe1dc76176e
-  - 87908c76ca8d
   - 9cec81e1b90e
-  - a36551483a8f
   - d0fc8b746d57
   - e3a675da7fd0
   - f87634b12749
@@ -629,8 +588,6 @@ tools:
   - 11869c5becd8
   - 355a82227003
   - 398e5104f8a2
-  - 497d700a5229
-  - 536078949ae4
   - 6b9816a913de
   - 6fc8bab811da
   - b0d96516e6a5
@@ -671,30 +628,16 @@ tools:
   revisions:
   - 02d2be90dedb
   - 0630258dcf35
-  - 14fa42b095c4
-  - 1a9d5a8fff12
   - 4ed102b922cb
-  - 6d23883e0b94
   - 80852884053f
-  - a5665e1b06b0
   - b7c3e9a3b954
-  - d2afc87db26b
-  - e92c8a69b0e0
-  - f458724cc317
-  - fa9d6a4d95ad
+  - e1b37bdc5fbd
   tool_panel_section_label: Machine Learning
 - name: sklearn_sample_generator
   owner: bgruening
   revisions:
-  - 04f34751dae3
-  - 0f460421b212
-  - 1fe020b2108f
   - 7068b5fcd623
-  - 7c2e71e4acf3
-  - 97b467e06354
-  - 999e07f0a9fa
-  - ab9977548806
-  - b4ba9602a36e
+  - 86a086d2bbed
   - e6f4d3d9058c
   - e99cccc3ca13
   - eb41d87cb1de
@@ -703,33 +646,19 @@ tools:
 - name: sklearn_searchcv
   owner: bgruening
   revisions:
-  - 1ae5dfd5ac17
-  - 1c4a241bef5c
-  - 1ddf415cb349
+  - 21d3e08b1a48
   - 301e07345c93
   - 36e8d6d5d01b
-  - 586e68c83df2
   - 7626ea9c2e1b
-  - a36a45cb96fa
   - c6ae57f774c6
-  - d37a7f17e35d
-  - d709e2d0d199
   - e5a5ad882f1f
-  - f0d2e8a3c575
   tool_panel_section_label: Machine Learning
 - name: sklearn_build_pipeline
   owner: bgruening
   revisions:
-  - 0c74d3164ac8
-  - 118e230e85ce
-  - 3519f6003259
-  - 3f25f37ee3db
+  - 019bd8289224
   - 4c4ec859c31a
-  - 664666bd14ec
   - 7442b94d6a1e
-  - 913ee94945f3
-  - 9160cb4069c2
-  - 97dce66fe158
   - 9c3e1d3235c8
   - aef56d0e7a61
   - b1eda492f063
@@ -737,204 +666,122 @@ tools:
 - name: sklearn_pairwise_metrics
   owner: bgruening
   revisions:
-  - 053e7f32d37e
-  - 09bfbef3dd90
   - 226524df8c6c
-  - 26ae8c074d95
-  - 2a1afd3481ce
-  - 7366e5108e9f
   - 7614281473da
-  - 86020dbc8ef7
+  - a61375e306c1
   - b07416ec8d16
   - c84ab9ca4e5c
-  - cd4328a02798
   - d2da602b05cb
-  - e79200975daf
   tool_panel_section_label: Machine Learning
 - name: sklearn_nn_classifier
   owner: bgruening
   revisions:
   - 2c58b83c9bad
-  - 309cc7c6af56
-  - 34d31bd995e9
-  - 39ae3c043096
   - 4cc980df6265
-  - 4db563e8d453
   - 7ae443e6217d
-  - 823ecc0bce45
   - 8b1b2b91f8d0
+  - c030e4bb1b39
   - cd02bf168d23
-  - d33d37f32e54
-  - e9ba818e7877
-  - fdd27282ed8e
   tool_panel_section_label: Machine Learning
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
   - 1dd433d2c92c
+  - 27903ce9b4be
   - 4bbaf77573ef
-  - 73e7f1c76ece
   - 7dd3fb35904f
-  - 838ca001438d
-  - 8eed73e8e04d
-  - abb5a3f256e3
   - ad7e0b4291ee
-  - aeca97d9a214
   - bb9fc9d46ea4
   - e10e776f2109
-  - e13a7c05b3a4
-  - e7f047a9dca9
   tool_panel_section_label: Machine Learning
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
-  - 0087d6db4290
   - 060ca94ac049
-  - 1682df52c084
-  - 315f01a9d2c2
-  - 3ab7af14f1b5
-  - 407495139a09
-  - 4ecc0ce9d0a2
+  - 360330a867f0
   - 53616c8b0865
   - 841a6cc5fc58
   - a07ab242b0b5
-  - a98fdfcd9f5f
-  - e94395c672bd
   - f3dfa4bdf87e
   tool_panel_section_label: Machine Learning
 - name: sklearn_feature_selection
   owner: bgruening
   revisions:
-  - 1d20e0dce176
+  - 231e9a9849e8
   - 4483b84310ec
-  - 46b43ee6d367
-  - 5276bdb49315
-  - 5773e98921fc
   - 6d21b03e00a1
   - 74adae8d7b0f
   - 96bb4c49e30e
-  - a7c667ff83fe
-  - ae0fafb53c1d
-  - d84b3a229a52
   - e918f33f7d4f
-  - ec25331946b8
   tool_panel_section_label: Machine Learning
 - name: sklearn_data_preprocess
   owner: bgruening
   revisions:
-  - 045faa05e712
-  - 1bef885255e0
-  - 29e863d1491e
   - 484a98c44f00
   - 6c030fe29722
   - 761269451e98
   - 80074b842ebd
-  - 826c3e68e7a9
-  - 9e43ee712723
-  - a5c2ce4ea328
-  - add3c3a7c2b4
-  - b75cae00f980
+  - 9ac0b78c6b6d
   - eb9da067ab26
   tool_panel_section_label: Machine Learning
 - name: sklearn_clf_metrics
   owner: bgruening
   revisions:
   - 0ee984c1cbd6
-  - 15bcf1a7543b
-  - 25cc25ea10b8
-  - 40e31fb88836
-  - 55703205546f
+  - 68afcd163b3d
   - 6ffedbe712c0
   - 80ca74b1cb36
-  - 9bf11bbeccc3
   - a7067bbf1e58
   - adc6137e7c73
-  - c8547d3993c0
-  - daaa56720686
-  - e9821a426d75
   tool_panel_section_label: Machine Learning
 - name: sklearn_regression_metrics
   owner: bgruening
   revisions:
-  - 1e98dbb8d5bc
-  - 40ee30b5e456
+  - 3badea963c3b
   - 5c9fb40ae174
-  - 6000c1589f33
   - 627be0156505
-  - 6db5c1dfb076
-  - 70c5a9127f99
   - 7acb9b46c066
   - 7d98dfb04d27
-  - 9c8ede554b7c
-  - b4ebe47701e4
   - dc17e2878dc1
-  - f5dcb87fd14e
   tool_panel_section_label: Machine Learning
 - name: sklearn_discriminant_classifier
   owner: bgruening
   revisions:
-  - 1bd039aca44f
-  - 237ae72d58a3
   - 2d032cff49eb
-  - 420a4bf99244
+  - 3e2921875c58
   - 4335cec181ba
-  - 5552eda109bd
   - 6adef419e041
-  - 74fe0dc82c00
   - 78a60f884ac9
   - 87cb9cb44d1f
-  - 893285b150f8
-  - e76f6dfea5c9
-  - fc48ce12454b
   tool_panel_section_label: Machine Learning
 - name: sklearn_generalized_linear
   owner: bgruening
   revisions:
-  - 14f0ccc85505
   - 2fc89dcd41c8
-  - 3e4a7684d402
   - 40f4447733b2
-  - 616a241c5b37
-  - 913bf1c4c7bb
   - 927586a18553
-  - b628de0d101f
-  - bf78d5caca65
-  - c648d0716fb0
-  - c9969328b42f
+  - bf32512b1418
   - d4808d5b83da
   - dc4b5fd604a6
   tool_panel_section_label: Machine Learning
 - name: sklearn_model_validation
   owner: bgruening
   revisions:
-  - 0474777be433
-  - 30f892a9b46d
-  - 4b359039f09f
+  - 492d34a75de6
   - 5d5d9cc554f9
   - 61e76fb65daf
-  - 65f18ab91132
-  - 9dc28a4b6ca8
   - be4f389a95d9
   - bfc7bdfcb423
-  - caa3995d5f23
-  - cf9aa11b91c8
-  - de360b57a5ab
   - e06ab1e112cc
   tool_panel_section_label: Machine Learning
 - name: scipy_sparse
   owner: bgruening
   revisions:
-  - 318484f56b6a
   - 42b513bed40b
   - 4efac966af2a
-  - 6d1a9fae57eb
-  - 92e09b827300
-  - 9f9cf31e3111
+  - 648b81bca7c5
   - a84e6ffd3735
-  - b3d80cb1ed87
   - b7e93c1deb3f
-  - b9ed7b774ba3
-  - e6893a4bcb7b
   - ecd247e1ea9c
   - f49aad8f79ea
   tool_panel_section_label: Statistics
@@ -956,7 +803,7 @@ tools:
   revisions:
   - 10d4df6a9d94
   - 47e5dbc3e790
-  - 71e5fa25b8a2
+  - 8611b80a14d6
   - e9f8633db0a2
   tool_panel_section_label: FASTA/FASTQ
 - name: fastqc
@@ -981,26 +828,21 @@ tools:
   - b2f1f75d49c4
   - bf675f34b056
   - c19b16e5729c
+  - c1a4b5f3b432
   - d2aaac19f42f
   - e4dd4c0622f6
-  - f7985e0479b9
   - f7e2f1eb3a16
   tool_panel_section_label: Quality Control
 - name: mothur_sffinfo
   owner: iuc
   revisions:
-  - 09e3b0966a11
-  - 12507ed33710
-  - 3839397c8f28
   - 51d7c2486a68
-  - 8b42e4ec39df
-  - f3a65ee4bfda
   tool_panel_section_label: Mothur
 - name: fastq_combiner
   owner: devteam
   revisions:
-  - 56389130cb63
   - 9115b978ce10
+  - b05e39b9c170
   - f1dc2a761c30
   tool_panel_section_label: FASTA/FASTQ
 - name: xarray_metadata_info
@@ -1008,7 +850,6 @@ tools:
   revisions:
   - 00de53d18b99
   - '663268794710'
-  - 7edbe5ae8b72
   - 9bbaab36a5d4
   - e8650cdf092f
   tool_panel_section_label: GIS Data Handling
@@ -1016,7 +857,6 @@ tools:
   owner: ecology
   revisions:
   - 123a9a629bef
-  - 225d0d275a24
   - 6baac361495b
   - b393815e4cb7
   - bf595d613af4
@@ -1033,7 +873,6 @@ tools:
   owner: ecology
   revisions:
   - 1a91e551f3a9
-  - b0780241f916
   - c91c27b63fb2
   - e87073edecd6
   tool_panel_section_label: GIS Data Handling
@@ -1047,7 +886,6 @@ tools:
 - name: obi_illumina_pairend
   owner: iuc
   revisions:
-  - 83fbdf93d51e
   - 8cb6bd511879
   - 94f412098ac8
   - a829941376bd
@@ -1055,7 +893,6 @@ tools:
 - name: obi_ngsfilter
   owner: iuc
   revisions:
-  - 3bf57dadf7cd
   - 76e69de726b2
   - 91a1ed0b486f
   tool_panel_section_label: DNA Metabarcoding
@@ -1064,34 +901,28 @@ tools:
   revisions:
   - 3021b9f5809f
   - d50dc96e3ce9
-  - f82cefbbcea5
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_grep
   owner: iuc
   revisions:
   - 02bab5ff7c37
   - e9e49cf06b42
-  - fe7ec8a3d35e
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_uniq
   owner: iuc
   revisions:
   - c0f7b58b4ce4
   - d4bea99366f9
-  - ec215ed98831
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_clean
   owner: iuc
   revisions:
-  - 08d873cdd5f6
-  - 12baadec7809
   - 7d16de45c021
   - 816cbd8f4e6e
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_convert
   owner: iuc
   revisions:
-  - 374fd9feb032
   - 4d705e3443a7
   - e328ced6cf0a
   tool_panel_section_label: DNA Metabarcoding
@@ -1100,21 +931,18 @@ tools:
   revisions:
   - 12b9e285ca1c
   - b6d9ea2fb41b
-  - e614dcabd870
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_tab
   owner: iuc
   revisions:
   - 3299c7d5268f
   - 4cf47c504672
-  - 5f7003111e32
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_stat
   owner: iuc
   revisions:
   - 39320fee9d70
   - 5f4544915893
-  - 723a93febe89
   tool_panel_section_label: DNA Metabarcoding
 - name: stacks2_ustacks
   owner: iuc
@@ -1172,7 +1000,6 @@ tools:
   - 6fba323a242d
   - 7b881f5f5ad5
   - 887cf585cafc
-  - 9a44832748c5
   - a5969aa9347e
   - b242deb58952
   - e2db212d64ad
@@ -1265,40 +1092,26 @@ tools:
   owner: iuc
   revisions:
   - 4cce81af50a8
-  - a4ec4f620a77
-  - b6de94f2edc0
-  - e5c97f09fe06
   tool_panel_section_label: RAD-seq
 - name: stacks_cstacks
   owner: iuc
   revisions:
   - 40cde06ae34a
-  - be3df81c0353
-  - dab92afa0c98
-  - ff1f282d731e
   tool_panel_section_label: RAD-seq
 - name: stacks_sstacks
   owner: iuc
   revisions:
   - 563af4497055
-  - 95e37a28704b
   - 96de7538bf0c
-  - e38d181d4e72
   tool_panel_section_label: RAD-seq
 - name: stacks_pstacks
   owner: iuc
   revisions:
-  - 67cbd80b83f5
-  - 7ebc7d229deb
   - a9ff3d0184b8
-  - ede5223bc7f1
   tool_panel_section_label: RAD-seq
 - name: stacks_genotypes
   owner: iuc
   revisions:
-  - 00f4a4e553ae
-  - 46f061f3cfeb
-  - 5af94af9ec8f
   - 62a4b8e5e139
   tool_panel_section_label: RAD-seq
 - name: stacks_populations
@@ -1313,65 +1126,44 @@ tools:
   owner: iuc
   revisions:
   - 563af4497055
-  - 95e37a28704b
   - 96de7538bf0c
-  - e38d181d4e72
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks
   owner: iuc
   revisions:
-  - 2360d8cf42f7
-  - 3e43e51b3c3b
   - 8479d9a67998
-  - 9d0ac63dcfcd
   tool_panel_section_label: RAD-seq
 - name: stacks_procrad
   owner: iuc
   revisions:
-  - 57910d476be9
-  - 8fe258d72ff3
-  - be78e39d56b3
   - eded025438db
   tool_panel_section_label: RAD-seq
 - name: stacks_refmap
   owner: iuc
   revisions:
-  - 1ba1185929c1
-  - 4ee074ca88fb
-  - 7c42e6768c41
   - d7a482f44e08
   tool_panel_section_label: RAD-seq
 - name: stacks_clonefilter
   owner: iuc
   revisions:
-  - 3009a21724e7
-  - 5d12a1115770
   - 60d86dc1b19d
-  - a0a51078cb61
   tool_panel_section_label: RAD-seq
 - name: stacks_assembleperead
   owner: iuc
   revisions:
-  - 0c741f364d18
   - 38ecfb8d52c6
-  - 6eaf0f9836c8
-  - b08cd32d03ad
   - bc108981ca68
   tool_panel_section_label: RAD-seq
 - name: stacks_stats
   owner: iuc
   revisions:
-  - 3c4c922a4fb0
-  - 93b16407d6e9
   - a0c52b82b9d3
-  - a89b5f7813ad
   tool_panel_section_label: RAD-seq
 - name: xarray_metadata_info
   owner: ecology
   revisions:
   - 00de53d18b99
   - '663268794710'
-  - 7edbe5ae8b72
   - 9bbaab36a5d4
   - e8650cdf092f
   tool_panel_section_label: GIS Data Handling
@@ -1379,7 +1171,6 @@ tools:
   owner: ecology
   revisions:
   - 123a9a629bef
-  - 225d0d275a24
   - 6baac361495b
   - b393815e4cb7
   - bf595d613af4
@@ -1396,7 +1187,6 @@ tools:
   owner: ecology
   revisions:
   - 1a91e551f3a9
-  - b0780241f916
   - c91c27b63fb2
   - e87073edecd6
   tool_panel_section_label: GIS Data Handling
@@ -1463,28 +1253,22 @@ tools:
 - name: spocc_occ
   owner: ecology
   revisions:
-  - 724ad06de5a5
   - f64b3c1a80a6
   - f9d76a46799a
   tool_panel_section_label: Get Data
 - name: argo_getdata
   owner: ecology
   revisions:
-  - 055a934a380f
-  - 28c8f085d1b4
   - 4b84de936c51
-  - f3c64a15ee7e
   tool_panel_section_label: Get Data
 - name: obis_data
   owner: ecology
   revisions:
-  - 1fcd81d65467
   - 5bae75c49f2e
   tool_panel_section_label: Get Data
 - name: copernicusmarine
   owner: ecology
   revisions:
-  - 4de886e6300d
   - 4edd010161e9
   - 87ae77f2bd5a
   - c07f11d8e49a
@@ -1498,14 +1282,12 @@ tools:
 - name: vigiechiro_bilanenrichipf
   owner: ecology
   revisions:
-  - 775809e2f6c8
   - 911f80dce38d
   tool_panel_section_label: Animal Detection on Acoustic Recordings
 - name: vigiechiro_bilanenrichirp
   owner: ecology
   revisions:
   - 5ad79c210eb9
-  - be4e28da3919
   tool_panel_section_label: Animal Detection on Acoustic Recordings
 - name: vigiechiro_idcorrect_2ndlayer
   owner: ecology
@@ -1520,15 +1302,11 @@ tools:
 - name: cb_dissim
   owner: ecology
   revisions:
-  - 7e6cc3da1189
   - 8dc082da41c1
-  - ffaa9a71b2d2
   tool_panel_section_label: Compute indicators for turnover boulders fields
 - name: cb_ivr
   owner: ecology
   revisions:
-  - 8c6142630659
-  - b67730406f1b
   - bcbad4f83dec
   tool_panel_section_label: Compute indicators for turnover boulders fields
 - name: champ_blocs
@@ -1561,13 +1339,11 @@ tools:
 - name: srs_spectral_indices
   owner: ecology
   revisions:
-  - a8dabbf47e15
   - b40aba3d9e5c
   tool_panel_section_label: Compute indicators for satellite remote sensing
 - name: srs_pca
   owner: ecology
   revisions:
-  - 0931c98270c9
   - 21e21363a8b4
   tool_panel_section_label: Compute indicators for satellite remote sensing
 - name: srs_metadata
@@ -1579,8 +1355,6 @@ tools:
   owner: ecology
   revisions:
   - 1015a0070bac
-  - 393957ecc97d
-  - 4e7c1fb5e894
   - dc187fe78055
   tool_panel_section_label: Biodiversity data exploration
 - name: ab1_fastq_converter
@@ -1596,108 +1370,72 @@ tools:
 - name: eal_templates
   owner: ecology
   revisions:
-  - 3b0fa963ae3e
   - 404b7ff29b30
-  - 5faa25ba905e
-  - 67b2cd9c2954
+  - 5a7db73a2c54
   - d4f168043757
-  - debfa8a223c0
   tool_panel_section_label: Data and Metadata Management
 - name: eal_table_template
   owner: ecology
   revisions:
-  - 32707c9f5261
-  - 672e25c2c8c8
-  - 6de4b4f70b7b
+  - 0b9bcffae7a8
   - 8631291a1527
   - 8abb7c57a4b9
-  - c223db6625c1
   tool_panel_section_label: Data and Metadata Management
 - name: raster_template
   owner: ecology
   revisions:
-  - 06e29cdc08bf
-  - 36150f04b524
-  - 9eaf84bf856f
-  - b34c5a70b706
+  - 9b656eb706aa
   - eeadb27fe7b3
   tool_panel_section_label: Data and Metadata Management
 - name: vector_template
   owner: ecology
   revisions:
-  - 330f15f2ad3f
-  - 40eb35199537
-  - 559744b4c50c
   - 67fbd4f439ed
-  - c65dd54f9807
+  - e2e0d0026cfa
   tool_panel_section_label: Data and Metadata Management
 - name: entities_template
   owner: ecology
   revisions:
-  - 1b11e38718af
-  - 299db57196ac
-  - 5bfceb4ef59b
-  - 8de58d879d6e
   - e24cfd8328c3
+  - e85ca71f525e
   tool_panel_section_label: Data and Metadata Management
 - name: geo_cov_template
   owner: ecology
   revisions:
-  - 0fe3b8bd9d8b
-  - 4f5816b57c13
   - 5c2ade73e411
-  - a5f887cfcf94
-  - d53b708cb348
-  - ea302cc18332
+  - a0f39f45c6cb
   tool_panel_section_label: Data and Metadata Management
 - name: taxo_cov_template
   owner: ecology
   revisions:
+  - 0389eb811948
   - 0cfc9b6da2ac
-  - 20224597fa2c
   - 293d3c8eba5c
-  - 2af7401f13e0
-  - 4f2d8a7c97fa
-  - 9507334a3303
-  - a45fa46f8010
   tool_panel_section_label: Data and Metadata Management
 - name: annotations_template
   owner: ecology
   revisions:
   - 79f2ca0bfa9a
-  - dbba9bedd4bd
+  - c9a9024c7cb7
   tool_panel_section_label: Data and Metadata Management
 - name: eml_validate
   owner: ecology
   revisions:
+  - 71474b9bd367
   - a652b7bc6322
-  - ad96b20423cf
   tool_panel_section_label: Data and Metadata Management
 - name: makeeml
   owner: ecology
   revisions:
-  - 34dcb86a9351
-  - 49f38336f28f
-  - 4cf24a95c4ff
-  - 59349973537f
+  - 13cfbeff9922
   - 642e31c435c9
-  - 8a697f446051
-  - 9cbac7a9b1a3
-  - 9d56f6480194
   - d6aa2a899877
   tool_panel_section_label: Data and Metadata Management
 - name: eml2eal
   owner: ecology
   revisions:
-  - 0fa9d8240dc3
-  - 248b03f124dd
-  - 3d14d6a4ef7c
-  - 409d9329d2be
   - 57b8600443f5
-  - 5c0290c4225a
-  - 6fc2341a92cb
-  - bd8b3e7541d5
-  - c1d2c0922362
+  - 5835a8d0dffc
   tool_panel_section_label: Data and Metadata Management
 - name: data_paper_from_eml
   owner: ecology
@@ -1707,80 +1445,44 @@ tools:
 - name: ecoregion_geonearestneighbor
   owner: ecology
   revisions:
-  - 1d225ca5fac0
-  - 36637718c51d
   - 4ed3e4f04b79
-  - 5cde56683579
-  - ace69a8ec1c3
   - e5fc90e44599
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_brt_analysis
   owner: ecology
   revisions:
-  - 2129484beb61
-  - 3cc4b8bbce00
-  - 694738eda0dc
-  - a56c413f3a98
   - aba980404954
   - dcc059f387b6
-  - f0d6938d0451
-  - f8962f1c832a
-  - fc621f3f8226
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_taxa_seeker
   owner: ecology
   revisions:
-  - 14bad9452425
-  - 18c4cd785a74
-  - 2152f424e7a2
   - 68d98dbd8bfc
-  - 788b118910a7
-  - 9dc992f80c25
   - cec1f7495897
-  - e3cd588fd14a
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_eco_map
   owner: ecology
   revisions:
-  - 374555fc30bd
-  - 3d750279158b
-  - 45784ebada45
   - 57c618532ac1
   - 876a70f08281
-  - b38b954b92b9
-  - c2856067ee72
-  - c6b1bf7b0ac6
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_cluster_estimate
   owner: ecology
   revisions:
-  - 001d7d101915
-  - 0578979cfd83
-  - 0f6542d0986e
-  - 1b9522671e90
   - 6c5404468d8c
   - 8307fa98be22
-  - cf7aefee9977
-  - e94a25eed489
   tool_panel_section_label: Ecoregionalization
 - name: ecoregion_clara_cluster
   owner: ecology
   revisions:
-  - 24a81631a8b5
-  - 32849c52aa54
-  - 74e966baa5fd
-  - 844b5bf84164
   - 893b2b010d4a
-  - c1d03f1a2e80
   - cc9ea890823c
-  - edb8d19735a6
   tool_panel_section_label: Ecoregionalization
 - name: claraguess
   owner: ecology
   revisions:
   - 8ac53593cef6
   - adeb719a267f
-  - f11879f7b554
   tool_panel_section_label: Ecoregionalization
 - name: indicspecies
   owner: ecology
@@ -1806,12 +1508,10 @@ tools:
   owner: ecology
   revisions:
   - b4b9edf9ea27
-  - d07fcc660f3c
   tool_panel_section_label: GIS Data Handling
 - name: otb_band_math
   owner: ecology
   revisions:
-  - 0ed34e3202b9
   - d266345e510d
   tool_panel_section_label: GIS Data Handling
 - name: otb_mean_shift_smoothing
@@ -1853,10 +1553,8 @@ tools:
   - 5acff8859db2
   - 65b149d71d53
   - 6b0a7e4e1460
-  - 78768c06b60f
   - af00a67d3649
   - d413a6b6cebf
-  - eb41894de107
   - f708bf8ccfa7
   tool_panel_section_label: GIS Data Handling
 - name: cmems_download_ic_bc
@@ -1885,7 +1583,6 @@ tools:
   - 3e201bc0eea3
   - b79faea33a8a
   - ca00b2eabdf3
-  - f82f266381be
   tool_panel_section_label: Get Data
 - name: wormsmeasurements
   owner: ecology
