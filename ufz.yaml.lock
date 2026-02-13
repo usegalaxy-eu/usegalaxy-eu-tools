@@ -59,6 +59,7 @@ tools:
   owner: ufz
   revisions:
   - 21e1765c5f19
+  - 558c09a342cb
   - a70140649a13
   - f86ba5328466
   tool_panel_section_label: Imaging
@@ -84,20 +85,43 @@ tools:
 - name: xlsx2tsv
   owner: ufz
   revisions:
+  - 27bc52511ebe
   - a21347be425d
   tool_panel_section_label: Text Manipulation
 - name: iphop_predict
   owner: ufz
   revisions:
+  - be0d13020aec
   - d357350b6da0
   tool_panel_section_label: Metagenomic Analysis
 - name: iphop_build_database
   owner: ufz
   revisions:
   - 39dc692a9554
+  - 4cc25c2b1d0b
   tool_panel_section_label: Data Managers
 - name: phi_toolkit_report
   owner: ufz
   revisions:
   - 3a7f73d638ba
   tool_panel_section_label: Metagenomic Analysis
+- name: omero_import
+  owner: ufz
+  revisions:
+  - 48a4ed7929b3
+  tool_panel_section_label: Imaging
+- name: omero_metadata_import
+  owner: ufz
+  revisions:
+  - eb967ee0ae4f
+  tool_panel_section_label: Imaging
+- name: omero_roi_import
+  owner: ufz
+  revisions:
+  - fb20acd19613
+  tool_panel_section_label: Imaging
+- name: omero_dataset_to_plate
+  owner: ufz
+  revisions:
+  - fa0d96599c31
+  tool_panel_section_label: Imaging

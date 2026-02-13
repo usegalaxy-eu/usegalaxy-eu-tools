@@ -187,6 +187,7 @@ tools:
   - 45c8bfaab608
   - 9e6d0309ec06
   - a95177c4d627
+  - adc9ab7a10ab
   - c3553950db1b
 - name: evidencemodeler
   owner: iuc
@@ -583,6 +584,7 @@ tools:
   - 1ae00120dd24
   - 392f100eebcd
   - 4768f7f8e93f
+  - 5429646e486d
   - bfd290fe1588
   tool_panel_section_label: Annotation
 - name: interproscan
@@ -762,6 +764,11 @@ tools:
   - b3d25fae5389
   - b6ec80429d54
   tool_panel_section_label: Annotation
+- name: pirate
+  owner: iuc
+  revisions:
+  - dc68498396e3
+  tool_panel_section_label: Annotation
 - name: panaroo
   owner: galaxy-australia
   revisions:
@@ -778,6 +785,7 @@ tools:
 - name: plasmidfinder
   owner: iuc
   revisions:
+  - 507d59b036c5
   - 7075b7a5441b
   tool_panel_section_label: Annotation
 - name: prodigal
@@ -1011,6 +1019,7 @@ tools:
   - 3ce74eab308b
   - 553bfe8bd0b5
   - 7547fcab5d19
+  - 7a30b65088d1
   - 841084c5fc46
   - 8f1b150a2487
   - a929ce596a34
@@ -1127,6 +1136,7 @@ tools:
   - e5e767089163
   - ec9e21e9c71b
   - f3c89da3af16
+  - fafc9b2b1657
   tool_panel_section_label: Assembly
 - name: hifiasm_meta
   owner: galaxy-australia
@@ -4165,6 +4175,7 @@ tools:
 - name: biapy
   owner: iuc
   revisions:
+  - 8dab52928e70
   - e434d9b9cd13
   tool_panel_section_label: Imaging
 - name: idr_download_by_ids
@@ -4322,6 +4333,7 @@ tools:
   - 6d4d39720545
   - a26ed87f444c
   - a86e80d3c09c
+  - b12d81af0291
   - d4b55e2beb12
   - f4af63aaf57a
   tool_panel_section_label: Mapping
@@ -4341,6 +4353,7 @@ tools:
   - 3e1ea2facca6
   - 48d39ee9eb30
   - 60afcc2c1d05
+  - bf107d23242b
   - e7f19d6a9af8
   tool_panel_section_label: Mapping
 - name: lastz_paired_reads
@@ -4390,6 +4403,7 @@ tools:
   - 4436bcb33d39
   - 55b7b257e12f
   - 7100ed4a31a2
+  - 881ea5ff36a0
   - bf5e9702061a
   - e1d39a293b5a
   - f4ec47f1a8da
@@ -5388,6 +5402,7 @@ tools:
   - 65c80ca30373
   - 6b7622dda516
   - 95bf7479d53c
+  - a00df747f03c
   - c2803012bbb3
   - fc6c328c292f
   tool_panel_section_label: Metagenomic Analysis
@@ -5707,6 +5722,11 @@ tools:
   - '383036561810'
   - 959920e3e800
   - a7c43271312c
+  tool_panel_section_label: Metagenomic Analysis
+- name: kneaddata
+  owner: iuc
+  revisions:
+  - 10f8abc1fbdf
   tool_panel_section_label: Metagenomic Analysis
 - name: kraken
   owner: devteam
@@ -7300,6 +7320,7 @@ tools:
   - a3c79d2b1041
   - d39f16771b62
   - e74df764bfd9
+  - f5f86d7506d5
   tool_panel_section_label: Imaging
 - name: bbtools_bbduk
   owner: iuc
@@ -7323,6 +7344,7 @@ tools:
   - 60f307965815
   - 8b8a3f793f0f
   - 9553180705b7
+  - a02aa0dfb850
   - e8ac2b53f262
   tool_panel_section_label: NCBI Blast
 - name: magicblast
@@ -7766,6 +7788,7 @@ tools:
   - 0122b28acc5f
   - 0b58ef9e84b2
   - 107d3ba7024a
+  - 180523b637d5
   - 26de3a7b1cb9
   - 3b8b5bde0bd9
   - 3f59ebfbfe3d
@@ -7796,6 +7819,7 @@ tools:
   - 2318841ec191
   - 5b4fd931a989
   - 91cf1290ba6f
+  - b315ee3d3487
   - fa913c2975da
   tool_panel_section_label: Phylogenetics
 - name: hyphy_bgm
@@ -7816,6 +7840,7 @@ tools:
   - 91006eb8b84e
   - ab9d1d5d5e29
   - ac0b16f873f7
+  - b09602997a4b
   - bf97cacc1a55
   - c669c8f7c6f6
   - cebcce34d63b
@@ -7852,11 +7877,13 @@ tools:
   - d723b65a4291
   - e908c4003bd8
   - eb26b02af55a
+  - f6c9b498608a
   - f9a193154a55
   tool_panel_section_label: Phylogenetics
 - name: hyphy_cfel
   owner: iuc
   revisions:
+  - 4586fb1ccdc2
   - 6960dd62c983
   - 710fdaa85384
   - 91679ca1480d
@@ -7867,6 +7894,7 @@ tools:
   owner: iuc
   revisions:
   - 079ea2eb9ae4
+  - 1e65054da37c
   - 6761212b7f1d
   - b30255d232d2
   - beeeed9665ea
@@ -7875,6 +7903,7 @@ tools:
   owner: iuc
   revisions:
   - 048d3f9c9efc
+  - 0e1a79e78bba
   - 16b4a3869bd5
   - 270763dcdfb4
   - 29515b569f8b
@@ -7917,6 +7946,7 @@ tools:
   - b6e3961a25ff
   - c32f3d3e8a92
   - c6dcbc9f94f2
+  - cc7b1e73cfdf
   - ccf8f1712632
   - e15ef3031bf9
   - e961403fdba3
@@ -7937,6 +7967,7 @@ tools:
   - 3db56014322f
   - 47145f568cd6
   - 658ad6851b71
+  - 6a3766e076e6
   - 6bc07d6011c0
   - 6e72195b364a
   - 73833ae53fbb
@@ -7972,6 +8003,7 @@ tools:
   - 88c4aa435ded
   - 9127799ac97e
   - a185b079b095
+  - a77524294da2
   - aa8cc71438cf
   - b0af57c1a968
   - c454b670f35f
@@ -7984,6 +8016,7 @@ tools:
   revisions:
   - 24a21a467399
   - 2c0308ac90e1
+  - 329a14e2f847
   - 36f47ae7dd8c
   - 3d1f153e2aa1
   - 4d5768ad6316
@@ -8023,6 +8056,7 @@ tools:
   - 9f566d869e2f
   - a61b2b6c7089
   - a8f760e7c322
+  - aaad6dcc2734
   - acd9dfe3dec0
   - bdcfaa985c16
   - e06961ac014b
@@ -8031,6 +8065,7 @@ tools:
 - name: hyphy_relax
   owner: iuc
   revisions:
+  - 01cdbefe0aa4
   - 056cd46735b8
   - 098451b762fb
   - 169f4d983656
@@ -8079,6 +8114,7 @@ tools:
   - b0b16acfcbe3
   - b82429e9c6a9
   - c2bed8cc8fc1
+  - cfa5f36d0c77
   - d430eba4a90e
   - d6f4ff2aed07
   - dc9e52b2d0e1
@@ -8099,6 +8135,7 @@ tools:
   - 5c2640980c0a
   - 5f1830cb9135
   - 638942ba8e37
+  - 6543a5d937c4
   - 6971ee03a002
   - 6cf8d753e93e
   - 6d529bf13e2e
@@ -8114,6 +8151,7 @@ tools:
   owner: iuc
   revisions:
   - 31e7f5a25db3
+  - bba232f7b231
   - dc8875a13914
   - ea698cd7e086
   - f5bbd4b34541
@@ -8252,6 +8290,7 @@ tools:
 - name: raxmlng
   owner: iuc
   revisions:
+  - 01f4de723b03
   - 6569ef485c2e
   tool_panel_section_label: Phylogenetics
 - name: read2tree
@@ -8285,11 +8324,13 @@ tools:
 - name: usher
   owner: iuc
   revisions:
+  - 568f7ae147ea
   - 746b434c8fbb
   tool_panel_section_label: Phylogenetics
 - name: usher_matutils
   owner: iuc
   revisions:
+  - 39ce7344cd1e
   - e0a0a473fc1e
   tool_panel_section_label: Phylogenetics
 - name: pacu_map
@@ -9314,6 +9355,7 @@ tools:
   revisions:
   - 04866f817daa
   - 4d343c1f606b
+  - 887a9bf73d1a
   - 8eb649e67987
   - 970e6333f07e
   - befc9dad4ca8
@@ -9325,6 +9367,7 @@ tools:
   revisions:
   - 108db6635177
   - 1dfd95ee241e
+  - 47db0f26ca31
   - 62e4d6cdbaa7
   - 993b19f20c76
   - cb20f99fd45b
@@ -9344,6 +9387,7 @@ tools:
   revisions:
   - 2ed961caae0a
   - 6dbef7ea2253
+  - 90af4f8f59af
   - fa7b5520ae53
   tool_panel_section_label: SAM/BAM
 - name: bamtools_split_paired
@@ -9352,6 +9396,7 @@ tools:
   - 5325e44297b9
   - 75104ddce35f
   - 75d5afa09972
+  - c5f04783750e
   tool_panel_section_label: SAM/BAM
 - name: bamtools_split_ref
   owner: iuc
@@ -9359,10 +9404,12 @@ tools:
   - 09470ab960f1
   - 9b520009db81
   - 9b8feb118f9e
+  - f66e109710bd
   tool_panel_section_label: SAM/BAM
 - name: bamtools_split_tag
   owner: iuc
   revisions:
+  - a0014762e2ee
   - c9fbbe6f5fc8
   - e30af4e78cd3
   - e9b9c489aacc
@@ -10429,6 +10476,7 @@ tools:
   revisions:
   - 0b3a28ad3947
   - bf7c4eb54f39
+  - c3f88253f9c5
   tool_panel_section_label: Text Manipulation
 - name: coverage
   owner: devteam
@@ -11211,6 +11259,7 @@ tools:
 - name: deepvariant
   owner: iuc
   revisions:
+  - 1ad55977a040
   - 63b68fe4af85
   - 7608209110d3
   - 918c8b94c8d8
@@ -11307,6 +11356,7 @@ tools:
   revisions:
   - 1cea23583655
   - 287c4af133e6
+  - 2898012c5265
   - 3be27a9a7313
   - 53ce8be43212
   - f41a1e03538b
@@ -12044,6 +12094,7 @@ tools:
   revisions:
   - 33fac436dd54
   - 36c91ff33d70
+  - 3a7edd883709
   - 462e62be07e1
   - 80e18c0836e5
   - c1f08498cd74
