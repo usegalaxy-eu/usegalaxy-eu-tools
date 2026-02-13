@@ -81,9 +81,9 @@ def fix_uninstallable(lockfile_name, toolshed_url):
     locked_tools = lockfile.get("tools", [])
     total = len(locked_tools)
 
-    not_installable_file = lockfile_path.with_name(
-        lockfile_path.name.replace(".yaml.lock", ".not-installable-revisions.yaml")
-    )
+    not_installable_dir = lockfile_path.parent / "not-installable-revisions"
+    base_name = lockfile_path.name.removesuffix(".yaml.lock")
+    not_installable_file = not_installable_dir / f"{base_name}.not-installable-revisions.yaml"
 
     removed_map = defaultdict(set)
     try:
@@ -163,6 +163,7 @@ def fix_uninstallable(lockfile_name, toolshed_url):
         yaml.dump(lockfile, f, sort_keys=False, default_flow_style=False)
 
     if removed_map:
+        not_installable_dir.mkdir(exist_ok=True)
         not_installable_output = {
             "tools": [
                 {"name": n, "owner": o, "revisions": sorted(revs)}
