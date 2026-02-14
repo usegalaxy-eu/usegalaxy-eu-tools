@@ -311,10 +311,6 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
-#  - name: run_jupyter_job
-#    owner: bgruening
-#    tool_panel_section_label: Machine Learning
-
   - name: sklearn_build_pipeline
     owner: bgruening
     tool_panel_section_label: Machine Learning
@@ -468,6 +464,16 @@ tools:
   - name: parabricks_fq2bam
     owner: bgruening
     tool_panel_section_label: Mapping
+
+# NCBI BLAST
+
+  - name: 'search_protein_embed_query'
+    owner: 'bgruening'
+    tool_panel_section_label: 'NCBI Blast'
+
+  - name: 'search_protein_search_database'
+    owner: 'bgruening'
+    tool_panel_section_label: 'NCBI Blast'
 
 # METAGENOMIC ANALYSIS
 
