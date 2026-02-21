@@ -629,6 +629,7 @@ tools:
   revisions:
   - 0411fca1d681
   - 579f1cabfe79
+  - 8860f7d69d2a
   - b469f6d53d06
   tool_panel_section_label: Annotation
 - name: lorikeet_spoligotype
@@ -1126,6 +1127,7 @@ tools:
   - 6505bd37670d
   - 71740308d412
   - 9ef6920c3089
+  - baf229b1fdfd
   - da9d8bf98802
   - df25d4fb79b7
   - e5e767089163
@@ -2942,6 +2944,7 @@ tools:
   - 61946b8bd43b
   - 96a3c972424f
   - bae6cba73e32
+  - e55bda1c8e20
   - ebcd48f183b3
   tool_panel_section_label: Filter and Sort
 - name: gemini_actionable_mutations
@@ -3155,6 +3158,7 @@ tools:
   - 3f1ee30e39e9
   - 41635d6d4738
   - 5e7401777990
+  - e3750180320b
   tool_panel_section_label: Get Data
 - name: gdcwebapp
   owner: iuc
@@ -3492,6 +3496,7 @@ tools:
   - 73b8cb5bddcd
   - 83c573f2e73c
   - 99ace6c1ff57
+  - c0b740d23adc
   - cfb0595f9842
   - d1d39c72b755
   - e4790edb4299
@@ -4316,6 +4321,11 @@ tools:
   - bfaa0d22c2e4
   - d3e88507ee64
   - d459a463cb73
+  tool_panel_section_label: Mapping
+- name: chromap
+  owner: iuc
+  revisions:
+  - ec1b00aa4490
   tool_panel_section_label: Mapping
 - name: hisat2
   owner: iuc
@@ -5370,6 +5380,11 @@ tools:
   revisions:
   - acf51ff24c7d
   tool_panel_section_label: Metagenomic Analysis
+- name: fur
+  owner: iuc
+  revisions:
+  - 93c57054ad9b
+  tool_panel_section_label: Metagenomic Analysis
 - name: gi2taxonomy
   owner: devteam
   revisions:
@@ -6243,6 +6258,16 @@ tools:
   - 3fe0d1df3950
   - b1ca81ce88f9
   - f11d2dd29b2b
+  tool_panel_section_label: Metagenomic Analysis
+- name: vcontact2
+  owner: iuc
+  revisions:
+  - 941bc334e54e
+  tool_panel_section_label: Metagenomic Analysis
+- name: vcontact2_gene2genome
+  owner: iuc
+  revisions:
+  - 367c9c92ee19
   tool_panel_section_label: Metagenomic Analysis
 - name: vegan_diversity
   owner: iuc
@@ -7756,21 +7781,25 @@ tools:
   owner: iuc
   revisions:
   - a21e02af4488
+  - ae402c31b9f1
   tool_panel_section_label: Phylogenetics
 - name: fastreer_fasta2dist
   owner: iuc
   revisions:
   - 7888cf34fa73
+  - c41888919080
   tool_panel_section_label: Phylogenetics
 - name: fastreer_vcf2dist
   owner: iuc
   revisions:
+  - 08a48e2d34ee
   - a0fbb6b9a194
   tool_panel_section_label: Phylogenetics
 - name: fastreer_vcf2tree
   owner: iuc
   revisions:
   - 5ea9b32aaef6
+  - fdce1cf130cd
   tool_panel_section_label: Phylogenetics
 - name: hybpiper
   owner: iuc
@@ -7784,6 +7813,7 @@ tools:
   - 0b58ef9e84b2
   - 107d3ba7024a
   - 180523b637d5
+  - 1a53af0d39ec
   - 26de3a7b1cb9
   - 3b8b5bde0bd9
   - 3f59ebfbfe3d
@@ -7815,6 +7845,7 @@ tools:
   - 5b4fd931a989
   - 91cf1290ba6f
   - b315ee3d3487
+  - dd0deea7ac09
   - fa913c2975da
   tool_panel_section_label: Phylogenetics
 - name: hyphy_bgm
@@ -7828,6 +7859,7 @@ tools:
   - 26ad9a6b1293
   - 35723f87964d
   - 373afb209788
+  - 3ff0c5dac8e9
   - 4515f2f64e13
   - 63b9f220f585
   - 7fd2d1451728
@@ -7874,6 +7906,7 @@ tools:
   - eb26b02af55a
   - f6c9b498608a
   - f9a193154a55
+  - ff8b64ab5bf7
   tool_panel_section_label: Phylogenetics
 - name: hyphy_cfel
   owner: iuc
@@ -7883,6 +7916,7 @@ tools:
   - 710fdaa85384
   - 91679ca1480d
   - be3e39ccb02b
+  - d76dca762da3
   - fcabcc150d21
   tool_panel_section_label: Phylogenetics
 - name: hyphy_conv
@@ -7891,6 +7925,7 @@ tools:
   - 079ea2eb9ae4
   - 1e65054da37c
   - 6761212b7f1d
+  - a610ae9901fd
   - b30255d232d2
   - beeeed9665ea
   tool_panel_section_label: Phylogenetics
@@ -7912,6 +7947,7 @@ tools:
   - a4398cfa8792
   - a73fff151e38
   - ac0dea1caeab
+  - ba558cf29c92
   - bf27b3df1a4f
   - c1244c2d8bbc
   - c16dd6b14657
@@ -7928,6 +7964,7 @@ tools:
   - 2442e8b5e363
   - 2e5ab7526bd4
   - 31b7af192fd3
+  - 481704c36d6d
   - 4926c55123d1
   - 4eba0baf0278
   - 6400b683aced
@@ -7968,6 +8005,7 @@ tools:
   - 73833ae53fbb
   - 80c9e5256a0d
   - 90e57f65ddd9
+  - 9c2cad287208
   - 9d2714133deb
   - a6da5885846e
   - af40a8b95f8d
@@ -7997,6 +8035,7 @@ tools:
   - 7f14d76f86ca
   - 88c4aa435ded
   - 9127799ac97e
+  - 9bbe8035be5d
   - a185b079b095
   - a77524294da2
   - aa8cc71438cf
@@ -8019,6 +8058,7 @@ tools:
   - 5b380f4dbf1c
   - 5fd8dc04d6af
   - 6433eab14244
+  - 6e7f144046c0
   - 74b590fdc6a0
   - 7852b50fabb7
   - 7b3f9c78cf6d
@@ -8047,6 +8087,7 @@ tools:
   - 82665e97c156
   - 840b5fec0de9
   - 8f66e659530b
+  - 987b688257a0
   - 9d83d1ab0330
   - 9f566d869e2f
   - a61b2b6c7089
@@ -8070,6 +8111,7 @@ tools:
   - 49885a825dc1
   - 4d13ff4556da
   - 551616a65f8f
+  - 592fb9353702
   - 5eb9d7217640
   - 63f85ef1a3d5
   - 6a6300b42803
@@ -8090,6 +8132,7 @@ tools:
   owner: iuc
   revisions:
   - 08449da86cdf
+  - 0897635cc002
   - 0b4ee5db66ca
   - 1122d1a1ff67
   - 1467fb7e162d
@@ -8117,6 +8160,7 @@ tools:
 - name: hyphy_sm19
   owner: iuc
   revisions:
+  - 011f70f720ac
   - 051642420aec
   - 056a5b14721d
   - 1527f00ddf7f
@@ -8146,6 +8190,7 @@ tools:
   owner: iuc
   revisions:
   - 31e7f5a25db3
+  - a60caeb3c453
   - bba232f7b231
   - dc8875a13914
   - ea698cd7e086
@@ -8224,6 +8269,7 @@ tools:
   - c12c7d0e067b
   - ca0d8cf80567
   - ca337cce3888
+  - ef10c1e741c3
   tool_panel_section_label: Phylogenetics
 - name: phyml
   owner: iuc
@@ -8913,6 +8959,7 @@ tools:
   - 4418229c501e
   - 8f6836089479
   - 916cb26bd9d3
+  - fb117b3ee99a
   tool_panel_section_label: RNA Analysis
 - name: idr
   owner: iuc
@@ -9527,6 +9574,11 @@ tools:
   revisions:
   - 65edd5a6002e
   tool_panel_section_label: SAM/BAM
+- name: samtools_collate
+  owner: iuc
+  revisions:
+  - e7fa06931998
+  tool_panel_section_label: SAM/BAM
 - name: samtools_depth
   owner: iuc
   revisions:
@@ -9554,6 +9606,7 @@ tools:
   - 41e36c99a008
   - 595ae1ba934a
   - 68a116f469db
+  - 84819580b8a5
   - bc0cc7bfbfe9
   - c05afbeaf42d
   - d2df79922531
@@ -12112,6 +12165,7 @@ tools:
   owner: iuc
   revisions:
   - 201eff2131d6
+  - 4877dfefaacc
   - 54871a78828e
 - name: data_manager_clair3_models
   owner: iuc
