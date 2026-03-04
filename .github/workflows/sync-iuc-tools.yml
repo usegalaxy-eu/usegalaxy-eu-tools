@@ -1,0 +1,56 @@
+name: Sync IUC Tools
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * 5'
+
+jobs:
+  sync-iuc-tools:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        run: uv pip install --system -r requirements.txt
+
+      - name: Clone IUC repository
+        uses: actions/checkout@v6
+        with:
+          repository: galaxyproject/tools-iuc
+          path: tools-iuc
+
+      - name: Run sync script
+        run: |
+          python scripts/sync-iuc-tools.py \
+            --tools-yaml tools_iuc.yaml \
+            --mapping-file scripts/category-mapping.yml \
+            --iuc-repo-path tools-iuc \
+            --github-token ${{ secrets.GITHUB_TOKEN }} \
+            --report-file ${{ runner.temp }}/sync-report.md
+
+      - name: Check for changes
+        id: check_changes
+        uses: tj-actions/verify-changed-files@v20
+
+      - name: Create or update Pull Request
+        if: steps.check_changes.outputs.files_changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: sync-iuc-tools
+          commit-message: 'Add new tools from IUC repository'
+          title: 'Add new tools from IUC repository'
+          body-path: ${{ runner.temp }}/sync-report.md
+          delete-branch: true

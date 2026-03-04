@@ -1,0 +1,78 @@
+# Static mapping from ToolShed .shed.yml categories to tool_panel_section_label
+# Used by sync-iuc-tools.py to automatically categorize newly discovered IUC tools
+# Format: ToolShed category -> Galaxy panel section label
+#
+# When multiple categories match, the first match wins.
+# Unmapped tools fall back to AI suggestion, then "Other Tools".
+#
+# Only non-obvious mappings are listed here (key != value).
+# Identity mappings and case-only variants are handled automatically by
+# the case-insensitive fallback in map_category_static.
+
+mappings:
+  # Assembly
+  "Genome assembly": "Assembly"
+
+  # Metagenomics
+  "Metagenomics": "Metagenomic Analysis"
+  "Metagenomic analyses": "Metagenomic Analysis"
+
+  # Mapping
+  "Next Gen Mappers": "Mapping"
+  "SAM": "Mapping"
+
+  # Annotation
+  "Sequence Analysis": "Annotation"
+  "Genome annotation": "Annotation"
+
+  # RNA/Transcriptomics
+  "Transcriptomics": "RNA Analysis"
+  "RNA": "RNA Analysis"
+
+  # Variant Analysis
+  "Variant Analysis": "Variant Calling"
+
+  # Quality Control
+  "Quality Control": "FASTQ Quality Control"
+
+  # Single Cell
+  "Single Cell": "Single-cell"
+  "Transcriptomics (Single Cell)": "Single-cell"
+
+  # ChemicalToolBox
+  "Computational chemistry": "ChemicalToolBox"
+
+  # Epigenetics
+  "ChIP-seq": "Epigenetics"
+
+  # Visualization
+  "Visualization": "Graph/Display Data"
+  "Data Visualization": "Graph/Display Data"
+
+  # FASTA/FASTQ
+  "FASTA manipulation": "FASTA/FASTQ"
+  "Fastq Manipulation": "FASTA/FASTQ"
+
+  # Genomic Intervals
+  "Genomic Interval Operations": "Operate on Genomic Intervals"
+
+  # Ontology
+  "Ontology Manipulation": "Ontology"
+
+  # DNA Metabarcoding
+  "Metabarcoding": "DNA Metabarcoding"
+
+  # Biodiversity
+  "Biodiversity": "Biodiversity data exploration"
+
+  # GIS
+  "GIS": "GIS Data Handling"
+
+  # Animal Detection
+  "Acoustic analysis": "Animal Detection on Acoustic Recordings"
+
+  # Remote Sensing
+  "Remote sensing": "Compute indicators for satellite remote sensing"
+
+  # XAS
+  "XAS": "XAS (X-ray Absorption Spectroscopy)"
