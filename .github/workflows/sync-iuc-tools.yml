@@ -60,3 +60,6 @@ jobs:
           title: 'Add new tools from IUC repository'
           body-path: ${{ runner.temp }}/sync-report.md
           delete-branch: true
+          add-paths: |
+            tools_iuc.yaml
+            scripts/.last-iuc-sync-sha
