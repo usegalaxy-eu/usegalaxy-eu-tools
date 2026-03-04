@@ -65,7 +65,7 @@ class IUCToolSyncer:
                     file=sys.stderr,
                 )
 
-        self.toolshed_api = 'https://toolshed.g2.bx.psu.edu/api/repositories'
+        self.toolshed_api = "https://toolshed.g2.bx.psu.edu/api/repositories"
 
         self.existing_tools: Set[Tuple[str, str]] = set()
         self.new_tools: List[Dict] = []
@@ -193,6 +193,7 @@ class IUCToolSyncer:
         no SHA file existed — the caller should record the starting SHA and exit
         without adding any tools.
         """
+
         def _git(args: List[str]) -> str:
             return subprocess.check_output(
                 ["git"] + args,
@@ -227,11 +228,17 @@ class IUCToolSyncer:
         )
 
         # 1. Newly added .shed.yml files
-        diff_output = _git([
-            "diff", "--name-only", "--diff-filter=A",
-            f"{stored_sha}..{current_sha}",
-            "--", "tools/**/.shed.yml", "data_managers/**/.shed.yml",
-        ])
+        diff_output = _git(
+            [
+                "diff",
+                "--name-only",
+                "--diff-filter=A",
+                f"{stored_sha}..{current_sha}",
+                "--",
+                "tools/**/.shed.yml",
+                "data_managers/**/.shed.yml",
+            ]
+        )
         shed_ymls: Set[Path] = set()
         for rel in diff_output.splitlines():
             rel = rel.strip()
@@ -239,11 +246,17 @@ class IUCToolSyncer:
                 shed_ymls.add(self.iuc_repo_path / rel)
 
         # 2. Newly added XML files in already-existing suites (no .shed.yml change)
-        xml_diff = _git([
-            "diff", "--name-only", "--diff-filter=A",
-            f"{stored_sha}..{current_sha}",
-            "--", "tools/**/*.xml", "data_managers/**/*.xml",
-        ])
+        xml_diff = _git(
+            [
+                "diff",
+                "--name-only",
+                "--diff-filter=A",
+                f"{stored_sha}..{current_sha}",
+                "--",
+                "tools/**/*.xml",
+                "data_managers/**/*.xml",
+            ]
+        )
         for rel in xml_diff.splitlines():
             rel = rel.strip()
             if not rel:
@@ -269,9 +282,7 @@ class IUCToolSyncer:
         )
         return result, False
 
-    def scan_iuc_repo(
-        self, shed_yml_filter: Optional[Set[Path]] = None
-    ) -> List[Dict]:
+    def scan_iuc_repo(self, shed_yml_filter: Optional[Set[Path]] = None) -> List[Dict]:
         """Scan the IUC repo for tools.
 
         If *shed_yml_filter* is given, only those specific .shed.yml paths are
@@ -288,8 +299,7 @@ class IUCToolSyncer:
 
             if shed_yml_filter is not None:
                 shed_ymls_to_scan = [
-                    p for p in shed_yml_filter
-                    if p.is_relative_to(tools_dir)
+                    p for p in shed_yml_filter if p.is_relative_to(tools_dir)
                 ]
             else:
                 shed_ymls_to_scan = list(tools_dir.rglob(".shed.yml"))
@@ -362,7 +372,10 @@ class IUCToolSyncer:
 
         results_map: Dict[str, bool] = {}
         with ThreadPoolExecutor(max_workers=10) as executor:
-            futures = {executor.submit(self._check_toolshed_single, t): t for t in self.new_tools}
+            futures = {
+                executor.submit(self._check_toolshed_single, t): t
+                for t in self.new_tools
+            }
             for future in as_completed(futures):
                 tool, exists = future.result()
                 results_map[tool["name"]] = exists
