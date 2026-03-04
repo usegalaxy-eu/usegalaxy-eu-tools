@@ -10,15 +10,16 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Set, Tuple, Optional
+from typing import Dict, List, Optional, Set, Tuple
 
 import requests
 import yaml
-from bioblend import toolshed as toolshed_api
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 class IUCToolSyncer:
@@ -29,12 +30,14 @@ class IUCToolSyncer:
         iuc_repo_path: Path,
         github_token: Optional[str] = None,
         dry_run: bool = False,
+        last_sync_sha_file: Optional[Path] = None,
     ):
         self.tools_yaml_path = tools_yaml_path
         self.mapping_file_path = mapping_file_path
         self.iuc_repo_path = iuc_repo_path
         self.github_token = github_token
         self.dry_run = dry_run
+        self.last_sync_sha_file = last_sync_sha_file
 
         # Load category mapping
         with open(mapping_file_path) as f:
@@ -62,7 +65,7 @@ class IUCToolSyncer:
                     file=sys.stderr,
                 )
 
-        self.ts = toolshed_api.ToolShedInstance(url="https://toolshed.g2.bx.psu.edu")
+        self.toolshed_api = 'https://toolshed.g2.bx.psu.edu/api/repositories'
 
         self.existing_tools: Set[Tuple[str, str]] = set()
         self.new_tools: List[Dict] = []
@@ -183,8 +186,98 @@ class IUCToolSyncer:
         except Exception:
             return None
 
-    def scan_iuc_repo(self) -> List[Dict]:
-        """Scan the IUC repo for all tools."""
+    def get_incremental_shed_ymls(self) -> Tuple[List[Path], bool]:
+        """Return the list of .shed.yml paths added since the last sync SHA.
+
+        Returns (shed_yml_paths, is_bootstrap) where is_bootstrap is True when
+        no SHA file existed — the caller should record the starting SHA and exit
+        without adding any tools.
+        """
+        def _git(args: List[str]) -> str:
+            return subprocess.check_output(
+                ["git"] + args,
+                cwd=str(self.iuc_repo_path),
+                text=True,
+            ).strip()
+
+        current_sha = _git(["rev-parse", "HEAD"])
+
+        # Bootstrap mode: no SHA file yet
+        if not self.last_sync_sha_file.exists():
+            if not self.dry_run:
+                self.last_sync_sha_file.write_text(current_sha + "\n")
+            print(
+                f"Bootstrap: recorded initial SHA {current_sha!r} in "
+                f"{self.last_sync_sha_file}. No tools will be added this run.",
+                file=sys.stderr,
+            )
+            return [], True
+
+        stored_sha = self.last_sync_sha_file.read_text().strip()
+        if stored_sha == current_sha:
+            print(
+                "tools-iuc is at the same commit as last sync — nothing to do.",
+                file=sys.stderr,
+            )
+            return [], False
+
+        print(
+            f"Incremental sync: {stored_sha[:12]}..{current_sha[:12]}",
+            file=sys.stderr,
+        )
+
+        # 1. Newly added .shed.yml files
+        diff_output = _git([
+            "diff", "--name-only", "--diff-filter=A",
+            f"{stored_sha}..{current_sha}",
+            "--", "tools/**/.shed.yml", "data_managers/**/.shed.yml",
+        ])
+        shed_ymls: Set[Path] = set()
+        for rel in diff_output.splitlines():
+            rel = rel.strip()
+            if rel:
+                shed_ymls.add(self.iuc_repo_path / rel)
+
+        # 2. Newly added XML files in already-existing suites (no .shed.yml change)
+        xml_diff = _git([
+            "diff", "--name-only", "--diff-filter=A",
+            f"{stored_sha}..{current_sha}",
+            "--", "tools/**/*.xml", "data_managers/**/*.xml",
+        ])
+        for rel in xml_diff.splitlines():
+            rel = rel.strip()
+            if not rel:
+                continue
+            xml_abs = self.iuc_repo_path / rel
+            # Walk up to find the nearest .shed.yml
+            for parent in xml_abs.parents:
+                candidate = parent / ".shed.yml"
+                if candidate.exists():
+                    shed_ymls.add(candidate)
+                    break
+                # Stop searching once we leave the tools-iuc repo root
+                if parent == self.iuc_repo_path:
+                    break
+
+        # Record new SHA (happens later in run() after successful write)
+        self._pending_new_sha = current_sha
+
+        result = sorted(shed_ymls)
+        print(
+            f"Found {len(result)} .shed.yml file(s) touched since last sync.",
+            file=sys.stderr,
+        )
+        return result, False
+
+    def scan_iuc_repo(
+        self, shed_yml_filter: Optional[Set[Path]] = None
+    ) -> List[Dict]:
+        """Scan the IUC repo for tools.
+
+        If *shed_yml_filter* is given, only those specific .shed.yml paths are
+        parsed (incremental mode). Otherwise every .shed.yml in tools/ and
+        data_managers/ is scanned (full-scan / legacy mode).
+        """
         discovered_tools = []
 
         # Scan tools/ and data_managers/ directories
@@ -193,7 +286,15 @@ class IUCToolSyncer:
             if not tools_dir.exists():
                 continue
 
-            for shed_yml_path in tools_dir.rglob(".shed.yml"):
+            if shed_yml_filter is not None:
+                shed_ymls_to_scan = [
+                    p for p in shed_yml_filter
+                    if p.is_relative_to(tools_dir)
+                ]
+            else:
+                shed_ymls_to_scan = list(tools_dir.rglob(".shed.yml"))
+
+            for shed_yml_path in shed_ymls_to_scan:
                 # Skip deprecated tools
                 if "deprecated" in shed_yml_path.parts:
                     continue
@@ -227,36 +328,52 @@ class IUCToolSyncer:
 
         return discovered_tools
 
+    def _check_toolshed_single(self, tool: Dict) -> Tuple[Dict, bool]:
+        """Check one tool against the ToolShed REST API. Returns (tool, exists)."""
+        name = tool["name"]
+        owner = tool["owner"]
+        try:
+            resp = requests.get(
+                self.toolshed_api,
+                params={"name": name, "owner": owner},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            return tool, any(r["name"] == name for r in resp.json())
+        except Exception as e:
+            print(
+                f"  Warning: ToolShed lookup failed for '{name}': {e} — skipping",
+                file=sys.stderr,
+            )
+            return tool, False
+
     def validate_toolshed_existence(self) -> None:
         """Filter new_tools to only those that actually exist on the ToolShed.
 
-        Tools found in the IUC repo .shed.yml (especially auto_tool_repositories
-        suites) may not have been uploaded to the ToolShed yet.  This method
-        performs a direct name+owner lookup via bioblend and drops any tool that
-        returns no results, recording the dropped tools in self.skipped_tools.
+        Performs direct name+owner lookups via the ToolShed REST API in parallel,
+        dropping any tool that returns no results. Skipped tools are recorded in
+        self.skipped_tools.
         """
-        valid_tools: List[Dict] = []
         total = len(self.new_tools)
         print(
-            f"Validating {total} candidate tools against ToolShed...", file=sys.stderr
+            f"Validating {total} candidate tools against ToolShed (parallel)...",
+            file=sys.stderr,
         )
 
-        for tool in self.new_tools:
-            name = tool["name"]
-            owner = tool["owner"]
-            try:
-                results = self.ts.repositories.get_repositories(name=name, owner=owner)
-                if results:
-                    valid_tools.append(tool)
-                else:
-                    print(
-                        f"  Skipping '{name}' (owner: {owner}): not found on ToolShed",
-                        file=sys.stderr,
-                    )
-                    self.skipped_tools.append(tool)
-            except Exception as e:
+        results_map: Dict[str, bool] = {}
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            futures = {executor.submit(self._check_toolshed_single, t): t for t in self.new_tools}
+            for future in as_completed(futures):
+                tool, exists = future.result()
+                results_map[tool["name"]] = exists
+
+        valid_tools: List[Dict] = []
+        for tool in self.new_tools:  # preserve original order
+            if results_map.get(tool["name"], False):
+                valid_tools.append(tool)
+            else:
                 print(
-                    f"  Warning: ToolShed lookup failed for '{name}': {e} — skipping",
+                    f"  Skipping '{tool['name']}' (owner: {tool['owner']}): not found on ToolShed",
                     file=sys.stderr,
                 )
                 self.skipped_tools.append(tool)
@@ -602,12 +719,47 @@ Important:
 
     def run(self, report_file: Optional[Path] = None) -> int:
         """Main execution flow."""
+        self._pending_new_sha: Optional[str] = None
+        shed_yml_filter: Optional[Set[Path]] = None
+
+        # --- Incremental mode ---
+        if self.last_sync_sha_file is not None:
+            shed_paths, is_bootstrap = self.get_incremental_shed_ymls()
+            if is_bootstrap:
+                report = (
+                    "# IUC Tools Sync Report\n\n"
+                    "**Bootstrap run:** recorded initial sync SHA. "
+                    "No tools added; subsequent runs will be incremental.\n"
+                )
+                if report_file:
+                    report_file.write_text(report)
+                    print(f"Report written to {report_file}", file=sys.stderr)
+                else:
+                    print("\n" + report)
+                return 0
+            if not shed_paths:
+                # No new .shed.yml files — nothing to do
+                report = (
+                    "# IUC Tools Sync Report\n\n"
+                    "No new tools found since last sync.\n"
+                )
+                if report_file:
+                    report_file.write_text(report)
+                else:
+                    print("\n" + report)
+                return 0
+            shed_yml_filter = set(shed_paths)
+
         print("Loading existing tools from all YAML files...", file=sys.stderr)
         self.load_existing_tools()
         print(f"Found {len(self.existing_tools)} existing tools", file=sys.stderr)
 
-        print(f"Scanning IUC repository at {self.iuc_repo_path}...", file=sys.stderr)
-        discovered_tools = self.scan_iuc_repo()
+        mode = "incremental" if shed_yml_filter is not None else "full"
+        print(
+            f"Scanning IUC repository at {self.iuc_repo_path} ({mode} mode)...",
+            file=sys.stderr,
+        )
+        discovered_tools = self.scan_iuc_repo(shed_yml_filter=shed_yml_filter)
         print(f"Discovered {len(discovered_tools)} tools in IUC repo", file=sys.stderr)
 
         print("Computing new tools...", file=sys.stderr)
@@ -629,6 +781,21 @@ Important:
                 self.append_to_yaml()
             else:
                 print("DRY RUN: Would append new tools to YAML", file=sys.stderr)
+
+        # Advance the SHA pointer (same commit as YAML changes)
+        if self._pending_new_sha and self.last_sync_sha_file is not None:
+            if not self.dry_run:
+                self.last_sync_sha_file.write_text(self._pending_new_sha + "\n")
+                print(
+                    f"Updated {self.last_sync_sha_file} to {self._pending_new_sha[:12]}",
+                    file=sys.stderr,
+                )
+            else:
+                print(
+                    f"DRY RUN: Would update {self.last_sync_sha_file} to "
+                    f"{self._pending_new_sha[:12]}",
+                    file=sys.stderr,
+                )
 
         # Generate report
         report = self.generate_report()
@@ -679,6 +846,18 @@ def main():
         type=Path,
         help="Path to write markdown report",
     )
+    parser.add_argument(
+        "--last-sync-sha-file",
+        type=Path,
+        default=None,
+        help=(
+            "Path to a file storing the last-synced tools-iuc commit SHA. "
+            "When provided, only tools added to tools-iuc SINCE that commit are "
+            "considered (incremental mode). On first run the file is created and "
+            "no tools are added (bootstrap). When omitted, the full repo is "
+            "scanned (legacy/manual mode)."
+        ),
+    )
 
     args = parser.parse_args()
 
@@ -691,6 +870,7 @@ def main():
         iuc_repo_path=args.iuc_repo_path,
         github_token=github_token,
         dry_run=args.dry_run,
+        last_sync_sha_file=args.last_sync_sha_file,
     )
 
     return syncer.run(report_file=args.report_file)

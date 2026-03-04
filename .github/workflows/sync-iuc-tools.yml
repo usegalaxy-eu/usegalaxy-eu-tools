@@ -31,6 +31,7 @@ jobs:
         with:
           repository: galaxyproject/tools-iuc
           path: tools-iuc
+          fetch-depth: 0
 
       - name: Run sync script
         run: |
@@ -39,6 +40,7 @@ jobs:
             --mapping-file scripts/category-mapping.yml \
             --iuc-repo-path tools-iuc \
             --github-token ${{ secrets.GITHUB_TOKEN }} \
+            --last-sync-sha-file scripts/.last-iuc-sync-sha \
             --report-file ${{ runner.temp }}/sync-report.md
 
       - name: Check for changes
