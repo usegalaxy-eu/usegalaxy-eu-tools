@@ -62,7 +62,7 @@ class IUCToolSyncer:
                     file=sys.stderr,
                 )
 
-        self.ts = toolshed_api.ToolShedInstance(url='https://toolshed.g2.bx.psu.edu')
+        self.ts = toolshed_api.ToolShedInstance(url="https://toolshed.g2.bx.psu.edu")
 
         self.existing_tools: Set[Tuple[str, str]] = set()
         self.new_tools: List[Dict] = []
@@ -237,7 +237,9 @@ class IUCToolSyncer:
         """
         valid_tools: List[Dict] = []
         total = len(self.new_tools)
-        print(f"Validating {total} candidate tools against ToolShed...", file=sys.stderr)
+        print(
+            f"Validating {total} candidate tools against ToolShed...", file=sys.stderr
+        )
 
         for tool in self.new_tools:
             name = tool["name"]
@@ -578,7 +580,9 @@ Important:
                 lines.append(f"| `{tool['name']}` | {cats} |\n")
 
         if self.skipped_tools:
-            lines.append(f"\n## Skipped (Not on ToolShed) ({len(self.skipped_tools)})\n")
+            lines.append(
+                f"\n## Skipped (Not on ToolShed) ({len(self.skipped_tools)})\n"
+            )
             lines.append(
                 "\n⚠️ These tools were found in the IUC repository but do **not** exist on "
                 "the ToolShed yet and were **not** added.\n"
