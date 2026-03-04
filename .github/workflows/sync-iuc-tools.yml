@@ -45,6 +45,10 @@ jobs:
         id: check_changes
         uses: tj-actions/verify-changed-files@v20
 
+      - name: Validate changes with pr_check
+        if: steps.check_changes.outputs.files_changed == 'true'
+        run: make pr_check
+
       - name: Create or update Pull Request
         if: steps.check_changes.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v8

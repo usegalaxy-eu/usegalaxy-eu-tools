@@ -18,6 +18,7 @@ from typing import Dict, List, Set, Tuple, Optional
 
 import requests
 import yaml
+from bioblend import toolshed as toolshed_api
 
 
 class IUCToolSyncer:
@@ -61,8 +62,11 @@ class IUCToolSyncer:
                     file=sys.stderr,
                 )
 
+        self.ts = toolshed_api.ToolShedInstance(url='https://toolshed.g2.bx.psu.edu')
+
         self.existing_tools: Set[Tuple[str, str]] = set()
         self.new_tools: List[Dict] = []
+        self.skipped_tools: List[Dict] = []
         self.report_lines: List[str] = []
 
     def load_existing_tools(self) -> None:
@@ -222,6 +226,45 @@ class IUCToolSyncer:
                         )
 
         return discovered_tools
+
+    def validate_toolshed_existence(self) -> None:
+        """Filter new_tools to only those that actually exist on the ToolShed.
+
+        Tools found in the IUC repo .shed.yml (especially auto_tool_repositories
+        suites) may not have been uploaded to the ToolShed yet.  This method
+        performs a direct name+owner lookup via bioblend and drops any tool that
+        returns no results, recording the dropped tools in self.skipped_tools.
+        """
+        valid_tools: List[Dict] = []
+        total = len(self.new_tools)
+        print(f"Validating {total} candidate tools against ToolShed...", file=sys.stderr)
+
+        for tool in self.new_tools:
+            name = tool["name"]
+            owner = tool["owner"]
+            try:
+                results = self.ts.repositories.get_repositories(name=name, owner=owner)
+                if results:
+                    valid_tools.append(tool)
+                else:
+                    print(
+                        f"  Skipping '{name}' (owner: {owner}): not found on ToolShed",
+                        file=sys.stderr,
+                    )
+                    self.skipped_tools.append(tool)
+            except Exception as e:
+                print(
+                    f"  Warning: ToolShed lookup failed for '{name}': {e} — skipping",
+                    file=sys.stderr,
+                )
+                self.skipped_tools.append(tool)
+
+        print(
+            f"ToolShed validation: {len(valid_tools)} valid, "
+            f"{len(self.skipped_tools)} skipped.",
+            file=sys.stderr,
+        )
+        self.new_tools = valid_tools
 
     def map_category_static(self, categories: List[str]) -> Optional[str]:
         """Map categories using static mapping file. Returns first match."""
@@ -503,7 +546,7 @@ Important:
                 "\n| Tool Name | Suggested Panel Section | Reason | ToolShed Categories |\n"
             )
             lines.append(
-                "|-----------|------------------------|--------|--------------------|\\n"
+                "|-----------|------------------------|--------|--------------------|\n"
             )
             for tool in sorted(ai_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
@@ -528,9 +571,21 @@ Important:
                 "\n⚠️ **These tools could not be categorized** (static mapping failed and AI unavailable). Assigned to 'Other Tools'.\n"
             )
             lines.append("\n| Tool Name | ToolShed Categories |\n")
-            lines.append("|-----------|--------------------|\\n")
+            lines.append("|-----------|--------------------|\n")
 
             for tool in sorted(fallback, key=lambda t: t["name"]):
+                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
+                lines.append(f"| `{tool['name']}` | {cats} |\n")
+
+        if self.skipped_tools:
+            lines.append(f"\n## Skipped (Not on ToolShed) ({len(self.skipped_tools)})\n")
+            lines.append(
+                "\n⚠️ These tools were found in the IUC repository but do **not** exist on "
+                "the ToolShed yet and were **not** added.\n"
+            )
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
+            for tool in sorted(self.skipped_tools, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 lines.append(f"| `{tool['name']}` | {cats} |\n")
 
@@ -553,7 +608,11 @@ Important:
 
         print("Computing new tools...", file=sys.stderr)
         self.compute_new_tools(discovered_tools)
-        print(f"Found {len(self.new_tools)} new tools", file=sys.stderr)
+        print(f"Found {len(self.new_tools)} candidate new tools", file=sys.stderr)
+
+        print("Validating candidates against ToolShed...", file=sys.stderr)
+        self.validate_toolshed_existence()
+        print(f"  {len(self.new_tools)} tools confirmed on ToolShed", file=sys.stderr)
 
         if self.new_tools:
             print("Applying AI mapping to unmapped tools...", file=sys.stderr)
