@@ -2284,6 +2284,7 @@ tools:
 - name: cialign
   owner: iuc
   revisions:
+  - 165e0915f7c1
   - 3c5bdab3c7b7
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_clipping_histogram
@@ -2720,9 +2721,15 @@ tools:
   - 35136ed940a1
   - 4cf00d20acab
   - 654a2f089252
+  - 787885938baa
   - 7dd90df319f6
   - bfeec7371833
   - c1aa9a90b4c4
+  tool_panel_section_label: FASTA/FASTQ
+- name: seqkit_grep
+  owner: iuc
+  revisions:
+  - 02c253504d9b
   tool_panel_section_label: FASTA/FASTQ
 - name: seqkit_head
   owner: iuc
@@ -2732,6 +2739,7 @@ tools:
   - 6fb76225bdb1
   - 934165d1f733
   - dcd66e8008d7
+  - f56a47e4cc93
   - fb7b676906e7
   tool_panel_section_label: FASTA/FASTQ
 - name: seqkit_locate
@@ -2743,6 +2751,7 @@ tools:
   - 642d73815dd1
   - 7cb74b5d4185
   - 7e30613be1c6
+  - be1ccfa4abaf
   - e565ba1ddce4
   - f97c9e63e561
   - fe7a1e57a6cf
@@ -2751,6 +2760,7 @@ tools:
   owner: iuc
   revisions:
   - 0c011189b47e
+  - 0d9d8de82304
   - 0e0b003c711f
   - 6366952ddfd3
   - b7fe1967e668
@@ -2769,6 +2779,7 @@ tools:
   - a89d0059d1d7
   - b76522db7507
   - b9297580f1e0
+  - cfa0fe8978a3
   - d85bac8b166a
   - fe1ae2ebf63d
   tool_panel_section_label: FASTA/FASTQ
@@ -2776,6 +2787,7 @@ tools:
   owner: iuc
   revisions:
   - 01b1d8c7c031
+  - 14f7ceef5579
   - 3dc878f71e4d
   - 53b2027027c7
   - 61eb4cfc7313
@@ -2786,6 +2798,7 @@ tools:
 - name: seqkit_split2
   owner: iuc
   revisions:
+  - 0c7fadfe52e2
   - 22a535d54360
   - 911de3a36b31
   - c19015f577a5
@@ -4289,6 +4302,7 @@ tools:
   - 0d4acadabb04
   - 17062a0decb7
   - 749c918495f7
+  - a470b376503d
   - a54de7e658f7
   - a6d65b0c67af
   - a9d4f71dbfb0
@@ -6024,6 +6038,7 @@ tools:
   owner: iuc
   revisions:
   - 2238658d7663
+  - 2bf4cd8ce41e
   - 30c3ad698f2d
   - d34e74e40d60
   - e51700388188
@@ -6036,6 +6051,7 @@ tools:
   - 599a3fb9a953
   - 847f433f202b
   - b8a4de1a4e19
+  - eed716573aba
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_from_dada2
   owner: iuc
@@ -6043,6 +6059,7 @@ tools:
   - 0b9d4ec77c4f
   - 24488fae5b04
   - 40ebae5bbe51
+  - 6a067bbd4e16
   - ae4d404a8227
   - b85ba18a8f36
   - bda00cb136ee
@@ -6054,11 +6071,13 @@ tools:
   - 94563110275d
   - ad81e112f4d9
   - d0fa6a43c838
+  - e2e61cbfc4c6
   - e9442bd54200
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_plot_ordination
   owner: iuc
   revisions:
+  - 2715e89adff4
   - 92e77800ef2c
   - bbd9d1022144
   - c35e0075c7a2
@@ -6075,10 +6094,12 @@ tools:
   - 7ed99cb39c9d
   - a20bc31f2821
   - d6cbeb48294d
+  - fd170b83f148
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_tax_glom
   owner: iuc
   revisions:
+  - 5dd1dfce8c5f
   - a9c63fac301a
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_are_there_primers
@@ -8140,6 +8161,7 @@ tools:
   - 7cd99ec269ee
   - 9158a34fc9c5
   - 91e47cb67709
+  - abe7c7c34142
   - b5d981229301
   - b8bdfac5a326
   - ba548f24669a
@@ -9777,6 +9799,7 @@ tools:
   - 57934e90e27c
   - 5a08c09b9311
   - 8cfc17e27132
+  - 8fca6e1eac98
   - 95a7ddf617e7
   - e221fe58c2f5
   tool_panel_section_label: SAM/BAM
