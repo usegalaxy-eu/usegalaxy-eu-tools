@@ -348,17 +348,31 @@ class IUCToolSyncer:
         return discovered_tools
 
     def _check_toolshed_single(self, tool: Dict) -> Tuple[Dict, bool]:
-        """Check one tool against the ToolShed REST API. Returns (tool, exists)."""
+        """Check one tool against the ToolShed REST API. Returns (tool, exists).
+
+        Uses the same search endpoint as pr-check.py (bioblend search_repositories)
+        so that validation results are consistent with the PR validation step.
+        """
         name = tool["name"]
         owner = tool["owner"]
         try:
+            # Use the search endpoint (?q=) mirroring what pr-check.py does via
+            # bioblend's search_repositories().  A direct ?name=&owner= filter can
+            # return stale / not-yet-published entries that the search index does
+            # not expose, leading to false positives.
             resp = requests.get(
                 self.toolshed_api,
-                params={"name": name, "owner": owner},
+                params={"q": name, "page_size": 600},
                 timeout=30,
             )
             resp.raise_for_status()
-            return tool, any(r["name"] == name for r in resp.json())
+            hits = resp.json().get("hits", [])
+            exists = any(
+                hit["repository"]["name"] == name
+                and hit["repository"]["owner"] == owner
+                for hit in hits
+            )
+            return tool, exists
         except Exception as e:
             print(
                 f"  Warning: ToolShed lookup failed for '{name}': {e} — skipping",
