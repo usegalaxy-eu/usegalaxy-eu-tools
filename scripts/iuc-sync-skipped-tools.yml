@@ -1,0 +1,38 @@
+---
+# Tools to skip during IUC sync
+# Add tool names to prevent them from being added to tools_iuc.yaml
+skip:
+  - qiime_align_seqs
+  - qiime_alpha_diversity
+  - qiime_alpha_rarefaction
+  - qiime_assign_taxonomy
+  - qiime_beta_diversity
+  - qiime_beta_diversity_through_plots
+  - qiime_collapse_samples
+  - qiime_compare_categories
+  - qiime_core_diversity
+  - qiime_count_seqs
+  - qiime_extract_barcodes
+  - qiime_filter_alignment
+  - qiime_filter_fasta
+  - qiime_filter_otus_from_otu_table
+  - qiime_filter_samples_from_otu_table
+  - qiime_filter_taxa_from_otu_table
+  - qiime_jackknifed_beta_diversity
+  - qiime_make_emperor
+  - qiime_make_otu_heatmap
+  - qiime_make_otu_table
+  - qiime_make_phylogeny
+  - qiime_multiple_join_paired_ends
+  - qiime_multiple_split_libraries_fastq
+  - qiime_pick_closed_reference_otus
+  - qiime_pick_open_reference_otus
+  - qiime_pick_otus
+  - qiime_pick_rep_set
+  - qiime_plot_taxa_summary
+  - qiime_split_libraries
+  - qiime_split_libraries_fastq
+  - qiime_summarize_taxa
+  - qiime_summarize_taxa_through_plots
+  - qiime_upgma_cluster
+  - qiime_validate_mapping_file

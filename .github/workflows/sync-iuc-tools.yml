@@ -1,0 +1,66 @@
+name: Sync IUC Tools
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * 5'
+
+jobs:
+  sync-iuc-tools:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        run: uv pip install --system -r requirements.txt
+
+      - name: Clone IUC repository
+        uses: actions/checkout@v6
+        with:
+          repository: galaxyproject/tools-iuc
+          path: tools-iuc
+          fetch-depth: 0
+
+      - name: Run sync script
+        run: |
+          python scripts/sync-iuc-tools.py \
+            --tools-yaml tools_iuc.yaml \
+            --mapping-file scripts/category-mapping.yml \
+            --iuc-repo-path tools-iuc \
+            --github-token ${{ secrets.GITHUB_TOKEN }} \
+            --last-sync-sha-file scripts/.last-iuc-sync-sha \
+            --skip-list scripts/iuc-sync-skipped-tools.yml \
+            --report-file ${{ runner.temp }}/sync-report.md
+
+      - name: Check for changes
+        id: check_changes
+        uses: tj-actions/verify-changed-files@v20
+
+      - name: Validate changes with pr_check
+        if: steps.check_changes.outputs.files_changed == 'true'
+        run: make pr_check
+
+      - name: Create or update Pull Request
+        if: steps.check_changes.outputs.files_changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: sync-iuc-tools
+          commit-message: 'Add new tools from IUC repository'
+          title: 'Add new tools from IUC repository'
+          body-path: ${{ runner.temp }}/sync-report.md
+          delete-branch: true
+          add-paths: |
+            tools_iuc.yaml
+            scripts/.last-iuc-sync-sha
