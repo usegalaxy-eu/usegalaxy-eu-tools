@@ -39,6 +39,7 @@ class IUCToolSyncer:
         self.github_token = github_token
         self.dry_run = dry_run
         self.last_sync_sha_file = last_sync_sha_file
+        self.skip_list_path = skip_list_path
 
         # Load category mapping
         with open(mapping_file_path) as f:
@@ -867,7 +868,7 @@ Important:
                 f"\n## Skipped (Skip-list) ({len(self.skiplist_skipped_tools)})\n"
             )
             lines.append(
-                "\nThese tools are permanently excluded via `scripts/skip-tools.yml` "
+                f"\nThese tools are permanently excluded via `{self.skip_list_path}` "
                 "and were **not** added.\n"
             )
             lines.append("\n| Tool Name | ToolShed Categories |\n")
