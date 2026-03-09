@@ -41,6 +41,7 @@ jobs:
             --iuc-repo-path tools-iuc \
             --github-token ${{ secrets.GITHUB_TOKEN }} \
             --last-sync-sha-file scripts/.last-iuc-sync-sha \
+            --skip-list scripts/skip-tools.yml \
             --report-file ${{ runner.temp }}/sync-report.md
 
       - name: Check for changes

@@ -31,6 +31,7 @@ class IUCToolSyncer:
         github_token: Optional[str] = None,
         dry_run: bool = False,
         last_sync_sha_file: Optional[Path] = None,
+        skip_list_path: Optional[Path] = None,
     ):
         self.tools_yaml_path = tools_yaml_path
         self.mapping_file_path = mapping_file_path
@@ -65,11 +66,19 @@ class IUCToolSyncer:
                     file=sys.stderr,
                 )
 
+        # Load skip list
+        self.skip_list: Set[str] = set()
+        if skip_list_path is not None and skip_list_path.exists():
+            with open(skip_list_path) as f:
+                skip_data = yaml.safe_load(f) or {}
+                self.skip_list = set(skip_data.get("skip", []))
+
         self.toolshed_api = "https://toolshed.g2.bx.psu.edu/api/repositories"
 
         self.existing_tools: Set[Tuple[str, str]] = set()
         self.new_tools: List[Dict] = []
         self.skipped_tools: List[Dict] = []
+        self.skiplist_skipped_tools: List[Dict] = []
         self.report_lines: List[str] = []
 
     def load_existing_tools(self) -> None:
@@ -542,6 +551,11 @@ Important:
             if (name, owner) in self.existing_tools:
                 continue
 
+            # Check if tool is in the skip list
+            if name in self.skip_list:
+                self.skiplist_skipped_tools.append(tool)
+                continue
+
             # Data managers don't get a label (detected by directory or name prefix)
             if tool.get("is_data_manager") or name.startswith("data_manager"):
                 self.new_tools.append(
@@ -609,26 +623,137 @@ Important:
                     tool["label"] = "Other Tools"
                     tool["mapping_source"] = "fallback"
 
-    def append_to_yaml(self) -> None:
-        """Append new tools to tools_iuc.yaml as formatted text."""
+    def _label_to_header(self, label: Optional[str]) -> str:
+        """Convert a tool_panel_section_label to its YAML section header comment."""
+        if label is None:
+            return "# DATA MANAGERS"
+        return f"# {label.upper()}"
+
+    def _format_tool_entry(self, tool: Dict) -> List[str]:
+        """Return the list of lines that represent one tool entry in the YAML."""
+        entry_lines = [
+            f"  - name: {tool['name']}\n",
+            f"    owner: {tool['owner']}\n",
+        ]
+        if tool["label"]:
+            entry_lines.append(f"    tool_panel_section_label: '{tool['label']}'\n")
+        entry_lines.append("\n")
+        return entry_lines
+
+    def insert_tools_sorted(self) -> None:
+        """Insert new tools into tools_iuc.yaml at the correct sorted position."""
         if not self.new_tools:
             return
 
-        # Prepare new entries
-        timestamp = datetime.now().strftime("%Y-%m-%d")
-        new_entries = [f"\n# Tools added by sync-iuc-tools.py on {timestamp}\n"]
+        with open(self.tools_yaml_path) as f:
+            lines = f.readlines()
 
+        # Find all section headers: lines like "# ANNOTATION", "# DATA MANAGERS", etc.
+        header_pat = re.compile(r"^# [A-Z]")
+        section_headers: List[Tuple[int, str]] = []
+        for i, line in enumerate(lines):
+            stripped = line.rstrip("\n")
+            if header_pat.match(stripped):
+                section_headers.append((i, stripped))
+
+        # Group new tools by their target section header
+        tools_by_header: Dict[str, List[Dict]] = {}
         for tool in self.new_tools:
-            new_entries.append(f"  - name: {tool['name']}\n")
-            new_entries.append(f"    owner: {tool['owner']}\n")
-            if tool["label"]:
-                new_entries.append(f"    tool_panel_section_label: '{tool['label']}'\n")
-            new_entries.append("\n")
+            hdr = self._label_to_header(tool["label"])
+            tools_by_header.setdefault(hdr, []).append(tool)
 
-        # Append to file
+        # Separate groups targeting existing headers from those needing new headers
+        existing_hdr_lower = {h.lower(): (idx, h) for idx, h in section_headers}
+        existing_groups: List[Tuple[int, str, List[Dict]]] = []
+        new_header_groups: List[Tuple[str, List[Dict]]] = []
+
+        for hdr, tools in tools_by_header.items():
+            if hdr.lower() in existing_hdr_lower:
+                line_idx, raw_hdr = existing_hdr_lower[hdr.lower()]
+                existing_groups.append((line_idx, raw_hdr, tools))
+            else:
+                new_header_groups.append((hdr, tools))
+
+        # Process existing sections in reverse line order to avoid index shifting
+        existing_groups.sort(key=lambda x: x[0], reverse=True)
+
+        for section_line_idx, _raw_hdr, tools in existing_groups:
+            # Find this section's end (start of next section header)
+            section_end = len(lines)
+            for idx, _h in section_headers:
+                if idx > section_line_idx:
+                    section_end = idx
+                    break
+
+            # Collect all "  - name: <tool>" entries within this section
+            name_entries: List[Tuple[int, str]] = []
+            for i in range(section_line_idx + 1, section_end):
+                m = re.match(r"^  - name:\s*(\S+)", lines[i])
+                if m:
+                    name_entries.append((i, m.group(1)))
+
+            # Insert tools in reverse alphabetical order so each insertion does not
+            # shift the insertion points of the remaining (earlier) tools
+            for tool in sorted(tools, key=lambda t: t["name"], reverse=True):
+                # Find the first existing entry whose name is lexicographically greater
+                insert_at = section_end
+                for entry_idx, entry_name in name_entries:
+                    if tool["name"] < entry_name:
+                        insert_at = entry_idx
+                        break
+
+                entry_lines = self._format_tool_entry(tool)
+                lines[insert_at:insert_at] = entry_lines
+
+                shift = len(entry_lines)
+                # Update tracked name entry indices and section_end
+                name_entries = [
+                    (idx + shift if idx >= insert_at else idx, name)
+                    for idx, name in name_entries
+                ]
+                if insert_at <= section_end:
+                    section_end += shift
+
+        # Insert tools for brand-new section headers
+        if new_header_groups:
+            # Rebuild section header index from the (now-modified) lines
+            section_headers_current: List[Tuple[int, str]] = []
+            for i, line in enumerate(lines):
+                stripped = line.rstrip("\n")
+                if header_pat.match(stripped):
+                    section_headers_current.append((i, stripped))
+
+            # Process new headers in reverse alphabetical order so index shifts
+            # from later insertions don't affect earlier insertion points
+            new_header_groups.sort(key=lambda x: x[0].lower(), reverse=True)
+
+            for hdr, tools in new_header_groups:
+                # Find the first existing header that sorts after this new header
+                insert_before = len(lines)
+                for idx, existing_hdr in section_headers_current:
+                    if hdr.lower() < existing_hdr.lower():
+                        insert_before = idx
+                        break
+
+                sorted_tools = sorted(tools, key=lambda t: t["name"])
+                insert_block: List[str] = [hdr + "\n"]
+                for tool in sorted_tools:
+                    insert_block.extend(self._format_tool_entry(tool))
+
+                lines[insert_before:insert_before] = insert_block
+
+                shift = len(insert_block)
+                section_headers_current = [
+                    (idx + shift if idx >= insert_before else idx, h)
+                    for idx, h in section_headers_current
+                ]
+                # Register the new header so subsequent iterations respect it
+                section_headers_current.append((insert_before, hdr))
+                section_headers_current.sort(key=lambda x: x[0])
+
         if not self.dry_run:
-            with open(self.tools_yaml_path, "a") as f:
-                f.writelines(new_entries)
+            with open(self.tools_yaml_path, "w") as f:
+                f.writelines(lines)
 
             # Validate that the resulting file is still valid YAML
             try:
@@ -723,6 +848,20 @@ Important:
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 lines.append(f"| `{tool['name']}` | {cats} |\n")
 
+        if self.skiplist_skipped_tools:
+            lines.append(
+                f"\n## Skipped (Skip-list) ({len(self.skiplist_skipped_tools)})\n"
+            )
+            lines.append(
+                "\nThese tools are permanently excluded via `scripts/skip-tools.yml` "
+                "and were **not** added.\n"
+            )
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
+            for tool in sorted(self.skiplist_skipped_tools, key=lambda t: t["name"]):
+                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
+                lines.append(f"| `{tool['name']}` | {cats} |\n")
+
         lines.append("\n---\n")
         lines.append(
             "\n🤖 This PR was automatically generated by the `sync-iuc-tools` workflow.\n"
@@ -789,11 +928,12 @@ Important:
 
             if not self.dry_run:
                 print(
-                    f"Appending new tools to {self.tools_yaml_path}...", file=sys.stderr
+                    f"Inserting new tools (sorted) into {self.tools_yaml_path}...",
+                    file=sys.stderr,
                 )
-                self.append_to_yaml()
+                self.insert_tools_sorted()
             else:
-                print("DRY RUN: Would append new tools to YAML", file=sys.stderr)
+                print("DRY RUN: Would insert new tools into YAML (sorted)", file=sys.stderr)
 
         # Advance the SHA pointer (same commit as YAML changes)
         if self._pending_new_sha and self.last_sync_sha_file is not None:
@@ -871,6 +1011,12 @@ def main():
             "scanned (legacy/manual mode)."
         ),
     )
+    parser.add_argument(
+        "--skip-list",
+        type=Path,
+        default=None,
+        help="Path to a YAML file listing tool names to permanently exclude from sync.",
+    )
 
     args = parser.parse_args()
 
@@ -884,6 +1030,7 @@ def main():
         github_token=github_token,
         dry_run=args.dry_run,
         last_sync_sha_file=args.last_sync_sha_file,
+        skip_list_path=args.skip_list,
     )
 
     return syncer.run(report_file=args.report_file)
