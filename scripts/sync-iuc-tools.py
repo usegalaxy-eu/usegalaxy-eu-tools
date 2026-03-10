@@ -370,7 +370,10 @@ class IUCToolSyncer:
             hits = resp.json().get("hits", [])
             exists = any(
                 hit["repository"]["name"] == name
-                and hit["repository"]["owner"] == owner
+                and hit["repository"].get(
+                    "repo_owner_username", hit["repository"].get("owner")
+                )
+                == owner
                 for hit in hits
             )
             return tool, exists
@@ -948,7 +951,10 @@ Important:
                 )
                 self.insert_tools_sorted()
             else:
-                print("DRY RUN: Would insert new tools into YAML (sorted)", file=sys.stderr)
+                print(
+                    "DRY RUN: Would insert new tools into YAML (sorted)",
+                    file=sys.stderr,
+                )
 
         # Advance the SHA pointer (same commit as YAML changes)
         if self._pending_new_sha and self.last_sync_sha_file is not None:
