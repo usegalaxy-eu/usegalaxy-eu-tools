@@ -670,54 +670,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
-  - name: ucsc_netsyntenic
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_netchainsubset
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_mafgene
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_maffrags
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_maffrag
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_maffetch
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_mafcoverage
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_mafaddirows
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_chainswap
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_chainsort
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_chainprenet
-    owner: iuc
-    tool_panel_section_label: Annotation
-
-  - name: ucsc_blat
-    owner: yating-l
-    tool_panel_section_label: Annotation
-
   - name: windowmasker
     owner: iuc
     tool_panel_section_label: Annotation
@@ -4159,6 +4111,18 @@ tools:
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
+  - name: faffy_chunk
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: faffy_extract
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: faffy_merge
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
   - name: hal_hal2fasta
     owner: iuc
     tool_panel_section_label: Multiple Alignments
@@ -4271,18 +4235,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
-  - name: faffy_chunk
-    owner: iuc
-    tool_panel_section_label: Multiple Alignments
-
-  - name: faffy_extract
-    owner: iuc
-    tool_panel_section_label: Multiple Alignments
-
-  - name: faffy_merge
-    owner: iuc
-    tool_panel_section_label: Multiple Alignments
-
   - name: paffy_add_mismatches
     owner: iuc
     tool_panel_section_label: Multiple Alignments
@@ -4328,6 +4280,54 @@ tools:
     tool_panel_section_label: Multiple Alignments
 
   - name: paffy_view
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_blat
+    owner: yating-l
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_chainprenet
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_chainsort
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_chainswap
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_mafaddirows
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_mafcoverage
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_maffetch
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_maffrag
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_maffrags
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_mafgene
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_netchainsubset
+    owner: iuc
+    tool_panel_section_label: Multiple Alignments
+
+  - name: ucsc_netsyntenic
     owner: iuc
     tool_panel_section_label: Multiple Alignments
 
