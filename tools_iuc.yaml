@@ -218,10 +218,6 @@ tools:
     owner: iuc
     tool_panel_section_label: 'Annotation'
 
-  - name: taxonomy_filter_refseq
-    owner: iuc
-    tool_panel_section_label: 'Annotation'
-
   - name: snap
     owner: iuc
     tool_panel_section_label: 'Annotation'
@@ -2632,6 +2628,10 @@ tools:
   - name: name2taxid
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
+
+  - name: taxonomy_filter_refseq
+    owner: iuc
+    tool_panel_section_label: 'Metagenomic Analysis'
 
   - name: picrust_predict_metagenomes
     owner: iuc
