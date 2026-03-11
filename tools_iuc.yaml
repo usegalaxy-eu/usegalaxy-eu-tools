@@ -33,10 +33,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
-  - name: bamutil_clip_overlap
-    owner: iuc
-    tool_panel_section_label: 'Annotation'
-
   - name: busco
     owner: iuc
     tool_panel_section_label: Annotation
@@ -5503,6 +5499,10 @@ tools:
 
 
 # SAM/BAM
+
+  - name: bamutil_clip_overlap
+    owner: iuc
+    tool_panel_section_label: 'SAM/BAM'
 
   - name: bamtools
     owner: devteam
