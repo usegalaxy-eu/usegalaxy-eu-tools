@@ -15,6 +15,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Check if sync PR already exists
+        id: check_pr
+        uses: juliangruber/find-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          branch: sync-iuc-tools
+          state: open
+
+      - name: Skip if open PR exists
+        if: steps.check_pr.outputs.number != ''
+        run: |
+          echo "Open PR #${{ steps.check_pr.outputs.number }} already exists on sync-iuc-tools. Skipping sync."
+          exit 0
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
