@@ -2,11 +2,33 @@ name: Sync IUC Tools
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force sync even if an open PR already exists'
+        type: boolean
+        default: false
   schedule:
     - cron: '0 8 * * 5'
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      pr_number: ${{ steps.find_pr.outputs.number }}
+    steps:
+      - name: Check if sync PR already exists
+        id: find_pr
+        uses: juliangruber/find-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          branch: sync-iuc-tools
+          state: open
+
   sync-iuc-tools:
+    needs: check
+    if: needs.check.outputs.pr_number == '' || github.event.inputs.force == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
