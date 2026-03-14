@@ -351,29 +351,21 @@ class IUCToolSyncer:
     def _check_toolshed_single(self, tool: Dict) -> Tuple[Dict, bool]:
         """Check one tool against the ToolShed REST API. Returns (tool, exists).
 
-        Uses the same search endpoint as pr-check.py (bioblend search_repositories)
-        so that validation results are consistent with the PR validation step.
+        Uses an exact name+owner repository lookup rather than a search query so
+        validation is based on repository identity.
         """
         name = tool["name"]
         owner = tool["owner"]
         try:
-            # Use the search endpoint (?q=) mirroring what pr-check.py does via
-            # bioblend's search_repositories().  A direct ?name=&owner= filter can
-            # return stale / not-yet-published entries that the search index does
-            # not expose, leading to false positives.
             resp = requests.get(
                 self.toolshed_api,
-                params={"q": name, "page_size": 600},
+                params={"name": name, "owner": owner, "page_size": 1},
                 timeout=30,
             )
             resp.raise_for_status()
-            hits = resp.json().get("hits", [])
+            hits = resp.json()
             exists = any(
-                hit["repository"]["name"] == name
-                and hit["repository"].get(
-                    "repo_owner_username", hit["repository"].get("owner")
-                )
-                == owner
+                hit["name"] == name and hit.get("owner") == owner
                 for hit in hits
             )
             return tool, exists
@@ -397,7 +389,7 @@ class IUCToolSyncer:
             file=sys.stderr,
         )
 
-        results_map: Dict[str, bool] = {}
+        results_map: Dict[Tuple[str, str], bool] = {}
         with ThreadPoolExecutor(max_workers=10) as executor:
             futures = {
                 executor.submit(self._check_toolshed_single, t): t
@@ -405,11 +397,11 @@ class IUCToolSyncer:
             }
             for future in as_completed(futures):
                 tool, exists = future.result()
-                results_map[tool["name"]] = exists
+                results_map[(tool["name"], tool["owner"])] = exists
 
         valid_tools: List[Dict] = []
         for tool in self.new_tools:  # preserve original order
-            if results_map.get(tool["name"], False):
+            if results_map.get((tool["name"], tool["owner"]), False):
                 valid_tools.append(tool)
             else:
                 print(
