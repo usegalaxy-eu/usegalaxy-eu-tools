@@ -647,6 +647,7 @@ tools:
 - name: mirmachine
   owner: iuc
   revisions:
+  - 122bb8d553cb
   - 85010d0eaa6c
   - b0d80d456120
   - c73e17fc5a77
@@ -878,6 +879,7 @@ tools:
   - 9e8cf8dd6955
   - d0a2e0a9c853
   - eaa563bd535a
+  - f2625d1efadd
   tool_panel_section_label: Annotation
 - name: data_manager_build_staramr
   owner: iuc
@@ -963,6 +965,7 @@ tools:
   - 9e8cf8dd6955
   - d0a2e0a9c853
   - eaa563bd535a
+  - f2625d1efadd
   tool_panel_section_label: Annotation
 - name: ppanggolin_all
   owner: iuc
@@ -1442,6 +1445,7 @@ tools:
   - 3125faf00ffd
   - 33c060ec0ac9
   - 3967889cda03
+  - 734fbbd94307
   - 8e66f695d859
   - 96f74538896e
   - e989670c7fc7
@@ -2279,6 +2283,7 @@ tools:
   - c0b2c2e39c9c
   - c5e2e5902201
   - de6cebe3c043
+  - f6168dd17f82
   - fe74900d6dc7
   tool_panel_section_label: FASTA/FASTQ
 - name: cialign
@@ -3232,6 +3237,7 @@ tools:
   - 1005ffbccd86
   - b91e1e70f3a1
   - f63cf0adfd87
+  - f63d8665d8ea
   tool_panel_section_label: Get Data
 - name: openalex_explorer
   owner: iuc
@@ -4429,6 +4435,7 @@ tools:
   - 55b7b257e12f
   - 7100ed4a31a2
   - 881ea5ff36a0
+  - 9fcfd706bf16
   - bf5e9702061a
   - e1d39a293b5a
   - f4ec47f1a8da
@@ -4936,6 +4943,7 @@ tools:
   revisions:
   - 027297969224
   - 5ee29434330f
+  - bb45f97b9579
   - bcb8dc01f296
   - f23a0598b4bc
   tool_panel_section_label: Metagenomic Analysis
@@ -4946,6 +4954,7 @@ tools:
   - 3f32eb89d482
   - 640400ad260d
   - a32ee0bb028b
+  - e4fdb6e48445
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_lineage_wf
   owner: iuc
@@ -4953,6 +4962,7 @@ tools:
   - '482705438671'
   - 8345d273ba82
   - c3735bcc9cb8
+  - dcbbec865b86
   - f0107b9f2dc3
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_plot
@@ -4961,6 +4971,7 @@ tools:
   - 0ac2ba0b0d81
   - 9916308301da
   - b24e4f6c8b4d
+  - bfbfffa0fd9d
   - ca5846873a2e
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_qa
@@ -4968,6 +4979,7 @@ tools:
   revisions:
   - 1d9365ace97d
   - 5466420816b9
+  - 61b0b25c50cb
   - 8236b90ce44c
   - 82caa8ed507c
   tool_panel_section_label: Metagenomic Analysis
@@ -4978,6 +4990,7 @@ tools:
   - 407e50329077
   - 600b129adb72
   - 7b705d847810
+  - bd631c7b95e3
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_taxonomy_wf
   owner: iuc
@@ -4986,18 +4999,21 @@ tools:
   - 19e4e2d98ebb
   - 2e995a9aa00e
   - 98731fd340c5
+  - c7dddac32efc
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_tetra
   owner: iuc
   revisions:
   - 0061483faf7d
   - 46bc08145439
+  - 81af66339b05
   - bb3b50fa4956
   - d0d9e52a46b8
   tool_panel_section_label: Metagenomic Analysis
 - name: checkm_tree
   owner: iuc
   revisions:
+  - 5e445adeff70
   - 626ab1058170
   - 6d1c282e2ce2
   - ce3fd529a6ec
@@ -5007,6 +5023,7 @@ tools:
   owner: iuc
   revisions:
   - 36ea6d5441c3
+  - 39010c7012f2
   - 74767297a247
   - a99ca4bb4d1d
   - b9a38ce53252
@@ -7358,6 +7375,221 @@ tools:
   - 56d7dc39eec8
   - fd62f1b940f6
   tool_panel_section_label: Multiple Alignments
+- name: hal_hal2fasta
+  owner: iuc
+  revisions:
+  - 85319195d835
+  tool_panel_section_label: Multiple Alignments
+- name: hal_hal2maf
+  owner: iuc
+  revisions:
+  - 1748974c4c60
+  tool_panel_section_label: Multiple Alignments
+- name: hal_hal2paf
+  owner: iuc
+  revisions:
+  - ce347602361e
+  tool_panel_section_label: Multiple Alignments
+- name: hal_hal2vg
+  owner: iuc
+  revisions:
+  - d989142ead55
+  tool_panel_section_label: Multiple Alignments
+- name: hal_haladdtobranch
+  owner: iuc
+  revisions:
+  - fb30a33c372a
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halalignedextract
+  owner: iuc
+  revisions:
+  - c673d68da17b
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halalignmentdepth
+  owner: iuc
+  revisions:
+  - 33029dc6e850
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halbranchmutations
+  owner: iuc
+  revisions:
+  - 016d6b7c20f8
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halcoverage
+  owner: iuc
+  revisions:
+  - 0f5bcf7e18a7
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halextract
+  owner: iuc
+  revisions:
+  - e92632d42ab1
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halindels
+  owner: iuc
+  revisions:
+  - 3aa52dad5b61
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halliftover
+  owner: iuc
+  revisions:
+  - e47c8b7f8afd
+  tool_panel_section_label: Multiple Alignments
+- name: hal_hallodextract
+  owner: iuc
+  revisions:
+  - 039a3ab5c642
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halmaskextract
+  owner: iuc
+  revisions:
+  - c0ce8338c920
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halpctid
+  owner: iuc
+  revisions:
+  - 3abff47d131b
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halremovegenome
+  owner: iuc
+  revisions:
+  - b1c9a12e9c5e
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halremovesubtree
+  owner: iuc
+  revisions:
+  - 2d35c5c87668
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halrenamegenomes
+  owner: iuc
+  revisions:
+  - cb03a3a5ba3e
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halrenamesequences
+  owner: iuc
+  revisions:
+  - f66b4147999f
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halreplacegenome
+  owner: iuc
+  revisions:
+  - d8e31679bd42
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halsnps
+  owner: iuc
+  revisions:
+  - 50336dc82da7
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halstats
+  owner: iuc
+  revisions:
+  - a9eb29f924e1
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halsummarizemutations
+  owner: iuc
+  revisions:
+  - cbe600ed01f7
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halsynteny
+  owner: iuc
+  revisions:
+  - 382999d193bd
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halupdatebranchlengths
+  owner: iuc
+  revisions:
+  - acb100bdf203
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halvalidate
+  owner: iuc
+  revisions:
+  - 0228d26fb499
+  tool_panel_section_label: Multiple Alignments
+- name: hal_halwiggleliftover
+  owner: iuc
+  revisions:
+  - 9a0c65d6cfe2
+  tool_panel_section_label: Multiple Alignments
+- name: hal_maf2hal
+  owner: iuc
+  revisions:
+  - 8af265f90d58
+  tool_panel_section_label: Multiple Alignments
+- name: faffy_chunk
+  owner: iuc
+  revisions:
+  - 233f4d173179
+  tool_panel_section_label: Multiple Alignments
+- name: faffy_extract
+  owner: iuc
+  revisions:
+  - 30c0d75a8e9c
+  tool_panel_section_label: Multiple Alignments
+- name: faffy_merge
+  owner: iuc
+  revisions:
+  - 65a2aa997cdd
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_add_mismatches
+  owner: iuc
+  revisions:
+  - 7f0746458bea
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_chain
+  owner: iuc
+  revisions:
+  - 90a5a4fb1e6f
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_dechunk
+  owner: iuc
+  revisions:
+  - 5731ac9f13ed
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_dedupe
+  owner: iuc
+  revisions:
+  - e32ff3b04170
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_filter
+  owner: iuc
+  revisions:
+  - 7b47771717d4
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_invert
+  owner: iuc
+  revisions:
+  - 3bc77fc0db09
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_shatter
+  owner: iuc
+  revisions:
+  - 0a57dcd33351
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_tile
+  owner: iuc
+  revisions:
+  - 03da093291cf
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_to_bed
+  owner: iuc
+  revisions:
+  - b9058d7dec02
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_trim
+  owner: iuc
+  revisions:
+  - 6d07d9dcf653
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_upconvert
+  owner: iuc
+  revisions:
+  - 9b7dfe2434e2
+  tool_panel_section_label: Multiple Alignments
+- name: paffy_view
+  owner: iuc
+  revisions:
+  - d814e88d49ae
+  tool_panel_section_label: Multiple Alignments
 - name: tesseract
   owner: iuc
   revisions:
@@ -7845,6 +8077,7 @@ tools:
   - 26de3a7b1cb9
   - 3b8b5bde0bd9
   - 3f59ebfbfe3d
+  - 3f8261f0a826
   - 4aad5b48d5b2
   - 4cc4dbca2f02
   - 5a7c56a5cc08
@@ -7871,6 +8104,7 @@ tools:
   - 1669328e2ab1
   - 2318841ec191
   - 2dbd8f857b5f
+  - 3629cc0115ac
   - 5b4fd931a989
   - 91cf1290ba6f
   - b315ee3d3487
@@ -7882,6 +8116,7 @@ tools:
   revisions:
   - 0669558ebc6b
   - 082d47606949
+  - 0bdd3998a0d7
   - 12c2453e5040
   - 14e7ae9331cb
   - 1647c9f95dc7
@@ -7915,6 +8150,7 @@ tools:
   - 12bc58a60606
   - 2228dcc23dd9
   - 35df756079a3
+  - 38ac249e5d69
   - 481f2f8f29ff
   - 4ff928db5592
   - 5da8672e89a3
@@ -7942,6 +8178,7 @@ tools:
 - name: hyphy_cfel
   owner: iuc
   revisions:
+  - 34d2e58b8a1f
   - 4586fb1ccdc2
   - 650313b854e1
   - 6960dd62c983
@@ -7956,6 +8193,7 @@ tools:
   revisions:
   - 079ea2eb9ae4
   - 1e65054da37c
+  - 4c52eab912ea
   - 6761212b7f1d
   - a610ae9901fd
   - b30255d232d2
@@ -7975,6 +8213,7 @@ tools:
   - 6164d9298db9
   - 62971c58f0dc
   - 64380f4e296a
+  - 657baa39114a
   - 751948c21000
   - 7c41611bf5b7
   - 7dbcce65a8ff
@@ -8009,6 +8248,7 @@ tools:
   - ae95a6b22562
   - af7490b6329b
   - b110a31a9c61
+  - b156ae1424fe
   - b6e3961a25ff
   - c32f3d3e8a92
   - c6dcbc9f94f2
@@ -8025,6 +8265,7 @@ tools:
 - name: hyphy_fubar
   owner: iuc
   revisions:
+  - 04de395f2a4e
   - 0f108ee932ea
   - 1b893cdead55
   - 271afda54a6d
@@ -8067,6 +8308,7 @@ tools:
   - 6283babe736e
   - 659517798cc4
   - 6a726db04d4b
+  - 6b8fd7d6b0ad
   - 724630cdd122
   - 7a2092844346
   - 7f14d76f86ca
@@ -8096,6 +8338,7 @@ tools:
   - 5b380f4dbf1c
   - 5fd8dc04d6af
   - 6433eab14244
+  - 67fe4f52c1e5
   - 6e7f144046c0
   - 74b590fdc6a0
   - 7852b50fabb7
@@ -8118,6 +8361,7 @@ tools:
   - 02f0dfb10421
   - 0407236012e5
   - 1d9d3c6bc246
+  - 3791d6afec1e
   - 3e41f675087f
   - 6fede7bd6c8f
   - 70aa4bada58d
@@ -8149,6 +8393,7 @@ tools:
   - 2fe09c202bbe
   - 49885a825dc1
   - 4d13ff4556da
+  - 50551ca179d3
   - 551616a65f8f
   - 58240e4032d6
   - 592fb9353702
@@ -8198,6 +8443,7 @@ tools:
   - d430eba4a90e
   - d6f4ff2aed07
   - dc9e52b2d0e1
+  - e46726cd0c9e
   tool_panel_section_label: Phylogenetics
 - name: hyphy_sm19
   owner: iuc
@@ -8205,6 +8451,7 @@ tools:
   - 011f70f720ac
   - 051642420aec
   - 056a5b14721d
+  - 07774580b606
   - 1527f00ddf7f
   - 1a32b8e86fc6
   - 1cd3060a8504
@@ -8235,6 +8482,7 @@ tools:
   - 31e7f5a25db3
   - 83421c6944a1
   - a60caeb3c453
+  - aaf823b11580
   - bba232f7b231
   - dc8875a13914
   - ea698cd7e086
@@ -9118,6 +9366,7 @@ tools:
   - 3125faf00ffd
   - 33c060ec0ac9
   - 3967889cda03
+  - 734fbbd94307
   - 8e66f695d859
   - 96f74538896e
   - e989670c7fc7
@@ -9700,6 +9949,7 @@ tools:
   - a389f74c3630
   - b5527cc104ab
   - ce32171c6d44
+  - ef678e1f70a2
   tool_panel_section_label: SAM/BAM
 - name: samtools_merge
   owner: iuc
@@ -9886,6 +10136,7 @@ tools:
   - 9e2df763086c
   - a62c4a11a67d
   - d147d6455873
+  - e0f333e6eb73
   - ea5e944f447d
   tool_panel_section_label: Send Data
 - name: ena_webin_cli
@@ -9895,6 +10146,21 @@ tools:
   - 93fac0ae859f
   - c9f87770ba8f
   tool_panel_section_label: Send Data
+- name: spatialdata_io
+  owner: iuc
+  revisions:
+  - 1f6c780a2635
+  tool_panel_section_label: Spatial Omics
+- name: spatialdata_operation
+  owner: iuc
+  revisions:
+  - 2adfc39ffbac
+  tool_panel_section_label: Spatial Omics
+- name: spatialdata_plot
+  owner: iuc
+  revisions:
+  - c5928c28e2f0
+  tool_panel_section_label: Spatial Omics
 - name: cosg
   owner: iuc
   revisions:
