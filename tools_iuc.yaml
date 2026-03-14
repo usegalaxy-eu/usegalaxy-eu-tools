@@ -4889,7 +4889,6 @@ tools:
     owner: iuc
     tool_panel_section_label: Sanger Sequencing
 
-
 # SEND DATA
 
   - name: ena_upload
@@ -4899,6 +4898,20 @@ tools:
   - name: ena_webin_cli
     owner: iuc
     tool_panel_section_label: Send Data
+
+# SPATIAL OMICS
+
+  - name: spatialdata_io
+    owner: iuc
+    tool_panel_section_label: Spatial Omics
+
+  - name: spatialdata_operation
+    owner: iuc
+    tool_panel_section_label: Spatial Omics
+
+  - name: spatialdata_plot
+    owner: iuc
+    tool_panel_section_label: Spatial Omics
 
 
 # SINGLE-CELL
