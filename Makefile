@@ -29,7 +29,7 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 
 %.install: %
 	@echo "Installing any updated versions of $<"
-	@-shed-tools install --install_resolver_dependencies --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
+	@-shed-tools install --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
 
 pr_check:
 	for changed_yaml in `git diff remotes/origin/master --name-only | grep '.yaml$$' | grep -v '.not-installable-revisions.yaml$$'`; do python scripts/pr-check.py $${changed_yaml} && pykwalify -d $${changed_yaml} -s .schema.yaml ; done

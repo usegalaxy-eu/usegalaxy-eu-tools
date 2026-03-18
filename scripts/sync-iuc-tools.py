@@ -646,7 +646,7 @@ Important:
             f"    owner: {tool['owner']}\n",
         ]
         if tool["label"]:
-            entry_lines.append(f"    tool_panel_section_label: '{tool['label']}'\n")
+            entry_lines.append(f"    tool_panel_section_label: {tool['label']}\n")
         entry_lines.append("\n")
         return entry_lines
 
