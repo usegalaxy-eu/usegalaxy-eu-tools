@@ -50,6 +50,12 @@ jobs:
       - name: Fix ${{ matrix.lockfile }}
         run: python scripts/fix_outdated.py "${{ matrix.lockfile }}"
 
+      - name: Get base name
+        id: basename
+        run: echo "name=${LOCKFILE%.yaml.lock}" >> $GITHUB_OUTPUT
+        env:
+          LOCKFILE: ${{ matrix.lockfile }}
+
       - name: Upload changes
         uses: actions/upload-artifact@v4
         if: always()
@@ -57,7 +63,7 @@ jobs:
           name: ${{ matrix.lockfile }}
           path: |
             ${{ matrix.lockfile }}
-            not-installable-revisions/*.not-installable-revisions.yaml
+            not-installable-revisions/${{ steps.basename.outputs.name }}.not-installable-revisions.yaml
           if-no-files-found: ignore
 
   create-pr:
