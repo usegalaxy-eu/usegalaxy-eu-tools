@@ -121,6 +121,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: endorspy
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: evidencemodeler
     owner: iuc
     tool_panel_section_label: Annotation
@@ -199,6 +203,22 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: goenrichment
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sexdeterrmine
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: preseq_lc_extrap
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: preseq_c_curve
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: mtnucratio
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -938,6 +958,11 @@ tools:
   - name: halfdeep
     owner: iuc
     tool_panel_section_label: Assembly
+
+# ASTRONOMY
+  - name: gwtc_analysis
+    owner: iuc
+    tool_panel_section_label: Astronomy
 
 # BED
 
@@ -4974,6 +4999,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Proteomics
 
+  - name: scop3p
+    owner: iuc
+    tool_panel_section_label: Proteomics
+
   - name: swissmodel_modelling_api
     owner: iuc
     tool_panel_section_label: Proteomics
@@ -6963,6 +6992,9 @@ tools:
 
   - name: data_manager_build_kraken_database
     owner: devteam
+
+  - name: data_manager_celltypist_models
+    owner: iuc
 
   - name: data_manager_clair3_models
     owner: iuc
