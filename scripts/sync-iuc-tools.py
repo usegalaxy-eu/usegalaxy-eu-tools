@@ -116,10 +116,9 @@ class IUCToolSyncer:
             categories = data.get("categories", [])
             description = data.get("description", "")
 
-            if not name:
-                return None
-
-            # Handle auto_tool_repositories (suite tools like bcftools)
+            # Handle auto_tool_repositories (suite tools like bcftools).
+            # These .shed.yml files often have no top-level 'name' field, so we
+            # must check for auto_tool_repositories BEFORE the 'if not name' guard.
             auto_tool_repos = data.get("auto_tool_repositories", {})
             if auto_tool_repos:
                 name_template = auto_tool_repos.get("name_template", "{{ tool_id }}")
@@ -147,6 +146,10 @@ class IUCToolSyncer:
                         "categories": categories,
                         "description": description,
                     }
+
+            # Regular (non-auto) tool: name field is required
+            if not name:
+                return None
 
             return {
                 "suite": False,
