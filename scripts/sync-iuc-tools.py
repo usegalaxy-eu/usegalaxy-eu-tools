@@ -325,6 +325,7 @@ class IUCToolSyncer:
                 is_data_manager = base_dir == "data_managers"
                 tool_info = self.parse_shed_yml(shed_yml_path)
                 if tool_info:
+                    shed_yml_rel = str(shed_yml_path.relative_to(self.iuc_repo_path))
                     if tool_info.get("suite"):
                         # Handle suite tools
                         for tool_name in tool_info["tool_names"]:
@@ -335,6 +336,7 @@ class IUCToolSyncer:
                                     "categories": tool_info["categories"],
                                     "description": tool_info["description"],
                                     "is_data_manager": is_data_manager,
+                                    "shed_yml_rel_path": shed_yml_rel,
                                 }
                             )
                     else:
@@ -346,6 +348,7 @@ class IUCToolSyncer:
                                 "categories": tool_info["categories"],
                                 "description": tool_info["description"],
                                 "is_data_manager": is_data_manager,
+                                "shed_yml_rel_path": shed_yml_rel,
                             }
                         )
 
@@ -569,6 +572,7 @@ Important:
                 self.skiplist_skipped_tools.append(tool)
                 continue
 
+            shed_yml_rel_path = tool.get("shed_yml_rel_path", "")
             # Data managers don't get a label (detected by directory or name prefix)
             if tool.get("is_data_manager") or name.startswith("data_manager"):
                 self.new_tools.append(
@@ -579,6 +583,7 @@ Important:
                         "mapping_source": "data_manager",
                         "categories": tool["categories"],
                         "description": tool["description"],
+                        "shed_yml_rel_path": shed_yml_rel_path,
                     }
                 )
             else:
@@ -593,6 +598,7 @@ Important:
                             "mapping_source": "static",
                             "categories": tool["categories"],
                             "description": tool["description"],
+                            "shed_yml_rel_path": shed_yml_rel_path,
                         }
                     )
                 else:
@@ -605,6 +611,7 @@ Important:
                             "mapping_source": "unmapped",
                             "categories": tool["categories"],
                             "description": tool["description"],
+                            "shed_yml_rel_path": shed_yml_rel_path,
                         }
                     )
 
@@ -801,11 +808,12 @@ Important:
             lines.append(
                 "\nThese tools were automatically categorized using the static mapping file.\n"
             )
-            lines.append("\n| Tool Name | Panel Section | ToolShed Categories |\n")
-            lines.append("|-----------|---------------|--------------------|\n")
+            lines.append("\n| Tool Name | Panel Section | ToolShed Categories | .shed.yml |\n")
+            lines.append("|-----------|---------------|--------------------|-----------|\n")
             for tool in sorted(static_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                lines.append(f"| `{tool['name']}` | {tool['label']} | {cats} |\n")
+                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                lines.append(f"| `{tool['name']}` | {tool['label']} | {cats} | [.shed.yml]({shed_url}) |\n")
 
         if ai_mapped:
             lines.append(f"\n## AI-Suggested Categories ({len(ai_mapped)})\n")
@@ -813,16 +821,17 @@ Important:
                 "\n⚠️ **These tools were categorized using AI.** Please review and adjust if needed.\n"
             )
             lines.append(
-                "\n| Tool Name | Suggested Panel Section | Reason | ToolShed Categories |\n"
+                "\n| Tool Name | Suggested Panel Section | Reason | ToolShed Categories | .shed.yml |\n"
             )
             lines.append(
-                "|-----------|------------------------|--------|--------------------|\n"
+                "|-----------|------------------------|--------|--------------------|-----------|\n"
             )
             for tool in sorted(ai_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 reason = tool.get("ai_reason", "AI suggested")
+                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
                 lines.append(
-                    f"| `{tool['name']}` | {tool['label']} | {reason} | {cats} |\n"
+                    f"| `{tool['name']}` | {tool['label']} | {reason} | {cats} | [.shed.yml]({shed_url}) |\n"
                 )
 
         if data_managers:
@@ -830,22 +839,24 @@ Important:
             lines.append(
                 "\nThese are data managers and don't require a panel section label.\n"
             )
-            lines.append("\n| Tool Name |\n")
-            lines.append("|-----------|\n")
+            lines.append("\n| Tool Name | .shed.yml |\n")
+            lines.append("|-----------|-----------|\n")
             for tool in sorted(data_managers, key=lambda t: t["name"]):
-                lines.append(f"| `{tool['name']}` |\n")
+                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                lines.append(f"| `{tool['name']}` | [.shed.yml]({shed_url}) |\n")
 
         if fallback:
             lines.append(f"\n## Fallback Categorization ({len(fallback)})\n")
             lines.append(
                 "\n⚠️ **These tools could not be categorized** (static mapping failed and AI unavailable). Assigned to 'Other Tools'.\n"
             )
-            lines.append("\n| Tool Name | ToolShed Categories |\n")
-            lines.append("|-----------|--------------------|\n")
+            lines.append("\n| Tool Name | ToolShed Categories | .shed.yml |\n")
+            lines.append("|-----------|--------------------|-----------|\n")
 
             for tool in sorted(fallback, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                lines.append(f"| `{tool['name']}` | {cats} |\n")
+                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                lines.append(f"| `{tool['name']}` | {cats} | [.shed.yml]({shed_url}) |\n")
 
         if self.skipped_tools:
             lines.append(
@@ -855,11 +866,12 @@ Important:
                 "\n⚠️ These tools were found in the IUC repository but do **not** exist on "
                 "the ToolShed yet and were **not** added.\n"
             )
-            lines.append("\n| Tool Name | ToolShed Categories |\n")
-            lines.append("|-----------|--------------------|\n")
+            lines.append("\n| Tool Name | ToolShed Categories | .shed.yml |\n")
+            lines.append("|-----------|--------------------|-----------|\n")
             for tool in sorted(self.skipped_tools, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                lines.append(f"| `{tool['name']}` | {cats} |\n")
+                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                lines.append(f"| `{tool['name']}` | {cats} | [.shed.yml]({shed_url}) |\n")
 
         if self.skiplist_skipped_tools:
             lines.append(
@@ -869,11 +881,12 @@ Important:
                 f"\nThese tools are permanently excluded via `{self.skip_list_path}` "
                 "and were **not** added.\n"
             )
-            lines.append("\n| Tool Name | ToolShed Categories |\n")
-            lines.append("|-----------|--------------------|\n")
+            lines.append("\n| Tool Name | ToolShed Categories | .shed.yml |\n")
+            lines.append("|-----------|--------------------|-----------|\n")
             for tool in sorted(self.skiplist_skipped_tools, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                lines.append(f"| `{tool['name']}` | {cats} |\n")
+                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                lines.append(f"| `{tool['name']}` | {cats} | [.shed.yml]({shed_url}) |\n")
 
         lines.append("\n---\n")
         lines.append(
