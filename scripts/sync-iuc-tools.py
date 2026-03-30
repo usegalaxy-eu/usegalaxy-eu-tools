@@ -809,7 +809,7 @@ Important:
                 "\nThese tools were automatically categorized using the static mapping file.\n"
             )
             lines.append("\n| Tool Name | Panel Section | ToolShed Categories |\n")
-            lines.append("|-----------|---------------|---------|\n")
+            lines.append("|-----------|---------------|--------------------|\n")
             for tool in sorted(static_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
