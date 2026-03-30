@@ -368,8 +368,7 @@ class IUCToolSyncer:
             resp.raise_for_status()
             hits = resp.json()
             exists = any(
-                hit["name"] == name and hit.get("owner") == owner
-                for hit in hits
+                hit["name"] == name and hit.get("owner") == owner for hit in hits
             )
             return tool, exists
         except Exception as e:
@@ -1033,8 +1032,26 @@ def main():
         default=None,
         help="Path to a YAML file listing tool names to permanently exclude from sync.",
     )
+    parser.add_argument(
+        "--catchup",
+        action="store_true",
+        help=(
+            "Reset the last-sync SHA to the git empty-tree hash before running, "
+            "forcing a full rescan. Existing tools are deduplicated automatically."
+        ),
+    )
 
     args = parser.parse_args()
+
+    # Catchup mode: reset SHA to the git empty-tree hash so every
+    # .shed.yml in tools-iuc shows as "Added" in the incremental diff.
+    if args.catchup and args.last_sync_sha_file is not None:
+        empty_tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+        args.last_sync_sha_file.write_text(empty_tree + "\n")
+        print(
+            f"Catchup mode: reset last-sync SHA to {empty_tree}",
+            file=sys.stderr,
+        )
 
     # Get GitHub token from arg or env
     github_token = args.github_token or os.environ.get("GITHUB_TOKEN")
