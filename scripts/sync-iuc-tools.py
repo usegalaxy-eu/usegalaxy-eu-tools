@@ -368,8 +368,7 @@ class IUCToolSyncer:
             resp.raise_for_status()
             hits = resp.json()
             exists = any(
-                hit["name"] == name and hit.get("owner") == owner
-                for hit in hits
+                hit["name"] == name and hit.get("owner") == owner for hit in hits
             )
             return tool, exists
         except Exception as e:
