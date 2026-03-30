@@ -72,7 +72,7 @@ class IUCToolSyncer:
         if skip_list_path is not None and skip_list_path.exists():
             with open(skip_list_path) as f:
                 skip_data = yaml.safe_load(f) or {}
-                self.skip_list = set(skip_data.get("skip", []))
+                self.skip_list = {s.lower() for s in skip_data.get("skip", [])}
 
         self.toolshed_api = "https://toolshed.g2.bx.psu.edu/api/repositories"
 
@@ -98,7 +98,7 @@ class IUCToolSyncer:
                             name = tool.get("name")
                             owner = tool.get("owner")
                             if name and owner:
-                                self.existing_tools.add((name, owner))
+                                self.existing_tools.add((name.lower(), owner))
             except Exception as e:
                 print(f"Warning: Could not load {yaml_file}: {e}", file=sys.stderr)
 
@@ -131,7 +131,7 @@ class IUCToolSyncer:
                         # Apply name_template; handle any whitespace inside {{ tool_id }}
                         repo_name = re.sub(
                             r"\{\{\s*tool_id\s*\}\}", tool_id, name_template
-                        )
+                        ).lower()
                         # Skip if Jinja2 placeholders remain unresolved
                         if "{{" in repo_name or "}}" in repo_name:
                             continue
@@ -153,7 +153,7 @@ class IUCToolSyncer:
 
             return {
                 "suite": False,
-                "name": name,
+                "name": name.lower(),
                 "owner": owner,
                 "categories": categories,
                 "description": description,
@@ -368,7 +368,8 @@ class IUCToolSyncer:
             resp.raise_for_status()
             hits = resp.json()
             exists = any(
-                hit["name"] == name and hit.get("owner") == owner for hit in hits
+                hit["name"].lower() == name and hit.get("owner") == owner
+                for hit in hits
             )
             return tool, exists
         except Exception as e:
