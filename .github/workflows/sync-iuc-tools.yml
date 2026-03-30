@@ -7,6 +7,10 @@ on:
         description: 'Force sync even if an open PR already exists'
         type: boolean
         default: false
+      catchup:
+        description: 'Reset sync SHA to recover tools missed before the parse fix'
+        type: boolean
+        default: false
   schedule:
     - cron: '0 8 * * 5'
 
@@ -64,7 +68,8 @@ jobs:
             --github-token ${{ secrets.GITHUB_TOKEN }} \
             --last-sync-sha-file scripts/.last-iuc-sync-sha \
             --skip-list scripts/iuc-sync-skipped-tools.yml \
-            --report-file ${{ runner.temp }}/sync-report.md
+            --report-file ${{ runner.temp }}/sync-report.md \
+            ${{ github.event.inputs.catchup == 'true' && '--catchup' || '' }}
 
       - name: Check for changes
         id: check_changes
