@@ -808,12 +808,12 @@ Important:
             lines.append(
                 "\nThese tools were automatically categorized using the static mapping file.\n"
             )
-            lines.append("\n| Tool Name | Panel Section | ToolShed Categories | .shed.yml |\n")
-            lines.append("|-----------|---------------|--------------------|-----------|\n")
+            lines.append("\n| Tool Name | Panel Section | ToolShed Categories |\n")
+            lines.append("|-----------|---------------|---------|\n")
             for tool in sorted(static_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
-                lines.append(f"| `{tool['name']}` | {tool['label']} | {cats} | [.shed.yml]({shed_url}) |\n")
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {cats} |\n")
 
         if ai_mapped:
             lines.append(f"\n## AI-Suggested Categories ({len(ai_mapped)})\n")
@@ -821,17 +821,17 @@ Important:
                 "\n⚠️ **These tools were categorized using AI.** Please review and adjust if needed.\n"
             )
             lines.append(
-                "\n| Tool Name | Suggested Panel Section | Reason | ToolShed Categories | .shed.yml |\n"
+                "\n| Tool Name | Suggested Panel Section | Reason | ToolShed Categories |\n"
             )
             lines.append(
-                "|-----------|------------------------|--------|--------------------|-----------|\n"
+                "|-----------|------------------------|--------|--------------------|\n"
             )
             for tool in sorted(ai_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 reason = tool.get("ai_reason", "AI suggested")
                 shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
                 lines.append(
-                    f"| `{tool['name']}` | {tool['label']} | {reason} | {cats} | [.shed.yml]({shed_url}) |\n"
+                    f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {reason} | {cats} |\n"
                 )
 
         if data_managers:
@@ -839,24 +839,24 @@ Important:
             lines.append(
                 "\nThese are data managers and don't require a panel section label.\n"
             )
-            lines.append("\n| Tool Name | .shed.yml |\n")
-            lines.append("|-----------|-----------|\n")
+            lines.append("\n| Tool Name |\n")
+            lines.append("|-----------|\n")
             for tool in sorted(data_managers, key=lambda t: t["name"]):
                 shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
-                lines.append(f"| `{tool['name']}` | [.shed.yml]({shed_url}) |\n")
+                lines.append(f"| [`{tool['name']}`]({shed_url}) |\n")
 
         if fallback:
             lines.append(f"\n## Fallback Categorization ({len(fallback)})\n")
             lines.append(
                 "\n⚠️ **These tools could not be categorized** (static mapping failed and AI unavailable). Assigned to 'Other Tools'.\n"
             )
-            lines.append("\n| Tool Name | ToolShed Categories | .shed.yml |\n")
-            lines.append("|-----------|--------------------|-----------|\n")
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
 
             for tool in sorted(fallback, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
-                lines.append(f"| `{tool['name']}` | {cats} | [.shed.yml]({shed_url}) |\n")
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         if self.skipped_tools:
             lines.append(
@@ -866,12 +866,12 @@ Important:
                 "\n⚠️ These tools were found in the IUC repository but do **not** exist on "
                 "the ToolShed yet and were **not** added.\n"
             )
-            lines.append("\n| Tool Name | ToolShed Categories | .shed.yml |\n")
-            lines.append("|-----------|--------------------|-----------|\n")
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
             for tool in sorted(self.skipped_tools, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
-                lines.append(f"| `{tool['name']}` | {cats} | [.shed.yml]({shed_url}) |\n")
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         if self.skiplist_skipped_tools:
             lines.append(
@@ -881,12 +881,12 @@ Important:
                 f"\nThese tools are permanently excluded via `{self.skip_list_path}` "
                 "and were **not** added.\n"
             )
-            lines.append("\n| Tool Name | ToolShed Categories | .shed.yml |\n")
-            lines.append("|-----------|--------------------|-----------|\n")
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
             for tool in sorted(self.skiplist_skipped_tools, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
-                lines.append(f"| `{tool['name']}` | {cats} | [.shed.yml]({shed_url}) |\n")
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         lines.append("\n---\n")
         lines.append(
