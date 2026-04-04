@@ -17,6 +17,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: angsd
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: annotatemyids
     owner: iuc
     tool_panel_section_label: Annotation
@@ -33,7 +37,43 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: bicodon_counts_from_fasta
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bctools_remove_tail
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bctools_remove_spurious_events
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bctools_merge_pcr_duplicates
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bctools_extract_crosslinked_nucleotides
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bctools_extract_barcodes
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bctools_extract_alignment_ends
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: bctools_convert_to_binary_barcode
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: busco
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: codon_freq_from_bicodons
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -170,6 +210,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: find_nested_alt_orfs
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: funannotate_annotate
     owner: iuc
     tool_panel_section_label: Annotation
@@ -190,11 +234,27 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: glimmer_acgt_content
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
   - name: glimmer_build_icm
     owner: bgruening
     tool_panel_section_label: Annotation
 
+  - name: glimmer_gbk_to_orf
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: glimmer_extract
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
   - name: glimmer_knowledge_based
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: glimmer_long_orfs
     owner: bgruening
     tool_panel_section_label: Annotation
 
@@ -207,6 +267,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: hicap
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: hicstuff_pipeline
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -238,6 +302,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: psauron
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: neighbors
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: sexdeterrmine
     owner: iuc
     tool_panel_section_label: Annotation
@@ -253,6 +325,10 @@ tools:
   - name: mtnucratio
     owner: iuc
     tool_panel_section_label: "FASTQ Quality Control"
+
+  - name: tb_profiler_profile
+    owner: iuc
+    tool_panel_section_label: Annotation
 
   - name: telogator
     owner: iuc
@@ -622,6 +698,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: ucsc_maffilter
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: vsnp_statistics
     owner: iuc
     tool_panel_section_label: Annotation
@@ -980,6 +1060,18 @@ tools:
     tool_panel_section_label: Assembly
 
   - name: verkko
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: vgp_split_agp
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: vgp_sak_generation
+    owner: iuc
+    tool_panel_section_label: Assembly
+
+  - name: vgp_chromosome_assignment
     owner: iuc
     tool_panel_section_label: Assembly
 
@@ -1488,6 +1580,58 @@ tools:
     owner: devteam
     tool_panel_section_label: FASTA/FASTQ
 
+  - name: poretools_yield_plot
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_winner
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_times
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_tabular
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_stats
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_squiggle
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_qualpos
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_qualdist
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_occupancy
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_nucdist
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_hist
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_extract
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: poretools_events
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
   - name: qfilt
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
@@ -1794,6 +1938,26 @@ tools:
     owner: iuc
     tool_panel_section_label: Genome editing
 
+  - name: mageck_test
+    owner: iuc
+    tool_panel_section_label: Genome editing
+
+  - name: mageck_pathway
+    owner: iuc
+    tool_panel_section_label: Genome editing
+
+  - name: mageck_mle
+    owner: iuc
+    tool_panel_section_label: Genome editing
+
+  - name: mageck_gsea
+    owner: iuc
+    tool_panel_section_label: Genome editing
+
+  - name: mageck_count
+    owner: iuc
+    tool_panel_section_label: Genome editing
+
   - name: sonneityping
     owner: iuc
     tool_panel_section_label: Genome editing
@@ -1895,6 +2059,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Graph/Display Data
 
+  - name: ggplot2_boxplot
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
+  - name: ggplot2_barplot
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
   - name: ggplot2_heatmap
     owner: iuc
     tool_panel_section_label: Graph/Display Data
@@ -1921,6 +2093,10 @@ tools:
 
   - name: gmaj
     owner: devteam
+    tool_panel_section_label: Graph/Display Data
+
+  - name: gwastools_manhattan_plot
+    owner: iuc
     tool_panel_section_label: Graph/Display Data
 
   - name: histogram
@@ -1960,6 +2136,10 @@ tools:
     tool_panel_section_label: Graph/Display Data
 
   - name: pygenometracks
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
+  - name: qq_manhattan
     owner: iuc
     tool_panel_section_label: Graph/Display Data
 
@@ -2325,6 +2505,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Mapping
 
+  - name: fastga
+    owner: iuc
+    tool_panel_section_label: Mapping
+
   - name: hisat2
     owner: iuc
     tool_panel_section_label: Mapping
@@ -2375,6 +2559,10 @@ tools:
 
   - name: tophat2
     owner: devteam
+    tool_panel_section_label: Mapping
+
+  - name: wfmash
+    owner: iuc
     tool_panel_section_label: Mapping
 
   - name: winnowmap
@@ -4826,6 +5014,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: hyphy_b_still
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: hyphy_bgm
     owner: iuc
     tool_panel_section_label: Phylogenetics
@@ -4835,6 +5027,10 @@ tools:
     tool_panel_section_label: Phylogenetics
 
   - name: hyphy_cfel
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_cln
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
@@ -4855,6 +5051,10 @@ tools:
     tool_panel_section_label: Phylogenetics
 
   - name: hyphy_gard
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: hyphy_infer_stasis_clusters
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
@@ -5210,6 +5410,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: describe_samples
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: deseq2
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -5406,7 +5610,15 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: trinity_analyze_diff_expr
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: trinity_contig_exn50_statistic
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: trinity_define_clusters_by_cutting_tree
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -5419,6 +5631,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: trinity_run_de_analysis
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: trinity_samples_qccheck
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -6199,6 +6415,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Text Manipulation
 
+  - name: sqlite_to_tabular
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
   - name: subtract
     owner: devteam
     tool_panel_section_label: Operate on Genomic Intervals
@@ -6326,7 +6546,31 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: bcftools_plugin_fixploidy
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_plugin_fill_tags
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_plugin_fill_an_ac
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_plugin_counts
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: bcftools_plugin_frameshifts
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_plugin_missing2ref
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_plugin_impute_info
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -6339,6 +6583,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: bcftools_query
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: bcftools_query_list_samples
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -6623,6 +6871,10 @@ tools:
     tool_panel_section_label: Variant Calling
 
   - name: get_hrun
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: gvcftools_extract_variants
     owner: iuc
     tool_panel_section_label: Variant Calling
 
@@ -7115,6 +7367,9 @@ tools:
     owner: iuc
 
   - name: data_manager_kallisto_index_builder
+    owner: iuc
+
+  - name: data_manager_liana_resources
     owner: iuc
 
   - name: data_manager_malt_index_builder
