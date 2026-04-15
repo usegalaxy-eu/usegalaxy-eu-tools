@@ -19,6 +19,7 @@ tools:
   - 3e8233ce0b99
   - 468fd92deaaa
   - 5aaffb8d8161
+  - ca5d51152817
   - e17bbe564242
   - e909d3bc4687
   tool_panel_section_label: Annotation
@@ -1268,6 +1269,7 @@ tools:
 - name: ppanggolin_all
   owner: iuc
   revisions:
+  - 39f67139e26d
   - 6fdee3720de7
   - 72179c3fa871
   - 79f2d2f0ca2c
@@ -1282,6 +1284,7 @@ tools:
   revisions:
   - 76170454dc91
   - 7a09c51a14be
+  - c686122aad19
   - d305623d5f41
   - d82b7cc3dd30
   - e331e475e854
@@ -1292,6 +1295,7 @@ tools:
 - name: ppanggolin_projection
   owner: iuc
   revisions:
+  - 0b6315689a47
   - 9793cffbe11e
   - a87adcb122b4
   - ded401aa8b09
@@ -1301,6 +1305,7 @@ tools:
   revisions:
   - 8d43b1705153
   - a606074ba5f8
+  - b6b513355573
   - e717755c87aa
   tool_panel_section_label: Annotation
 - name: ucsc_blat
@@ -2069,6 +2074,7 @@ tools:
 - name: gwtc_analysis
   owner: iuc
   revisions:
+  - 8d8c71fba071
   - 9f7b3250a2fe
   tool_panel_section_label: Astronomy
 - name: bedtools
@@ -2419,6 +2425,66 @@ tools:
   - 91674d4623a8
   - 9f2d2c96a189
   tool_panel_section_label: Convert Formats
+- name: obi_pairing
+  owner: iuc
+  revisions:
+  - 82385545ce58
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_multiplex
+  owner: iuc
+  revisions:
+  - e26301f69e43
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_illumina_pairend
+  owner: iuc
+  revisions:
+  - a829941376bd
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_ngsfilter
+  owner: iuc
+  revisions:
+  - 91a1ed0b486f
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_annotate
+  owner: iuc
+  revisions:
+  - 1b8f9a62811b
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_grep
+  owner: iuc
+  revisions:
+  - d16990a72638
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_uniq
+  owner: iuc
+  revisions:
+  - cb91d030d8ba
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_clean
+  owner: iuc
+  revisions:
+  - 6fa6df09d606
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_convert
+  owner: iuc
+  revisions:
+  - dce297ace751
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_sort
+  owner: iuc
+  revisions:
+  - b6d9ea2fb41b
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_tab
+  owner: iuc
+  revisions:
+  - 4cf47c504672
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_stat
+  owner: iuc
+  revisions:
+  - 5f4544915893
+  tool_panel_section_label: DNA Metabarcoding
 - name: emboss_5
   owner: devteam
   revisions:
@@ -2797,6 +2863,7 @@ tools:
   - 480ddbd12a03
   - 65b93b623c77
   - 6c2351178f8d
+  - 8276962186f2
   - 988729b728f0
   - a626e8c0e1ba
   - a935cbdf1c0e
@@ -3760,6 +3827,7 @@ tools:
   - 1e188c9610c3
   - 37c98f8a2497
   - 40a5d68e929a
+  - 5c7051132156
   - 6ba50cbabbb7
   - 6c829a430475
   - 75acf92c8fd5
@@ -5098,6 +5166,7 @@ tools:
   - 4074fc1940e2
   - 4df95e2d7f61
   - 53255f6eecfc
+  - 55c9ac3aa8f4
   - 5ec75f5dae3c
   - 79de45b5069b
   - 7ed2edc1337f
@@ -5115,6 +5184,7 @@ tools:
 - name: rna_starsolo
   owner: iuc
   revisions:
+  - 002713edc2a1
   - 00fbfac99d39
   - 13022c3d3076
   - 178bdbdb6d24
@@ -5243,6 +5313,7 @@ tools:
 - name: kegg_pathways_completeness
   owner: iuc
   revisions:
+  - 78990897aa94
   - 9933e2f91584
   tool_panel_section_label: Metagenomic Analysis
 - name: data_manager_kaiju
@@ -6752,6 +6823,7 @@ tools:
   - 01f02c5ddff8
   - 708abf08a626
   - 76bc4efa1aeb
+  - a040f2dc705c
   - eb50e7eca3dc
   - f375b4f6ef57
   tool_panel_section_label: Metagenomic Analysis
@@ -6760,6 +6832,7 @@ tools:
   revisions:
   - 00e3b4ef7e0c
   - 1592150e38d2
+  - 6b51b29c0147
   - a4441f35f17b
   - d27a4ed006ee
   - ec045ca00b50
@@ -6888,16 +6961,19 @@ tools:
   owner: iuc
   revisions:
   - 7a97ac708fee
+  - a0e1c0d16acf
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_auto
   owner: iuc
   revisions:
+  - 81a33caa9b8a
   - f41d29b1a43e
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_choose_primer_cutoff
   owner: iuc
   revisions:
   - 16d91d782bf8
+  - ff94748c0987
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_find_cutoffs
   owner: iuc
@@ -6908,6 +6984,7 @@ tools:
   owner: iuc
   revisions:
   - 790332d37eb1
+  - ffb10fc9b9b9
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_std
   owner: iuc
@@ -8258,6 +8335,7 @@ tools:
   - 2ab1e0e1c32e
   - 502018997bae
   - 5c7e6ef78006
+  - 814ebb1fb04b
   - abe34706eddf
   - b3acbb3a6af0
   - e8fdceffea4c
@@ -8278,6 +8356,7 @@ tools:
   owner: iuc
   revisions:
   - 2f4d9668d3b4
+  - 355f84a894bf
   - 48823c9635a4
   - 48badcd29c5d
   - 57f042937ba7
@@ -8300,6 +8379,7 @@ tools:
   owner: iuc
   revisions:
   - 27fff8d3793e
+  - 2d2fe522553d
   - 5b0b49b5421c
   - 636b049e6141
   - 7cd7a55a678d
@@ -8311,6 +8391,7 @@ tools:
   owner: iuc
   revisions:
   - 4c89814871e8
+  - 59f156f7f3c7
   - 959c1f8dae95
   - b4124df98b26
   - b8e2c2f95d26
@@ -9841,6 +9922,7 @@ tools:
   - 2fa9d4f1b48f
   - 36912871ccdc
   - 3a43c3982401
+  - 3f9d938000b8
   - 42126b414951
   - 42a174224817
   - 437e28791761
@@ -10794,6 +10876,7 @@ tools:
 - name: seurat_integrate
   owner: iuc
   revisions:
+  - 2e2401b443cf
   - 74fa68f4e579
   - 7704fb998596
   tool_panel_section_label: RNA Analysis
@@ -10801,6 +10884,7 @@ tools:
   owner: iuc
   revisions:
   - 46ed93e8da30
+  - 58fc93d11a9f
   - c15978515ff0
   tool_panel_section_label: RNA Analysis
 - name: seurat_create
@@ -10809,16 +10893,19 @@ tools:
   - a7af4acac32c
   - ac5f8c583cba
   - af8bdeb89691
+  - d24aa399eca0
   tool_panel_section_label: RNA Analysis
 - name: seurat_plot
   owner: iuc
   revisions:
+  - 4d0f79f7d90d
   - c520f64ffd57
   - fee4b4eb0ef5
   tool_panel_section_label: RNA Analysis
 - name: seurat_data
   owner: iuc
   revisions:
+  - 228ac6864e64
   - 4ec52a83ec82
   - dde965aee073
   tool_panel_section_label: RNA Analysis
@@ -10827,6 +10914,7 @@ tools:
   revisions:
   - 0db84eba4b55
   - 51eb02d9b17a
+  - 8156af6b430c
   tool_panel_section_label: RNA Analysis
 - name: sleuth
   owner: iuc
@@ -11606,6 +11694,7 @@ tools:
   owner: iuc
   revisions:
   - 1f6c780a2635
+  - 9807b49770c4
   tool_panel_section_label: Spatial Omics
 - name: spatialdata_operation
   owner: iuc
@@ -11616,6 +11705,7 @@ tools:
 - name: spatialdata_plot
   owner: iuc
   revisions:
+  - bc396bd25374
   - c5928c28e2f0
   tool_panel_section_label: Spatial Omics
 - name: cosg
