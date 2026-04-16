@@ -35,26 +35,8 @@ pr_check:
 	for changed_yaml in `git diff remotes/origin/master --name-only | grep '.yaml$$' | grep -v '.not-installable-revisions.yaml$$'`; do python scripts/pr-check.py $${changed_yaml} && pykwalify -d $${changed_yaml} -s .schema.yaml ; done
 
 update_trusted: $(UPDATE_TRUSTED_IUC) ## Run the update script
-	@# Missing --without, so this updates all tools in the file.
-	python3 scripts/update-tool.py cheminformatics.yaml
-	python3 scripts/update-tool.py imaging.yaml
-	python3 scripts/update-tool.py tools_iuc.yaml
-	python3 scripts/update-tool.py earlhaminst.yaml
-	python3 scripts/update-tool.py rnateam.yaml
-	python3 scripts/update-tool.py bgruening.yaml
-	python3 scripts/update-tool.py ecology.yaml
-	python3 scripts/update-tool.py tools_galaxyp.yaml
-	python3 scripts/update-tool.py single-cell-ebi-gxa.yaml
-	python3 scripts/update-tool.py genome-annotation.yaml
-	python3 scripts/update-tool.py galaxy-australia.yaml
-	python3 scripts/update-tool.py climate.yaml
-	python3 scripts/update-tool.py nml.yaml
-	python3 scripts/update-tool.py peterjc.yaml
-	python3 scripts/update-tool.py goeckslab.yaml
-	python3 scripts/update-tool.py eirene.yaml
-	python3 scripts/update-tool.py lldelisle.yaml
-	python3 scripts/update-tool.py tools_q2d2.yaml
-	python3 scripts/update-tool.py ufz.yaml
+	@# Missing --without, so this updates all tools in the selected files in one process.
+	python3 scripts/update-tool.py cheminformatics.yaml imaging.yaml tools_iuc.yaml earlhaminst.yaml rnateam.yaml bgruening.yaml ecology.yaml tools_galaxyp.yaml single-cell-ebi-gxa.yaml genome-annotation.yaml galaxy-australia.yaml climate.yaml nml.yaml peterjc.yaml goeckslab.yaml eirene.yaml lldelisle.yaml tools_q2d2.yaml ufz.yaml
 
 update_all: $(UPDATED_YAMLS)
 
