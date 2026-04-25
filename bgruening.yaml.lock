@@ -223,6 +223,7 @@ tools:
   owner: bgruening
   revisions:
   - 1f9f2edc8cf4
+  - 45d0307149b4
   - bdfd7cef3438
   tool_panel_section_label: Assembly
 - name: mitohifi
@@ -361,6 +362,7 @@ tools:
 - name: 3dtrees_smart_tile
   owner: bgruening
   revisions:
+  - 00cea46531c5
   - 024d12e9b79b
   - 384ed4cad819
   - 9fae02363d19
@@ -383,6 +385,7 @@ tools:
   revisions:
   - 20712958f90e
   - 6d1330bc4774
+  - a5cc4a0173bf
   tool_panel_section_label: GIS Data Handling
 - name: jbrowse2
   owner: fubar
@@ -419,6 +422,7 @@ tools:
 - name: wordcloud
   owner: bgruening
   revisions:
+  - 45c4cc885ddb
   - 54c2d8ebf0cf
   - 57e3de4b3b0d
   - 6055ffae8903
@@ -440,6 +444,11 @@ tools:
   owner: bgruening
   revisions:
   - bc1410a8a247
+  tool_panel_section_label: Imaging
+- name: coco2labelme
+  owner: bgruening
+  revisions:
+  - 06a8da74643e
   tool_panel_section_label: Imaging
 - name: bioimage_inference
   owner: bgruening
@@ -504,6 +513,7 @@ tools:
   - 03533fa14e77
   - 1252578525d1
   - 305c1229ac99
+  - 3b8fa4ea9727
   - 679e4ede1191
   - 9afec58b2bf9
   tool_panel_section_label: Machine Learning
@@ -516,11 +526,13 @@ tools:
   - 818896cd2213
   - beeeda757eba
   - e4af79bffd57
+  - fe0e82a7d0ee
   tool_panel_section_label: Machine Learning
 - name: keras_model_config
   owner: bgruening
   revisions:
   - 00b2ee48b412
+  - 00d1889e9ecc
   - 01131463df86
   - 1046cf73236b
   - 1f1fc37cfb42
@@ -530,6 +542,7 @@ tools:
 - name: keras_train_and_eval
   owner: bgruening
   revisions:
+  - 31f6bf2382dc
   - 6ecb3d77d46e
   - 818f9b69d8a0
   - 8ddb3557710d
@@ -543,6 +556,7 @@ tools:
   revisions:
   - 05143043ca13
   - 1588f9076e32
+  - 1d2a478bb514
   - 21730620a849
   - 5f9c0e99016f
   - 72c0d2747dc9
@@ -560,6 +574,7 @@ tools:
   - 919198d656dd
   - 9991c4ddde14
   - b237f27a8afc
+  - b6c2289292fa
   - db511406350a
   - eae46976fbb8
   tool_panel_section_label: Machine Learning
@@ -568,6 +583,7 @@ tools:
   revisions:
   - 019bd8289224
   - 1ed23c988ff6
+  - 43a859a0fab5
   - 52c4e0ef580a
   - 7442b94d6a1e
   - 775b004b7920
@@ -582,6 +598,7 @@ tools:
 - name: sklearn_clf_metrics
   owner: bgruening
   revisions:
+  - 048d7bd59326
   - 0ee984c1cbd6
   - 3cd0dbc038ec
   - 44f0ce9488fb
@@ -608,6 +625,7 @@ tools:
   - b0c31e126fa1
   - c72131b8fc7a
   - d6b8103c909c
+  - dde13d557dc4
   - eb9da067ab26
   - f2234165a453
   tool_panel_section_label: Machine Learning
@@ -626,10 +644,12 @@ tools:
   - 87cb9cb44d1f
   - 9bb505eafac9
   - d3e99d3df1ca
+  - dea38330b78a
   tool_panel_section_label: Machine Learning
 - name: sklearn_ensemble
   owner: bgruening
   revisions:
+  - 00f01f713c3c
   - 0b98933cf0f7
   - 1a53edc4b438
   - 2e69c6ca6e91
@@ -647,6 +667,7 @@ tools:
   owner: bgruening
   revisions:
   - 07843f917990
+  - 0a43c856e1d8
   - 375bbd555f4a
   - 3881482e568e
   - 84ddbf61e107
@@ -667,6 +688,7 @@ tools:
   - 4170e2bda73d
   - 4483b84310ec
   - 58322d3c7bd3
+  - 5bcf779d901f
   - 6d21b03e00a1
   - 74adae8d7b0f
   - 9e0e31bd8392
@@ -683,6 +705,7 @@ tools:
   - c2e2aa55dd5c
   - c374098d4f5c
   - da9f0b8ca61c
+  - e8694d796a7e
   - f5e6fb49e9ee
   tool_panel_section_label: Machine Learning
 - name: sklearn_generalized_linear
@@ -690,6 +713,7 @@ tools:
   revisions:
   - 2fc89dcd41c8
   - 40f4447733b2
+  - 57938c2f6ef5
   - 67881a837f46
   - 91c4e3331208
   - 927586a18553
@@ -706,11 +730,13 @@ tools:
   revisions:
   - 1e006ebbcaf5
   - 9b067af194b7
+  - ac52a5916963
   - e8d6b4acb7c6
   tool_panel_section_label: Machine Learning
 - name: sklearn_lightgbm
   owner: bgruening
   revisions:
+  - 16c442ecd6bf
   - 1b7ab45c7858
   - 27f8bd20a936
   - a459c68692ca
@@ -727,6 +753,7 @@ tools:
   - 5dd3f77a2257
   - 8e447b95e6a8
   - 9084156b2bb5
+  - a293d7937700
   - fc70bf5c3b58
   - fe4e36598917
   tool_panel_section_label: Machine Learning
@@ -738,6 +765,7 @@ tools:
   - 56f6ebf69ddc
   - 5d5d9cc554f9
   - 61e76fb65daf
+  - 7e5631773cea
   - 805194c3cdfb
   - 845dfafac355
   - 86e1e2874460
@@ -755,6 +783,7 @@ tools:
   - 55c7d3e58eae
   - 672327583f74
   - 7ae443e6217d
+  - 900c42c3eef4
   - aa83e7e3c398
   - c030e4bb1b39
   - cd02bf168d23
@@ -765,6 +794,7 @@ tools:
 - name: sklearn_numeric_clustering
   owner: bgruening
   revisions:
+  - 1bdac8249aa1
   - 1dd433d2c92c
   - 27903ce9b4be
   - 37e193b3fdd7
@@ -782,6 +812,7 @@ tools:
   owner: bgruening
   revisions:
   - 226524df8c6c
+  - 3ff43fbb7ccf
   - 5bd0866dbc7a
   - 8338f71ed0c4
   - 96452e7461f4
@@ -802,6 +833,7 @@ tools:
   - 435592ba3087
   - c716b8c86c5d
   - f06ad033c114
+  - fbf485fc2d30
   tool_panel_section_label: Machine Learning
 - name: sklearn_regression_metrics
   owner: bgruening
@@ -816,6 +848,7 @@ tools:
   - 7d98dfb04d27
   - 8ced2fac52f4
   - 931b7b90377b
+  - c78a5fc9e758
   - dc17e2878dc1
   - f04a2405f3fe
   tool_panel_section_label: Machine Learning
@@ -825,6 +858,7 @@ tools:
   - 04b160a26690
   - 3bdb5b6c8ee8
   - 4ba68dd788b3
+  - 6cf2a66c46f1
   - 7068b5fcd623
   - 86a086d2bbed
   - 86c5b627ddb6
@@ -850,6 +884,7 @@ tools:
   - 82b6104d4682
   - c6ae57f774c6
   - e5a5ad882f1f
+  - f484f41ea0dd
   tool_panel_section_label: Machine Learning
 - name: sklearn_stacking_ensemble_models
   owner: bgruening
@@ -869,6 +904,7 @@ tools:
   - 0630258dcf35
   - 153f237ddb36
   - 372582a7a34d
+  - 4aa3666b66fa
   - 4ed102b922cb
   - 61461e52c923
   - 90f2d6532262
@@ -886,11 +922,13 @@ tools:
   - 6b59e9b96071
   - 89f11e2b0673
   - ec69cbe34b73
+  - f86c0419af43
   tool_panel_section_label: Machine Learning
 - name: sklearn_train_test_eval
   owner: bgruening
   revisions:
   - 10e2498ef07b
+  - 418cafc53f8e
   - 4d1637cac794
   - 68aaa903052a
   - 77125cbb54ac
@@ -910,6 +948,7 @@ tools:
   - ce2fd1edbc6e
   - e10ffa9e0b90
   - e8639f65c883
+  - e8e5736b632d
   - fc0f9ba14aaa
   tool_panel_section_label: Machine Learning
 - name: tabpfn
@@ -920,6 +959,7 @@ tools:
   - 49b4ee0d0965
   - e7b4afedc471
   - ec6df5e22055
+  - f0c7f0bad621
   tool_panel_section_label: Machine Learning
 - name: whisper
   owner: bgruening
@@ -991,6 +1031,7 @@ tools:
   - 28e902e3d8d6
   - 914a7b992c2c
   - 99898a312165
+  - d7551996b4a3
   tool_panel_section_label: Machine Learning
 - name: rag_retriever
   owner: bgruening
@@ -1264,6 +1305,7 @@ tools:
   - 42b513bed40b
   - 4807e865a946
   - 4efac966af2a
+  - 602b5fb7ef09
   - 648b81bca7c5
   - a84e6ffd3735
   - d0ed8e976b79
