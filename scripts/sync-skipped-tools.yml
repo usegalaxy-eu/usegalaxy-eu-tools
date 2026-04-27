@@ -1,7 +1,9 @@
 ---
-# Tools to skip during IUC sync
-# Add tool names to prevent them from being added to tools_iuc.yaml
-skip:
+# Tools to skip during sync, keyed by source name.
+# Add tool names under the appropriate source key to prevent them from being
+# added to the corresponding target yaml during automated sync.
+
+iuc:
   - qiime_align_seqs
   - qiime_alpha_diversity
   - qiime_alpha_rarefaction
@@ -36,3 +38,5 @@ skip:
   - qiime_summarize_taxa_through_plots
   - qiime_upgma_cluster
   - qiime_validate_mapping_file
+
+bgruening: []

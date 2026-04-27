@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Sync IUC tools from galaxyproject/tools-iuc to tools_iuc.yaml.
+Sync tools from a Galaxy toolshed source repository to a target yaml file.
 
-This script discovers new tools in the IUC repository and automatically adds them
-to tools_iuc.yaml with appropriate category mappings.
+This script discovers new tools in a source repository (e.g. galaxyproject/tools-iuc
+or bgruening/galaxytools) and automatically adds them to a target yaml with appropriate
+category mappings.
 """
 
 import argparse
@@ -22,24 +23,38 @@ import yaml
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
-class IUCToolSyncer:
+class ToolsRepoSyncer:
     def __init__(
         self,
         tools_yaml_path: Path,
         mapping_file_path: Path,
-        iuc_repo_path: Path,
+        source_repo_path: Path,
+        source_repo_url: str,
+        source_repo_branch: Optional[str] = None,
+        base_dirs: Optional[List[str]] = None,
         github_token: Optional[str] = None,
         dry_run: bool = False,
         last_sync_sha_file: Optional[Path] = None,
         skip_list_path: Optional[Path] = None,
+        skip_list_key: Optional[str] = None,
     ):
         self.tools_yaml_path = tools_yaml_path
         self.mapping_file_path = mapping_file_path
-        self.iuc_repo_path = iuc_repo_path
+        self.source_repo_path = source_repo_path
+        self.source_repo_url = source_repo_url.rstrip("/")
+        self.source_repo_branch = source_repo_branch or self._detect_default_branch(
+            source_repo_path
+        )
+        self.base_dirs = (
+            base_dirs
+            if base_dirs is not None
+            else self._detect_base_dirs(source_repo_path)
+        )
         self.github_token = github_token
         self.dry_run = dry_run
         self.last_sync_sha_file = last_sync_sha_file
         self.skip_list_path = skip_list_path
+        self.skip_list_key = skip_list_key
 
         # Load category mapping
         with open(mapping_file_path) as f:
@@ -72,7 +87,11 @@ class IUCToolSyncer:
         if skip_list_path is not None and skip_list_path.exists():
             with open(skip_list_path) as f:
                 skip_data = yaml.safe_load(f) or {}
-                self.skip_list = {s.lower() for s in skip_data.get("skip", [])}
+                if skip_list_key:
+                    raw = skip_data.get(skip_list_key, []) or []
+                else:
+                    raw = skip_data.get("skip", []) or []
+                self.skip_list = {s.lower() for s in raw}
 
         self.toolshed_api = "https://toolshed.g2.bx.psu.edu/api/repositories"
 
@@ -81,6 +100,29 @@ class IUCToolSyncer:
         self.skipped_tools: List[Dict] = []
         self.skiplist_skipped_tools: List[Dict] = []
         self.report_lines: List[str] = []
+
+    @staticmethod
+    def _detect_base_dirs(repo_path: Path) -> List[str]:
+        """Find top-level dirs in the source repo that contain at least one .shed.yml."""
+        return sorted(
+            d.name
+            for d in repo_path.iterdir()
+            if d.is_dir() and any(d.rglob(".shed.yml"))
+        )
+
+    @staticmethod
+    def _detect_default_branch(repo_path: Path) -> str:
+        """Detect the default branch of the cloned source repo via origin/HEAD."""
+        try:
+            ref = subprocess.check_output(
+                ["git", "symbolic-ref", "refs/remotes/origin/HEAD", "--short"],
+                cwd=str(repo_path),
+                text=True,
+                stderr=subprocess.DEVNULL,
+            ).strip()
+            return ref.removeprefix("origin/") or "main"
+        except subprocess.CalledProcessError:
+            return "main"
 
     def load_existing_tools(self) -> None:
         """Load all existing tools from all YAML files in the repo to avoid duplicates."""
@@ -112,9 +154,15 @@ class IUCToolSyncer:
                 return None
 
             name = data.get("name")
-            owner = data.get("owner", "iuc")
-            categories = data.get("categories", [])
-            description = data.get("description", "")
+            owner = data.get("owner")
+            categories = data.get("categories") or []
+            if not isinstance(categories, list):
+                categories = [str(categories)]
+
+            description = data.get("description") or ""
+
+            if not owner:
+                return None
 
             # Handle auto_tool_repositories (suite tools like bcftools).
             # These .shed.yml files often have no top-level 'name' field, so we
@@ -210,7 +258,7 @@ class IUCToolSyncer:
         def _git(args: List[str]) -> str:
             return subprocess.check_output(
                 ["git"] + args,
-                cwd=str(self.iuc_repo_path),
+                cwd=str(self.source_repo_path),
                 text=True,
             ).strip()
 
@@ -230,7 +278,7 @@ class IUCToolSyncer:
         stored_sha = self.last_sync_sha_file.read_text().strip()
         if stored_sha == current_sha:
             print(
-                "tools-iuc is at the same commit as last sync — nothing to do.",
+                "Source repo is at the same commit as last sync — nothing to do.",
                 file=sys.stderr,
             )
             return [], False
@@ -240,6 +288,10 @@ class IUCToolSyncer:
             file=sys.stderr,
         )
 
+        # Build glob patterns from configured base_dirs
+        shed_yml_globs = [f"{d}/**/.shed.yml" for d in self.base_dirs]
+        xml_globs = [f"{d}/**/*.xml" for d in self.base_dirs]
+
         # 1. Newly added .shed.yml files
         diff_output = _git(
             [
@@ -248,15 +300,14 @@ class IUCToolSyncer:
                 "--diff-filter=A",
                 f"{stored_sha}..{current_sha}",
                 "--",
-                "tools/**/.shed.yml",
-                "data_managers/**/.shed.yml",
             ]
+            + shed_yml_globs
         )
         shed_ymls: Set[Path] = set()
         for rel in diff_output.splitlines():
             rel = rel.strip()
             if rel:
-                shed_ymls.add(self.iuc_repo_path / rel)
+                shed_ymls.add(self.source_repo_path / rel)
 
         # 2. Newly added XML files in already-existing suites (no .shed.yml change)
         xml_diff = _git(
@@ -266,23 +317,22 @@ class IUCToolSyncer:
                 "--diff-filter=A",
                 f"{stored_sha}..{current_sha}",
                 "--",
-                "tools/**/*.xml",
-                "data_managers/**/*.xml",
             ]
+            + xml_globs
         )
         for rel in xml_diff.splitlines():
             rel = rel.strip()
             if not rel:
                 continue
-            xml_abs = self.iuc_repo_path / rel
+            xml_abs = self.source_repo_path / rel
             # Walk up to find the nearest .shed.yml
             for parent in xml_abs.parents:
                 candidate = parent / ".shed.yml"
                 if candidate.exists():
                     shed_ymls.add(candidate)
                     break
-                # Stop searching once we leave the tools-iuc repo root
-                if parent == self.iuc_repo_path:
+                # Stop searching once we leave the source repo root
+                if parent == self.source_repo_path:
                     break
 
         # Record new SHA (happens later in run() after successful write)
@@ -295,18 +345,19 @@ class IUCToolSyncer:
         )
         return result, False
 
-    def scan_iuc_repo(self, shed_yml_filter: Optional[Set[Path]] = None) -> List[Dict]:
-        """Scan the IUC repo for tools.
+    def scan_source_repo(
+        self, shed_yml_filter: Optional[Set[Path]] = None
+    ) -> List[Dict]:
+        """Scan the source repo for tools.
 
         If *shed_yml_filter* is given, only those specific .shed.yml paths are
-        parsed (incremental mode). Otherwise every .shed.yml in tools/ and
-        data_managers/ is scanned (full-scan / legacy mode).
+        parsed (incremental mode). Otherwise every .shed.yml in the configured
+        base_dirs is scanned (full-scan / legacy mode).
         """
         discovered_tools = []
 
-        # Scan tools/ and data_managers/ directories
-        for base_dir in ["tools", "data_managers"]:
-            tools_dir = self.iuc_repo_path / base_dir
+        for base_dir in self.base_dirs:
+            tools_dir = self.source_repo_path / base_dir
             if not tools_dir.exists():
                 continue
 
@@ -325,7 +376,7 @@ class IUCToolSyncer:
                 is_data_manager = base_dir == "data_managers"
                 tool_info = self.parse_shed_yml(shed_yml_path)
                 if tool_info:
-                    shed_yml_rel = str(shed_yml_path.relative_to(self.iuc_repo_path))
+                    shed_yml_rel = str(shed_yml_path.relative_to(self.source_repo_path))
                     if tool_info.get("suite"):
                         # Handle suite tools
                         for tool_name in tool_info["tool_names"]:
@@ -661,7 +712,7 @@ Important:
         return entry_lines
 
     def insert_tools_sorted(self) -> None:
-        """Insert new tools into tools_iuc.yaml at the correct sorted position."""
+        """Insert new tools into the target yaml at the correct sorted position."""
         if not self.new_tools:
             return
 
@@ -785,9 +836,15 @@ Important:
                 )
                 raise
 
+    def _shed_url(self, rel_path: str) -> str:
+        return f"{self.source_repo_url}/blob/{self.source_repo_branch}/{rel_path}"
+
     def generate_report(self) -> str:
         """Generate markdown report for PR body."""
-        lines = ["# IUC Tools Sync Report\n"]
+        lines = ["# Tools Sync Report\n"]
+        lines.append(
+            f"\n**Source:** [{self.source_repo_url}]({self.source_repo_url})\n"
+        )
         lines.append(f"\n**Date:** {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}\n")
         lines.append(f"\n**Total new tools found:** {len(self.new_tools)}\n")
 
@@ -812,8 +869,10 @@ Important:
             lines.append("|-----------|---------------|--------------------|\n")
             for tool in sorted(static_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
-                lines.append(f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {cats} |\n")
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
+                lines.append(
+                    f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {cats} |\n"
+                )
 
         if ai_mapped:
             lines.append(f"\n## AI-Suggested Categories ({len(ai_mapped)})\n")
@@ -829,7 +888,7 @@ Important:
             for tool in sorted(ai_mapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
                 reason = tool.get("ai_reason", "AI suggested")
-                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
                 lines.append(
                     f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {reason} | {cats} |\n"
                 )
@@ -842,7 +901,7 @@ Important:
             lines.append("\n| Tool Name |\n")
             lines.append("|-----------|\n")
             for tool in sorted(data_managers, key=lambda t: t["name"]):
-                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
                 lines.append(f"| [`{tool['name']}`]({shed_url}) |\n")
 
         if fallback:
@@ -855,7 +914,7 @@ Important:
 
             for tool in sorted(fallback, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
                 lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         if self.skipped_tools:
@@ -863,14 +922,14 @@ Important:
                 f"\n## Skipped (Not on ToolShed) ({len(self.skipped_tools)})\n"
             )
             lines.append(
-                "\n⚠️ These tools were found in the IUC repository but do **not** exist on "
+                "\n⚠️ These tools were found in the source repository but do **not** exist on "
                 "the ToolShed yet and were **not** added.\n"
             )
             lines.append("\n| Tool Name | ToolShed Categories |\n")
             lines.append("|-----------|--------------------|\n")
             for tool in sorted(self.skipped_tools, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
                 lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         if self.skiplist_skipped_tools:
@@ -885,12 +944,12 @@ Important:
             lines.append("|-----------|--------------------|\n")
             for tool in sorted(self.skiplist_skipped_tools, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                shed_url = f"https://github.com/galaxyproject/tools-iuc/blob/main/{tool.get('shed_yml_rel_path', '')}"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
                 lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         lines.append("\n---\n")
         lines.append(
-            "\n🤖 This PR was automatically generated by the `sync-iuc-tools` workflow.\n"
+            "\n🤖 This PR was automatically generated by the `sync-tools-repo` workflow.\n"
         )
 
         return "".join(lines)
@@ -905,7 +964,7 @@ Important:
             shed_paths, is_bootstrap = self.get_incremental_shed_ymls()
             if is_bootstrap:
                 report = (
-                    "# IUC Tools Sync Report\n\n"
+                    "# Tools Sync Report\n\n"
                     "**Bootstrap run:** recorded initial sync SHA. "
                     "No tools added; subsequent runs will be incremental.\n"
                 )
@@ -918,8 +977,7 @@ Important:
             if not shed_paths:
                 # No new .shed.yml files — nothing to do
                 report = (
-                    "# IUC Tools Sync Report\n\n"
-                    "No new tools found since last sync.\n"
+                    "# Tools Sync Report\n\n" "No new tools found since last sync.\n"
                 )
                 if report_file:
                     report_file.write_text(report)
@@ -934,11 +992,13 @@ Important:
 
         mode = "incremental" if shed_yml_filter is not None else "full"
         print(
-            f"Scanning IUC repository at {self.iuc_repo_path} ({mode} mode)...",
+            f"Scanning source repository at {self.source_repo_path} ({mode} mode)...",
             file=sys.stderr,
         )
-        discovered_tools = self.scan_iuc_repo(shed_yml_filter=shed_yml_filter)
-        print(f"Discovered {len(discovered_tools)} tools in IUC repo", file=sys.stderr)
+        discovered_tools = self.scan_source_repo(shed_yml_filter=shed_yml_filter)
+        print(
+            f"Discovered {len(discovered_tools)} tools in source repo", file=sys.stderr
+        )
 
         print("Computing new tools...", file=sys.stderr)
         self.compute_new_tools(discovered_tools)
@@ -993,13 +1053,13 @@ Important:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Sync IUC tools from galaxyproject/tools-iuc to tools_iuc.yaml"
+        description="Sync tools from a Galaxy toolshed source repository to a target yaml file"
     )
     parser.add_argument(
         "--tools-yaml",
         type=Path,
         required=True,
-        help="Path to tools_iuc.yaml file",
+        help="Path to target tools yaml file (e.g. tools_iuc.yaml or bgruening.yaml)",
     )
     parser.add_argument(
         "--mapping-file",
@@ -1008,10 +1068,28 @@ def main():
         help="Path to category-mapping.yml file",
     )
     parser.add_argument(
-        "--iuc-repo-path",
+        "--source-repo-path",
         type=Path,
         required=True,
-        help="Path to cloned galaxyproject/tools-iuc repository",
+        help="Path to cloned source repository",
+    )
+    parser.add_argument(
+        "--source-repo-url",
+        type=str,
+        required=True,
+        help="GitHub URL of source repository (used in report links), e.g. https://github.com/galaxyproject/tools-iuc",
+    )
+    parser.add_argument(
+        "--source-repo-branch",
+        type=str,
+        default=None,
+        help="Default branch of source repository for report links (auto-detected from origin/HEAD when omitted)",
+    )
+    parser.add_argument(
+        "--base-dirs",
+        nargs="+",
+        default=None,
+        help="Directories in source repo to scan for .shed.yml files (auto-detected when omitted)",
     )
     parser.add_argument(
         "--github-token",
@@ -1033,8 +1111,8 @@ def main():
         type=Path,
         default=None,
         help=(
-            "Path to a file storing the last-synced tools-iuc commit SHA. "
-            "When provided, only tools added to tools-iuc SINCE that commit are "
+            "Path to a file storing the last-synced commit SHA. "
+            "When provided, only tools added since that commit are "
             "considered (incremental mode). On first run the file is created and "
             "no tools are added (bootstrap). When omitted, the full repo is "
             "scanned (legacy/manual mode)."
@@ -1045,6 +1123,12 @@ def main():
         type=Path,
         default=None,
         help="Path to a YAML file listing tool names to permanently exclude from sync.",
+    )
+    parser.add_argument(
+        "--skip-list-key",
+        type=str,
+        default=None,
+        help="Top-level key to read from the skip-list YAML (for shared files keyed by source name).",
     )
     parser.add_argument(
         "--catchup",
@@ -1058,7 +1142,7 @@ def main():
     args = parser.parse_args()
 
     # Catchup mode: reset SHA to the git empty-tree hash so every
-    # .shed.yml in tools-iuc shows as "Added" in the incremental diff.
+    # .shed.yml in the source repo shows as "Added" in the incremental diff.
     if args.catchup and args.last_sync_sha_file is not None:
         empty_tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         args.last_sync_sha_file.write_text(empty_tree + "\n")
@@ -1070,14 +1154,18 @@ def main():
     # Get GitHub token from arg or env
     github_token = args.github_token or os.environ.get("GITHUB_TOKEN")
 
-    syncer = IUCToolSyncer(
+    syncer = ToolsRepoSyncer(
         tools_yaml_path=args.tools_yaml,
         mapping_file_path=args.mapping_file,
-        iuc_repo_path=args.iuc_repo_path,
+        source_repo_path=args.source_repo_path,
+        source_repo_url=args.source_repo_url,
+        source_repo_branch=args.source_repo_branch,
+        base_dirs=args.base_dirs,
         github_token=github_token,
         dry_run=args.dry_run,
         last_sync_sha_file=args.last_sync_sha_file,
         skip_list_path=args.skip_list,
+        skip_list_key=args.skip_list_key,
     )
 
     return syncer.run(report_file=args.report_file)
