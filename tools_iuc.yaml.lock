@@ -6,6 +6,7 @@ tools:
   owner: iuc
   revisions:
   - 1bb2ba6d3d96
+  - 31f58ec0459a
   - 3f3e247c053d
   - 4efdca267d51
   - 78c75f134c16
@@ -28,6 +29,7 @@ tools:
   revisions:
   - 1920244e2895
   - 2fa74a3f6670
+  - 573cfe217474
   - 7844dbe4f8e2
   tool_panel_section_label: Annotation
 - name: angsd
@@ -2870,6 +2872,7 @@ tools:
   - 350c736075eb
   - 3e2551a37201
   - 415fd81b85d3
+  - 4557b2da9e7f
   - 480ddbd12a03
   - 65b93b623c77
   - 6c2351178f8d
@@ -3138,6 +3141,7 @@ tools:
   - babbcf02d35c
   - da336e3ead38
   - eee1a2f6abd8
+  - f48b35baf365
   tool_panel_section_label: FASTA/FASTQ
 - name: fastqc
   owner: devteam
@@ -3854,6 +3858,7 @@ tools:
   - d78faac2c6ef
   - d951c5b0edd1
   - da8260eba74b
+  - f0872b88c5fc
   tool_panel_section_label: Get Data
 - name: pysradb_search
   owner: iuc
@@ -4216,6 +4221,7 @@ tools:
   revisions:
   - 11c344627e52
   - 3af838dc0637
+  - 3d5b9e4df7ba
   - 59ebf2c42c0e
   - 5e08a1e22dbc
   - 73b8cb5bddcd
@@ -5896,6 +5902,7 @@ tools:
   owner: iuc
   revisions:
   - 0f5f7fa9c08f
+  - 24313e0ff049
   - 304ac5b49dea
   - 66acaec9f386
   - dd6cab3012e1
@@ -7037,31 +7044,37 @@ tools:
   owner: iuc
   revisions:
   - ac58b06d1721
+  - f13bead2278d
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_make_asv_count_table
   owner: iuc
   revisions:
   - 75c19e6b2fbc
+  - c359ab0d2d11
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_mapseq_to_asv_table
   owner: iuc
   revisions:
+  - 96048deae8ba
   - c1811fa799a0
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_permute_primers
   owner: iuc
   revisions:
+  - 44951788b7e9
   - d553befadd34
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_primer_val_classification
   owner: iuc
   revisions:
+  - 4f26041a8e5b
   - 5d60fd8e0723
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_rev_comp_se_primers
   owner: iuc
   revisions:
   - 19e63ae9ec81
+  - 44a9cccf62e6
   tool_panel_section_label: Metagenomic Analysis
 - name: plasflow
   owner: iuc
@@ -9478,6 +9491,7 @@ tools:
 - name: fastreer_dist2tree
   owner: iuc
   revisions:
+  - 0c0481ef9a99
   - a21e02af4488
   - ae402c31b9f1
   tool_panel_section_label: Phylogenetics
@@ -9485,6 +9499,7 @@ tools:
   owner: iuc
   revisions:
   - 7888cf34fa73
+  - a9c255c50d83
   - c41888919080
   tool_panel_section_label: Phylogenetics
 - name: fastreer_vcf2dist
@@ -9492,10 +9507,12 @@ tools:
   revisions:
   - 08a48e2d34ee
   - a0fbb6b9a194
+  - dc5fbb86dd4d
   tool_panel_section_label: Phylogenetics
 - name: fastreer_vcf2tree
   owner: iuc
   revisions:
+  - 20dfb6d71724
   - 5ea9b32aaef6
   - fdce1cf130cd
   tool_panel_section_label: Phylogenetics
@@ -10079,6 +10096,7 @@ tools:
   owner: iuc
   revisions:
   - 01f4de723b03
+  - 376c7db05800
   - 6569ef485c2e
   tool_panel_section_label: Phylogenetics
 - name: read2tree
@@ -10268,6 +10286,7 @@ tools:
   - 1c2db0054039
   - 26ee5e11ecbe
   - 31c42a2c02d3
+  - 371299578b8e
   - 3d93dd18d9f8
   - 3dd49be3f7d3
   - 5e33b465d8d5
@@ -10750,6 +10769,7 @@ tools:
   owner: iuc
   revisions:
   - de7795890bc5
+  - ead35c868b99
   tool_panel_section_label: RNA Analysis
 - name: isoformswitchanalyzer
   owner: iuc
@@ -11692,6 +11712,7 @@ tools:
   revisions:
   - 2fe966f8532e
   - 32ea013ae290
+  - 4413217d872c
   - 5854d0da92b4
   - 5cd5d0947354
   - 69f93450c57d
@@ -12532,6 +12553,7 @@ tools:
   - 0b3a28ad3947
   - bf7c4eb54f39
   - c3f88253f9c5
+  - d84dda3ad723
   tool_panel_section_label: Text Manipulation
 - name: coverage
   owner: devteam
@@ -12682,26 +12704,31 @@ tools:
   owner: iuc
   revisions:
   - 8407b960dd00
+  - d4602a4b5b7c
   tool_panel_section_label: Variant Calling
 - name: alphagenome_variant_effect
   owner: iuc
   revisions:
   - 7a553f3b1936
+  - 9400c28fb60c
   tool_panel_section_label: Variant Calling
 - name: alphagenome_sequence_predictor
   owner: iuc
   revisions:
+  - 89c19cb645bf
   - b940a8d384e8
   tool_panel_section_label: Variant Calling
 - name: alphagenome_ism_scanner
   owner: iuc
   revisions:
+  - c90b3714e8c1
   - fbdd64df6273
   tool_panel_section_label: Variant Calling
 - name: alphagenome_interval_predictor
   owner: iuc
   revisions:
   - 7313d4ac39a8
+  - 9bcf910e60b0
   tool_panel_section_label: Variant Calling
 - name: artic_guppyplex
   owner: iuc
@@ -14377,6 +14404,7 @@ tools:
   - 201eff2131d6
   - 4877dfefaacc
   - 54871a78828e
+  - 8367be242f35
 - name: data_manager_cat
   owner: iuc
   revisions:
@@ -14541,6 +14569,7 @@ tools:
 - name: data_manager_samestr
   owner: iuc
   revisions:
+  - e8873a70f416
   - f654a4a8a612
 - name: data_manager_selection_background
   owner: iuc
