@@ -635,12 +635,36 @@ tools:
 
   - name: vpt_extract
     owner: bgruening
-    tool_panel_section_label: Single-cell
+    tool_panel_section_label: Spatial Omics
 
   - name: vpt_segment
     owner: bgruening
-    tool_panel_section_label: Single-cell
+    tool_panel_section_label: Spatial Omics
 
+  - name: webatlas_build_config
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_consolidate_md
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_generate_image
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_ome_zarr_metadata
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+  
+  - name: webatlas_router
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+  
+  - name: webatlas_write_spatialdata
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+    
 # STATISTICS
 
   - name: bg_statistical_hypothesis_testing
