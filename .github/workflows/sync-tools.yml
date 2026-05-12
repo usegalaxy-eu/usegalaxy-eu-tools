@@ -1,0 +1,115 @@
+name: Sync Tools
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force sync even if an open PR already exists'
+        type: boolean
+        default: false
+      catchup:
+        description: 'Reset sync SHA to recover missed tools'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '0 8 * * 5'  # Every Friday 08:00 UTC
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: iuc
+            source_repo: galaxyproject/tools-iuc
+            tools_yaml: tools_iuc.yaml
+
+          - name: bgruening
+            source_repo: bgruening/galaxytools
+            tools_yaml: bgruening.yaml
+
+    steps:
+      - name: Check for existing sync PR
+        id: check_pr
+        uses: juliangruber/find-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          branch: sync-${{ matrix.name }}-tools
+          state: open
+
+      - name: Set run flag
+        id: gate
+        run: |
+          if [[ -z "${{ steps.check_pr.outputs.number }}" || "${{ github.event.inputs.force }}" == "true" ]]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "Skipping ${{ matrix.name }}: PR #${{ steps.check_pr.outputs.number }} already open."
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout repository
+        if: steps.gate.outputs.should_run == 'true'
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        if: steps.gate.outputs.should_run == 'true'
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        if: steps.gate.outputs.should_run == 'true'
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        if: steps.gate.outputs.should_run == 'true'
+        run: uv pip install --system -r requirements.txt
+
+      - name: Clone source repository
+        if: steps.gate.outputs.should_run == 'true'
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ matrix.source_repo }}
+          path: ${{ matrix.name }}
+          fetch-depth: 0
+
+      - name: Run sync script
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          python scripts/sync-tools-repo.py \
+            --tools-yaml ${{ matrix.tools_yaml }} \
+            --mapping-file scripts/category-mapping.yml \
+            --source-repo-path ${{ matrix.name }} \
+            --source-repo-url https://github.com/${{ matrix.source_repo }} \
+            --github-token ${{ secrets.GITHUB_TOKEN }} \
+            --last-sync-sha-file scripts/.last-${{ matrix.name }}-sync-sha \
+            --skip-list scripts/sync-skipped-tools.yml \
+            --skip-list-key ${{ matrix.name }} \
+            --report-file ${{ runner.temp }}/sync-report.md \
+            ${{ github.event.inputs.catchup == 'true' && '--catchup' || '' }}
+
+      - name: Check for changes
+        if: steps.gate.outputs.should_run == 'true'
+        id: check_changes
+        uses: tj-actions/verify-changed-files@v20
+
+      - name: Validate changes with pr_check
+        if: steps.gate.outputs.should_run == 'true' && steps.check_changes.outputs.files_changed == 'true'
+        run: make pr_check
+
+      - name: Create or update Pull Request
+        if: steps.gate.outputs.should_run == 'true' && steps.check_changes.outputs.files_changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: sync-${{ matrix.name }}-tools
+          commit-message: Add new tools from ${{ matrix.source_repo }} repository
+          title: Add new tools from ${{ matrix.source_repo }} repository
+          body-path: ${{ runner.temp }}/sync-report.md
+          delete-branch: true
+          add-paths: |
+            ${{ matrix.tools_yaml }}
+            scripts/.last-${{ matrix.name }}-sync-sha
