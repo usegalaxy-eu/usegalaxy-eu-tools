@@ -720,7 +720,8 @@ Important:
             lines = f.readlines()
 
         # Find all section headers: lines like "# ANNOTATION", "# DATA MANAGERS", etc.
-        header_pat = re.compile(r"^# [A-Z]")
+        # Also match quoted headers like # "CONVERT FORMATS"
+        header_pat = re.compile(r'^# "?[A-Z]')
         section_headers: List[Tuple[int, str]] = []
         for i, line in enumerate(lines):
             stripped = line.rstrip("\n")
@@ -734,13 +735,17 @@ Important:
             tools_by_header.setdefault(hdr, []).append(tool)
 
         # Separate groups targeting existing headers from those needing new headers
-        existing_hdr_lower = {h.lower(): (idx, h) for idx, h in section_headers}
+        # Strip quotes from header text so "# "CONVERT FORMATS"" matches "# CONVERT FORMATS"
+        def _norm_header(h: str) -> str:
+            return h.replace('"', '').lower()
+
+        existing_hdr_lower = {_norm_header(h): (idx, h) for idx, h in section_headers}
         existing_groups: List[Tuple[int, str, List[Dict]]] = []
         new_header_groups: List[Tuple[str, List[Dict]]] = []
 
         for hdr, tools in tools_by_header.items():
-            if hdr.lower() in existing_hdr_lower:
-                line_idx, raw_hdr = existing_hdr_lower[hdr.lower()]
+            if _norm_header(hdr) in existing_hdr_lower:
+                line_idx, raw_hdr = existing_hdr_lower[_norm_header(hdr)]
                 existing_groups.append((line_idx, raw_hdr, tools))
             else:
                 new_header_groups.append((hdr, tools))
@@ -796,13 +801,13 @@ Important:
 
             # Process new headers in reverse alphabetical order so index shifts
             # from later insertions don't affect earlier insertion points
-            new_header_groups.sort(key=lambda x: x[0].lower(), reverse=True)
+            new_header_groups.sort(key=lambda x: _norm_header(x[0]), reverse=True)
 
             for hdr, tools in new_header_groups:
                 # Find the first existing header that sorts after this new header
                 insert_before = len(lines)
                 for idx, existing_hdr in section_headers_current:
-                    if hdr.lower() < existing_hdr.lower():
+                    if _norm_header(hdr) < _norm_header(existing_hdr):
                         insert_before = idx
                         break
 
