@@ -119,6 +119,7 @@ tools:
   - 90745ecc5e9f
   - a6af1e124e06
   - b5467dead5b1
+  - cfa9638fe182
   tool_panel_section_label: Metabolomics
 - name: riassigner
   owner: recetox
@@ -536,6 +537,11 @@ tools:
   - 8a6c7302de66
   - cd2f3a280463
   tool_panel_section_label: Proteomics
+- name: freqsap
+  owner: recetox
+  revisions:
+  - 1c2a8760ad2b
+  tool_panel_section_label: Proteomics
 - name: bioconductor_msnbase_smooth_mz
   owner: recetox
   revisions:
@@ -545,6 +551,11 @@ tools:
   owner: recetox
   revisions:
   - 492350f45be9
+  tool_panel_section_label: Metabolomics
+- name: bioconductor_mzr
+  owner: recetox
+  revisions:
+  - 42e59b8e9e0b
   tool_panel_section_label: Metabolomics
 - name: bioconductor_msnbase_centroid
   owner: recetox
@@ -561,3 +572,53 @@ tools:
   revisions:
   - 0f01dc62c4f3
   tool_panel_section_label: Machine Learning
+- name: mzspeclib_convert
+  owner: recetox
+  revisions:
+  - 02cf8faa2cd2
+  tool_panel_section_label: Proteomics
+- name: mzspeclib_describe
+  owner: recetox
+  revisions:
+  - 4484e5822a6b
+  tool_panel_section_label: Proteomics
+- name: mzspeclib_validate
+  owner: recetox
+  revisions:
+  - 884e26ef99ce
+  tool_panel_section_label: Proteomics
+- name: mztabm_validate
+  owner: recetox
+  revisions:
+  - '520706977927'
+  tool_panel_section_label: Metabolomics
+- name: table_pandas_arithmetics
+  owner: recetox
+  revisions:
+  - 8b5b5236065c
+  tool_panel_section_label: Metabolomics
+- name: table_pandas_dropna
+  owner: recetox
+  revisions:
+  - 91a8fabef6b1
+  tool_panel_section_label: Metabolomics
+- name: table_pandas_rename_column
+  owner: recetox
+  revisions:
+  - 761f8ab8fdb6
+  tool_panel_section_label: Metabolomics
+- name: table_pandas_rename_columns_regex
+  owner: recetox
+  revisions:
+  - 334f765b6c1b
+  tool_panel_section_label: Metabolomics
+- name: table_pandas_transform
+  owner: recetox
+  revisions:
+  - e4b861ab3ef7
+  tool_panel_section_label: Metabolomics
+- name: table_scipy_interpolate
+  owner: recetox
+  revisions:
+  - 3ccffbd647fe
+  tool_panel_section_label: Metabolomics
