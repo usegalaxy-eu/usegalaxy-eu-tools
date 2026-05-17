@@ -258,6 +258,7 @@ tools:
   - 7109a27a11db
   - 8f20a5b9b282
   - cfec9601b25d
+  - f421fd0c42ea
   - fc7334661489
   tool_panel_section_label: Annotation
 - name: coreprofiler_allele_calling
@@ -478,6 +479,7 @@ tools:
 - name: hicstuff_pipeline
   owner: iuc
   revisions:
+  - 7d288c7d5612
   - 7ffc3748ffde
   tool_panel_section_label: Annotation
 - name: mist_dists
@@ -548,6 +550,41 @@ tools:
   revisions:
   - bac089482cef
   tool_panel_section_label: FASTQ Quality Control
+- name: taffy_view
+  owner: iuc
+  revisions:
+  - c37ebb1cf93f
+  tool_panel_section_label: Multiple Alignments
+- name: taffy_stats
+  owner: iuc
+  revisions:
+  - ef4710e83bb2
+  tool_panel_section_label: Multiple Alignments
+- name: taffy_sort
+  owner: iuc
+  revisions:
+  - bf9d403317de
+  tool_panel_section_label: Multiple Alignments
+- name: taffy_norm
+  owner: iuc
+  revisions:
+  - 075f95f743ea
+  tool_panel_section_label: Multiple Alignments
+- name: taffy_coverage
+  owner: iuc
+  revisions:
+  - 54bd28188cc8
+  tool_panel_section_label: Multiple Alignments
+- name: taffy_annotate
+  owner: iuc
+  revisions:
+  - 78a0462c7891
+  tool_panel_section_label: Multiple Alignments
+- name: taffy_add_gap_bases
+  owner: iuc
+  revisions:
+  - 8564fb4e6e95
+  tool_panel_section_label: Multiple Alignments
 - name: tb_profiler_profile
   owner: iuc
   revisions:
@@ -1739,6 +1776,7 @@ tools:
   - 02831bf9e95f
   - 056f86469460
   - 2b16ba799da9
+  - 7087d9a23185
   - 7c2e9bc2123b
   - 8fef980d48b5
   - 9c942221e135
@@ -2645,6 +2683,7 @@ tools:
   - 00a8c36fc98c
   - 2fd21f5b16bc
   - 9d793e88e15f
+  - a9d66dc6a767
   - b38f620a3628
   tool_panel_section_label: Evolution
 - name: tn93_cluster
@@ -2653,12 +2692,14 @@ tools:
   - 112d80c9ccca
   - 476189b83931
   - af03f3398f03
+  - e0448bc48085
   - eb6f0ec5b95e
   tool_panel_section_label: Evolution
 - name: tn93_filter
   owner: iuc
   revisions:
   - 017db1b776d9
+  - 1779a96f1d7c
   - 1aa73004ba9b
   - ba95715078c9
   - cf50aeb956f2
@@ -2670,6 +2711,7 @@ tools:
   - 4e68161336da
   - 84849140a3bc
   - c176164dc8a5
+  - d9a642ad8ece
   tool_panel_section_label: Evolution
 - name: revoluzer_crex
   owner: iuc
@@ -3534,6 +3576,7 @@ tools:
   owner: iuc
   revisions:
   - 98b25bd0a0b6
+  - ab762feb3b1c
   - add156116c63
   - c8f1cd6c1fbf
   - cf65e5c28134
@@ -3893,6 +3936,7 @@ tools:
   owner: iuc
   revisions:
   - 7a27a48d57c0
+  - d64b6e00bf12
   tool_panel_section_label: Get Data
 - name: sra_tools
   owner: iuc
@@ -5110,6 +5154,7 @@ tools:
 - name: fastga
   owner: iuc
   revisions:
+  - 27d750de596d
   - 27f0ed5cbd33
   - 8f821f9b8567
   tool_panel_section_label: Mapping
@@ -5400,11 +5445,13 @@ tools:
   owner: iuc
   revisions:
   - 939f503acbcf
+  - a4933979dd06
   tool_panel_section_label: Metagenomic Analysis
 - name: metamdbg_asm
   owner: iuc
   revisions:
   - 8a6cd1c7c6fa
+  - 8ba360ca1871
   tool_panel_section_label: Metagenomic Analysis
 - name: name2taxid
   owner: iuc
@@ -6352,6 +6399,7 @@ tools:
   - 97b1540b4830
   - b907a3c0434f
   - c30adf839acd
+  - e91d979deb87
   - ed4c007af906
   - fce109bc2aa7
   tool_panel_section_label: Metagenomic Analysis
@@ -7076,12 +7124,14 @@ tools:
 - name: mgnify_pipelines_toolkit_classify_var_regions
   owner: iuc
   revisions:
+  - 3bf55ddcac46
   - ac58b06d1721
   - f13bead2278d
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_make_asv_count_table
   owner: iuc
   revisions:
+  - 5592a89d0074
   - 75c19e6b2fbc
   - c359ab0d2d11
   tool_panel_section_label: Metagenomic Analysis
@@ -7089,17 +7139,20 @@ tools:
   owner: iuc
   revisions:
   - 96048deae8ba
+  - b18c013c6db6
   - c1811fa799a0
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_permute_primers
   owner: iuc
   revisions:
   - 44951788b7e9
+  - b4330af11657
   - d553befadd34
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_primer_val_classification
   owner: iuc
   revisions:
+  - 4c8362f14226
   - 4f26041a8e5b
   - 5d60fd8e0723
   tool_panel_section_label: Metagenomic Analysis
@@ -7108,6 +7161,7 @@ tools:
   revisions:
   - 19e63ae9ec81
   - 44a9cccf62e6
+  - 63e98b3ac7c4
   tool_panel_section_label: Metagenomic Analysis
 - name: plasflow
   owner: iuc
@@ -8874,6 +8928,7 @@ tools:
   revisions:
   - 0cdcf7e99b62
   - 1196fc76fdc2
+  - 15c0c0d90c3f
   - 20d92dc4c6cb
   - 60f307965815
   - 8b8a3f793f0f
@@ -9221,37 +9276,44 @@ tools:
 - name: ncbi_eutils_esummary
   owner: iuc
   revisions:
+  - 308d8bea83f5
   - 4dc2757b8ce6
   tool_panel_section_label: Other Tools
 - name: ncbi_eutils_esearch
   owner: iuc
   revisions:
+  - 4f0a4010bf1d
   - f3a84eecaf8b
   tool_panel_section_label: Other Tools
 - name: ncbi_eutils_epost
   owner: iuc
   revisions:
+  - 11aa5f503261
   - a64d1a16f04b
   tool_panel_section_label: Other Tools
 - name: ncbi_eutils_elink
   owner: iuc
   revisions:
+  - 18e7b30a39aa
   - bb5af69cf3f7
   tool_panel_section_label: Other Tools
 - name: ncbi_eutils_einfo
   owner: iuc
   revisions:
   - 6a0463d18db2
+  - cbddabc5c71a
   tool_panel_section_label: Other Tools
 - name: ncbi_eutils_efetch
   owner: iuc
   revisions:
   - 0ccb2855dd55
+  - d2262cc3fddc
   tool_panel_section_label: Other Tools
 - name: ncbi_eutils_ecitmatch
   owner: iuc
   revisions:
   - 62614b5a7834
+  - d9dc3534b9db
   tool_panel_section_label: Other Tools
 - name: ncbi_entrez_direct_esearch
   owner: iuc
@@ -11098,6 +11160,7 @@ tools:
   revisions:
   - 2dfbcb88d16a
   - 313414e9abcf
+  - 8535eca7b8ae
   - 8e96d712a2bd
   - bf4ee2810759
   tool_panel_section_label: RNA Analysis
@@ -13959,6 +14022,7 @@ tools:
   owner: iuc
   revisions:
   - 4f3c5e634679
+  - 7b2ee758de86
   - c192a2c7ef00
   - cdcaa40e5e45
   - ecc7758d828f

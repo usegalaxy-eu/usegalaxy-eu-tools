@@ -149,12 +149,14 @@ tools:
 - name: logan_protein_embed_query
   owner: bgruening
   revisions:
+  - 1b7b718cc379
   - 6a1fc5577695
   tool_panel_section_label: Annotation
 - name: logan_protein_search_database
   owner: bgruening
   revisions:
   - 478817e06e95
+  - e69fb0e5dc0e
   tool_panel_section_label: Annotation
 - name: netboxr
   owner: bgruening
@@ -444,6 +446,7 @@ tools:
 - name: cellposesam
   owner: bgruening
   revisions:
+  - 48fe4ddcaeeb
   - bc1410a8a247
   tool_panel_section_label: Imaging
 - name: coco2labelme
@@ -1028,6 +1031,7 @@ tools:
   - '157674736595'
   - 1aba57a5a716
   - 28e902e3d8d6
+  - 86d767b93457
   - 914a7b992c2c
   - 99898a312165
   - d7551996b4a3
@@ -1131,6 +1135,7 @@ tools:
   revisions:
   - 3f33a8ac8891
   - 66058890173e
+  - 95b0a646932e
   tool_panel_section_label: Metagenomic Analysis
 - name: qiime2_dbotu_q2
   owner: bgruening
@@ -1266,7 +1271,7 @@ tools:
   - 7d42c9b75718
   - 9b5e8695f027
   - f0d9060ba4d6
-  tool_panel_section_label: Single-cell
+  tool_panel_section_label: Spatial Omics
 - name: vpt_segment
   owner: bgruening
   revisions:
@@ -1275,7 +1280,37 @@ tools:
   - 5bd5f26279fd
   - a88a1e78702e
   - ed28a1feba82
-  tool_panel_section_label: Single-cell
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_build_config
+  owner: bgruening
+  revisions:
+  - 5a5cf7b26a38
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_consolidate_md
+  owner: bgruening
+  revisions:
+  - 42c7a50b00d0
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_generate_image
+  owner: bgruening
+  revisions:
+  - e3e7ef4b1e96
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_ome_zarr_metadata
+  owner: bgruening
+  revisions:
+  - e14dd18a4f77
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_router
+  owner: bgruening
+  revisions:
+  - d8708fb569b4
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_write_spatialdata
+  owner: bgruening
+  revisions:
+  - 5342f7abb91c
+  tool_panel_section_label: Spatial Omics
 - name: bg_statistical_hypothesis_testing
   owner: bgruening
   revisions:
