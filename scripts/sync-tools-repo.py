@@ -1029,8 +1029,10 @@ Important:
                     file=sys.stderr,
                 )
 
-        # Advance the SHA pointer (same commit as YAML changes)
-        if self._pending_new_sha and self.last_sync_sha_file is not None:
+        # Only advance the sync pointer when this run actually adds tools.
+        # Otherwise we would generate a SHA-only PR and stop reconsidering the
+        # same source changes on later runs.
+        if self.new_tools and self._pending_new_sha and self.last_sync_sha_file is not None:
             if not self.dry_run:
                 self.last_sync_sha_file.write_text(self._pending_new_sha + "\n")
                 print(
