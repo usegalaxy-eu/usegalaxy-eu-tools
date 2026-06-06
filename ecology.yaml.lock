@@ -872,6 +872,7 @@ tools:
   - d2aaac19f42f
   - e4dd4c0622f6
   - f7e2f1eb3a16
+  - fac2260bc88a
   tool_panel_section_label: Quality Control
 - name: mothur_sffinfo
   owner: iuc
@@ -923,12 +924,47 @@ tools:
   - d7479b6dfbe8
   - dc05bf0af58f
   tool_panel_section_label: GIS Data Handling
+- name: obi_complement
+  owner: iuc
+  revisions:
+  - 55d01781ffea
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_pcr
+  owner: iuc
+  revisions:
+  - a72c4cc8a704
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_refidx
+  owner: iuc
+  revisions:
+  - 61f9122bb420
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_tag
+  owner: iuc
+  revisions:
+  - fa01b4b07289
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_taxonomy
+  owner: iuc
+  revisions:
+  - 9eb7ba86e367
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_pairing
+  owner: iuc
+  revisions:
+  - 78598ed1b8a8
+  tool_panel_section_label: DNA Metabarcoding
 - name: obi_illumina_pairend
   owner: iuc
   revisions:
   - 8cb6bd511879
   - 94f412098ac8
   - a829941376bd
+  tool_panel_section_label: DNA Metabarcoding
+- name: obi_multiplex
+  owner: iuc
+  revisions:
+  - 569eacd3be7b
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_ngsfilter
   owner: iuc
@@ -941,6 +977,7 @@ tools:
   revisions:
   - 1b8f9a62811b
   - 3021b9f5809f
+  - 4da9a24971bd
   - 6c19e0d33cf6
   - c96ce8ed191c
   - d50dc96e3ce9
@@ -949,6 +986,7 @@ tools:
   owner: iuc
   revisions:
   - 02bab5ff7c37
+  - 7e68109625a3
   - 98bec443b342
   - be475ac055b2
   - d16990a72638
@@ -957,6 +995,7 @@ tools:
 - name: obi_uniq
   owner: iuc
   revisions:
+  - 3cd66db293f6
   - 9eded74a3d03
   - c0f7b58b4ce4
   - c89bb0ef8f25
@@ -966,6 +1005,7 @@ tools:
 - name: obi_clean
   owner: iuc
   revisions:
+  - 1beb31209adb
   - 656858ba54ea
   - 6fa6df09d606
   - 7d16de45c021
@@ -976,6 +1016,7 @@ tools:
   owner: iuc
   revisions:
   - 4d705e3443a7
+  - a86cb55cba33
   - ce363293cb55
   - dce297ace751
   - deaac9e831a4
@@ -1701,8 +1742,19 @@ tools:
   - 0f56f5f6bc3f
   - '310676858178'
   - 809f339deae2
+  - 9777101cccbc
   - aff0214687fa
   tool_panel_section_label: Computer Vision
+- name: ssrfilter
+  owner: ecology
+  revisions:
+  - 67085b00bde1
+  tool_panel_section_label: Population Genomics
+- name: genetic_format_conversion
+  owner: ecology
+  revisions:
+  - 51eca2deef4e
+  tool_panel_section_label: Population Genomics
 - name: population_genomics_vcf_filtering
   owner: ecology
   revisions:
@@ -1731,5 +1783,6 @@ tools:
 - name: effective_population_size_ld_method
   owner: ecology
   revisions:
+  - 2becf5e2f302
   - 88903ed1f637
   tool_panel_section_label: Population Genomics
