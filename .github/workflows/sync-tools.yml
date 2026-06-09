@@ -14,6 +14,8 @@ on:
   schedule:
     - cron: '0 8 * * 5'  # Every Friday 08:00 UTC
 
+permissions: {}
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -44,16 +46,21 @@ jobs:
       - name: Set run flag
         id: gate
         run: |
-          if [[ -z "${{ steps.check_pr.outputs.number }}" || "${{ github.event.inputs.force }}" == "true" ]]; then
+          if [[ -z "${STEPS_CHECK_PR_OUTPUTS_NUMBER}" || "${GITHUB_EVENT_INPUTS_FORCE}" == "true" ]]; then
             echo "should_run=true" >> $GITHUB_OUTPUT
           else
-            echo "Skipping ${{ matrix.name }}: PR #${{ steps.check_pr.outputs.number }} already open."
+            echo "Skipping ${{ matrix.name }}: PR #${STEPS_CHECK_PR_OUTPUTS_NUMBER} already open."
             echo "should_run=false" >> $GITHUB_OUTPUT
           fi
+        env:
+          STEPS_CHECK_PR_OUTPUTS_NUMBER: ${{ steps.check_pr.outputs.number }}
+          GITHUB_EVENT_INPUTS_FORCE: ${{ github.event.inputs.force }}
 
       - name: Checkout repository
         if: steps.gate.outputs.should_run == 'true'
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         if: steps.gate.outputs.should_run == 'true'
@@ -76,6 +83,7 @@ jobs:
           repository: ${{ matrix.source_repo }}
           path: ${{ matrix.name }}
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Run sync script
         if: steps.gate.outputs.should_run == 'true'
