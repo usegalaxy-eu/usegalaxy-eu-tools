@@ -106,11 +106,12 @@ def fix_uninstallable(lockfile_name, toolshed_url):
                 f"Progress: {i}/{total} tools ({skipped} skipped, {changed} changed)"
             )
 
+        # Brief pause every 50 requests to avoid overwhelming the server
+        if i > 0 and i % 50 == 0:
+            time.sleep(1)
+
         name, owner = tool.get("name"), tool.get("owner")
         current_revisions = set(tool.get("revisions", []))
-
-        # Add delay between requests to avoid rate limiting
-        time.sleep(0.5)
 
         try:
             installable_list = retry_with_backoff(
