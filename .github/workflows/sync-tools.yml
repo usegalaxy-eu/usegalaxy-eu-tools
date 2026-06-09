@@ -58,7 +58,7 @@ jobs:
 
       - name: Checkout repository
         if: steps.gate.outputs.should_run == 'true'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.2
         with:
           persist-credentials: false
 
@@ -78,7 +78,7 @@ jobs:
 
       - name: Clone source repository
         if: steps.gate.outputs.should_run == 'true'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.2
         with:
           repository: ${{ matrix.source_repo }}
           path: ${{ matrix.name }}
