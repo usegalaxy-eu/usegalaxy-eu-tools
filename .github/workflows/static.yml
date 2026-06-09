@@ -35,6 +35,8 @@ jobs:
           architecture: 'x64'
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install pyyaml
