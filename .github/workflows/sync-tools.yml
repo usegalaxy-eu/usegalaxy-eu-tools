@@ -70,7 +70,7 @@ jobs:
 
       - name: Install uv
         if: steps.gate.outputs.should_run == 'true'
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@v8.1.0
 
       - name: Install dependencies
         if: steps.gate.outputs.should_run == 'true'
