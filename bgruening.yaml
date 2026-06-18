@@ -90,6 +90,22 @@ tools:
     owner: bgruening
     tool_panel_section_label: Annotation
 
+  - name: kat_sect
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_filter_seq
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_filter_kmer
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_cold
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
   - name: logan_protein_embed_query
     owner: bgruening
     tool_panel_section_label: Annotation
@@ -277,11 +293,19 @@ tools:
     owner: bgruening
     tool_panel_section_label: Imaging
 
+  - name: coco_annotation_visualizer
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
   - name: woundhealing_scratch_assay
     owner: bgruening
     tool_panel_section_label: Imaging
 
   - name: doclayoutyolo
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: edit_coco_annotation
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -588,6 +612,10 @@ tools:
     tool_panel_section_label: Nanopore
 
 # OTHER TOOLS
+
+  - name: 3dtrees_metadata
+    owner: bgruening
+    tool_panel_section_label: Other Tools
 
   - name: carveme
     owner: bgruening

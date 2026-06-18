@@ -527,7 +527,35 @@ tools:
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
 
+  - name: obi_complement
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_pcr
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_refidx
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_tag
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_taxonomy
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_pairing
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+    
   - name: obi_illumina_pairend
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_multiplex
     owner: iuc
     tool_panel_section_label: 'DNA Metabarcoding'
 
@@ -999,6 +1027,14 @@ tools:
     owner: ecology
     tool_panel_section_label: 'Computer Vision'
 
+  - name: ssrfilter
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: genetic_format_conversion
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+  
   - name: population_genomics_vcf_filtering
     owner: ecology
     tool_panel_section_label: 'Population Genomics'
@@ -1016,6 +1052,14 @@ tools:
     tool_panel_section_label: 'Population Genomics'
 
   - name: population_genetics_stats
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: lea_snmf_application
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: dapc_kmeans
     owner: ecology
     tool_panel_section_label: 'Population Genomics'
 

@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: '0 9 1 * *'
 
+permissions: {}
+
 jobs:
   get-lockfiles:
     runs-on: ubuntu-latest
@@ -12,7 +14,9 @@ jobs:
       lockfiles: ${{ steps.set-matrix.outputs.lockfiles }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Get all lock files
         id: set-matrix
@@ -26,13 +30,16 @@ jobs:
     strategy:
       matrix:
         lockfile: ${{ fromJson(needs.get-lockfiles.outputs.lockfiles) }}
+      max-parallel: 4
       fail-fast: false
     permissions:
       contents: write
       pull-requests: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -40,7 +47,7 @@ jobs:
           python-version: '3.13'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@v8.1.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -48,7 +55,9 @@ jobs:
         run: uv pip install --system -r requirements.txt
 
       - name: Fix ${{ matrix.lockfile }}
-        run: python scripts/fix_outdated.py "${{ matrix.lockfile }}"
+        run: python scripts/fix_outdated.py "${MATRIX_LOCKFILE}"
+        env:
+          MATRIX_LOCKFILE: ${{ matrix.lockfile }}
 
       - name: Get base name
         id: basename
@@ -75,9 +84,10 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6.0.2
         with:
             fetch-depth: 0
+            persist-credentials: false
 
       - name: Download all artifacts
         uses: actions/download-artifact@v8
