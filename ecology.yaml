@@ -258,6 +258,10 @@ tools:
     owner: ethevenot
     tool_panel_section_label: 'Metabolomics'
 
+  - name: table_pandas_rename_column
+    owner: recetox
+    tool_panel_section_label: 'Metabolomics'
+    
   - name: anova
     owner: lecorguille
     tool_panel_section_label: 'Statistics'
@@ -1066,3 +1070,11 @@ tools:
   - name: effective_population_size_ld_method
     owner: ecology
     tool_panel_section_label: 'Population Genomics'
+
+  - name: bcftools_query_list_samples
+    owner: iuc
+    tool_panel_section_label: 'Variant Calling'
+  
+  - name: compose_text_param
+    owner: iuc
+    tool_panel_section_label: 'Expression Tools'
