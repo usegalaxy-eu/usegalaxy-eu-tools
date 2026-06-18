@@ -146,6 +146,26 @@ tools:
   revisions:
   - f1a157358d4d
   tool_panel_section_label: Annotation
+- name: kat_sect
+  owner: bgruening
+  revisions:
+  - bf55d2b3728c
+  tool_panel_section_label: Annotation
+- name: kat_filter_seq
+  owner: bgruening
+  revisions:
+  - 9dfc749e8eed
+  tool_panel_section_label: Annotation
+- name: kat_filter_kmer
+  owner: bgruening
+  revisions:
+  - 6410f0530bc7
+  tool_panel_section_label: Annotation
+- name: kat_cold
+  owner: bgruening
+  revisions:
+  - 2ad6adc8d45f
+  tool_panel_section_label: Annotation
 - name: logan_protein_embed_query
   owner: bgruening
   revisions:
@@ -231,6 +251,7 @@ tools:
 - name: mitohifi
   owner: bgruening
   revisions:
+  - 2853471f753d
   - 3fc33af5d9e2
   - 99ddbf037d98
   - bfab6f5b449d
@@ -414,6 +435,7 @@ tools:
   - b55199c56abd
   - bd903fbbc26e
   - c4b77883c0a7
+  - dd032687675c
   - e237edee9a53
   - ed3a21033188
   tool_panel_section_label: Graph/Display Data
@@ -461,6 +483,7 @@ tools:
   owner: bgruening
   revisions:
   - 06a8da74643e
+  - 3a9709a4df77
   tool_panel_section_label: Imaging
 - name: bioimage_inference
   owner: bgruening
@@ -471,6 +494,11 @@ tools:
   - b0f2d3b4a278
   - caea9ee1ffac
   - d5233b9d32bb
+  tool_panel_section_label: Imaging
+- name: coco_annotation_visualizer
+  owner: bgruening
+  revisions:
+  - 7b390f574967
   tool_panel_section_label: Imaging
 - name: woundhealing_scratch_assay
   owner: bgruening
@@ -484,6 +512,11 @@ tools:
   - 28b4dc80d58b
   - 55c96140ab72
   tool_panel_section_label: Imaging
+- name: edit_coco_annotation
+  owner: bgruening
+  revisions:
+  - b702f65d511e
+  tool_panel_section_label: Imaging
 - name: json2yolosegment
   owner: bgruening
   revisions:
@@ -491,10 +524,12 @@ tools:
   - 7db48c618bbe
   - 8cc1936ab69b
   - f1e5a9dd6baa
+  - fe95917c3e20
   tool_panel_section_label: Imaging
 - name: yolo_predict
   owner: bgruening
   revisions:
+  - 3e9d14e5942f
   - 983ce2a25b48
   - af3eed1f1abe
   - d77c67cfe2ca
@@ -505,6 +540,7 @@ tools:
   owner: bgruening
   revisions:
   - 25a2de34c05e
+  - 5cc588ef3793
   - 92d5c5e5c734
   - ad05e90d024b
   - ece3536c5e0e
@@ -1044,6 +1080,7 @@ tools:
   - '157674736595'
   - 1aba57a5a716
   - 28e902e3d8d6
+  - 36d65981163b
   - 3e756119100d
   - 86d767b93457
   - 914a7b992c2c

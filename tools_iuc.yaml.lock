@@ -364,6 +364,11 @@ tools:
   revisions:
   - 14f4c7a8a962
   tool_panel_section_label: Annotation
+- name: flavotyper
+  owner: iuc
+  revisions:
+  - ef06acb676b4
+  tool_panel_section_label: Annotation
 - name: funannotate_annotate
   owner: iuc
   revisions:
@@ -650,6 +655,7 @@ tools:
 - name: tiberius
   owner: iuc
   revisions:
+  - 0f10ac29126a
   - c0afea1f4684
   tool_panel_section_label: Annotation
 - name: tsebra
@@ -963,6 +969,7 @@ tools:
   revisions:
   - 122bb8d553cb
   - 85010d0eaa6c
+  - 9c7074f01f52
   - b0d80d456120
   - c73e17fc5a77
   - ef6ed729b69a
@@ -1195,6 +1202,7 @@ tools:
   - 59d308975e63
   - 6d5c8a6ceea0
   - 9e8cf8dd6955
+  - cfe8742b704e
   - d0a2e0a9c853
   - eaa563bd535a
   - f2625d1efadd
@@ -1312,6 +1320,7 @@ tools:
   - 59d308975e63
   - 6d5c8a6ceea0
   - 9e8cf8dd6955
+  - cfe8742b704e
   - d0a2e0a9c853
   - eaa563bd535a
   - f2625d1efadd
@@ -1640,6 +1649,7 @@ tools:
 - name: metaspades
   owner: nml
   revisions:
+  - 04d81e5f25e9
   - 2ecf5a570907
   - 3ca2d2a9068c
   - 606b09cc9860
@@ -1865,6 +1875,7 @@ tools:
   - 59be68ba26c2
   - 5bd3f053c303
   - 5fc94b3a4704
+  - aa1ac2f7a688
   - b66de1e9abfb
   - e122f9101584
   - ef69617ecb42
@@ -1907,6 +1918,7 @@ tools:
 - name: spades
   owner: nml
   revisions:
+  - 1f04936b96f3
   - 24fffa4fee40
   - 33368fec3b70
   - 65d1598a9256
@@ -1936,11 +1948,13 @@ tools:
   - 7490b213baa9
   - 904bf932cf78
   - a5d68876c44e
+  - afac6d6bd02b
   - c33a476f4001
   tool_panel_section_label: Assembly
 - name: spades_coronaspades
   owner: iuc
   revisions:
+  - 045c8498d2dd
   - 152ff7d1817a
   - 2cf8a2028ddc
   - 34305b013402
@@ -1962,6 +1976,7 @@ tools:
   - 6b5a5842531e
   - 7e27faaad80e
   - 8d4b90bf9caf
+  - ae96f644b722
   - b8002c3f7141
   - c5c4fa59be65
   - c8097e741b13
@@ -1979,6 +1994,7 @@ tools:
   - 86f66ab58e14
   - 9346dcffaafc
   - 9de69775f512
+  - c4ba6aa27088
   - ea83ac535a1f
   - ed32d95f436a
   - f1532cb33c75
@@ -1991,6 +2007,7 @@ tools:
   - 388dbecbf03b
   - 5be72b7648fa
   - 6aad515a5270
+  - 6fb81bb0fe3e
   - 7bb235ff0746
   - 85fb02c43042
   - 8cc856b935ee
@@ -2012,6 +2029,7 @@ tools:
   - d5fb354f745d
   - dc5d1a54054b
   - de1260f8a300
+  - f4fc734dd9b0
   tool_panel_section_label: Assembly
 - name: syri
   owner: iuc
@@ -2846,6 +2864,7 @@ tools:
 - name: barcode_splitter
   owner: iuc
   revisions:
+  - eb95cc17426d
   - ff12d2c1f5d6
   tool_panel_section_label: FASTA/FASTQ
 - name: bbtools_bbmerge
@@ -3250,6 +3269,7 @@ tools:
 - name: falco
   owner: iuc
   revisions:
+  - 219ffa24f789
   - 46192706f470
   - 959a14c1f2dd
   - babbcf02d35c
@@ -3973,6 +3993,7 @@ tools:
   - a6a475ed58cb
   - b2ae7186d41f
   - bc18e25d4204
+  - c28c9cdf3660
   - c47a0a93ffd2
   - d19bb3e590b6
   - d78faac2c6ef
@@ -4071,6 +4092,7 @@ tools:
   - 067592b6b312
   - 21e491ad532a
   - 58124285e462
+  - 86ec2f06de3c
   - 94fe43e75ddc
   - b2860df42e16
   - b9e31c5c01c7
@@ -5197,6 +5219,7 @@ tools:
   - 3fe632431b68
   - 4a196b9c72c2
   - 64f11cf59c6e
+  - c598cbb8b019
   - c71dd035971e
   - e188dc7a68e6
   tool_panel_section_label: Mapping
@@ -6337,6 +6360,7 @@ tools:
   owner: iuc
   revisions:
   - 592ef3959907
+  - 5a6e1fa871a2
   - a5921c09b7b7
   - dfa1eb2941b0
 - name: data_manager_bakta
@@ -9148,6 +9172,7 @@ tools:
   - 3f4f192666f4
   - 7000f98e1c4b
   - a3cdbf62a59f
+  - aa73f04777fd
   tool_panel_section_label: Nanopore
 - name: nanoplot
   owner: iuc
@@ -12013,6 +12038,16 @@ tools:
   - bc396bd25374
   - c5928c28e2f0
   tool_panel_section_label: Spatial Omics
+- name: squidpy_graph
+  owner: iuc
+  revisions:
+  - 662e929f44fa
+  tool_panel_section_label: Spatial Omics
+- name: squidpy_plot
+  owner: iuc
+  revisions:
+  - 0a089e4b62d7
+  tool_panel_section_label: Spatial Omics
 - name: cosg
   owner: iuc
   revisions:
@@ -13168,6 +13203,7 @@ tools:
   - 19905c025d2a
   - 271965b55437
   - 48291658fdf6
+  - 5226c31ac6d3
   - 5fa262ce95dd
   - 67e2bd1c4579
   - 6deb4d549bc9
@@ -13725,6 +13761,7 @@ tools:
   - b43df0ce6c87
   - b8c112397c5e
   - c47ecf0e932d
+  - c8ecdd5bdb32
   - c91e09b60325
   - e43f513583ee
   - fdbd97ff825e
