@@ -1,6 +1,6 @@
 ---
-install_repository_dependencies: true
-install_resolver_dependencies: true
+install_repository_dependencies: false
+install_resolver_dependencies: false
 install_tool_dependencies: false
 
 tools:
@@ -90,6 +90,30 @@ tools:
     owner: bgruening
     tool_panel_section_label: Annotation
 
+  - name: kat_sect
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_filter_seq
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_filter_kmer
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_cold
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: logan_protein_embed_query
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: logan_protein_search_database
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
   - name: netboxr
     owner: bgruening
     tool_panel_section_label: Annotation
@@ -137,6 +161,10 @@ tools:
     tool_panel_section_label: Assembly
 
   - name: nextdenovo
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
+  - name: pecat
     owner: bgruening
     tool_panel_section_label: Assembly
 
@@ -256,8 +284,16 @@ tools:
   - name: cellposesam
     owner: bgruening
     tool_panel_section_label: Imaging
+
+  - name: coco2labelme
+    owner: bgruening
+    tool_panel_section_label: Imaging
     
   - name: bioimage_inference
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: coco_annotation_visualizer
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -266,6 +302,10 @@ tools:
     tool_panel_section_label: Imaging
 
   - name: doclayoutyolo
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: edit_coco_annotation
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -431,6 +471,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
+  - name: flexynesis_infer
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
   - name: flexynesis_plot
     owner: bgruening
     tool_panel_section_label: Machine Learning
@@ -444,6 +488,10 @@ tools:
     tool_panel_section_label: Machine Learning
 
   - name: llm_hub
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: rag_retriever
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
@@ -565,6 +613,10 @@ tools:
 
 # OTHER TOOLS
 
+  - name: 3dtrees_metadata
+    owner: bgruening
+    tool_panel_section_label: Other Tools
+
   - name: carveme
     owner: bgruening
     tool_panel_section_label: Other Tools
@@ -615,12 +667,36 @@ tools:
 
   - name: vpt_extract
     owner: bgruening
-    tool_panel_section_label: Single-cell
+    tool_panel_section_label: Spatial Omics
 
   - name: vpt_segment
     owner: bgruening
-    tool_panel_section_label: Single-cell
+    tool_panel_section_label: Spatial Omics
 
+  - name: webatlas_build_config
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_consolidate_md
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_generate_image
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_ome_zarr_metadata
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+  
+  - name: webatlas_router
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+  
+  - name: webatlas_write_spatialdata
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+    
 # STATISTICS
 
   - name: bg_statistical_hypothesis_testing

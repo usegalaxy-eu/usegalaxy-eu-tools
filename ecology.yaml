@@ -1,5 +1,6 @@
 ---
-install_resolver_dependencies: true
+install_repository_dependencies: false
+install_resolver_dependencies: false
 install_tool_dependencies: false
 
 tools:
@@ -257,6 +258,10 @@ tools:
     owner: ethevenot
     tool_panel_section_label: 'Metabolomics'
 
+  - name: table_pandas_rename_column
+    owner: recetox
+    tool_panel_section_label: 'Metabolomics'
+    
   - name: anova
     owner: lecorguille
     tool_panel_section_label: 'Statistics'
@@ -526,7 +531,35 @@ tools:
     owner: ecology
     tool_panel_section_label: 'GIS Data Handling'
 
+  - name: obi_complement
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_pcr
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_refidx
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_tag
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_taxonomy
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_pairing
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+    
   - name: obi_illumina_pairend
+    owner: iuc
+    tool_panel_section_label: 'DNA Metabarcoding'
+
+  - name: obi_multiplex
     owner: iuc
     tool_panel_section_label: 'DNA Metabarcoding'
 
@@ -992,4 +1025,56 @@ tools:
 
   - name: wildlife_megadetector_huggingface
     owner: ecology
-    tool_panel_section_label: 'Computer vision'
+    tool_panel_section_label: 'Computer Vision'
+    
+  - name: sam3_semantic_segmentation
+    owner: ecology
+    tool_panel_section_label: 'Computer Vision'
+
+  - name: ssrfilter
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: genetic_format_conversion
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+  
+  - name: population_genomics_vcf_filtering
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: population_genomics_vcf_keep_remove_individuals
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: population_genomics_vcf_subset
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: population_genomics_split_vcf_by_pop
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: population_genetics_stats
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: lea_snmf_application
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: dapc_kmeans
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: effective_population_size_ld_method
+    owner: ecology
+    tool_panel_section_label: 'Population Genomics'
+
+  - name: bcftools_query_list_samples
+    owner: iuc
+    tool_panel_section_label: 'Variant Calling'
+  
+  - name: compose_text_param
+    owner: iuc
+    tool_panel_section_label: 'Expression Tools'

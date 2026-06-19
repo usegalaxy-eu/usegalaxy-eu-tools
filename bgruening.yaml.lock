@@ -1,5 +1,5 @@
-install_repository_dependencies: true
-install_resolver_dependencies: true
+install_repository_dependencies: false
+install_resolver_dependencies: false
 install_tool_dependencies: false
 tools:
 - name: biomodels_biomd0000001066
@@ -146,6 +146,38 @@ tools:
   revisions:
   - f1a157358d4d
   tool_panel_section_label: Annotation
+- name: kat_sect
+  owner: bgruening
+  revisions:
+  - bf55d2b3728c
+  tool_panel_section_label: Annotation
+- name: kat_filter_seq
+  owner: bgruening
+  revisions:
+  - 9dfc749e8eed
+  tool_panel_section_label: Annotation
+- name: kat_filter_kmer
+  owner: bgruening
+  revisions:
+  - 6410f0530bc7
+  tool_panel_section_label: Annotation
+- name: kat_cold
+  owner: bgruening
+  revisions:
+  - 2ad6adc8d45f
+  tool_panel_section_label: Annotation
+- name: logan_protein_embed_query
+  owner: bgruening
+  revisions:
+  - 1b7b718cc379
+  - 6a1fc5577695
+  tool_panel_section_label: Annotation
+- name: logan_protein_search_database
+  owner: bgruening
+  revisions:
+  - 478817e06e95
+  - e69fb0e5dc0e
+  tool_panel_section_label: Annotation
 - name: netboxr
   owner: bgruening
   revisions:
@@ -229,6 +261,11 @@ tools:
   owner: bgruening
   revisions:
   - 733eab97b979
+  tool_panel_section_label: Assembly
+- name: pecat
+  owner: bgruening
+  revisions:
+  - cafed695937c
   tool_panel_section_label: Assembly
 - name: racon
   owner: bgruening
@@ -442,6 +479,12 @@ tools:
   - 48fe4ddcaeeb
   - bc1410a8a247
   tool_panel_section_label: Imaging
+- name: coco2labelme
+  owner: bgruening
+  revisions:
+  - 06a8da74643e
+  - 3a9709a4df77
+  tool_panel_section_label: Imaging
 - name: bioimage_inference
   owner: bgruening
   revisions:
@@ -451,6 +494,11 @@ tools:
   - b0f2d3b4a278
   - caea9ee1ffac
   - d5233b9d32bb
+  tool_panel_section_label: Imaging
+- name: coco_annotation_visualizer
+  owner: bgruening
+  revisions:
+  - 7b390f574967
   tool_panel_section_label: Imaging
 - name: woundhealing_scratch_assay
   owner: bgruening
@@ -464,6 +512,11 @@ tools:
   - 28b4dc80d58b
   - 55c96140ab72
   tool_panel_section_label: Imaging
+- name: edit_coco_annotation
+  owner: bgruening
+  revisions:
+  - b702f65d511e
+  tool_panel_section_label: Imaging
 - name: json2yolosegment
   owner: bgruening
   revisions:
@@ -471,28 +524,24 @@ tools:
   - 72985f2dd91c
   - 7db48c618bbe
   - 8cc1936ab69b
-  - a90916b16d1a
-  - b4dafa5a9e51
-  - ce7a96be8cb6
   - f1e5a9dd6baa
+  - fe95917c3e20
   tool_panel_section_label: Imaging
 - name: yolo_predict
   owner: bgruening
   revisions:
-  - 24dfd7800749
-  - 59283a6c4f0a
+  - 3e9d14e5942f
   - 983ce2a25b48
   - af3eed1f1abe
   - d77c67cfe2ca
   - e708a1191202
-  - ef843f845113
   - fcc5617c18e9
   tool_panel_section_label: Imaging
 - name: yolo_training
   owner: bgruening
   revisions:
   - 25a2de34c05e
-  - 9091435c041e
+  - 5cc588ef3793
   - 92d5c5e5c734
   - ad05e90d024b
   - bdff5d51a756
@@ -513,14 +562,12 @@ tools:
   - 1252578525d1
   - 305c1229ac99
   - 3b8fa4ea9727
-  - 61b2d8f8811e
   - 679e4ede1191
   - 9afec58b2bf9
   tool_panel_section_label: Machine Learning
 - name: keras_model_builder
   owner: bgruening
   revisions:
-  - 522137aaa9c4
   - 65571555c486
   - 66d7efc06000
   - 772e0e89fc68
@@ -537,14 +584,12 @@ tools:
   - 01131463df86
   - 1046cf73236b
   - 1f1fc37cfb42
-  - 4d81e3e2fb63
   - 8a794e6d3388
   - f22a9297440f
   tool_panel_section_label: Machine Learning
 - name: keras_train_and_eval
   owner: bgruening
   revisions:
-  - 2af1346e68c9
   - 31f6bf2382dc
   - 6ecb3d77d46e
   - 818f9b69d8a0
@@ -563,7 +608,6 @@ tools:
   - 21730620a849
   - 5f9c0e99016f
   - 72c0d2747dc9
-  - 8334dc98c48e
   - 947c2eacccb8
   - c7655b5a94af
   - c80db5d6fd8c
@@ -572,7 +616,6 @@ tools:
   owner: bgruening
   revisions:
   - 1552b8cb4a94
-  - 25b46af53232
   - 29e4122c90de
   - 475b5171945f
   - 83228baae3c5
@@ -589,7 +632,6 @@ tools:
   - 019bd8289224
   - 1ed23c988ff6
   - 43a859a0fab5
-  - 4c4ec859c31a
   - 52c4e0ef580a
   - 7442b94d6a1e
   - 775b004b7920
@@ -610,7 +652,6 @@ tools:
   - 44f0ce9488fb
   - 5f9ef68756bc
   - 68afcd163b3d
-  - 6ffedbe712c0
   - 80ca74b1cb36
   - 9728636c1e41
   - a0061a087409
@@ -627,7 +668,6 @@ tools:
   - 484a98c44f00
   - 685046e0381a
   - 6c030fe29722
-  - 761269451e98
   - 80074b842ebd
   - 9ac0b78c6b6d
   - b0c31e126fa1
@@ -647,7 +687,6 @@ tools:
   - 4335cec181ba
   - 4ee087eeda62
   - 686d0c3e3b62
-  - 6adef419e041
   - 75bcb7c19fcf
   - 78a60f884ac9
   - 87cb9cb44d1f
@@ -659,7 +698,6 @@ tools:
   owner: bgruening
   revisions:
   - 00f01f713c3c
-  - 060ca94ac049
   - 0b98933cf0f7
   - 1a53edc4b438
   - 2e69c6ca6e91
@@ -678,7 +716,6 @@ tools:
   revisions:
   - 07843f917990
   - 0a43c856e1d8
-  - 30d21a6041f6
   - 375bbd555f4a
   - 3881482e568e
   - 84ddbf61e107
@@ -702,7 +739,6 @@ tools:
   - 5bcf779d901f
   - 6d21b03e00a1
   - 74adae8d7b0f
-  - 96bb4c49e30e
   - 9e0e31bd8392
   - e918f33f7d4f
   - fcadeadd51ae
@@ -710,7 +746,6 @@ tools:
 - name: sklearn_fitted_model_eval
   owner: bgruening
   revisions:
-  - 22e73afd5206
   - 2e69c6de354e
   - 4a1cd790e323
   - 9a3cb21a3661
@@ -734,7 +769,6 @@ tools:
   - a3495337ab56
   - bf32512b1418
   - d3fe6fcc6bf4
-  - d4808d5b83da
   - dc4b5fd604a6
   - e0f8931f6149
   - e3bc646e63b2
@@ -743,7 +777,6 @@ tools:
   owner: bgruening
   revisions:
   - 1e006ebbcaf5
-  - 6c1c7a89d333
   - 9b067af194b7
   - ac52a5916963
   - e8d6b4acb7c6
@@ -755,7 +788,6 @@ tools:
   - 1b7ab45c7858
   - 27f8bd20a936
   - a459c68692ca
-  - b7d104ede67e
   - c12485d058aa
   - d562708bb095
   - f04f39a6825d
@@ -770,7 +802,6 @@ tools:
   - 8e447b95e6a8
   - 9084156b2bb5
   - a293d7937700
-  - f0ede473a7e8
   - fc70bf5c3b58
   - fe4e36598917
   tool_panel_section_label: Machine Learning
@@ -789,7 +820,6 @@ tools:
   - bacc38e0a29e
   - be4f389a95d9
   - bfc7bdfcb423
-  - e06ab1e112cc
   - efbec977a47d
   tool_panel_section_label: Machine Learning
 - name: sklearn_nn_classifier
@@ -801,7 +831,6 @@ tools:
   - 55c7d3e58eae
   - 672327583f74
   - 7ae443e6217d
-  - 8b1b2b91f8d0
   - 900c42c3eef4
   - aa83e7e3c398
   - c030e4bb1b39
@@ -825,7 +854,6 @@ tools:
   - 9d234733ccfd
   - ad7e0b4291ee
   - bb9fc9d46ea4
-  - e10e776f2109
   - f1ef5f9320d7
   tool_panel_section_label: Machine Learning
 - name: sklearn_pairwise_metrics
@@ -834,7 +862,6 @@ tools:
   - 226524df8c6c
   - 3ff43fbb7ccf
   - 5bd0866dbc7a
-  - 7614281473da
   - 8338f71ed0c4
   - 96452e7461f4
   - a61375e306c1
@@ -852,7 +879,6 @@ tools:
   - 2d7016b3ae92
   - 3af626081467
   - 435592ba3087
-  - c17f3eacdb14
   - c716b8c86c5d
   - f06ad033c114
   - fbf485fc2d30
@@ -865,7 +891,6 @@ tools:
   - 3badea963c3b
   - 4e6ada84d334
   - 5c9fb40ae174
-  - 627be0156505
   - 649017be1c60
   - 7acb9b46c066
   - 7d98dfb04d27
@@ -888,7 +913,6 @@ tools:
   - 871db13f0b04
   - ab2c393080f9
   - e6f4d3d9058c
-  - e99cccc3ca13
   - eb41d87cb1de
   - ebf295f2faf6
   - fed1850f01c3
@@ -905,7 +929,6 @@ tools:
   - 5023535e9f8b
   - 69c44aab684e
   - 7509d7059040
-  - 7626ea9c2e1b
   - 82b6104d4682
   - c6ae57f774c6
   - e5a5ad882f1f
@@ -932,7 +955,6 @@ tools:
   - 4aa3666b66fa
   - 4ed102b922cb
   - 61461e52c923
-  - 80852884053f
   - 90f2d6532262
   - b7c3e9a3b954
   - da0a22cdcce7
@@ -947,7 +969,6 @@ tools:
   - 61634a87efc7
   - 6b59e9b96071
   - 89f11e2b0673
-  - caeb57858702
   - ec69cbe34b73
   - f86c0419af43
   tool_panel_section_label: Machine Learning
@@ -964,7 +985,6 @@ tools:
   - bf2bcf7bd617
   - ddc4fe317a92
   - e03a58b31c12
-  - f6ea9fc38223
   tool_panel_section_label: Machine Learning
 - name: sklearn_train_test_split
   owner: bgruening
@@ -972,7 +992,6 @@ tools:
   - 376dd641af44
   - 6e25381dad5c
   - 910ebff96ddc
-  - a2e3cf2f9f40
   - adc5e53d4297
   - ce2fd1edbc6e
   - e10ffa9e0b90
@@ -983,9 +1002,9 @@ tools:
 - name: tabpfn
   owner: bgruening
   revisions:
-  - 1d77df05cbfc
   - 33d53eb476fd
   - 49b4ee0d0965
+  - cc50a058a1cb
   - e7b4afedc471
   - ec6df5e22055
   - f0c7f0bad621
@@ -1024,6 +1043,12 @@ tools:
   - e6c626b3013b
   - e9a7cb5a3c63
   tool_panel_section_label: Machine Learning
+- name: flexynesis_infer
+  owner: bgruening
+  revisions:
+  - 7a1bae3c974a
+  - f4fa010a53dd
+  tool_panel_section_label: Machine Learning
 - name: flexynesis_plot
   owner: bgruening
   revisions:
@@ -1058,12 +1083,20 @@ tools:
   - '157674736595'
   - 1aba57a5a716
   - 28e902e3d8d6
+  - 36d65981163b
   - 3e756119100d
   - 86d767b93457
   - 914a7b992c2c
+  - 914dcb4df04c
   - 99898a312165
   - d7551996b4a3
   - f5c7e6442a10
+  tool_panel_section_label: Machine Learning
+- name: rag_retriever
+  owner: bgruening
+  revisions:
+  - 17a8d7cc176b
+  - 1da5c7994686
   tool_panel_section_label: Machine Learning
 - name: black_forest_labs_flux
   owner: bgruening
@@ -1226,6 +1259,11 @@ tools:
   - bec636361cfd
   - de5b3d8f5b90
   tool_panel_section_label: Nanopore
+- name: 3dtrees_metadata
+  owner: bgruening
+  revisions:
+  - d3cff3f1ff4e
+  tool_panel_section_label: Other Tools
 - name: carveme
   owner: bgruening
   revisions:
@@ -1294,7 +1332,7 @@ tools:
   - 7d42c9b75718
   - 9b5e8695f027
   - f0d9060ba4d6
-  tool_panel_section_label: Single-cell
+  tool_panel_section_label: Spatial Omics
 - name: vpt_segment
   owner: bgruening
   revisions:
@@ -1303,7 +1341,37 @@ tools:
   - 5bd5f26279fd
   - a88a1e78702e
   - ed28a1feba82
-  tool_panel_section_label: Single-cell
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_build_config
+  owner: bgruening
+  revisions:
+  - 5a5cf7b26a38
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_consolidate_md
+  owner: bgruening
+  revisions:
+  - 42c7a50b00d0
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_generate_image
+  owner: bgruening
+  revisions:
+  - e3e7ef4b1e96
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_ome_zarr_metadata
+  owner: bgruening
+  revisions:
+  - e14dd18a4f77
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_router
+  owner: bgruening
+  revisions:
+  - d8708fb569b4
+  tool_panel_section_label: Spatial Omics
+- name: webatlas_write_spatialdata
+  owner: bgruening
+  revisions:
+  - 5342f7abb91c
+  tool_panel_section_label: Spatial Omics
 - name: bg_statistical_hypothesis_testing
   owner: bgruening
   revisions:
@@ -1336,7 +1404,6 @@ tools:
   - 602b5fb7ef09
   - 648b81bca7c5
   - a84e6ffd3735
-  - b7e93c1deb3f
   - d0ed8e976b79
   - ecd247e1ea9c
   - f49aad8f79ea

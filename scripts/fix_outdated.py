@@ -24,15 +24,18 @@ def retry_with_backoff(func, *args, **kwargs):
             return func(*args, **kwargs)
         except Exception as e:
             error_msg = str(e)
+            # Check for rate limiting (429) or server errors
             if any(
                 code in error_msg
-                for code in ["502", "503", "504", "timed out", "timeout", "Connection"]
+                for code in ["429", "502", "503", "504", "timed out", "timeout", "Connection"]
             ):
                 if attempt < max_retries - 1:
+                    # Use longer backoff for rate limiting
+                    wait_time = 5 if "429" in error_msg else backoff
                     logger.warning(
-                        f"Attempt {attempt + 1}/{max_retries} failed: {error_msg}. Retrying in {backoff}s..."
+                        f"Attempt {attempt + 1}/{max_retries} failed: {error_msg}. Retrying in {wait_time}s..."
                     )
-                    time.sleep(backoff)
+                    time.sleep(wait_time)
                     backoff = min(backoff * 2, 60)
                     continue
             raise e
@@ -56,7 +59,7 @@ def get_tool_versions(ts, name, owner, revision):
     return versions
 
 
-def fetch_versions_parallel(ts, name, owner, revisions, max_workers=10):
+def fetch_versions_parallel(ts, name, owner, revisions, max_workers=3):
     version_cache = {}
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {
@@ -103,8 +106,13 @@ def fix_uninstallable(lockfile_name, toolshed_url):
                 f"Progress: {i}/{total} tools ({skipped} skipped, {changed} changed)"
             )
 
+        # Brief pause every 50 requests to avoid overwhelming the server
+        if i > 0 and i % 50 == 0:
+            time.sleep(1)
+
         name, owner = tool.get("name"), tool.get("owner")
         current_revisions = set(tool.get("revisions", []))
+
         try:
             installable_list = retry_with_backoff(
                 ts.repositories.get_ordered_installable_revisions, name, owner
