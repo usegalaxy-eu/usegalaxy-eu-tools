@@ -370,6 +370,11 @@ tools:
   revisions:
   - cc0e9eff0de2
   tool_panel_section_label: Metabolomics
+- name: table_pandas_rename_column
+  owner: recetox
+  revisions:
+  - 761f8ab8fdb6
+  tool_panel_section_label: Metabolomics
 - name: anova
   owner: lecorguille
   revisions:
@@ -1752,6 +1757,7 @@ tools:
   - 3cf052628373
   - 809f339deae2
   - 9777101cccbc
+  - e938172541c4
   tool_panel_section_label: Computer Vision
 - name: ssrfilter
   owner: ecology
@@ -1806,3 +1812,13 @@ tools:
   - 88903ed1f637
   - ecee96169b7c
   tool_panel_section_label: Population Genomics
+- name: bcftools_query_list_samples
+  owner: iuc
+  revisions:
+  - fb631fd605e8
+  tool_panel_section_label: Variant Calling
+- name: compose_text_param
+  owner: iuc
+  revisions:
+  - e188c9826e0f
+  tool_panel_section_label: Expression Tools
