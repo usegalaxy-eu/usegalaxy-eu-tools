@@ -1,0 +1,161 @@
+---
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+- name: blast_to_scaffold
+  owner: artbio
+  revisions:
+    - 7d96b28eec49
+  tool_panel_section_label: Metavisitor
+
+- name: bowtie2
+  owner: devteam
+  revisions:
+    - 017aba02828d
+  tool_panel_section_label: Metavisitor
+
+- name: cherry_pick_fasta
+  owner: artbio
+  revisions:
+    - e3aee4ba49c6
+  tool_panel_section_label: Metavisitor
+
+- name: concatenate_multiple_datasets
+  owner: artbio
+  revisions:
+    - 55cf9d9defd1
+  tool_panel_section_label: Metavisitor
+
+- name: data_manager_bowtie2_index_builder
+  owner: devteam
+  revisions:
+    - d1d5feb31804
+  tool_panel_section_label: null
+
+- name: data_manager_bowtie_index_builder
+  owner: iuc
+  revisions:
+    - 86e9af693a33
+  tool_panel_section_label: null
+
+- name: data_manager_fetch_genome_dbkeys_all_fasta
+  owner: devteam
+  revisions:
+    - b1bc53e9bbc5
+  tool_panel_section_label: null
+
+- name: fasta_filter_by_length
+  owner: devteam
+  revisions:
+    - 2fd6033d0e9c
+  tool_panel_section_label: Metavisitor
+
+- name: fastx_trimmer
+  owner: devteam
+  revisions:
+    - 547e8d00f11c
+  tool_panel_section_label: Metavisitor
+
+- name: fetch_fasta_from_ncbi
+  owner: artbio
+  revisions:
+    - c667d0ee39f5
+  tool_panel_section_label: Metavisitor
+
+- name: khmer_normalize_by_median
+  owner: iuc
+  revisions:
+    - bfd859f04a89
+  tool_panel_section_label: Metavisitor
+
+- name: blastparser_and_hits
+  owner: artbio
+  revisions:
+    - b4c9c085d709
+  tool_panel_section_label: Metavisitor
+
+- name: cap3
+  owner: artbio
+  revisions:
+    - d76a0d8a9eac
+  tool_panel_section_label: Metavisitor
+
+- name: sequence_format_converter
+  owner: artbio
+  revisions:
+    - f1d59113125a
+  tool_panel_section_label: Metavisitor
+
+- name: oases
+  owner: artbio
+  revisions:
+    - f7dd852c8f4c
+  tool_panel_section_label: Metavisitor
+
+- name: sr_bowtie
+  owner: artbio
+  revisions:
+    - 0281bb245635
+  tool_panel_section_label: Metavisitor
+
+- name: small_rna_maps
+  owner: artbio
+  revisions:
+    - 14adf24603b6
+  tool_panel_section_label: Metavisitor
+
+- name: ncbi_blast_plus
+  owner: devteam
+  revisions:
+    - e25d3acf6e68
+  tool_panel_section_label: Metavisitor
+
+- name: regex_find_replace
+  owner: galaxyp
+  revisions:
+    - 209b7c5ee9d7
+  tool_panel_section_label: Metavisitor
+
+- name: sra_tools
+  owner: iuc
+  revisions:
+    - 1790dcf3c32d
+  tool_panel_section_label: Metavisitor
+
+- name: trinity
+  owner: iuc
+  revisions:
+    - c9cfec002f71
+  tool_panel_section_label: Metavisitor
+
+- name: spades
+  owner: nml
+  revisions:
+    - b8d633fbf5f5
+  tool_panel_section_label: Metavisitor
+
+- name: yac_clipper
+  owner: artbio
+  revisions:
+    - f7947c5a18b8
+  tool_panel_section_label: Metavisitor
+
+- name: vsearch
+  owner: iuc
+  revisions:
+    - b3c7199d8786
+  tool_panel_section_label: Metavisitor
+
+- name: blast_unmatched
+  owner: artbio
+  revisions:
+    - fffdb903f2d1
+  tool_panel_section_label: Metavisitor
+
+- name: fasta_compute_length
+  owner: devteam
+  revisions:
+    - de2db1bdfbf8
+  tool_panel_section_label: Metavisitor
