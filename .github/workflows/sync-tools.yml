@@ -37,7 +37,7 @@ jobs:
     steps:
       - name: Check for existing sync PR
         id: check_pr
-        uses: juliangruber/find-pull-request-action@v1
+        uses: juliangruber/find-pull-request-action@v1.11.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           branch: sync-${{ matrix.name }}-tools
