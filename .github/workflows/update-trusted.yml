@@ -6,6 +6,11 @@ on:
     # We'll run this weekly at 23.00 on Saturday.
     - cron:  '0 23 * * 6'
   workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - '*.yaml'
 
 permissions: {}
 
