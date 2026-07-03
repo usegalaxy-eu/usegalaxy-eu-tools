@@ -5,6 +5,7 @@ UPDATED_YAMLS := $(YAML_FILES:=.update)
 CORRECT_YAMLS := $(YAML_FILES:=.fix)
 INSTALL_YAMLS := $(LOCK_FILES:=.install)
 UPDATE_TRUSTED_IUC := $(LOCK_FILES:.lock=.update_trusted_iuc)
+DEPRECATED_YAMLS := $(LOCK_FILES:=.deprecate)
 
 GALAXY_SERVER := https://usegalaxy.eu
 
@@ -48,5 +49,47 @@ update_all: $(UPDATED_YAMLS)
 	@# Update any tools owned by IUC in any other yaml file
 	python3 scripts/update-tool.py --owner iuc $<
 
+update: ## Add new tools' revisions: fix lockfiles, lint, then update trusted tools (stages run sequentially)
+	$(MAKE) fix -j $$(nproc)
+	$(MAKE) lint -j $$(nproc)
+	$(MAKE) update_trusted -j $$(nproc)
 
-.PHONY: pr_check lint update_trusted help
+# Optional overrides for syncing a single source repo (used by the per-repo sync-tools
+# workflow, which needs its own gating/PR/report per target). When NAME/REPO/YAML are
+# all set (as make vars or env vars), only that one target is synced; otherwise every
+# entry in SYNC_TARGETS runs. `?=` so values passed via the environment (e.g. from a
+# GitHub Actions `env:` block) aren't clobbered by these defaults.
+SYNC_CATCHUP ?=
+SYNC_REPORT_FILE ?=
+
+sync: ## Sync new tools from upstream source repos (expects ./$(NAME) checkouts, see scripts/sync-targets.json), or a single one via NAME=/REPO=/YAML=
+ifneq ($(strip $(NAME)$(REPO)$(YAML)),)
+	@if [ ! -d "$(NAME)" ]; then \
+		echo "==> Cloning $(REPO) into ./$(NAME)"; \
+		git clone --quiet --filter=blob:none "https://github.com/$(REPO).git" "$(NAME)"; \
+	fi
+	python3 scripts/sync-tools-repo.py \
+		--tools-yaml $(YAML) \
+		--mapping-file scripts/category-mapping.yml \
+		--source-repo-path $(NAME) \
+		--source-repo-url https://github.com/$(REPO) \
+		--github-token "$$GITHUB_TOKEN" \
+		--last-sync-sha-file scripts/.last-$(NAME)-sync-sha \
+		--skip-list scripts/sync-skipped-tools.yml \
+		--skip-list-key $(NAME) \
+		$(if $(SYNC_REPORT_FILE),--report-file $(SYNC_REPORT_FILE)) \
+		$(if $(filter true,$(SYNC_CATCHUP)),--catchup)
+else
+	@jq -r '.[] | "\(.name)\t\(.source_repo)\t\(.tools_yaml)"' scripts/sync-targets.json | while IFS=$$(printf '\t') read -r name repo yaml; do \
+		echo "==> Syncing $$name from $$repo into $$yaml"; \
+		$(MAKE) sync NAME=$$name REPO=$$repo YAML=$$yaml || exit 1; \
+	done
+endif
+
+deprecate: $(DEPRECATED_YAMLS) ## Remove not-installable revisions from all lock files
+
+%.deprecate: %
+	python3 scripts/fix_outdated.py $<
+
+
+.PHONY: pr_check lint update_trusted update sync deprecate help
