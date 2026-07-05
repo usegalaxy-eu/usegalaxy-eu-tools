@@ -2372,6 +2372,7 @@ tools:
   owner: iuc
   revisions:
   - 402faa5eab62
+  - 4f831247b7ae
   - 7bc130112fa3
   - 917339196fdf
   - bebf7360eb55
@@ -4234,6 +4235,11 @@ tools:
   owner: iuc
   revisions:
   - c4bf5e913c2e
+  tool_panel_section_label: Graph/Display Data
+- name: heatmap
+  owner: iuc
+  revisions:
+  - fe4ccc06e90e
   tool_panel_section_label: Graph/Display Data
 - name: histogram
   owner: devteam
@@ -7578,6 +7584,36 @@ tools:
   revisions:
   - 40066bb1d9ed
   tool_panel_section_label: Metagenomic Analysis
+- name: mags_visualization_comp_conta
+  owner: iuc
+  revisions:
+  - 50ac19944038
+  tool_panel_section_label: Metagenomic Analysis
+- name: mags_visualization_drep_cluster_annot
+  owner: iuc
+  revisions:
+  - 042531998360
+  tool_panel_section_label: Metagenomic Analysis
+- name: mags_visualization_drep_cluster_func
+  owner: iuc
+  revisions:
+  - a70de587c7da
+  tool_panel_section_label: Metagenomic Analysis
+- name: mags_visualization_pathway_module_heatmap
+  owner: iuc
+  revisions:
+  - f729d5b6843a
+  tool_panel_section_label: Metagenomic Analysis
+- name: mags_visualization_sample_heatmap
+  owner: iuc
+  revisions:
+  - f9cd29b68158
+  tool_panel_section_label: Metagenomic Analysis
+- name: mags_visualization_taxa_sankey
+  owner: iuc
+  revisions:
+  - 2e995d7dba20
+  tool_panel_section_label: Metagenomic Analysis
 - name: mothur_align_check
   owner: iuc
   revisions:
@@ -10907,6 +10943,7 @@ tools:
   - 8fe98f7094de
   - 9a882d108833
   - a6fc9228e1a0
+  - b060944b3989
   - cd9874cb9019
   - d027d1f4984e
   - d983d19fbbab
@@ -10926,6 +10963,11 @@ tools:
   - df929f257179
   - f1c406f9554c
   - f89c9b25feb4
+  tool_panel_section_label: RNA Analysis
+- name: eastr
+  owner: iuc
+  revisions:
+  - d2a78ce2b1f1
   tool_panel_section_label: RNA Analysis
 - name: edger
   owner: iuc
@@ -11324,6 +11366,7 @@ tools:
 - name: tsenat
   owner: iuc
   revisions:
+  - 2ead6d1194e6
   - efbf859ddd70
   tool_panel_section_label: RNA Analysis
 - name: transdecoder
@@ -11566,6 +11609,11 @@ tools:
   revisions:
   - 5ad24b81dd10
   tool_panel_section_label: Regional Variation
+- name: samtools_faidx
+  owner: iuc
+  revisions:
+  - 78d6d62d4ce4
+  tool_panel_section_label: SAM/BAM
 - name: bamutil_clip_overlap
   owner: iuc
   revisions:
@@ -12105,6 +12153,31 @@ tools:
   owner: iuc
   revisions:
   - 46a62bb53560
+  tool_panel_section_label: Single-cell
+- name: sopa_segmentation
+  owner: iuc
+  revisions:
+  - b640b0abe4c6
+  tool_panel_section_label: Single-cell
+- name: sopa_resolve
+  owner: iuc
+  revisions:
+  - dce7456373c1
+  tool_panel_section_label: Single-cell
+- name: sopa_report
+  owner: iuc
+  revisions:
+  - 5d9c0d2ab65f
+  tool_panel_section_label: Single-cell
+- name: sopa_patchify
+  owner: iuc
+  revisions:
+  - 4aff1aa800d6
+  tool_panel_section_label: Single-cell
+- name: sopa_aggregate
+  owner: iuc
+  revisions:
+  - 57d6f5624178
   tool_panel_section_label: Single-cell
 - name: velocyto_cli
   owner: iuc
@@ -12708,6 +12781,7 @@ tools:
 - name: clustering_from_distmat
   owner: iuc
   revisions:
+  - 10abfe22d9c6
   - 8192b416f945
   - c0b01c55a0e0
   - f8ee933de3ca
@@ -12733,6 +12807,11 @@ tools:
   owner: iuc
   revisions:
   - e9231fb122e9
+  tool_panel_section_label: Statistics
+- name: general_matrix_tool
+  owner: iuc
+  revisions:
+  - b33018c9262e
   tool_panel_section_label: Statistics
 - name: generate_pc_lda_matrix
   owner: devteam
@@ -14126,6 +14205,11 @@ tools:
   - 9e6fa49c1077
   - d12a810c837e
   - ea2e7d299365
+  tool_panel_section_label: Variant Calling
+- name: ssiamb
+  owner: iuc
+  revisions:
+  - 5a4d65354257
   tool_panel_section_label: Variant Calling
 - name: strelka_germline
   owner: iuc
