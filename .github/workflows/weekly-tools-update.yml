@@ -69,6 +69,9 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v8.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          cache-suffix: ${{ matrix.name }}
 
       - name: Install dependencies
         run: uv pip install --system -r requirements.txt
@@ -141,6 +144,8 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v8.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: uv pip install --system -r requirements.txt
