@@ -2,8 +2,6 @@ name: Clean (uninstallable) tools revisions
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 9 1 * *'
 
 permissions: {}
 
@@ -14,7 +12,7 @@ jobs:
       lockfiles: ${{ steps.set-matrix.outputs.lockfiles }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
 
@@ -37,19 +35,20 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@v6.3.0
         with:
           python-version: '3.13'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v8.1.0
+        uses: astral-sh/setup-uv@v8.2.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          cache-suffix: ${{ matrix.lockfile }}
 
       - name: Install dependencies
         run: uv pip install --system -r requirements.txt
@@ -66,7 +65,7 @@ jobs:
           LOCKFILE: ${{ matrix.lockfile }}
 
       - name: Upload changes
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.1
         if: always()
         with:
           name: ${{ matrix.lockfile }}
@@ -74,6 +73,7 @@ jobs:
             ${{ matrix.lockfile }}
             not-installable-revisions/${{ steps.basename.outputs.name }}.not-installable-revisions.yaml
           if-no-files-found: ignore
+
 
   create-pr:
     needs: fix-outdated
@@ -84,13 +84,13 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v7.0.0
         with:
             fetch-depth: 0
             persist-credentials: false
 
       - name: Download all artifacts
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v8.0.1
         with:
           merge-multiple: true
 
@@ -108,7 +108,7 @@ jobs:
       - name: Create or update Pull Request
         id: cpr
         if: steps.check_changes.outputs.changes == 'true'
-        uses: peter-evans/create-pull-request@v8
+        uses: peter-evans/create-pull-request@v8.1.1
         with:
           branch: fix-outdated-tools
           commit-message: Remove not-installable tool revisions
