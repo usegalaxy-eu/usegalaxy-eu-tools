@@ -384,6 +384,7 @@ tools:
 - name: heatmap
   owner: ethevenot
   revisions:
+  - a17fd6d6ef90
   - b1667c118127
   tool_panel_section_label: Metabolomics
 - name: univariate
@@ -935,11 +936,13 @@ tools:
   revisions:
   - 3eb53ac7fb0e
   - 55d01781ffea
+  - 9dd2441ce41a
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_pcr
   owner: iuc
   revisions:
   - 17bd2c9f1671
+  - 90e648faaec1
   - a72c4cc8a704
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_refidx
@@ -947,22 +950,26 @@ tools:
   revisions:
   - 189cdb4ff7c2
   - 61f9122bb420
+  - d20729134e3c
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_tag
   owner: iuc
   revisions:
   - 783ecd0c80fe
+  - a733ced76ef5
   - fa01b4b07289
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_taxonomy
   owner: iuc
   revisions:
   - 2073dc7c0c0c
+  - 45d9811d5b74
   - 9eb7ba86e367
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_pairing
   owner: iuc
   revisions:
+  - 3dcc3f33da39
   - 78598ed1b8a8
   - 9f6d6048be2c
   tool_panel_section_label: DNA Metabarcoding
@@ -978,6 +985,7 @@ tools:
   revisions:
   - 569eacd3be7b
   - a0169bbe7c7f
+  - c575c8dba2ab
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_ngsfilter
   owner: iuc
@@ -993,6 +1001,7 @@ tools:
   - 3ac96c352a3d
   - 4da9a24971bd
   - 6c19e0d33cf6
+  - aff454cfd79e
   - d50dc96e3ce9
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_grep
@@ -1000,6 +1009,7 @@ tools:
   revisions:
   - 02bab5ff7c37
   - 7e68109625a3
+  - 879f44536e12
   - be475ac055b2
   - d16990a72638
   - e5cf6d670369
@@ -1009,6 +1019,7 @@ tools:
   owner: iuc
   revisions:
   - 3cd66db293f6
+  - 53b5bd9a08a1
   - c0f7b58b4ce4
   - c89bb0ef8f25
   - cb91d030d8ba
@@ -1023,11 +1034,13 @@ tools:
   - 6fa6df09d606
   - 7d16de45c021
   - 816cbd8f4e6e
+  - 8fe2ec05a876
   - 9c6619b29650
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_convert
   owner: iuc
   revisions:
+  - 12c00cef6985
   - 4d705e3443a7
   - 618fa454e51a
   - a86cb55cba33
@@ -1064,6 +1077,7 @@ tools:
   - cfb504394ae1
   - d033e1ccb386
   - d1fda11e602f
+  - fa65e5e7577f
   tool_panel_section_label: RAD-seq
 - name: stacks2_cstacks
   owner: iuc
@@ -1072,6 +1086,7 @@ tools:
   - 0cd2df8af811
   - 42d9087b4789
   - 8501601a118d
+  - 994c77aeeef1
   - c207119ba5f6
   - da351b9031de
   - f4aab9196d1e
@@ -1082,6 +1097,7 @@ tools:
   revisions:
   - 09b8edb56d80
   - 0b8c84a7fdb5
+  - 53fd063fcc0f
   - 9586f08634c0
   - a819ec3b362d
   - b7babdb3c219
@@ -1096,6 +1112,7 @@ tools:
   - 27359c6bf3e3
   - 7370bb65bad4
   - 7b72fde3d27e
+  - ab3df2172960
   - d35cb34f2b85
   - eb784fa07f80
   - f6e91108b7b1
@@ -1109,6 +1126,7 @@ tools:
   - 6fba323a242d
   - 7b881f5f5ad5
   - 887cf585cafc
+  - 94025494f95d
   - a5969aa9347e
   - b242deb58952
   - e2db212d64ad
@@ -1123,6 +1141,7 @@ tools:
   - b4bab607eb05
   - bd5ff77e2036
   - ca7aa77c7f57
+  - e0bf5d9cd05a
   - e897c74a48bb
   tool_panel_section_label: RAD-seq
 - name: stacks2_denovomap
@@ -1133,6 +1152,7 @@ tools:
   - 405a212b32ab
   - 421c33b8bf17
   - 89eb29319bf4
+  - 9e8a17579a2d
   - ad5ab22ffe24
   - afdbc7fcce70
   - b9822370f843
@@ -1148,6 +1168,7 @@ tools:
   - 6dafad990086
   - 887e0991eb24
   - adc7a7610d4f
+  - eae928f7fcb3
   tool_panel_section_label: RAD-seq
 - name: stacks2_tsv2bam
   owner: iuc
@@ -1155,6 +1176,7 @@ tools:
   - 1b270fc77c81
   - 2645575d1bf2
   - 69842dd5aa48
+  - 79ee594e7c3b
   - 8c2617661c49
   - 95351dd0fd3f
   - a4b4bd84f69e
@@ -1169,6 +1191,7 @@ tools:
   - 289b7d6b69a4
   - 2f1d464ebfd2
   - 42201b90e3f4
+  - 7b699cc7aaa9
   - b75174403a65
   - cd5f98911089
   - e345aadf914f
@@ -1181,6 +1204,7 @@ tools:
   - 3d70c2996730
   - 8a55d29c8fcf
   - a3e86cd9cac7
+  - af2881556a67
   - b2e3553e1be2
   - c9b77ced9a78
   - d30e36c48c93
@@ -1192,6 +1216,7 @@ tools:
   - 1974fee35ca7
   - 43e3eeb2e0ec
   - 4e280b27a831
+  - 8123ca2d9351
   - 97575d01f06b
   - ad7a60726fc3
   - c287418eb288
