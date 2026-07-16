@@ -208,6 +208,21 @@ tools:
     tool_panel_section_label: Collection Operations
 
 
+# Digital Humanities
+
+  - name: kraken_segment
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+  - name: kraken_ocr
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+  - name: kraken_binarize
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+
 # FASTA/FASTQ
 
   - name: gfastats
@@ -270,7 +285,10 @@ tools:
   - name: 3dtrees_forestmamba
     owner: bgruening
     tool_panel_section_label: 'GIS Data Handling'
-    
+
+  - name: 3dtrees_metadata
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
     
     
 # GRAPH/DISPLAY DATA
@@ -539,6 +557,14 @@ tools:
     owner: 'bgruening'
     tool_panel_section_label: 'NCBI Blast'
 
+
+# METABOLOMICS
+
+  - name: carveme
+    owner: bgruening
+    tool_panel_section_label: Metabolomics
+
+    
 # METAGENOMIC ANALYSIS
 
   - name: combine_metaphlan2_humann2
@@ -629,25 +655,6 @@ tools:
 
 # OTHER TOOLS
 
-  - name: 3dtrees_metadata
-    owner: bgruening
-    tool_panel_section_label: Other Tools
-
-  - name: carveme
-    owner: bgruening
-    tool_panel_section_label: Other Tools
-
-  - name: kraken_segment
-    owner: bgruening
-    tool_panel_section_label: Other Tools
-
-  - name: kraken_ocr
-    owner: bgruening
-    tool_panel_section_label: Other Tools
-
-  - name: kraken_binarize
-    owner: bgruening
-    tool_panel_section_label: Other Tools
 
 # PEAK CALLING
 
