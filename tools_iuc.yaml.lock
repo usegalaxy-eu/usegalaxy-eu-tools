@@ -137,6 +137,11 @@ tools:
   - e824f5d958d0
   - ea8146ee148f
   tool_panel_section_label: Annotation
+- name: clipkit
+  owner: iuc
+  revisions:
+  - 26eaf4c23a8c
+  tool_panel_section_label: Annotation
 - name: codon_freq_from_bicodons
   owner: iuc
   revisions:
@@ -198,6 +203,7 @@ tools:
 - name: chewbbaca_allelecall
   owner: iuc
   revisions:
+  - 122d0bd50db3
   - 264c38c4f8ba
   - 4fdabf147b39
   - 9de4eeb0023b
@@ -210,12 +216,14 @@ tools:
   - 15025d7fbc5f
   - 77a84fa4a02b
   - 7c4f32708e80
+  - 7d14a1f0af1a
   - a1420ba0b457
   - b4467818950a
   tool_panel_section_label: Annotation
 - name: chewbbaca_createschema
   owner: iuc
   revisions:
+  - 1618b3503b65
   - 220e2f7ff8bb
   - 4e61ec4fd5f5
   - 6a6c9e46cb8b
@@ -229,6 +237,7 @@ tools:
   - 4683f2baa5f0
   - 9a68fa4842bb
   - a707d4098f09
+  - b9e4f41c9b09
   - f502e55c34a3
   tool_panel_section_label: Annotation
 - name: chewbbaca_extractcgmlst
@@ -239,6 +248,7 @@ tools:
   - 9c4c2191b550
   - a302f0fef852
   - a3d1181467e4
+  - b877dcee81b4
   tool_panel_section_label: Annotation
 - name: chewbbaca_joinprofiles
   owner: iuc
@@ -246,12 +256,14 @@ tools:
   - 46269c0ef8e9
   - 4d25ff3d07a9
   - a370301694bc
+  - ddb5f11693b0
   - e3cba867efd4
   - f16c5cfeab7d
   tool_panel_section_label: Annotation
 - name: chewbbaca_nsstats
   owner: iuc
   revisions:
+  - 4474e6edb3cc
   - 5207cb4e31a2
   - 73c54f755a31
   - 7c84b3b83def
@@ -265,11 +277,13 @@ tools:
   - 604c4097461d
   - 6f7cfce9494d
   - 7035fc8b4ae3
+  - 83f9f102ab85
   - d8c1dcd7418c
   tool_panel_section_label: Annotation
 - name: compleasm
   owner: iuc
   revisions:
+  - 0b833dc20f00
   - 47f9f4d13d2c
   - 7109a27a11db
   - 8f20a5b9b282
@@ -578,6 +592,76 @@ tools:
   revisions:
   - bac089482cef
   tool_panel_section_label: FASTQ Quality Control
+- name: sourmash_tax_summarize
+  owner: iuc
+  revisions:
+  - 3f57d0dd55d9
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_tax_prepare
+  owner: iuc
+  revisions:
+  - 5a6a9eb75a76
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_tax_metagenome
+  owner: iuc
+  revisions:
+  - b8f24c50951b
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_tax_grep
+  owner: iuc
+  revisions:
+  - 2478c4098f51
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_tax_genome
+  owner: iuc
+  revisions:
+  - 97b2a7033b83
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_tax_annotate
+  owner: iuc
+  revisions:
+  - ed3ffa545986
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_sketch
+  owner: iuc
+  revisions:
+  - 8c66a6a24c44
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_signature
+  owner: iuc
+  revisions:
+  - 885852dca10b
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_search
+  owner: iuc
+  revisions:
+  - aaaff8c52014
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_prefetch
+  owner: iuc
+  revisions:
+  - 3f11112f02d7
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_plot
+  owner: iuc
+  revisions:
+  - 0fd0731d86af
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_multigather
+  owner: iuc
+  revisions:
+  - a07dbe61eeb3
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_index
+  owner: iuc
+  revisions:
+  - b7f915c65220
+  tool_panel_section_label: Metagenomic Analysis
+- name: sourmash_compare
+  owner: iuc
+  revisions:
+  - 6bda75357089
+  tool_panel_section_label: Metagenomic Analysis
 - name: taffy_view
   owner: iuc
   revisions:
@@ -627,6 +711,7 @@ tools:
   owner: iuc
   revisions:
   - 2d8c943f3e8d
+  - 877ce052b6ce
   tool_panel_section_label: Annotation
 - name: snap
   owner: iuc
@@ -1069,6 +1154,7 @@ tools:
   revisions:
   - 0181efacb40a
   - 678176bff643
+  - dc0cf156685f
   - f15270614b1b
 - name: data_manager_omamer
   owner: iuc
@@ -1305,6 +1391,16 @@ tools:
   owner: iuc
   revisions:
   - fb6c3ba3a084
+  tool_panel_section_label: Annotation
+- name: vg_paths
+  owner: iuc
+  revisions:
+  - 7f622ac47f04
+  tool_panel_section_label: Annotation
+- name: vg_giraffe
+  owner: iuc
+  revisions:
+  - 479e4a566537
   tool_panel_section_label: Annotation
 - name: vsnp_statistics
   owner: iuc
@@ -4033,6 +4129,7 @@ tools:
   - d951c5b0edd1
   - da8260eba74b
   - f0872b88c5fc
+  - fd848bb708de
   tool_panel_section_label: Get Data
 - name: pysradb_search
   owner: iuc
@@ -5443,6 +5540,7 @@ tools:
 - name: wfmash
   owner: iuc
   revisions:
+  - 326de4ff73d7
   - 45ff1e03f88a
   tool_panel_section_label: Mapping
 - name: winnowmap
@@ -6195,6 +6293,7 @@ tools:
   - 6941d0d453ba
   - b9c38856e540
   - c2a5823e4763
+  - d9b724b4a136
   - f8cb3f0a19fa
   tool_panel_section_label: Metagenomic Analysis
 - name: coverm_genome
@@ -6205,6 +6304,7 @@ tools:
   - 5bf5792b0996
   - 73b667038f46
   - 847f274a60da
+  - 8c957deb8a68
   - bb3f59096c8e
   tool_panel_section_label: Metagenomic Analysis
 - name: customize_metaphlan_database
@@ -6402,6 +6502,11 @@ tools:
   - 74ec28dbdf17
   - 7dfcb39313d4
   - ee763baa80c3
+  tool_panel_section_label: Metagenomic Analysis
+- name: dada2_mergesequencetables
+  owner: iuc
+  revisions:
+  - a0f0952933e4
   tool_panel_section_label: Metagenomic Analysis
 - name: das_tool
   owner: iuc
@@ -7249,29 +7354,34 @@ tools:
   revisions:
   - 7a97ac708fee
   - a0e1c0d16acf
+  - d316b3aeae2a
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_auto
   owner: iuc
   revisions:
   - 81a33caa9b8a
+  - cd59461a2b01
   - f41d29b1a43e
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_choose_primer_cutoff
   owner: iuc
   revisions:
   - 16d91d782bf8
+  - 7d7cad62a309
   - ff94748c0987
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_find_cutoffs
   owner: iuc
   revisions:
   - 9c9b580ee706
+  - d00455e76b07
   - eba53f3623c9
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_gen_bcv
   owner: iuc
   revisions:
   - 790332d37eb1
+  - 95bc5317a54d
   - ffb10fc9b9b9
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_std
@@ -7279,12 +7389,14 @@ tools:
   revisions:
   - 1ddab994fcee
   - 91da437d2be1
+  - 9d552c4f16b9
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_classify_var_regions
   owner: iuc
   revisions:
   - 3bf55ddcac46
   - ac58b06d1721
+  - ca77484b8afb
   - f13bead2278d
   - f50b54b40d7f
   tool_panel_section_label: Metagenomic Analysis
@@ -7292,6 +7404,7 @@ tools:
   owner: iuc
   revisions:
   - 06f46257fea7
+  - 0a27861e2531
   - 5592a89d0074
   - 75c19e6b2fbc
   - c359ab0d2d11
@@ -7299,6 +7412,7 @@ tools:
 - name: mgnify_pipelines_toolkit_mapseq_to_asv_table
   owner: iuc
   revisions:
+  - 675e5ffaf2b7
   - 96048deae8ba
   - b18c013c6db6
   - c1811fa799a0
@@ -7307,6 +7421,7 @@ tools:
 - name: mgnify_pipelines_toolkit_permute_primers
   owner: iuc
   revisions:
+  - 36b83018f194
   - 44951788b7e9
   - b4330af11657
   - d553befadd34
@@ -7319,11 +7434,13 @@ tools:
   - 4f26041a8e5b
   - 5d60fd8e0723
   - 989443308ec9
+  - e3f7d2db6d1e
   tool_panel_section_label: Metagenomic Analysis
 - name: mgnify_pipelines_toolkit_rev_comp_se_primers
   owner: iuc
   revisions:
   - 19e63ae9ec81
+  - 2a6ad77802d8
   - 44a9cccf62e6
   - 56abee7b6395
   - 63e98b3ac7c4
@@ -7606,6 +7723,7 @@ tools:
 - name: kmindex
   owner: iuc
   revisions:
+  - 1a3f4c16c665
   - 40066bb1d9ed
   tool_panel_section_label: Metagenomic Analysis
 - name: mags_visualization_comp_conta
@@ -10422,6 +10540,7 @@ tools:
   owner: iuc
   revisions:
   - 1959cc43b414
+  - 1be3e9c59601
   - f78492521996
   tool_panel_section_label: Phylogenetics
 - name: snp_sites
@@ -10586,6 +10705,7 @@ tools:
 - name: multiqc
   owner: iuc
   revisions:
+  - 0559e0711094
   - 1c2db0054039
   - 26ee5e11ecbe
   - 31c42a2c02d3
@@ -11598,6 +11718,16 @@ tools:
   revisions:
   - bb8409cb3005
   tool_panel_section_label: RNA Analysis
+- name: wgcna_softpower
+  owner: iuc
+  revisions:
+  - 3c64b37542b6
+  tool_panel_section_label: RNA Analysis
+- name: wgcna_network
+  owner: iuc
+  revisions:
+  - 3df546341aab
+  tool_panel_section_label: RNA Analysis
 - name: categorize_elements_satisfying_criteria
   owner: devteam
   revisions:
@@ -12133,6 +12263,7 @@ tools:
   owner: iuc
   revisions:
   - 1f6c780a2635
+  - 95f606f2553d
   - 9807b49770c4
   - aceae6f67857
   tool_panel_section_label: Spatial Omics
@@ -12141,6 +12272,7 @@ tools:
   revisions:
   - 0d3296677452
   - 2adfc39ffbac
+  - ad593d73a014
   - c9077cc6c532
   tool_panel_section_label: Spatial Omics
 - name: spatialdata_plot
@@ -12149,6 +12281,7 @@ tools:
   - a9c99d2d3063
   - bc396bd25374
   - c5928c28e2f0
+  - cec3ffd4752f
   tool_panel_section_label: Spatial Omics
 - name: squidpy_graph
   owner: iuc
@@ -14009,6 +14142,7 @@ tools:
   owner: iuc
   revisions:
   - 0170f93788b7
+  - a77d7dca10cc
   tool_panel_section_label: Variant Calling
 - name: irissv
   owner: iuc
@@ -14551,6 +14685,7 @@ tools:
 - name: vg_convert
   owner: iuc
   revisions:
+  - 0b527546d581
   - 7366704232b6
   tool_panel_section_label: Variant Calling
 - name: vg_deconstruct
@@ -14558,10 +14693,12 @@ tools:
   revisions:
   - 76d18b1e970b
   - a347dad1f305
+  - af3b56605b60
   tool_panel_section_label: Variant Calling
 - name: vg_view
   owner: iuc
   revisions:
+  - 974fc57878c7
   - ee62774bb5bd
   tool_panel_section_label: Variant Calling
 - name: vt_variant_tools
@@ -14995,6 +15132,7 @@ tools:
 - name: data_manager_samestr
   owner: iuc
   revisions:
+  - 405af1001762
   - e8873a70f416
   - f654a4a8a612
 - name: data_manager_selection_background

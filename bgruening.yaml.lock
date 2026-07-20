@@ -327,6 +327,21 @@ tools:
   - 750c1684d47c
   - baabc30154cd
   tool_panel_section_label: Collection Operations
+- name: kraken_segment
+  owner: bgruening
+  revisions:
+  - 10dafee67ddd
+  tool_panel_section_label: Digital Humanities
+- name: kraken_ocr
+  owner: bgruening
+  revisions:
+  - a6838fb117ce
+  tool_panel_section_label: Digital Humanities
+- name: kraken_binarize
+  owner: bgruening
+  revisions:
+  - 2b427bd1d5e4
+  tool_panel_section_label: Digital Humanities
 - name: gfastats
   owner: bgruening
   revisions:
@@ -426,6 +441,7 @@ tools:
 - name: 3dtrees_potree
   owner: bgruening
   revisions:
+  - 0c99fafe841d
   - 32e076a33f8f
   - 4b51d3803987
   - a5b16cf86c02
@@ -444,6 +460,11 @@ tools:
   owner: bgruening
   revisions:
   - ab9b0561b285
+  tool_panel_section_label: GIS Data Handling
+- name: 3dtrees_metadata
+  owner: bgruening
+  revisions:
+  - d3cff3f1ff4e
   tool_panel_section_label: GIS Data Handling
 - name: jbrowse2
   owner: fubar
@@ -1023,6 +1044,7 @@ tools:
   revisions:
   - 33d53eb476fd
   - 49b4ee0d0965
+  - 522baf0458d8
   - cc50a058a1cb
   - e7b4afedc471
   - ec6df5e22055
@@ -1105,6 +1127,7 @@ tools:
   - 36d65981163b
   - 3e756119100d
   - 6768109c845f
+  - 77824d12c143
   - 86d767b93457
   - 914a7b992c2c
   - 914dcb4df04c
@@ -1152,6 +1175,11 @@ tools:
   revisions:
   - 6083fd50e6a3
   tool_panel_section_label: NCBI Blast
+- name: carveme
+  owner: bgruening
+  revisions:
+  - 6167704e1d34
+  tool_panel_section_label: Metabolomics
 - name: combine_metaphlan2_humann2
   owner: bebatut
   revisions:
@@ -1187,6 +1215,7 @@ tools:
 - name: data_manager_motus
   owner: bgruening
   revisions:
+  - 603939ba21ec
   - c153e8dd94ad
 - name: sylph_query
   owner: bgruening
@@ -1279,16 +1308,6 @@ tools:
   - bec636361cfd
   - de5b3d8f5b90
   tool_panel_section_label: Nanopore
-- name: 3dtrees_metadata
-  owner: bgruening
-  revisions:
-  - d3cff3f1ff4e
-  tool_panel_section_label: Other Tools
-- name: carveme
-  owner: bgruening
-  revisions:
-  - 6167704e1d34
-  tool_panel_section_label: Other Tools
 - name: dewseq
   owner: rnateam
   revisions:
