@@ -1,0 +1,415 @@
+name: Weekly Tools Update (Sync, Update, Deprecate)
+
+# Combines the three tool-maintenance steps into a single, ordered pipeline
+# so that new tools are added before new revisions, and outdated revisions
+# are removed last - all before the Sunday installs on usegalaxy.eu:
+#
+#   get-targets -> sync (matrix) -> update -> deprecate (matrix) -> assemble-pr
+#
+# `deprecate` is a per-lockfile matrix (mirroring fix-outdated-tools.yml) rather
+# than an inline parallel loop, so each lockfile gets its own green/red leg in the
+# Actions UI. The individual sync-tools.yml / update-trusted.yml / fix-outdated-tools.yml
+# workflows remain available for manual (workflow_dispatch) runs, but their schedules
+# were removed in favor of this combined workflow to avoid duplicate/conflicting runs.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 5'  # Every Friday 06:00 UTC
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  get-targets:
+    name: Get sync targets
+    runs-on: ubuntu-latest
+    outputs:
+      targets: ${{ steps.set-matrix.outputs.targets }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: List sync targets from scripts/sync-targets.json
+        id: set-matrix
+        run: |
+          targets=$(jq -c . scripts/sync-targets.json)
+          if [ "$(echo "$targets" | jq 'length')" -eq 0 ]; then
+            echo "::error::scripts/sync-targets.json is empty - nothing to sync"
+            exit 1
+          fi
+          echo "targets=$targets" >> "$GITHUB_OUTPUT"
+
+  sync:
+    name: Sync tools
+    needs: get-targets
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      models: read  # required by sync-tools-repo.py's models.github.ai category call
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.get-targets.outputs.targets) }}
+
+    steps:
+      # No open-PR gate here, unlike sync-tools.yml: this job only uploads artifacts
+      # for the combined PR assembled below, and peter-evans/create-pull-request
+      # updates an existing open weekly-tools-update PR in place rather than making a
+      # duplicate. Re-running with a PR still open just folds in the latest tools.
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.3.0
+        with:
+          python-version: '3.13'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.3.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          cache-suffix: ${{ matrix.name }}
+
+      - name: Install dependencies
+        run: uv pip install --system -r requirements.txt
+
+      - name: Run sync script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NAME: ${{ matrix.name }}
+          REPO: ${{ matrix.source_repo }}
+          YAML: ${{ matrix.tools_yaml }}
+          # Write the report into the workspace (not $RUNNER_TEMP) so that the upload
+          # below mixes only workspace-relative paths. Mixing a workspace path with an
+          # absolute $RUNNER_TEMP path makes upload-artifact's least-common-ancestor the
+          # high work-dir parent, preserving directory structure on download and landing
+          # the files in nested/_temp paths instead of the workspace root. The report is
+          # never committed: create-pull-request's add-paths lists only yaml/lock/sha
+          # patterns, so sync-report-*.md is ignored by the PR step.
+          SYNC_REPORT_FILE: sync-report-${{ matrix.name }}.md
+        run: make sync
+
+      - name: Check for changes
+        id: check_changes
+        uses: tj-actions/verify-changed-files@v20
+
+      - name: Validate changed yaml (fast-fail)
+        # Validate the synced yaml directly before uploading it as an artifact.
+        # Not `make pr_check` (it diffs remotes/origin/master, which sees no uncommitted
+        # working-tree changes) and not `make <file>.lint` (fix-lockfile.py would
+        # regenerate the lockfile, which update-deprecate is responsible for).
+        if: steps.check_changes.outputs.files_changed == 'true'
+        env:
+          TOOLS_YAML: ${{ matrix.tools_yaml }}
+        run: |
+          pykwalify -d "$TOOLS_YAML" -s .schema.yaml
+          python scripts/pr-check.py "$TOOLS_YAML"
+
+      - name: Upload sync changes
+        if: steps.check_changes.outputs.files_changed == 'true'
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: sync-changes-${{ matrix.name }}
+          path: |
+            ${{ matrix.tools_yaml }}
+            scripts/.last-${{ matrix.name }}-sync-sha
+            sync-report-${{ matrix.name }}.md
+
+  update:
+    name: Update trusted revisions
+    needs: [get-targets, sync]
+    # Run after sync whether its legs succeeded or failed (a failed leg just means no
+    # artifact for it), but skip when cancelled or when get-targets itself failed.
+    if: ${{ !cancelled() && needs.get-targets.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    outputs:
+      lockfiles: ${{ steps.set-lockfiles.outputs.lockfiles }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.3.0
+        with:
+          python-version: '3.13'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.3.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: uv pip install --system -r requirements.txt
+
+      - name: Download all sync artifacts
+        uses: actions/download-artifact@v8.0.1
+        with:
+          pattern: sync-changes-*
+          merge-multiple: true
+
+      - name: Add new revisions to trusted tools
+        # fix lockfiles -> lint -> update trusted revisions (update_trusted cross-cuts
+        # all yaml files in one process, so this stays a single coordinating job rather
+        # than a per-lockfile matrix).
+        run: make update
+
+      - name: List lockfiles for the deprecate matrix
+        id: set-lockfiles
+        run: |
+          lockfiles=$(ls *.yaml.lock | jq -R -s -c 'split("\n")[:-1]')
+          echo "lockfiles=$lockfiles" >> "$GITHUB_OUTPUT"
+
+      - name: Upload updated lockfiles
+        # Bundle every post-update lockfile for the deprecate matrix to download. The
+        # deprecate legs re-upload their single lockfile as `deprecate-*` artifacts,
+        # which is what assemble-pr consumes - so this bundle is never downloaded by
+        # assemble-pr (downloading both would clobber at the workspace root).
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: updated-lockfiles
+          path: '*.yaml.lock'
+
+  deprecate:
+    name: Deprecate (${{ matrix.lockfile }})
+    needs: [get-targets, sync, update]
+    # Per-lockfile matrix mirroring fix-outdated-tools.yml: one leg per lockfile,
+    # max-parallel 4, fail-fast off. Skipped entirely if update failed - in that case
+    # assemble-pr ships only the sync yaml changes.
+    if: ${{ !cancelled() && needs.update.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        lockfile: ${{ fromJson(needs.update.outputs.lockfiles) }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.3.0
+        with:
+          python-version: '3.13'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.3.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          cache-suffix: ${{ matrix.lockfile }}
+
+      - name: Install dependencies
+        run: uv pip install --system -r requirements.txt
+
+      - name: Download updated lockfiles
+        uses: actions/download-artifact@v8.0.1
+        with:
+          name: updated-lockfiles
+          merge-multiple: true
+
+      - name: Remove not-installable revisions from ${{ matrix.lockfile }}
+        # A failed leg does not block the others and does not discard the update work:
+        # the upload below runs with `if: always()` so the update-applied lockfile is
+        # still shipped (deprecation just skipped for this file). fix_outdated.py runs a
+        # ThreadPoolExecutor(3) per leg, so 4 legs * 3 = 12 concurrent toolshed calls,
+        # the same ceiling as the old inline parallel loop.
+        run: python3 scripts/fix_outdated.py "$LOCKFILE"
+        env:
+          LOCKFILE: ${{ matrix.lockfile }}
+
+      - name: Get base name
+        id: basename
+        run: echo "name=${LOCKFILE%.yaml.lock}" >> "$GITHUB_OUTPUT"
+        env:
+          LOCKFILE: ${{ matrix.lockfile }}
+
+      - name: Upload changes
+        uses: actions/upload-artifact@v7.0.1
+        if: always()
+        with:
+          name: deprecate-${{ matrix.lockfile }}
+          path: |
+            ${{ matrix.lockfile }}
+            not-installable-revisions/${{ steps.basename.outputs.name }}.not-installable-revisions.yaml
+          if-no-files-found: ignore
+
+  assemble-pr:
+    name: Assemble pull request
+    needs: [get-targets, sync, update, deprecate]
+    # Always run (unless cancelled or get-targets failed) so a deprecate failure still
+    # opens a PR with whatever succeeded. Downloads only sync artifacts + the deprecate-*
+    # per-leg artifacts (the deprecation-applied lockfiles); never `updated-lockfiles`.
+    if: ${{ !cancelled() && needs.get-targets.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # create-pull-request commits the bundled yaml/lockfile changes
+      pull-requests: write  # ...and opens/updates the weekly-tools-update PR
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.3.0
+        with:
+          python-version: '3.13'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.3.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: uv pip install --system -r requirements.txt
+
+      - name: Download sync artifacts
+        uses: actions/download-artifact@v8.0.1
+        with:
+          pattern: sync-changes-*
+          merge-multiple: true
+
+      - name: Download deprecate artifacts
+        # Per-leg artifacts named deprecate-<lockfile>; merged, the lockfiles land at
+        # the workspace root and the not-installable files in their subdirectory.
+        if: ${{ needs.deprecate.result == 'success' || needs.deprecate.result == 'failure' }}
+        uses: actions/download-artifact@v8.0.1
+        with:
+          pattern: deprecate-*
+          merge-multiple: true
+
+      - name: Validate changed yaml files
+        run: make pr_check
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain -- '*.yaml' '*.yaml.lock' 'not-installable-revisions/*.yaml' 'scripts/.last-*-sync-sha') ]]; then
+            echo "changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build PR body
+        if: steps.check_changes.outputs.changes == 'true'
+        # Body is grouped by what changed, not by workflow job, and reports user-facing
+        # outcomes only (no job success/failure - that's visible in the Actions tab).
+        # Counts are derived from the working-tree diff: revision hashes are 12-char hex
+        # lines under `revisions:`; the not-installable files are append-only, so their
+        # added lines are exactly the revisions removed this run.
+        env:
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          # --- counts from the diff ---
+          new_tools=$(grep -h "Total new tools found:" sync-report-*.md 2>/dev/null \
+            | grep -oE '[0-9]+' | awk '{s+=$1} END{print s+0}')
+          added_revs=$(git diff -- '*.yaml.lock' | grep -cE '^\+\s+- [0-9a-f]{12}$')
+          removed_revs=$(git diff -- 'not-installable-revisions/*.yaml' | grep -cE '^\+\s+- [0-9a-f]{12}$')
+          plural() { [ "$1" -eq 1 ] && echo "$2" || echo "$2s"; }
+
+          {
+            # TL;DR (Dependabot-style one line): tells a reviewer whether this is routine.
+            echo "Added ${new_tools} new $(plural "$new_tools" tool), ${added_revs} new $(plural "$added_revs" revision), and removed ${removed_revs} not-installable $(plural "$removed_revs" revision)."
+            echo ""
+            echo "Automatically generated by the \`weekly-tools-update\` workflow. New tools and revisions will be installed on usegalaxy.eu on Sunday."
+            echo ""
+
+            echo "## New tools"
+            echo ""
+            echo "Synced from \`galaxyproject/tools-iuc\` and \`bgruening/galaxytools\`."
+            echo ""
+            if [ "$new_tools" -gt 0 ] && ls sync-report-*.md >/dev/null 2>&1; then
+              for f in sync-report-*.md; do
+                name="${f#sync-report-}"
+                name="${name%.md}"
+                echo "<details>"
+                echo "<summary>Sync report: ${name}</summary>"
+                echo ""
+                cat "$f"
+                echo ""
+                echo "</details>"
+                echo ""
+              done
+            else
+              echo "_None this run._"
+              echo ""
+            fi
+
+            echo "## Updated revisions"
+            echo ""
+            if [ "$added_revs" -gt 0 ]; then
+              echo "Added ${added_revs} latest installable $(plural "$added_revs" revision) to trusted tools across the lockfiles. See the lockfile diffs for the exact tools and revisions."
+            else
+              echo "_None this run._"
+            fi
+            echo ""
+
+            echo "## Removed not-installable revisions"
+            echo ""
+            echo "These revisions are no longer installable from the ToolShed and were dropped from the lockfiles (recorded in \`not-installable-revisions/\`)."
+            echo ""
+            if [ "$removed_revs" -gt 0 ] && ls not-installable-revisions/*.not-installable-revisions.yaml >/dev/null 2>&1; then
+              echo "| Tool | Owner | Removed revision(s) |"
+              echo "| :--- | :--- | :--- |"
+              # Revisions added to the append-only not-installable files this run are the
+              # ones dropped from the lockfiles. -U1000 gives full-file context so each
+              # added revision line is preceded by its tool's name/owner lines in the same
+              # diff; awk walks the diff tracking the most recent name/owner and emits one
+              # row per added revision. No helper script needed.
+              git diff -U1000 -- 'not-installable-revisions/*.yaml' | awk '
+                {
+                  prefix = substr($0, 1, 1)
+                  body   = substr($0, 2)
+                }
+                body ~ /^- name: /   { name = substr(body, 9) }
+                body ~ /^  owner: /   { owner = substr(body, 10) }
+                prefix == "+" && body ~ /^  - [0-9a-f]{12}$/ {
+                  rev = substr(body, 5)
+                  print "| `" name "` | `" owner "` | `" rev "` |"
+                }
+              '
+            else
+              echo "_None this run._"
+            fi
+            echo ""
+
+            echo "---"
+            echo "Workflow run: [${GITHUB_RUN_ID}](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})"
+          } > "$RUNNER_TEMP/pr-body.md"
+
+      - name: Create or update Pull Request
+        if: steps.check_changes.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v8.1.1
+        with:
+          branch: weekly-tools-update
+          commit-message: "Weekly tools update: sync new tools, add revisions, remove deprecated"
+          title: 'Weekly tools update: sync, update, deprecate'
+          body-path: ${{ runner.temp }}/pr-body.md
+          delete-branch: true
+          add-paths: |
+            *.yaml
+            *.yaml.lock
+            not-installable-revisions/*.yaml
+            scripts/.last-*-sync-sha

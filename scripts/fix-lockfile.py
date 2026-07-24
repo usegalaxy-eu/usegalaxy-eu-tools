@@ -25,7 +25,7 @@ def update_file(fn, dry):
         locked_tools = [x for x in locked['tools'] if x['name'] == tool['name'] and x['owner'] == tool['owner']]
         # If there are no copies of it seen in the lockfile, we'll just copy it
         # over directly, without a reivision. Another script will fix that.
-        if len(locked) == 0:
+        if len(locked_tools) == 0:
             # new tool, just add directly.
             clean_lockfile['tools'].append(tool)
             continue

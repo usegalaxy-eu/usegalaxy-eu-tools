@@ -1,6 +1,6 @@
 ---
-install_repository_dependencies: true
-install_resolver_dependencies: true
+install_repository_dependencies: false
+install_resolver_dependencies: false
 install_tool_dependencies: false
 
 tools:
@@ -90,11 +90,51 @@ tools:
     owner: bgruening
     tool_panel_section_label: Annotation
 
+  - name: kat_gcp
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_comp
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_hist
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_sect
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_filter_seq
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_filter_kmer
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: kat_cold
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: logan_protein_embed_query
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: logan_protein_search_database
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
   - name: netboxr
     owner: bgruening
     tool_panel_section_label: Annotation
 
   - name: pfamscan
+    owner: bgruening
+    tool_panel_section_label: Annotation
+
+  - name: psortb
     owner: bgruening
     tool_panel_section_label: Annotation
 
@@ -136,6 +176,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Assembly
 
+  - name: pecat
+    owner: bgruening
+    tool_panel_section_label: Assembly
+
   - name: racon
     owner: bgruening
     tool_panel_section_label: Assembly
@@ -164,6 +208,21 @@ tools:
     tool_panel_section_label: Collection Operations
 
 
+# Digital Humanities
+
+  - name: kraken_segment
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+  - name: kraken_ocr
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+  - name: kraken_binarize
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+
 # FASTA/FASTQ
 
   - name: gfastats
@@ -187,6 +246,10 @@ tools:
 
     
 # GIS
+  - name: 3dtrees_segmentanytree
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+    
   - name: 3dtrees_detailview
     owner: bgruening
     tool_panel_section_label: 'GIS Data Handling'
@@ -196,6 +259,34 @@ tools:
     tool_panel_section_label: 'GIS Data Handling'
 
   - name: 3dtrees_tile_merge
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_overviews
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_smart_tile
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+    
+  - name: 3dtrees_py3dtiles
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+  
+  - name: 3dtrees_potree
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_raycloudtools
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_forestmamba
+    owner: bgruening
+    tool_panel_section_label: 'GIS Data Handling'
+
+  - name: 3dtrees_metadata
     owner: bgruening
     tool_panel_section_label: 'GIS Data Handling'
     
@@ -224,7 +315,19 @@ tools:
     owner: bgruening
     tool_panel_section_label: Imaging
 
+  - name: cellposesam
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: coco2labelme
+    owner: bgruening
+    tool_panel_section_label: Imaging
+    
   - name: bioimage_inference
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: coco_annotation_visualizer
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -233,6 +336,10 @@ tools:
     tool_panel_section_label: Imaging
 
   - name: doclayoutyolo
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: edit_coco_annotation
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -245,6 +352,10 @@ tools:
     tool_panel_section_label: Imaging
 
   - name: yolo_training
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: imagemagick_image_montage
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -273,10 +384,6 @@ tools:
   - name: model_prediction
     owner: bgruening
     tool_panel_section_label: Machine Learning
-
-#  - name: run_jupyter_job
-#    owner: bgruening
-#    tool_panel_section_label: Machine Learning
 
   - name: sklearn_build_pipeline
     owner: bgruening
@@ -398,6 +505,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
+  - name: flexynesis_infer
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
   - name: flexynesis_plot
     owner: bgruening
     tool_panel_section_label: Machine Learning
@@ -411,6 +522,10 @@ tools:
     tool_panel_section_label: Machine Learning
 
   - name: llm_hub
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: rag_retriever
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
@@ -432,6 +547,24 @@ tools:
     owner: bgruening
     tool_panel_section_label: Mapping
 
+# NCBI BLAST
+
+  - name: 'search_protein_embed_query'
+    owner: 'bgruening'
+    tool_panel_section_label: 'NCBI Blast'
+
+  - name: 'search_protein_search_database'
+    owner: 'bgruening'
+    tool_panel_section_label: 'NCBI Blast'
+
+
+# METABOLOMICS
+
+  - name: carveme
+    owner: bgruening
+    tool_panel_section_label: Metabolomics
+
+    
 # METAGENOMIC ANALYSIS
 
   - name: combine_metaphlan2_humann2
@@ -487,6 +620,14 @@ tools:
     owner: bgruening
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: kmetashot
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: kmetashot_build_database
+    owner: bgruening
+    tool_panel_section_label: Metagenomic Analysis
+
 # MULTIPLE ALIGNMENTS
 
   - name: mafft
@@ -511,6 +652,8 @@ tools:
   - name: nanopolish_variants
     owner: bgruening
     tool_panel_section_label: Nanopore
+
+# OTHER TOOLS
 
 
 # PEAK CALLING
@@ -559,12 +702,36 @@ tools:
 
   - name: vpt_extract
     owner: bgruening
-    tool_panel_section_label: Single-cell
+    tool_panel_section_label: Spatial Omics
 
   - name: vpt_segment
     owner: bgruening
-    tool_panel_section_label: Single-cell
+    tool_panel_section_label: Spatial Omics
 
+  - name: webatlas_build_config
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_consolidate_md
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_generate_image
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+
+  - name: webatlas_ome_zarr_metadata
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+  
+  - name: webatlas_router
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+  
+  - name: webatlas_write_spatialdata
+    owner: bgruening
+    tool_panel_section_label: Spatial Omics
+    
 # STATISTICS
 
   - name: bg_statistical_hypothesis_testing

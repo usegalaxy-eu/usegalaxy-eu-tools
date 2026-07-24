@@ -1,0 +1,1182 @@
+#!/usr/bin/env python3
+"""
+Sync tools from a Galaxy toolshed source repository to a target yaml file.
+
+This script discovers new tools in a source repository (e.g. galaxyproject/tools-iuc
+or bgruening/galaxytools) and automatically adds them to a target yaml with appropriate
+category mappings.
+"""
+
+import argparse
+import json
+import os
+import re
+import subprocess
+import sys
+import xml.etree.ElementTree as ET
+from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional, Set, Tuple
+
+import requests
+import yaml
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
+class ToolsRepoSyncer:
+    def __init__(
+        self,
+        tools_yaml_path: Path,
+        mapping_file_path: Path,
+        source_repo_path: Path,
+        source_repo_url: str,
+        source_repo_branch: Optional[str] = None,
+        base_dirs: Optional[List[str]] = None,
+        github_token: Optional[str] = None,
+        dry_run: bool = False,
+        last_sync_sha_file: Optional[Path] = None,
+        skip_list_path: Optional[Path] = None,
+        skip_list_key: Optional[str] = None,
+    ):
+        self.tools_yaml_path = tools_yaml_path
+        self.mapping_file_path = mapping_file_path
+        self.source_repo_path = source_repo_path
+        self.source_repo_url = source_repo_url.rstrip("/")
+        self.source_repo_branch = source_repo_branch or self._detect_default_branch(
+            source_repo_path
+        )
+        self.base_dirs = (
+            base_dirs
+            if base_dirs is not None
+            else self._detect_base_dirs(source_repo_path)
+        )
+        self.github_token = github_token
+        self.dry_run = dry_run
+        self.last_sync_sha_file = last_sync_sha_file
+        self.skip_list_path = skip_list_path
+        self.skip_list_key = skip_list_key
+
+        # Load category mapping
+        with open(mapping_file_path) as f:
+            mapping_data = yaml.safe_load(f)
+            self.category_mapping = mapping_data.get("mappings", {})
+
+        # Load valid labels from schema
+        schema_path = tools_yaml_path.parent / ".schema.yaml"
+        with open(schema_path) as f:
+            schema = yaml.safe_load(f)
+            label_enum = schema["mapping"]["tools"]["sequence"][0]["mapping"][
+                "tool_panel_section_label"
+            ]["enum"]
+            self.valid_labels = set(label_enum)
+        # Case-insensitive fallback: valid_labels first, then explicit mappings override
+        self.fallback_lower = {label.lower(): label for label in self.valid_labels}
+        for key, value in self.category_mapping.items():
+            self.fallback_lower[key.lower()] = value
+
+        # Validate that all static mapping targets are valid labels
+        for shed_cat, panel_label in self.category_mapping.items():
+            if panel_label not in self.valid_labels:
+                print(
+                    f"Warning: Static mapping '{shed_cat}' -> '{panel_label}' target is not a valid panel label",
+                    file=sys.stderr,
+                )
+
+        # Load skip list
+        self.skip_list: Set[str] = set()
+        if skip_list_path is not None and skip_list_path.exists():
+            with open(skip_list_path) as f:
+                skip_data = yaml.safe_load(f) or {}
+                if skip_list_key:
+                    raw = skip_data.get(skip_list_key, []) or []
+                else:
+                    raw = skip_data.get("skip", []) or []
+                self.skip_list = {s.lower() for s in raw}
+
+        self.toolshed_api = "https://toolshed.g2.bx.psu.edu/api/repositories"
+
+        self.existing_tools: Set[Tuple[str, str]] = set()
+        self.new_tools: List[Dict] = []
+        self.skipped_tools: List[Dict] = []
+        self.skiplist_skipped_tools: List[Dict] = []
+        self.report_lines: List[str] = []
+
+    @staticmethod
+    def _detect_base_dirs(repo_path: Path) -> List[str]:
+        """Find top-level dirs in the source repo that contain at least one .shed.yml."""
+        return sorted(
+            d.name
+            for d in repo_path.iterdir()
+            if d.is_dir() and any(d.rglob(".shed.yml"))
+        )
+
+    @staticmethod
+    def _detect_default_branch(repo_path: Path) -> str:
+        """Detect the default branch of the cloned source repo via origin/HEAD."""
+        try:
+            ref = subprocess.check_output(
+                ["git", "symbolic-ref", "refs/remotes/origin/HEAD", "--short"],
+                cwd=str(repo_path),
+                text=True,
+                stderr=subprocess.DEVNULL,
+            ).strip()
+            return ref.removeprefix("origin/") or "main"
+        except subprocess.CalledProcessError:
+            return "main"
+
+    def load_existing_tools(self) -> None:
+        """Load all existing tools from all YAML files in the repo to avoid duplicates."""
+        yaml_files = list(self.tools_yaml_path.parent.glob("*.yaml"))
+
+        for yaml_file in yaml_files:
+            if yaml_file.name.endswith(".lock"):
+                continue
+
+            try:
+                with open(yaml_file) as f:
+                    data = yaml.safe_load(f)
+                    if data and "tools" in data:
+                        for tool in data["tools"]:
+                            name = tool.get("name")
+                            owner = tool.get("owner")
+                            if name and owner:
+                                self.existing_tools.add((name.lower(), owner))
+            except Exception as e:
+                print(f"Warning: Could not load {yaml_file}: {e}", file=sys.stderr)
+
+    def parse_shed_yml(self, shed_yml_path: Path) -> Optional[Dict]:
+        """Parse a .shed.yml file and extract tool metadata."""
+        try:
+            with open(shed_yml_path) as f:
+                data = yaml.safe_load(f)
+
+            if not data:
+                return None
+
+            name = data.get("name")
+            owner = data.get("owner")
+            categories = data.get("categories") or []
+            if not isinstance(categories, list):
+                categories = [str(categories)]
+
+            description = data.get("description") or ""
+
+            if not owner:
+                return None
+
+            # Handle auto_tool_repositories (suite tools like bcftools).
+            # These .shed.yml files often have no top-level 'name' field, so we
+            # must check for auto_tool_repositories BEFORE the 'if not name' guard.
+            auto_tool_repos = data.get("auto_tool_repositories", {})
+            if auto_tool_repos:
+                name_template = auto_tool_repos.get("name_template", "{{ tool_id }}")
+                tool_names = []
+                tool_dir = shed_yml_path.parent
+
+                for xml_file in tool_dir.glob("*.xml"):
+                    tool_id = self._extract_tool_id(xml_file)
+                    if tool_id:
+                        # Apply name_template; handle any whitespace inside {{ tool_id }}
+                        repo_name = re.sub(
+                            r"\{\{\s*tool_id\s*\}\}", tool_id, name_template
+                        ).lower()
+                        # Skip if Jinja2 placeholders remain unresolved
+                        if "{{" in repo_name or "}}" in repo_name:
+                            continue
+                        tool_names.append(repo_name)
+
+                if tool_names:
+                    return {
+                        "suite": True,
+                        "base_name": name,
+                        "tool_names": tool_names,
+                        "owner": owner,
+                        "categories": categories,
+                        "description": description,
+                    }
+
+            # Regular (non-auto) tool: name field is required
+            if not name:
+                return None
+
+            return {
+                "suite": False,
+                "name": name.lower(),
+                "owner": owner,
+                "categories": categories,
+                "description": description,
+            }
+        except Exception as e:
+            print(f"Warning: Could not parse {shed_yml_path}: {e}", file=sys.stderr)
+            return None
+
+    def _extract_tool_id(self, xml_file: Path) -> Optional[str]:
+        """Extract the tool id from a Galaxy tool XML file.
+
+        Returns None for non-tool XMLs (macros, test data, etc.).
+        Resolves inline @TOKEN@ macros used in tool ids.
+        """
+        try:
+            tree = ET.parse(xml_file)
+            root = tree.getroot()
+
+            # Only <tool> root elements are actual tools
+            if root.tag != "tool":
+                return None
+
+            tool_id = root.get("id")
+            if not tool_id:
+                return None
+
+            # Skip Jinja2-style template placeholders (these belong to suite templates)
+            if "{{" in tool_id or "}}" in tool_id:
+                return None
+
+            # Resolve inline @TOKEN@ macros (e.g. bcftools_@EXECUTABLE@)
+            if "@" in tool_id:
+                for token in root.iter("token"):
+                    token_name = token.get("name", "")
+                    if token_name and token.text:
+                        tool_id = tool_id.replace(token_name, token.text.strip())
+
+                # If unresolved macros remain, skip this file
+                if "@" in tool_id:
+                    return None
+
+            return tool_id
+        except Exception:
+            return None
+
+    def get_incremental_shed_ymls(self) -> Tuple[List[Path], bool]:
+        """Return the list of .shed.yml paths added since the last sync SHA.
+
+        Returns (shed_yml_paths, is_bootstrap) where is_bootstrap is True when
+        no SHA file existed — the caller should record the starting SHA and exit
+        without adding any tools.
+        """
+
+        def _git(args: List[str]) -> str:
+            return subprocess.check_output(
+                ["git"] + args,
+                cwd=str(self.source_repo_path),
+                text=True,
+            ).strip()
+
+        current_sha = _git(["rev-parse", "HEAD"])
+
+        # Bootstrap mode: no SHA file yet
+        if not self.last_sync_sha_file.exists():
+            if not self.dry_run:
+                self.last_sync_sha_file.write_text(current_sha + "\n")
+            print(
+                f"Bootstrap: recorded initial SHA {current_sha!r} in "
+                f"{self.last_sync_sha_file}. No tools will be added this run.",
+                file=sys.stderr,
+            )
+            return [], True
+
+        stored_sha = self.last_sync_sha_file.read_text().strip()
+        if stored_sha == current_sha:
+            print(
+                "Source repo is at the same commit as last sync — nothing to do.",
+                file=sys.stderr,
+            )
+            return [], False
+
+        print(
+            f"Incremental sync: {stored_sha[:12]}..{current_sha[:12]}",
+            file=sys.stderr,
+        )
+
+        # Build glob patterns from configured base_dirs
+        shed_yml_globs = [f"{d}/**/.shed.yml" for d in self.base_dirs]
+        xml_globs = [f"{d}/**/*.xml" for d in self.base_dirs]
+
+        # 1. Newly added .shed.yml files
+        diff_output = _git(
+            [
+                "diff",
+                "--name-only",
+                "--diff-filter=A",
+                f"{stored_sha}..{current_sha}",
+                "--",
+            ]
+            + shed_yml_globs
+        )
+        shed_ymls: Set[Path] = set()
+        for rel in diff_output.splitlines():
+            rel = rel.strip()
+            if rel:
+                shed_ymls.add(self.source_repo_path / rel)
+
+        # 2. Newly added XML files in already-existing suites (no .shed.yml change)
+        xml_diff = _git(
+            [
+                "diff",
+                "--name-only",
+                "--diff-filter=A",
+                f"{stored_sha}..{current_sha}",
+                "--",
+            ]
+            + xml_globs
+        )
+        for rel in xml_diff.splitlines():
+            rel = rel.strip()
+            if not rel:
+                continue
+            xml_abs = self.source_repo_path / rel
+            # Walk up to find the nearest .shed.yml
+            for parent in xml_abs.parents:
+                candidate = parent / ".shed.yml"
+                if candidate.exists():
+                    shed_ymls.add(candidate)
+                    break
+                # Stop searching once we leave the source repo root
+                if parent == self.source_repo_path:
+                    break
+
+        # Record new SHA (happens later in run() after successful write)
+        self._pending_new_sha = current_sha
+
+        result = sorted(shed_ymls)
+        print(
+            f"Found {len(result)} .shed.yml file(s) touched since last sync.",
+            file=sys.stderr,
+        )
+        return result, False
+
+    def scan_source_repo(
+        self, shed_yml_filter: Optional[Set[Path]] = None
+    ) -> List[Dict]:
+        """Scan the source repo for tools.
+
+        If *shed_yml_filter* is given, only those specific .shed.yml paths are
+        parsed (incremental mode). Otherwise every .shed.yml in the configured
+        base_dirs is scanned (full-scan / legacy mode).
+        """
+        discovered_tools = []
+
+        for base_dir in self.base_dirs:
+            tools_dir = self.source_repo_path / base_dir
+            if not tools_dir.exists():
+                continue
+
+            if shed_yml_filter is not None:
+                shed_ymls_to_scan = [
+                    p for p in shed_yml_filter if p.is_relative_to(tools_dir)
+                ]
+            else:
+                shed_ymls_to_scan = list(tools_dir.rglob(".shed.yml"))
+
+            for shed_yml_path in shed_ymls_to_scan:
+                # Skip deprecated tools
+                if "deprecated" in shed_yml_path.parts:
+                    continue
+
+                is_data_manager = base_dir == "data_managers"
+                tool_info = self.parse_shed_yml(shed_yml_path)
+                if tool_info:
+                    shed_yml_rel = str(shed_yml_path.relative_to(self.source_repo_path))
+                    if tool_info.get("suite"):
+                        # Handle suite tools
+                        for tool_name in tool_info["tool_names"]:
+                            discovered_tools.append(
+                                {
+                                    "name": tool_name,
+                                    "owner": tool_info["owner"],
+                                    "categories": tool_info["categories"],
+                                    "description": tool_info["description"],
+                                    "is_data_manager": is_data_manager,
+                                    "shed_yml_rel_path": shed_yml_rel,
+                                }
+                            )
+                    else:
+                        # Regular tool
+                        discovered_tools.append(
+                            {
+                                "name": tool_info["name"],
+                                "owner": tool_info["owner"],
+                                "categories": tool_info["categories"],
+                                "description": tool_info["description"],
+                                "is_data_manager": is_data_manager,
+                                "shed_yml_rel_path": shed_yml_rel,
+                            }
+                        )
+
+        return discovered_tools
+
+    def _check_toolshed_single(self, tool: Dict) -> Tuple[Dict, bool]:
+        """Check one tool against the ToolShed REST API. Returns (tool, exists).
+
+        Uses an exact name+owner repository lookup rather than a search query so
+        validation is based on repository identity.
+        """
+        name = tool["name"]
+        owner = tool["owner"]
+        try:
+            resp = requests.get(
+                self.toolshed_api,
+                params={"name": name, "owner": owner, "page_size": 1},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            hits = resp.json()
+            exists = any(
+                hit["name"].lower() == name and hit.get("owner") == owner
+                for hit in hits
+            )
+            return tool, exists
+        except Exception as e:
+            print(
+                f"  Warning: ToolShed lookup failed for '{name}': {e} — skipping",
+                file=sys.stderr,
+            )
+            return tool, False
+
+    def validate_toolshed_existence(self) -> None:
+        """Filter new_tools to only those that actually exist on the ToolShed.
+
+        Performs direct name+owner lookups via the ToolShed REST API in parallel,
+        dropping any tool that returns no results. Skipped tools are recorded in
+        self.skipped_tools.
+        """
+        total = len(self.new_tools)
+        print(
+            f"Validating {total} candidate tools against ToolShed (parallel)...",
+            file=sys.stderr,
+        )
+
+        results_map: Dict[Tuple[str, str], bool] = {}
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            futures = {
+                executor.submit(self._check_toolshed_single, t): t
+                for t in self.new_tools
+            }
+            for future in as_completed(futures):
+                tool, exists = future.result()
+                results_map[(tool["name"], tool["owner"])] = exists
+
+        valid_tools: List[Dict] = []
+        for tool in self.new_tools:  # preserve original order
+            if results_map.get((tool["name"], tool["owner"]), False):
+                valid_tools.append(tool)
+            else:
+                print(
+                    f"  Skipping '{tool['name']}' (owner: {tool['owner']}): not found on ToolShed",
+                    file=sys.stderr,
+                )
+                self.skipped_tools.append(tool)
+
+        print(
+            f"ToolShed validation: {len(valid_tools)} valid, "
+            f"{len(self.skipped_tools)} skipped.",
+            file=sys.stderr,
+        )
+        self.new_tools = valid_tools
+
+    def map_category_static(self, categories: List[str]) -> Optional[str]:
+        """Map categories using static mapping file. Returns first match."""
+        # 1. Exact explicit mapping
+        for category in categories:
+            if category in self.category_mapping:
+                return self.category_mapping[category]
+        # 2. Case-insensitive fallback (explicit mapping keys + valid_labels)
+        for category in categories:
+            lower = category.lower()
+            if lower in self.fallback_lower:
+                return self.fallback_lower[lower]
+        return None
+
+    def map_category_ai(self, tools: List[Dict]) -> Dict[str, Tuple[str, str]]:
+        """
+        Use GitHub Models API to guess best category for unmapped tools.
+
+        Returns: dict mapping tool name to (label, reason)
+        """
+        if not self.github_token:
+            print(
+                "Warning: No GitHub token available for AI category mapping",
+                file=sys.stderr,
+            )
+            return {}
+
+        if not tools:
+            return {}
+
+        # Process in batches to avoid token limit overflows
+        batch_size = 25
+        all_mappings: Dict[str, Tuple[str, str]] = {}
+        for batch_start in range(0, len(tools), batch_size):
+            batch = tools[batch_start : batch_start + batch_size]
+            batch_mappings = self._map_category_ai_batch(batch)
+            all_mappings.update(batch_mappings)
+
+        return all_mappings
+
+    def _map_category_ai_batch(self, tools: List[Dict]) -> Dict[str, Tuple[str, str]]:
+        """Send a single batch of tools to the AI API for category mapping."""
+        tools_info = [
+            {
+                "name": tool["name"],
+                "description": tool["description"],
+                "categories": tool["categories"],
+            }
+            for tool in tools
+        ]
+
+        prompt = f"""You are a Galaxy tool categorization expert. Given a list of bioinformatics tools with their metadata, assign each tool to the SINGLE MOST APPROPRIATE category from the provided list of valid panel section labels.
+
+Valid panel section labels:
+{", ".join(sorted(self.valid_labels))}
+
+Tools to categorize:
+{json.dumps(tools_info, indent=2)}
+
+For each tool, respond with a JSON array of objects with this structure:
+[
+  {{
+    "name": "tool_name",
+    "label": "chosen_label",
+    "reason": "brief explanation"
+  }},
+  ...
+]
+
+Important:
+- Choose ONLY from the valid panel section labels provided above
+- Pick the SINGLE best match for each tool
+- If uncertain, prefer more general categories like "Other Tools"
+- Base decisions on tool name, description, and ToolShed categories"""
+
+        try:
+            response = requests.post(
+                "https://models.github.ai/inference/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {self.github_token}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": "openai/gpt-4o-mini",
+                    "messages": [
+                        {
+                            "role": "system",
+                            "content": "You are a helpful assistant that categorizes bioinformatics tools. Always respond with valid JSON.",
+                        },
+                        {"role": "user", "content": prompt},
+                    ],
+                    "temperature": 0.3,
+                },
+                timeout=60,
+            )
+            response.raise_for_status()
+
+            result = response.json()
+            content = result["choices"][0]["message"]["content"]
+
+            # Parse JSON response
+            # Try to extract JSON if it's wrapped in markdown code blocks
+            if "```json" in content:
+                content = content.split("```json")[1].split("```")[0].strip()
+            elif "```" in content:
+                content = content.split("```")[1].split("```")[0].strip()
+
+            mappings_list = json.loads(content)
+
+            # Convert to dict
+            mappings: Dict[str, Tuple[str, str]] = {}
+            for item in mappings_list:
+                tool_name = item["name"]
+                label = item["label"]
+                reason = item.get("reason", "AI suggested")
+
+                # Validate label
+                if label in self.valid_labels:
+                    mappings[tool_name] = (label, reason)
+                else:
+                    print(
+                        f"Warning: AI suggested invalid label '{label}' for {tool_name}, using 'Other Tools'",
+                        file=sys.stderr,
+                    )
+                    mappings[tool_name] = (
+                        "Other Tools",
+                        f"AI suggested invalid label: {label}",
+                    )
+
+            return mappings
+
+        except Exception as e:
+            print(f"Warning: AI category mapping failed: {e}", file=sys.stderr)
+            return {}
+
+    def compute_new_tools(self, discovered_tools: List[Dict]) -> None:
+        """Compute which tools are new and need to be added."""
+        for tool in discovered_tools:
+            name = tool["name"]
+            owner = tool["owner"]
+
+            # Check if tool already exists
+            if (name, owner) in self.existing_tools:
+                continue
+
+            # Check if tool is in the skip list
+            if name in self.skip_list:
+                self.skiplist_skipped_tools.append(tool)
+                continue
+
+            shed_yml_rel_path = tool.get("shed_yml_rel_path", "")
+            # Data managers don't get a label (detected by directory or name prefix)
+            if tool.get("is_data_manager") or name.startswith("data_manager"):
+                self.new_tools.append(
+                    {
+                        "name": name,
+                        "owner": owner,
+                        "label": None,
+                        "mapping_source": "data_manager",
+                        "categories": tool["categories"],
+                        "description": tool["description"],
+                        "shed_yml_rel_path": shed_yml_rel_path,
+                    }
+                )
+            else:
+                # Try static mapping first
+                label = self.map_category_static(tool["categories"])
+                if label:
+                    self.new_tools.append(
+                        {
+                            "name": name,
+                            "owner": owner,
+                            "label": label,
+                            "mapping_source": "static",
+                            "categories": tool["categories"],
+                            "description": tool["description"],
+                            "shed_yml_rel_path": shed_yml_rel_path,
+                        }
+                    )
+                else:
+                    # Will need AI mapping
+                    self.new_tools.append(
+                        {
+                            "name": name,
+                            "owner": owner,
+                            "label": None,
+                            "mapping_source": "unmapped",
+                            "categories": tool["categories"],
+                            "description": tool["description"],
+                            "shed_yml_rel_path": shed_yml_rel_path,
+                        }
+                    )
+
+    def apply_ai_mapping(self) -> None:
+        """Apply AI mapping to unmapped tools."""
+        unmapped_tools = [
+            t for t in self.new_tools if t["mapping_source"] == "unmapped"
+        ]
+
+        if not unmapped_tools:
+            return
+
+        print(
+            f"Attempting AI mapping for {len(unmapped_tools)} unmapped tools...",
+            file=sys.stderr,
+        )
+
+        ai_mappings = self.map_category_ai(unmapped_tools)
+
+        for tool in self.new_tools:
+            if tool["mapping_source"] == "unmapped":
+                if tool["name"] in ai_mappings:
+                    label, reason = ai_mappings[tool["name"]]
+                    tool["label"] = label
+                    tool["mapping_source"] = "ai"
+                    tool["ai_reason"] = reason
+                else:
+                    # Fallback
+                    tool["label"] = "Other Tools"
+                    tool["mapping_source"] = "fallback"
+
+    def _label_to_header(self, label: Optional[str]) -> str:
+        """Convert a tool_panel_section_label to its YAML section header comment."""
+        if label is None:
+            return "# DATA MANAGERS"
+        return f"# {label.upper()}"
+
+    def _format_tool_entry(self, tool: Dict) -> List[str]:
+        """Return the list of lines that represent one tool entry in the YAML."""
+        entry_lines = [
+            f"  - name: {tool['name']}\n",
+            f"    owner: {tool['owner']}\n",
+        ]
+        if tool["label"]:
+            entry_lines.append(f"    tool_panel_section_label: {tool['label']}\n")
+        entry_lines.append("\n")
+        return entry_lines
+
+    def insert_tools_sorted(self) -> None:
+        """Insert new tools into the target yaml at the correct sorted position."""
+        if not self.new_tools:
+            return
+
+        with open(self.tools_yaml_path) as f:
+            lines = f.readlines()
+
+        # Find all section headers: lines like "# ANNOTATION", "# DATA MANAGERS", etc.
+        # Also match quoted headers like # "CONVERT FORMATS"
+        header_pat = re.compile(r'^# "?[A-Z]')
+        section_headers: List[Tuple[int, str]] = []
+        for i, line in enumerate(lines):
+            stripped = line.rstrip("\n")
+            if header_pat.match(stripped):
+                section_headers.append((i, stripped))
+
+        # Group new tools by their target section header
+        tools_by_header: Dict[str, List[Dict]] = {}
+        for tool in self.new_tools:
+            hdr = self._label_to_header(tool["label"])
+            tools_by_header.setdefault(hdr, []).append(tool)
+
+        # Separate groups targeting existing headers from those needing new headers
+        # Strip quotes from header text so "# "CONVERT FORMATS"" matches "# CONVERT FORMATS"
+        def _norm_header(h: str) -> str:
+            return h.replace('"', '').lower()
+
+        existing_hdr_lower = {_norm_header(h): (idx, h) for idx, h in section_headers}
+        existing_groups: List[Tuple[int, str, List[Dict]]] = []
+        new_header_groups: List[Tuple[str, List[Dict]]] = []
+
+        for hdr, tools in tools_by_header.items():
+            if _norm_header(hdr) in existing_hdr_lower:
+                line_idx, raw_hdr = existing_hdr_lower[_norm_header(hdr)]
+                existing_groups.append((line_idx, raw_hdr, tools))
+            else:
+                new_header_groups.append((hdr, tools))
+
+        # Process existing sections in reverse line order to avoid index shifting
+        existing_groups.sort(key=lambda x: x[0], reverse=True)
+
+        for section_line_idx, _raw_hdr, tools in existing_groups:
+            # Find this section's end (start of next section header)
+            section_end = len(lines)
+            for idx, _h in section_headers:
+                if idx > section_line_idx:
+                    section_end = idx
+                    break
+
+            # Collect all "  - name: <tool>" entries within this section
+            name_entries: List[Tuple[int, str]] = []
+            for i in range(section_line_idx + 1, section_end):
+                m = re.match(r"^  - name:\s*(\S+)", lines[i])
+                if m:
+                    name_entries.append((i, m.group(1)))
+
+            # Insert tools in reverse alphabetical order so each insertion does not
+            # shift the insertion points of the remaining (earlier) tools
+            for tool in sorted(tools, key=lambda t: t["name"], reverse=True):
+                # Find the first existing entry whose name is lexicographically greater
+                insert_at = section_end
+                for entry_idx, entry_name in name_entries:
+                    if tool["name"] < entry_name:
+                        insert_at = entry_idx
+                        break
+
+                entry_lines = self._format_tool_entry(tool)
+                lines[insert_at:insert_at] = entry_lines
+
+                shift = len(entry_lines)
+                # Update tracked name entry indices and section_end
+                name_entries = [
+                    (idx + shift if idx >= insert_at else idx, name)
+                    for idx, name in name_entries
+                ]
+                if insert_at <= section_end:
+                    section_end += shift
+
+        # Insert tools for brand-new section headers
+        if new_header_groups:
+            # Rebuild section header index from the (now-modified) lines
+            section_headers_current: List[Tuple[int, str]] = []
+            for i, line in enumerate(lines):
+                stripped = line.rstrip("\n")
+                if header_pat.match(stripped):
+                    section_headers_current.append((i, stripped))
+
+            # Process new headers in reverse alphabetical order so index shifts
+            # from later insertions don't affect earlier insertion points
+            new_header_groups.sort(key=lambda x: _norm_header(x[0]), reverse=True)
+
+            for hdr, tools in new_header_groups:
+                # Find the first existing header that sorts after this new header
+                insert_before = len(lines)
+                for idx, existing_hdr in section_headers_current:
+                    if _norm_header(hdr) < _norm_header(existing_hdr):
+                        insert_before = idx
+                        break
+
+                sorted_tools = sorted(tools, key=lambda t: t["name"])
+                insert_block: List[str] = [hdr + "\n"]
+                for tool in sorted_tools:
+                    insert_block.extend(self._format_tool_entry(tool))
+
+                lines[insert_before:insert_before] = insert_block
+
+                shift = len(insert_block)
+                section_headers_current = [
+                    (idx + shift if idx >= insert_before else idx, h)
+                    for idx, h in section_headers_current
+                ]
+                # Register the new header so subsequent iterations respect it
+                section_headers_current.append((insert_before, hdr))
+                section_headers_current.sort(key=lambda x: x[0])
+
+        if not self.dry_run:
+            with open(self.tools_yaml_path, "w") as f:
+                f.writelines(lines)
+
+            # Validate that the resulting file is still valid YAML
+            try:
+                with open(self.tools_yaml_path) as f:
+                    yaml.safe_load(f)
+            except yaml.YAMLError as e:
+                print(
+                    f"Error: YAML validation failed after writing: {e}", file=sys.stderr
+                )
+                raise
+
+    def _shed_url(self, rel_path: str) -> str:
+        return f"{self.source_repo_url}/blob/{self.source_repo_branch}/{rel_path}"
+
+    def generate_report(self) -> str:
+        """Generate markdown report for PR body."""
+        lines = ["# Tools Sync Report\n"]
+        lines.append(
+            f"\n**Source:** [{self.source_repo_url}]({self.source_repo_url})\n"
+        )
+        lines.append(f"\n**Date:** {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}\n")
+        lines.append(f"\n**Total new tools found:** {len(self.new_tools)}\n")
+
+        if not self.new_tools:
+            lines.append("\nNo new tools to add.\n")
+            return "".join(lines)
+
+        # Group by mapping source
+        static_mapped = [t for t in self.new_tools if t["mapping_source"] == "static"]
+        ai_mapped = [t for t in self.new_tools if t["mapping_source"] == "ai"]
+        data_managers = [
+            t for t in self.new_tools if t["mapping_source"] == "data_manager"
+        ]
+        fallback = [t for t in self.new_tools if t["mapping_source"] == "fallback"]
+
+        if static_mapped:
+            lines.append(f"\n## Statically Mapped Tools ({len(static_mapped)})\n")
+            lines.append(
+                "\nThese tools were automatically categorized using the static mapping file.\n"
+            )
+            lines.append("\n| Tool Name | Panel Section | ToolShed Categories |\n")
+            lines.append("|-----------|---------------|--------------------|\n")
+            for tool in sorted(static_mapped, key=lambda t: t["name"]):
+                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
+                lines.append(
+                    f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {cats} |\n"
+                )
+
+        if ai_mapped:
+            lines.append(f"\n## AI-Suggested Categories ({len(ai_mapped)})\n")
+            lines.append(
+                "\n⚠️ **These tools were categorized using AI.** Please review and adjust if needed.\n"
+            )
+            lines.append(
+                "\n| Tool Name | Suggested Panel Section | Reason | ToolShed Categories |\n"
+            )
+            lines.append(
+                "|-----------|------------------------|--------|--------------------|\n"
+            )
+            for tool in sorted(ai_mapped, key=lambda t: t["name"]):
+                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
+                reason = tool.get("ai_reason", "AI suggested")
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
+                lines.append(
+                    f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {reason} | {cats} |\n"
+                )
+
+        if data_managers:
+            lines.append(f"\n## Data Managers ({len(data_managers)})\n")
+            lines.append(
+                "\nThese are data managers and don't require a panel section label.\n"
+            )
+            lines.append("\n| Tool Name |\n")
+            lines.append("|-----------|\n")
+            for tool in sorted(data_managers, key=lambda t: t["name"]):
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
+                lines.append(f"| [`{tool['name']}`]({shed_url}) |\n")
+
+        if fallback:
+            lines.append(f"\n## Fallback Categorization ({len(fallback)})\n")
+            lines.append(
+                "\n⚠️ **These tools could not be categorized** (static mapping failed and AI unavailable). Assigned to 'Other Tools'.\n"
+            )
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
+
+            for tool in sorted(fallback, key=lambda t: t["name"]):
+                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
+
+        if self.skipped_tools:
+            lines.append(
+                f"\n## Skipped (Not on ToolShed) ({len(self.skipped_tools)})\n"
+            )
+            lines.append(
+                "\n⚠️ These tools were found in the source repository but do **not** exist on "
+                "the ToolShed yet and were **not** added.\n"
+            )
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
+            for tool in sorted(self.skipped_tools, key=lambda t: t["name"]):
+                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
+
+        if self.skiplist_skipped_tools:
+            lines.append(
+                f"\n## Skipped (Skip-list) ({len(self.skiplist_skipped_tools)})\n"
+            )
+            lines.append(
+                f"\nThese tools are permanently excluded via `{self.skip_list_path}` "
+                "and were **not** added.\n"
+            )
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
+            for tool in sorted(self.skiplist_skipped_tools, key=lambda t: t["name"]):
+                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
+                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
+
+        lines.append("\n---\n")
+        lines.append(
+            "\n🤖 This PR was automatically generated by the `sync-tools-repo` workflow.\n"
+        )
+
+        return "".join(lines)
+
+    def run(self, report_file: Optional[Path] = None) -> int:
+        """Main execution flow."""
+        self._pending_new_sha: Optional[str] = None
+        shed_yml_filter: Optional[Set[Path]] = None
+
+        # --- Incremental mode ---
+        if self.last_sync_sha_file is not None:
+            shed_paths, is_bootstrap = self.get_incremental_shed_ymls()
+            if is_bootstrap:
+                report = (
+                    "# Tools Sync Report\n\n"
+                    "**Bootstrap run:** recorded initial sync SHA. "
+                    "No tools added; subsequent runs will be incremental.\n"
+                )
+                if report_file:
+                    report_file.write_text(report)
+                    print(f"Report written to {report_file}", file=sys.stderr)
+                else:
+                    print("\n" + report)
+                return 0
+            if not shed_paths:
+                # No new .shed.yml files — nothing to do
+                report = (
+                    "# Tools Sync Report\n\n" "No new tools found since last sync.\n"
+                )
+                if report_file:
+                    report_file.write_text(report)
+                else:
+                    print("\n" + report)
+                return 0
+            shed_yml_filter = set(shed_paths)
+
+        print("Loading existing tools from all YAML files...", file=sys.stderr)
+        self.load_existing_tools()
+        print(f"Found {len(self.existing_tools)} existing tools", file=sys.stderr)
+
+        mode = "incremental" if shed_yml_filter is not None else "full"
+        print(
+            f"Scanning source repository at {self.source_repo_path} ({mode} mode)...",
+            file=sys.stderr,
+        )
+        discovered_tools = self.scan_source_repo(shed_yml_filter=shed_yml_filter)
+        print(
+            f"Discovered {len(discovered_tools)} tools in source repo", file=sys.stderr
+        )
+
+        print("Computing new tools...", file=sys.stderr)
+        self.compute_new_tools(discovered_tools)
+        print(f"Found {len(self.new_tools)} candidate new tools", file=sys.stderr)
+
+        print("Validating candidates against ToolShed...", file=sys.stderr)
+        self.validate_toolshed_existence()
+        print(f"  {len(self.new_tools)} tools confirmed on ToolShed", file=sys.stderr)
+
+        if self.new_tools:
+            print("Applying AI mapping to unmapped tools...", file=sys.stderr)
+            self.apply_ai_mapping()
+
+            if not self.dry_run:
+                print(
+                    f"Inserting new tools (sorted) into {self.tools_yaml_path}...",
+                    file=sys.stderr,
+                )
+                self.insert_tools_sorted()
+            else:
+                print(
+                    "DRY RUN: Would insert new tools into YAML (sorted)",
+                    file=sys.stderr,
+                )
+
+        # Only advance the sync pointer when this run actually adds tools.
+        # Otherwise we would generate a SHA-only PR and stop reconsidering the
+        # same source changes on later runs.
+        if self.new_tools and self._pending_new_sha and self.last_sync_sha_file is not None:
+            if not self.dry_run:
+                self.last_sync_sha_file.write_text(self._pending_new_sha + "\n")
+                print(
+                    f"Updated {self.last_sync_sha_file} to {self._pending_new_sha[:12]}",
+                    file=sys.stderr,
+                )
+            else:
+                print(
+                    f"DRY RUN: Would update {self.last_sync_sha_file} to "
+                    f"{self._pending_new_sha[:12]}",
+                    file=sys.stderr,
+                )
+
+        # Generate report
+        report = self.generate_report()
+
+        if report_file:
+            report_file.write_text(report)
+            print(f"Report written to {report_file}", file=sys.stderr)
+        else:
+            print("\n" + report)
+
+        return 0
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Sync tools from a Galaxy toolshed source repository to a target yaml file"
+    )
+    parser.add_argument(
+        "--tools-yaml",
+        type=Path,
+        required=True,
+        help="Path to target tools yaml file (e.g. tools_iuc.yaml or bgruening.yaml)",
+    )
+    parser.add_argument(
+        "--mapping-file",
+        type=Path,
+        required=True,
+        help="Path to category-mapping.yml file",
+    )
+    parser.add_argument(
+        "--source-repo-path",
+        type=Path,
+        required=True,
+        help="Path to cloned source repository",
+    )
+    parser.add_argument(
+        "--source-repo-url",
+        type=str,
+        required=True,
+        help="GitHub URL of source repository (used in report links), e.g. https://github.com/galaxyproject/tools-iuc",
+    )
+    parser.add_argument(
+        "--source-repo-branch",
+        type=str,
+        default=None,
+        help="Default branch of source repository for report links (auto-detected from origin/HEAD when omitted)",
+    )
+    parser.add_argument(
+        "--base-dirs",
+        nargs="+",
+        default=None,
+        help="Directories in source repo to scan for .shed.yml files (auto-detected when omitted)",
+    )
+    parser.add_argument(
+        "--github-token",
+        type=str,
+        help="GitHub token for API access (or set GITHUB_TOKEN env var)",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Don't modify files, just show what would be done",
+    )
+    parser.add_argument(
+        "--report-file",
+        type=Path,
+        help="Path to write markdown report",
+    )
+    parser.add_argument(
+        "--last-sync-sha-file",
+        type=Path,
+        default=None,
+        help=(
+            "Path to a file storing the last-synced commit SHA. "
+            "When provided, only tools added since that commit are "
+            "considered (incremental mode). On first run the file is created and "
+            "no tools are added (bootstrap). When omitted, the full repo is "
+            "scanned (legacy/manual mode)."
+        ),
+    )
+    parser.add_argument(
+        "--skip-list",
+        type=Path,
+        default=None,
+        help="Path to a YAML file listing tool names to permanently exclude from sync.",
+    )
+    parser.add_argument(
+        "--skip-list-key",
+        type=str,
+        default=None,
+        help="Top-level key to read from the skip-list YAML (for shared files keyed by source name).",
+    )
+    parser.add_argument(
+        "--catchup",
+        action="store_true",
+        help=(
+            "Reset the last-sync SHA to the git empty-tree hash before running, "
+            "forcing a full rescan. Existing tools are deduplicated automatically."
+        ),
+    )
+
+    args = parser.parse_args()
+
+    # Catchup mode: reset SHA to the git empty-tree hash so every
+    # .shed.yml in the source repo shows as "Added" in the incremental diff.
+    if args.catchup and args.last_sync_sha_file is not None:
+        empty_tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+        args.last_sync_sha_file.write_text(empty_tree + "\n")
+        print(
+            f"Catchup mode: reset last-sync SHA to {empty_tree}",
+            file=sys.stderr,
+        )
+
+    # Get GitHub token from arg or env
+    github_token = args.github_token or os.environ.get("GITHUB_TOKEN")
+
+    syncer = ToolsRepoSyncer(
+        tools_yaml_path=args.tools_yaml,
+        mapping_file_path=args.mapping_file,
+        source_repo_path=args.source_repo_path,
+        source_repo_url=args.source_repo_url,
+        source_repo_branch=args.source_repo_branch,
+        base_dirs=args.base_dirs,
+        github_token=github_token,
+        dry_run=args.dry_run,
+        last_sync_sha_file=args.last_sync_sha_file,
+        skip_list_path=args.skip_list,
+        skip_list_key=args.skip_list_key,
+    )
+
+    return syncer.run(report_file=args.report_file)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

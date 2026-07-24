@@ -1,5 +1,5 @@
-install_repository_dependencies: true
-install_resolver_dependencies: true
+install_repository_dependencies: false
+install_resolver_dependencies: false
 install_tool_dependencies: false
 tools:
 - name: checkv_build_database
@@ -19,6 +19,8 @@ tools:
   revisions:
   - 26f5822743aa
   - 955e33326e20
+  - b405bd1eff93
+  - e8c8dfc6a809
   - edb671f0661e
   tool_panel_section_label: Metagenomic Analysis
 - name: genomad_build_database
@@ -58,22 +60,24 @@ tools:
 - name: omero_filter
   owner: ufz
   revisions:
-  - 9d04b28b8dc8
+  - 006d3a69c365
+  - 21e1765c5f19
+  - 558c09a342cb
   - a70140649a13
-  - f79a1bf2f386
   - f86ba5328466
   tool_panel_section_label: Imaging
 - name: omero_get_id
   owner: ufz
   revisions:
-  - 2cf36947bcb6
   - 426415e73f46
-  - c7b2650718fe
+  - 518221701b10
+  - 7e7fc68b169a
   tool_panel_section_label: Imaging
 - name: omero_get_value
   owner: ufz
   revisions:
-  - 7a94eb8c345d
+  - 89fc1f215e77
+  - afc11b6940e2
   - ecb13e93fae2
   - f5c4f523432d
   tool_panel_section_label: Imaging
@@ -82,24 +86,54 @@ tools:
   revisions:
   - 55bbea0cdc60
   - 724dcbb35c9a
+  - 9e5eb2e6c614
   tool_panel_section_label: Statistics
 - name: xlsx2tsv
   owner: ufz
   revisions:
+  - 27bc52511ebe
   - a21347be425d
   tool_panel_section_label: Text Manipulation
 - name: iphop_predict
   owner: ufz
   revisions:
+  - be0d13020aec
   - d357350b6da0
   tool_panel_section_label: Metagenomic Analysis
 - name: iphop_build_database
   owner: ufz
   revisions:
   - 39dc692a9554
+  - 4cc25c2b1d0b
   tool_panel_section_label: Data Managers
 - name: phi_toolkit_report
   owner: ufz
   revisions:
   - 3a7f73d638ba
+  - 8065e0028a60
   tool_panel_section_label: Metagenomic Analysis
+- name: omero_import
+  owner: ufz
+  revisions:
+  - 75c2257023e8
+  - a62f0b725508
+  tool_panel_section_label: Imaging
+- name: omero_metadata_import
+  owner: ufz
+  revisions:
+  - 6a13fe2fa921
+  - b70f6440513c
+  - eb967ee0ae4f
+  tool_panel_section_label: Imaging
+- name: omero_roi_import
+  owner: ufz
+  revisions:
+  - 8da603b949c1
+  - fb20acd19613
+  tool_panel_section_label: Imaging
+- name: omero_dataset_to_plate
+  owner: ufz
+  revisions:
+  - b5fa5c86de56
+  - fa0d96599c31
+  tool_panel_section_label: Imaging

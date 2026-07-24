@@ -255,9 +255,6 @@ tools:
   - name: basecoverage
     owner: devteam
     tool_panel_section_label: Operate on Genomic Intervals
-  - name: annotation_profiler
-    owner: devteam
-    tool_panel_section_label: Operate on Genomic Intervals
   - name: numeric_clustering
     owner: bgruening
     tool_panel_section_label: Statistics
@@ -849,6 +846,9 @@ tools:
     tool_panel_section_label: Phenotype Association
   - name: ctd_batch
     owner: devteam
+    tool_panel_section_label: Phenotype Association
+  - name: gwas_quality_control_plink
+    owner: rayane_elm
     tool_panel_section_label: Phenotype Association
   - name: goseq
     owner: iuc
