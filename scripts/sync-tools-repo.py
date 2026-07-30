@@ -164,6 +164,16 @@ class ToolsRepoSyncer:
             if not owner:
                 return None
 
+            # Skip suite-definition metapackages: a top-level type ==
+            # 'repository_suite_definition' ships only a repository_dependencies.xml
+            # referencing other repos and installs nothing itself (those tools sync
+            # from their own .shed.yml). Check the top-level 'type', NOT a sibling
+            # repository_dependencies.xml — real tools (e.g. bgruening tools/openms)
+            # also carry one for extra deps, and a nested 'suite:' block can itself
+            # be a suite definition; neither makes the repo a metapackage.
+            if data.get("type") == "repository_suite_definition":
+                return None
+
             # Handle auto_tool_repositories (suite tools like bcftools).
             # These .shed.yml files often have no top-level 'name' field, so we
             # must check for auto_tool_repositories BEFORE the 'if not name' guard.
