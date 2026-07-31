@@ -75,13 +75,6 @@ tools:
   - de0d85537ee3
   - ec9aebabc1d2
   tool_panel_section_label: Metabolomics
-- name: camera_annotate
-  owner: lecorguille
-  revisions:
-  - 1c30ff90f3ae
-  - 73d82de36369
-  - 75a1b3f7bacc
-  tool_panel_section_label: Metabolomics
 - name: xcms_summary
   owner: lecorguille
   revisions:
@@ -90,6 +83,33 @@ tools:
   - 444e3ed135e3
   - a5347d57899f
   - acc0a4a366c1
+  tool_panel_section_label: Metabolomics
+- name: camera_groupfwhm
+  owner: workflow4metabolomics
+  revisions:
+  - 62105fc70b8b
+  tool_panel_section_label: Metabolomics
+- name: camera_groupcorr
+  owner: workflow4metabolomics
+  revisions:
+  - d80037e14533
+  tool_panel_section_label: Metabolomics
+- name: camera_findisotopes
+  owner: workflow4metabolomics
+  revisions:
+  - b619d6825957
+  tool_panel_section_label: Metabolomics
+- name: camera_findadducts
+  owner: workflow4metabolomics
+  revisions:
+  - 6044248f4c1f
+  tool_panel_section_label: Metabolomics
+- name: camera_annotate
+  owner: lecorguille
+  revisions:
+  - 1c30ff90f3ae
+  - 73d82de36369
+  - 75a1b3f7bacc
   tool_panel_section_label: Metabolomics
 - name: camera_combinexsannos
   owner: mmonsoor
