@@ -51,7 +51,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      models: read  # required by sync-tools-repo.py's models.github.ai category call
     strategy:
       fail-fast: false
       matrix:
