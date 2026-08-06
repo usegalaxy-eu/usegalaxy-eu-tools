@@ -41,7 +41,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-      models: read  # required by sync-tools-repo.py's models.github.ai category call
     strategy:
       fail-fast: false
       matrix:

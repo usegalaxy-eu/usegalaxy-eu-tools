@@ -69,6 +69,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: biotradis
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: busco
     owner: iuc
     tool_panel_section_label: Annotation
@@ -2715,6 +2719,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Mapping
 
+  - name: fgbio_findswitchbackreads
+    owner: iuc
+    tool_panel_section_label: Mapping
+
   - name: hisat2
     owner: iuc
     tool_panel_section_label: Mapping
@@ -2756,6 +2764,10 @@ tools:
     tool_panel_section_label: Mapping
 
   - name: rna_starsolo
+    owner: iuc
+    tool_panel_section_label: Mapping
+
+  - name: samtools_cram_to_bam
     owner: iuc
     tool_panel_section_label: Mapping
 
@@ -5280,6 +5292,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: foldtree
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: hybpiper
     owner: iuc
     tool_panel_section_label: Phylogenetics
@@ -6662,6 +6678,10 @@ tools:
 
   - name: column_maker
     owner: devteam
+    tool_panel_section_label: Text Manipulation
+
+  - name: add_input_name_as_column
+    owner: mvdbeek
     tool_panel_section_label: Text Manipulation
 
   - name: column_order_header_sort

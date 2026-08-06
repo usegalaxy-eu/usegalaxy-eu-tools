@@ -41,11 +41,27 @@ tools:
     owner: lecorguille
     tool_panel_section_label: Metabolomics
 
-  - name: camera_annotate
+  - name: xcms_summary
     owner: lecorguille
     tool_panel_section_label: Metabolomics
-
-  - name: xcms_summary
+    
+  - name: camera_groupfwhm
+    owner: workflow4metabolomics
+    tool_panel_section_label: Metabolomics
+    
+  - name: camera_groupcorr
+    owner: workflow4metabolomics
+    tool_panel_section_label: Metabolomics
+    
+  - name: camera_findisotopes
+    owner: workflow4metabolomics
+    tool_panel_section_label: Metabolomics
+    
+  - name: camera_findadducts
+    owner: workflow4metabolomics
+    tool_panel_section_label: Metabolomics
+  
+  - name: camera_annotate
     owner: lecorguille
     tool_panel_section_label: Metabolomics
 

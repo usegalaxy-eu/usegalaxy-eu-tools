@@ -8,7 +8,6 @@ category mappings.
 """
 
 import argparse
-import json
 import os
 import re
 import subprocess
@@ -162,6 +161,16 @@ class ToolsRepoSyncer:
             description = data.get("description") or ""
 
             if not owner:
+                return None
+
+            # Skip suite-definition metapackages: a top-level type ==
+            # 'repository_suite_definition' ships only a repository_dependencies.xml
+            # referencing other repos and installs nothing itself (those tools sync
+            # from their own .shed.yml). Check the top-level 'type', NOT a sibling
+            # repository_dependencies.xml — real tools (e.g. bgruening tools/openms)
+            # also carry one for extra deps, and a nested 'suite:' block can itself
+            # be a suite definition; neither makes the repo a metapackage.
+            if data.get("type") == "repository_suite_definition":
                 return None
 
             # Handle auto_tool_repositories (suite tools like bcftools).
@@ -487,127 +496,6 @@ class ToolsRepoSyncer:
                 return self.fallback_lower[lower]
         return None
 
-    def map_category_ai(self, tools: List[Dict]) -> Dict[str, Tuple[str, str]]:
-        """
-        Use GitHub Models API to guess best category for unmapped tools.
-
-        Returns: dict mapping tool name to (label, reason)
-        """
-        if not self.github_token:
-            print(
-                "Warning: No GitHub token available for AI category mapping",
-                file=sys.stderr,
-            )
-            return {}
-
-        if not tools:
-            return {}
-
-        # Process in batches to avoid token limit overflows
-        batch_size = 25
-        all_mappings: Dict[str, Tuple[str, str]] = {}
-        for batch_start in range(0, len(tools), batch_size):
-            batch = tools[batch_start : batch_start + batch_size]
-            batch_mappings = self._map_category_ai_batch(batch)
-            all_mappings.update(batch_mappings)
-
-        return all_mappings
-
-    def _map_category_ai_batch(self, tools: List[Dict]) -> Dict[str, Tuple[str, str]]:
-        """Send a single batch of tools to the AI API for category mapping."""
-        tools_info = [
-            {
-                "name": tool["name"],
-                "description": tool["description"],
-                "categories": tool["categories"],
-            }
-            for tool in tools
-        ]
-
-        prompt = f"""You are a Galaxy tool categorization expert. Given a list of bioinformatics tools with their metadata, assign each tool to the SINGLE MOST APPROPRIATE category from the provided list of valid panel section labels.
-
-Valid panel section labels:
-{", ".join(sorted(self.valid_labels))}
-
-Tools to categorize:
-{json.dumps(tools_info, indent=2)}
-
-For each tool, respond with a JSON array of objects with this structure:
-[
-  {{
-    "name": "tool_name",
-    "label": "chosen_label",
-    "reason": "brief explanation"
-  }},
-  ...
-]
-
-Important:
-- Choose ONLY from the valid panel section labels provided above
-- Pick the SINGLE best match for each tool
-- If uncertain, prefer more general categories like "Other Tools"
-- Base decisions on tool name, description, and ToolShed categories"""
-
-        try:
-            response = requests.post(
-                "https://models.github.ai/inference/chat/completions",
-                headers={
-                    "Authorization": f"Bearer {self.github_token}",
-                    "Content-Type": "application/json",
-                },
-                json={
-                    "model": "openai/gpt-4o-mini",
-                    "messages": [
-                        {
-                            "role": "system",
-                            "content": "You are a helpful assistant that categorizes bioinformatics tools. Always respond with valid JSON.",
-                        },
-                        {"role": "user", "content": prompt},
-                    ],
-                    "temperature": 0.3,
-                },
-                timeout=60,
-            )
-            response.raise_for_status()
-
-            result = response.json()
-            content = result["choices"][0]["message"]["content"]
-
-            # Parse JSON response
-            # Try to extract JSON if it's wrapped in markdown code blocks
-            if "```json" in content:
-                content = content.split("```json")[1].split("```")[0].strip()
-            elif "```" in content:
-                content = content.split("```")[1].split("```")[0].strip()
-
-            mappings_list = json.loads(content)
-
-            # Convert to dict
-            mappings: Dict[str, Tuple[str, str]] = {}
-            for item in mappings_list:
-                tool_name = item["name"]
-                label = item["label"]
-                reason = item.get("reason", "AI suggested")
-
-                # Validate label
-                if label in self.valid_labels:
-                    mappings[tool_name] = (label, reason)
-                else:
-                    print(
-                        f"Warning: AI suggested invalid label '{label}' for {tool_name}, using 'Other Tools'",
-                        file=sys.stderr,
-                    )
-                    mappings[tool_name] = (
-                        "Other Tools",
-                        f"AI suggested invalid label: {label}",
-                    )
-
-            return mappings
-
-        except Exception as e:
-            print(f"Warning: AI category mapping failed: {e}", file=sys.stderr)
-            return {}
-
     def compute_new_tools(self, discovered_tools: List[Dict]) -> None:
         """Compute which tools are new and need to be added."""
         for tool in discovered_tools:
@@ -653,46 +541,19 @@ Important:
                         }
                     )
                 else:
-                    # Will need AI mapping
+                    # No static mapping match: leave it for a human to categorize during
+                    # PR review. Default to "Other Tools" so the YAML stays valid.
                     self.new_tools.append(
                         {
                             "name": name,
                             "owner": owner,
-                            "label": None,
+                            "label": "Other Tools",
                             "mapping_source": "unmapped",
                             "categories": tool["categories"],
                             "description": tool["description"],
                             "shed_yml_rel_path": shed_yml_rel_path,
                         }
                     )
-
-    def apply_ai_mapping(self) -> None:
-        """Apply AI mapping to unmapped tools."""
-        unmapped_tools = [
-            t for t in self.new_tools if t["mapping_source"] == "unmapped"
-        ]
-
-        if not unmapped_tools:
-            return
-
-        print(
-            f"Attempting AI mapping for {len(unmapped_tools)} unmapped tools...",
-            file=sys.stderr,
-        )
-
-        ai_mappings = self.map_category_ai(unmapped_tools)
-
-        for tool in self.new_tools:
-            if tool["mapping_source"] == "unmapped":
-                if tool["name"] in ai_mappings:
-                    label, reason = ai_mappings[tool["name"]]
-                    tool["label"] = label
-                    tool["mapping_source"] = "ai"
-                    tool["ai_reason"] = reason
-                else:
-                    # Fallback
-                    tool["label"] = "Other Tools"
-                    tool["mapping_source"] = "fallback"
 
     def _label_to_header(self, label: Optional[str]) -> str:
         """Convert a tool_panel_section_label to its YAML section header comment."""
@@ -859,11 +720,10 @@ Important:
 
         # Group by mapping source
         static_mapped = [t for t in self.new_tools if t["mapping_source"] == "static"]
-        ai_mapped = [t for t in self.new_tools if t["mapping_source"] == "ai"]
+        unmapped = [t for t in self.new_tools if t["mapping_source"] == "unmapped"]
         data_managers = [
             t for t in self.new_tools if t["mapping_source"] == "data_manager"
         ]
-        fallback = [t for t in self.new_tools if t["mapping_source"] == "fallback"]
 
         if static_mapped:
             lines.append(f"\n## Statically Mapped Tools ({len(static_mapped)})\n")
@@ -879,24 +739,19 @@ Important:
                     f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {cats} |\n"
                 )
 
-        if ai_mapped:
-            lines.append(f"\n## AI-Suggested Categories ({len(ai_mapped)})\n")
+        if unmapped:
+            lines.append(f"\n## Needs Review — Uncategorized ({len(unmapped)})\n")
             lines.append(
-                "\n⚠️ **These tools were categorized using AI.** Please review and adjust if needed.\n"
+                "\n⚠️ **These tools had no static category mapping.** They were placed in "
+                "'Other Tools' by default — please review and assign the correct panel "
+                "section during this PR.\n"
             )
-            lines.append(
-                "\n| Tool Name | Suggested Panel Section | Reason | ToolShed Categories |\n"
-            )
-            lines.append(
-                "|-----------|------------------------|--------|--------------------|\n"
-            )
-            for tool in sorted(ai_mapped, key=lambda t: t["name"]):
+            lines.append("\n| Tool Name | ToolShed Categories |\n")
+            lines.append("|-----------|--------------------|\n")
+            for tool in sorted(unmapped, key=lambda t: t["name"]):
                 cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                reason = tool.get("ai_reason", "AI suggested")
                 shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
-                lines.append(
-                    f"| [`{tool['name']}`]({shed_url}) | {tool['label']} | {reason} | {cats} |\n"
-                )
+                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         if data_managers:
             lines.append(f"\n## Data Managers ({len(data_managers)})\n")
@@ -908,19 +763,6 @@ Important:
             for tool in sorted(data_managers, key=lambda t: t["name"]):
                 shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
                 lines.append(f"| [`{tool['name']}`]({shed_url}) |\n")
-
-        if fallback:
-            lines.append(f"\n## Fallback Categorization ({len(fallback)})\n")
-            lines.append(
-                "\n⚠️ **These tools could not be categorized** (static mapping failed and AI unavailable). Assigned to 'Other Tools'.\n"
-            )
-            lines.append("\n| Tool Name | ToolShed Categories |\n")
-            lines.append("|-----------|--------------------|\n")
-
-            for tool in sorted(fallback, key=lambda t: t["name"]):
-                cats = ", ".join(tool["categories"]) if tool["categories"] else "None"
-                shed_url = self._shed_url(tool.get("shed_yml_rel_path", ""))
-                lines.append(f"| [`{tool['name']}`]({shed_url}) | {cats} |\n")
 
         if self.skipped_tools:
             lines.append(
@@ -1014,9 +856,6 @@ Important:
         print(f"  {len(self.new_tools)} tools confirmed on ToolShed", file=sys.stderr)
 
         if self.new_tools:
-            print("Applying AI mapping to unmapped tools...", file=sys.stderr)
-            self.apply_ai_mapping()
-
             if not self.dry_run:
                 print(
                     f"Inserting new tools (sorted) into {self.tools_yaml_path}...",
