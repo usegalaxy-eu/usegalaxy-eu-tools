@@ -93,6 +93,20 @@ tools:
   - 95fb5712344f
   - bf5121c5c2be
   tool_panel_section_label: Convert Formats
+- name: mirge3_build_database
+  owner: bgruening
+  revisions:
+  - f27ca8442e03
+- name: mirge3
+  owner: bgruening
+  revisions:
+  - 3804460f5ba8
+  tool_panel_section_label: RNA Analysis
+- name: tdrmapper
+  owner: bgruening
+  revisions:
+  - 8dd4a71b532b
+  tool_panel_section_label: RNA Analysis
 - name: sambamba_flagstat
   owner: bgruening
   revisions:
@@ -237,6 +251,7 @@ tools:
   - 53dd00a4ab68
   - 54a68f38cf3f
   - 7d9ee8cd14b8
+  - 81bc4c8bcf10
   - 840822c1e84a
   tool_panel_section_label: Assembly
 - name: canu
@@ -1135,6 +1150,7 @@ tools:
   - 1aba57a5a716
   - 28e902e3d8d6
   - 36d65981163b
+  - 3834a8fbfaf2
   - 3e756119100d
   - 4d4abba5404b
   - 6768109c845f
@@ -1429,6 +1445,11 @@ tools:
   revisions:
   - 178b22349b79
   tool_panel_section_label: Statistics
+- name: coxph
+  owner: bgruening
+  revisions:
+  - f91f1e05c295
+  tool_panel_section_label: Statistics
 - name: create_tool_recommendation_model
   owner: bgruening
   revisions:
@@ -1459,6 +1480,11 @@ tools:
   - d0ed8e976b79
   - ecd247e1ea9c
   - f49aad8f79ea
+  tool_panel_section_label: Statistics
+- name: survminer
+  owner: bgruening
+  revisions:
+  - f5b862f2ad87
   tool_panel_section_label: Statistics
 - name: add_line_to_file
   owner: bgruening

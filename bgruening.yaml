@@ -54,6 +54,19 @@ tools:
     owner: bgruening
     tool_panel_section_label: Convert Formats
 
+# DATA MANAGERS
+  - name: mirge3_build_database
+    owner: bgruening
+
+# RNA ANALYSIS
+  - name: mirge3
+    owner: bgruening
+    tool_panel_section_label: RNA Analysis
+
+  - name: tdrmapper
+    owner: bgruening
+    tool_panel_section_label: RNA Analysis
+
 # SAM/BAM
 
   - name: sambamba_flagstat
@@ -746,6 +759,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Statistics
 
+  - name: coxph
+    owner: bgruening
+    tool_panel_section_label: Statistics
+
   - name: create_tool_recommendation_model
     owner: bgruening
     tool_panel_section_label: Statistics
@@ -758,6 +775,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: Statistics
 
+
+  - name: survminer
+    owner: bgruening
+    tool_panel_section_label: Statistics
 
 # TEXT MANIPULATION
 
