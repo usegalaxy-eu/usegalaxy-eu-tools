@@ -1937,7 +1937,6 @@ tools:
 - name: pretext_graph
   owner: iuc
   revisions:
-  - 8e422c873d02
   - 936a1edffce8
   - 9491362ac1cd
   - eca7d3a0c5f2
@@ -1949,7 +1948,6 @@ tools:
   - 056f86469460
   - 0d0e8d0691c8
   - 2b16ba799da9
-  - 7087d9a23185
   - 7c2e9bc2123b
   - 8fef980d48b5
   - 9c942221e135
@@ -2967,6 +2965,7 @@ tools:
   - 24d024316465
   - 6bbd30d58cf4
   - 70acec670c30
+  - '856173762903'
   - b8476e82ac20
   - c1d53e95327f
   - d1c340a5664b
@@ -3287,6 +3286,7 @@ tools:
   - 23f75f8716cf
   - 8d31d5da8662
   - e047516c73de
+  - e10002e5a05f
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_combiner
   owner: devteam
@@ -5721,31 +5721,37 @@ tools:
 - name: deacon_index_union
   owner: iuc
   revisions:
+  - 751e66a440e2
   - 957ff5f8fb9f
   tool_panel_section_label: Metagenomic Analysis
 - name: deacon_index_intersect
   owner: iuc
   revisions:
   - 303f087a3f20
+  - fbd2211095f1
   tool_panel_section_label: Metagenomic Analysis
 - name: deacon_index_dump
   owner: iuc
   revisions:
   - befd677905fb
+  - ef349122982b
   tool_panel_section_label: Metagenomic Analysis
 - name: deacon_index_diff
   owner: iuc
   revisions:
   - 85a41b9e939a
+  - aeb576ea66e0
   tool_panel_section_label: Metagenomic Analysis
 - name: deacon_index_build
   owner: iuc
   revisions:
+  - 114786248f35
   - f1de38c688b7
   tool_panel_section_label: Metagenomic Analysis
 - name: deacon_filter
   owner: iuc
   revisions:
+  - 74bbcd73dda7
   - 9b7d2774e192
   tool_panel_section_label: Metagenomic Analysis
 - name: halla
@@ -7917,6 +7923,7 @@ tools:
   - 1a3f4c16c665
   - 40066bb1d9ed
   - 6240e5015f93
+  - b6fa25b6b436
   tool_panel_section_label: Metagenomic Analysis
 - name: mags_visualization_comp_conta
   owner: iuc
@@ -11946,11 +11953,13 @@ tools:
   owner: iuc
   revisions:
   - 3c64b37542b6
+  - 98db5209c61f
   tool_panel_section_label: RNA Analysis
 - name: wgcna_network
   owner: iuc
   revisions:
   - 3df546341aab
+  - 67f7e4e2313f
   tool_panel_section_label: RNA Analysis
 - name: categorize_elements_satisfying_criteria
   owner: devteam
@@ -14670,6 +14679,11 @@ tools:
   revisions:
   - 28b9809c4002
   tool_panel_section_label: Variant Calling
+- name: transvar
+  owner: iuc
+  revisions:
+  - ad69cd15387e
+  tool_panel_section_label: Variant Calling
 - name: ucsc_fatovcf
   owner: iuc
   revisions:
@@ -14683,6 +14697,7 @@ tools:
   revisions:
   - 2975b29bcaa1
   - 5f756651a1bc
+  - 940aff37ee4e
   - d262577e04b0
   - e0734e88a104
   tool_panel_section_label: Variant Calling
@@ -15014,6 +15029,7 @@ tools:
 - name: freyja_aggregate_plot
   owner: iuc
   revisions:
+  - 0035ac597fa7
   - 0ceb9fb0f4ce
   - 1f89eeba299a
   - 3d9253661554
@@ -15025,6 +15041,7 @@ tools:
 - name: freyja_boot
   owner: iuc
   revisions:
+  - 0830f7a1377e
   - 16331f8cff98
   - 2d1bfff73837
   - 95e88f407e86
@@ -15036,6 +15053,7 @@ tools:
 - name: freyja_demix
   owner: iuc
   revisions:
+  - 1980b199b14a
   - 53b22b7dff19
   - 945b31d82638
   - c0a0e79d7196
@@ -15052,6 +15070,7 @@ tools:
   - 11c062caec10
   - 1f467ed22412
   - 5b9314d73110
+  - a57b20e33cff
   - d17f930148a5
   - eccec0876e54
   tool_panel_section_label: Virology
@@ -15434,6 +15453,10 @@ tools:
   revisions:
   - 676915c44e1e
   - d584aacd7d13
+- name: data_manager_transvar_annotations
+  owner: iuc
+  revisions:
+  - f4e49f7639f9
 - name: data_manager_twobit_builder
   owner: devteam
   revisions:
@@ -15500,6 +15523,7 @@ tools:
 - name: deacon_build_database
   owner: iuc
   revisions:
+  - 03faec8a1c3e
   - 3237d8ed37ce
 - name: deeptools_alignmentsieve
   owner: bgruening
