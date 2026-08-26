@@ -340,15 +340,19 @@ jobs:
             echo "Synced from \`galaxyproject/tools-iuc\` and \`bgruening/galaxytools\`."
             echo ""
             if [ "$new_tools" -gt 0 ] && ls sync-report-*.md >/dev/null 2>&1; then
+              # New tools are the part reviewers actually read, so they are inlined
+              # rather than collapsed. The per-report H1 and the workflow footer are
+              # dropped and the report's own H2s demoted, so each report nests cleanly
+              # under this section instead of restarting the heading hierarchy.
               for f in sync-report-*.md; do
                 name="${f#sync-report-}"
                 name="${name%.md}"
-                echo "<details>"
-                echo "<summary>Sync report: ${name}</summary>"
-                echo ""
-                cat "$f"
-                echo ""
-                echo "</details>"
+                echo "### Sync report: ${name}"
+                # No blank line here: dropping the report's H1 leaves one in its place.
+                sed -e '/^# Tools Sync Report$/d' \
+                    -e 's/^## /#### /' \
+                    -e '/^---$/d' \
+                    -e '/^🤖 This PR was automatically generated/d' "$f"
                 echo ""
               done
             else
@@ -370,6 +374,11 @@ jobs:
             echo "These revisions are no longer installable from the ToolShed and were dropped from the lockfiles (recorded in \`not-installable-revisions/\`)."
             echo ""
             if [ "$removed_revs" -gt 0 ] && ls not-installable-revisions/*.not-installable-revisions.yaml >/dev/null 2>&1; then
+              # This table can run to dozens of rows and is rarely acted on, so it is
+              # collapsed by default to keep the new tools above it visible.
+              echo "<details>"
+              echo "<summary>Show ${removed_revs} removed $(plural "$removed_revs" revision)</summary>"
+              echo ""
               echo "| Tool | Owner | Removed revision(s) |"
               echo "| :--- | :--- | :--- |"
               # Revisions added to the append-only not-installable files this run are the
@@ -389,6 +398,8 @@ jobs:
                   print "| `" name "` | `" owner "` | `" rev "` |"
                 }
               '
+              echo ""
+              echo "</details>"
             else
               echo "_None this run._"
             fi

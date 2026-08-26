@@ -37,6 +37,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: bam_readcount
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: bicodon_counts_from_fasta
     owner: iuc
     tool_panel_section_label: Annotation
@@ -230,6 +234,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: filt3r
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: find_nested_alt_orfs
     owner: iuc
     tool_panel_section_label: Annotation
@@ -327,6 +335,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: mmseqs2_easy_cluster
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: oatk
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -1225,6 +1237,75 @@ tools:
   - name: bedops_sortbed
     owner: iuc
     tool_panel_section_label: BED
+
+# CHEMICALTOOLBOX
+  - name: enzywizard_aaprops
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_batch
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_clean
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_conservation
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_disorder
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_dock
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_embedding
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_energy
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_flexibility
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_hydrocluster
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_integrate
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_interaction
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_mut_batch
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_mut_clean
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_mut_integrate
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_pocket
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
+  - name: enzywizard_substrate
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
 
 # COLLECTION OPERATIONS
 
@@ -2803,6 +2884,30 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: dada2_mergesequencetables
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: deacon_index_union
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: deacon_index_intersect
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: deacon_index_dump
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: deacon_index_diff
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: deacon_index_build
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: deacon_filter
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -5493,6 +5598,10 @@ tools:
 
 # PROTEOMICS
 
+  - name: 3dbeacons_api
+    owner: iuc
+    tool_panel_section_label: Proteomics
+
   - name: colabfold_msa
     owner: iuc
     tool_panel_section_label: Proteomics
@@ -7383,6 +7492,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: transvar
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: ucsc_fatovcf
     owner: iuc
     tool_panel_section_label: Variant Calling
@@ -7799,6 +7912,9 @@ tools:
   - name: data_manager_semibin
     owner: iuc
 
+  - name: data_manager_transvar_annotations
+    owner: iuc
+
   - name: data_manager_twobit_builder
     owner: devteam
 
@@ -7837,6 +7953,9 @@ tools:
     owner: iuc
 
   - name: data_manager_vsnp_dnaprints
+    owner: iuc
+
+  - name: deacon_build_database
     owner: iuc
 
 # DEEPTOOLS
