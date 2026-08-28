@@ -322,10 +322,13 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           # --- counts from the diff ---
+          # `grep -c` exits 1 on zero matches, which under `set -e -o pipefail`
+          # would abort the step. `|| true` keeps the count (grep -c still
+          # prints "0") without failing the pipeline.
           new_tools=$(grep -h "Total new tools found:" sync-report-*.md 2>/dev/null \
-            | grep -oE '[0-9]+' | awk '{s+=$1} END{print s+0}')
-          added_revs=$(git diff -- '*.yaml.lock' | grep -cE '^\+\s+- [0-9a-f]{12}$')
-          removed_revs=$(git diff -- 'not-installable-revisions/*.yaml' | grep -cE '^\+\s+- [0-9a-f]{12}$')
+            | grep -oE '[0-9]+' | awk '{s+=$1} END{print s+0}' || true)
+          added_revs=$(git diff -- '*.yaml.lock' | grep -cE '^\+\s+- [0-9a-f]{12}$' || true)
+          removed_revs=$(git diff -- 'not-installable-revisions/*.yaml' | grep -cE '^\+\s+- [0-9a-f]{12}$' || true)
           plural() { [ "$1" -eq 1 ] && echo "$2" || echo "$2s"; }
 
           {
