@@ -81,6 +81,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: clinker
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: clipkit
     owner: iuc
     tool_panel_section_label: Annotation
@@ -339,6 +343,10 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: oatk
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: pling
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -2830,6 +2838,10 @@ tools:
 
   - name: megablast_xml_parser
     owner: devteam
+    tool_panel_section_label: Mapping
+
+  - name: minibwa
+    owner: iuc
     tool_panel_section_label: Mapping
 
   - name: minimap2
@@ -5773,6 +5785,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: cpc2
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: crosscontamination_barcode_filter
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -5897,6 +5913,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: proseg
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: psiclass
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -5910,6 +5930,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: recount3
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: rectanglepy
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -6415,6 +6439,10 @@ tools:
 # SINGLE-CELL
 
   - name: cosg
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: lemur
     owner: iuc
     tool_panel_section_label: Single-cell
 
@@ -7868,6 +7896,9 @@ tools:
     owner: iuc
 
   - name: data_manager_metaphlan_database_downloader
+    owner: iuc
+
+  - name: data_manager_minibwa_index_builder
     owner: iuc
 
   - name: data_manager_ncbi_taxonomy_sqlite
