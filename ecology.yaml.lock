@@ -488,6 +488,11 @@ tools:
   revisions:
   - a9b8e70922a9
   tool_panel_section_label: Climate Analysis
+- name: pyproj_coordinate_transform
+  owner: ecology
+  revisions:
+  - aa71b062757d
+  tool_panel_section_label: Climate Analysis
 - name: venn_list
   owner: peterjc
   revisions:
@@ -939,6 +944,7 @@ tools:
   - 3eb53ac7fb0e
   - 55d01781ffea
   - 9dd2441ce41a
+  - e611dc95b010
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_pcr
   owner: iuc
@@ -946,11 +952,13 @@ tools:
   - 17bd2c9f1671
   - 90e648faaec1
   - a72c4cc8a704
+  - c16c8723bb6f
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_refidx
   owner: iuc
   revisions:
   - 189cdb4ff7c2
+  - 45515ec23f5a
   - 61f9122bb420
   - d20729134e3c
   tool_panel_section_label: DNA Metabarcoding
@@ -959,6 +967,7 @@ tools:
   revisions:
   - 783ecd0c80fe
   - a733ced76ef5
+  - f0bf05f2cdf1
   - fa01b4b07289
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_taxonomy
@@ -967,12 +976,14 @@ tools:
   - 2073dc7c0c0c
   - 45d9811d5b74
   - 9eb7ba86e367
+  - eb9f65fbc4a8
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_pairing
   owner: iuc
   revisions:
   - 3dcc3f33da39
   - 78598ed1b8a8
+  - '853918949805'
   - 9f6d6048be2c
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_illumina_pairend
@@ -985,6 +996,7 @@ tools:
 - name: obi_multiplex
   owner: iuc
   revisions:
+  - 176b5fc1b69a
   - 569eacd3be7b
   - a0169bbe7c7f
   - c575c8dba2ab
@@ -1003,6 +1015,7 @@ tools:
   - 3ac96c352a3d
   - 4da9a24971bd
   - 6c19e0d33cf6
+  - 7db941c925ce
   - aff454cfd79e
   - d50dc96e3ce9
   tool_panel_section_label: DNA Metabarcoding
@@ -1010,6 +1023,7 @@ tools:
   owner: iuc
   revisions:
   - 02bab5ff7c37
+  - 607b3ea00bbe
   - 7e68109625a3
   - 879f44536e12
   - be475ac055b2
@@ -1022,6 +1036,7 @@ tools:
   revisions:
   - 3cd66db293f6
   - 53b5bd9a08a1
+  - a2ee84fcf0f7
   - c0f7b58b4ce4
   - c89bb0ef8f25
   - cb91d030d8ba
@@ -1038,6 +1053,7 @@ tools:
   - 816cbd8f4e6e
   - 8fe2ec05a876
   - 9c6619b29650
+  - e3097930aa34
   tool_panel_section_label: DNA Metabarcoding
 - name: obi_convert
   owner: iuc
@@ -1045,6 +1061,7 @@ tools:
   - 12c00cef6985
   - 4d705e3443a7
   - 618fa454e51a
+  - a6da97f50a11
   - a86cb55cba33
   - ce363293cb55
   - dce297ace751
@@ -1414,6 +1431,11 @@ tools:
   owner: ecology
   revisions:
   - edbf355290a1
+  tool_panel_section_label: Get Data
+- name: get_safran_data_geosas_api
+  owner: ecology
+  revisions:
+  - 92a40b2a4388
   tool_panel_section_label: Get Data
 - name: dwt_var_perfeature
   owner: devteam
