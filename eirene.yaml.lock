@@ -590,6 +590,7 @@ tools:
 - name: aoptk_chemical_identifier
   owner: recetox
   revisions:
+  - 105249a04eed
   - 5668e27d0684
   - eae0c93af4a6
   tool_panel_section_label: Machine Learning
@@ -597,6 +598,7 @@ tools:
   owner: recetox
   revisions:
   - 0f01dc62c4f3
+  - 70d1a4736ecb
   - 93711c040c16
   tool_panel_section_label: Machine Learning
 - name: mzspeclib_convert
@@ -649,6 +651,11 @@ tools:
   revisions:
   - 3ccffbd647fe
   tool_panel_section_label: Metabolomics
+- name: stratified_block_randomization
+  owner: recetox
+  tool_panel_section_label: Metabolomics
+  revisions:
+  - 1b7235da7640
 - name: aoptk_parse_pdf
   owner: recetox
   revisions:
@@ -658,6 +665,7 @@ tools:
   - 4d8a54a8c2e3
   - 9a2ffe599e67
   - bd64012e2ec3
+  - ecd837ab4f94
   tool_panel_section_label: Machine Learning
 - name: aoptk_normalize_chemicals
   owner: recetox
@@ -667,11 +675,13 @@ tools:
   - 464344aefdec
   - 646a0b80d66f
   - 8180f16ac39c
+  - b24d3e8fe155
   - fd0e9c04daa4
   tool_panel_section_label: Machine Learning
 - name: aoptk_query_literature
   owner: recetox
   revisions:
+  - 3cec2d4045dd
   - 701fb89e9f92
   - 7e6e180b1af7
   - e07a824cf9cc
@@ -688,18 +698,21 @@ tools:
   - bb342034256d
   - c9c012f535f7
   - cec4efa09857
+  - f129d62ccdf9
   tool_panel_section_label: Machine Learning
 - name: aoptk_final_modification
   owner: recetox
   revisions:
   - 53060147b091
   - 95fdcd130035
+  - d620536a307b
   - fa78aa28937c
   tool_panel_section_label: Machine Learning
 - name: aoptk_find_relationships_chemicals
   owner: recetox
   revisions:
   - 23caad7e738e
+  - 33dea19b97c9
   - 35172fb694d8
   - 42c57f739aa1
   - '763401373029'
