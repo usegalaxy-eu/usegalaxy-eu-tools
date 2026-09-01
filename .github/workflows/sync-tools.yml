@@ -82,7 +82,7 @@ jobs:
 
       - name: Install uv
         if: steps.gate.outputs.should_run == 'true'
-        uses: astral-sh/setup-uv@v8.2.0
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           cache-suffix: ${{ matrix.name }}
