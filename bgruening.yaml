@@ -58,6 +58,11 @@ tools:
   - name: mirge3_build_database
     owner: bgruening
 
+# PHYLOGENETICS
+  - name: grapetree
+    owner: bgruening
+    tool_panel_section_label: Phylogenetics
+
 # RNA ANALYSIS
   - name: cleaverna
     owner: bgruening
@@ -330,6 +335,10 @@ tools:
     
 # GRAPH/DISPLAY DATA
 
+  - name: datavzrd
+    owner: bgruening
+    tool_panel_section_label: Graph/Display Data
+
   - name: jbrowse2
     owner: fubar
     tool_panel_section_label: Graph/Display Data
@@ -365,6 +374,10 @@ tools:
     tool_panel_section_label: Imaging
 
   - name: coco_annotation_visualizer
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: sem_analysis
     owner: bgruening
     tool_panel_section_label: Imaging
 
