@@ -2,6 +2,11 @@ install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
+- name: glycombo
+  owner: galaxyp
+  revisions:
+  - 97bd855fc4f5
+  tool_panel_section_label: Proteomics
 - name: pvactools
   owner: galaxyp
   revisions:
@@ -23,6 +28,7 @@ tools:
   - 387754f0746e
   - 3f947afe3f71
   - 42ad5460c1d4
+  - c3a75e21f2bf
   - da1531027506
   - da9ebef968bd
   - e969a182e3cb
