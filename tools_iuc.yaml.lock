@@ -1323,6 +1323,7 @@ tools:
 - name: repeat_masker
   owner: bgruening
   revisions:
+  - 31763a56f1d7
   - 39b40a9a6296
   - 3f987772e283
   - 438f65cb1d14
@@ -1901,7 +1902,6 @@ tools:
   owner: iuc
   revisions:
   - 0bc216235d4c
-  - 3d1d241ceff2
   - 41faa653d86c
   - 52c601d961b6
   - 5412142130ad
@@ -1909,6 +1909,7 @@ tools:
   - 56bb29747b4d
   - 608ea80cccba
   - 7a2b37ae4a50
+  - b507ad3fe6ce
   - c162f3c43442
   tool_panel_section_label: Assembly
 - name: pairtools_parse
@@ -1962,11 +1963,11 @@ tools:
   - 6cbca5661205
   - 7f71687c8146
   - 81fc1418fbfb
+  - 88926bef8e75
   - ade829d2ae3a
   - c20a07c9237b
   - cfeb5205eacc
   - d08c53f6425b
-  - f767a51f75f7
   - fa6ff550886a
   tool_panel_section_label: Assembly
 - name: pilon
@@ -2956,6 +2957,7 @@ tools:
   - 95219305823a
   - a6ea26c1f225
   - b6b87635cf29
+  - b7c3dcb76c02
   - b7ce99273d62
   - cf1322aeb137
   - d82648ad25a3
@@ -5625,6 +5627,7 @@ tools:
   revisions:
   - bcb6caec41eb
   - c778ef8a7806
+  - d371ff7667e0
   - e92d84ff94e3
   - f0e5afff062b
   tool_panel_section_label: Mapping
@@ -9705,6 +9708,7 @@ tools:
   - 08a6063d8c7c
   - 3f4f192666f4
   - 7000f98e1c4b
+  - 9572fe07659d
   - a3cdbf62a59f
   - aa73f04777fd
   tool_panel_section_label: Nanopore
@@ -10280,6 +10284,51 @@ tools:
   owner: iuc
   revisions:
   - 48836bd31536
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_temporal
+  owner: iuc
+  revisions:
+  - 28933de74e66
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_splits
+  owner: iuc
+  revisions:
+  - a9e2ba068e99
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_phenotype
+  owner: iuc
+  revisions:
+  - 40238aafdc08
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_meme
+  owner: iuc
+  revisions:
+  - 5c223e491b89
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_list_models
+  owner: iuc
+  revisions:
+  - d5990d612224
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_filter
+  owner: iuc
+  revisions:
+  - 08dbe7e63422
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_epistasis
+  owner: iuc
+  revisions:
+  - 112587a146bb
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_dms
+  owner: iuc
+  revisions:
+  - 9e514c265361
+  tool_panel_section_label: Phylogenetics
+- name: hyphaeon_disease
+  owner: iuc
+  revisions:
+  - ddeb2d3ab617
   tool_panel_section_label: Phylogenetics
 - name: hyphy_absrel
   owner: iuc
@@ -13606,6 +13655,11 @@ tools:
   revisions:
   - c4d18aa4ec4a
   tool_panel_section_label: Text Manipulation
+- name: stanza_nlp
+  owner: iuc
+  revisions:
+  - 0a6e15c00675
+  tool_panel_section_label: Text Manipulation
 - name: subtract
   owner: devteam
   revisions:
@@ -15631,6 +15685,10 @@ tools:
   revisions:
   - 676915c44e1e
   - d584aacd7d13
+- name: data_manager_stanza_models
+  owner: iuc
+  revisions:
+  - 84347a6fd548
 - name: data_manager_transvar_annotations
   owner: iuc
   revisions:
