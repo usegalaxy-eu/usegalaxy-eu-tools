@@ -84,6 +84,98 @@ tools:
     owner: bgruening
     tool_panel_section_label: RNA Analysis
 
+  - name: viennarna_rnaup
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnasubopt
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnasnoop
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaplot
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaplfold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaplex
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnapkplex
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnapaln
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnalfold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnalalifold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnainverse
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaheat
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnafold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaeval
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaduplex
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnadpdist
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnadistance
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnacofold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaalifold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rnaaliduplex
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_rna2dfold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_kinwalker
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
+  - name: viennarna_kinfold
+    owner: rnateam
+    tool_panel_section_label: RNA Analysis
+
 # SAM/BAM
 
   - name: sambamba_flagstat
@@ -378,6 +470,14 @@ tools:
     tool_panel_section_label: Imaging
 
   - name: coco_annotation_visualizer
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: imagemagick_image_convert
+    owner: bgruening
+    tool_panel_section_label: Imaging
+
+  - name: imagemagick_image_compare
     owner: bgruening
     tool_panel_section_label: Imaging
 
@@ -717,6 +817,10 @@ tools:
 
   - name: pynxtools_peak_finding
     owner: bgruening
+    tool_panel_section_label: Other Tools
+
+  - name: stress_ng
+    owner: bgruening-util
     tool_panel_section_label: Other Tools
 
 # PEAK CALLING
