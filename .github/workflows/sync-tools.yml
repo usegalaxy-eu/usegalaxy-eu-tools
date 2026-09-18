@@ -21,7 +21,7 @@ jobs:
       targets: ${{ steps.set-matrix.outputs.targets }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
@@ -70,19 +70,19 @@ jobs:
 
       - name: Checkout repository
         if: steps.gate.outputs.should_run == 'true'
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
       - name: Set up Python
         if: steps.gate.outputs.should_run == 'true'
-        uses: actions/setup-python@v6.3.0
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.13'
 
       - name: Install uv
         if: steps.gate.outputs.should_run == 'true'
-        uses: astral-sh/setup-uv@v8.2.0
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           cache-suffix: ${{ matrix.name }}

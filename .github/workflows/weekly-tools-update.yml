@@ -31,7 +31,7 @@ jobs:
       targets: ${{ steps.set-matrix.outputs.targets }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
@@ -62,17 +62,17 @@ jobs:
       # updates an existing open weekly-tools-update PR in place rather than making a
       # duplicate. Re-running with a PR still open just folds in the latest tools.
       - name: Checkout repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v6.3.0
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.13'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v8.3.0
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           cache-suffix: ${{ matrix.name }}
@@ -137,17 +137,17 @@ jobs:
       lockfiles: ${{ steps.set-lockfiles.outputs.lockfiles }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v6.3.0
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.13'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v8.3.0
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -199,17 +199,17 @@ jobs:
         lockfile: ${{ fromJson(needs.update.outputs.lockfiles) }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v6.3.0
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.13'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v8.3.0
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           cache-suffix: ${{ matrix.lockfile }}
@@ -264,18 +264,18 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v6.3.0
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.13'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v8.3.0
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -322,10 +322,13 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           # --- counts from the diff ---
+          # `grep -c` exits 1 on zero matches, which under `set -e -o pipefail`
+          # would abort the step. `|| true` keeps the count (grep -c still
+          # prints "0") without failing the pipeline.
           new_tools=$(grep -h "Total new tools found:" sync-report-*.md 2>/dev/null \
-            | grep -oE '[0-9]+' | awk '{s+=$1} END{print s+0}')
-          added_revs=$(git diff -- '*.yaml.lock' | grep -cE '^\+\s+- [0-9a-f]{12}$')
-          removed_revs=$(git diff -- 'not-installable-revisions/*.yaml' | grep -cE '^\+\s+- [0-9a-f]{12}$')
+            | grep -oE '[0-9]+' | awk '{s+=$1} END{print s+0}' || true)
+          added_revs=$(git diff -- '*.yaml.lock' | grep -cE '^\+\s+- [0-9a-f]{12}$' || true)
+          removed_revs=$(git diff -- 'not-installable-revisions/*.yaml' | grep -cE '^\+\s+- [0-9a-f]{12}$' || true)
           plural() { [ "$1" -eq 1 ] && echo "$2" || echo "$2s"; }
 
           {
