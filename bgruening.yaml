@@ -340,6 +340,10 @@ tools:
 
 # Digital Humanities
 
+  - name: kraken_binarize
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+  
   - name: kraken_segment
     owner: bgruening
     tool_panel_section_label: Digital Humanities
@@ -348,15 +352,19 @@ tools:
     owner: bgruening
     tool_panel_section_label: Digital Humanities
 
-  - name: kraken_binarize
-    owner: bgruening
-    tool_panel_section_label: Digital Humanities
-
   - name: langchain_text_splitters
     owner: bgruening
     tool_panel_section_label: Digital Humanities
 
   - name: new_fave_extract
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+  - name: ketos_compile
+    owner: bgruening
+    tool_panel_section_label: Digital Humanities
+
+  - name: ketos_train
     owner: bgruening
     tool_panel_section_label: Digital Humanities
 
