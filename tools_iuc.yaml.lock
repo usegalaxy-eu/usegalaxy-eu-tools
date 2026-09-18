@@ -539,6 +539,31 @@ tools:
   revisions:
   - 2c7c9646ccf0
   tool_panel_section_label: Annotation
+- name: haplotype_window_sheet
+  owner: iuc
+  revisions:
+  - a9371b3ad441
+  tool_panel_section_label: Annotation
+- name: haplotype_window_caller
+  owner: iuc
+  revisions:
+  - b61ad1cac074
+  tool_panel_section_label: Annotation
+- name: haplotype_pyeuk
+  owner: iuc
+  revisions:
+  - fa298249516b
+  tool_panel_section_label: Annotation
+- name: haplotype_derive_panel
+  owner: iuc
+  revisions:
+  - 56f8fdde47df
+  tool_panel_section_label: Annotation
+- name: haplotype_define_windows
+  owner: iuc
+  revisions:
+  - ac8be1d5c040
+  tool_panel_section_label: Annotation
 - name: hicap
   owner: iuc
   revisions:
@@ -636,6 +661,26 @@ tools:
   owner: iuc
   revisions:
   - e06a5c9e97e2
+  tool_panel_section_label: Annotation
+- name: pyeuk_report
+  owner: iuc
+  revisions:
+  - e878ae916927
+  tool_panel_section_label: Annotation
+- name: pyeuk_process_ont
+  owner: iuc
+  revisions:
+  - 54bd499585e0
+  tool_panel_section_label: Annotation
+- name: pyeuk_generate_sheet
+  owner: iuc
+  revisions:
+  - 536b2a029bc3
+  tool_panel_section_label: Annotation
+- name: pyeuk_eukaryotyping
+  owner: iuc
+  revisions:
+  - f0bab694bc93
   tool_panel_section_label: Annotation
 - name: rmlst_cli
   owner: iuc
@@ -3318,6 +3363,7 @@ tools:
   - 281054a26e41
   - 3432a0e49b86
   - 350c736075eb
+  - 36be11c58dac
   - 3e2551a37201
   - 415fd81b85d3
   - 4557b2da9e7f
@@ -7579,6 +7625,7 @@ tools:
   - 2238658d7663
   - 2bf4cd8ce41e
   - 30c3ad698f2d
+  - bdbd2aab96bb
   - d34e74e40d60
   - e51700388188
   tool_panel_section_label: Metagenomic Analysis
@@ -7589,6 +7636,7 @@ tools:
   - 1feea247d08a
   - 599a3fb9a953
   - 847f433f202b
+  - ac3cb54afbd0
   - b8a4de1a4e19
   - eed716573aba
   tool_panel_section_label: Metagenomic Analysis
@@ -7602,10 +7650,12 @@ tools:
   - ae4d404a8227
   - b85ba18a8f36
   - bda00cb136ee
+  - f09a7ce2f629
   tool_panel_section_label: Metagenomic Analysis
 - name: phyloseq_plot_bar
   owner: iuc
   revisions:
+  - 350a3bd5f341
   - 9302992205ad
   - 94563110275d
   - ad81e112f4d9
@@ -7617,6 +7667,7 @@ tools:
   owner: iuc
   revisions:
   - 2715e89adff4
+  - 47fffb4462d8
   - 92e77800ef2c
   - bbd9d1022144
   - c35e0075c7a2
@@ -7631,6 +7682,7 @@ tools:
   - 1ff178d1757e
   - 4faa9c663b38
   - 7ed99cb39c9d
+  - 83c8e8560d8f
   - a20bc31f2821
   - d6cbeb48294d
   - fd170b83f148
@@ -7640,6 +7692,7 @@ tools:
   revisions:
   - 5dd1dfce8c5f
   - a9c63fac301a
+  - bcc827195b65
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_are_there_primers
   owner: iuc
@@ -14551,6 +14604,7 @@ tools:
   - c8ecdd5bdb32
   - c91e09b60325
   - cf3f306bce1b
+  - e0e39f5335de
   - e43f513583ee
   - fdbd97ff825e
   - ff0a8cda0c0b
