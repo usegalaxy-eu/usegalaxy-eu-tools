@@ -306,6 +306,26 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: haplotype_window_sheet
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: haplotype_window_caller
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: haplotype_pyeuk
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: haplotype_derive_panel
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: haplotype_define_windows
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: hicap
     owner: iuc
     tool_panel_section_label: Annotation
@@ -375,6 +395,22 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: neighbors
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: pyeuk_report
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: pyeuk_process_ont
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: pyeuk_generate_sheet
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: pyeuk_eukaryotyping
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -1267,6 +1303,10 @@ tools:
     tool_panel_section_label: BED
 
 # CHEMICALTOOLBOX
+  - name: b2btools_multiple_sequence_alignment
+    owner: iuc
+    tool_panel_section_label: ChemicalToolBox
+
   - name: enzywizard_aaprops
     owner: iuc
     tool_panel_section_label: ChemicalToolBox
