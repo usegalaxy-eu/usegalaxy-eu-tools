@@ -607,11 +607,13 @@ tools:
   - 372a2ff0e14d
   - 7eb188a51a8a
   - 7fe9376e5a36
+  - cb0c628354cf
   tool_panel_section_label: Annotation
 - name: mist_call
   owner: iuc
   revisions:
   - 09b081d0268e
+  - 1cbc07647a75
   - e4579b48d9ab
   - eb18fe4af677
   - faff357af604
@@ -645,6 +647,16 @@ tools:
   owner: iuc
   revisions:
   - d9076b232ce4
+  tool_panel_section_label: Annotation
+- name: orthologer
+  owner: iuc
+  revisions:
+  - 02dccb7d3577
+  tool_panel_section_label: Annotation
+- name: odb_mapper
+  owner: iuc
+  revisions:
+  - 44e468457a1a
   tool_panel_section_label: Annotation
 - name: pling
   owner: iuc
@@ -1498,6 +1510,7 @@ tools:
   revisions:
   - 2b21643ce8d7
   - 8bc80c2a15b3
+  - d221bf907235
   - edcf603bedfd
   tool_panel_section_label: Annotation
 - name: transtermhp
@@ -1509,7 +1522,7 @@ tools:
 - name: ucsc_maffilter
   owner: iuc
   revisions:
-  - fb6c3ba3a084
+  - f332d5f39a4f
   tool_panel_section_label: Annotation
 - name: vg_paths
   owner: iuc
@@ -3242,6 +3255,7 @@ tools:
   owner: iuc
   revisions:
   - 0a6d8fe52805
+  - b3eee59e2349
   - eb95cc17426d
   tool_panel_section_label: FASTA/FASTQ
 - name: bbtools_bbmerge
@@ -3815,6 +3829,7 @@ tools:
 - name: seqkit_fx2tab
   owner: iuc
   revisions:
+  - 0d3b2a85231e
   - 13e101f5bb5d
   - 1dc73570fd5a
   - 23adecaeb039
@@ -3831,6 +3846,7 @@ tools:
   owner: iuc
   revisions:
   - 02c253504d9b
+  - e69d05d86d79
   tool_panel_section_label: FASTA/FASTQ
 - name: seqkit_head
   owner: iuc
@@ -3839,6 +3855,7 @@ tools:
   - 3c0120a0e35c
   - 6fb76225bdb1
   - 934165d1f733
+  - 943f34336731
   - dcd66e8008d7
   - f56a47e4cc93
   - fb7b676906e7
@@ -3846,6 +3863,7 @@ tools:
 - name: seqkit_locate
   owner: iuc
   revisions:
+  - 4cc0348746a6
   - 54e818ea7c4d
   - 571e6933e972
   - 5fb2dc40c4de
@@ -3864,6 +3882,7 @@ tools:
   - 0d9d8de82304
   - 0e0b003c711f
   - 6366952ddfd3
+  - b441f51f88b7
   - b7fe1967e668
   - c669e8550c46
   - d35d114c26a7
@@ -3872,6 +3891,7 @@ tools:
 - name: seqkit_stats
   owner: iuc
   revisions:
+  - 0a2a529e24e3
   - 191738d53912
   - 24107542edff
   - 3d6d1121a427
@@ -3890,6 +3910,7 @@ tools:
   - 01b1d8c7c031
   - 14f7ceef5579
   - 3dc878f71e4d
+  - 46281f14fcb0
   - 53b2027027c7
   - 61eb4cfc7313
   - 9ba18868a990
@@ -3899,6 +3920,7 @@ tools:
 - name: seqkit_split2
   owner: iuc
   revisions:
+  - 0a429822c6a5
   - 0c7fadfe52e2
   - 22a535d54360
   - 911de3a36b31
@@ -5665,6 +5687,7 @@ tools:
   - 69b5fa6480ff
   - 6fe0fdd63a67
   - 7da532cd050c
+  - 8638fee69580
   - 8fbd98f37c10
   - 95ab864b281a
   - 98099e4da1fd
@@ -5979,6 +6002,11 @@ tools:
   owner: iuc
   revisions:
   - d89783920192
+- name: metacoag
+  owner: iuc
+  revisions:
+  - 15363770cfd8
+  tool_panel_section_label: Metagenomic Analysis
 - name: mothur_taxonomy_to_krona
   owner: iuc
   revisions:
@@ -6594,6 +6622,7 @@ tools:
   revisions:
   - 15f6ef1d7c96
   - 5910c5106cdc
+  - 7e66a24282a7
   - cd1d8332bc04
   - ddfb9c10740a
   tool_panel_section_label: Metagenomic Analysis
@@ -7469,6 +7498,7 @@ tools:
   owner: iuc
   revisions:
   - 9bf0477a1f8c
+  - cf8ee3834c36
   tool_panel_section_label: Metagenomic Analysis
 - name: mmuphin
   owner: iuc
@@ -7742,6 +7772,7 @@ tools:
   - 7a97ac708fee
   - 822aa141fd05
   - a0e1c0d16acf
+  - c6d180716cfd
   - d316b3aeae2a
   - efa3ca193614
   - feafeeadff01
@@ -7750,6 +7781,7 @@ tools:
   owner: iuc
   revisions:
   - 1045f1377aa3
+  - 19fdc13ec330
   - 6da5db3da6ad
   - 81a33caa9b8a
   - cd59461a2b01
@@ -7763,12 +7795,14 @@ tools:
   - 67a9d49fd957
   - 7d7cad62a309
   - b521c78ffe4c
+  - cccbb8c86f6f
   - dc46590e9c86
   - ff94748c0987
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_find_cutoffs
   owner: iuc
   revisions:
+  - 476febadd67a
   - 667d8863c03b
   - 9c9b580ee706
   - d00455e76b07
@@ -7784,6 +7818,7 @@ tools:
   - 790332d37eb1
   - 95bc5317a54d
   - bbf9d5ff34bb
+  - fbfc2815218b
   - ffb10fc9b9b9
   tool_panel_section_label: Metagenomic Analysis
 - name: pimento_std
@@ -7793,6 +7828,7 @@ tools:
   - 70af55e04e01
   - 91da437d2be1
   - 9d552c4f16b9
+  - a5fd181499b4
   - ea746199e14f
   - f04ef31b216b
   tool_panel_section_label: Metagenomic Analysis
@@ -9579,31 +9615,32 @@ tools:
   owner: iuc
   revisions:
   - 0c8a176cd7ca
+  - 3be5eb70cd47
   tool_panel_section_label: Multiple Alignments
 - name: ucsc_mafcoverage
   owner: iuc
   revisions:
-  - 7ca2e72f9194
+  - c7ec258add42
   tool_panel_section_label: Multiple Alignments
 - name: ucsc_maffetch
   owner: iuc
   revisions:
-  - 8060cd2f5983
+  - ad8caa824996
   tool_panel_section_label: Multiple Alignments
 - name: ucsc_maffrag
   owner: iuc
   revisions:
-  - ec790193c2f2
+  - ba8c5bb09053
   tool_panel_section_label: Multiple Alignments
 - name: ucsc_maffrags
   owner: iuc
   revisions:
-  - 5481c3cfacc3
+  - 89dd2ead9c9d
   tool_panel_section_label: Multiple Alignments
 - name: ucsc_mafgene
   owner: iuc
   revisions:
-  - 0d9782fed2ac
+  - 363259689eba
   tool_panel_section_label: Multiple Alignments
 - name: ucsc_netchainsubset
   owner: iuc
@@ -13446,6 +13483,7 @@ tools:
 - name: celltypist
   owner: iuc
   revisions:
+  - 0101139cb8a5
   - 1fc548259280
   - 7518638a7b75
   tool_panel_section_label: Single-cell
