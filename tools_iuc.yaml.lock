@@ -3030,6 +3030,11 @@ tools:
   revisions:
   - 2f0dc62d0a19
   tool_panel_section_label: EMBOSS
+- name: atacseqqc
+  owner: iuc
+  revisions:
+  - e03e488e03e0
+  tool_panel_section_label: Epigenetics
 - name: bwameth
   owner: iuc
   revisions:
@@ -4464,6 +4469,7 @@ tools:
 - name: query_impc
   owner: iuc
   revisions:
+  - 9e5eeac961ea
   - d319dc5f3ea8
   tool_panel_section_label: Get Data
 - name: enasearch_search_data
@@ -5695,6 +5701,7 @@ tools:
   - 2595c27071c2
   - 69b5fa6480ff
   - 6fe0fdd63a67
+  - 7c5b53cd2997
   - 7da532cd050c
   - 8638fee69580
   - 8fbd98f37c10
@@ -6951,6 +6958,7 @@ tools:
   owner: iuc
   revisions:
   - 97b1b5ad1cda
+  - f9189d4d22b8
 - name: decontam
   owner: iuc
   revisions:
@@ -8191,6 +8199,7 @@ tools:
   - 6240e5015f93
   - 9c23008e7345
   - b6fa25b6b436
+  - e7bd625dfaa6
   - ee4041c922c8
   tool_panel_section_label: Metagenomic Analysis
 - name: mags_visualization_comp_conta
@@ -10411,6 +10420,41 @@ tools:
   revisions:
   - f621f8b864ac
   tool_panel_section_label: Phylogenetics
+- name: chronaeon_triage
+  owner: iuc
+  revisions:
+  - cdfeb22e64f2
+  tool_panel_section_label: Phylogenetics
+- name: chronaeon_sketch
+  owner: iuc
+  revisions:
+  - 09767d9df67c
+  tool_panel_section_label: Phylogenetics
+- name: chronaeon_phylogeo
+  owner: iuc
+  revisions:
+  - 181964ce77f7
+  tool_panel_section_label: Phylogenetics
+- name: chronaeon_dynamics
+  owner: iuc
+  revisions:
+  - d8c1f9a69ced
+  tool_panel_section_label: Phylogenetics
+- name: chronaeon_date
+  owner: iuc
+  revisions:
+  - 532ff4b6b2f5
+  tool_panel_section_label: Phylogenetics
+- name: chronaeon_autoclock
+  owner: iuc
+  revisions:
+  - 76b3669f5d6b
+  tool_panel_section_label: Phylogenetics
+- name: chronaeon_align
+  owner: iuc
+  revisions:
+  - d2add9c18999
+  tool_panel_section_label: Phylogenetics
 - name: fastreer_dist2tree
   owner: iuc
   revisions:
@@ -10459,10 +10503,12 @@ tools:
   revisions:
   - 28933de74e66
   - 5daf758aa134
+  - fa065881c498
   tool_panel_section_label: Phylogenetics
 - name: hyphaeon_splits
   owner: iuc
   revisions:
+  - 5c8c3b1a064c
   - 645b9cb079f7
   - a9e2ba068e99
   tool_panel_section_label: Phylogenetics
@@ -10471,16 +10517,19 @@ tools:
   revisions:
   - 40238aafdc08
   - 871951f0d55d
+  - d4a6c23857c6
   tool_panel_section_label: Phylogenetics
 - name: hyphaeon_meme
   owner: iuc
   revisions:
   - 37a6602c0fb0
   - 5c223e491b89
+  - dcbf3b62b8e5
   tool_panel_section_label: Phylogenetics
 - name: hyphaeon_list_models
   owner: iuc
   revisions:
+  - 87b4733161c0
   - b7ef34da574d
   - d5990d612224
   tool_panel_section_label: Phylogenetics
@@ -10489,22 +10538,26 @@ tools:
   revisions:
   - 08dbe7e63422
   - 44ac2f950b3b
+  - 6bdcca302847
   tool_panel_section_label: Phylogenetics
 - name: hyphaeon_epistasis
   owner: iuc
   revisions:
   - 0096ed109d0c
   - 112587a146bb
+  - 40f8c7e6b951
   tool_panel_section_label: Phylogenetics
 - name: hyphaeon_dms
   owner: iuc
   revisions:
+  - 346289d29838
   - 9e514c265361
   - dc82abcf2cd8
   tool_panel_section_label: Phylogenetics
 - name: hyphaeon_disease
   owner: iuc
   revisions:
+  - 393f7a2f192a
   - caa7f7b72916
   - ddeb2d3ab617
   tool_panel_section_label: Phylogenetics
@@ -11901,6 +11954,7 @@ tools:
 - name: rectanglepy
   owner: iuc
   revisions:
+  - 0f82371878fc
   - 38879798b42b
   tool_panel_section_label: RNA Analysis
 - name: ribowaltz_plot
@@ -12094,6 +12148,7 @@ tools:
   - 8eb8750070d4
   - 914cfcba0ec8
   - 92198ab2345f
+  - a356a3e21032
   - ae618321f34a
   - cbf488da3b2c
   - cef79931dda5
