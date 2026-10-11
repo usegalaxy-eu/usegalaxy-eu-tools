@@ -17,7 +17,7 @@ import sys
 import yaml
 
 NAME_RE = re.compile(r"^[ +-]- name: (\S+)")
-ADDED_REVISION_RE = re.compile(r"^\+  - ([0-9a-f]{12,16})\s*$")
+ADDED_REVISION_RE = re.compile(r"^\+  - '?([0-9a-f]{12,16})'?\s*$")
 
 
 def recent_tools(fn, since):
