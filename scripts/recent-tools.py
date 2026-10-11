@@ -24,7 +24,7 @@ def recent_tools(fn, since):
     """Return the set of tool names with new revisions, or None for 'all tools'."""
     try:
         log = subprocess.run(
-            ["git", "log", f"--since={since}", "--patch", "--", fn],
+            ["git", "log", f"--since={since}", "--patch", "--unified=1000000", "--", fn],
             capture_output=True,
             text=True,
             check=True,
