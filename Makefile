@@ -8,6 +8,7 @@ UPDATE_TRUSTED_IUC := $(LOCK_FILES:.lock=.update_trusted_iuc)
 DEPRECATED_YAMLS := $(LOCK_FILES:=.deprecate)
 
 GALAXY_SERVER := https://usegalaxy.eu
+RECENT_WINDOW ?= 4 weeks
 
 
 help:
@@ -30,7 +31,13 @@ install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
 
 %.install: %
 	@echo "Installing any updated versions of $<"
-	@-shed-tools install --toolsfile $< --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
+	@mkdir -p build
+	@python3 scripts/recent-tools.py $< --since "$(RECENT_WINDOW)" --output build/$(notdir $<).recent
+	@if [ -f build/$(notdir $<).recent ]; then \
+		shed-tools install --toolsfile build/$(notdir $<).recent --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log; \
+	else \
+		echo "No tools updated in $< within the last $(RECENT_WINDOW), skipping"; \
+	fi
 
 pr_check:
 	for changed_yaml in `git diff remotes/origin/master --name-only | grep '.yaml$$' | grep -v '.not-installable-revisions.yaml$$'`; do python scripts/pr-check.py $${changed_yaml} && pykwalify -d $${changed_yaml} -s .schema.yaml ; done
