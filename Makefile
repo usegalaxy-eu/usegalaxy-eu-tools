@@ -15,7 +15,11 @@ help:
 
 lint: $(LINTED_YAMLS) ## Lint the yaml files
 fix: $(CORRECT_YAMLS) ## Fix any issues (missing hashes, missing lockfiles, etc.)
-install: $(INSTALL_YAMLS) ## Install the tools in our galaxy
+install: ## Install the tools in our galaxy
+	@mkdir -p build
+	@python3 scripts/merge-lockfiles.py $(LOCK_FILES) --output build/all.yaml.lock
+	@echo "Installing any updated versions of all lock files"
+	@-shed-tools install --toolsfile build/all.yaml.lock --galaxy $(GALAXY_SERVER) --api_key $(GALAXY_API_KEY) 2>&1 | tee -a report.log
 
 %.lint: %
 	python3 scripts/fix-lockfile.py $<
