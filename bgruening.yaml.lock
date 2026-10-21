@@ -70,6 +70,7 @@ tools:
 - name: ffmpeg_converter
   owner: bgruening
   revisions:
+  - 0fd8efad2434
   - 288f703056b0
   - 62f5a8b130db
   tool_panel_section_label: Convert Formats
@@ -675,6 +676,7 @@ tools:
   owner: bgruening
   revisions:
   - 36c5fad07dcb
+  - eb55df85ab43
   - f61acf355127
   tool_panel_section_label: Graph/Display Data
 - name: jbrowse2
@@ -1621,6 +1623,11 @@ tools:
   - bec636361cfd
   - de5b3d8f5b90
   tool_panel_section_label: Nanopore
+- name: 3dtrees_sidecar
+  owner: bgruening
+  revisions:
+  - 515dc574a2bf
+  tool_panel_section_label: Other Tools
 - name: pynxtools_peak_finding
   owner: bgruening
   revisions:
