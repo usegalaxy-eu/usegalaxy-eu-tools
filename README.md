@@ -47,16 +47,12 @@ We encourage you to submit your tool to one of the trusted community repositorie
 | Trusted community repository | Tool lists in this repository |
 | --- | --- |
 | [Galaxy Tools maintained by IUC](https://github.com/galaxyproject/tools-iuc) | `tools_iuc.yaml` |
-| [Galaxy Tools maintained by the devteam](https://github.com/galaxyproject/tools-devteam) | `legacy_tools.yaml` |
-| [Björn Grüning repo](https://github.com/bgruening/galaxytools) | `bgruening.yaml` |
-| Peter Cock's repos: [pico repo](https://github.com/peterjc/pico_galaxy) | `peterjc.yaml` |
+| [Galaxy EU repo](https://github.com/bgruening/galaxytools) | `bgruening.yaml` |
 | [Galaxy Proteomics repo](https://github.com/galaxyproteomics/tools-galaxyp) | `tools_galaxyp.yaml` |
 | [EI repo](https://github.com/TGAC/earlham-galaxytools) | `earlhaminst.yaml` |
-| [QIIME 2 repo](https://github.com/qiime2/q2galaxy) | `tools_q2d2.yaml` |
 | [RECETOX repo](https://github.com/RECETOX/galaxytools) | `eirene.yaml` |
 | [Workflow4metabolomics repo](https://github.com/workflow4metabolomics/galaxy_codex) | `metabolomics.yaml` |
 | [Muon Spectroscopy Computational Project repo](https://github.com/muon-spectroscopy-computational-project/muon-galaxy-tools) | `materials.yaml` |
-| [Goecks Lab repo](https://github.com/goeckslab/galaxy-tools) | `goeckslab.yaml`, `spatialomics.yaml` |
 
 ### Updating an Existing Tool
 
