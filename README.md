@@ -22,6 +22,16 @@ make tools_iuc.yaml.lock.install GALAXY_SERVER_URL=https://... GALAXY_API_KEY=..
 - `yaml.lock` files are automatically generated
 - Only IUC tools are automatically updated with the latest version each week
 
+## Why tools should come from trusted community repositories
+
+Tools installed on the usegalaxy.\* instances should ideally originate from trusted community repositories.
+Such repositories provide several advantages over individual, self-published tool wrappers:
+
+- **CI-tested tools**: Every proposed change is automatically linted and tested with [planemo](https://planemo.readthedocs.io) via continuous integration, ensuring that only functional, high-quality wrappers reach the Tool Shed and, ultimately, our servers.
+- **Community review to secure tools and enhance UX**: Wrappers are reviewed by experienced community members before they are merged. This review process checks tools for security issues before deployment and improves the user experience of the tool interface. If the component tools are trusted, workflows built from them can likewise be trusted.
+- **Automatic container generation (Docker, Singularity)**: The automated update pipeline connecting upstream software releases, Bioconda, BioContainers, and Galaxy tool wrappers ensures that Docker and Singularity containers are built automatically for every new tool version. This is described in the Planemo paper: Bray et al., *The Planemo toolkit for developing, deploying, and executing scientific data analyses in Galaxy and beyond*, Genome Research 33(2), 261–268 (2023), [doi:10.1101/gr.276963.122](https://doi.org/10.1101/gr.276963.122).
+- **Automatic tool updates in this repository**: Tools from the trusted repositories listed below are automatically updated in this repository with the latest version each week (currently only IUC tools), keeping the installed tool set up to date with little manual effort.
+
 ## Requesting Tools in UseGalaxy.\*
 
 Policies are not set in stone and we would be happy to seek feedback and discussions.
@@ -32,17 +42,17 @@ our users and we need to ensure sustainability of the installed tools. That mean
 and can be adjusted to new developments.
 Therefore, we encourage everyone to follow the [IUC Guidelines](https://galaxy-iuc-standards.readthedocs.io/en/latest/index.html) for tool development and have automatic testing enabled via [CI](https://en.wikipedia.org/wiki/Continuous_integration).
 
-We encourage you to submit your tool to one of the larger community repositories, like
+We encourage you to submit your tool to one of the trusted community repositories listed below. These repositories have planemo CI testing enabled and have a larger communities in place that help you with maintaining the tools. The right-hand column shows the tool list(s) in this repository that track tools from each repository.
 
- * [Galaxy Tools maintained by IUC](https://github.com/galaxyproject/tools-iuc)
- * [Björn Grüning repo](https://github.com/bgruening/galaxytools)
- * Peter Cock's repos:
-   * [pico repo](https://github.com/peterjc/pico_galaxy)
- * [Galaxy Proteomics repo](https://github.com/galaxyproteomics/tools-galaxyp)
- * [EI repo](https://github.com/TGAC/earlham-galaxytools)
-
- These repositories have planemo CI testing enabled and have a larger communities in place that help you with maintaining the
- tools.
+| Trusted community repository | Tool lists in this repository |
+| --- | --- |
+| [Galaxy Tools maintained by IUC](https://github.com/galaxyproject/tools-iuc) | `tools_iuc.yaml` |
+| [Galaxy EU repo](https://github.com/bgruening/galaxytools) | `bgruening.yaml` |
+| [Galaxy Proteomics repo](https://github.com/galaxyproteomics/tools-galaxyp) | `tools_galaxyp.yaml` |
+| [EI repo](https://github.com/TGAC/earlham-galaxytools) | `earlhaminst.yaml` |
+| [RECETOX repo](https://github.com/RECETOX/galaxytools) | `eirene.yaml` |
+| [Workflow4metabolomics repo](https://github.com/workflow4metabolomics/galaxy_codex) | `metabolomics.yaml` |
+| [Muon Spectroscopy Computational Project repo](https://github.com/muon-spectroscopy-computational-project/muon-galaxy-tools) | `materials.yaml` |
 
 ### Updating an Existing Tool
 

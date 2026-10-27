@@ -27,6 +27,7 @@ tools:
   owner: bgruening
   revisions:
   - 04bfb8ee7e23
+  - 0648279794e5
   - 0ecf92b5a7c5
   - 3ae9331790a6
   - 4e9a3745dce4
@@ -52,12 +53,14 @@ tools:
   - 8dbc700cb940
   - a0f01c777820
   - ab55af10f1ff
+  - db7c0226ebd9
   tool_panel_section_label: Convert Formats
 - name: graphicsmagick_image_compare
   owner: bgruening
   revisions:
   - 19cd03398db8
   - 2a5a0b61a84e
+  - 43ac3b5adbc7
   - 76acb1175c57
   - 8fa7b6892af5
   - bb871fbe177f
@@ -67,12 +70,14 @@ tools:
 - name: ffmpeg_converter
   owner: bgruening
   revisions:
+  - 0fd8efad2434
   - 288f703056b0
   - 62f5a8b130db
   tool_panel_section_label: Convert Formats
 - name: hictk
   owner: bgruening
   revisions:
+  - 0763356a72da
   - 2da980d606cb
   - 6ea4b941a15b
   - af0d9df0641e
@@ -103,6 +108,7 @@ tools:
   owner: bgruening
   revisions:
   - 0b8ee9e94254
+  - 681e50850546
   tool_panel_section_label: Phylogenetics
 - name: cleaverna
   owner: bgruening
@@ -280,6 +286,7 @@ tools:
   revisions:
   - 6d8444408ff1
   - 6d8be3337e2a
+  - 80b0055ba314
   - a6318f87f2cd
   - abba05ead5d7
   - d6ede73082da
@@ -350,12 +357,14 @@ tools:
   - 1b7b718cc379
   - 6a1fc5577695
   - e1edf9018e4d
+  - fe89f988cb3b
   tool_panel_section_label: Annotation
 - name: logan_protein_search_database
   owner: bgruening
   revisions:
   - 03bc0b982ec9
   - 478817e06e95
+  - 62c7a15750a0
   - e69fb0e5dc0e
   tool_panel_section_label: Annotation
 - name: netboxr
@@ -383,6 +392,7 @@ tools:
   owner: rnateam
   revisions:
   - 10b84b577117
+  - f7746d145125
   tool_panel_section_label: Annotation
 - name: blobtoolkit
   owner: bgruening
@@ -559,6 +569,7 @@ tools:
 - name: trim_galore
   owner: bgruening
   revisions:
+  - 433db23e1c1d
   - b94789823aad
   - cd7e644cae1d
   - eefb644655a5
@@ -620,10 +631,12 @@ tools:
   revisions:
   - 00cea46531c5
   - 024d12e9b79b
+  - 0712bc7ff083
   - 16ce20a0ff3f
   - 384ed4cad819
   - 9fae02363d19
   - b05456e47259
+  - b3279a32a87b
   - b5220726f15a
   tool_panel_section_label: GIS Data Handling
 - name: 3dtrees_py3dtiles
@@ -644,12 +657,14 @@ tools:
 - name: 3dtrees_raycloudtools
   owner: bgruening
   revisions:
+  - 0625eac27d0d
   - 20712958f90e
   - 237b54837e85
   - 6d1330bc4774
   - a5cc4a0173bf
   - d05a94b22333
   - e9480f1a724e
+  - ec1128bd3a3c
   tool_panel_section_label: GIS Data Handling
 - name: 3dtrees_forestmamba
   owner: bgruening
@@ -664,6 +679,8 @@ tools:
 - name: datavzrd
   owner: bgruening
   revisions:
+  - 36c5fad07dcb
+  - eb55df85ab43
   - f61acf355127
   tool_panel_section_label: Graph/Display Data
 - name: jbrowse2
@@ -809,6 +826,11 @@ tools:
   revisions:
   - fc43cdc81408
   tool_panel_section_label: Imaging
+- name: dna_foundation_models
+  owner: bgruening
+  revisions:
+  - 2e7bab5007f5
+  tool_panel_section_label: Machine Learning
 - name: keras_batch_models
   owner: bgruening
   revisions:
@@ -817,6 +839,7 @@ tools:
   - 1252578525d1
   - 305c1229ac99
   - 3b8fa4ea9727
+  - 3fbbea66522d
   - 679e4ede1191
   - 9afec58b2bf9
   - ab2372b0d73d
@@ -829,6 +852,7 @@ tools:
   - 772e0e89fc68
   - 818896cd2213
   - 98aeca624881
+  - ad11e219bd5a
   - beeeda757eba
   - e4af79bffd57
   - fe0e82a7d0ee
@@ -844,6 +868,7 @@ tools:
   - 1f1fc37cfb42
   - 8a794e6d3388
   - f22a9297440f
+  - fb731872d453
   tool_panel_section_label: Machine Learning
 - name: keras_train_and_eval
   owner: bgruening
@@ -856,6 +881,7 @@ tools:
   - aeee74692508
   - b6ef6d0cb6b7
   - e1317b5502fa
+  - efa16475990a
   - f1b9a42d6809
   tool_panel_section_label: Machine Learning
 - name: ml_visualization_ex
@@ -865,6 +891,7 @@ tools:
   - 1588f9076e32
   - 1d2a478bb514
   - 21730620a849
+  - 553b147da4e9
   - 5f9c0e99016f
   - 72c0d2747dc9
   - 9276346ed061
@@ -880,6 +907,7 @@ tools:
   - 3dd539570a60
   - 475b5171945f
   - 83228baae3c5
+  - 8ef3ef591dc8
   - 919198d656dd
   - 9991c4ddde14
   - b237f27a8afc
@@ -903,6 +931,7 @@ tools:
   - aef56d0e7a61
   - b1eda492f063
   - bc0117538945
+  - bf5b6f5a18ed
   - c33145a815ee
   tool_panel_section_label: Machine Learning
 - name: sklearn_clf_metrics
@@ -920,6 +949,7 @@ tools:
   - a0061a087409
   - a7067bbf1e58
   - adc6137e7c73
+  - d0f0767072b2
   - e54382561bd4
   - e56721f44020
   tool_panel_section_label: Machine Learning
@@ -933,6 +963,7 @@ tools:
   - 685046e0381a
   - 6c030fe29722
   - 80074b842ebd
+  - 9452bddf21bd
   - 9ac0b78c6b6d
   - b0c31e126fa1
   - c72131b8fc7a
@@ -955,6 +986,7 @@ tools:
   - 78a60f884ac9
   - 87cb9cb44d1f
   - 9bb505eafac9
+  - b0b9245d414e
   - d3e99d3df1ca
   - dea38330b78a
   - e81b336415c8
@@ -968,6 +1000,7 @@ tools:
   - 1a53edc4b438
   - 2e69c6ca6e91
   - 360330a867f0
+  - 398c7e90ded2
   - 39ae276e75d9
   - 53616c8b0865
   - 841a6cc5fc58
@@ -987,6 +1020,7 @@ tools:
   - 84ddbf61e107
   - 89deaf399ff7
   - 9fda0b82f419
+  - aa243478bb94
   - ad297a5397a0
   - c411ff569a26
   - d0352e8b4c10
@@ -1007,6 +1041,7 @@ tools:
   - 6d21b03e00a1
   - 74adae8d7b0f
   - 9e0e31bd8392
+  - a79e439ac817
   - dd786bc16fdb
   - e918f33f7d4f
   - fcadeadd51ae
@@ -1016,6 +1051,7 @@ tools:
   revisions:
   - 2e69c6de354e
   - 4a1cd790e323
+  - 6ff5b1978b0c
   - 9a3cb21a3661
   - a9d72bfe33c9
   - bfc44324a773
@@ -1042,6 +1078,7 @@ tools:
   - dc4b5fd604a6
   - e0f8931f6149
   - e3bc646e63b2
+  - fd703ccdab66
   tool_panel_section_label: Machine Learning
 - name: sklearn_label_encoder
   owner: bgruening
@@ -1050,12 +1087,14 @@ tools:
   - 549937c7349c
   - 9b067af194b7
   - ac52a5916963
+  - d6fccdb87bf3
   - e8d6b4acb7c6
   tool_panel_section_label: Machine Learning
 - name: sklearn_lightgbm
   owner: bgruening
   revisions:
   - 16c442ecd6bf
+  - 19e086c622db
   - 1b7ab45c7858
   - 27f8bd20a936
   - a459c68692ca
@@ -1074,6 +1113,7 @@ tools:
   - 8e447b95e6a8
   - 9084156b2bb5
   - a293d7937700
+  - aaf492da76d4
   - cde5fc214cc8
   - fc70bf5c3b58
   - fe4e36598917
@@ -1084,6 +1124,7 @@ tools:
   - 33d2606fdb3f
   - 492d34a75de6
   - 56f6ebf69ddc
+  - 5a26080a4f96
   - 5d5d9cc554f9
   - 61e76fb65daf
   - 7e5631773cea
@@ -1103,6 +1144,7 @@ tools:
   - 187226dceb22
   - 2c58b83c9bad
   - 4cc980df6265
+  - 531513ce17a5
   - 55c7d3e58eae
   - 672327583f74
   - 7ae443e6217d
@@ -1126,6 +1168,7 @@ tools:
   - 772db6f8bc24
   - 7dd3fb35904f
   - 86d4c2b66e16
+  - 88bd281cdf65
   - 981a0328d6bb
   - 9d234733ccfd
   - ad7e0b4291ee
@@ -1137,6 +1180,7 @@ tools:
   revisions:
   - 226524df8c6c
   - 23a37a52a899
+  - 383d5372a90d
   - 3ff43fbb7ccf
   - 5bd0866dbc7a
   - 8338f71ed0c4
@@ -1153,6 +1197,7 @@ tools:
 - name: sklearn_pca
   owner: bgruening
   revisions:
+  - 1728b4a3895e
   - 2d7016b3ae92
   - 3af626081467
   - 435592ba3087
@@ -1178,6 +1223,7 @@ tools:
   - c78a5fc9e758
   - dc17e2878dc1
   - f04a2405f3fe
+  - f55053c4a5ec
   tool_panel_section_label: Machine Learning
 - name: sklearn_sample_generator
   owner: bgruening
@@ -1191,6 +1237,7 @@ tools:
   - 86c5b627ddb6
   - 871db13f0b04
   - ab2c393080f9
+  - cb2cfcaf6ba8
   - e6af850a1675
   - e6f4d3d9058c
   - eb41d87cb1de
@@ -1210,6 +1257,7 @@ tools:
   - 69c44aab684e
   - 7509d7059040
   - 82b6104d4682
+  - 8eb081549c98
   - 9a01835cdead
   - c6ae57f774c6
   - e5a5ad882f1f
@@ -1221,6 +1269,7 @@ tools:
   - 253b3aaf0d91
   - 59f53bbe6ba9
   - 6717e5cc4d05
+  - 848d5a2bdf61
   - 9ec25da5ece0
   - ae4b593c99f8
   - b78007bf1cb8
@@ -1237,6 +1286,7 @@ tools:
   - 4aa3666b66fa
   - 4ed102b922cb
   - 61461e52c923
+  - 8797bedbba8e
   - 90f2d6532262
   - b7c3e9a3b954
   - da0a22cdcce7
@@ -1251,6 +1301,7 @@ tools:
   - 14180f9c831e
   - 61634a87efc7
   - 6b59e9b96071
+  - 722379be2338
   - 791fa244e44d
   - 89f11e2b0673
   - ec69cbe34b73
@@ -1263,6 +1314,7 @@ tools:
   - 418cafc53f8e
   - 4d1637cac794
   - 68aaa903052a
+  - 724f4328af54
   - 77125cbb54ac
   - a0b0f3158c8c
   - b3a4682eabb6
@@ -1281,14 +1333,10 @@ tools:
   - adc5e53d4297
   - ce2fd1edbc6e
   - e10ffa9e0b90
+  - e3d00d324fb7
   - e8639f65c883
   - e8e5736b632d
   - fc0f9ba14aaa
-  tool_panel_section_label: Machine Learning
-- name: tabicl
-  owner: bgruening
-  revisions:
-  - bdc50ee513ac
   tool_panel_section_label: Machine Learning
 - name: tabpfn
   owner: bgruening
@@ -1532,6 +1580,7 @@ tools:
   revisions:
   - 22847889f95e
   - 27a102c1f443
+  - 605d9ecf0e26
   tool_panel_section_label: Metagenomic Analysis
 - name: mafft
   owner: rnateam
@@ -1578,6 +1627,11 @@ tools:
   - bec636361cfd
   - de5b3d8f5b90
   tool_panel_section_label: Nanopore
+- name: 3dtrees_sidecar
+  owner: bgruening
+  revisions:
+  - 515dc574a2bf
+  tool_panel_section_label: Other Tools
 - name: pynxtools_peak_finding
   owner: bgruening
   revisions:
@@ -1601,6 +1655,7 @@ tools:
 - name: fastq_info
   owner: bgruening
   revisions:
+  - 2bca15e630a4
   - 7a821cd57b43
   tool_panel_section_label: Quality Control
 - name: 10x_bamtofastq
@@ -1733,6 +1788,7 @@ tools:
   - 4efac966af2a
   - 602b5fb7ef09
   - 648b81bca7c5
+  - a1478b43a349
   - a84e6ffd3735
   - d0ed8e976b79
   - ecd247e1ea9c
@@ -1754,6 +1810,7 @@ tools:
   - 02dfbbf869d8
   - 10ef1bf99074
   - 156d0908e232
+  - 2dfd91f7b71d
   - 95a9dc82fc9a
   - be2d899bf34a
   tool_panel_section_label: Text Manipulation
