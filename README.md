@@ -53,6 +53,9 @@ We encourage you to submit your tool to one of the trusted community repositorie
 | [RECETOX repo](https://github.com/RECETOX/galaxytools) | `eirene.yaml` |
 | [Workflow4metabolomics repo](https://github.com/workflow4metabolomics/galaxy_codex) | `metabolomics.yaml` |
 | [Muon Spectroscopy Computational Project repo](https://github.com/muon-spectroscopy-computational-project/muon-galaxy-tools) | `materials.yaml` |
+| [Earth Data Community repo](https://github.com/earth-data-community/galaxy-tools) | `ecology.yaml` |
+| [Ecology repo](https://github.com/galaxyecology/tools-ecology) | `ecology.yaml` |
+
 
 ### Updating an Existing Tool
 
