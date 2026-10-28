@@ -204,7 +204,15 @@ class ToolsRepoSyncer:
                         "description": description,
                     }
 
-            # Regular (non-auto) tool: name field is required
+            # Regular (non-auto) tool: like Planemo, a nameless config that defines
+            # no repositories/auto_tool_repositories/suite is named after its dir
+            if (
+                not name
+                and data.get("repositories") is None
+                and not auto_tool_repos
+                and not data.get("suite")
+            ):
+                name = shed_yml_path.parent.name
             if not name:
                 return None
 
