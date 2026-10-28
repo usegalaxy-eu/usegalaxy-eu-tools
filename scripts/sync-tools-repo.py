@@ -36,6 +36,7 @@ class ToolsRepoSyncer:
         last_sync_sha_file: Optional[Path] = None,
         skip_list_path: Optional[Path] = None,
         skip_list_key: Optional[str] = None,
+        catchup: bool = False,
     ):
         self.tools_yaml_path = tools_yaml_path
         self.mapping_file_path = mapping_file_path
@@ -54,6 +55,7 @@ class ToolsRepoSyncer:
         self.last_sync_sha_file = last_sync_sha_file
         self.skip_list_path = skip_list_path
         self.skip_list_key = skip_list_key
+        self.catchup = catchup
 
         # Load category mapping
         with open(mapping_file_path) as f:
@@ -282,7 +284,7 @@ class ToolsRepoSyncer:
         current_sha = _git(["rev-parse", "HEAD"])
 
         # Bootstrap mode: no SHA file yet
-        if not self.last_sync_sha_file.exists():
+        if not self.catchup and not self.last_sync_sha_file.exists():
             if not self.dry_run:
                 self.last_sync_sha_file.write_text(current_sha + "\n")
             print(
@@ -292,7 +294,12 @@ class ToolsRepoSyncer:
             )
             return [], True
 
-        stored_sha = self.last_sync_sha_file.read_text().strip()
+        # Catchup: diff from the git empty tree so every .shed.yml shows as
+        # "Added". Only in memory: the file advances only if tools are added.
+        if self.catchup:
+            stored_sha = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+        else:
+            stored_sha = self.last_sync_sha_file.read_text().strip()
         if stored_sha == current_sha:
             print(
                 "Source repo is at the same commit as last sync — nothing to do.",
@@ -988,22 +995,12 @@ def main():
         "--catchup",
         action="store_true",
         help=(
-            "Reset the last-sync SHA to the git empty-tree hash before running, "
+            "Diff from the git empty-tree hash instead of the last-sync SHA, "
             "forcing a full rescan. Existing tools are deduplicated automatically."
         ),
     )
 
     args = parser.parse_args()
-
-    # Catchup mode: reset SHA to the git empty-tree hash so every
-    # .shed.yml in the source repo shows as "Added" in the incremental diff.
-    if args.catchup and args.last_sync_sha_file is not None:
-        empty_tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
-        args.last_sync_sha_file.write_text(empty_tree + "\n")
-        print(
-            f"Catchup mode: reset last-sync SHA to {empty_tree}",
-            file=sys.stderr,
-        )
 
     # Get GitHub token from arg or env
     github_token = args.github_token or os.environ.get("GITHUB_TOKEN")
@@ -1020,6 +1017,7 @@ def main():
         last_sync_sha_file=args.last_sync_sha_file,
         skip_list_path=args.skip_list,
         skip_list_key=args.skip_list_key,
+        catchup=args.catchup,
     )
 
     return syncer.run(report_file=args.report_file)
