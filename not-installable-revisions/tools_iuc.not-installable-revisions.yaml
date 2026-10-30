@@ -118,6 +118,7 @@ tools:
 - name: hmmer_hmmemit
   owner: iuc
   revisions:
+  - 82d6ca8212dc
   - 9415f29a3926
   - 96b127c59e6a
   - be03abdc6451
@@ -130,6 +131,7 @@ tools:
   owner: iuc
   revisions:
   - 6e27bb3f0fa6
+  - 9fdeca68a6b5
 - name: homer_gtf_to_annotations
   owner: iuc
   revisions:
@@ -153,6 +155,7 @@ tools:
 - name: miniprot
   owner: iuc
   revisions:
+  - 20d725740701
   - 52bdc302299b
 - name: miniprot_index
   owner: iuc
@@ -249,6 +252,7 @@ tools:
 - name: hifiasm_meta
   owner: galaxy-australia
   revisions:
+  - 213df31ba341
   - fa35f1106d3e
 - name: idba_hybrid
   owner: iuc
@@ -285,6 +289,7 @@ tools:
   revisions:
   - 2dcd07f40204
   - 80d1250bd5fd
+  - b799a615995d
 - name: pairtools_dedup
   owner: iuc
   revisions:
@@ -477,11 +482,13 @@ tools:
   owner: iuc
   revisions:
   - 020c78e91cc5
+  - e25ee6bac872
 - name: gtftobed12
   owner: iuc
   revisions:
   - 57d45064f114
   - 75a14cc16d4d
+  - b026dae67fba
 - name: intermine_galaxy_exchange
   owner: iuc
   revisions:
@@ -520,6 +527,7 @@ tools:
 - name: moabs
   owner: iuc
   revisions:
+  - 214874e24cd6
   - 8c8cc81b34cd
 - name: codeml
   owner: iuc
@@ -555,11 +563,13 @@ tools:
   owner: iuc
   revisions:
   - 5d8b93c0731f
+  - f8734e69f645
   - fc029a9b4d07
 - name: bbtools_tadpole
   owner: iuc
   revisions:
   - 654c9da47f74
+  - 8deeb4c5448b
 - name: cutadapt
   owner: lparsons
   revisions:
@@ -939,6 +949,7 @@ tools:
 - name: fasttree
   owner: iuc
   revisions:
+  - bc939965ce41
   - e005e659ae21
   - ef46a404db96
 - name: amplican
@@ -987,6 +998,7 @@ tools:
 - name: circos
   owner: iuc
   revisions:
+  - c4bde687c846
   - e6cbe3190642
 - name: fasta_nucleotide_color_plot
   owner: iuc
@@ -1354,6 +1366,7 @@ tools:
   owner: iuc
   revisions:
   - 071084070619
+  - 3ddd99c7efee
   - 58228a4d58fe
 - name: subtract
   owner: devteam
@@ -1362,6 +1375,7 @@ tools:
 - name: bbtools_bbmap
   owner: iuc
   revisions:
+  - 23d04eabbac5
   - 7f19559b8b55
   - 81cbb6a4c1ca
   - 9ed6579f52f3
@@ -1407,11 +1421,13 @@ tools:
   - 55c9ac3aa8f4
   - 850f3679b9b4
   - d82339e37e8e
+  - d8d32326fbfb
 - name: rna_starsolo
   owner: iuc
   revisions:
   - 45795f582ae9
   - 61cb2042581a
+  - 7f694df20f73
   - a2f232ff85ed
   - a6fba3d92531
   - c23da6257d6a
@@ -1602,6 +1618,7 @@ tools:
 - name: bio_hansel
   owner: iuc
   revisions:
+  - 1b88c1cf803d
   - 4deefd708943
 - name: cat_add_names
   owner: iuc
@@ -3137,11 +3154,13 @@ tools:
   owner: iuc
   revisions:
   - 091a9d638d78
+  - cc100e0f61f4
 - name: meme_fimo
   owner: iuc
   revisions:
   - 0c5239d1aa65
   - 4eb02864e5df
+  - 613c75eee7bd
 - name: meme_meme
   owner: iuc
   revisions:
@@ -3150,6 +3169,7 @@ tools:
 - name: meme_psp_gen
   owner: iuc
   revisions:
+  - 8436beac5eed
   - a0fa4efeeee3
   - ff2f53a32d0e
 - name: chromeister
@@ -3166,10 +3186,12 @@ tools:
   owner: iuc
   revisions:
   - 26f2cc1cc1e9
+  - 355f84a894bf
 - name: bbtools_bbduk
   owner: iuc
   revisions:
   - 425dab0e057b
+  - 428de92eac6b
   - bf0cb5dd02f2
 - name: diamond
   owner: bgruening
@@ -3280,6 +3302,7 @@ tools:
   owner: iuc
   revisions:
   - 6d4babad010f
+  - 86e2413cf3f8
   - c33686854b19
 - name: hyphy_absrel
   owner: iuc
@@ -3522,11 +3545,13 @@ tools:
   owner: iuc
   revisions:
   - 0c741f364d18
+  - 38ecfb8d52c6
   - 6eaf0f9836c8
   - b08cd32d03ad
 - name: stacks_cstacks
   owner: iuc
   revisions:
+  - 40cde06ae34a
   - be3df81c0353
   - dab92afa0c98
 - name: stacks_denovomap
@@ -3535,18 +3560,21 @@ tools:
   - 2b1dd7ab69f7
   - 9f9d39f582f3
   - eb1e95f88e96
+  - fdbcc560c691
 - name: stacks_genotypes
   owner: iuc
   revisions:
   - 00f4a4e553ae
   - 46f061f3cfeb
   - 5af94af9ec8f
+  - 62a4b8e5e139
 - name: stacks_procrad
   owner: iuc
   revisions:
   - 57910d476be9
   - 8fe258d72ff3
   - be78e39d56b3
+  - eded025438db
 - name: stacks_pstacks
   owner: iuc
   revisions:
@@ -3559,11 +3587,13 @@ tools:
   - 1ba1185929c1
   - 4ee074ca88fb
   - 7c42e6768c41
+  - d7a482f44e08
 - name: stacks_rxstacks
   owner: iuc
   revisions:
   - 2360d8cf42f7
   - 3e43e51b3c3b
+  - 8479d9a67998
   - 9d0ac63dcfcd
 - name: stacks_sstacks
   owner: iuc
@@ -3640,6 +3670,7 @@ tools:
 - name: dexseq
   owner: iuc
   revisions:
+  - 74ec758e63a4
   - 9fd8b69e6e68
 - name: edger
   owner: iuc
@@ -3657,6 +3688,7 @@ tools:
 - name: heinz
   owner: iuc
   revisions:
+  - 2b80a2596064
   - 704c401e0afb
   - e41ec5af7472
 - name: idr
@@ -3672,6 +3704,7 @@ tools:
   owner: iuc
   revisions:
   - 2953303df011
+  - 3741c4204eb5
   - ce5d418183c5
   - fce88d02de6c
 - name: kallisto_quant
@@ -3679,6 +3712,7 @@ tools:
   revisions:
   - 4f9c4e6566e5
   - 60f888039fb2
+  - f71c54748ff2
 - name: migmap
   owner: iuc
   revisions:
@@ -4464,16 +4498,19 @@ tools:
   revisions:
   - 0d8581534009
   - a7c9782130e8
+  - c752293b798c
 - name: lofreq_alnqual
   owner: iuc
   revisions:
   - 2953c43180c0
+  - 3ee7d4ac76f3
   - 606542a18f82
   - 791f73caa0c8
   - e0e2fd665102
 - name: lofreq_call
   owner: iuc
   revisions:
+  - 14af3b671440
   - 31216d510164
   - b11e8e9c23bf
 - name: lofreq_filter
@@ -4487,11 +4524,13 @@ tools:
   revisions:
   - 2ae554b4bcca
   - 354b534eeab7
+  - 4165b712b569
   - 5d6a078d30b0
   - 971e07ca4456
 - name: lofreq_viterbi
   owner: iuc
   revisions:
+  - 3330ebe7c0c7
   - aa35ee7f3ab2
   - af7e416d8176
   - ecd80c7c3886
@@ -4620,6 +4659,7 @@ tools:
   revisions:
   - 0893a1dbb807
   - 28e4bcbc86e7
+  - 6606a8c97889
   - a250929be21b
   - cf65217ad61c
 - name: ivar_variants
@@ -4629,6 +4669,7 @@ tools:
   - 1ef68546d37f
   - 252dfb042563
   - 3888bbe7a9ca
+  - 5e5dfc9e71e2
   - aa9de8f20668
   - abbc8041e8ec
   - aea7008fe1f1
@@ -4857,6 +4898,7 @@ tools:
   owner: iuc
   revisions:
   - 96e6283e4745
+  - b7e91ff1a894
 - name: mlst
   owner: iuc
   revisions:
@@ -4869,6 +4911,7 @@ tools:
 - name: hifiasm
   owner: bgruening
   revisions:
+  - 09cf7b520734
   - baf229b1fdfd
 - name: novoplasty
   owner: iuc
@@ -4922,6 +4965,7 @@ tools:
 - name: mummer_nucmer
   owner: iuc
   revisions:
+  - 298dceed950c
   - 2d2fe522553d
 - name: snp_sites
   owner: iuc
@@ -4976,15 +5020,18 @@ tools:
 - name: dimet_differential_analysis
   owner: iuc
   revisions:
+  - b7d8a8202ad6
   - fff032d6115a
 - name: dimet_differential_multigroup_analysis
   owner: iuc
   revisions:
+  - 603a8e254ee3
   - c4bcde2c17d0
 - name: dimet_enrichment_plot
   owner: iuc
   revisions:
   - 916bfd9924ff
+  - fb9fec2c5642
 - name: dimet_isotopologues_plot
   owner: iuc
   revisions:
@@ -4993,6 +5040,7 @@ tools:
   owner: iuc
   revisions:
   - 06f8d9ba09cd
+  - 8539c0a123a0
 - name: dimet_pca_analysis
   owner: iuc
   revisions:
@@ -5005,9 +5053,11 @@ tools:
   owner: iuc
   revisions:
   - b1a9eddf73d9
+  - f9bfb18d3fb1
 - name: dimet_bivariate_analysis
   owner: iuc
   revisions:
+  - 970f1754e88c
   - fe3500a01254
 - name: hypo
   owner: iuc
@@ -5021,6 +5071,7 @@ tools:
   owner: iuc
   revisions:
   - f53beb324696
+  - fc95788aff90
 - name: data_manager_pangolin_data
   owner: iuc
   revisions:
@@ -5146,3 +5197,215 @@ tools:
   owner: iuc
   revisions:
   - 2691b8c12947
+- name: autobigs
+  owner: iuc
+  revisions:
+  - 727e524cda34
+- name: hmmer_hmmscan
+  owner: iuc
+  revisions:
+  - 4a54e4c9188b
+- name: hmmer_hmmsearch
+  owner: iuc
+  revisions:
+  - df7a52791be9
+- name: hmmer_nhmmer
+  owner: iuc
+  revisions:
+  - 54b92ae4f75b
+- name: hmmer_nhmmscan
+  owner: iuc
+  revisions:
+  - fb1305d0d1c6
+- name: hmmer_phmmer
+  owner: iuc
+  revisions:
+  - 37bcc9fb0bb1
+- name: icescreen
+  owner: iuc
+  revisions:
+  - cca2a89210ae
+- name: krocus
+  owner: iuc
+  revisions:
+  - 6a97c3a857d2
+- name: vsnp_statistics
+  owner: iuc
+  revisions:
+  - 932254a0d3c6
+- name: vsnp_get_snps
+  owner: iuc
+  revisions:
+  - b41986d987cf
+- name: vsnp_determine_ref_from_data
+  owner: iuc
+  revisions:
+  - 7540a0669022
+- name: vsnp_build_tables
+  owner: iuc
+  revisions:
+  - 4b11029f2a5a
+- name: vsnp_add_zero_coverage
+  owner: iuc
+  revisions:
+  - 75db412e8367
+- name: windowmasker
+  owner: iuc
+  revisions:
+  - d90ae4a02efd
+- name: megahit
+  owner: iuc
+  revisions:
+  - ab208c87d973
+- name: quickmerge
+  owner: iuc
+  revisions:
+  - 9acf91225108
+- name: bam2fastx
+  owner: iuc
+  revisions:
+  - 43fd2ba63c16
+- name: meme_dreme
+  owner: iuc
+  revisions:
+  - 0c97e5c18468
+- name: genetrack
+  owner: iuc
+  revisions:
+  - b41a4bb828a3
+- name: cwpair2
+  owner: iuc
+  revisions:
+  - c4b926c9831c
+- name: multigps
+  owner: iuc
+  revisions:
+  - 028fafca04fa
+- name: qfilt
+  owner: iuc
+  revisions:
+  - c5e1ff9191a5
+- name: bbtools_bbnorm
+  owner: iuc
+  revisions:
+  - c80190b3ff02
+- name: ggplot2_boxplot
+  owner: iuc
+  revisions:
+  - 653803fab921
+- name: ggplot2_barplot
+  owner: iuc
+  revisions:
+  - 41e9114cc7cd
+- name: mcl
+  owner: iuc
+  revisions:
+  - e092787c0a29
+- name: picrust_predict_metagenomes
+  owner: iuc
+  revisions:
+  - f17b7d5a87f7
+- name: picrust_normalize_by_copy_number
+  owner: iuc
+  revisions:
+  - 65e5f9caefcc
+- name: picrust_metagenome_contributions
+  owner: iuc
+  revisions:
+  - 857e8724b43f
+- name: mummer_mummerplot
+  owner: iuc
+  revisions:
+  - 75e15ee43896
+- name: porechop
+  owner: iuc
+  revisions:
+  - a2899db6bd6e
+- name: straindesign_simulate_deletion
+  owner: iuc
+  revisions:
+  - 2ec0d9623616
+- name: straindesign_reduce_model
+  owner: iuc
+  revisions:
+  - adef9f0e26ae
+- name: straindesign_analyzing_model
+  owner: iuc
+  revisions:
+  - 189b438573cd
+- name: genrich
+  owner: iuc
+  revisions:
+  - 8353f3cc03db
+- name: peakzilla
+  owner: iuc
+  revisions:
+  - 8badcbe5792c
+- name: diffbind
+  owner: bgruening
+  revisions:
+  - f907216064f6
+- name: picrust2_pipeline
+  owner: iuc
+  revisions:
+  - d6bb2e3febda
+- name: ete_treeviewer
+  owner: iuc
+  revisions:
+  - 2d4402c70eed
+- name: prot_scriber
+  owner: iuc
+  revisions:
+  - f05dfa43240f
+- name: stacks_populations
+  owner: iuc
+  revisions:
+  - d1fad35bdb4a
+- name: egsea
+  owner: iuc
+  revisions:
+  - fba1660fb717
+- name: htseq_count
+  owner: lparsons
+  revisions:
+  - c5a9d57d7eb1
+- name: limma_voom
+  owner: iuc
+  revisions:
+  - 119b069fc845
+- name: spacexr_cside
+  owner: iuc
+  revisions:
+  - 2b1797b4cbb1
+- name: spacexr_rctd
+  owner: iuc
+  revisions:
+  - acf15b2efe66
+- name: preprocess_muon
+  owner: iuc
+  revisions:
+  - 79c4664e699f
+- name: cluster_analyze_embed_muon
+  owner: iuc
+  revisions:
+  - 78680b96a6ac
+- name: plot_muon
+  owner: iuc
+  revisions:
+  - af43a6c41942
+- name: graphembed
+  owner: iuc
+  revisions:
+  - f28678233baf
+- name: query_tabular
+  owner: iuc
+  revisions:
+  - cf4397560712
+- name: merlin
+  owner: iuc
+  revisions:
+  - 64a2c5a3acf9
+- name: tracegroomer
+  owner: iuc
+  revisions:
+  - 5147f08d67c9
