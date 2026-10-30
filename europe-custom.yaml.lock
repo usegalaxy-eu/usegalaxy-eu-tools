@@ -32,6 +32,7 @@ tools:
 - name: pizzly
   owner: iuc
   revisions:
+  - 59bdee6f554c
   - 91ef4a171202
   - f7556cfa4047
   tool_panel_section_label: RNA Analysis
@@ -180,6 +181,7 @@ tools:
   - 1ee282794de3
   - 654b3a274ed5
   - 6b865dde1baa
+  - dbd2e239117c
   tool_panel_section_label: FASTA/FASTQ
 - name: add_value
   owner: devteam
@@ -309,7 +311,7 @@ tools:
 - name: collection_column_join
   owner: iuc
   revisions:
-  - 3ddd99c7efee
+  - 4b00d89e8690
   - 9c8536c7ed42
   - dfde09461b1e
   tool_panel_section_label: Join, Subtract and Group
@@ -395,6 +397,7 @@ tools:
   - 5cc8e93ee98f
   - 80414c33a59a
   - 8dd8e89c0603
+  - c6e901032315
   - e1f5bdd8279c
   tool_panel_section_id: fetch_sequences___alignments
 - name: concat
@@ -465,6 +468,7 @@ tools:
 - name: fasta_nucleotide_color_plot
   owner: iuc
   revisions:
+  - 0c8cba9badcf
   - 980917b09eb8
   - e4b5401adcec
   tool_panel_section_label: Graph/Display Data
@@ -487,6 +491,7 @@ tools:
   - 9de82b4963e6
   - ca2def38369c
   - dba3c47e1798
+  - eb55da80c5e2
   - edb534491f92
   - fa30df9b79c2
   - fd5dbf0f732e
@@ -613,7 +618,7 @@ tools:
   revisions:
   - 01f5d04846c4
   - 40b8472e91ca
-  - 613c75eee7bd
+  - 5275798cf013
   - c1a9a297ba8b
   - c5209f38700d
   - d7a6ea1e3b9d
@@ -681,6 +686,7 @@ tools:
 - name: vsearch
   owner: iuc
   revisions:
+  - 010235ce52d2
   - 576963db5f1b
   - 9495df9dd6ef
   - b3c7199d8786
@@ -802,6 +808,7 @@ tools:
   owner: iuc
   revisions:
   - 3905ccd5c631
+  - 482fb7008500
   - 6756c87dc2d4
   - 9108bd9450cb
   - edaa8572219d
@@ -1157,6 +1164,7 @@ tools:
   - 4df95e2d7f61
   - 53255f6eecfc
   - 5ec75f5dae3c
+  - 6e8618432bea
   - 79de45b5069b
   - 7ed2edc1337f
   - 980d2a2e1180
@@ -1167,7 +1175,6 @@ tools:
   - c7c55b694974
   - d5659efd66aa
   - d681e989ac95
-  - d8d32326fbfb
   - de21b616f03a
   - e132e7d02a3e
   tool_panel_section_label: Mapping
@@ -1246,6 +1253,7 @@ tools:
   - 9a882d108833
   - a6fc9228e1a0
   - b060944b3989
+  - ccc6c4f0236f
   - cd9874cb9019
   - d027d1f4984e
   - d983d19fbbab
@@ -1258,6 +1266,7 @@ tools:
 - name: featurecounts
   owner: iuc
   revisions:
+  - 11a7f9b9cfe1
   - 1759d845181e
   - 1b851f87fbe0
   - 30f6985f0ac7
@@ -1357,7 +1366,7 @@ tools:
   - 2872c633f07e
   - 4ca0e679f21e
   - 62adf13b86ea
-  - 74ec758e63a4
+  - 98fd01004439
   - 9a7c5b6d8f1e
   - b47c006d90c5
   - df929f257179
@@ -1509,8 +1518,8 @@ tools:
   - 424aefbd7777
   - 56e104999978
   - 640d3af5d833
-  - 86e2413cf3f8
   - bfe57d6e0c4c
+  - d8362a868940
   tool_panel_section_label: Peak Calling
 - name: piranha
   owner: rnateam
@@ -1616,6 +1625,7 @@ tools:
   - 602de62d995b
   - 67c29afac85f
   - 8b3e3657034e
+  - 8f51a7500540
   - 9d1256d9ef0b
   - ae39895af5fe
   - bbcf5f7f2af2
@@ -1676,6 +1686,7 @@ tools:
   revisions:
   - 1d8ad7599f02
   - 42b38f6d9f68
+  - 92390a2cbb12
   tool_panel_section_label: Annotation
 - name: blast2go
   owner: peterjc
@@ -2575,14 +2586,14 @@ tools:
 - name: stacks_genotypes
   owner: iuc
   revisions:
-  - 62a4b8e5e139
+  - ccadf9b291cd
   - dbe3901aace2
   tool_panel_section_label: RAD-seq
 - name: stacks_denovomap
   owner: iuc
   revisions:
+  - 48b49c5b3427
   - b8827c571fbd
-  - fdbcc560c691
   tool_panel_section_label: RAD-seq
 - name: stacks_ustacks
   owner: iuc
@@ -2593,33 +2604,33 @@ tools:
 - name: stacks_assembleperead
   owner: iuc
   revisions:
-  - 38ecfb8d52c6
   - bc108981ca68
+  - fdbed68f179f
   - fea78fd36a05
   tool_panel_section_label: RAD-seq
 - name: stacks_procrad
   owner: iuc
   revisions:
+  - 343073e3b095
   - 5d12647ff71f
-  - eded025438db
   tool_panel_section_label: RAD-seq
 - name: stacks_refmap
   owner: iuc
   revisions:
+  - 8b6f471264f0
   - ba76bd1eef47
-  - d7a482f44e08
   tool_panel_section_label: RAD-seq
 - name: stacks_cstacks
   owner: iuc
   revisions:
-  - 40cde06ae34a
+  - 1bd61efeff47
   - 5bd1418f4227
   tool_panel_section_label: RAD-seq
 - name: stacks_rxstacks
   owner: iuc
   revisions:
+  - 33e11cb7d404
   - 77f5db795774
-  - 8479d9a67998
   tool_panel_section_label: RAD-seq
 - name: stacks_pstacks
   owner: iuc
@@ -2633,7 +2644,7 @@ tools:
   - 45db1ba16163
   - 47e83073b7a1
   - 95286af4139b
-  - d1fad35bdb4a
+  - ac2d98d6ff8e
   - d504d945a655
   tool_panel_section_label: RAD-seq
 - name: gecco
