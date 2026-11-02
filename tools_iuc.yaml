@@ -362,6 +362,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: hmmer_esl_alimask
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: impg_stats
     owner: iuc
     tool_panel_section_label: Annotation
@@ -3134,6 +3138,14 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: perseus_filter
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: perseus_extract
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: samestr
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -5545,6 +5557,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
+  - name: epa_ng
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
   - name: fastreer_dist2tree
     owner: iuc
     tool_panel_section_label: Phylogenetics
@@ -5562,6 +5578,18 @@ tools:
     tool_panel_section_label: Phylogenetics
 
   - name: foldtree
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: gappa_heat_tree
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: gappa_graft
+    owner: iuc
+    tool_panel_section_label: Phylogenetics
+
+  - name: gappa_assign
     owner: iuc
     tool_panel_section_label: Phylogenetics
 
@@ -8046,6 +8074,9 @@ tools:
     owner: iuc
 
   - name: data_manager_diamond_database_builder
+    owner: iuc
+
+  - name: data_manager_ete3_taxonomy
     owner: iuc
 
   - name: data_manager_fetch_refseq

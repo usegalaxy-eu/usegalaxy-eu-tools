@@ -99,25 +99,30 @@ tools:
   owner: iuc
   revisions:
   - 80c713789d13
+  - a30ef2a2b3a9
   - b4dc65565864
   - e3e5f208e93c
 - name: hmmer_hmmalign
   owner: iuc
   revisions:
   - 24fa8e890f08
+  - 71863d3bf721
   - b2453ee52845
 - name: hmmer_hmmbuild
   owner: iuc
   revisions:
+  - 4b996c837ec8
   - dc8860ba75d1
 - name: hmmer_hmmconvert
   owner: iuc
   revisions:
   - 8d5ec58d2172
+  - a9dace1a1e36
   - db8a5a3195e7
 - name: hmmer_hmmemit
   owner: iuc
   revisions:
+  - 368f47898569
   - 82d6ca8212dc
   - 9415f29a3926
   - 96b127c59e6a
@@ -125,11 +130,13 @@ tools:
 - name: hmmer_hmmfetch
   owner: iuc
   revisions:
+  - 34b09461bf87
   - a28fd001de59
   - fb459c8fb2ba
 - name: hmmer_jackhmmer
   owner: iuc
   revisions:
+  - 307d841f8904
   - 6e27bb3f0fa6
   - 9fdeca68a6b5
 - name: homer_gtf_to_annotations
@@ -497,6 +504,7 @@ tools:
   owner: iuc
   revisions:
   - 1080e07a2233
+  - 7adddc6015c1
 - name: resize_coordinate_window
   owner: iuc
   revisions:
@@ -3648,6 +3656,7 @@ tools:
 - name: cuffdiff
   owner: devteam
   revisions:
+  - a85acc5199c7
   - af3e173cad7f
   - d3ae7d9c2202
 - name: cuffnorm
@@ -3658,6 +3667,7 @@ tools:
   owner: devteam
   revisions:
   - 6dc45faebc1d
+  - 93148c05136f
 - name: deseq2
   owner: iuc
   revisions:
@@ -3665,6 +3675,7 @@ tools:
   - 71bacea10eee
   - 9a616afdbda5
   - a416957ee305
+  - ccc6c4f0236f
   - de44f8eff84a
   - e5c8afac22a7
 - name: dexseq
@@ -5204,22 +5215,27 @@ tools:
 - name: hmmer_hmmscan
   owner: iuc
   revisions:
+  - 1e365d320176
   - 4a54e4c9188b
 - name: hmmer_hmmsearch
   owner: iuc
   revisions:
+  - 56c141af8afe
   - df7a52791be9
 - name: hmmer_nhmmer
   owner: iuc
   revisions:
+  - 2449e1c81166
   - 54b92ae4f75b
 - name: hmmer_nhmmscan
   owner: iuc
   revisions:
+  - 67490c1c5e9c
   - fb1305d0d1c6
 - name: hmmer_phmmer
   owner: iuc
   revisions:
+  - 1b4fa39357ab
   - 37bcc9fb0bb1
 - name: icescreen
   owner: iuc
@@ -5409,3 +5425,63 @@ tools:
   owner: iuc
   revisions:
   - 5147f08d67c9
+- name: hybpiper
+  owner: iuc
+  revisions:
+  - 48836bd31536
+- name: cuffcompare
+  owner: devteam
+  revisions:
+  - ad5d061fbdf2
+- name: cufflinks
+  owner: devteam
+  revisions:
+  - 6926716bbfb5
+- name: cuffmerge
+  owner: devteam
+  revisions:
+  - 04adc9db1581
+- name: prestor_abseq3
+  owner: iuc
+  revisions:
+  - aa3554e51549
+- name: presto_partition
+  owner: iuc
+  revisions:
+  - 1f3ae16f3655
+- name: presto_parselog
+  owner: iuc
+  revisions:
+  - 7f93403bc705
+- name: presto_parseheaders
+  owner: iuc
+  revisions:
+  - de864d852bce
+- name: presto_pairseq
+  owner: iuc
+  revisions:
+  - eed465eb14a3
+- name: presto_maskprimers
+  owner: iuc
+  revisions:
+  - df0797c61790
+- name: presto_filterseq
+  owner: iuc
+  revisions:
+  - 4a4e086f6e38
+- name: presto_collapseseq
+  owner: iuc
+  revisions:
+  - 852e7ca7f7de
+- name: presto_buildconsensus
+  owner: iuc
+  revisions:
+  - ef31bdd0c9ed
+- name: presto_assemblepairs
+  owner: iuc
+  revisions:
+  - af855eb44091
+- name: presto_alignsets
+  owner: iuc
+  revisions:
+  - b401018e0614
