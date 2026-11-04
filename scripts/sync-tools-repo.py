@@ -316,12 +316,13 @@ class ToolsRepoSyncer:
         shed_yml_globs = [f"{d}/**/.shed.yml" for d in self.base_dirs]
         xml_globs = [f"{d}/**/*.xml" for d in self.base_dirs]
 
-        # 1. Newly added .shed.yml files
+        # 1. Added, modified or renamed .shed.yml files: an edit can make a repo
+        # discoverable (e.g. owner fixed, name added); existing tools are deduplicated
         diff_output = _git(
             [
                 "diff",
                 "--name-only",
-                "--diff-filter=A",
+                "--diff-filter=AMR",
                 f"{stored_sha}..{current_sha}",
                 "--",
             ]
