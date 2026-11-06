@@ -1592,7 +1592,7 @@ tools:
 - name: te_finder
   owner: iuc
   revisions:
-  - 2edb80d68a1b
+  - 0f7eee2d0a9d
   - 838fb3a1678f
   tool_panel_section_label: Annotation
 - name: tetyper
@@ -3462,7 +3462,7 @@ tools:
 - name: fasta_clipping_histogram
   owner: devteam
   revisions:
-  - 6c0a46d445a3
+  - d7e53c58ba0a
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_compute_length
   owner: devteam
@@ -3488,9 +3488,9 @@ tools:
 - name: fasta_formatter
   owner: devteam
   revisions:
+  - 59a3ca730b16
   - 859422bcb689
   - 9457a20156db
-  - e773f1eb16cf
   tool_panel_section_label: FASTA/FASTQ
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
@@ -3502,8 +3502,8 @@ tools:
 - name: fasta_nucleotide_changer
   owner: devteam
   revisions:
-  - 90e8c76156a7
   - cc9a18dd41c9
+  - dac07dd4fbd7
   - ec0b5076173a
   - f81d4362b6c1
   tool_panel_section_label: FASTA/FASTQ
@@ -3676,8 +3676,8 @@ tools:
 - name: fastq_quality_boxplot
   owner: devteam
   revisions:
-  - 47df89f900a4
   - 7cf5b1d072b5
+  - c38184e51140
   - f95284aa2946
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_quality_converter
@@ -3685,14 +3685,14 @@ tools:
   revisions:
   - 54053ea6c77e
   - 74db4cffab1f
-  - 86713dc416ec
+  - e4634c67ee8d
   tool_panel_section_label: FASTA/FASTQ
 - name: fastq_quality_filter
   owner: devteam
   revisions:
   - 43a7370aa010
   - 7b4468117008
-  - b1e332a385f1
+  - cb57980cefa0
   - ce9cd02d5b88
   - e41385662e5e
   tool_panel_section_label: FASTA/FASTQ
@@ -3709,7 +3709,7 @@ tools:
   owner: devteam
   revisions:
   - 186b8d913e6c
-  - 191e43b329f6
+  - 4ba5af45b658
   - 8979c288aefb
   - ce309f4ff17f
   tool_panel_section_label: FASTA/FASTQ
@@ -3860,55 +3860,55 @@ tools:
 - name: fastx_artifacts_filter
   owner: devteam
   revisions:
+  - 016529f651dc
   - 09070cacefd8
-  - 34edfa69c149
   - 567d5b3c52b1
   - d5e9e83cd3d8
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_barcode_splitter
   owner: devteam
   revisions:
-  - 229caeddb2df
+  - 456be35b3f1b
   - 4bedca26c133
   - 8abdedf55101
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_clipper
   owner: devteam
   revisions:
+  - 5bd863921cc5
   - 736b8f6ee456
   - 85263dc18cec
   - bdf1ce174e39
-  - c60cf18ec2b0
   - cb1e251cac37
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_collapser
   owner: devteam
   revisions:
   - 421f0af4ee95
-  - 72494a86e047
   - 7ce1891db6f5
+  - cd11b0508361
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_nucleotides_distribution
   owner: devteam
   revisions:
   - 63d6e2daad48
-  - 751878fa37e5
+  - 81718e0eba05
   - ad116ae3f4d9
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
-  - 48c943a0290a
   - 59003d0543cd
+  - 5d39ad51de11
   - 7306ec78632a
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_renamer
   owner: devteam
   revisions:
   - 02f8a17a4ebd
-  - 0ffae348abae
   - 3599f5451ee2
   - b29d37ca9e41
+  - e39e3016fbe1
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_reverse_complement
   owner: devteam
@@ -3916,17 +3916,17 @@ tools:
   - 0c2907307ba4
   - 3f1017d3f785
   - 6027ef51ef91
-  - 7566b751e769
+  - b3c10a950efa
   - e246088b6e34
   tool_panel_section_label: FASTA/FASTQ
 - name: fastx_trimmer
   owner: devteam
   revisions:
-  - 1ea2ae5afb28
   - 377ac2829eac
   - 547e8d00f11c
   - 61b4cedc8934
   - bbb007a39ac2
+  - cac2c7cba460
   tool_panel_section_label: FASTA/FASTQ
 - name: filtlong
   owner: iuc
@@ -3942,6 +3942,7 @@ tools:
   revisions:
   - 01a4ebf1f237
   - 13e98e2709b8
+  - 48e98c53e8f9
   - c85bdba47254
   tool_panel_section_label: FASTA/FASTQ
 - name: ncbi_fcs_gx
@@ -4812,7 +4813,7 @@ tools:
 - name: gwastools_manhattan_plot
   owner: iuc
   revisions:
-  - c4bf5e913c2e
+  - 71ec2638c87d
   tool_panel_section_label: Graph/Display Data
 - name: heatmap
   owner: iuc
@@ -6015,6 +6016,7 @@ tools:
   - 58b278def57e
   - 5ef7ec16b04f
   - 79b885ce78d7
+  - 9b1940be9da1
   - a00cceb45700
   - b8f5f6e87f5c
   - e403d27e8f24
@@ -10136,6 +10138,7 @@ tools:
   - 9572fe07659d
   - a3cdbf62a59f
   - aa73f04777fd
+  - c14c348be1fd
   tool_panel_section_label: Nanopore
 - name: nanoplot
   owner: iuc
@@ -10778,16 +10781,19 @@ tools:
 - name: gappa_heat_tree
   owner: iuc
   revisions:
+  - 2444c2fc3f13
   - bb5c4f307c2a
   tool_panel_section_label: Phylogenetics
 - name: gappa_graft
   owner: iuc
   revisions:
+  - 33f469f98aa8
   - 8b447f1c39b1
   tool_panel_section_label: Phylogenetics
 - name: gappa_assign
   owner: iuc
   revisions:
+  - 442077f8df1c
   - 7dac888a2eb7
   tool_panel_section_label: Phylogenetics
 - name: hybpiper
@@ -13329,12 +13335,28 @@ tools:
 - name: cosg
   owner: iuc
   revisions:
+  - 37a425184c23
   - ebefbc528249
   tool_panel_section_label: Single-cell
 - name: lemur
   owner: iuc
   revisions:
   - ea4378e0b5ff
+  tool_panel_section_label: Single-cell
+- name: sccellfie_plotting
+  owner: iuc
+  revisions:
+  - d4fa57c5e127
+  tool_panel_section_label: Single-cell
+- name: sccellfie_pipeline
+  owner: iuc
+  revisions:
+  - 2569fa97ba93
+  tool_panel_section_label: Single-cell
+- name: sccellfie_analysis
+  owner: iuc
+  revisions:
+  - 7e379ca411e5
   tool_panel_section_label: Single-cell
 - name: sceasy_convert
   owner: iuc
@@ -13782,12 +13804,14 @@ tools:
 - name: spapros_selection
   owner: iuc
   revisions:
+  - a10f0b0a7f48
   - d72bd6516719
   tool_panel_section_label: Single-cell
 - name: spapros_evaluation
   owner: iuc
   revisions:
   - 069a5b48eae0
+  - 10f1917ee20d
   tool_panel_section_label: Single-cell
 - name: episcanpy_build_matrix
   owner: iuc
@@ -13923,6 +13947,7 @@ tools:
   owner: iuc
   revisions:
   - 3421d2ea2c8a
+  - 87c44a851ecb
   - ac675f28acfc
   tool_panel_section_label: Single-cell
 - name: bellavista_prepare
@@ -13940,6 +13965,7 @@ tools:
 - name: liana_methods
   owner: iuc
   revisions:
+  - 0542d9ffe287
   - 2b4c00803eb4
   - 89635206a199
   tool_panel_section_label: Single-cell
@@ -13947,6 +13973,7 @@ tools:
   owner: iuc
   revisions:
   - 6466390eac09
+  - 98a4eafa2eee
   - de261b37af8c
   tool_panel_section_label: Single-cell
 - name: liana_multi
@@ -13954,16 +13981,19 @@ tools:
   revisions:
   - 03a038f2b90e
   - 763dfad22665
+  - f997f4ce402d
   tool_panel_section_label: Single-cell
 - name: liana_plot
   owner: iuc
   revisions:
   - 1ffc708d7a5e
   - 8b9b8d358883
+  - 97bd4ab1e539
   tool_panel_section_label: Single-cell
 - name: liana_resource
   owner: iuc
   revisions:
+  - c43d7c6ba40b
   - d4e40e802b8c
   - ed517181d576
   tool_panel_section_label: Single-cell
@@ -13972,6 +14002,7 @@ tools:
   revisions:
   - 5bd0e9b7addf
   - 6d832bf56558
+  - 89b54f8c8b81
   tool_panel_section_label: Single-cell
 - name: best_regression_subsets
   owner: devteam
@@ -14130,6 +14161,16 @@ tools:
   - 372967836e98
   - 6428adb323eb
   tool_panel_section_label: Text Manipulation
+- name: compare_param_value
+  owner: iuc
+  revisions:
+  - 69bdc5e0c667
+  tool_panel_section_label: Text Manipulation
+- name: combine_boolean_params
+  owner: iuc
+  revisions:
+  - 597e0235d263
+  tool_panel_section_label: Text Manipulation
 - name: dos2unix
   owner: iuc
   revisions:
@@ -14185,6 +14226,11 @@ tools:
   - 5b3c6135a982
   - 69c10b56f46d
   - 8ddabc73af92
+  tool_panel_section_label: Text Manipulation
+- name: invert_boolean_param
+  owner: iuc
+  revisions:
+  - db710013d073
   tool_panel_section_label: Text Manipulation
 - name: join
   owner: devteam
@@ -15266,6 +15312,7 @@ tools:
 - name: genehunter_modscore
   owner: iuc
   revisions:
+  - '456672693783'
   - 9e6a43112688
   tool_panel_section_label: Variant Calling
 - name: get_hrun
@@ -16235,6 +16282,7 @@ tools:
   revisions:
   - 6136ac58acab
   - 8ef19ca5d289
+  - 9bf515b77ff5
 - name: data_manager_dram_database_downloader
   owner: iuc
   revisions:
