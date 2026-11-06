@@ -585,6 +585,7 @@ tools:
 - name: fasta_clipping_histogram
   owner: devteam
   revisions:
+  - 6c0a46d445a3
   - 8889eb864cef
 - name: fasta_compute_length
   owner: devteam
@@ -599,6 +600,7 @@ tools:
   owner: devteam
   revisions:
   - 516b97a23d7e
+  - e773f1eb16cf
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   revisions:
@@ -607,6 +609,7 @@ tools:
   owner: devteam
   revisions:
   - 091ca73f5804
+  - 90e8c76156a7
   - f773e98b26cf
 - name: fasta_stats
   owner: iuc
@@ -652,15 +655,18 @@ tools:
   owner: devteam
   revisions:
   - 3987db70a4b0
+  - 47df89f900a4
   - 867ab348287d
 - name: fastq_quality_converter
   owner: devteam
   revisions:
   - 045f0e1043f7
+  - 86713dc416ec
 - name: fastq_quality_filter
   owner: devteam
   revisions:
   - 64e9a6afdd0c
+  - b1e332a385f1
 - name: fastq_stats
   owner: devteam
   revisions:
@@ -669,6 +675,7 @@ tools:
   owner: devteam
   revisions:
   - 02a5f43cd5d1
+  - 191e43b329f6
   - 77b41c89d856
   - e282bc27be9a
 - name: fastq_to_tabular
@@ -699,6 +706,7 @@ tools:
 - name: fastx_artifacts_filter
   owner: devteam
   revisions:
+  - 34edfa69c149
   - 529bccd5e4a1
   - dd3737e40dce
 - name: fastx_barcode_splitter
@@ -706,36 +714,44 @@ tools:
   revisions:
   - 015dc921d814
   - 0b7ec11b3c7c
+  - 229caeddb2df
 - name: fastx_clipper
   owner: devteam
   revisions:
   - 90858c306551
   - b8658f852bc7
+  - c60cf18ec2b0
 - name: fastx_collapser
   owner: devteam
   revisions:
   - 07497255281e
+  - 72494a86e047
 - name: fastx_nucleotides_distribution
   owner: devteam
   revisions:
   - 21796f46e0ba
+  - 751878fa37e5
   - b6b54ba71bd8
 - name: fastx_quality_statistics
   owner: devteam
   revisions:
+  - 48c943a0290a
   - cc0fd298cc17
 - name: fastx_renamer
   owner: devteam
   revisions:
+  - 0ffae348abae
   - d8a3d31554d7
   - f984bb114520
 - name: fastx_reverse_complement
   owner: devteam
   revisions:
   - 177f0621c266
+  - 7566b751e769
 - name: fastx_trimmer
   owner: devteam
   revisions:
+  - 1ea2ae5afb28
   - 73194cdd4f57
   - b98f3fa516a3
 - name: filtlong
@@ -5498,3 +5514,11 @@ tools:
   owner: iuc
   revisions:
   - 2c3d294dbe42
+- name: te_finder
+  owner: iuc
+  revisions:
+  - 2edb80d68a1b
+- name: gwastools_manhattan_plot
+  owner: iuc
+  revisions:
+  - c4bf5e913c2e
