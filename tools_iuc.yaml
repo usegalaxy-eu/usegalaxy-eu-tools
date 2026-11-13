@@ -482,6 +482,54 @@ tools:
     owner: iuc
     tool_panel_section_label: "FASTQ Quality Control"
 
+  - name: sincei_scscorefeatures
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_scplotregion
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_scjsd
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_scfindvcrs
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_scfilterstats
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_scfilterbarcodes
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_scexportsignal
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_sccountreads_features
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_sccountreads_bins
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_sccountqc
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_sccombinecounts
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: sincei_scbulkcoverage
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: smoothxg
     owner: iuc
     tool_panel_section_label: Annotation
@@ -1577,6 +1625,22 @@ tools:
     owner: iuc
     tool_panel_section_label: Convert Formats
 
+  - name: ucsc_gff3togenepred
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_genepredtobed
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_fatotwobit
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
+  - name: ucsc_bedtobigbed
+    owner: iuc
+    tool_panel_section_label: Convert Formats
+
   - name: ucsc_maftoaxt
     owner: iuc
     tool_panel_section_label: Convert Formats
@@ -2578,6 +2642,10 @@ tools:
     owner: devteam
     tool_panel_section_label: Graph/Display Data
 
+  - name: ucsc_hubcheck
+    owner: iuc
+    tool_panel_section_label: Graph/Display Data
+
   - name: upsetplot
     owner: iuc
     tool_panel_section_label: Graph/Display Data
@@ -3127,6 +3195,10 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: metamdbg_asm
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: multi_omics_classification
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -5969,6 +6041,10 @@ tools:
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
+  - name: bambu
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
   - name: barrnap
     owner: iuc
     tool_panel_section_label: RNA Analysis
@@ -6066,6 +6142,10 @@ tools:
     tool_panel_section_label: RNA Analysis
 
   - name: dexseq
+    owner: iuc
+    tool_panel_section_label: RNA Analysis
+
+  - name: dupradar
     owner: iuc
     tool_panel_section_label: RNA Analysis
 
@@ -6695,6 +6775,10 @@ tools:
     tool_panel_section_label: Single-cell
 
   - name: sccellfie_analysis
+    owner: iuc
+    tool_panel_section_label: Single-cell
+
+  - name: scdblfinder
     owner: iuc
     tool_panel_section_label: Single-cell
 
@@ -7788,11 +7872,23 @@ tools:
     owner: iuc
     tool_panel_section_label: Variant Calling
 
+  - name: survivor
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
   - name: swiftlink
     owner: iuc
     tool_panel_section_label: Variant Calling
 
   - name: structureharvester
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: tiddit_sv
+    owner: iuc
+    tool_panel_section_label: Variant Calling
+
+  - name: tiddit_cov
     owner: iuc
     tool_panel_section_label: Variant Calling
 
