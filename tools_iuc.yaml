@@ -1303,6 +1303,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Assembly
 
+  - name: skesa
+    owner: iuc
+    tool_panel_section_label: Assembly
+
   - name: smudgeplot
     owner: galaxy-australia
     tool_panel_section_label: Assembly
@@ -2104,6 +2108,18 @@ tools:
     tool_panel_section_label: FASTA/FASTQ
 
   - name: qfilt
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqfu_stats
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqfu_count
+    owner: iuc
+    tool_panel_section_label: FASTA/FASTQ
+
+  - name: seqfu_check
     owner: iuc
     tool_panel_section_label: FASTA/FASTQ
 
@@ -3139,6 +3155,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: hgt_site
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: kaiju_addtaxonnames
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -3167,6 +3187,26 @@ tools:
     owner: iuc
 
   - name: metacoag
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mothur_sparcc
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mothur_merge_otus
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mothur_make_clr
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mothur_kruskal_wallis
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: mothur_estimator_single
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
