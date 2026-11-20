@@ -407,12 +407,18 @@ tools:
   - a03dead1bede
   - b03ae2ba8688
   tool_panel_section_label: Annotation
+- name: fair_bioheaders_metadata
+  owner: iuc
+  revisions:
+  - 6e0804c9c737
+  tool_panel_section_label: Annotation
 - name: fair_bioheaders_verify
   owner: iuc
   revisions:
   - 410f2b13514d
   - 5299b074177e
   - 5933912ff575
+  - 5ba3d99b7e4c
   - fe0f8cf4c16c
   tool_panel_section_label: Annotation
 - name: fair_bioheaders_strip
@@ -420,12 +426,14 @@ tools:
   revisions:
   - 3d10a5852521
   - 6d92cf09798c
+  - c38cd6bead2e
   - cdbffae4e13a
   - eaf24135b93a
   tool_panel_section_label: Annotation
 - name: fair_bioheaders_convert
   owner: iuc
   revisions:
+  - 38427bb55b76
   - 4518b71bb046
   - 64cee848db28
   - 70f7eb0ed423
@@ -435,6 +443,7 @@ tools:
   owner: iuc
   revisions:
   - 4324c263d149
+  - 96a98e637f09
   - ad8d567795eb
   - af68af0222c8
   - f0483712b59d
@@ -668,6 +677,11 @@ tools:
   owner: iuc
   revisions:
   - 98cd3868ead9
+  tool_panel_section_label: Annotation
+- name: lc_classify
+  owner: iuc
+  revisions:
+  - 831623e8b172
   tool_panel_section_label: Annotation
 - name: mge_cluster
   owner: iuc
@@ -1738,6 +1752,7 @@ tools:
   owner: iuc
   revisions:
   - 81da9f1757b1
+  - 8966aef92e64
   tool_panel_section_label: Annotation
 - name: staramr
   owner: iuc
@@ -1927,6 +1942,7 @@ tools:
   - 045c7c3d8e59
   - 0ee0c3089254
   - 170061c052ad
+  - 202ac9dc920f
   - 284a1cb82b61
   - 366a11d316a7
   - 3f7be05a1597
@@ -2621,6 +2637,7 @@ tools:
   - 8d8c71fba071
   - 9f7b3250a2fe
   - d4336b333dac
+  - d9cbff4defdc
   tool_panel_section_label: Astronomy
 - name: bedtools
   owner: iuc
@@ -3344,6 +3361,7 @@ tools:
   - 6bbd30d58cf4
   - 70acec670c30
   - '856173762903'
+  - 8cbe935e0d61
   - b8476e82ac20
   - c1d53e95327f
   - d1c340a5664b
@@ -4217,6 +4235,7 @@ tools:
   revisions:
   - 3da72230c066
   - 4b494533146a
+  - 61acad608591
   - a019807f4e67
   - a09586d5149a
   - bc7d99f46a5d
@@ -4746,6 +4765,7 @@ tools:
   - 1790dcf3c32d
   - 1ec814014652
   - 26b7446bb17e
+  - 281a608c78fb
   - 2b2eb47e8e84
   - 494b2ec08162
   - 4df8de2d0e48
@@ -8415,6 +8435,7 @@ tools:
 - name: semibin
   owner: iuc
   revisions:
+  - 05e819a6ad33
   - 0689d28fecdf
   - 6b517dc161e4
   - 7b382efabb98
@@ -8436,6 +8457,7 @@ tools:
   - 751a48b741a8
   - 8317c7dc6407
   - 8428eb03a349
+  - b5a4fe78028c
   - dbf5571a8140
   tool_panel_section_label: Metagenomic Analysis
 - name: semibin_concatenate_fasta
@@ -8448,6 +8470,7 @@ tools:
   - a72b974c98a2
   - c72b50829c03
   - dcc81bfe5f6a
+  - df699bc58313
   - e0aae2cd891e
   - e6bc3455940e
   tool_panel_section_label: Metagenomic Analysis
@@ -8456,6 +8479,7 @@ tools:
   revisions:
   - 078414a1226b
   - 0950f4a5412c
+  - 25690785d69d
   - 416bfa61b640
   - 5ae13a156271
   - 5b680d4ad17d
@@ -8474,6 +8498,7 @@ tools:
   - 40ffba87bbcf
   - 517069eeb0d5
   - 8642283f3eba
+  - 86a178be0780
   - 8ba0c2edf3f3
   - ff4e487f4f7e
   tool_panel_section_label: Metagenomic Analysis
@@ -8489,6 +8514,7 @@ tools:
   - 43df7a4c33a2
   - '487368001920'
   - 8b77643cf479
+  - 8cff6eaec767
   tool_panel_section_label: Metagenomic Analysis
 - name: seqsero2
   owner: iuc
@@ -12040,6 +12066,7 @@ tools:
   - bf675f34b056
   - c19b16e5729c
   - c1a4b5f3b432
+  - ca7fced90f71
   - d2aaac19f42f
   - dc0f5512911c
   - df99138d2776
@@ -12410,6 +12437,7 @@ tools:
   owner: iuc
   revisions:
   - 3b36efd62b3e
+  - 7c812cad2a4e
   tool_panel_section_label: RNA Analysis
 - name: deseq2
   owner: iuc
@@ -12639,12 +12667,14 @@ tools:
   revisions:
   - 1672b9bea89b
   - 72927fc9e9ed
+  - 99ed38e2c2e1
   - d696cf0a9622
   tool_panel_section_label: RNA Analysis
 - name: qualimap_rnaseq
   owner: iuc
   revisions:
   - 35e00077ba61
+  - 3edace061e89
   - 43a1c3e1a4d0
   - 613e6446ea5d
   - ce0da6c9f49e
@@ -12926,6 +12956,7 @@ tools:
   - d2bc35f3d1c5
   - d84caa5a98ad
   - db1f362cca3e
+  - f43f0ca95a07
   - f7564c3f9dc0
   tool_panel_section_label: RNA Analysis
 - name: trinity_abundance_estimates_to_matrix
@@ -12935,6 +12966,7 @@ tools:
   - 0f445c315a08
   - 13ab393ba794
   - 77fc547df6ff
+  - 8b7448d99b7d
   - ba3720d7e68b
   - bcc5f03f1900
   - d6a479fd4281
@@ -12945,6 +12977,7 @@ tools:
   - 2fb4ee002432
   - 478f36effca1
   - 56162e446004
+  - 8322e64b552f
   - 983552d5822d
   - a21e229da9a1
   - aed859a021c0
@@ -12954,6 +12987,7 @@ tools:
 - name: trinity_analyze_diff_expr
   owner: iuc
   revisions:
+  - 3a7c1cd24016
   - 9ff3765e7172
   tool_panel_section_label: RNA Analysis
 - name: trinity_contig_exn50_statistic
@@ -12964,12 +12998,14 @@ tools:
   - 3cdcd5753218
   - 870ac06dff8e
   - 8fed16891aaf
+  - 9fa50484098c
   - afa3a9786339
   - be3f26533209
   tool_panel_section_label: RNA Analysis
 - name: trinity_define_clusters_by_cutting_tree
   owner: iuc
   revisions:
+  - 3e4ece31dd05
   - 65e7dea767ea
   tool_panel_section_label: RNA Analysis
 - name: trinity_filter_low_expr_transcripts
@@ -12980,6 +13016,7 @@ tools:
   - 6821f5ea01d8
   - 7bd8f4770cec
   - a35cba31d904
+  - c670b8b67800
   - e406ac71165d
   - e659504d166c
   tool_panel_section_label: RNA Analysis
@@ -12988,10 +13025,12 @@ tools:
   revisions:
   - 7c7fbf13aadd
   - 964b7efe2639
+  - ff5c4df05bee
   tool_panel_section_label: RNA Analysis
 - name: trinity_run_de_analysis
   owner: iuc
   revisions:
+  - 0cb5796ccfa7
   - 1563554bb3f0
   - 1d689e4e1caf
   - 24e94d84adc9
@@ -13004,11 +13043,13 @@ tools:
   owner: iuc
   revisions:
   - 04bb8bb7c198
+  - 7145282890c9
   tool_panel_section_label: RNA Analysis
 - name: trinity_super_transcripts
   owner: iuc
   revisions:
   - 15f60c2e2d78
+  - 3811b9bc43fe
   - 3abd51c4b151
   - 5c1fc038df6b
   - 64094e19077d
@@ -13018,6 +13059,7 @@ tools:
 - name: trinity_stats
   owner: iuc
   revisions:
+  - 2e9fb25555b0
   - b2ce45417d9e
   tool_panel_section_label: RNA Analysis
 - name: trinotate
@@ -13264,6 +13306,7 @@ tools:
   - 19ece8afbaab
   - 30a201c9c310
   - 4a89c6f84425
+  - 950ea24d0079
   - ac607906f10a
   - e7fd6754d093
   tool_panel_section_label: SAM/BAM
@@ -13273,6 +13316,7 @@ tools:
   - 17b35d23731f
   - adfe9fda2c5f
   - e38af83df163
+  - edec46248555
   tool_panel_section_label: SAM/BAM
 - name: sam2interval
   owner: devteam
@@ -13669,6 +13713,7 @@ tools:
   - 95f606f2553d
   - 9807b49770c4
   - aceae6f67857
+  - ba0d436033be
   tool_panel_section_label: Spatial Omics
 - name: spatialdata_operation
   owner: iuc
@@ -13676,6 +13721,7 @@ tools:
   - 0d3296677452
   - 2adfc39ffbac
   - ad593d73a014
+  - b6e4986ba918
   - c9077cc6c532
   tool_panel_section_label: Spatial Omics
 - name: spatialdata_plot
@@ -13684,6 +13730,7 @@ tools:
   - a9c99d2d3063
   - bc396bd25374
   - c5928c28e2f0
+  - cd2bdf546912
   - cec3ffd4752f
   tool_panel_section_label: Spatial Omics
 - name: squidpy_graph
@@ -14784,6 +14831,7 @@ tools:
   - 372def2f8fd6
   - 5ceeb5a5d70f
   - 7a82006f7c05
+  - 8761f1397463
   - c23737f9714f
   - e92767bd4412
   tool_panel_section_label: Variant Calling
@@ -14795,6 +14843,7 @@ tools:
   - 468b90c41cde
   - 6f52ebc01098
   - 7021ed347f7e
+  - 92dcc1060a3f
   - 93cfe7df7f8a
   - 94020e19b46c
   - a346730e5552
@@ -16442,6 +16491,7 @@ tools:
   - 3d9253661554
   - 4a1e678b9570
   - 54acd5139cab
+  - 630e1f44a843
   - 640c0b8cc8bf
   - 948903a8555d
   - aa55042c6e5e
@@ -16454,6 +16504,7 @@ tools:
   - 16331f8cff98
   - 25ac0748e744
   - 2d1bfff73837
+  - 699c62e400f0
   - 7e7e80991682
   - 95e88f407e86
   - a09398bc953a
@@ -16467,6 +16518,7 @@ tools:
   - 1980b199b14a
   - 2b618ed582da
   - 53b22b7dff19
+  - 571e71f18b4f
   - 5a98e780fe72
   - 945b31d82638
   - c0a0e79d7196
@@ -16486,6 +16538,7 @@ tools:
   - 5b9314d73110
   - 71d12e50c520
   - a57b20e33cff
+  - b805b7058e56
   - d17f930148a5
   - eccec0876e54
   tool_panel_section_label: Virology

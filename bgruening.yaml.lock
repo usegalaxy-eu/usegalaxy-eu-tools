@@ -93,6 +93,11 @@ tools:
   - 5ad32046903b
   - f6fa7e70120f
   tool_panel_section_label: Convert Formats
+- name: tei_converter
+  owner: bgruening
+  revisions:
+  - 438878a60b0e
+  tool_panel_section_label: Convert Formats
 - name: uniprot_rest_interface
   owner: bgruening
   revisions:
@@ -502,6 +507,7 @@ tools:
   owner: bgruening
   revisions:
   - 3dd6be0cd8dd
+  - 743f687633f3
   - 8c99976de71e
   - a34826ae0a73
   - b61022e1b807
@@ -922,10 +928,20 @@ tools:
   revisions:
   - fc43cdc81408
   tool_panel_section_label: Imaging
+- name: cross_encoder_rerank
+  owner: bgruening
+  revisions:
+  - 43a1aeb8dcd4
+  tool_panel_section_label: Machine Learning
 - name: dna_foundation_models
   owner: bgruening
   revisions:
   - 2e7bab5007f5
+  tool_panel_section_label: Machine Learning
+- name: embed_faiss_search
+  owner: bgruening
+  revisions:
+  - 5aa10a5ec0c4
   tool_panel_section_label: Machine Learning
 - name: keras_batch_models
   owner: bgruening
@@ -1459,6 +1475,7 @@ tools:
   owner: bgruening
   revisions:
   - 01b0fcc50e74
+  - 43e7a80b327e
   - c3088b191caa
   - e471a33a0894
   tool_panel_section_label: Machine Learning

@@ -50,6 +50,10 @@ tools:
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
 
+  - name: tei_converter
+    owner: bgruening
+    tool_panel_section_label: Convert Formats
+
   - name: uniprot_rest_interface
     owner: bgruening
     tool_panel_section_label: Convert Formats
@@ -587,7 +591,15 @@ tools:
 
 # MACHINE LEARNING
 
+  - name: cross_encoder_rerank
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
   - name: dna_foundation_models
+    owner: bgruening
+    tool_panel_section_label: Machine Learning
+
+  - name: embed_faiss_search
     owner: bgruening
     tool_panel_section_label: Machine Learning
 
