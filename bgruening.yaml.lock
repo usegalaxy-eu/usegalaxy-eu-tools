@@ -93,6 +93,21 @@ tools:
   - 5ad32046903b
   - f6fa7e70120f
   tool_panel_section_label: Convert Formats
+- name: spm_raw_header
+  owner: bgruening
+  revisions:
+  - c73ffbe88dc8
+  tool_panel_section_label: Convert Formats
+- name: pynxtools_spm_eln_files
+  owner: bgruening
+  revisions:
+  - bd844c38106c
+  tool_panel_section_label: Convert Formats
+- name: pynxtools_spm_converter
+  owner: bgruening
+  revisions:
+  - 8524d2da6197
+  tool_panel_section_label: Convert Formats
 - name: tei_converter
   owner: bgruening
   revisions:
@@ -409,6 +424,7 @@ tools:
   owner: rnateam
   revisions:
   - 10b84b577117
+  - aadbe1067c20
   - f7746d145125
   tool_panel_section_label: Annotation
 - name: blobtoolkit
@@ -1763,6 +1779,26 @@ tools:
   - 515dc574a2bf
   - d5a67f827fb8
   tool_panel_section_label: Other Tools
+- name: nexus_report_builder
+  owner: bgruening
+  revisions:
+  - 17022c4bf2d4
+  tool_panel_section_label: Other Tools
+- name: nexus_llm_input
+  owner: bgruening
+  revisions:
+  - e88403e2c77b
+  tool_panel_section_label: Other Tools
+- name: nexus_eln_llm_merge
+  owner: bgruening
+  revisions:
+  - a993a6ccd738
+  tool_panel_section_label: Other Tools
+- name: nexus_eln_builder
+  owner: bgruening
+  revisions:
+  - 2d690023a5fb
+  tool_panel_section_label: Other Tools
 - name: pynxtools_peak_finding
   owner: bgruening
   revisions:
@@ -1772,6 +1808,11 @@ tools:
   owner: bgruening-util
   revisions:
   - 254cd55c9900
+  tool_panel_section_label: Other Tools
+- name: zenodo_nomad_download
+  owner: bgruening
+  revisions:
+  - 17278aff9081
   tool_panel_section_label: Other Tools
 - name: dewseq
   owner: rnateam
@@ -1965,6 +2006,7 @@ tools:
   revisions:
   - 3b395a0a8c02
   - 53bd3f589de0
+  - cfe9a15f5705
   tool_panel_section_label: Text Manipulation
 - name: pharmcat
   owner: bgruening
