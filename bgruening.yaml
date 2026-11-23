@@ -50,6 +50,18 @@ tools:
     owner: bgruening
     tool_panel_section_label: "Convert Formats"
 
+  - name: spm_raw_header
+    owner: bgruening
+    tool_panel_section_label: Convert Formats
+
+  - name: pynxtools_spm_eln_files
+    owner: bgruening
+    tool_panel_section_label: Convert Formats
+
+  - name: pynxtools_spm_converter
+    owner: bgruening
+    tool_panel_section_label: Convert Formats
+
   - name: tei_converter
     owner: bgruening
     tool_panel_section_label: Convert Formats
@@ -915,12 +927,32 @@ tools:
     owner: bgruening
     tool_panel_section_label: Other Tools
 
+  - name: nexus_report_builder
+    owner: bgruening
+    tool_panel_section_label: Other Tools
+
+  - name: nexus_llm_input
+    owner: bgruening
+    tool_panel_section_label: Other Tools
+
+  - name: nexus_eln_llm_merge
+    owner: bgruening
+    tool_panel_section_label: Other Tools
+
+  - name: nexus_eln_builder
+    owner: bgruening
+    tool_panel_section_label: Other Tools
+
   - name: pynxtools_peak_finding
     owner: bgruening
     tool_panel_section_label: Other Tools
 
   - name: stress_ng
     owner: bgruening-util
+    tool_panel_section_label: Other Tools
+
+  - name: zenodo_nomad_download
+    owner: bgruening
     tool_panel_section_label: Other Tools
 
 # PEAK CALLING
