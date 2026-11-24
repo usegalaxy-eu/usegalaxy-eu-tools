@@ -254,6 +254,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: fastan
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: fastani
     owner: iuc
     tool_panel_section_label: Annotation
@@ -275,6 +279,14 @@ tools:
     tool_panel_section_label: Annotation
 
   - name: flavotyper
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: foldmason_msa2lddt
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: foldmason_easy_msa
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -1002,7 +1014,23 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: ucsc_axtsort
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: ucsc_bigwigaverageoverbed
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ucsc_lavtopsl
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ucsc_chainstitchid
+    owner: iuc
+    tool_panel_section_label: Annotation
+
+  - name: ucsc_chainmergesort
     owner: iuc
     tool_panel_section_label: Annotation
 
@@ -3263,6 +3291,34 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: perseus_extract
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_sidle_trim_dada2_posthoc
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_sidle_reconstruct_taxonomy
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_sidle_reconstruct_fragment_rep_seqs
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_sidle_reconstruct_database
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_sidle_reconstruct_counts
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_sidle_prepare_extracted_region
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: qiime2_sidle_align_regional_kmers
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 

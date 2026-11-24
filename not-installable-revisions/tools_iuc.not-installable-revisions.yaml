@@ -1165,6 +1165,7 @@ tools:
 - name: hicexplorer_hicbuildmatrix
   owner: bgruening
   revisions:
+  - 453619f40b89
   - 4ceaee0043a5
   - 6152fc6da3dc
   - c657edbea349
@@ -1289,6 +1290,7 @@ tools:
 - name: hicexplorer_hicquickqc
   owner: bgruening
   revisions:
+  - 0a134c0bdb39
   - 3175b66ea9a3
   - 653fa9fa585e
 - name: hicexplorer_hicsummatrices
@@ -5160,6 +5162,7 @@ tools:
   owner: iuc
   revisions:
   - 2898012c5265
+  - d90f9190eb27
 - name: sniffles
   owner: iuc
   revisions:
@@ -5704,3 +5707,23 @@ tools:
   owner: iuc
   revisions:
   - 1eaa80351ec9
+- name: hicexplorer_hicbuildmatrixmicroc
+  owner: bgruening
+  revisions:
+  - d50fb8ae7e11
+- name: gatk4_split_n_cigar_reads
+  owner: iuc
+  revisions:
+  - 9044d3880269
+- name: gatk4_base_recalibrator
+  owner: iuc
+  revisions:
+  - 26845c4e5f64
+- name: gatk4_applybqsr
+  owner: iuc
+  revisions:
+  - 6940c0b8468e
+- name: gatk4_haplotype_caller
+  owner: iuc
+  revisions:
+  - c439e1f317a2
