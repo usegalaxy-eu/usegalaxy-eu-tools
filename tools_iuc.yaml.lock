@@ -337,6 +337,7 @@ tools:
 - name: coreprofiler_allele_calling
   owner: iuc
   revisions:
+  - 3835ed53fdc9
   - 3cbbbf459e8e
   - 49416e22e6da
   - 515124ba871a
@@ -350,6 +351,7 @@ tools:
   owner: iuc
   revisions:
   - adc9ab7a10ab
+  - b8754cd964c0
 - name: dnaapler
   owner: iuc
   revisions:
@@ -4419,6 +4421,7 @@ tools:
 - name: rasusa
   owner: iuc
   revisions:
+  - 7486a70dcdd1
   - 98b25bd0a0b6
   - ab762feb3b1c
   - add156116c63
@@ -6172,6 +6175,7 @@ tools:
   revisions:
   - b93c986922ac
   - bcb6caec41eb
+  - bd34479c291e
   - c386984b135c
   - c778ef8a7806
   - d371ff7667e0
@@ -8315,12 +8319,12 @@ tools:
 - name: mg_toolkit_bulk_download
   owner: iuc
   revisions:
-  - a5eeaeba30d9
+  - 1327b6850648
   tool_panel_section_label: Metagenomic Analysis
 - name: mg_toolkit_original_metadata
   owner: iuc
   revisions:
-  - b613e5dd5e83
+  - 48c250db1edd
   tool_panel_section_label: Metagenomic Analysis
 - name: micro_decon
   owner: iuc
@@ -14847,6 +14851,21 @@ tools:
   owner: devteam
   revisions:
   - f0b6217f4a0c
+  tool_panel_section_label: Statistics
+- name: mic_50_90_verify_report
+  owner: iuc
+  revisions:
+  - 5b72c2578f70
+  tool_panel_section_label: Statistics
+- name: mic_50_90_reporting
+  owner: iuc
+  revisions:
+  - 9beee2242f59
+  tool_panel_section_label: Statistics
+- name: mic_50_90_distribution
+  owner: iuc
+  revisions:
+  - 6bd88f32bec0
   tool_panel_section_label: Statistics
 - name: mine
   owner: devteam
