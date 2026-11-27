@@ -342,7 +342,7 @@ jobs:
 
             echo "## New tools"
             echo ""
-            echo "Synced from \`galaxyproject/tools-iuc\` and \`bgruening/galaxytools\`."
+            echo "Synced from $(jq -r 'map("`\(.source_repo)`") | join(", ")' scripts/sync-targets.json)."
             echo ""
             if [ "$new_tools" -gt 0 ] && ls sync-report-*.md >/dev/null 2>&1; then
               # New tools are the part reviewers actually read, so they are inlined

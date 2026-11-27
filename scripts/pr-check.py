@@ -1,9 +1,17 @@
 import sys
 import requests
 import yaml
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 TOOLSHED_API = "https://toolshed.g2.bx.psu.edu/api/repositories"
 fn = sys.argv[1]
+
+# The ToolShed rate-limits (429) when many new tools are checked at once; Retry honours Retry-After.
+session = requests.Session()
+session.mount("https://", HTTPAdapter(max_retries=Retry(
+    total=5, backoff_factor=2, status_forcelist=(429, 502, 503, 504), raise_on_status=False,
+)))
 
 
 def load_tools(path):
@@ -17,7 +25,7 @@ def load_tools(path):
 
 
 def tool_exists(name, owner):
-    response = requests.get(
+    response = session.get(
         TOOLSHED_API,
         params={"name": name, "owner": owner, "page_size": 1},
         timeout=30,
