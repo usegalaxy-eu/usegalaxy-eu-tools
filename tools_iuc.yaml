@@ -85,6 +85,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Annotation
 
+  - name: cctyper
+    owner: iuc
+    tool_panel_section_label: Annotation
+
   - name: clinker
     owner: iuc
     tool_panel_section_label: Annotation
@@ -3282,6 +3286,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
+  - name: myloasm
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
   - name: name2taxid
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
@@ -3323,6 +3331,22 @@ tools:
     tool_panel_section_label: Metagenomic Analysis
 
   - name: samestr
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: savont_sintax
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: savont_export
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: savont_classify
+    owner: iuc
+    tool_panel_section_label: Metagenomic Analysis
+
+  - name: savont_asv
     owner: iuc
     tool_panel_section_label: Metagenomic Analysis
 
@@ -7381,6 +7405,10 @@ tools:
     owner: iuc
     tool_panel_section_label: Text Manipulation
 
+  - name: spacy_nlp
+    owner: iuc
+    tool_panel_section_label: Text Manipulation
+
   - name: sqlite_to_tabular
     owner: iuc
     tool_panel_section_label: Text Manipulation
@@ -8425,6 +8453,9 @@ tools:
   - name: data_manager_samestr
     owner: iuc
 
+  - name: data_manager_savont_dbs
+    owner: iuc
+
   - name: data_manager_selection_background
     owner: iuc
 
@@ -8435,6 +8466,9 @@ tools:
     owner: devteam
 
   - name: data_manager_semibin
+    owner: iuc
+
+  - name: data_manager_spacy_models
     owner: iuc
 
   - name: data_manager_stanza_models
